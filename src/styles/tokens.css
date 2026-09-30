@@ -1,0 +1,15 @@
+:root {
+  --reader-bg: #ffffff;
+  --reader-text: #242424;
+
+  --reader-muted: #6b7280;
+
+  --reader-font-size: 18px;
+  --reader-line-height: 1.8;
+
+  --reader-width: 760px;
+
+  --reader-inline-padding: 24px;
+
+  --word-highlight: #e7f3cc;
+}
