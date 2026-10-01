@@ -7,6 +7,17 @@ order: 17
 
 <!-- Extracted from Thomas-calculus Markdown source; chapters 1-17 only. -->
 
+![教材插图](/books/thomas-calculus/assets/91715d91ed57bddee912b2a4797e3c74f19a842d51f555395559d84fa464bbae.jpg)
+
+
+
+Denis Kalinichenko/Shutterstock
+
+
+OVERVIEW In this chapter we extend our study of differential equations to those of second order, equations that involve second derivatives of a function. Second-order differential equations arise in many applications in the sciences and engineering. For instance, they can be applied to the study of vibrating springs and electric circuits. You will learn how to solve such differential equations by several methods in this chapter.
+
+
+
 ## 17.1 Second-Order Linear Equations
 
 An equation of the form 
@@ -25,7 +36,7 @@ We also assume that $P ( x )$ is never zero for any $x \in I .$
 
 Two fundamental results are important to solving Equation (2). The first of these says that if we know two solutions $y _ { 1 }$ and $y _ { 2 }$ of the linear homogeneous equation, then any linear combination $y = c _ { 1 } y _ { 1 } + c _ { 2 } y _ { 2 }$ is also a solution for any constants $c _ { 1 }$ and $c _ { 2 } .$ . 
 
-## THEOREM 1—The Superposition Principle
+**THEOREM 1—The Superposition Principle**
 
 If $y _ { 1 } ( x )$ and $y _ { 2 } ( x )$ are two solutions to the linear homogeneous equation (2), then for any constants $c _ { 1 }$ and $c _ { 2 } ,$ the function 
 
@@ -63,7 +74,7 @@ where $c _ { 1 }$ and $c _ { 2 }$ are arbitrary constants.
 
 We now turn our attention to finding two linearly independent solutions to the special case of Equation (2) where $P , Q ,$ , and R are constant functions. 
 
-## Constant-Coefficient Homogeneous Equations
+### Constant-Coefficient Homogeneous Equations
 
 Suppose we wish to solve the second-order homogeneous differential equation 
 
@@ -101,7 +112,7 @@ $$
 
 is the general solution to $a y ^ { \prime \prime } + b y ^ { \prime } + c y = 0 .$ 
 
-## **EXAMPLE 1**   Find the general solution of the differential equation
+**EXAMPLE 1**   Find the general solution of the differential equation
 
 $$
 y ^ {\prime \prime} - y ^ {\prime} - 6 y = 0.
@@ -135,7 +146,7 @@ $$
 
 The first term is zero because $r = - b / 2 a ;$ the second term is zero because r solves the auxiliary equation. The functions $y _ { 1 } = e ^ { r x } $ and $y _ { 2 } ~ = ~ x e ^ { r x }$ are linearly independent (see Exercise 62). From Theorem 2 we conclude the following result. 
 
-## **EXAMPLE 2** Find the general solution to
+**EXAMPLE 2** Find the general solution to
 
 $$
 y ^ {\prime \prime} + 4 y ^ {\prime} + 4 y = 0.
@@ -181,7 +192,7 @@ $$
 
 is the general solution to $a y ^ { \prime \prime } + b y ^ { \prime } + c y = 0 .$ 
 
-## **EXAMPLE 3** Find the general solution to the differential equation
+**EXAMPLE 3** Find the general solution to the differential equation
 
 $$
 y ^ {\prime \prime} - 4 y ^ {\prime} + 5 y = 0.
@@ -199,7 +210,7 @@ $$
 y = e ^ {2 x} \left(c _ {1} \cos x + c _ {2} \sin x\right).
 $$
 
-## Initial Value and Boundary Value Problems
+### Initial Value and Boundary Value Problems
 
 To determine a unique solution to a first-order linear differential equation, it was sufficient to specify the value of the solution at a single point. Since the general solution to a secondorder equation contains two arbitrary constants, it is necessary to specify two conditions. One way of doing this is to specify the value of the solution function and the value of its derivative at a single point: $y ( x _ { 0 } ) = y _ { 0 }$ and $y ^ { \prime } ( x _ { 0 } ) = y _ { 1 } .$ These conditions are called initial conditions. The following result is proved in more advanced texts and guarantees the existence of a unique solution for both homogeneous and nonhomogeneous second-order linear initial value problems. 
 
@@ -249,7 +260,7 @@ $$
 1 = c _ {1} + c _ {2} \cdot 0 \quad \text { and } \quad - 1 = c _ {1} + c _ {2} \cdot 1.
 $$
 
-![[0b01aa264cb533e4c2dd35a448fa395ce93c6befc41ef7119286931638e91539.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0b01aa264cb533e4c2dd35a448fa395ce93c6befc41ef7119286931638e91539.jpg)
 
 
 
@@ -300,9 +311,8 @@ $$
 y = 2 \sin 2 x.
 $$
 
-## EXERCISES
+### Exercises 17.1
 
-## 17.1
 
 In Exercises 1–30, find the general solution of the given equation. 
 
@@ -352,17 +362,17 @@ In Exercises 1–30, find the general solution of the given equation.
 
 23. ${ \frac { d ^ { 2 } y } { d x ^ { 2 } } } + 4 { \frac { d y } { d x } } + 4 y = 0$ 
 
-25. ${ \frac { d ^ { 2 } y } { d x ^ { 2 } } } + 6 { \frac { d y } { d x } } + 9 y = 0$ 
-
-27. $4 { \frac { d ^ { 2 } y } { d x ^ { 2 } } } + 4 { \frac { d y } { d x } } + y = 0$ 
-
 24. ${ \frac { d ^ { 2 } y } { d x ^ { 2 } } } - 6 { \frac { d y } { d x } } + 9 y = 0$ 
 
-29. $9 { \frac { d ^ { 2 } y } { d x ^ { 2 } } } + 6 { \frac { d y } { d x } } + y = 0$ 
+25. ${ \frac { d ^ { 2 } y } { d x ^ { 2 } } } + 6 { \frac { d y } { d x } } + 9 y = 0$ 
 
 26. $4 { \frac { d ^ { 2 } y } { d x ^ { 2 } } } - 1 2 { \frac { d y } { d x } } + 9 y = 0$ 
 
+27. $4 { \frac { d ^ { 2 } y } { d x ^ { 2 } } } + 4 { \frac { d y } { d x } } + y = 0$ 
+
 28. $4 { \frac { d ^ { 2 } y } { d x ^ { 2 } } } - 4 { \frac { d y } { d x } } + y = 0$ 
+
+29. $9 { \frac { d ^ { 2 } y } { d x ^ { 2 } } } + 6 { \frac { d y } { d x } } + y = 0$ 
 
 30. $9 { \frac { d ^ { 2 } y } { d x ^ { 2 } } } - 1 2 { \frac { d y } { d x } } + 4 y = 0$ 
 
@@ -396,43 +406,27 @@ In Exercises 41–55, find the general solution.
 
 41. $y ^ { \prime \prime } - 2 y ^ { \prime } - 3 y = 0$ 
 
-$$
-4 2. 6 y ^ {\prime \prime} - y ^ {\prime} - y = 0
-$$
+42. $6 y ^ {\prime \prime} - y ^ {\prime} - y = 0$
 
 43. $4 y ^ { \prime \prime } + 4 y ^ { \prime } + y = 0$ 
 
-$$
-4 4. 9 y ^ {\prime \prime} + 1 2 y ^ {\prime} + 4 y = 0
-$$
+44. $9 y ^ {\prime \prime} + 1 2 y ^ {\prime} + 4 y = 0$
 
 45. $4 y ^ { \prime \prime } + 2 0 y = 0$ 
 
-$$
-4 6. y ^ {\prime \prime} + 2 y ^ {\prime} + 2 y = 0
-$$
+46. $y ^ {\prime \prime} + 2 y ^ {\prime} + 2 y = 0$
 
 47. $2 5 y ^ { \prime \prime } + 1 0 y ^ { \prime } + y = 0$ 
 
-$$
-4 8. 6 y ^ {\prime \prime} + 1 3 y ^ {\prime} - 5 y = 0
-$$
+48. $6 y ^ {\prime \prime} + 1 3 y ^ {\prime} - 5 y = 0$
 
 49. $4 y ^ { \prime \prime } + 4 y ^ { \prime } + 5 y = 0$ 
 
 $$
 \mathbf {5 0 .} y ^ {\prime \prime} + 4 y ^ {\prime} + 6 y = 0
-$$
-
-51. $1 6 y ^ { \prime \prime } - 2 4 y ^ { \prime } + 9 y = 0$ 
-
-$$
+51. $$1 6 y ^ { \prime \prime } - 2 4 y ^ { \prime } + 9 y = 0$$
 5 2. 6 y ^ {\prime \prime} - 5 y ^ {\prime} - 6 y = 0
-$$
-
-53. $9 y ^ { \prime \prime } + 2 4 y ^ { \prime } + 1 6 y = 0$ 
-
-$$
+53. $$9 y ^ { \prime \prime } + 2 4 y ^ { \prime } + 1 6 y = 0$$
 5 4. 4 y ^ {\prime \prime} + 1 6 y ^ {\prime} + 5 2 y = 0
 $$
 
@@ -468,11 +462,7 @@ b. Show that there are infinitely many solutions to the boundary value problem
 
 $$
 y ^ {\prime \prime} + 4 y = 0, \quad y (0) = 0, y (\pi) = 0.
-$$
-
-66. Show that ${ \mathrm { f } } a , b ,$ and c are positive constants, then all solutions of the homogeneous differential equation 
-
-$$
+66. $Show that ${ \mathrm { f } } a , b ,$ and c are positive constants, then all solutions of the homogeneous differential equation$
 a y ^ {\prime \prime} + b y ^ {\prime} + c y = 0
 $$
 
@@ -482,7 +472,7 @@ approach zero as $x \ \longrightarrow \ \infty .$
 
 In this section we study two methods for solving second-order linear nonhomogeneous differential equations with constant coefficients. These are the methods of undetermined coefficients and variation of parameters. We begin by considering the form of the general solution. 
 
-## Form of the General **Solution**
+### Form of the General **Solution**
 
 Suppose we wish to solve the nonhomogeneous equation 
 
@@ -524,7 +514,7 @@ $$
 
 where the complementary solution $y _ { \mathrm { c } }$ is the general solution to the associated homogeneous equation (2), and $y _ { \mathrm { { p } } }$ is any particular solution to the nonhomogeneous equation (1). 
 
-## The Method of Undetermined Coefficients
+### The Method of Undetermined Coefficients
 
 This method for finding a particular solution $y _ { \mathrm { { p } } }$ to the nonhomogeneous equation (1) applies to special cases for which G x( ) is a sum of terms of various polynomials $p ( x )$ multiplying an exponential with possibly sine or cosine factors. That ${ \mathrm { i s } } , G ( x )$ is a sum of terms of the following forms: 
 
@@ -534,7 +524,7 @@ $$
 
 For instance, $1 - x , e ^ { 2 x } , x e ^ { x } .$ ,   cos $x ,$ and $5 e ^ { x } \mathrm { ~ - ~ }$ s x in 2  represent functions in this category. (Essentially these are functions solving homogeneous linear differential equations with constant coefficients, but the equations may be of order higher than two.) We now present several examples illustrating the method. 
 
-## **EXAMPLE 1**   Solve the nonhomogeneous equation $y ^ { \prime \prime } - 2 y ^ { \prime } - 3 y = 1 - x ^ { 2 }$
+**EXAMPLE 1**   Solve the nonhomogeneous equation $y ^ { \prime \prime } - 2 y ^ { \prime } - 3 y = 1 - x ^ { 2 }$
 
 **Solution** The auxiliary equation for the complementary equation $y ^ { \prime \prime } - 2 y ^ { \prime } - 3 y = 0$ is 
 
@@ -584,7 +574,7 @@ $$
 y = y _ {\mathrm{c}} + y _ {\mathrm{p}} = c _ {1} e ^ {- x} + c _ {2} e ^ {3 x} + \frac {1}{3} x ^ {2} - \frac {4}{9} x + \frac {5}{2 7}.
 $$
 
-## **EXAMPLE 2** Find a particular solution of $y ^ { \prime \prime } - y ^ { \prime } = 2$ sin x.
+**EXAMPLE 2** Find a particular solution of $y ^ { \prime \prime } - y ^ { \prime } = 2$ sin x.
 
 **Solution** If we try to find a particular solution of the form 
 
@@ -630,7 +620,7 @@ $$
 y _ {\mathrm{p}} = \cos x - \sin x.
 $$
 
-## **EXAMPLE 3** Find a particular solution of $y ^ { \prime \prime } - 3 y ^ { \prime } + 2 y = 5 e ^ { x }$
+**EXAMPLE 3** Find a particular solution of $y ^ { \prime \prime } - 3 y ^ { \prime } + 2 y = 5 e ^ { x }$
 
 **Solution** If we substitute 
 
@@ -784,7 +774,7 @@ $$
 
 <table><tr><td>If <eq>G(x)</eq> has a term that is a constant multiple of...</td><td>And if...</td><td>Then include this expression in the trial function for <eq>y_p</eq></td></tr><tr><td rowspan="3"><eq>e^{rx}</eq></td><td>r is not a root of the auxiliary equation</td><td><eq>Ae^{rx}</eq></td></tr><tr><td>r is a single root of the auxiliary equation</td><td><eq>Axe^{rx}</eq></td></tr><tr><td>r is a double root of the auxiliary equation</td><td><eq>Ax^2e^{rx}</eq></td></tr><tr><td>sin kx, cos kx</td><td>ki is not a root of the auxiliary equation</td><td>B cos kx + C sin kx</td></tr><tr><td rowspan="3"><eq>px^2+qx+m</eq></td><td>0 is not a root of the auxiliary equation</td><td><eq>Dx^2+Ex+F</eq></td></tr><tr><td>0 is a single root of the auxiliary equation</td><td><eq>Dx^3+Ex^2+Fx</eq></td></tr><tr><td>0 is a double root of the auxiliary equation</td><td><eq>Dx^4+Ex^3+Fx^2</eq></td></tr></table>
 
-## The Method of Variation of Parameters
+### The Method of Variation of Parameters
 
 This is a general method for finding a particular solution of the nonhomogeneous equation (1) once the general solution of the associated homogeneous equation is known. The method consists of replacing the constants $c _ { 1 }$ and $c _ { 2 }$ in the complementary solution by functions $v _ { 1 } = v _ { 1 } ( x )$ and $v _ { 2 } = v _ { 2 } ( x )$ and requiring (in a way to be explained) that the resulting expression satisfy the nonhomogeneous equation (1). There are two functions to be determined, and requiring that Equation (1) be satisfied is only one condition. As a second condition, we also require that 
 
@@ -818,7 +808,7 @@ $$
 
 for the unknown functions ${ v _ { 1 } } ^ { \prime }$ and ${ v _ { 2 } } ^ { \prime } .$ . The usual procedure for solving this simple system is to use the method of determinants (also known as Cramer’s Rule), which will be demonstrated in the examples to follow. Once the derivative functions ${ v _ { 1 } } ^ { \prime }$ and ${ v _ { 2 } } ^ { \prime }$ are known, the two functions $v _ { 1 } = v _ { 1 } ( x )$ and $v _ { 2 } = v _ { 2 } ( x )$ can be found by integration. Here is a summary of the method. 
 
-## Variation of Parameters Procedure
+### Variation of Parameters Procedure
 
 To use the method of variation of parameters to find a particular solution to the nonhomogeneous equation 
 
@@ -856,7 +846,7 @@ $$
 y _ {\mathrm{p}} = v _ {1} y _ {1} + v _ {2} y _ {2}.
 $$
 
-## **EXAMPLE 6** Find the general solution to the equation
+**EXAMPLE 6** Find the general solution to the equation
 
 $$
 y ^ {\prime \prime} + y = \tan x.
@@ -980,51 +970,34 @@ $$
 
 where the term $( 1 / 2 7 ) e ^ { x }$ in $y _ { \mathrm { { p } } }$ has been absorbed into the term $c _ { 2 } e ^ { x }$ in the complementary solution. 
 
-## EXERCISES
+### Exercises 17.2
 
-## 17.2
 
 Solve the equations in Exercises 1–16 by the method of undetermined coefficients. 
 
-$$
-7. 7 ^ {\prime \prime} - y ^ {\prime} - 2 y = 2 0 \cos x \quad 8. y ^ {\prime \prime} + y = 2 x + 3 e ^ {x}
-$$
+1. $y ^ {\prime \prime} - 3 y ^ {\prime} - 1 0 y = - 3$
 
-$$
-9. y ^ {\prime \prime} - y = e ^ {x} + x ^ {2} \quad 1 0. y ^ {\prime \prime} + 2 y ^ {\prime} + y = 6 \sin 2 x
-$$
-
-$$
-1. y ^ {\prime \prime} - 3 y ^ {\prime} - 1 0 y = - 3
-$$
-
-$$
-2. y ^ {\prime \prime} - 3 y ^ {\prime} - 1 0 y = 2 x - 3
-$$
-
-$$
-1 1. y ^ {\prime \prime} - y ^ {\prime} - 6 y = e ^ {- x} - 7 \cos x
-$$
+2. $y ^ {\prime \prime} - 3 y ^ {\prime} - 1 0 y = 2 x - 3$
 
 3. y y ′′ − ′ = sin x 
 
-$$
-y ^ {\prime \prime} + 2 y ^ {\prime} + y = x ^ {2}
-$$
+4. $y ^ {\prime \prime} + 2 y ^ {\prime} + y = x ^ {2}$
 
-$$
-1 2. y ^ {\prime \prime} + 3 y ^ {\prime} + 2 y = e ^ {- x} + e ^ {- 2 x} - x
-$$
+5. $y ^ {\prime \prime} + y = \cos 3 x$
 
-$$
-5. y ^ {\prime \prime} + y = \cos 3 x
-$$
+6. $y ^ {\prime \prime} + y = e ^ {2 x}$
 
-$$
-6. y ^ {\prime \prime} + y = e ^ {2 x}
-$$
+7. $7 ^ {\prime \prime} - y ^ {\prime} - 2 y = 2 0 \cos x \quad 8. y ^ {\prime \prime} + y = 2 x + 3 e ^ {x}$
 
-13. ${ \frac { d ^ { 2 } y } { d x ^ { 2 } } } + 5 { \frac { d y } { d x } } = 1 5 x ^ { 2 }$ 14. ${ \frac { d ^ { 2 } y } { d x ^ { 2 } } } - { \frac { d y } { d x } } = - 8 x + 3$ 
+9. $y ^ {\prime \prime} - y = e ^ {x} + x ^ {2} \quad 1 0. y ^ {\prime \prime} + 2 y ^ {\prime} + y = 6 \sin 2 x$
+
+11. $y ^ {\prime \prime} - y ^ {\prime} - 6 y = e ^ {- x} - 7 \cos x$
+
+12. $y ^ {\prime \prime} + 3 y ^ {\prime} + 2 y = e ^ {- x} + e ^ {- 2 x} - x$
+
+13. ${ \frac { d ^ { 2 } y } { d x ^ { 2 } } } + 5 { \frac { d y } { d x } } = 1 5 x ^ { 2 }$
+
+14. ${ \frac { d ^ { 2 } y } { d x ^ { 2 } } } - { \frac { d y } { d x } } = - 8 x + 3$
 
 15. ${ \frac { d ^ { 2 } y } { d x ^ { 2 } } } - 3 { \frac { d y } { d x } } = e ^ { 3 x } - 1 2 x$ 
 
@@ -1036,15 +1009,21 @@ Solve the equations in Exercises 17–28 by variation of parameters.
 
 18. $y ^ { \prime \prime } + y = \tan x , - { \frac { \pi } { 2 } } < x < { \frac { \pi } { 2 } }$ 
 
-19. $y ^ { \prime \prime } + y = \sin x$ 20. $y ^ { \prime \prime } + 2 y ^ { \prime } + y = e ^ { x }$ 
+19. $y ^ { \prime \prime } + y = \sin x$
 
-21. $y ^ { \prime \prime } + 2 y ^ { \prime } + y = e ^ { - x }$ 22. $y ^ { \prime \prime } - y = x$ 
+20. $y ^ { \prime \prime } + 2 y ^ { \prime } + y = e ^ { x }$
+
+21. $y ^ { \prime \prime } + 2 y ^ { \prime } + y = e ^ { - x }$
+
+22. $y ^ { \prime \prime } - y = x$
 
 23. $y ^ { \prime \prime } - y = e ^ { x }$ 
 
 24. $y ^ { \prime \prime } - y = \sin x$ 
 
-25. $y ^ { \prime \prime } + 4 y ^ { \prime } + 5 y = 1 0$ 26. $y ^ { \prime \prime } - y ^ { \prime } = 2 ^ { x }$ 
+25. $y ^ { \prime \prime } + 4 y ^ { \prime } + 5 y = 1 0$
+
+26. $y ^ { \prime \prime } - y ^ { \prime } = 2 ^ { x }$
 
 27. ${ \frac { d ^ { 2 } y } { d x ^ { 2 } } } + y = \sec x , \quad - { \frac { \pi } { 2 } } < x < { \frac { \pi } { 2 } }$ 
 
@@ -1062,13 +1041,9 @@ In each of Exercises 29–32, the given differential equation has a particular s
 
 In Exercises 33–36, solve the given differential equations (a) by variation of parameters and (b) by the method of undetermined coefficients. 
 
-$$
-3 3. \frac {d ^ {2} y}{d x ^ {2}} - \frac {d y}{d x} = e ^ {x} + e ^ {- x} \quad 3 4. \frac {d ^ {2} y}{d x ^ {2}} - 4 \frac {d y}{d x} + 4 y = 2 e ^ {2 x}
-$$
+33. $\frac {d ^ {2} y}{d x ^ {2}} - \frac {d y}{d x} = e ^ {x} + e ^ {- x} \quad 3 4. \frac {d ^ {2} y}{d x ^ {2}} - 4 \frac {d y}{d x} + 4 y = 2 e ^ {2 x}$
 
-$$
-3 5. \frac {d ^ {2} y}{d x ^ {2}} - 4 \frac {d y}{d x} - 5 y = e ^ {x} + 4 \quad 3 6. \frac {d ^ {2} y}{d x ^ {2}} - 9 \frac {d y}{d x} = 9 e ^ {9 x}
-$$
+35. $\frac {d ^ {2} y}{d x ^ {2}} - 4 \frac {d y}{d x} - 5 y = e ^ {x} + 4 \quad 3 6. \frac {d ^ {2} y}{d x ^ {2}} - 9 \frac {d y}{d x} = 9 e ^ {9 x}$
 
 Solve the differential equations in Exercises 37–46. Some of the equations can be solved by the method of undetermined coefficients, but others cannot. 
 
@@ -1080,9 +1055,7 @@ Solve the differential equations in Exercises 37–46. Some of the equations can
 
 40. $y ^ { \prime \prime } + 4 y = \sin { x }$ 
 
-$$
-4 1. y ^ {\prime \prime} - y ^ {\prime} = x ^ {3} \quad 4 2. y ^ {\prime \prime} + 4 y ^ {\prime} + 5 y = x + 2
-$$
+41. $y ^ {\prime \prime} - y ^ {\prime} = x ^ {3} \quad 4 2. y ^ {\prime \prime} + 4 y ^ {\prime} + 5 y = x + 2$
 
 ## 17.3 Applications
 
@@ -1094,7 +1067,7 @@ $$
 y ^ {\prime \prime} + y = \sec x \tan x, - \frac {\pi}{2} <   x <   \frac {\pi}{2}
 $$
 
-## Vibrations
+### Vibrations
 
 46. $y ^ { \prime \prime } - 3 y ^ { \prime } + 2 y = e ^ { x } - e ^ { 2 x } $ 
 
@@ -1174,14 +1147,14 @@ In this section we apply second-order differential equations to the study of vib
 
 A spring has its upper end fastened to a rigid support, as shown in Figure 17.2. An object of mass m is suspended from the spring and stretches it a length s when the spring comes to rest in an equilibrium position. According to Hooke’s Law (Section 6.5), the tension force in the spring is $k s ,$ where k is the spring constant. The force due to gravity pulling down on the spring is mg, and equilibrium requires that 
 
-![[a80e2e761ecb64135a46cdad7a5a5198784e2a59c750f3f92e226d5511bda236.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a80e2e761ecb64135a46cdad7a5a5198784e2a59c750f3f92e226d5511bda236.jpg)
 
 
 
 FIGURE 17.2 Mass m stretches a spring by length s to the equilibrium position at $y = 0 .$
 
 
-![[fd89707a7df2219b295e843d37806ab3645a2882e0280c381ead592c9a86cead.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fd89707a7df2219b295e843d37806ab3645a2882e0280c381ead592c9a86cead.jpg)
 
 
 
@@ -1216,7 +1189,7 @@ subject to the initial conditions $y ( 0 ) = y _ { 0 }$ and $y ^ { \prime } ( 0 
 
 You might expect that the motion predicted by Equation (2) will be oscillatory about the equilibrium position $y = 0$ and eventually damp to zero because of the frictional force. This is indeed the case, and we will show how the constants $m , \delta ,$ and k determine the nature of the damping. You will also see that if there is no friction (so $\delta = 0 )$ , then the object will simply oscillate indefinitely. 
 
-## Simple Harmonic Motion
+### Simple Harmonic Motion
 
 Suppose first that there is no frictional force. Then $\delta = 0$ and there is no damping. If we substitute $\omega = \sqrt { k / m }$ to simplify our calculations, then the second-order equation (2) becomes 
 
@@ -1250,7 +1223,7 @@ and then substitute the conditions. This yields $c _ { 1 } = y _ { 0 }$ and $c _
 
 (4) 
 
-![[aee4fcdf9c007fd2215158fb3f48a1ab41c0f1b0d4418f4ed3be356c9c40ce09.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/aee4fcdf9c007fd2215158fb3f48a1ab41c0f1b0d4418f4ed3be356c9c40ce09.jpg)
 
 
 
@@ -1285,14 +1258,14 @@ $$
 
 Here C and $\phi$ may be taken as two new arbitrary constants, replacing the two constants $c _ { 1 }$ and $c _ { 2 } .$ . Equation (5) represents simple harmonic motion of amplitude C and period $T = 2 \pi / \omega$ . The angle $\omega t + \phi$ is called the phase angle, and φ may be interpreted as its initial value. A graph of the simple harmonic motion represented by Equation (5) is given in Figure 17.5. 
 
-![[b1158022a259dfe65514e230d0fbb3f5d89408a4437ec801a45b49f823da9fd9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b1158022a259dfe65514e230d0fbb3f5d89408a4437ec801a45b49f823da9fd9.jpg)
 
 
 
 FIGURE 17.5 Simple harmonic motion of amplitude C and period T with initial phase angle φ (Equation 5).
 
 
-## Damped Motion
+### Damped Motion
 
 Assume now that there is friction in the spring system, so $\delta \neq 0$ . If we substitute $\omega = \sqrt { k / m }$ and $2 b = \delta / m ,$ then the differential equation (2) is 
 
@@ -1332,21 +1305,21 @@ $$
 
 This situation, called underdamping, represents damped oscillatory motion. It is analogous to simple harmonic motion of period $T = 2 \pi / \sqrt { \omega ^ { 2 } - b ^ { 2 } }$ except that the amplitude is not constant but damped by the factor $e ^ { - b t }$ . Therefore, the motion tends to zero as t increases, so the vibrations tend to die out as time goes on. Notice that the period $T = 2 \pi / \sqrt { \omega ^ { 2 } - b ^ { 2 } }$ is larger than the period $T _ { 0 } = 2 \pi / \omega$ in the friction-free system. Moreover, the larger the value of $b = \delta / ( 2 m )$ in the exponential damping factor, the more quickly the vibrations tend to become unnoticeable. A curve illustrating underdamped motion is shown in Figure 17.6c. 
 
-![[73dd5b18a10f6093312811732ec6849f0acc5c9e05ac065b755921c6bf40b04c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/73dd5b18a10f6093312811732ec6849f0acc5c9e05ac065b755921c6bf40b04c.jpg)
 
 
 
 (a) Critical damping
 
 
-![[5382d966dd67d1cd1ba6b0e2b9cc581c420ebca2af869ac3678f8768bd449353.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5382d966dd67d1cd1ba6b0e2b9cc581c420ebca2af869ac3678f8768bd449353.jpg)
 
 
 
 (b) Overdamping
 
 
-![[b863bfce1fc75cd003f4f2836ee4d49eb879f11b3db005d1c6d95d1d9f818ecc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b863bfce1fc75cd003f4f2836ee4d49eb879f11b3db005d1c6d95d1d9f818ecc.jpg)
 
 
 
@@ -1365,13 +1338,13 @@ $$
 
 Such equations are studied in the theory of Differential Equations. 
 
-## Electric Circuits
+### Electric Circuits
 
 The basic quantity in electricity is the charge q (analogous to the idea of mass). In an electric field we use the flow of charge, or current $I = d q / d t$ , as we might use velocity in a gravitational field. There are many similarities between motion in a gravitational field and the flow of electrons (the carriers of charge) in an electric field. 
 
 Consider the electric circuit shown in Figure 17.7. It consists of four components: voltage source, resistor, inductor, and capacitor. Think of electrical flow as being like a fluid flow, where the voltage source is the pump and the resistor, inductor, and capacitor tend to block the flow. A battery or generator is an example of a source, producing a voltage that causes the current to flow through the circuit when the switch is closed. An electric light bulb or appliance would provide resistance. The inductance is due to a magnetic field that opposes any change in the current as it flows through a coil. The capacitance is normally created by two metal plates that alternate charges and thus reverse the current flow. The following symbols specify the quantities relevant to the circuit. 
 
-![[02f367e3b58a47d9cd0bb204b356b15a3103629ea537902d0b2004db1a3a5815.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/02f367e3b58a47d9cd0bb204b356b15a3103629ea537902d0b2004db1a3a5815.jpg)
 
 
 
@@ -1414,13 +1387,13 @@ $$
 
 The second-order differential equation (8), which models an electric circuit, has exactly the same form as Equation (7) modeling vibratory motion. Both models can be solved using the methods developed in Section 17.2. 
 
-## Summary
+### Summary
 
 The following chart summarizes our analogies between the physics of motion of an object in a spring system and the flow of charged particles in an electric circuit. 
 
 <table><tr><td colspan="3">Linear Second-Order Constant-Coefficient Models</td></tr><tr><td colspan="2">Mechanical System</td><td>Electrical System</td></tr><tr><td colspan="2"><eq>my&#x27;&#x27; + \delta y&#x27; + ky = F(t)</eq></td><td><eq>Lq&#x27;&#x27; + Rq&#x27; + \frac{1}{C}q = E(t)</eq></td></tr><tr><td>y</td><td>displacement</td><td>q charge</td></tr><tr><td><eq>y&#x27;</eq></td><td>velocity</td><td><eq>q&#x27;</eq> current</td></tr><tr><td><eq>y&#x27;&#x27;</eq></td><td>acceleration</td><td><eq>q&#x27;&#x27;</eq> change in current</td></tr><tr><td>m</td><td>mass</td><td>L inductance</td></tr><tr><td>δ</td><td>damping constant</td><td>R resistance</td></tr><tr><td>k</td><td>spring constant</td><td><eq>1/C</eq> where C is the capacitance</td></tr><tr><td><eq>F(t)</eq></td><td>forcing function</td><td><eq>E(t)</eq> voltage source</td></tr></table>
 
-## EXERCISES 17.3
+### EXERCISES 17.3
 
 1. A 70-N weight is attached to the lower end of a coil spring suspended from the ceiling and having a spring constant of $1 5 \ : \mathrm { N / m } .$ The resistance in the spring–mass system is numerically equal to 15 times the instantaneous velocity. $\mathbf { A } \mathfrak { t } : = 0$ , the weight is set in motion from a position 0.6 m below its equilibrium position by giving it a downward velocity of 0.6 m/s. Write an initial value problem that models the given situation. 
 
@@ -1492,7 +1465,7 @@ $$
 
 where $a , b ,$ and c are constants. These special types of equations are called Euler equations in honor of Leonhard Euler, who studied them and showed how to solve them. Such equations arise in the study of mechanical vibrations. 
 
-## The General **Solution** of Euler Equations
+### The General **Solution** of Euler Equations
 
 Consider the Euler equation 
 
@@ -1538,7 +1511,7 @@ $$
 
 to find the general solution for $Y ( z )$ . After finding $Y ( z )$ , we can determine $y ( x )$ from the substitution $z \ = \ \ln x .$ 
 
-## **EXAMPLE 1** Find the general solution of the equation $x ^ { 2 } y ^ { \prime \prime } + 2 x y ^ { \prime } - 2 y = 0$
+**EXAMPLE 1** Find the general solution of the equation $x ^ { 2 } y ^ { \prime \prime } + 2 x y ^ { \prime } - 2 y = 0$
 
 **Solution** This is an Euler equation with $a = 1 , b = 2 ,$ and $c = - 2$ . The auxiliary equation (3) for $Y ( z )$ is 
 
@@ -1558,7 +1531,7 @@ $$
 y (x) = c _ {1} e ^ {- 2 \ln x} + c _ {2} e ^ {\ln x} = c _ {1} x ^ {- 2} + c _ {2} x.
 $$
 
-## **EXAMPLE 2** Solve the Euler equation $x ^ { 2 } y ^ { \prime \prime } - 5 x y ^ { \prime } + 9 y = 0$
+**EXAMPLE 2** Solve the Euler equation $x ^ { 2 } y ^ { \prime \prime } - 5 x y ^ { \prime } + 9 y = 0$
 
 **Solution** Since $a = 1 , b = - 5 .$ , and $c = 9 ,$ , the auxiliary equation (3) for $Y ( z )$ is 
 
@@ -1604,7 +1577,7 @@ $$
 y (x) = c _ {2} x ^ {2} \sin (8 \ln x).
 $$
 
-![[5b95208b687faf8c0012564f13f907b5a66bae8c208814d8a1c0b76025df0b92.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5b95208b687faf8c0012564f13f907b5a66bae8c208814d8a1c0b76025df0b92.jpg)
 
 
 To fit the second initial condition, we need the derivative 
@@ -1631,9 +1604,8 @@ $$
 
 A graph of the solution is shown in Figure 17.8. 
 
-## EXERCISES
+### Exercises 17.4
 
-## 17.4
 
 In Exercises 1–24, find the general solution to the given Euler equation. 
 
@@ -1641,9 +1613,7 @@ Assume $x > 0$ throughout.
 
 1. $x ^ { 2 } y ^ { \prime \prime } + 2 x y ^ { \prime } - 2 y = 0$ 
 
-$$
-x ^ {2} y ^ {\prime \prime} + x y ^ {\prime} - 4 y = 0
-$$
+2. $x ^ {2} y ^ {\prime \prime} + x y ^ {\prime} - 4 y = 0$
 
 3. $x ^ { 2 } y ^ { \prime \prime } - 6 y = 0$ 
 
@@ -1675,9 +1645,9 @@ $$
 
 17. $x ^ { 2 } y ^ { \prime \prime } + 3 x y ^ { \prime } + y = 0$ 
 
-19. $x ^ { 2 } y ^ { \prime \prime } + x y ^ { \prime } = 0$ 
-
 18. $x ^ { 2 } y ^ { \prime \prime } - 3 x y ^ { \prime } + 9 y = 0$ 
+
+19. $x ^ { 2 } y ^ { \prime \prime } + x y ^ { \prime } = 0$ 
 
 20. $4 x ^ { 2 } y ^ { \prime \prime } + y = 0$ 
 
@@ -1709,7 +1679,7 @@ $$
 
 In this section we extend our study of second-order linear homogeneous equations with variable coefficients. With the Euler equations in Section 17.4, the power of the variable x in the nonconstant coefficient had to match the order of the derivative with which it was paired: $x ^ { 2 }$ with $y ^ { \prime \prime } , x ^ { 1 }$ with $y ^ { \prime } ,$ and $x ^ { 0 } ( = 1 )$ with y. Here we drop that requirement so we can solve more general equations. 
 
-## Method of **Solution**
+### Method of **Solution**
 
 The power-series method for solving a second-order homogeneous differential equation consists of finding the coefficients of a power series 
 
@@ -1895,7 +1865,7 @@ $$
 \begin{array}{l} y = \sum_ {n = 0} ^ {\infty} c _ {n} x ^ {n} \\ = \sum_ {k = 0} ^ {\infty} c _ {2 k} x ^ {2 k} + \sum_ {k = 0} ^ {\infty} c _ {2 k + 1} x ^ {2 k + 1} \\ = c _ {0} \sum_ {k = 0} ^ {\infty} (k + 1) x ^ {2 k} + c _ {1} \sum_ {k = 0} ^ {\infty} \frac {2 k + 3}{3} x ^ {2 k + 1}. \end{array}
 $$
 
-## **EXAMPLE 4** Find the general solution to $y ^ { \prime \prime } - 2 x y ^ { \prime } + y = 0$
+**EXAMPLE 4** Find the general solution to $y ^ { \prime \prime } - 2 x y ^ { \prime } + y = 0$
 
 **Solution** Assuming that 
 
@@ -1911,13 +1881,13 @@ $$
 
 We next determine the coefficients, listing them in the following table. 
 
-## Power of x
+### Power of x
 
 $$
 x ^ {0}
 $$
 
-## Coefficient equation
+### Coefficient equation
 
 $$
 2 (1) c _ {2}
@@ -1979,19 +1949,14 @@ $$
 \begin{array}{l} y = c _ {0} \Big (1 - \frac {1}{2} x ^ {2} - \frac {3}{4 !} x ^ {4} - \frac {2 1}{6 !} x ^ {6} - \dots \Big) \\ \qquad + c _ {1} \Big (x + \frac {1}{3 !} x ^ {3} + \frac {5}{5 !} x ^ {5} + \frac {4 5}{7 !} x ^ {7} + \dots \Big). \end{array}
 $$
 
-## EXERCISES
+### Exercises 17.5
 
-## 17.5
 
 In Exercises 1–18, use power series to find the general solution of the differential equation. 
-
-9. $( x ^ { 2 } - 1 ) y ^ { \prime \prime } + 2 x y ^ { \prime } - 2 y = 0$ 
 
 1. $y ^ { \prime \prime } + 2 y ^ { \prime } = 0$ 
 
 2. $y ^ { \prime \prime } + 2 y ^ { \prime } + y = 0$ 
-
-10. $y ^ { \prime \prime } + y ^ { \prime } - x ^ { 2 } y = 0$ 
 
 3. $y ^ { \prime \prime } + 4 y = 0$ 
 
@@ -2003,9 +1968,13 @@ In Exercises 1–18, use power series to find the general solution of the differ
 
 7. $( 1 + x ) y ^ { \prime \prime } - y = 0$ 
 
-11. $( x ^ { 2 } - 1 ) y ^ { \prime \prime } - 6 y = 0$ 
-
 8. $( 1 - x ^ { 2 } ) y ^ { \prime \prime } - 4 x y ^ { \prime } + 6 y = 0$ 
+
+9. $( x ^ { 2 } - 1 ) y ^ { \prime \prime } + 2 x y ^ { \prime } - 2 y = 0$ 
+
+10. $y ^ { \prime \prime } + y ^ { \prime } - x ^ { 2 } y = 0$ 
+
+11. $( x ^ { 2 } - 1 ) y ^ { \prime \prime } - 6 y = 0$ 
 
 12. $x y ^ { \prime \prime } - ( x + 2 ) y ^ { \prime } + 2 y = 0$ 
 
@@ -2059,7 +2028,7 @@ SECTION 17.1, pp. 17-6–17-7
 
 57. $y = ( 1 + 2 x ) e ^ { - x }$ 59. $y = \frac { 1 5 } { 1 3 } e ^ { - 7 x / 3 } + \frac { 1 1 } { 1 3 } e ^ { 2 x }$ 
 
-## SECTION 17.2, pp. 17-14–17-15
+### SECTION 17.2, pp. 17-14–17-15
 
 1. $y = c _ { 1 } e ^ { 5 x } + c _ { 2 } e ^ { - 2 x } + { \frac { 3 } { 1 0 } }$ 
 
@@ -2123,7 +2092,7 @@ $$
 
 59. $y _ { \mathtt { p } } = { \frac { 1 } { 4 } } x ^ { 2 }$ 
 
-## SeCtion 17.3, pp. 17-20–17-21
+### SeCtion 17.3, pp. 17-20–17-21
 
 . <sup>1</sup><sub>2</sub> y″ + y′ + y = 0, y(0) = 0.6, y′(0) = 0.6 1 1 
 

@@ -11,7 +11,7 @@ order: 1
 
 Functions are a tool for describing the real world in mathematical terms. A function can be represented by an equation, a graph, a numerical table, or a verbal description; we will use all four representations throughout this text. This section reviews these ideas. 
 
-## Functions; Domain and Range
+### Functions; Domain and Range
 
 The temperature at which water boils depends on the elevation above sea level. The interest paid on a cash investment depends on the length of time the investment is held. The area of a circle depends on the radius of the circle. The distance an object travels depends on the elapsed time. 
 
@@ -31,14 +31,14 @@ The set D of all possible input values is called the domain of the function. The
 
 Often a function is given by a formula that describes how to calculate the output value from the input variable. For instance, the equation $A = \pi r^{2}$ is a rule that calculates the area A of a circle from its radius r. When we define a function f with a formula $y = f(x)$ and the domain is not stated explicitly or restricted by context, the domain is assumed to be the largest set of real x-values for which the formula gives real y-values. This is called the natural domain of f. If we want to restrict the domain in some way, we must say so. The domain of $y = x^{2}$ is the entire set of real numbers. To restrict the domain of the function to, say, positive values of x, we would write “ $y = x^{2}, x > 0$ .” 
 
-![[79cc012c5d3027d9139068ca3b81bd7637fad89857fc8823484bd74c0155de11.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/79cc012c5d3027d9139068ca3b81bd7637fad89857fc8823484bd74c0155de11.jpg)
 
 
 
 FIGURE 1.1 A diagram showing a function as a kind of machine.
 
 
-![[7a1ed77b4318fc7f2d78fa371655b8a3a1a1fc979bb867f87b9aafb98d650a9e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7a1ed77b4318fc7f2d78fa371655b8a3a1a1fc979bb867f87b9aafb98d650a9e.jpg)
 
 
 
@@ -69,10 +69,10 @@ In $y = \sqrt{4 - x}$ , the quantity $4 - x$ cannot be negative. That is, $4 - x
 
 The formula $y = \sqrt{1 - x^{2}}$ gives a real y-value for every x in the closed interval from -1 to 1. Outside this domain, $1 - x^{2}$ is negative and its square root is not a real number. The values of $1 - x^{2}$ vary from 0 to 1 on the given domain, and the square roots of these values do the same. The range of $\sqrt{1 - x^{2}}$ is [0,1]. 
 
-![[e372968bc16f042a279de598afea5c0cff93c1e42e1310e8c51ebf88fc8da50e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e372968bc16f042a279de598afea5c0cff93c1e42e1310e8c51ebf88fc8da50e.jpg)
 
 
-## Graphs of Functions
+### Graphs of Functions
 
 If f is a function with domain D, its graph consists of the points in the Cartesian plane whose coordinates are the input-output pairs for f. In set notation, the graph is 
 
@@ -84,17 +84,17 @@ The graph of the function $f(x) = x + 2$ is the set of points with coordinates $
 
 The graph of a function f is a useful picture of its behavior. If $(x, y)$ is a point on the graph, then $y = f(x)$ is the height of the graph above (or below) the point x. The height may be positive or negative, depending on the sign of $f(x)$ (Figure 1.4). 
 
-![[2bbd523e22dd48ab830f3b631d0cd8c2ab1ed71e428291945ebed5acd1ab7f91.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2bbd523e22dd48ab830f3b631d0cd8c2ab1ed71e428291945ebed5acd1ab7f91.jpg)
 
 
-![[6c5053b9f2e1d3cbdfad02c22b5c31e44fe0ff4f1314857d90a42351c1626356.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6c5053b9f2e1d3cbdfad02c22b5c31e44fe0ff4f1314857d90a42351c1626356.jpg)
 
 
 
 FIGURE 1.3 The graph of $f(x) = x + 2$ is the set of points $(x, y)$ for which y has the value $x + 2$ .
 
 
-![[19421553235eacac85e0fae711d49cb360a80a4c0e327cfa7f06ff8ee3cd2bc7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/19421553235eacac85e0fae711d49cb360a80a4c0e327cfa7f06ff8ee3cd2bc7.jpg)
 
 
 
@@ -105,7 +105,7 @@ FIGURE 1.4 If $(x, y)$ lies on the graph of f, then the value $y = f(x)$ is the 
 
 **Solution** Make a table of xy-pairs that satisfy the equation $y = x^{2}$ . Plot the points $(x, y)$ whose coordinates appear in the table, and draw a smooth curve (labeled with its equation) through the plotted points (see Figure 1.5). 
 
-![[832189abf25992f1a102722ffc96739bd59a5f273c9c194b028ee671f0d82fcf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/832189abf25992f1a102722ffc96739bd59a5f273c9c194b028ee671f0d82fcf.jpg)
 
 
 
@@ -118,40 +118,40 @@ To find out, we could plot more points. But how would we then connect them? The 
 
 <table><tr><td>Time</td><td>Pressure</td></tr><tr><td>0.00091</td><td>-0.080</td></tr><tr><td>0.00108</td><td>0.200</td></tr><tr><td>0.00125</td><td>0.480</td></tr><tr><td>0.00144</td><td>0.693</td></tr><tr><td>0.00162</td><td>0.816</td></tr><tr><td>0.00180</td><td>0.844</td></tr><tr><td>0.00198</td><td>0.771</td></tr><tr><td>0.00216</td><td>0.603</td></tr><tr><td>0.00234</td><td>0.368</td></tr><tr><td>0.00253</td><td>0.099</td></tr><tr><td>0.00271</td><td>-0.141</td></tr><tr><td>0.00289</td><td>-0.309</td></tr><tr><td>0.00307</td><td>-0.348</td></tr><tr><td>0.00325</td><td>-0.248</td></tr><tr><td>0.00344</td><td>-0.041</td></tr><tr><td>0.00362</td><td>0.217</td></tr><tr><td>0.00379</td><td>0.480</td></tr><tr><td>0.00398</td><td>0.681</td></tr><tr><td>0.00416</td><td>0.810</td></tr><tr><td>0.00435</td><td>0.827</td></tr><tr><td>0.00453</td><td>0.749</td></tr><tr><td>0.00471</td><td>0.581</td></tr><tr><td>0.00489</td><td>0.346</td></tr><tr><td>0.00507</td><td>0.077</td></tr><tr><td>0.00525</td><td>-0.164</td></tr><tr><td>0.00543</td><td>-0.320</td></tr><tr><td>0.00562</td><td>-0.354</td></tr><tr><td>0.00579</td><td>-0.248</td></tr><tr><td>0.00598</td><td>-0.035</td></tr></table>
 
-## Representing a Function Numerically
+### Representing a Function Numerically
 
 A function may be represented algebraically by a formula and visually by a graph (Example 2). Another way to represent a function is numerically, through a table of values. From an appropriate table of values, a graph of the function can be obtained using the method illustrated in Example 2, possibly with the aid of a computer. The graph consisting of only the points in the table is called a scatterplot. 
 
 **EXAMPLE 3** Musical notes are pressure waves in the air. The data associated with Figure 1.6 give recorded pressure displacement versus time in seconds of a musical note produced by a tuning fork. The table provides a representation of the pressure function (in micropascals) over time. If we first make a scatterplot and then draw a smooth curve that approximates the data points $(t, p)$ from the table, we obtain the graph shown in the figure. 
 
-![[1a2cb6e2455c2db0104585e53cc94cc3c2d69eaebcc25e2da20c6d4caebbbe77.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1a2cb6e2455c2db0104585e53cc94cc3c2d69eaebcc25e2da20c6d4caebbbe77.jpg)
 
 
 
 FIGURE 1.6 A smooth curve approximating the plotted points gives a graph of the pressure function represented by the accompanying tabled data (Example 3).
 
 
-## The Vertical Line Test for a Function
+### The Vertical Line Test for a Function
 
 Not every curve in the coordinate plane can be the graph of a function. A function f can have only one value $f(x)$ for each x in its domain, so no vertical line can intersect the graph of a function at more than one point. If a is in the domain of the function f, then the vertical line x = a will intersect the graph of f at the single point $(a, f(a))$ . 
 
 A circle cannot be the graph of a function, since some vertical lines intersect the circle twice. The circle graphed in Figure 1.7a, however, contains the graphs of two functions of x, namely the upper semicircle defined by the function $f(x) = \sqrt{1 - x^{2}}$ and the lower semicircle defined by the function $g(x) = -\sqrt{1 - x^{2}}$ (Figures 1.7b and 1.7c). 
 
-![[b2a268982e8d277c4db957d8b5484d59c2897fc569783ae4fc4f5f5e267b98cb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b2a268982e8d277c4db957d8b5484d59c2897fc569783ae4fc4f5f5e267b98cb.jpg)
 
 
 
 (a) $x^{2} + y^{2} = 1$
 
 
-![[a1d093025a7a50f4d9379a107ba26879f8a345decd8372135949a7e0332e99cd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a1d093025a7a50f4d9379a107ba26879f8a345decd8372135949a7e0332e99cd.jpg)
 
 
 
 (b) $y = \sqrt{1 - x^{2}}$
 
 
-![[b9231c7f8d2502f57a314efcb3bb47c33fb0d119e7837544a0c46c3b4987889f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b9231c7f8d2502f57a314efcb3bb47c33fb0d119e7837544a0c46c3b4987889f.jpg)
 
 
 
@@ -162,35 +162,35 @@ A circle cannot be the graph of a function, since some vertical lines intersect 
 FIGURE 1.7 (a) The circle is not the graph of a function; it fails the vertical line test. (b) The upper semicircle is the graph of the function $f(x) = \sqrt{1 - x^{2}}$ . (c) The lower semicircle is the graph of the function $g(x) = -\sqrt{1 - x^{2}}$ .
 
 
-![[0393456d71004aec9d6eada3ebb0d16ac22112bf9ba23f17ddd9164b39073815.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0393456d71004aec9d6eada3ebb0d16ac22112bf9ba23f17ddd9164b39073815.jpg)
 
 
 
 FIGURE 1.8 The absolute value function has domain $(-\infty, \infty)$ and range $[0, \infty)$ .
 
 
-![[8a2ed399221359a0cc2c2f862515902b2d2e1be0c969d3ca88a2f5ecd9300eb3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8a2ed399221359a0cc2c2f862515902b2d2e1be0c969d3ca88a2f5ecd9300eb3.jpg)
 
 
 
 FIGURE 1.9 To graph the function $y = f(x)$ shown here, we apply different formulas to different parts of its domain (Example 4).
 
 
-![[9d50c881c248f5748a50a6a8b34dd4719fe2b8b495ec84d733a2ffad867eea22.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9d50c881c248f5748a50a6a8b34dd4719fe2b8b495ec84d733a2ffad867eea22.jpg)
 
 
 
 FIGURE 1.10 The graph of the greatest integer function $y = \lfloor x \rfloor$ lies on or below the line y = x, so it provides an integer floor for x (Example 5).
 
 
-![[25b3ae678b8143583cd7c120481351734d829c727248312b09baf32ae3b970c1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/25b3ae678b8143583cd7c120481351734d829c727248312b09baf32ae3b970c1.jpg)
 
 
 
 FIGURE 1.11 The graph of the least integer function $y = \lceil x \rceil$ lies on or above the line y = x, so it provides an integer ceiling for x (Example 6).
 
 
-## Piecewise-Defined Functions
+### Piecewise-Defined Functions
 
 Sometimes a function is described in pieces by using different formulas on different parts of its domain. One example is the absolute value function 
 
@@ -216,7 +216,7 @@ $$
 
 **EXAMPLE 6** The function whose value at any number x is the smallest integer greater than or equal to x is called the least integer function or the integer ceiling function. It is denoted [x]. Figure 1.11 shows the graph. For positive values of x, this function might represent, for example, the cost of parking x hours in a parking lot that charges $1 for each hour or part of an hour. 
 
-## Increasing and Decreasing Functions
+### Increasing and Decreasing Functions
 
 If the graph of a function climbs or rises as you move from left to right, we say that the function is increasing. If the graph descends or falls as you move from left to right, the function is decreasing. 
 
@@ -228,14 +228,14 @@ If the graph of a function climbs or rises as you move from left to right, we sa
 >
 It is important to realize that the definitions of increasing and decreasing functions must be satisfied for every pair of points $x_{1}$ and $x_{2}$ in I with $x_{1} < x_{2}$ . Because we use the inequality < to compare the function values, instead of $\leq$ , it is sometimes said that f is strictly increasing or decreasing on I. The interval I may be finite (also called bounded) or infinite (unbounded). 
 
-![[2e0c5903f76a287d7b3963b9b3e3307ce53e3a45789204219ba500988246ce52.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2e0c5903f76a287d7b3963b9b3e3307ce53e3a45789204219ba500988246ce52.jpg)
 
 
 
 (a)
 
 
-![[126565d007654b2a88e01667b33a70eae075183313c6933cb9eb853879555c79.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/126565d007654b2a88e01667b33a70eae075183313c6933cb9eb853879555c79.jpg)
 
 
 
@@ -247,7 +247,7 @@ FIGURE 1.12 (a) The graph of $y = x^{2}$ (an even function) is symmetric about t
 **EXAMPLE 7** The function graphed in Figure 1.9 is decreasing on $(-\infty, 0)$ and increasing on $(0, 1)$ . The function is neither increasing nor decreasing on the interval $(1, \infty)$ because the function is constant on that interval, and hence the strict inequalities in the definition of increasing or decreasing are not satisfied on $(1, \infty)$ .
 
 
-## Even Functions and Odd Functions: Symmetry
+### Even Functions and Odd Functions: Symmetry
 
 The graphs of even and odd functions have special symmetry properties. 
 
@@ -275,14 +275,14 @@ $$
 
 Even function: $(-x)^{2} + 1 = x^{2} + 1$ for all x; symmetry about y-axis (Figure 1.13a). 
 
-![[4b44233bc990eb9d470b703816074481db1547fc3c6f27554e148ab6a42aa5ee.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4b44233bc990eb9d470b703816074481db1547fc3c6f27554e148ab6a42aa5ee.jpg)
 
 
 
 (a)
 
 
-![[7992fd217b7a3c3e00aa0f1dfed86390e29a9c975d180528c0bc4374624e8d7c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7992fd217b7a3c3e00aa0f1dfed86390e29a9c975d180528c0bc4374624e8d7c.jpg)
 
 
 
@@ -297,16 +297,16 @@ $f(x) = x$ Odd function: $(-x) = -x$ for all $x$ ; symmetry about the origin. So
 
 $f(x) = x + 1$ Not odd: $f(-x) = -x + 1$ , but $-f(x) = -x - 1$ . The two are not equal. 
 
-## Common Functions
+### Common Functions
 
 A variety of important types of functions are frequently encountered in calculus. 
 
 Linear Functions A function of the form $f(x) = mx + b$ , where m and b are fixed constants, is called a linear function. Figure 1.14a shows an array of lines $f(x) = mx$ . Each of these has b = 0, so these lines pass through the origin. The function $f(x) = x$ , where m = 1 and b = 0, is called the identity function. Constant functions result when the slope is m = 0 (Figure 1.14b). 
 
-![[55b2e00fe18ce9b487b7fe333401f08b685e28197c9103ea4b546922c08152a7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/55b2e00fe18ce9b487b7fe333401f08b685e28197c9103ea4b546922c08152a7.jpg)
 
 
-![[7b5070f4b759d4408c3a85ff01b0e981f1129bd336b225077b54ee20d3cf0f48.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7b5070f4b759d4408c3a85ff01b0e981f1129bd336b225077b54ee20d3cf0f48.jpg)
 
 
 
@@ -327,7 +327,7 @@ Power Functions A function $f(x) = x^{a}$ , where a is a constant, is called a p
 
 The graphs of $f(x) = x^{n}$ , for n = 1, 2, 3, 4, 5, are displayed in Figure 1.15. These functions are defined for all real values of x. Notice that as the power n gets larger, the curves tend to flatten toward the x-axis on the interval $(-1, 1)$ and to rise more steeply for $|x| > 1$ . Each curve passes through the point $(1, 1)$ and through the origin. The graphs of functions with even powers are symmetric about the y-axis; those with odd powers are symmetric about the origin. The even-powered functions are decreasing on the interval $(-\infty, 0]$ and increasing on $[0, \infty)$ ; the odd-powered functions are increasing over the entire real line $(-\infty, \infty)$ . 
 
-![[850174f81246ed25a5551d55e96e8bb22b29a42ff0394654b24d1a3b19ae819f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/850174f81246ed25a5551d55e96e8bb22b29a42ff0394654b24d1a3b19ae819f.jpg)
 
 
 
@@ -340,7 +340,7 @@ $$
 
 The graphs of the functions $f(x) = x^{-1} = 1/x$ and $f(x) = x^{-2} = 1/x^{2}$ are shown in Figure 1.16. Both functions are defined for all $x \neq 0$ (you can never divide by zero). The graph of y = 1/x is the hyperbola xy = 1, which approaches the coordinate axes far from the origin. The graph of $y = 1/x^{2}$ also approaches the coordinate axes. The graph of the function $f(x) = 1/x$ is symmetric about the origin; this function is decreasing on the intervals $(-\infty, 0)$ and $(0, \infty)$ . The graph of the function $f(x) = 1/x^{2}$ is symmetric about the y-axis; this function is increasing on $(-\infty, 0)$ and decreasing on $(0, \infty)$ . 
 
-![[3eee5a80beaa109471ad059ecaa3fcb5cc046157c5ede6de61e3f8e101dcf686.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3eee5a80beaa109471ad059ecaa3fcb5cc046157c5ede6de61e3f8e101dcf686.jpg)
 
 
 
@@ -353,7 +353,7 @@ $$
 
 The functions $f(x) = x^{1/2} = \sqrt{x}$ and $f(x) = x^{1/3} = \sqrt[3]{x}$ are the square root and cube root functions, respectively. The domain of the square root function is $[0, \infty)$ , but the cube root function is defined for all real x. Their graphs are displayed in Figure 1.17, along with the graphs of $y = x^{3/2}$ and $y = x^{2/3}$ . (Recall that $x^{3/2} = (x^{1/2})^3$ and $x^{2/3} = (x^{1/3})^2$ .) 
 
-![[f37000703b69bc44a2547b72eeaf08b42eefa38877dccda01da024a9aa07908b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f37000703b69bc44a2547b72eeaf08b42eefa38877dccda01da024a9aa07908b.jpg)
 
 
 
@@ -370,22 +370,22 @@ $$
 
 where n is a nonnegative integer and the numbers $a_{0}, a_{1}, a_{2}, \ldots, a_{n}$ are real constants (called the coefficients of the polynomial). All polynomials have domain $(-\infty, \infty)$ . If the leading coefficient $a_{n} \neq 0$ , then n is called the degree of the polynomial. Linear functions with $m \neq 0$ are polynomials of degree 1. Polynomials of degree 2, usually written as $p(x) = ax^{2} + bx + c$ , are called quadratic functions. Likewise, cubic functions are polynomials $p(x) = ax^{3} + bx^{2} + cx + d$ of degree 3. Figure 1.18 shows the graphs of three polynomials. Techniques to graph polynomials are studied in Chapter 4. 
 
-![[1dd6fab636d7cb4e169d2077802cfd89e8b6869f3ceab95f8d784c45b4d2df08.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1dd6fab636d7cb4e169d2077802cfd89e8b6869f3ceab95f8d784c45b4d2df08.jpg)
 
 
 
 FIGURE 1.18 Graphs of three polynomial functions.
 
 
-![[84afbbc2feb1994a621944b172959185287dd2eaa3d5269d09c2c22adb35b579.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/84afbbc2feb1994a621944b172959185287dd2eaa3d5269d09c2c22adb35b579.jpg)
 
 
-![[7ccd83448e98ca23362ad6066d84b50c6680b3aaf5fb3a671f9f8815dc5d230c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7ccd83448e98ca23362ad6066d84b50c6680b3aaf5fb3a671f9f8815dc5d230c.jpg)
 
 
 Rational Functions A rational function is a quotient or ratio $f(x) = p(x)/q(x)$ , where p and q are polynomials. The domain of a rational function is the set of all real x for which $q(x) \neq 0$ . The graphs of three rational functions are shown in Figure 1.19. 
 
-![[39f688836c0d056b1d0fdbf835efce0bfc2b44794e72f4ea0a64440d0b1db22b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/39f688836c0d056b1d0fdbf835efce0bfc2b44794e72f4ea0a64440d0b1db22b.jpg)
 
 
 
@@ -398,22 +398,22 @@ Algebraic Functions Any function constructed from polynomials using algebraic op
 (b)
 
 
-![[ab4968848ce92c55970132ce88e46834e614439e127976421f94928d31ecea32.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ab4968848ce92c55970132ce88e46834e614439e127976421f94928d31ecea32.jpg)
 
 
-![[1f2267d148caf4cee75f06ba83ba1966b85ffe0f11c530e8676efdef4a0ef8c6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1f2267d148caf4cee75f06ba83ba1966b85ffe0f11c530e8676efdef4a0ef8c6.jpg)
 
 
 
 FIGURE 1.20 Graphs of three algebraic functions.
 
 
-![[e644022c0b6c51062b7e35f38c9539d94b699ac2444b1cd8dc2fda833da5fdc8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e644022c0b6c51062b7e35f38c9539d94b699ac2444b1cd8dc2fda833da5fdc8.jpg)
 
 
 Trigonometric Functions The six basic trigonometric functions are reviewed in Section 1.3. The graphs of the sine and cosine functions are shown in Figure 1.21. 
 
-![[5b585faea1f9c88c20764d385646823b10c4e9b003629f0f62ddf5b0a8fb1d7c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5b585faea1f9c88c20764d385646823b10c4e9b003629f0f62ddf5b0a8fb1d7c.jpg)
 
 
 
@@ -422,26 +422,26 @@ FIGURE 1.21 Graphs of the sine and cosine functions.
 
 Exponential Functions A function of the form $f(x) = a^{x}$ , where a > 0 and $a \neq 1$ , is called an exponential function (with base a). All exponential functions have domain $(-\infty, \infty)$ and range $(0, \infty)$ , so an exponential function never assumes the value 0. We discuss exponential functions in Section 1.4. The graphs of some exponential functions are shown in Figure 1.22. 
 
-![[037c8abd178cae6ed877c3b4be80934be7146c7d0f345cbd76edd0ffb865c057.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/037c8abd178cae6ed877c3b4be80934be7146c7d0f345cbd76edd0ffb865c057.jpg)
 
 
 
 FIGURE 1.22 Graphs of exponential functions.
 
 
-![[209e3059a9cd99a7778f2c6ae3dfa93bd759dfb3912f63a3f0d3755b7aaa65c1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/209e3059a9cd99a7778f2c6ae3dfa93bd759dfb3912f63a3f0d3755b7aaa65c1.jpg)
 
 
 Logarithmic Functions These are the functions $f(x) = \log_{a} x$ , where the base $a \neq 1$ is a positive constant. They are the inverse functions of the exponential functions, and we discuss these functions in Section 1.5. Figure 1.23 shows the graphs of four logarithmic functions with various bases. In each case the domain is $(0, \infty)$ and the range is $(-\infty, \infty)$ . 
 
-![[01a71c24c9f6956b55a1cd5360184047d9ed9246f3397a913efb88fa1a08d861.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/01a71c24c9f6956b55a1cd5360184047d9ed9246f3397a913efb88fa1a08d861.jpg)
 
 
 
 FIGURE 1.23 Graphs of four logarithmic functions.
 
 
-![[4ecd49ce3be64f3e2eedc221658a9f000fab42d274814377835437eea90b8934.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4ecd49ce3be64f3e2eedc221658a9f000fab42d274814377835437eea90b8934.jpg)
 
 
 
@@ -450,21 +450,18 @@ FIGURE 1.24 Graph of a catenary or hanging cable. (The Latin word catena means �
 
 Transcendental Functions These are functions that are not algebraic. They include the trigonometric, inverse trigonometric, exponential, and logarithmic functions, and many other functions as well. The catenary is one example of a transcendental function. Its graph has the shape of a cable, like a telephone line or electric cable, strung from one support to another and hanging freely under its own weight (Figure 1.24). The function defining the graph is discussed in Section 7.3. 
 
-## EXERCISES
+### Exercises 1.1
 
-## 1.1
 
-## Functions
+#### Functions
 
 In Exercises 1–6, find the domain and range of each function. 
 
 1. $f(x) = 1 + x^{2}$ 
 
-3. $F(x) = \sqrt{5x + 10}$ 
+2. $f (x) = 1 - \sqrt {x}$
 
-$$
-2. f (x) = 1 - \sqrt {x}
-$$
+3. $F(x) = \sqrt{5x + 10}$ 
 
 4. $g(x) = \sqrt{x^{2} - 3x}$ 
 
@@ -478,24 +475,24 @@ In Exercises 7 and 8, which of the graphs are graphs of functions of $x$ , and w
 7. a.
 
 
-![[af41d16d5da49538fe3dfbd19c2597a81fb2d2b2cb533d8ab5a1b537c79324c8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/af41d16d5da49538fe3dfbd19c2597a81fb2d2b2cb533d8ab5a1b537c79324c8.jpg)
 
 
 
 b.
 
 
-![[b69c72756c9488cd2f64f1ef2b5d78cdc9433bedb12130d71eb959f3a035befe.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b69c72756c9488cd2f64f1ef2b5d78cdc9433bedb12130d71eb959f3a035befe.jpg)
 
 
 
 8. a.
 
 
-![[7e1f9a215d5ac358fee19d9b690fa670511e0aeda60ebc00e38f615cc818fb56.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7e1f9a215d5ac358fee19d9b690fa670511e0aeda60ebc00e38f615cc818fb56.jpg)
 
 
-![[40c02fa1f2a9d0c55b330a66d8fc326101925af35042994870f94b8291efd2d0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/40c02fa1f2a9d0c55b330a66d8fc326101925af35042994870f94b8291efd2d0.jpg)
 
 
 Finding Formulas for Functions 
@@ -512,7 +509,7 @@ Finding Formulas for Functions
 
 14. Consider the point $(x, y)$ lying on the graph of $y = \sqrt{x - 3}$ . Let L be the distance between the points $(x, y)$ and $(4, 0)$ . Write L as a function of y. 
 
-## Functions and Graphs
+#### Functions and Graphs
 
 Find the natural domain and graph the functions in Exercises 15-20. 
 
@@ -560,12 +557,12 @@ Find a formula for each function graphed in Exercises 29-32.
 
 29. a. 
 
-![[5cecabcfda62a2b49ecf989d534f230a439a9c13454025768483c7e9fc002e58.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5cecabcfda62a2b49ecf989d534f230a439a9c13454025768483c7e9fc002e58.jpg)
 
 
 b. 
 
-![[b984ce38f90e30a9ca4e5bbfe0bb7a06a6d56241118fc2136e040a1bc881eecc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b984ce38f90e30a9ca4e5bbfe0bb7a06a6d56241118fc2136e040a1bc881eecc.jpg)
 
 
 30. a. 
@@ -574,22 +571,22 @@ b.
 b.
 
 
-![[a473bc8f6d95530f8c33c230b19fa68ee9a79bfa26ed799ed1126d6668a7da8a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a473bc8f6d95530f8c33c230b19fa68ee9a79bfa26ed799ed1126d6668a7da8a.jpg)
 
 
-![[0a279da271aec684d30441ff507b8367aba4da0119333b8cdb7fc1c18c50304f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0a279da271aec684d30441ff507b8367aba4da0119333b8cdb7fc1c18c50304f.jpg)
 
 
 31. a. 
 
-![[25af1138985c41ae50e709bb36a2a5114e2679771e6249182652acc42444a016.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/25af1138985c41ae50e709bb36a2a5114e2679771e6249182652acc42444a016.jpg)
 
 
 
 b.
 
 
-![[50a38d13f1b290bed46c84f1a4e5452ba0349677d74fc0f499f8e71709d1a28f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/50a38d13f1b290bed46c84f1a4e5452ba0349677d74fc0f499f8e71709d1a28f.jpg)
 
 
 32. a. 
@@ -598,10 +595,10 @@ b.
 b.
 
 
-![[8548d181b436612c6db74990ddcaaa5f396c5160a9449d4abd5363a435f2d9fb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8548d181b436612c6db74990ddcaaa5f396c5160a9449d4abd5363a435f2d9fb.jpg)
 
 
-![[555b35f672481047d99715c1f6aecbf65bd93177b48c7d489840c46da4a95c71.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/555b35f672481047d99715c1f6aecbf65bd93177b48c7d489840c46da4a95c71.jpg)
 
 
 The Greatest and Least Integer Functions 
@@ -630,13 +627,9 @@ Graph the functions in Exercises 37–46. What symmetries, if any, do the graphs
 
 37. $y = -x^{3}$ 
 
-$$
-3 8. y = - \frac {1}{x ^ {2}}
-$$
+38. $y = - \frac {1}{x ^ {2}}$
 
-$$
-y = - \frac {1}{x}
-$$
+39. $y = - \frac {1}{x}$
 
 40. $y = \frac{1}{|x|}$ 
 
@@ -658,37 +651,37 @@ In Exercises 47–62, say whether the function is even, odd, or neither. Give re
 
 47. $f(x) = 3$ 
 
-49. $f(x) = x^{2} + 1$ 
-
 48. $f(x) = x^{-5}$ 
 
-51. $g(x) = x^{3} + x$ 
+49. $f(x) = x^{2} + 1$ 
 
 50. $f(x) = x^{2} + x$ 
 
-53. $g(x) = \frac{1}{x^2 - 1}$ 
-
-55. $h(t) = \frac{1}{t - 1}$ 
-
-57. $h(t) = 2t + 1$ 
+51. $g(x) = x^{3} + x$ 
 
 52. $g(x) = x^{4} + 3x^{2} - 1$ 
 
-59. sin 2x 
-
-61. cos 3x 
+53. $g(x) = \frac{1}{x^2 - 1}$ 
 
 54. $g(x) = \frac{x}{x^2 - 1}$ 
 
+55. $h(t) = \frac{1}{t - 1}$ 
+
 56. $h(t) = |t^3|$ 
+
+57. $h(t) = 2t + 1$ 
 
 58. $h(t) = 2|t| + 1$ 
 
+59. sin 2x 
+
 60. $\sin x^{2}$ 
+
+61. cos 3x 
 
 62. $1 + \cos x$ 
 
-## Theory and Examples
+#### Theory and Examples
 
 63. The variable s is proportional to t, and s = 25 when t = 75.
 Determine t when s = 60. 
@@ -701,7 +694,7 @@ Determine t when s = 60.
 
 67. A box with an open top is to be constructed from a rectangular piece of cardboard with dimensions 14 cm by 22 cm by cutting out equal squares of side x at each corner and then folding up the sides as in the figure. Express the volume V of the box as a function of x. 
 
-![[b77c2c14ff591e62235955d321021e83e2e00ea58e000733e53be29c49277473.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b77c2c14ff591e62235955d321021e83e2e00ea58e000733e53be29c49277473.jpg)
 
 
 68. The accompanying figure shows a rectangle inscribed in an isosceles right triangle whose hypotenuse is 2 units long. 
@@ -710,7 +703,7 @@ a. Express the y-coordinate of P in terms of x. (You might start by writing an e
 
 b. Express the area of the rectangle in terms of x. 
 
-![[a8aca99b44bb38575faea53555d0469f297b0b221ee75b636a8103cad6985d3f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a8aca99b44bb38575faea53555d0469f297b0b221ee75b636a8103cad6985d3f.jpg)
 
 
 In Exercises 69 and 70, match each equation with its graph. Do not use a graphing device, and give reasons for your answer. 
@@ -727,14 +720,14 @@ $$
 y = x ^ {1 0}
 $$
 
-![[c61bcc56780edc01ea83eab63523ca210ff1c39b0e3e98cc5623137ec23553b9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c61bcc56780edc01ea83eab63523ca210ff1c39b0e3e98cc5623137ec23553b9.jpg)
 
 
 $$
 y = 5 x
 $$
 
-![[51db2cf7715d4e85146b4127d679c8acf0f9d87841523e24af33281ab8c6c7d4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/51db2cf7715d4e85146b4127d679c8acf0f9d87841523e24af33281ab8c6c7d4.jpg)
 
 
 T 71. a. Graph the functions $f(x) = x / 2$ and $g(x) = 1 + (4 / x)$ together to identify the values of $x$ for which 
@@ -761,7 +754,7 @@ b. Confirm your findings in part (a) algebraically.
 
 76. Industrial costs A power plant sits next to a river where the river is 250 m wide. To lay a new cable from the plant to a location in the city 2 km downstream on the opposite side costs $180 per meter across the river and $100 per meter along the land. 
 
-![[a78cf1def86998237352d61968093979ad42b30980cf80d3b2d1634e7298aaa9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a78cf1def86998237352d61968093979ad42b30980cf80d3b2d1634e7298aaa9.jpg)
 
 
 
@@ -776,7 +769,7 @@ b. Generate a table of values to determine if the least expensive location for p
 
 In this section we look at the main ways functions are combined or transformed to form new functions. 
 
-## Sums, Differences, Products, and Quotients
+### Sums, Differences, Products, and Quotients
 
 Like numbers, functions can be added, subtracted, multiplied, and divided (except where the denominator is zero) to produce new functions. If f and g are functions, then for every x that belongs to the domains of both f and g (that is, for $x \in D(f) \cap D(g)$ ), we define functions $f + g$ , f - g, and fg by the formulas 
 
@@ -816,10 +809,10 @@ The following table summarizes the formulas and domains for the various algebrai
 
 The graph of the function $f + g$ is obtained from the graphs of f and g by adding the corresponding y-coordinates $f(x)$ and $g(x)$ at each point $x \in D(f) \cap D(g)$ , as in Figure 1.25. The graphs of $f + g$ and $f \cdot g$ from Example 1 are shown in Figure 1.26. 
 
-![[5452dea5f166340b5145b254ab6590e3a36d8bf2ebe12fa8b1c3b0d082b7f788.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5452dea5f166340b5145b254ab6590e3a36d8bf2ebe12fa8b1c3b0d082b7f788.jpg)
 
 
-![[016dd77ec271790341ff9b29711190bd64689c91521e7c4ba697b9495fd9821f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/016dd77ec271790341ff9b29711190bd64689c91521e7c4ba697b9495fd9821f.jpg)
 
 
 
@@ -830,7 +823,7 @@ FIGURE 1.25 Graphical addition of two functions.
 FIGURE 1.26 The domain of the function $f + g$ is the intersection of the domains of f and g, the interval [0, 1] on the x-axis where these domains overlap. This interval is also the domain of the function $f \cdot g$ (Example 1).
 
 
-## Composing Functions
+### Composing Functions
 
 Composition is another method for combining functions. In this operation the output from one function becomes the input to a second function. 
 
@@ -844,10 +837,10 @@ Composition is another method for combining functions. In this operation the out
 >
 To find $(f \circ g)(x)$ , first find $g(x)$ and second find $f(g(x))$ . Figure 1.27 pictures $f \circ g$ as a machine diagram, and Figure 1.28 shows the composition as an arrow diagram. 
 
-![[0004b7bba149e01cc6afd4e96517484349d82d3cfd73a3fc78b1ac0ae84ec8eb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0004b7bba149e01cc6afd4e96517484349d82d3cfd73a3fc78b1ac0ae84ec8eb.jpg)
 
 
-![[e22a1852eab93c5fb465f2cb27c3987512c2f8a3f62e6c23a339e7a3d3ee4ccc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e22a1852eab93c5fb465f2cb27c3987512c2f8a3f62e6c23a339e7a3d3ee4ccc.jpg)
 
 
 
@@ -868,16 +861,16 @@ The functions $f \circ g$ and $g \circ f$ are usually quite different.
 FIGURE 1.29 To shift the graph of $f(x) = x^2$ up (or down), we add positive (or negative) constants to the formula for $f$ (Examples 3a and b).
 
 
-![[bb93c4f7ad61fc916f63862854d69f7186a7cfb2a6d07856ce6db4994bff2bb7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bb93c4f7ad61fc916f63862854d69f7186a7cfb2a6d07856ce6db4994bff2bb7.jpg)
 
 
 (a) $(f\circ g)(x)$ (b) $(g\circ f)(x)$ (c) $(f\circ f)(x)$ (d) $(g\circ g)(x)$ . 
 
-## **Solution**
+**Solution**
 
-## Composition
+### Composition
 
-## Domain
+### Domain
 
 $$
 (\mathbf {a}) (f \circ g) (x) = f (g (x)) = \sqrt {g (x)} = \sqrt {x + 1}
@@ -915,25 +908,25 @@ To see why the domain of $f \circ g$ is $[-1, \infty)$ , notice that $g(x) = x +
 
 Notice that if $f(x) = x^{2}$ and $g(x) = \sqrt{x}$ , then $(f \circ g)(x) = (\sqrt{x})^{2} = x$ . However, the domain of $f \circ g$ is $[0, \infty)$ , not $(-\infty, \infty)$ , since $\sqrt{x}$ requires $x \geq 0$ . 
 
-## Shifting a Graph of a Function
+### Shifting a Graph of a Function
 
 A common way to obtain a new function from an existing one is by adding a constant to each output of the existing function, or to its input variable. The graph of the new function is the graph of the original function shifted vertically or horizontally, as follows. 
 
-## Shift Formulas
+### Shift Formulas
 
-## Vertical Shifts
+### Vertical Shifts
 
 $y = f(x) + k$ Shifts the graph of $f$ up $k$ units if $k > 0$ 
 
 Shifts it down $|k|$ units if $k < 0$ 
 
-## Horizontal Shifts
+### Horizontal Shifts
 
 $y = f(x + h)$ Shifts the graph of $f$ left $h$ units if $h > 0$ 
 
 Shifts it right |h| units if h < 0 
 
-## **EXAMPLE 3**
+**EXAMPLE 3**
 
 (a) Adding 1 to the right-hand side of the formula $y = x^2$ to get $y = x^2 + 1$ shifts the graph up 1 unit (Figure 1.29). 
 
@@ -943,14 +936,14 @@ Shifts it right |h| units if h < 0
 
 (d) Adding $-2$ to $x$ in $y = |x|$ , and then adding $-1$ to the result, gives $y = |x - 2| - 1$ and shifts the graph 2 units to the right and 1 unit down (Figure 1.31). 
 
-## Scaling and Reflecting a Graph of a Function
+### Scaling and Reflecting a Graph of a Function
 
 To scale the graph of a function $y = f(x)$ is to stretch or compress it, vertically or horizontally. This is accomplished by multiplying the function f, or the independent variable x, by an appropriate constant c. Reflections across the coordinate axes are special cases where c = -1. 
 
-![[de5e22c07183458ecd740c2f35858eca2356fedf7c0e768edd131c8d03528176.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/de5e22c07183458ecd740c2f35858eca2356fedf7c0e768edd131c8d03528176.jpg)
 
 
-![[cd9c99bc02eec6b8b9a796d232c7f940389fb064578eb0338a9c37e8d8629539.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cd9c99bc02eec6b8b9a796d232c7f940389fb064578eb0338a9c37e8d8629539.jpg)
 
 
 
@@ -973,21 +966,21 @@ For c = -1, the graph is reflected: $y = -f(x)$ Reflects the graph of f across t
 
 (c) Reflection: The graph of $y = -(\sqrt{x} + 1)$ is a reflection of $y = \sqrt{x} + 1$ across the $x$ -axis, and $y = \sqrt{-x} + 1$ is a reflection across the $y$ -axis (Figure 1.34). 
 
-![[256e2cc61608d84986b1d03d7563d09ba28133d1341c97b02a4c4d24e00d8468.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/256e2cc61608d84986b1d03d7563d09ba28133d1341c97b02a4c4d24e00d8468.jpg)
 
 
 
 FIGURE 1.32 Vertically stretching and compressing the graph of $y = \sqrt{x} + 1$ by a factor of 3 (Example 4a).
 
 
-![[1db9d59dae7326609508bad93c6b03c6c9a242b4df41bc0fbcf3e1e225a6bbf5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1db9d59dae7326609508bad93c6b03c6c9a242b4df41bc0fbcf3e1e225a6bbf5.jpg)
 
 
 
 FIGURE 1.33 Horizontally stretching and compressing the graph of $y = \sqrt{x} + 1$ by a factor of 3 (Example 4b).
 
 
-![[94f755c921954001bcca4fef0c38a8c94decfbd0f54d10bf5ea43aaf30ef5f9d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/94f755c921954001bcca4fef0c38a8c94decfbd0f54d10bf5ea43aaf30ef5f9d.jpg)
 
 
 
@@ -1000,7 +993,7 @@ FIGURE 1.34 Reflections of the graph of $y = \sqrt{x} + 1$ across the coordinate
 
 (b) vertical compression by a factor of 2 followed by reflection across the x-axis (Figure 1.35c). 
 
-![[6c8a03752b348dcb7d5576c0d41668b21213a0b2dbbda1274c59ce958d08426d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6c8a03752b348dcb7d5576c0d41668b21213a0b2dbbda1274c59ce958d08426d.jpg)
 
 
 
@@ -1021,9 +1014,9 @@ $$
 y = - \frac {1}{2} f (x) = - \frac {1}{2} x ^ {4} + 2 x ^ {3} - 5.
 $$
 
-## EXERCISES
+### EXERCISES
 
-## Algebraic Combinations
+#### Algebraic Combinations
 
 In Exercises 1 and 2, find the domains of $f, g, f + g$ , and $f \cdot g$ . 
 
@@ -1033,9 +1026,9 @@ In Exercises 1 and 2, find the domains of $f, g, f + g$ , and $f \cdot g$ .
 
 In Exercises 3 and 4, find the domains of $f, g, f / g$ , and $g / f$ . 
 
-4. $f(x) = 1,\quad g(x) = 1 + \sqrt{x}$ 
-
 3. $f(x) = 2,\quad g(x) = x^{2} + 1$ 
+
+4. $f(x) = 1,\quad g(x) = 1 + \sqrt{x}$ 
 
 Compositions of Functions 
 
@@ -1071,9 +1064,7 @@ In Exercises 7–10, write a formula for $f \circ g \circ h$ .
 
 8. $f(x) = 3x + 4,\quad g(x) = 2x - 1,\quad h(x) = x^{2}$ 
 
-$$
-f (x) = \sqrt {x + 1}, g (x) = \frac {1}{x + 4}, h (x) = \frac {1}{x}
-$$
+9. $f (x) = \sqrt {x + 1}, g (x) = \frac {1}{x + 4}, h (x) = \frac {1}{x}$
 
 10. $f(x) = \frac{x + 2}{3 - x}, g(x) = \frac{x^2}{x^2 + 1}, h(x) = \sqrt{2 - x}$ 
 
@@ -1155,22 +1146,22 @@ In Exercises 17 and 18, (a) write formulas for $f \circ g$ and $g \circ f$ and (
 
 22. Use the graphs of $f$ and $g$ to sketch the graph of $y = f(g(x))$ . 
 
-![[af60b4e3ce2ea3815706fbea1bbc9ac77e37d2b8dfde564dec67234e86a7933d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/af60b4e3ce2ea3815706fbea1bbc9ac77e37d2b8dfde564dec67234e86a7933d.jpg)
 
 
-![[209d970bb6ad360f771aeb9500c12209ca566bb209c751ddad92edd7fc790e05.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/209d970bb6ad360f771aeb9500c12209ca566bb209c751ddad92edd7fc790e05.jpg)
 
 
-## Shifting Graphs
+#### Shifting Graphs
 
 23. The accompanying figure shows the graph of $y = -x^{2}$ shifted to two new positions. Write equations for the new graphs. 
 
-![[d09a4b7738f6e15db94d45b97a1b611bb3b88e2e5c5b7bc04b24d2c9e3877109.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d09a4b7738f6e15db94d45b97a1b611bb3b88e2e5c5b7bc04b24d2c9e3877109.jpg)
 
 
 24. The accompanying figure shows the graph of $y = x^2$ shifted to two new positions. Write equations for the new graphs. 
 
-![[406cea05c4b69f866382b64616eb31958e3df5608f6e983bca0e38eef73cd134.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/406cea05c4b69f866382b64616eb31958e3df5608f6e983bca0e38eef73cd134.jpg)
 
 
 25. Match the equations listed in parts (a)-(d) to the graphs in the accompanying figure. 
@@ -1183,12 +1174,12 @@ c. $y = (x + 2)^{2} + 2$
 
 d. $y = (x + 3)^{2} - 2$ 
 
-![[3ebb2d8be40045da7494a6e403439407269eba179e8fc1d4e77b304f839fece5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3ebb2d8be40045da7494a6e403439407269eba179e8fc1d4e77b304f839fece5.jpg)
 
 
 26. The accompanying figure shows the graph of $y = -x^{2}$ shifted to four new positions. Write an equation for each new graph. 
 
-![[f5b76d7691dfae09e44e46cda42ce95c2085b52592c0097ba62c8085629f9cf5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f5b76d7691dfae09e44e46cda42ce95c2085b52592c0097ba62c8085629f9cf5.jpg)
 
 
 Exercises 27–36 tell how many units and in what directions the graphs of the given equations are to be shifted. Give an equation for the shifted graph. Then sketch the original and shifted graphs together, labeling each graph with its equation. 
@@ -1215,13 +1206,15 @@ Exercises 27–36 tell how many units and in what directions the graphs of the g
 
 Graph the functions in Exercises 37–56. 
 
-37. $y = \sqrt{x + 4}$ 38. $y = \sqrt{9 - x}$ 
+37. $y = \sqrt{x + 4}$
+
+38. $y = \sqrt{9 - x}$
 
 39. $y = |x - 2|$ 
 
-41. $y = 1 + \sqrt{x - 1}$ 
-
 40. $y = |1 - x| - 1$ 
+
+41. $y = 1 + \sqrt{x - 1}$ 
 
 42. $y = 1 - \sqrt{x}$ 
 
@@ -1247,15 +1240,15 @@ Graph the functions in Exercises 37–56.
 
 53. $y = \frac{1}{(x - 1)^{2}}$ 
 
-55. $y = \frac{1}{x^2} + 1$ 
-
 54. $y = \frac{1}{x^2} - 1$ 
+
+55. $y = \frac{1}{x^2} + 1$ 
 
 56. $y = \frac{1}{(x + 1)^{2}}$ 
 
 57. The accompanying figure shows the graph of a function $f(x)$ with domain [0, 2] and range [0, 1]. Find the domains and ranges of the following functions, and sketch their graphs. 
 
-![[846a29a6cf933c6d3880616ffa0c31483d257c0b12f7ea9cef2049a15d0b6bc6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/846a29a6cf933c6d3880616ffa0c31483d257c0b12f7ea9cef2049a15d0b6bc6.jpg)
 
 
 a. $f(x) + 2$ b. $f(x) - 1$ 
@@ -1268,7 +1261,7 @@ g. $f(-x)$ h. $-f(x + 1) + 1$
 
 58. The accompanying figure shows the graph of a function $g(t)$ with domain $[-4, 0]$ and range $[-3, 0]$ . Find the domains and ranges of the following functions, and sketch their graphs. 
 
-![[58f2537d36322f505dadc4d1dc577a7c0d0040ff3fd2808d91025c70d8a5527a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/58f2537d36322f505dadc4d1dc577a7c0d0040ff3fd2808d91025c70d8a5527a.jpg)
 
 
 a. $g(-t)$ 
@@ -1311,7 +1304,7 @@ Exercises 59–68 tell in what direction and by what factor the graphs of the gi
 
 68. $y = 1 - x^3$ , stretched horizontally by a factor of 2 
 
-## Graphing
+#### Graphing
 
 In Exercises 69–76, graph each function not by plotting points, but by starting with the graph of one of the standard functions presented in Figures 1.14–1.17 and applying an appropriate transformation. 
 
@@ -1329,9 +1322,7 @@ In Exercises 69–76, graph each function not by plotting points, but by startin
 
 75. $y = -\sqrt[3]{x}$ 
 
-$$
-7 6. y = (- 2 x) ^ {2 / 3}
-$$
+76. $y = (- 2 x) ^ {2 / 3}$
 
 77. Graph the function $y = |x^2 - 1|$ . 
 
@@ -1365,10 +1356,10 @@ T 82. Let $f(x) = x - 7$ and $g(x) = x^2$ . Graph $f$ and $g$ together with $f \
 
 ## 1.3 Trigonometric Functions
 
-![[1a50e19045c44ae89155bd76ff5996de4ac94d4282f1991cbc3b29c550519c18.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1a50e19045c44ae89155bd76ff5996de4ac94d4282f1991cbc3b29c550519c18.jpg)
 
 
-## Angles
+### Angles
 
 FIGURE 1.36 The radian measure of the central angle $A'CB'$ is the number $\theta = s / r$ . For a unit circle of radius $r = 1$ , $\theta$ is the length of arc $AB$ that central angle $ACB$ cuts from the unit circle. 
 
@@ -1400,14 +1391,14 @@ TABLE 1.1 Angles measured in degrees and radians
 
 <table><tr><td>Degrees</td><td>-180</td><td>-135</td><td>-90</td><td>-45</td><td>0</td><td>30</td><td>45</td><td>60</td><td>90</td><td>120</td><td>135</td><td>150</td><td>180</td><td>270</td><td>360</td></tr><tr><td>θ (radians)</td><td>-π</td><td><eq>\frac{-3\pi}{4}</eq></td><td><eq>\frac{-\pi}{2}</eq></td><td><eq>\frac{-\pi}{4}</eq></td><td>0</td><td><eq>\frac{\pi}{6}</eq></td><td><eq>\frac{\pi}{4}</eq></td><td><eq>\frac{\pi}{3}</eq></td><td><eq>\frac{\pi}{2}</eq></td><td><eq>\frac{2\pi}{3}</eq></td><td><eq>\frac{3\pi}{4}</eq></td><td><eq>\frac{5\pi}{6}</eq></td><td><eq>\pi</eq></td><td><eq>\frac{3\pi}{2}</eq></td><td><eq>2\pi</eq></td></tr></table>
 
-![[9130cf54fbf67055f5c39c4a8dbbaff5e82ff635a21095dd7c898fce7886ea70.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9130cf54fbf67055f5c39c4a8dbbaff5e82ff635a21095dd7c898fce7886ea70.jpg)
 
 
 
 FIGURE 1.39 Trigonometric ratios of an acute angle.
 
 
-![[6cbbe8389ddf267e8cd0057ae25215182adc83fa817a38eebea97fc83b773f0c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6cbbe8389ddf267e8cd0057ae25215182adc83fa817a38eebea97fc83b773f0c.jpg)
 
 
 
@@ -1416,7 +1407,7 @@ FIGURE 1.40 The trigonometric functions of a general angle $\theta$ are defined 
 
 An angle in the xy-plane is said to be in standard position if its vertex lies at the origin and its initial ray lies along the positive x-axis (Figure 1.37). Angles measured counterclockwise from the positive x-axis are assigned positive measures; angles measured clockwise are assigned negative measures. 
 
-![[2aae338037e312170e552cee4f80f4498080e87f8a00e4cbd41e1a1538c9aec8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2aae338037e312170e552cee4f80f4498080e87f8a00e4cbd41e1a1538c9aec8.jpg)
 
 
 
@@ -1425,7 +1416,7 @@ FIGURE 1.37 Angles in standard position in the xy-plane.
 
 Angles describing counterclockwise rotations can go arbitrarily far beyond $2\pi$ radians or $360^{\circ}$ . Similarly, angles describing clockwise rotations can have negative measures of all sizes (Figure 1.38). 
 
-![[e8f5a33744c37aa3d43971610329bac698e868d90f5cbc1f8b59f96b6b14cc3e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e8f5a33744c37aa3d43971610329bac698e868d90f5cbc1f8b59f96b6b14cc3e.jpg)
 
 
 
@@ -1434,7 +1425,7 @@ FIGURE 1.38 Nonzero radian measures can be positive or negative and can go beyon
 
 Angle Convention: Use Radians From now on in this text, it is assumed that all angles are measured in radians unless degrees or some other unit is stated explicitly. When we talk about the angle $\pi/3$ , we mean $\pi/3$ radians (which is $60^{\circ}$ ), not $\pi/3$ degrees. Using radians simplifies many of the operations and computations in calculus. 
 
-## The Six Basic Trigonometric Functions
+### The Six Basic Trigonometric Functions
 
 The trigonometric functions of an acute angle are given in terms of the sides of a right triangle (Figure 1.39). We extend this definition to obtuse and negative angles by first placing the angle in standard position in a circle of radius $r$ . We then define the trigonometric functions in terms of the coordinates of the point $P(x, y)$ where the angle's terminal ray intersects the circle (Figure 1.40). 
 
@@ -1474,14 +1465,14 @@ $$
 \sec \theta = \frac {1}{\cos \theta} \quad \csc \theta = \frac {1}{\sin \theta}
 $$
 
-![[fd76f8c9c290ce0131d1153d7aed612a65dbbd021d062240b3d0c2852cc1f1aa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fd76f8c9c290ce0131d1153d7aed612a65dbbd021d062240b3d0c2852cc1f1aa.jpg)
 
 
 
 FIGURE 1.41 Radian angles and side lengths of two common triangles.
 
 
-![[ebea63c9d2b1b6e614eb19e5aaa60ad25fbbdb05ea4629d91d44f7d7b6825604.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ebea63c9d2b1b6e614eb19e5aaa60ad25fbbdb05ea4629d91d44f7d7b6825604.jpg)
 
 
 
@@ -1502,7 +1493,7 @@ $$
 \sin \frac {2 \pi}{3} = \frac {\sqrt {3}}{2}, \quad \cos \frac {2 \pi}{3} = - \frac {1}{2}, \quad \tan \frac {2 \pi}{3} = - \sqrt {3}.
 $$
 
-![[928b0883ba69741df0cdd47675b28c89efe672cccb867e525503ee8cf1f40d5c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/928b0883ba69741df0cdd47675b28c89efe672cccb867e525503ee8cf1f40d5c.jpg)
 
 
 
@@ -1519,11 +1510,11 @@ TABLE 1.2 Values of sin θ, cos θ, and tan θ for selected values of θ
 
 <table><tr><td>Degrees</td><td>-180</td><td>-135</td><td>-90</td><td>-45</td><td>0</td><td>30</td><td>45</td><td>60</td><td>90</td><td>120</td><td>135</td><td>150</td><td>180</td><td>270</td><td>360</td></tr><tr><td>θ (radians)</td><td>-π</td><td><eq>\frac{-3\pi}{4}</eq></td><td><eq>\frac{-\pi}{2}</eq></td><td><eq>\frac{-\pi}{4}</eq></td><td>0</td><td><eq>\frac{\pi}{6}</eq></td><td><eq>\frac{\pi}{4}</eq></td><td><eq>\frac{\pi}{3}</eq></td><td><eq>\frac{\pi}{2}</eq></td><td><eq>\frac{2\pi}{3}</eq></td><td><eq>\frac{3\pi}{4}</eq></td><td><eq>\frac{5\pi}{6}</eq></td><td>π</td><td><eq>\frac{3\pi}{2}</eq></td><td><eq>2\pi</eq></td></tr><tr><td>sin θ</td><td>0</td><td><eq>\frac{-\sqrt{2}}{2}</eq></td><td>-1</td><td><eq>\frac{-\sqrt{2}}{2}</eq></td><td>0</td><td><eq>\frac{1}{2}</eq></td><td><eq>\frac{\sqrt{2}}{2}</eq></td><td><eq>\frac{\sqrt{3}}{2}</eq></td><td>1</td><td><eq>\frac{\sqrt{3}}{2}</eq></td><td><eq>\frac{\sqrt{2}}{2}</eq></td><td><eq>\frac{1}{2}</eq></td><td>0</td><td>-1</td><td>0</td></tr><tr><td>cos θ</td><td>-1</td><td><eq>\frac{-\sqrt{2}}{2}</eq></td><td>0</td><td><eq>\frac{\sqrt{2}}{2}</eq></td><td>1</td><td><eq>\frac{\sqrt{3}}{2}</eq></td><td><eq>\frac{\sqrt{2}}{2}</eq></td><td><eq>\frac{1}{2}</eq></td><td>0</td><td><eq>-\frac{1}{2}</eq></td><td><eq>-\frac{\sqrt{2}}{2}</eq></td><td><eq>-\frac{\sqrt{3}}{2}</eq></td><td>-1</td><td>0</td><td>1</td></tr><tr><td>tan θ</td><td>0</td><td>1</td><td></td><td>-1</td><td>0</td><td><eq>\frac{\sqrt{3}}{3}</eq></td><td>1</td><td><eq>\sqrt{3}</eq></td><td></td><td><eq>-\sqrt{3}</eq></td><td>-1</td><td><eq>\frac{-\sqrt{3}}{3}</eq></td><td>0</td><td></td><td>0</td></tr></table>
 
-## Periodicity and Graphs of the Trigonometric Functions
+### Periodicity and Graphs of the Trigonometric Functions
 
 When an angle of measure $\theta$ and an angle of measure $\theta + 2\pi$ are in standard position, their terminal rays coincide. The two angles therefore have the same trigonometric function values: $\sin(\theta + 2\pi) = \sin\theta$ , $\tan(\theta + 2\pi) = \tan\theta$ , and so on. Similarly, $\cos(\theta - 2\pi) = \cos\theta$ , $\sin(\theta - 2\pi) = \sin\theta$ , and so on. We describe this repeating behavior by saying that the six basic trigonometric functions are periodic. 
 
-## Periods of Trigonometric Functions
+### Periods of Trigonometric Functions
 
 Period $\pi$ : $\tan (x + \pi) = \tan x$ $\cot (x + \pi) = \cot x$ 
 
@@ -1533,24 +1524,24 @@ Period 2π: $\sin(x + 2\pi) = \sin x$ $\cos(x + 2\pi) = \cos x$ $\sec(x + 2\pi) 
 
 When we graph trigonometric functions in the coordinate plane, we usually denote the independent variable by x instead of $\theta$ . Figure 1.44 shows that the tangent and cotangent functions have period $p = \pi$ , and the other four functions have period $2\pi$ . Also, the symmetries in these graphs reveal that the cosine and secant functions are even and the other four functions are odd (although this does not prove those results). 
 
-![[ba281bf3aa29b1b82249b23caa56db2d52f163b37ae028b244ebbe494c1d96ac.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ba281bf3aa29b1b82249b23caa56db2d52f163b37ae028b244ebbe494c1d96ac.jpg)
 
 
-![[ff8129dcbd1e909ee75de068c3059f741767e98f92fc994f254e1cee068a81ca.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ff8129dcbd1e909ee75de068c3059f741767e98f92fc994f254e1cee068a81ca.jpg)
 
 
 
 FIGURE 1.44 Graphs of the six basic trigonometric functions using radian measure. The shading for each trigonometric function indicates its periodicity.
 
 
-![[427bbededf1026c6f8c90604b935c6a6312d137fcc28002f7c339407cded7d15.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/427bbededf1026c6f8c90604b935c6a6312d137fcc28002f7c339407cded7d15.jpg)
 
 
 
 FIGURE 1.45 The reference triangle for a general angle $\theta$ .
 
 
-## Trigonometric Identities
+### Trigonometric Identities
 
 The coordinates of any point $P(x, y)$ in the plane can be expressed in terms of the point's distance $r$ from the origin and the angle $\theta$ that ray $OP$ makes with the positive $x$ -axis (Figure 1.40). Since $x / r = \cos \theta$ and $y / r = \sin \theta$ , we have 
 
@@ -1564,10 +1555,10 @@ $$
 \cos^ {2} \theta + \sin^ {2} \theta = 1.\tag{3}
 $$
 
-![[ab05410439f5b9373c904b0d760df98423a2923befb9ec22b95d5a30e618d17b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ab05410439f5b9373c904b0d760df98423a2923befb9ec22b95d5a30e618d17b.jpg)
 
 
-![[3d27ad8115a91355ede07759bd4fd894d099c9e59bff0fc139664a27e9c9ff40.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3d27ad8115a91355ede07759bd4fd894d099c9e59bff0fc139664a27e9c9ff40.jpg)
 
 
 
@@ -1618,7 +1609,7 @@ $$
 \sin^ {2} \theta = \frac {1 - \cos 2 \theta}{2}\tag{7}
 $$
 
-## The Law of Cosines
+### The Law of Cosines
 
 If a, b, and c are sides of a triangle ABC and if $\theta$ is the angle opposite c, then 
 
@@ -1628,7 +1619,7 @@ $$
 
 This equation is called the law of cosines. 
 
-![[92249c0e1e60996827ef7253543d1fc2d7a5519ca9019b858c24af65860c442f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/92249c0e1e60996827ef7253543d1fc2d7a5519ca9019b858c24af65860c442f.jpg)
 
 
 
@@ -1643,14 +1634,14 @@ The law of cosines generalizes the Pythagorean theorem. If $\theta = \pi / 2$ , 
 
 To see why the law holds, we position the triangle in the xy-plane with the origin at C and the positive x-axis along one side of the triangle, as in Figure 1.47. The coordinates of A are $(b,0)$ ; the coordinates of B are $(a\cos\theta,a\sin\theta)$ . The square of the distance between A and B is therefore 
 
-![[047383b0cfa97d78ebaa492348fcf9c60c362ea8fb4cecefba40e09fc9fc97fa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/047383b0cfa97d78ebaa492348fcf9c60c362ea8fb4cecefba40e09fc9fc97fa.jpg)
 
 
 
 FIGURE 1.48 From the geometry of this figure, drawn for $\theta > 0$ , we get the inequality $\sin^2\theta + (1 - \cos \theta)^2 \leq \theta^2$ .
 
 
-## Two Special Inequalities
+### Two Special Inequalities
 
 For any angle $\theta$ measured in radians, the sine and cosine functions satisfy 
 
@@ -1692,11 +1683,11 @@ $$
 
 These inequalities will be useful in the next chapter. 
 
-## Transformations of Trigonometric Graphs
+### Transformations of Trigonometric Graphs
 
 The rules for shifting, stretching, compressing, and reflecting the graph of a function summarized in the following diagram apply to the trigonometric functions we have discussed in this section. 
 
-![[0db854a90324d594459f7eae6345bc7c251864264c4faa2fce6a5cf4213464bd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0db854a90324d594459f7eae6345bc7c251864264c4faa2fce6a5cf4213464bd.jpg)
 
 
 The transformation rules applied to the sine function give the general sine function or sinusoid formula 
@@ -1707,12 +1698,12 @@ $$
 
 where $|A|$ is the amplitude, $|B|$ is the period, C is the horizontal shift, and D is the vertical shift. A graphical interpretation of the various terms is given below. 
 
-![[98a4002c5aa1f5f09ba5195df84866e14029f983c06cf0f5cebba2bce8b53bea.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/98a4002c5aa1f5f09ba5195df84866e14029f983c06cf0f5cebba2bce8b53bea.jpg)
 
 
-## EXERCISES 1.3
+### EXERCISES 1.3
 
-## Radians and Degrees
+#### Radians and Degrees
 
 1. On a circle of radius 10 m, how long is an arc that subtends a central angle of (a) $4\pi/5$ radians? (b) $110^{\circ}$ ? 
 
@@ -1722,7 +1713,7 @@ where $|A|$ is the amplitude, $|B|$ is the period, C is the horizontal shift, an
 
 T 4. If you roll a 1-m-diameter wheel forward 30 cm over level ground, through what angle will the wheel turn? Answer in radians (to the nearest tenth) and degrees (to the nearest degree). 
 
-## Evaluating Trigonometric Functions
+#### Evaluating Trigonometric Functions
 
 5. Copy and complete the following table of function values. If the function is undefined at a given angle, enter “UND.” Do not use a calculator or tables. 
 
@@ -1734,27 +1725,41 @@ T 4. If you roll a 1-m-diameter wheel forward 30 cm over level ground, through w
 
 In Exercises 7–12, one of $\sin x$ , $\cos x$ , and $\tan x$ is given. Find the other two if x lies in the specified interval. 
 
-7. $\sin x = \frac{3}{5}, x \in \left[\frac{\pi}{2}, \pi\right]$ 8. $\tan x = 2, x \in \left[0, \frac{\pi}{2}\right]$ 
+7. $\sin x = \frac{3}{5}, x \in \left[\frac{\pi}{2}, \pi\right]$
 
-9. $\cos x = \frac{1}{3}, x \in \left[-\frac{\pi}{2}, 0\right]$ 10. $\cos x = -\frac{5}{13}, x \in \left[\frac{\pi}{2}, \pi\right]$ 
+8. $\tan x = 2, x \in \left[0, \frac{\pi}{2}\right]$
 
-11. $\tan x = \frac{1}{2}, x \in \left[\pi, \frac{3\pi}{2}\right]$ 12. $\sin x = -\frac{1}{2}, x \in \left[\pi, \frac{3\pi}{2}\right]$ 
+9. $\cos x = \frac{1}{3}, x \in \left[-\frac{\pi}{2}, 0\right]$
 
-## Graphing Trigonometric Functions
+10. $\cos x = -\frac{5}{13}, x \in \left[\frac{\pi}{2}, \pi\right]$
+
+11. $\tan x = \frac{1}{2}, x \in \left[\pi, \frac{3\pi}{2}\right]$
+
+12. $\sin x = -\frac{1}{2}, x \in \left[\pi, \frac{3\pi}{2}\right]$
+
+#### Graphing Trigonometric Functions
 
 Graph the functions in Exercises 13–22. What is the period of each function? 
 
-13. $\sin 2x$ 14. $\sin (x / 2)$ 
+13. $\sin 2x$
 
-15. $\cos \pi x$ 16. $\cos \frac{\pi x}{2}$ 
+14. $\sin (x / 2)$
+
+15. $\cos \pi x$
+
+16. $\cos \frac{\pi x}{2}$
 
 17. $-\sin \frac{\pi x}{3}$ 
 
 18. $-\cos 2\pi x$ 
 
-19. $\cos \left(x - \frac{\pi}{2}\right)$ 20. $\sin \left(x + \frac{\pi}{6}\right)$ 
+19. $\cos \left(x - \frac{\pi}{2}\right)$
 
-21. $\sin \left(x - \frac{\pi}{4}\right) + 1$ 22. $\cos \left(x + \frac{2\pi}{3}\right) - 2$ 
+20. $\sin \left(x + \frac{\pi}{6}\right)$
+
+21. $\sin \left(x - \frac{\pi}{4}\right) + 1$
+
+22. $\cos \left(x + \frac{2\pi}{3}\right) - 2$
 
 Graph the functions in Exercises 23–26 in the ts-plane (t-axis horizontal, s-axis vertical). What is the period of each function? What symmetries do the graphs have? 
 
@@ -1776,7 +1781,7 @@ b. Graph $y = \sin x$ and $y = \csc x$ together for $-\pi \leq x \leq 2\pi$ . Co
 
 30. Graph $y = \sin x$ and $y = [\sin x]$ together. What are the domain and range of $[\sin x]$ ? 
 
-## Using the Addition Formulas
+#### Using the Addition Formulas
 
 Use the addition formulas to derive the identities in Exercises 31–36. 
 
@@ -1798,15 +1803,21 @@ Use the addition formulas to derive the identities in Exercises 31–36.
 
 In Exercises 39–42, express the given quantity in terms of $\sin x$ and $\cos x$ . 
 
-39. $\cos (\pi +x)$ 40. $\sin (2\pi -x)$ 
+39. $\cos (\pi +x)$
 
-41. $\sin \left(\frac{3\pi}{2} - x\right)$ 42. $\cos \left(\frac{3\pi}{2} + x\right)$ 
+40. $\sin (2\pi -x)$
+
+41. $\sin \left(\frac{3\pi}{2} - x\right)$
+
+42. $\cos \left(\frac{3\pi}{2} + x\right)$
 
 43. Evaluate $\sin \frac{7\pi}{12}$ as $\sin \left(\frac{\pi}{4} + \frac{\pi}{3}\right)$ . 
 
 44. Evaluate $\cos \frac{11\pi}{12}$ as $\cos \left(\frac{\pi}{4} + \frac{2\pi}{3}\right)$ . 
 
-45. Evaluate $\cos \frac{\pi}{12}$ . 46. Evaluate $\sin \frac{5\pi}{12}$ . 
+45. Evaluate $\cos \frac{\pi}{12}$ .
+
+46. Evaluate $\sin \frac{5\pi}{12}$ .
 
 Using the Half-Angle Formulas 
 
@@ -1814,13 +1825,13 @@ Find the function values in Exercises 47–50.
 
 47. $\cos^2\frac{\pi}{8}$ 
 
-$$
-\cos^ {2} \frac {5 \pi}{1 2}
-$$
+48. $\cos^ {2} \frac {5 \pi}{1 2}$
 
-49. $\sin^2\frac{\pi}{12}$ 50. $\sin^2\frac{3\pi}{8}$ 
+49. $\sin^2\frac{\pi}{12}$
 
-## Solving Trigonometric Equations
+50. $\sin^2\frac{3\pi}{8}$
+
+#### Solving Trigonometric Equations
 
 For Exercises 51–54, solve for the angle $\theta$ , where $0 \leq \theta \leq 2\pi$ . 
 
@@ -1832,7 +1843,7 @@ For Exercises 51–54, solve for the angle $\theta$ , where $0 \leq \theta \leq 
 
 54. $\cos 2\theta +\cos \theta = 0$ 
 
-## Theory and Examples
+#### Theory and Examples
 
 55. The tangent sum formula of the sum of two angles is The standard formula for the tangent 
 
@@ -1846,7 +1857,7 @@ Derive the formula.
 
 57. Apply the law of cosines to the triangle in the accompanying figure to derive the formula for $\cos (A - B)$ . 
 
-![[fe3acaffe0be759d91e2adc6b337bcb147a5ca6e81a108724307557c535bb27a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fe3acaffe0be759d91e2adc6b337bcb147a5ca6e81a108724307557c535bb27a.jpg)
 
 
 58. a. Apply the formula for $\cos(A - B)$ to the identity $\sin\theta = \cos\left(\frac{\pi}{2} - \theta\right)$ to obtain the addition formula for $\sin(A + B)$ . 
@@ -1865,15 +1876,15 @@ $$
 
 Use the accompanying figures and the identity $\sin(\pi - \theta) = \sin\theta$ , if required, to derive the law. 
 
-![[1e820f58e304ce8b3f945b6d1d3a9b349c39e6b76326b063b0f57112cb65894d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1e820f58e304ce8b3f945b6d1d3a9b349c39e6b76326b063b0f57112cb65894d.jpg)
 
 
-![[87c454f42a2153692ae2b4c0c3436b3e47bd090adea9adac0772a87f3a4b09d5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/87c454f42a2153692ae2b4c0c3436b3e47bd090adea9adac0772a87f3a4b09d5.jpg)
 
 
 62. A triangle has sides $a = 2$ and $b = 3$ and angle $C = 60^{\circ}$ (as in Exercise 59). Find the sine of angle $B$ using the law of sines. 
 
-![[4cc1bf3722e159641838ec1d95e6f954df849b1d285b41eeb53bd646e420aa0d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4cc1bf3722e159641838ec1d95e6f954df849b1d285b41eeb53bd646e420aa0d.jpg)
 
 
 T 63. A triangle has side $c = 2$ and angles $A = \pi / 4$ and $B = \pi / 3$ . Find the length $a$ of the side opposite $A$ . 
@@ -1884,12 +1895,12 @@ $$
 h = \frac {b \tan \alpha \tan \gamma}{\tan \alpha + \tan \gamma}
 $$
 
-![[1a52ca772363a8102868303e9967ca9e1adeda6c348fcf88153e33dcd0725e99.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1a52ca772363a8102868303e9967ca9e1adeda6c348fcf88153e33dcd0725e99.jpg)
 
 
 65. Refer to the given figure. Write the radius $r$ of the circle in terms of $\alpha$ and $\theta$ . 
 
-![[f7a1cd6ac209f2501e593edeb6972619db9275db84c5e3159353adffd0015edd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f7a1cd6ac209f2501e593edeb6972619db9275db84c5e3159353adffd0015edd.jpg)
 
 
 66. The approximation $\sin x \approx x$ It is often useful to know that, when $x$ is measured in radians, $\sin x \approx x$ for numerically small values of $x$ . In Section 3.11, we will see why the approximation holds. The approximation error is less than 1 in 5000 if $|x| < 0.1$ . 
@@ -1908,13 +1919,13 @@ $$
 
 identify A, B, C, and D for the sine functions in Exercises 67–70 and sketch their graphs. 
 
-$$
-\mathbf {6 7 .} y = 2 \sin (x + \pi) - 1 \quad \mathbf {6 8 .} y = \frac {1}{2} \sin (\pi x - \pi) + \frac {1}{2}
-$$
+67. $y = 2 \sin (x + \pi) - 1$
 
-$$
-\mathbf {6 9 .} y = - \frac {2}{\pi} \sin \left(\frac {\pi}{2} t\right) + \frac {1}{\pi} \quad \mathbf {7 0 .} y = \frac {L}{2 \pi} \sin \frac {2 \pi t}{L}, L > 0
-$$
+68. $y = \frac {1}{2} \sin (\pi x - \pi) + \frac {1}{2}$
+
+69. $y = - \frac {2}{\pi} \sin \left(\frac {\pi}{2} t\right) + \frac {1}{\pi}$
+
+70. $y = \frac {L}{2 \pi} \sin \frac {2 \pi t}{L}, L > 0$
 
 COMPUTER EXPLORATIONS 
 
@@ -1956,7 +1967,7 @@ b. What happens to the graph for negative values of $A$ ?
 
 Exponential functions occur in a wide variety of applications, including interest rates, radioactive decay, population growth, the spread of a disease, consumption of natural resources, the earth's atmospheric pressure, temperature change of a heated object placed in a cooler environment, and the dating of fossils. In this section we introduce these functions informally, using an intuitive approach. We give a rigorous development of them in Chapter 7, based on the ideas of integral calculus. 
 
-## Exponential Behavior
+### Exponential Behavior
 
 When a positive quantity $P$ doubles, it increases by a factor of 2 and the quantity becomes $2P$ . If it doubles again, it becomes $2(2P) = 2^2 P$ , and a third doubling gives $2(2^2 P) = 2^3 P$ . Continuing to double in this fashion leads us to consider the function $f(x) = 2^x$ . We call this an exponential function because the variable $x$ appears in the exponent of $2^x$ . Functions 
 
@@ -2024,14 +2035,14 @@ $$
 a ^ {p / q} = \sqrt [ q ]{a ^ {p}} = \left(\sqrt [ q ]{a}\right) ^ {p}.
 $$
 
-![[a49795e1ce728041c3ed5cc5e73562aef2a4b9b17d03f98bafab3ad4054ca3da.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a49795e1ce728041c3ed5cc5e73562aef2a4b9b17d03f98bafab3ad4054ca3da.jpg)
 
 
 $$
 y = 2 ^ {x}, y = 3 ^ {x}, y = 1 0 ^ {x}
 $$
 
-![[ee1cbe3579f43de65957ad73345870d2a5016731b3a3bc4ff03acf7d10f7e955.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ee1cbe3579f43de65957ad73345870d2a5016731b3a3bc4ff03acf7d10f7e955.jpg)
 
 
 $$
@@ -2070,7 +2081,7 @@ Table 1.4 illustrates how taking better approximations to $\sqrt{3}$ gives bette
 
 Exponential functions obey the rules of exponents listed below. It is easy to check these rules using algebra when the exponents are integers or rational numbers. We prove them for all real exponents in Chapter 7. 
 
-## Rules for Exponents
+### Rules for Exponents
 
 If $a > 0$ and $b > 0$ , the following rules hold for all real numbers $x$ and $y$ . 
 
@@ -2094,7 +2105,7 @@ $$
 \frac {a ^ {x}}{b ^ {x}} = \left(\frac {a}{b}\right) ^ {x}
 $$
 
-## **EXAMPLE 2** We use the rules for exponents to simplify some numerical expressions.
+**EXAMPLE 2** We use the rules for exponents to simplify some numerical expressions.
 
 1. $3^{1.1} \cdot 3^{0.7} = 3^{1.1 + 0.7} = 3^{1.8}$ 
 
@@ -2110,31 +2121,31 @@ $$
 5. \left(\frac {4}{9}\right) ^ {1 / 2} = \frac {4 ^ {1 / 2}}{9 ^ {1 / 2}} = \frac {2}{3}
 $$
 
-## The Natural Exponential Function $e^{x}$
+### The Natural Exponential Function $e^{x}$
 
 The most important exponential function used for modeling natural, physical, and economic phenomena is the natural exponential function, whose base is the special number e. The number e is irrational, and its value to nine decimal places is 2.718281828. (In Section 3.8 we will see a way to calculate the value of e.) It might seem strange that we would use this number for a base rather than a simple number like 2 or 10. The advantage in using e as a base is that it greatly simplifies many of the calculations in calculus. 
 
 In Figure 1.49a you can see that for $x \geq 0$ , the graphs of the exponential functions $y = a^{x}$ get steeper as the base a gets larger. This idea of steepness is conveyed by the slope of the tangent line to the graph at a point. Tangent lines to graphs of functions are defined precisely in the next chapter, but intuitively the tangent line to the graph at a point is the line that best approximates the graph at the point, like a tangent to a circle. Figure 1.50 shows the slope of the graph of $y = a^{x}$ as it crosses the y-axis for some values of a. Notice that the slope is exactly equal to 1 when a equals the number e. The slope is smaller than 1 if a < e, and larger than 1 if a > e. The graph of $y = e^{x}$ has slope 1 when it crosses the y-axis. 
 
-![[51f676d3fc0c7bd05a3a9229b3bc9db424c8d92864308b01c8fb3950f30475ff.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/51f676d3fc0c7bd05a3a9229b3bc9db424c8d92864308b01c8fb3950f30475ff.jpg)
 
 
 
 FIGURE 1.50 Among the exponential functions, the graph of $y = e^x$ has the property that the slope $m$ of the tangent line to the graph is exactly 1 when it crosses the $y$ -axis. The slope is smaller for a base less than $e$ , such as $2^x$ , and larger for a base greater than $e$ , such as $3^x$ .
 
 
-## Exponential Growth and Decay
+### Exponential Growth and Decay
 
 The function $y = y_{0} e^{kx}$ , where k is a nonzero constant, is a model for exponential growth if k > 0 and a model for exponential decay if k < 0. Here $y_{0}$ is a positive constant that represents the value of the function when x = 0. An example of exponential growth occurs when computing interest compounded continuously. This is modeled by the formula $y = Pe^{rt}$ , where P is the initial monetary investment, r is the interest rate as a decimal, and t is time in units consistent with r. An example of exponential decay is the model $y = Ae^{-1.2 \times 10^{-4} t}$ , which represents how the radioactive isotope carbon-14 decays over time. Here A is the original amount of carbon-14 and t is the time in years. Carbon-14 decay is used to date the remains of dead organisms such as shells, seeds, and wooden artifacts. Figure 1.51 shows graphs of exponential growth and exponential decay. 
 
-![[92234aa9c06ead9757b5d654861c4494de0d88a02e84cce1c5436b63094c81e2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/92234aa9c06ead9757b5d654861c4494de0d88a02e84cce1c5436b63094c81e2.jpg)
 
 
 
 (a)
 
 
-![[3e768d0cffccbcf48cc415d459165f533aea85f700f76efcc552de33d9b035a6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3e768d0cffccbcf48cc415d459165f533aea85f700f76efcc552de33d9b035a6.jpg)
 
 
 
@@ -2173,43 +2184,29 @@ That is, after 866 years, we are left with about $90\%$ of the original amount o
 
 You may wonder why we use the family of functions $y = e^{kx}$ for different values of the constant k instead of the general exponential functions $y = a^{x}$ . In the next section, we show that the exponential function $a^{x}$ is equal to $e^{kx}$ for an appropriate value of k. So the formula $y = e^{kx}$ covers the entire range of possibilities, and it is generally easier to use. 
 
-## EXERCISES 1.4
+### EXERCISES 1.4
 
-## Sketching Exponential Curves
+#### Sketching Exponential Curves
 
 In Exercises 1–6, sketch the given curves together in the appropriate coordinate plane, and label each curve with its equation. 
 
-$$
-y = 2 ^ {x}, y = 4 ^ {x}, y = 3 ^ {- x}, y = (1 / 5) ^ {x}
-$$
+1. $y = 2 ^ {x}, y = 4 ^ {x}, y = 3 ^ {- x}, y = (1 / 5) ^ {x}$
 
-$$
-y = 3 ^ {x}, y = 8 ^ {x}, y = 2 ^ {- x}, y = (1 / 4) ^ {x}
-$$
+2. $y = 3 ^ {x}, y = 8 ^ {x}, y = 2 ^ {- x}, y = (1 / 4) ^ {x}$
 
-3. $y = 2^{-t}$ and $y = -2^{t}$ 
+3. $y = 2^{-t}$ and $y = -2^{t}$
 
-$$
-4. y = 3 ^ {- t} \text {   and   } y = - 3 ^ {t}
-$$
+4. $y = 3 ^ {- t}$ and $y = - 3 ^ {t}$
 
-$$
-y = e ^ {x} \text {   and   } y = 1 / e ^ {x}
-$$
+5. $y = e ^ {x}$ and $y = 1 / e ^ {x}$
 
-$$
-6. y = - e ^ {x} \text {   and   } y = - e ^ {- x}
-$$
+6. $y = - e ^ {x} \text {   and   } y = - e ^ {- x}$
 
 In each of Exercises 7–10, sketch the shifted exponential curves. 
 
-$$
-y = 2 ^ {x} - 1 \text {   and   } y = 2 ^ {- x} - 1
-$$
+7. $y = 2 ^ {x} - 1$ and $y = 2 ^ {- x} - 1$
 
-$$
-y = 3 ^ {x} + 2 \text {   and   } y = 3 ^ {- x} + 2
-$$
+8. $y = 3 ^ {x} + 2$ and $y = 3 ^ {- x} + 2$
 
 9. $y = 1 - e^{x}$ and $y = 1 - e^{-x}$ 
 
@@ -2231,9 +2228,13 @@ Use the laws of exponents to simplify the expressions in Exercises 11–20.
 
 16. $(13^{\sqrt{2}})^{\sqrt{2} / 2}$ 
 
-17. $2^{\sqrt{3}}\cdot 7^{\sqrt{3}}$ 18. $(\sqrt{3})^{1 / 2}\cdot (\sqrt{12})^{1 / 2}$ 
+17. $2^{\sqrt{3}}\cdot 7^{\sqrt{3}}$
 
-19. $\left(\frac{2}{\sqrt{2}}\right)^4$ 20. $\left(\frac{\sqrt{6}}{3}\right)^2$ 
+18. $(\sqrt{3})^{1 / 2}\cdot (\sqrt{12})^{1 / 2}$
+
+19. $\left(\frac{2}{\sqrt{2}}\right)^4$
+
+20. $\left(\frac{\sqrt{6}}{3}\right)^2$
 
 Compositions Involving Exponential Functions 
 
@@ -2293,7 +2294,7 @@ b. to eliminate the disease; that is, to reduce the number of cases to less than
 
 A function that undoes, or inverts, the effect of a function f is called the inverse of f. Many common functions, though not all, are paired with an inverse. In this section we present the natural logarithmic function $y = \ln x$ as the inverse of the exponential function $y = e^{x}$ , and we also give examples of several inverse trigonometric functions. 
 
-## One-to-One Functions
+### One-to-One Functions
 
 A function is a rule that assigns a value from its range to each element in its domain. Some functions assign the same range value to more than one element in the domain. The function $f(x) = x^{2}$ assigns the same value, 1, to both of the numbers -1 and +1. Similarly the sines of $\pi/3$ and $2\pi/3$ are both $\sqrt{3}/2$ . Other functions assume each value in their range no more than once. The square roots and cubes of different numbers are always different. A function that has distinct values at distinct elements in its domain is called one-to-one. 
 
@@ -2301,14 +2302,14 @@ A function is a rule that assigns a value from its range to each element in its 
 
 **EXAMPLE 1** Some functions are one-to-one on their entire natural domain. Other functions are not one-to-one on their entire domain, but by restricting the function to a smaller domain we can create a function that is one-to-one. The original and restricted functions are not the same functions, because they have different domains. However, the two functions have the same values on the smaller domain. 
 
-![[75de86d38bcd65ec09e94320cdf1695cfeb2aa36d8e2fbcab6f0fe6fdcea4029.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/75de86d38bcd65ec09e94320cdf1695cfeb2aa36d8e2fbcab6f0fe6fdcea4029.jpg)
 
 
 
 (a) One-to-one: Graph meets each horizontal line at most once.
 
 
-![[4473558492066078df76d855ae9c67528d6dba927b7110698c4782647a24b574.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4473558492066078df76d855ae9c67528d6dba927b7110698c4782647a24b574.jpg)
 
 
 
@@ -2330,7 +2331,7 @@ The graph of a one-to-one function $y = f(x)$ can intersect a given horizontal l
 The Horizontal Line Test for One-to-One Functions
 A function $y = f(x)$ is one-to-one if and only if its graph intersects each horizontal line at most once. 
 
-## Inverse Functions
+### Inverse Functions
 
 Since each output of a one-to-one function comes from just one input, the effect of the function can be inverted to send each output back to the input from which it came. 
 
@@ -2366,28 +2367,28 @@ Only a one-to-one function can have an inverse. The reason is that if $f(x_{1}) 
 
 Suppose f is a function whose domain is an interval. If f is increasing, then it satisfies the inequality $f(x_{2}) > f(x_{1})$ when $x_{2} > x_{1}$ , so it is one-to-one and has an inverse. Likewise, if f is decreasing, then it also has an inverse. Functions that are neither increasing nor decreasing may still be one-to-one and have an inverse, as with the function $f(x) = 1/x$ for $x \neq 0$ and $f(0) = 0$ , defined on $(-\infty, \infty)$ and passing the horizontal line test. 
 
-## Finding Inverses
+### Finding Inverses
 
 The graphs of a function and its inverse are closely related. To read the value of a function from its graph, we start at a point x on the x-axis, go vertically to the graph, and then move horizontally to the y-axis to read the value of y. The inverse function can be read from the graph by reversing this process. Start with a point y on the y-axis, go horizontally to the graph of $y = f(x)$ , and then move vertically to the x-axis to read the value of $x = f^{-1}(y)$ (Figure 1.53). 
 
-![[b28c5d06048b05fe0762b51c4120e78d5365897158e9ab25cfc4014c13173976.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b28c5d06048b05fe0762b51c4120e78d5365897158e9ab25cfc4014c13173976.jpg)
 
 
 
 (a) To find the value of f at x, we start at x, go up to the curve, and then move to the y-axis.
 
 
-![[3e93170e3198f71d7d70680fb7f7776ebebc54ac2e17e2d4bb15c73fff0a1db2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3e93170e3198f71d7d70680fb7f7776ebebc54ac2e17e2d4bb15c73fff0a1db2.jpg)
 
 
 
 (b) The graph of $f^{-1}$ is the graph of f, but with x and y interchanged. To find the x that gave y, we start at y and go over to the curve and down to the x-axis. The domain of $f^{-1}$ is the range of f. The range of $f^{-1}$ is the domain of f.
 
 
-![[b261e4a4f3aec277a8c9689ac5681ba62e776e72a5238243f46f369b991b0a0b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b261e4a4f3aec277a8c9689ac5681ba62e776e72a5238243f46f369b991b0a0b.jpg)
 
 
-![[5de0d42fc96b1044211f95201be3cad3b9f06d6d310b0c5117ffa56b66e6fd21.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5de0d42fc96b1044211f95201be3cad3b9f06d6d310b0c5117ffa56b66e6fd21.jpg)
 
 
 
@@ -2404,7 +2405,7 @@ FIGURE 1.53 The graph of $y = f^{-1}(x)$ is obtained by reflecting the graph of 
 
 We want to set up the graph of $f^{-1}$ so that its input values lie along the x-axis, as is usually done for functions, rather than on the y-axis. To achieve this we interchange the x- and y-axes by reflecting across the $45^{\circ}$ line y = x. After this reflection, we have a new graph that represents $f^{-1}$ . The value of $f^{-1}(x)$ can now be read from the graph in the usual way, by starting with a point x on the x-axis, going vertically to the graph, and then horizontally to the y-axis to get the value of $f^{-1}(x)$ . Figure 1.53 indicates the relationship between the graphs of f and $f^{-1}$ . The graphs are interchanged by reflection through the line y = x. 
 
-![[e045b1d3f62ba5c3ec98b38501e8d66ef2256c203edbdea1a4dc2152050d004f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e045b1d3f62ba5c3ec98b38501e8d66ef2256c203edbdea1a4dc2152050d004f.jpg)
 
 
 
@@ -2415,7 +2416,7 @@ FIGURE 1.54 Graphing
 $f(x) = (1/2)x + 1$ and $f^{-1}(x) = 2x - 2$ together shows the graphs' symmetry with respect to the line $y = x$ (Example 3).
 
 
-![[da01c2f89d1c9e09e6c0d4b7b8a1e0efcac606406e2d735306fbf1f9f4234ce5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/da01c2f89d1c9e09e6c0d4b7b8a1e0efcac606406e2d735306fbf1f9f4234ce5.jpg)
 
 
 
@@ -2469,20 +2470,20 @@ The inverse of the function $y = x^{2}, x \geq 0$ , is the function $y = \sqrt{x
 
 Notice that the function $y = x^{2}$ , $x \geq 0$ , with domain restricted to the nonnegative real numbers, is one-to-one (Figure 1.55) and has an inverse. On the other hand, the function $y = x^{2}$ , with no domain restrictions, is not one-to-one (Figure 1.52b) and therefore has no inverse. 
 
-## Logarithmic Functions
+### Logarithmic Functions
 
 If $a$ is any positive real number other than 1, then the base $a$ exponential function $f(x) = a^x$ is one-to-one. It therefore has an inverse. Its inverse is called the logarithm function with base $a$ . 
 
 > ***DEFINITION*** The logarithm function with base a, written $y = \log_{a} x$ , is the inverse of the base a exponential function $y = a^{x} (a > 0, a \neq 1)$ . 
 
-![[7573c21d8de2f55f3465f7195e8427cf0c716ea52eb32dc83160acbf383263c7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7573c21d8de2f55f3465f7195e8427cf0c716ea52eb32dc83160acbf383263c7.jpg)
 
 
 
 (a)
 
 
-![[469deb2f3785896f272109a15f4901d122ff24168915733afe5e5725eb9c3a0f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/469deb2f3785896f272109a15f4901d122ff24168915733afe5e5725eb9c3a0f.jpg)
 
 
 
@@ -2493,7 +2494,7 @@ If $a$ is any positive real number other than 1, then the base $a$ exponential f
 FIGURE 1.56 (a) The graphs of $2^{x}$ and its inverse, $\log_2 x$ . (b) The graphs of $e^x$ and its inverse, $\ln x$ .
 
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
 John Napier (1550–1617) 
 
@@ -2525,13 +2526,13 @@ $$
 \ln e = 1.
 $$
 
-## Properties of Logarithms
+### Properties of Logarithms
 
 Logarithms, invented by John Napier, were the single most important improvement in arithmetic calculation before the modern electronic computer. The properties of logarithms reduce multiplication of positive numbers to addition of their logarithms, division of positive numbers to subtraction of their logarithms, and exponentiation of a number to multiplying its logarithm by the exponent. 
 
 We summarize these properties for the natural logarithm as a series of rules that we prove in Chapter 7. 
 
-## THEOREM 1—Algebraic Properties of the Natural Logarithm
+**THEOREM 1—Algebraic Properties of the Natural Logarithm**
 
 For any numbers $b > 0$ and $x > 0$ , the natural logarithm satisfies the following rules: 
 
@@ -2609,7 +2610,7 @@ $$
 \log_ {a} x = \frac {\ln x}{\ln a} \quad (a > 0, a \neq 1)
 $$
 
-## Applications
+### Applications
 
 In Section 1.4 we looked at examples of exponential growth and decay problems. Here we use properties of logarithms to answer more questions concerning such problems. 
 
@@ -2639,7 +2640,7 @@ $$
 
 This value of $t$ is the half-life of the element. It depends only on the value of $k$ ; the number $y_0$ does not have any effect. 
 
-![[ee7d1716fe4362363a8f0ea2f1f8bd7fb6ce81598a33b921435dca5da563cf2a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ee7d1716fe4362363a8f0ea2f1f8bd7fb6ce81598a33b921435dca5da563cf2a.jpg)
 
 
 
@@ -2660,20 +2661,20 @@ $$
 
 This means that after 139 days, $1/2$ of $y_0$ radioactive atoms remain; after another 139 days (278 days altogether) half of those remain, or $1/4$ of $y_0$ radioactive atoms remain, and so on (see Figure 1.57). 
 
-## Inverse Trigonometric Functions
+### Inverse Trigonometric Functions
 
 The six basic trigonometric functions are not one-to-one (since their values repeat periodically). However, we can restrict their domains to intervals on which they are one-to-one. The sine function increases from -1 at $x = -\pi/2$ to +1 at $x = \pi/2$ . By restricting its 
 
 $y = \cot x$ 
 
-![[4f42ea76e6e1066e3c1795cc09b9346d835eebf3dbededbd395d8e93cc955169.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4f42ea76e6e1066e3c1795cc09b9346d835eebf3dbededbd395d8e93cc955169.jpg)
 
 
 
 FIGURE 1.58 The graph of $y = \arcsin x$ .
 
 
-![[bd900eae0bdd4cc6672f1df9fe35640d2f4a20b5037142a929138a0d3dc172ba.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bd900eae0bdd4cc6672f1df9fe35640d2f4a20b5037142a929138a0d3dc172ba.jpg)
 
 
 Domain: $[- \pi / 2, \pi / 2]$ 
@@ -2692,43 +2693,43 @@ Domain restrictions that make the trigonometric functions one-to-one
 (a)
 
 
-![[739a46023804299d64f736e8509ea4c8e048adacb804b24bbedc7147e76ebb83.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/739a46023804299d64f736e8509ea4c8e048adacb804b24bbedc7147e76ebb83.jpg)
 
 
 FIGURE 1.59 The graphs of 
 
-![[d72b6a2707ee4620e13ccb237ea14742ae8841b7854199651b0315c5a509bca5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d72b6a2707ee4620e13ccb237ea14742ae8841b7854199651b0315c5a509bca5.jpg)
 
 
-![[f50257d67322e5a1263363670008c3bb5d9dd6c347201a27b1393f52895f169d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f50257d67322e5a1263363670008c3bb5d9dd6c347201a27b1393f52895f169d.jpg)
 
 
 domain to the interval $[-\pi/2, \pi/2]$ we make it one-to-one, so that it has an inverse which is called arcsin x (Figure 1.58). Similar domain restrictions can be applied to all six trigonometric functions. 
 
 (a) $y = \sin x, -\pi/2 \leq x \leq \pi/2,$ and (b) its inverse, $y = \arcsin x$ . The graph of arcsin x, obtained by reflection across the line y = x, is a portion of the curve $x = \sin y$ . 
 
-![[7474cc3899f7c199db226c06e649a9f1f3b3af5e3a7366f4a96bfd8da48f4e2a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7474cc3899f7c199db226c06e649a9f1f3b3af5e3a7366f4a96bfd8da48f4e2a.jpg)
 
 
 Range: $[-1, 1]$ 
 
 Range: $(-\infty, \infty)$ 
 
-![[74b606f2ecd7b556a1678870039dd6633af2d45946f1214bd012148fbe40818f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/74b606f2ecd7b556a1678870039dd6633af2d45946f1214bd012148fbe40818f.jpg)
 
 
 Domain: $(0,\pi)$ 
 
 Range: $(- \infty, \infty)$ 
 
-![[5134377b068014f7d61743670d48ddfb8c0d77fcc8f6a871ebf6d497b154049f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5134377b068014f7d61743670d48ddfb8c0d77fcc8f6a871ebf6d497b154049f.jpg)
 
 
 Domain: $[0, \pi/2) \cup (\pi/2, \pi]$ 
 
 Range: $(- \infty, -1] \cup [1, \infty)$ 
 
-![[fd0176ff8e00bbd86f9cf29979b010155d1c553d3539d3b1dbe0f628e121f81f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fd0176ff8e00bbd86f9cf29979b010155d1c553d3539d3b1dbe0f628e121f81f.jpg)
 
 
 Domain: $[- \pi / 2, 0) \cup (0, \pi / 2]$ 
@@ -2767,21 +2768,21 @@ Caution The -1 in the expressions for the inverse means “inverse.” It does n
 
 The graphs of the six inverse trigonometric functions are obtained by reflecting the graphs of the restricted trigonometric functions through the line y = x. Figure 1.59b shows the graph of $y = \arcsin x$ , and Figure 1.60 shows the graphs of all six functions. We now take a closer look at two of these functions. 
 
-## The Arcsine and Arcosine Functions
+### The Arcsine and Arcosine Functions
 
 We define the arcsine and arccosine as functions whose values are angles (measured in radians) that belong to restricted domains of the sine and cosine functions. 
 
-![[4de795aa06e04d2d8bef2c76c8df9c8c1038feb9dafcc7257d66011a7e43c368.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4de795aa06e04d2d8bef2c76c8df9c8c1038feb9dafcc7257d66011a7e43c368.jpg)
 
 
-![[8e545fb8e45c9dbb0b643ba6a18a497c9fca543e5a7dc2142e9a8e9da6115512.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8e545fb8e45c9dbb0b643ba6a18a497c9fca543e5a7dc2142e9a8e9da6115512.jpg)
 
 
 
 (b)
 
 
-![[3f45a3f8c198c9dcb7ea2e9e012e776802e11e788daa4ea91a506b97cfd53323.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3f45a3f8c198c9dcb7ea2e9e012e776802e11e788daa4ea91a506b97cfd53323.jpg)
 
 
 
@@ -2792,21 +2793,21 @@ Domain: $x \leq -1$ or $x \geq 1$ Range: $0 \leq y \leq \pi, y \neq \frac{\pi}{2
 
 Domain: $x \leq -1$ or $x \geq 1$ Range: $-\frac{\pi}{2} \leq y \leq \frac{\pi}{2}, y \neq 0$ 
 
-![[8a0cf21839b8a476b6a91c84f35574045ed13771657163f50616a23e47a21ea1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8a0cf21839b8a476b6a91c84f35574045ed13771657163f50616a23e47a21ea1.jpg)
 
 
 
 (d)
 
 
-![[a808a4b685f4d6fcffc568f3c243cbbcded35fe6c5bbf251d47d0cd13ceb5c7e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a808a4b685f4d6fcffc568f3c243cbbcded35fe6c5bbf251d47d0cd13ceb5c7e.jpg)
 
 
 
 (e)
 
 
-![[9e8cc8f56c5c309af1514febca21b9e69d6ad52f087e25cad2a8fa7cd730cd04.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9e8cc8f56c5c309af1514febca21b9e69d6ad52f087e25cad2a8fa7cd730cd04.jpg)
 
 
 
@@ -2824,7 +2825,7 @@ For a unit circle and radian angles, the arc length equation $s = r\theta$ becom
 
 The graph of $y = \arcsin x$ (Figure 1.59b) is symmetric about the origin. The arcsine is therefore an odd function: 
 
-![[a11e22f86be585fe7a903356fd69e3792f2d24b8c91a76b5f1053dce6ba296dc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a11e22f86be585fe7a903356fd69e3792f2d24b8c91a76b5f1053dce6ba296dc.jpg)
 
 
 $$
@@ -2853,14 +2854,14 @@ $$
 
 because $\cos (2\pi /3) = -1 / 2$ and $2\pi /3$ belongs to the range $[0,\pi ]$ of the arccosine function. See Figure 1.62b. 
 
-![[64a006ecb374c8fd47101524694d2f179dddf94ac3424da63035f9d5c7a7b146.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/64a006ecb374c8fd47101524694d2f179dddf94ac3424da63035f9d5c7a7b146.jpg)
 
 
 
 (a)
 
 
-![[54e5236bee3e11cc13b6a40a7dee0fa5c5f9e388c75a8f514c1206534a7a0f03.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/54e5236bee3e11cc13b6a40a7dee0fa5c5f9e388c75a8f514c1206534a7a0f03.jpg)
 
 
 
@@ -2875,14 +2876,14 @@ $$
 y = x,
 $$
 
-![[ae63b88913502599670471acc950627b00b3883f6d06276e55fa5e0ed4c434dc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ae63b88913502599670471acc950627b00b3883f6d06276e55fa5e0ed4c434dc.jpg)
 
 
 
 FIGURE 1.63 Diagram for drift correction (Example 9), with distances rounded to the nearest kilometer (drawing not to scale).
 
 
-![[f25fbc6b7b49b651056581449e4c4b36c662335480200d5f14410aac4e274bf2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f25fbc6b7b49b651056581449e4c4b36c662335480200d5f14410aac4e274bf2.jpg)
 
 
 
@@ -2893,14 +2894,14 @@ Using the same procedure illustrated in Example 8, we can create the following t
 
 <table><tr><td>x</td><td>arcsin x</td><td>arccos x</td></tr><tr><td><eq>\sqrt{3}/2</eq></td><td><eq>\pi/3</eq></td><td><eq>\pi/6</eq></td></tr><tr><td><eq>\sqrt{2}/2</eq></td><td><eq>\pi/4</eq></td><td><eq>\pi/4</eq></td></tr><tr><td><eq>1/2</eq></td><td><eq>\pi/6</eq></td><td><eq>\pi/3</eq></td></tr><tr><td><eq>-1/2</eq></td><td><eq>-\pi/6</eq></td><td><eq>2\pi/3</eq></td></tr><tr><td><eq>-\sqrt{2}/2</eq></td><td><eq>-\pi/4</eq></td><td><eq>3\pi/4</eq></td></tr><tr><td><eq>-\sqrt{3}/2</eq></td><td><eq>-\pi/3</eq></td><td><eq>5\pi/6</eq></td></tr></table>
 
-![[75fcbdae30f9c35db68bf580fd478367d4fd7e5a683dcab7260aaf48861d845b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/75fcbdae30f9c35db68bf580fd478367d4fd7e5a683dcab7260aaf48861d845b.jpg)
 
 
 
 (a)
 
 
-![[ed0f554f66aa30f327bd7002574f8b2ea57413d6fac2f388b53b6c9b7dd6aa3e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ed0f554f66aa30f327bd7002574f8b2ea57413d6fac2f388b53b6c9b7dd6aa3e.jpg)
 
 
 
@@ -2919,7 +2920,7 @@ $$
 \begin{array}{l} a = \arcsin \frac {1 2}{1 8 0} \approx 0. 0 6 7 \text {   radian } \approx 3. 8 ^ {\circ} \\ b = \arcsin \frac {1 2}{6 2} \approx 0. 1 9 5 \text {   radian } \approx 1 1. 2 ^ {\circ} \\ c = a + b \approx 1 5 ^ {\circ}. \end{array}
 $$
 
-## Identities Involving Arcsine and Arccosine
+### Identities Involving Arcsine and Arccosine
 
 As we can see from Figure 1.64, the arccosine of x satisfies the identity 
 
@@ -2939,7 +2940,7 @@ $$
 \arcsin x + \arccos x = \pi / 2.\tag{5}
 $$
 
-![[d7bbe15aa9c8b2057bf4c61de9e3e467a3fffca02e729e18e8a9c8af47094697.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d7bbe15aa9c8b2057bf4c61de9e3e467a3fffca02e729e18e8a9c8af47094697.jpg)
 
 
 
@@ -2950,61 +2951,57 @@ Equation (5) holds for the other values of x in $[-1,1]$ as well, but we cannot 
 
 The arctangent, arccotangent, arcsecant, and arccosecant functions are defined in Section 3.9. There we develop additional properties of the inverse trigonometric functions using the identities discussed here. 
 
-## EXERCISES 1.5
+### EXERCISES 1.5
 
 Identifying One-to-One Functions Graphically 
 
 Which of the functions graphed in Exercises 1–6 are one-to-one, and which are not? 
 
-![[53d3fde6f4187df69d65b8b8d16426673a91a930b5a4a20b13899142bb72d86a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/53d3fde6f4187df69d65b8b8d16426673a91a930b5a4a20b13899142bb72d86a.jpg)
 
 
-![[77fa56786cc6ada976d48141b691301cc089ed5d075e62d33f92b6c77f410aa2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/77fa56786cc6ada976d48141b691301cc089ed5d075e62d33f92b6c77f410aa2.jpg)
 
 
 
 3.
 
 
-![[223bdcb5f3eeeb8f6e31caac76ca58a6646a7afee0878c53080ae7569fc6b55c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/223bdcb5f3eeeb8f6e31caac76ca58a6646a7afee0878c53080ae7569fc6b55c.jpg)
 
 
 
 4.
 
 
-![[ed531469adb3711cf37618a8b39b66428c3f04e4b2f3dcd0edf4d91ea075382c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ed531469adb3711cf37618a8b39b66428c3f04e4b2f3dcd0edf4d91ea075382c.jpg)
 
 
 
 5.
 
 
-![[a7e30e704592ef7c5673262ef5d1f5c610efd028d3e7c9cbe62af4d25df58ce2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a7e30e704592ef7c5673262ef5d1f5c610efd028d3e7c9cbe62af4d25df58ce2.jpg)
 
 
 
 6.
 
 
-![[1625121e578c18acf4b403ac7d807b670c71fe23b3acb4baf0e543b35baecceb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1625121e578c18acf4b403ac7d807b670c71fe23b3acb4baf0e543b35baecceb.jpg)
 
 
 In Exercises 7–10, determine from its graph whether the function is one-to-one. 
 
 7. $f(x) = \begin{cases} 3 - x, & x < 0 \\ 3, & x \geq 0 \end{cases}$ 
 
-$$
-f (x) = \left\{ \begin{array}{l l} 2 x + 6, & x \leq - 3 \\ x + 4, & x > - 3 \end{array} \right.
-$$
+8. $f (x) = \left\{ \begin{array}{l l} 2 x + 6, & x \leq - 3 \\ x + 4, & x > - 3 \end{array} \right.$
 
-$$
-f (x) = \left\{ \begin{array}{l l} 1 - \frac {x}{2}, & x \leq 0 \\ \frac {x}{x + 2}, & x > 0 \end{array} \right.
-$$
+9. $f (x) = \left\{ \begin{array}{l l} 1 - \frac {x}{2}, & x \leq 0 \\ \frac {x}{x + 2}, & x > 0 \end{array} \right.$
 
 10. $f(x) = \left\{ \begin{array}{ll}2 - x^2, & x\leq 1\\ x^2, & x > 1 \end{array} \right.$ 
 
-## Graphing Inverse Functions
+#### Graphing Inverse Functions
 
 Each of Exercises 11–16 shows the graph of a function $y = f(x)$ . Copy the graph and draw in the line y = x. Then use reflection with respect to the line y = x to add the graph of $f^{-1}$ to your sketch. (It is not necessary to find a formula for $f^{-1}$ .) Identify the domain and range of $f^{-1}$ . 
 
@@ -3016,34 +3013,36 @@ Each of Exercises 11–16 shows the graph of a function $y = f(x)$ . Copy the gr
 12.
 
 
-![[c44d68e6d2582a25cd73921a450a97f4fd79fd5ae76314b633f881489bbe44af.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c44d68e6d2582a25cd73921a450a97f4fd79fd5ae76314b633f881489bbe44af.jpg)
 
 
-![[81dd089c0382d54fa662cba82c898af341749af16ca6dc239f98a26921089b96.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/81dd089c0382d54fa662cba82c898af341749af16ca6dc239f98a26921089b96.jpg)
 
 
 
 13.
 
 
-![[688cff0db9f30491c1f055827eca3dd1fb66992fcf9d73de201156f6e56699f9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/688cff0db9f30491c1f055827eca3dd1fb66992fcf9d73de201156f6e56699f9.jpg)
 
 
 
 14.
 
 
-![[06400ff30463b855d23bc861385738d02f2414fec5595b6350368528241dac9d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/06400ff30463b855d23bc861385738d02f2414fec5595b6350368528241dac9d.jpg)
 
 
 
 15.
 
 
-![[2856ab688a3afd3b63f7563949a47b04da39813b79ae2fe61366ad3ad8d2c382.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2856ab688a3afd3b63f7563949a47b04da39813b79ae2fe61366ad3ad8d2c382.jpg)
 
 
-![[15e455ede49fab6f15c9990a8002dea6d1bd65ad066cb4d1fa2a5629450bd4d8.jpg|image]]
+16.
+
+![教材插图](/books/thomas-calculus/assets/15e455ede49fab6f15c9990a8002dea6d1bd65ad066cb4d1fa2a5629450bd4d8.jpg)
 
 
 17. a. Graph the function $f(x) = \sqrt{1 - x^2}, 0 \leq x \leq 1$ . What symmetry does the graph have? 
@@ -3054,49 +3053,61 @@ b. Show that $f$ is its own inverse. (Remember that $\sqrt{x^2} = x$ if $x \geq 
 
 b. Show that $f$ is its own inverse. 
 
-## Formulas for Inverse Functions
+#### Formulas for Inverse Functions
 
 Each of Exercises 19–24 gives a formula for a function $y = f(x)$ and shows the graphs of f and $f^{-1}$ . Find a formula for $f^{-1}$ in each case. 
 
 19. $f(x) = x^{2} + 1,\quad x \geq 0$ 
 
-![[cc953b6354ad518c58ce2045916c5bbe1b0e6b854e3dbd3f0d72671fe5b48e3f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cc953b6354ad518c58ce2045916c5bbe1b0e6b854e3dbd3f0d72671fe5b48e3f.jpg)
 
 
 20. $f(x) = x^{2}, x \leq 0$ 
 
-![[593208c97ee6174ace331c2e1bf8bf4cc3f2dd200924e25ca2709bbf298d817d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/593208c97ee6174ace331c2e1bf8bf4cc3f2dd200924e25ca2709bbf298d817d.jpg)
 
 
 21. $f(x) = x^{3} - 1$ 
 
 22. $f(x) = x^{2} - 2x + 1, x \geq 1$ 
 
-![[a6deeffd6cc7c48c558cd3bac7e4525710a4751aeac28fed4950d7fe509b3077.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a6deeffd6cc7c48c558cd3bac7e4525710a4751aeac28fed4950d7fe509b3077.jpg)
 
 
-![[5c9ec128d988849b0622c1f8184dd556b44686c3faaface13d469cffd7ff5d0b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5c9ec128d988849b0622c1f8184dd556b44686c3faaface13d469cffd7ff5d0b.jpg)
 
 
-23. $f(x) = (x + 1)^2$ , $x \geq -1$ 24. $f(x) = x^{2/3}$ , $x \geq 0$ 
+23. $f(x) = (x + 1)^2$ , $x \geq -1$
 
-![[023677478d797a00364ea36d57390d868a378c130305cd2e261899bb8086e0b2.jpg|image]]
+24. $f(x) = x^{2/3}$ , $x \geq 0$
+
+![教材插图](/books/thomas-calculus/assets/023677478d797a00364ea36d57390d868a378c130305cd2e261899bb8086e0b2.jpg)
 
 
-![[690a9078e35dda36a75fb21ce714bd802349b8fe1c895a8f618a2bebcb9e893d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/690a9078e35dda36a75fb21ce714bd802349b8fe1c895a8f618a2bebcb9e893d.jpg)
 
 
 Each of Exercises 25–36 gives a formula for a function $y = f(x)$ . In each case, find $f^{-1}(x)$ and identify the domain and range of $f^{-1}$ . As a check, show that $f(f^{-1}(x)) = f^{-1}(f(x)) = x$ . 
 
-25. $f(x) = x^{5}$ 26. $f(x) = x^4, x \geq 0$ 
+25. $f(x) = x^{5}$
 
-27. $f(x) = x^3 + 1$ 28. $f(x) = (1/2)x - 7/2$ 
+26. $f(x) = x^4, x \geq 0$
 
-29. $f(x) = 1 / x^2, x > 0$ 30. $f(x) = 1 / x^3, x \neq 0$ 
+27. $f(x) = x^3 + 1$
 
-31. $f(x) = \frac{x + 3}{x - 2}$ 32. $f(x) = \frac{\sqrt{x}}{\sqrt{x} - 3}$ 
+28. $f(x) = (1/2)x - 7/2$
 
-33. $f(x) = x^2 - 2x, \quad x \leq 1$ 34. $f(x) = (2x^3 + 1)^{1/5}$ 
+29. $f(x) = 1 / x^2, x > 0$
+
+30. $f(x) = 1 / x^3, x \neq 0$
+
+31. $f(x) = \frac{x + 3}{x - 2}$
+
+32. $f(x) = \frac{\sqrt{x}}{\sqrt{x} - 3}$
+
+33. $f(x) = x^2 - 2x, \quad x \leq 1$
+
+34. $f(x) = (2x^3 + 1)^{1/5}$
 
 (Hint: Complete the square.) 
 
@@ -3104,7 +3115,7 @@ Each of Exercises 25–36 gives a formula for a function $y = f(x)$ . In each ca
 
 36. $f(x) = x^{2} - 2bx,\quad b > 0$ and constant, $x \leq b$ 
 
-## Inverses of Lines
+#### Inverses of Lines
 
 37. a. Find the inverse of the function $f(x) = mx$ , where m is a constant different from zero. 
 
@@ -3124,7 +3135,7 @@ b. Find the inverse of $f(x) = -x + b$ (b constant). What angle does the line $y
 
 c. What can you conclude about the inverses of functions whose graphs are lines perpendicular to the line $y = x$ ? 
 
-## Logarithms and Exponentials
+#### Logarithms and Exponentials
 
 41. Express the following logarithms in terms of $\ln 2$ and $\ln 3$ .  
 a. $\ln 0.75$ b. $\ln (4/9)$ c. $\ln (1/2)$ d. $\ln \sqrt[3]{9}$ e. $\ln 3\sqrt{2}$ f. $\ln \sqrt{13.5}$ 
@@ -3150,74 +3161,66 @@ Find simpler expressions for the quantities in Exercises 45–48.
 
 In Exercises 49–54, solve for y in terms of t or x, as appropriate. 
 
-49. $\ln y = 2t + 4$ 50. $\ln y = -t + 5$ 
+49. $\ln y = 2t + 4$
 
-51. $\ln (y - b) = 5t$ 52. $\ln (c - 2y) = t$ 
+50. $\ln y = -t + 5$
+
+51. $\ln (y - b) = 5t$
+
+52. $\ln (c - 2y) = t$
 
 53. $\ln (y - 1) - \ln 2 = x + \ln x$ 
 
 54. $\ln (y^2 - 1) - \ln (y + 1) = \ln (\sin x)$ 
 
 In Exercises 55 and 56, solve for $k$ .  
-55. a. $e^{2k} = 4$ b. $100e^{10k} = 200$ c. $e^{k/1000} = a$ 56. a. $e^{5k} = \frac{1}{4}$ b. $80e^k = 1$ c. $e^{(\ln 0.8)k} = 0.8$ 
+55. a. $e^{2k} = 4$ b. $100e^{10k} = 200$ c. $e^{k/1000} = a$
+
+56. a. $e^{5k} = \frac{1}{4}$ b. $80e^k = 1$ c. $e^{(\ln 0.8)k} = 0.8$
 
 In Exercises 57–64, solve for t.
 
-57. a. $e^{-0.3t} = 27$ b. $e^{kt} = \frac{1}{2}$ c. $e^{(\ln 0.2)t} = 0.4$ 58. a. $e^{-0.01t} = 1000$ b. $e^{kt} = \frac{1}{10}$ c. $e^{(\ln 2)t} = \frac{1}{2}$ 59. $e^{\sqrt{t}} = x^{2}$ 60. $e^{(x^{2})e(2x+1)} = e^{t}$ 61. $e^{2t} - 3e^{t} = 0$ 62. $e^{-2t} + 6 = 5e^{-t}$ 63. $\ln\left(\frac{t}{t-1}\right) = 2$ 64. $\ln(t-2) = \ln 8 - \ln t$ 
+57. a. $e^{-0.3t} = 27$ b. $e^{kt} = \frac{1}{2}$ c. $e^{(\ln 0.2)t} = 0.4$
+
+58. a. $e^{-0.01t} = 1000$ b. $e^{kt} = \frac{1}{10}$ c. $e^{(\ln 2)t} = \frac{1}{2}$
+
+59. $e^{\sqrt{t}} = x^{2}$
+
+60. $e^{(x^{2})e(2x+1)} = e^{t}$
+
+61. $e^{2t} - 3e^{t} = 0$
+
+62. $e^{-2t} + 6 = 5e^{-t}$
+
+63. $\ln\left(\frac{t}{t-1}\right) = 2$
+
+64. $\ln(t-2) = \ln 8 - \ln t$
 
 65. a. $5^{\log_57}$ b. $8^{\log_8\sqrt{2}}$ c. $1.3^{\log_{1.3}75}$ d. $\log_416$ e. $\log_3\sqrt{3}$ f. $\log_4\left(\frac{1}{4}\right)$ 
 
-$$
-2 ^ {\log_ {2} 3}
-$$
+66. a. $2 ^ {\log_ {2} 3}$ b. $\log_ {1 1} 1 2 1$ c. $1 0 ^ {\log_ {1 0} (1 / 2)}$ d. $\log_ {1 2 1} 1 1$ e. $\pi^ {\log_ {\pi} 7}$ f. $\log_ {3} \left(\frac {1}{9}\right)$
 
-$$
-\log_ {1 1} 1 2 1
-$$
-
-$$
-1 0 ^ {\log_ {1 0} (1 / 2)}
-$$
-
-$$
-\log_ {1 2 1} 1 1
-$$
-
-$$
-\pi^ {\log_ {\pi} 7}
-$$
-
-$$
-\log_ {3} \left(\frac {1}{9}\right)
-$$
-
-$$
-2 ^ {\log_ {4} x}
-$$
-
-$$
-9 ^ {\log_ {3} x}
-$$
-
-$$
-\log_ {2} \left(e ^ {(\ln 2) (\sin x)}\right)
-$$
+67. a. $2 ^ {\log_ {4} x}$ b. $9 ^ {\log_ {3} x}$ c. $\log_ {2} \left(e ^ {(\ln 2) (\sin x)}\right)$
 
 68. a. $25^{\log_5(3x^2)}$ b. $\log_e(e^x)$ c. $\log_4\left(2^{ex\sin x}\right)$ 
 
 Express the ratios in Exercises 69 and 70 as ratios of natural logarithms and simplify.
-69. a. $\frac{\log_2 x}{\log_3 x}$ b. $\frac{\log_2 x}{\log_8 x}$ c. $\frac{\log_x a}{\log_{x^2} a}$ 70. a. $\frac{\log_9 x}{\log_3 x}$ b. $\frac{\log_{\sqrt{10}} x}{\log_{\sqrt{2}} x}$ c. $\frac{\log_a b}{\log_b a}$ 
+69. a. $\frac{\log_2 x}{\log_3 x}$ b. $\frac{\log_2 x}{\log_8 x}$ c. $\frac{\log_x a}{\log_{x^2} a}$
 
-## Arcsine and Arcosine
+70. a. $\frac{\log_9 x}{\log_3 x}$ b. $\frac{\log_{\sqrt{10}} x}{\log_{\sqrt{2}} x}$ c. $\frac{\log_a b}{\log_b a}$
+
+#### Arcsine and Arcosine
 
 In Exercises 71–74, find the exact value of each expression. Remember that $\sin^{-1}x$ and $\arcsin x$ are the same function, and, similarly, $\cos^{-1}x$ and $\arccos x$ .
-71. a. $\sin^{-1}\left(\frac{-1}{2}\right)$ b. $\sin^{-1}\left(\frac{1}{\sqrt{2}}\right)$ c. $\sin^{-1}\left(\frac{-\sqrt{3}}{2}\right)$ 72. a. $\cos^{-1}\left(\frac{1}{2}\right)$ b. $\cos^{-1}\left(\frac{-1}{\sqrt{2}}\right)$ c. $\cos^{-1}\left(\frac{\sqrt{3}}{2}\right)$ 
+71. a. $\sin^{-1}\left(\frac{-1}{2}\right)$ b. $\sin^{-1}\left(\frac{1}{\sqrt{2}}\right)$ c. $\sin^{-1}\left(\frac{-\sqrt{3}}{2}\right)$
+
+72. a. $\cos^{-1}\left(\frac{1}{2}\right)$ b. $\cos^{-1}\left(\frac{-1}{\sqrt{2}}\right)$ c. $\cos^{-1}\left(\frac{\sqrt{3}}{2}\right)$
 
 73. a. arccos $(-1)$ b. arccos (0) 
 
 74. a. $\arcsin (-1)$ b. $\arcsin \left(-\frac{1}{\sqrt{2}}\right)$ 
 
-## Theory and Examples
+#### Theory and Examples
 
 75. If $f(x)$ is one-to-one, can anything be said about $g(x) = -f(x)$ ? Is it also one-to-one? Give reasons for your answer. 
 
@@ -3286,18 +3289,6 @@ b. When will there be 1 gram remaining?
 
 13. What is a periodic function? Give examples. What are the periods of the six basic trigonometric functions? 
 
-## CHAPTER 1 Practice Exercises
-
-## Functions and Graphs
-
-1. Express the area and circumference of a circle as functions of the circle's radius. Then express the area as a function of the circumference. 
-
-2. Express the radius of a sphere as a function of the sphere's surface area. Then express the surface area as a function of the volume. 
-
-3. A point P in the first quadrant lies on the parabola $y = x^{2}$ . Express the coordinates of P as functions of the angle of inclination of the line joining P to the origin. 
-
-4. A hot-air balloon rising straight up from a level field is tracked by a range finder located 500 m from the point of liftoff. Express the balloon's height as a function of the angle the line from the range finder to the balloon makes with the ground. 
-
 14. Starting with the identity $\sin^{2}\theta + \cos^{2}\theta = 1$ and the formulas for $\cos(A + B)$ and $\sin(A + B)$ , show how a variety of other trigonometric identities may be derived. 
 
 15. How does the formula for the general sine function $f(x) = A \sin((2\pi/B)(x - C)) + D$ relate to the shifting, stretching, compressing, and reflection of its graph? Give examples. Graph the general sine curve and identify the constants A, B, C, and D. 
@@ -3320,23 +3311,27 @@ b. When will there be 1 gram remaining?
 
 24. How are the inverse trigonometric functions defined? How can you sometimes use right triangles to find values of these functions? Give examples. 
 
+## CHAPTER 1 Practice Exercises
+
+### Functions and Graphs
+
+1. Express the area and circumference of a circle as functions of the circle's radius. Then express the area as a function of the circumference. 
+
+2. Express the radius of a sphere as a function of the sphere's surface area. Then express the surface area as a function of the volume. 
+
+3. A point P in the first quadrant lies on the parabola $y = x^{2}$ . Express the coordinates of P as functions of the angle of inclination of the line joining P to the origin. 
+
+4. A hot-air balloon rising straight up from a level field is tracked by a range finder located 500 m from the point of liftoff. Express the balloon's height as a function of the angle the line from the range finder to the balloon makes with the ground. 
+
 In Exercises 5–8, determine whether the graph of the function is symmetric about the y-axis, the origin, or neither. 
 
-$$
-5. y = x ^ {1 / 5}
-$$
+5. $y = x ^ {1 / 5}$
 
-$$
-6. y = x ^ {2 / 5}
-$$
+6. $y = x ^ {2 / 5}$
 
-$$
-y = x ^ {2} - 2 x - 1
-$$
+7. $y = x ^ {2} - 2 x - 1$
 
-$$
-\mathbf {8 .} y = e ^ {- x ^ {2}}
-$$
+8. $y = e ^ {- x ^ {2}}$
 
 In Exercises 9–16, determine whether the function is even, odd, or neither. 
 
@@ -3421,12 +3416,12 @@ In Exercises 37 and 38, write a piecewise formula for the function.
 
 37. 
 
-![[932d6f07d40607fe6e1c02eb0bebc87c91db3b85b60118d10a0ef7c3eebedcee.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/932d6f07d40607fe6e1c02eb0bebc87c91db3b85b60118d10a0ef7c3eebedcee.jpg)
 
 
 38. 
 
-![[b51786a13c9c9a5b44b6ea387ae92c99d6deb065fb84eba3f4779b2159c2620d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b51786a13c9c9a5b44b6ea387ae92c99d6deb065fb84eba3f4779b2159c2620d.jpg)
 
 
 Composition of Functions 
@@ -3502,7 +3497,7 @@ In Exercises 55–58, graph each function, not by plotting points, but by starti
 
 58. $y = (-5x)^{1/3}$ 
 
-## Trigonometry
+### Trigonometry
 
 In Exercises 59–62, sketch the graph of the given function. What is the period of the function? 
 
@@ -3552,7 +3547,7 @@ b. What are the domain and range of $f$ ?
 
 c. Is $f$ periodic? Give reasons for your answer. 
 
-## Transcendental Functions
+### Transcendental Functions
 
 In Exercises 73–76, find the domain of each function. 
 
@@ -3580,7 +3575,7 @@ T 80. Graph $y = \ln (x^2 + c)$ for $c = -4, -2, 0, 3$ , and 5. How does the gra
 
 82. Graph the three functions $y = x^{a}$ , $y = a^{x}$ , and $y = \log_{a} x$ together on the same screen for a = 2, 10, and 20. For large values of x, which of these functions has the largest values and which has the smallest values? 
 
-## Theory and Examples
+### Theory and Examples
 
 In Exercises 83 and 84, find the domain and range of each composite function. Then graph the compositions on separate screens. Do the graphs make sense in each case? Give reasons for your answers and comment on any differences you see. 
 
@@ -3594,13 +3589,7 @@ a. $f(x) = x^3 -\frac{x}{2}$ b. $f(x) = x^3 +\frac{x}{2}$
 
 T 86. Use a graph to find to 3 decimal places the values of x for which $e^{x} > 10,000,000$ . 
 
-$$
-f (x) = x ^ {3}
-$$
-
-$$
-g (x) = \sqrt [ 3 ]{x}
-$$
+87. a. Show that $f(x) = x^3$ and $g(x) = \sqrt[3]{x}$ are inverses of one another.
 
 T b. Graph $f$ and $g$ over an $x$ -interval large enough to show the graphs intersecting at (1, 1) and (-1, -1). Be sure the picture shows the required symmetry in the line $y = x$ . 
 
@@ -3610,7 +3599,7 @@ T b. Graph h and k over an x-interval large enough to show the graphs intersecti
 
 ## CHAPTER 1 Additional and Advanced Exercises
 
-## Functions and Graphs
+### Functions and Graphs
 
 1. Are there two functions $f$ and $g$ such that $f \circ g = g \circ f$ ? Give reasons for your answer. 
 
@@ -3618,13 +3607,13 @@ T b. Graph h and k over an x-interval large enough to show the graphs intersecti
 
 3. If $f(x)$ is odd, can anything be said of $g(x) = f(x) - 2$ ? What if $f$ is even instead? Give reasons for your answer. 
 
-5. Graph the equation $|x| + |y| = 1 + x$ . 
-
 4. If $g(x)$ is an odd function defined for all values of $x$ , can anything be said about $g(0)$ ? Give reasons for your answer. 
+
+5. Graph the equation $|x| + |y| = 1 + x$ . 
 
 6. Graph the equation $y + |y| = x + |x|$ . 
 
-## Derivations and Proofs
+### Derivations and Proofs
 
 7. Prove the following identities. 
 
@@ -3634,12 +3623,12 @@ $$
 
 8. Explain the following “proof without words” of the law of cosines. (Source: Kung, Sidney H., “Proof Without Words: The Law of Cosines,” Mathematics Magazine, Vol. 63, no. 5, Dec. 1990, p. 342.) 
 
-![[37c013767cd7b26f7a6f1ebf17fa326f672e69a619ed96f461d529adf0ce02b2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/37c013767cd7b26f7a6f1ebf17fa326f672e69a619ed96f461d529adf0ce02b2.jpg)
 
 
 9. Show that the area of triangle ABC is given by $(1/2)ab \sin C = (1/2)bc \sin A = (1/2)ca \sin B$ . 
 
-![[b68774d3896a601bbb759f71b81ce9b7e7c7c6458cabc0771c94b18639382a9c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b68774d3896a601bbb759f71b81ce9b7e7c7c6458cabc0771c94b18639382a9c.jpg)
 
 
 10. Show that the area of triangle $ABC$ is given by $\sqrt{s(s - a)(s - b)(s - c)}$ where $s = (a + b + c)/2$ is the semiperimeter of the triangle. 
@@ -3662,16 +3651,16 @@ Effects of Parameters on Graphs
 
 T 14. What happens to the graph of $y = a(x + b)^3 + c$ as a. $a$ changes while $b$ and $c$ remain fixed? b. $b$ changes (a and c fixed, $a \neq 0$ )? c. $c$ changes (a and b fixed, $a \neq 0$ )? 
 
-## Geometry
+### Geometry
 
 15. An object's center of mass moves at a constant velocity $v$ along a straight line past the origin. The accompanying figure shows the coordinate system and the line of motion. The dots show positions that are 1 sec apart. Why are the areas $A_1, A_2, \ldots, A_5$ in the figure all equal? As in Kepler's equal area law (see Section 12.6), the line that joins the object's center of mass to the origin sweeps out equal areas in equal times. 
 
-![[80965092f2e742b6f0269fa30c31ed85e9394faca14e34f71b24219211f72c61.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/80965092f2e742b6f0269fa30c31ed85e9394faca14e34f71b24219211f72c61.jpg)
 
 
 16. a. Find the slope of the line from the origin to the midpoint $P$ of side $AB$ in the triangle in the accompanying figure $(a, b > 0)$ . 
 
-![[a7328182bbb9c47c42e7ee325d882e449936786c1b35ed01b8a262c9e880da33.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a7328182bbb9c47c42e7ee325d882e449936786c1b35ed01b8a262c9e880da33.jpg)
 
 
 b. When is $OP$ perpendicular to $AB$ ? 
@@ -3682,12 +3671,12 @@ $$
 \frac {1}{2} \sin \theta \cos \theta <   \frac {\theta}{2} <   \frac {1}{2} \frac {\sin \theta}{\cos \theta}.
 $$
 
-![[64dab5079b7589a3455dc82812bf7fdd368200cd5301e1704ba7b0f6461c1dcd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/64dab5079b7589a3455dc82812bf7fdd368200cd5301e1704ba7b0f6461c1dcd.jpg)
 
 
 18. Let $f(x) = ax + b$ and $g(x) = cx + d$ . What condition must be satisfied by the constants $a, b, c, d$ in order that $(f \circ g)(x) = (g \circ f)(x)$ for every value of $x$ ? 
 
-## Theory and Examples
+### Theory and Examples
 
 19. Domain and range Suppose that $a \neq 0, b \neq 1$ , and $b > 0$ . Determine the domain and range of the function. 
 
@@ -3745,7 +3734,7 @@ b. Graph f and g together. Comment on the behavior of f in relation to the signs
 
 ## CHAPTER 1 Technology Application Projects
 
-## Mathematica/Maple Projects
+### Mathematica/Maple Projects
 
 Projects can be found within MyLab Math. 
 
@@ -3755,9 +3744,9 @@ Projects can be found within MyLab Math.
 - Modeling Change: Springs, Driving Safety, Radioactivity, Trees, Fish, and Mammals
 Construct and interpret mathematical models, analyze and improve them, and make predictions using them. 
 
-## Limits and Continuity
+### Limits and Continuity
 
-![[2dfcc81d3cbdc455139f2ce61882fd4a1a9d6ae592cb5f28b2e999566d01e89d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2dfcc81d3cbdc455139f2ce61882fd4a1a9d6ae592cb5f28b2e999566d01e89d.jpg)
 
 
 OVERVIEW In this chapter we develop the concept of a limit, first intuitively and then formally. We use limits to describe the way a function varies. Some functions vary continuously; small changes in x produce only small changes in $f(x)$ . Other functions can have values that jump, vary erratically, or tend to increase or decrease without bound. The notion of limit gives a precise way to distinguish among these behaviors.

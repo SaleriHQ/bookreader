@@ -13,7 +13,7 @@ In Chapter 1, we introduced the natural logarithm function $\ln x$ as the invers
 
 In this section we recreate the theory of logarithmic and exponential functions from an entirely different point of view. Here we define these functions analytically and derive their behaviors. To begin, we use the Fundamental Theorem of Calculus to define the natural logarithm function $\ln x$ as an integral. We quickly develop its properties, including the algebraic, geometric, and analytic properties with which we are already familiar. Next we introduce the function $e^{x}$ as the inverse function of $\ln x$ , and establish its properties. Defining $\ln x$ as an integral and $e^{x}$ as its inverse is an indirect approach that gives an elegant and powerful way to obtain and validate the key properties of logarithmic and exponential functions. 
 
-## Definition of the Natural Logarithm Function
+### Definition of the Natural Logarithm Function
 
 The natural logarithm of a positive number x, written as $\ln x$ , is the value of an integral. The appropriate integral is suggested by our earlier results in Chapter 5. 
 
@@ -29,7 +29,7 @@ $$
 \ln 1 = \int_ {1} ^ {1} \frac {1}{t} d t = 0.
 $$
 
-![[c02c639414b8b7c7bba285d8ad3ed94fdea052a9f208f2e781983546a793b31d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c02c639414b8b7c7bba285d8ad3ed94fdea052a9f208f2e781983546a793b31d.jpg)
 
 
 
@@ -86,7 +86,7 @@ The derivative of $\ln |x|$ can be found just as in Example 3(c) of Section 3.8,
 
 (3) 
 
-![[b43c21e3246dedcbc650a12d4a3ec5f41816629798b94ddedbb73d4428fe0454.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b43c21e3246dedcbc650a12d4a3ec5f41816629798b94ddedbb73d4428fe0454.jpg)
 
 
 
@@ -97,7 +97,7 @@ $$
 \frac {d}{d x} \ln | x | = \frac {1}{x}, x \neq 0.
 $$
 
-![[e1112f48963e180b2bcc4dec0d051ec8d6c4eaa925c96d21468834b22376eb51.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e1112f48963e180b2bcc4dec0d051ec8d6c4eaa925c96d21468834b22376eb51.jpg)
 
 
 
@@ -114,7 +114,7 @@ $$
 {\frac {d}{d x}} \ln b x = {\frac {1}{b x}} \cdot {\frac {d}{d x}} (b x) = {\frac {1}{b x}} (b) = {\frac {1}{x}}.
 $$
 
-## The Graph and Range of $\ln x$
+### The Graph and Range of $\ln x$
 
 The derivative $d(\ln x)/dx = 1/x$ is positive for x > 0, so $\ln x$ is an increasing function of x. The second derivative, $-1/x^{2}$ , is negative, so the graph of $\ln x$ is concave down. (See Figure 7.2a.) 
 
@@ -150,7 +150,7 @@ $$
 
 We defined $\ln x$ for x > 0, so the domain of $\ln x$ is the set of positive real numbers. The above discussion and the Intermediate Value Theorem show that its range is the entire real line, giving the familiar graph of $y = \ln x$ shown in Figure 7.2(a). 
 
-## The Integral $\int 1 / x dx$
+### The Integral $\int 1 / x dx$
 
 Equation (3) leads to the following integral formula: 
 
@@ -178,7 +178,7 @@ $$
 
 Note that $u = 3 + 2 \sin \theta$ is always positive on $[-\pi/2, \pi/2]$ , so Equation (5) applies. 
 
-## The Inverse of $\ln x$ and the Number $e$
+### The Inverse of $\ln x$ and the Number $e$
 
 The function $\ln x$ , being an increasing function of x with domain $(0,\infty)$ and range $(-\infty,\infty)$ , has an inverse $\ln^{-1}x$ with domain $(-\infty,\infty)$ and range $(0,\infty)$ . The graph of $\ln^{-1}x$ is the graph of $\ln x$ reflected across the line y = x. As you can see in Figure 7.3, 
 
@@ -186,7 +186,7 @@ $$
 \lim _ {x \to \infty} \ln^ {- 1} x = \infty \quad \text { and } \quad \lim _ {x \to - \infty} \ln^ {- 1} x = 0.
 $$
 
-![[b31a89fd9c64e3687b4ed831a357905c4672a2632af3ee8f831859f54906f9ab.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b31a89fd9c64e3687b4ed831a357905c4672a2632af3ee8f831859f54906f9ab.jpg)
 
 
 
@@ -233,7 +233,7 @@ $$
 \begin{array}{r l} e ^ {\ln x} = x & \text {(all x > 0)} \\ \ln (e ^ {x}) = x & \text {(all x)} \end{array}
 $$
 
-## The Derivative and Integral of $e^x$
+### The Derivative and Integral of $e^x$
 
 The exponential function is differentiable because it is the inverse of a differentiable function whose derivative is never zero. We calculate its derivative by using Theorem 3 of Section 3.8 and our knowledge of the derivative of $\ln x$ . Let 
 
@@ -275,11 +275,11 @@ $$
 
 If $f(x) = e^{x}$ , then we see from Equation (7) that $f'(0) = e^{0} = 1$ . That is, the exponential function $e^{x}$ has slope 1 as it crosses the y-axis at x = 0. This agrees with our assertion for the natural exponential in Section 3.3. 
 
-## Logarithms and Laws of Exponents
+### Logarithms and Laws of Exponents
 
 The familiar algebraic properties of logarithms and exponential functions were stated in Section 1.5. We now show that these follow from the definition of the logarithm as an integral that we have used. The properties of logarithms are stated in Theorem 1. 
 
-## THEOREM 1—Algebraic Properties of the Natural Logarithm
+**THEOREM 1—Algebraic Properties of the Natural Logarithm**
 
 For any numbers $b > 0$ and $x > 0$ , the natural logarithm satisfies the following rules: 
 
@@ -363,7 +363,7 @@ in Exercises 63. The Reciprocal Rule, $\ln (1 / x) = -\ln x$ , is a special case
 
 We now state the algebraic properties of exponential functions. 
 
-## THEOREM 2—Laws of Exponents for $e^x$
+**THEOREM 2—Laws of Exponents for $e^x$**
 
 For all numbers x and y, the natural exponential function $e^{x}$ obeys the following laws. 
 
@@ -391,7 +391,7 @@ $$
 
 Theorem 1 and the inverse relationship between the logarithmic and exponential functions also imply the other algebraic properties of the exponential function (see Exercise 67). 
 
-## The General Exponential Function $a^{x}$
+### The General Exponential Function $a^{x}$
 
 Since $a = e^{\ln a}$ for any positive number $a$ , we can express $a^x$ as $(e^{\ln a})^x = e^{x\ln a}$ . We therefore make the following definition, consistent with what we stated in Section 1.5. 
 
@@ -401,7 +401,7 @@ Since $a = e^{\ln a}$ for any positive number $a$ , we can express $a^x$ as $(e^
 > a ^ {x} = e ^ {x \ln a}.
 > $$
 
-## The General Power Function
+### The General Power Function
 
 $x^{r}$ is the function $e^{r\ln x}$ . 
 
@@ -449,14 +449,14 @@ $$
 {\frac {d}{d x}} a ^ {u} = a ^ {u} \ln a {\frac {d u}{d x}}.
 $$
 
-![[aed459bc1b05a1aad5fed39098848fe0488d94e28fd1308a755620bcb2e1bf75.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/aed459bc1b05a1aad5fed39098848fe0488d94e28fd1308a755620bcb2e1bf75.jpg)
 
 
 
 FIGURE 7.4 The graph of $2^{x}$ and its inverse, $\log_{2} x$ .
 
 
-## TABLE 7.2 Rules for base a logarithms
+**TABLE 7.2 Rules for base a logarithms**
 
 For any numbers $x > 0$ and $y > 0$ , 
 
@@ -490,7 +490,7 @@ $$
 \int a ^ {x} d x = \frac {a ^ {x}}{\ln a} + C
 $$
 
-## Logarithms with Base $a$
+### Logarithms with Base $a$
 
 If a is any positive number other than 1, the function $a^{x}$ is one-to-one and has a nonzero derivative at every point. It therefore has a differentiable inverse. 
 
@@ -530,7 +530,7 @@ $$
 
 ... gives Rule 1 for base $a$ logarithms. 
 
-## Derivatives and Integrals Involving $\log_{a}x$
+### Derivatives and Integrals Involving $\log_{a}x$
 
 To find derivatives or integrals involving base $a$ logarithms, we can convert them to natural logarithms. In particular, differentiating $\log_a x$ gives 
 
@@ -550,7 +550,7 @@ $$
 \frac {d}{d x} \left(\log_ {a} u\right) = \frac {1}{\ln a} \cdot \frac {1}{u} \frac {d u}{d x}.
 $$
 
-## Transcendental Numbers and Transcendental Functions
+### Transcendental Numbers and Transcendental Functions
 
 **EXAMPLE 2** We illustrate the derivative and integral results. 
 
@@ -562,7 +562,7 @@ Numbers that are solutions of polynomial equations with rational coefficients ar
 
 We call a function $y = f(x)$ algebraic if it satisfies an equation of the form 
 
-## Summary
+### Summary
 
 $$
 P _ {n} y ^ {n} + \dots + P _ {1} y + P _ {0} = 0
@@ -572,69 +572,39 @@ in which the $P$ 's are polynomials in $x$ with rational coefficients. The funct
 
 In this section we used calculus to give precise definitions of the logarithmic and exponential functions. This approach is somewhat different from our earlier treatments of the polynomial, rational, and trigonometric functions. There we first defined the function and then we studied its derivatives and integrals. Here we started with an integral from which the functions of interest were obtained. The motivation behind this approach was to address mathematical difficulties that arise when we attempt to define functions such as $a^{x}$ for any real number x, rational or irrational. Defining $\ln x$ as the integral of the function 1/t from t = 1 to t = x enabled us to define all of the exponential and logarithmic functions and then to derive their key algebraic and analytic properties. 
 
-## EXERCISES 7.1
+### EXERCISES 7.1
 
-## Integration
+#### Integration
 
 Evaluate the integrals in Exercises 1–46. 
-
-22. $\int e^{\csc (\pi +t)}\csc (\pi +t)\cot (\pi +t)dt$ 
 
 1. $\int_{-3}^{-2}\frac{dx}{x}$ 
 
 2. $\int_{-1}^{0}\frac{3dx}{3x - 2}$ 
 
-23. $\int_{\ln (\pi /6)}^{\ln (\pi /2)}2e^{v}\cos e^{v}dv$ 
-
-24. $\int_0^{\sqrt{\ln\pi}} 2xe^{x^2}\cos (e^{x^2}) dx$ 
-
 3. $\int \frac{2ydy}{y^2 - 25}$ 
 
 4. $\int \frac{8rdr}{4r^2 - 5}$ 
-
-25. $\int \frac{e^r}{1 + e^r} dr$ 
-
-26. $\int \frac{dx}{1 + e^x}$ 
 
 5. $\int \frac{3\sec^2t}{6 + 3\tan t} dt$ 
 
 6. $\int \frac{\sec y \tan y}{2 + \sec y} dy$ 
 
-27. $\int_0^1 2^{-\theta}d\theta$ 
-
-28. $\int_{-2}^{0} 5^{-\theta} d\theta$ 
-
 7. $\int \frac{dx}{2\sqrt{x} + 2x}$ 
 
 8. $\int \frac{\sec x dx}{\sqrt{\ln(\sec x + \tan x)}}$ 
-
-29. $\int_{1}^{\sqrt{2}}x2^{(x^2)}dx$ 
-
-30. $\int_1^4\frac{2^{\sqrt{x}}}{\sqrt{x}} dx$ 
 
 9. $\int_{\ln 2}^{\ln 3}e^{x}dx$ 
 
 10. $\int 8e^{(x + 1)}dx$ 
 
-31. $\int_0^{\pi /2}7^{\cos t}\sin tdt$ 
-
-32. $\int_0^{\pi /4}\left(\frac{1}{3}\right)^{\tan t}\sec^2 tdt$ 
-
 11. $\int_{1}^{4}\frac{(\ln x)^{3}}{2x} dx$ 
 
 12. $\int \frac{\ln(\ln x)}{x\ln x} dx$ 
 
-33. $\int_2^4 x^{2x}(1 + \ln x)dx$ 
-
-34. $\int_{1}^{2}\frac{2^{\ln x}}{x} dx$ 
-
 13. $\int_{\ln 4}^{\ln 9}e^{x / 2}dx$ 
 
 14. $\int \tan x\ln (\cos x)dx$ 
-
-35. $\int_0^3 (\sqrt{2} +1)x^{\sqrt{2}}dx$ 
-
-36. $\int_1^e x^{(\ln 2) - 1}dx$ 
 
 15. $\int \frac{e^{\sqrt{r}}}{\sqrt{r}} dr$ 
 
@@ -644,27 +614,57 @@ $$
 \int \frac {\log_ {1 0} x}{x} d x
 $$
 
-38. $\int_1^4\frac{\log_2x}{x} dx$ 
-
 17. $\int 2te^{-t^2}dt$ 
 
 18. $\int \frac{\ln x dx}{x\sqrt{\ln^2 x + 1}}$ 
 
-20. $\int \frac{e^{-1 / x^2}}{x^3} dx$ 
-
 19. $\int \frac{e^{1 / x}}{x^2} dx$ 
 
-39. $\int_{1}^{4}\frac{\ln 2\log_2x}{x} dx$ 
-
-41. $\int_0^2\frac{\log_2(x + 2)}{x + 2} dx$ 
+20. $\int \frac{e^{-1 / x^2}}{x^3} dx$ 
 
 21. $\int e^{\sec \pi t}\sec \pi t\tan \pi tdt$ 
 
-43. $\int_0^9\frac{2\log_{10}(x + 1)}{x + 1} dx$ 
+22. $\int e^{\csc (\pi +t)}\csc (\pi +t)\cot (\pi +t)dt$ 
+
+23. $\int_{\ln (\pi /6)}^{\ln (\pi /2)}2e^{v}\cos e^{v}dv$ 
+
+24. $\int_0^{\sqrt{\ln\pi}} 2xe^{x^2}\cos (e^{x^2}) dx$ 
+
+25. $\int \frac{e^r}{1 + e^r} dr$ 
+
+26. $\int \frac{dx}{1 + e^x}$ 
+
+27. $\int_0^1 2^{-\theta}d\theta$ 
+
+28. $\int_{-2}^{0} 5^{-\theta} d\theta$ 
+
+29. $\int_{1}^{\sqrt{2}}x2^{(x^2)}dx$ 
+
+30. $\int_1^4\frac{2^{\sqrt{x}}}{\sqrt{x}} dx$ 
+
+31. $\int_0^{\pi /2}7^{\cos t}\sin tdt$ 
+
+32. $\int_0^{\pi /4}\left(\frac{1}{3}\right)^{\tan t}\sec^2 tdt$ 
+
+33. $\int_2^4 x^{2x}(1 + \ln x)dx$ 
+
+34. $\int_{1}^{2}\frac{2^{\ln x}}{x} dx$ 
+
+35. $\int_0^3 (\sqrt{2} +1)x^{\sqrt{2}}dx$ 
+
+36. $\int_1^e x^{(\ln 2) - 1}dx$ 
+
+38. $\int_1^4\frac{\log_2x}{x} dx$ 
+
+39. $\int_{1}^{4}\frac{\ln 2\log_2x}{x} dx$ 
 
 40. $\int_{1}^{e}\frac{2\ln 10\log_{10}x}{x} dx$ 
 
+41. $\int_0^2\frac{\log_2(x + 2)}{x + 2} dx$ 
+
 42. $\int_{1 / 10}^{10}\frac{\log_{10}(10x)}{x} dx$ 
+
+43. $\int_0^9\frac{2\log_{10}(x + 1)}{x + 1} dx$ 
 
 44. $\int_{2}^{3}\frac{2\log_{2}(x - 1)}{x - 1} dx$ 
 
@@ -688,7 +688,7 @@ Solve the initial value problems in Exercises 47–52.
 
 52. $\frac{d^2y}{dx^2} = \sec^2 x, y(0) = 0$ and $y'(0) = 1$ 
 
-## Theory and Applications
+#### Theory and Applications
 
 53. The region between the curve $y = 1/x^{2}$ and the x-axis from x = 1/2 to x = 2 is revolved about the y-axis to generate a solid. Find the volume of the solid. 
 
@@ -708,7 +708,7 @@ b. Estimate to five decimal places the error involved in replacing $\ln (1 + x)$
 
 c. Graph $\ln(1 + x)$ and x together for $0 \leq x \leq 0.5$ . Use different colors, if available. At what points does the approximation of $\ln(1 + x)$ seem best? Least good? By reading coordinates from the graphs, find as good an upper bound for the error as your grapher will allow. 
 
-## 58. The linearization of $e^{x}$ at x = 0
+58. The linearization of $e^{x}$ at x = 0
 
 a. Derive the linear approximation $e^{x} \approx 1 + x$ at x = 0. 
 
@@ -724,7 +724,7 @@ $$
 
 as suggested by the accompanying figure. 
 
-![[52a4d4d049d2b34b43be66f5ca472439db99ae7a54c7b1ee0d81b7f2d2ad83e4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/52a4d4d049d2b34b43be66f5ca472439db99ae7a54c7b1ee0d81b7f2d2ad83e4.jpg)
 
 
 60. The geometric, logarithmic, and arithmetic mean inequality 
@@ -739,7 +739,7 @@ $$
 e ^ {(\ln a + \ln b) / 2} \cdot (\ln b - \ln a) <   \int_ {\ln a} ^ {\ln b} e ^ {x} d x <   \frac {e ^ {\ln a} + e ^ {\ln b}}{2} \cdot (\ln b - \ln a).
 $$
 
-![[0cbce51d2b6cd2df9e33b24dbf495a07ddde3232dee95ebe1417359eafa6b652.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0cbce51d2b6cd2df9e33b24dbf495a07ddde3232dee95ebe1417359eafa6b652.jpg)
 
 
 
@@ -758,11 +758,7 @@ This inequality says that the geometric mean of two positive numbers is less tha
 
 $$
 \frac {1}{2} + \frac {1}{3} + \frac {1}{4} + \dots + \frac {1}{n} <   \ln n <   1 + \frac {1}{2} + \frac {1}{3} + \dots + \frac {1}{n - 1}.
-$$
-
-62. Partition the interval $[1, 2]$ into n equal parts. Then use Figure 7.1 and appropriate partition points and areas to show that 
-
-$$
+62. $Partition the interval $[1, 2]$ into n equal parts. Then use Figure 7.1 and appropriate partition points and areas to show that$
 \begin{array}{c} \frac {1}{n + 1} + \frac {1}{n + 2} + \frac {1}{n + 3} + \dots + \frac {1}{2 n} <   \ln 2 <   \frac {1}{n} + \frac {1}{n + 1} \\ + \frac {1}{n + 2} + \dots + \frac {1}{2 n - 1}. \end{array}
 $$
 
@@ -806,7 +802,7 @@ $$
 \lim _ {x \rightarrow \infty} \left(1 + \frac {1}{x}\right) ^ {x} = e.
 $$
 
-## Grapher Explorations
+#### Grapher Explorations
 
 When solving Exercises 69–76, you may need to use appropriate technology (such as a graphing calculator or a computer). 
 
@@ -828,7 +824,7 @@ b. Why do the curves flatten as $a$ increases? (Hint: Find an $a$ -dependent upp
 
 a. Find an equation for the line through the origin tangent to the graph of $y = \ln x$ . 
 
-![[5dc8056b4a02d1d340995329b39deb5572da59d09e880c71f1ecedccc892153f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5dc8056b4a02d1d340995329b39deb5572da59d09e880c71f1ecedccc892153f.jpg)
 
 
 
@@ -845,7 +841,7 @@ e. So which is bigger, $\pi^e$ or $e^{\pi}$ ?
 
 76. A decimal representation of $e$ Find $e$ to as many decimal places as you can by solving the equation $\ln x = 1$ using Newton's method in Section 4.7. 
 
-## Calculations with Other Bases
+#### Calculations with Other Bases
 
 77. Most scientific calculators have keys for $\log_{10}x$ and $\ln x$ . To find logarithms to other bases, we use the equation $\log_{a}x = (\ln x)/(\ln a)$ . 
 
@@ -867,7 +863,7 @@ g. $\ln x$ , given that $\log_{2}x = -1.5$
 
 h. $\ln x$ , given that $\log_{10}x = -0.7$ 
 
-## 78. Conversion factors
+78. Conversion factors
 
 a. Show that the equation for converting base 10 logarithms to base 2 logarithms is 
 
@@ -885,14 +881,14 @@ $$
 
 Exponential functions increase or decrease very rapidly with changes in the independent variable. They describe growth or decay in many natural and industrial situations. The variety of models based on these functions partly accounts for their importance. 
 
-## Exponential Change
+### Exponential Change
 
 In modeling many real-world situations, a quantity y increases or decreases at a rate proportional to its size at a given time t. Examples of such quantities include the size of a population, the amount of a decaying radioactive material, and the temperature difference between a hot object and its surrounding medium. Such quantities are said to undergo exponential change. 
 
-![[84b7a241a3d8fff6d9c1d855710aa8b1758b89fb60f4dd010d3aa4c07a25891e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/84b7a241a3d8fff6d9c1d855710aa8b1758b89fb60f4dd010d3aa4c07a25891e.jpg)
 
 
-![[a6d1b7be14fba09c560fe7f5373947e787f1d9a7caa79b2bea106eab21961d40.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a6d1b7be14fba09c560fe7f5373947e787f1d9a7caa79b2bea106eab21961d40.jpg)
 
 
 
@@ -941,7 +937,7 @@ The derivation of Equation (2) shows also that the only functions that are their
 
 Before presenting several examples of exponential change, let us consider the process we used to derive it. 
 
-## Separable Differential Equations
+### Separable Differential Equations
 
 Exponential change is modeled by a differential equation of the form dy/dx = ky, where k is a nonzero constant. More generally, suppose we have a differential equation of the form 
 
@@ -1047,7 +1043,7 @@ $$
 
 The last equation gives the solution y as an implicit function of x. 
 
-![[336ddce48d346e15ba550229a513036cb20be5a66cb328297effdb201047a5a9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/336ddce48d346e15ba550229a513036cb20be5a66cb328297effdb201047a5a9.jpg)
 
 
 
@@ -1068,7 +1064,7 @@ $$
 
 involves a separable differential equation, and the solution $y = y_{0}e^{kt}$ expresses exponential change. We now present several examples of such change. 
 
-## Unlimited Population Growth
+### Unlimited Population Growth
 
 Strictly speaking, the number of individuals in a population (of people, plants, animals, or bacteria, for example) is a discontinuous function of time because it takes on discrete values. However, when the number of individuals becomes large enough, the population can be approximated by a continuous function. Differentiability of the approximating function is another reasonable hypothesis in many settings, allowing for the use of calculus to model and predict population sizes. 
 
@@ -1136,7 +1132,7 @@ $$
 y = 1 0, 0 0 0 e ^ {(\ln 0. 8) t}.\tag{6}
 $$
 
-![[4299277ce1d0a068da999f153aeda5d1ef0aa74fa62e4f8b630090259a2c586e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4299277ce1d0a068da999f153aeda5d1ef0aa74fa62e4f8b630090259a2c586e.jpg)
 
 
 
@@ -1153,7 +1149,7 @@ $$
 
 It will take a little more than 10 years to reduce the number of cases to 1000. (See Figure 7.7.) 
 
-## Radioactivity
+### Radioactivity
 
 Some atoms are unstable and can spontaneously emit mass or radiation. This process is called radioactive decay, and an element whose atoms go spontaneously through this process is called radioactive. Sometimes when an atom emits some of its mass through this process of radioactivity, the remainder of the atom re-forms to make an atom of some new element. For example, radioactive carbon-14 decays into nitrogen; radium, through a number of intermediate radioactive steps, decays into lead. 
 
@@ -1197,7 +1193,7 @@ $$
 
 The sample is about 871 years old. 
 
-## Heat Transfer: Newton's Law of Cooling
+### Heat Transfer: Newton's Law of Cooling
 
 Hot soup left in a tin cup cools to the temperature of the surrounding air. A hot silver bar immersed in a large tub of water cools to the temperature of the surrounding water. In situations like these, the rate at which an object's temperature is changing at any given time is roughly proportional to the difference between its temperature and the temperature of the surrounding medium. This observation is called Newton's Law of Cooling, although it applies to warming as well. 
 
@@ -1271,9 +1267,9 @@ $$
 
 The egg's temperature will reach $20^{\circ}\mathrm{C}$ about 13 min after it is put in the water to cool. Since it took 5 min to reach $38^{\circ}\mathrm{C}$ , it will take about 8 min more to reach $20^{\circ}\mathrm{C}$ . 
 
-## EXERCISES
+### EXERCISES
 
-## Verifying Solutions
+#### Verifying Solutions
 
 In Exercises 1–4, show that each function $y = f(x)$ is a solution of the accompanying differential equation. 
 
@@ -1297,7 +1293,7 @@ $$
 y = \frac {1}{\sqrt {1 + x ^ {4}}} \int_ {1} ^ {x} \sqrt {1 + t ^ {4}} d t, y ^ {\prime} + \frac {2 x ^ {3}}{1 + x ^ {4}} y = 1
 $$
 
-## Initial Value Problems
+#### Initial Value Problems
 
 In Exercises 5–8, show that each function is a solution of the given initial value problem. 
 
@@ -1307,7 +1303,9 @@ Solve the differential equation in Exercises 9–22.
 
 Separable Differential Equations 
 
-9. $2\sqrt{xy}\frac{dy}{dx} = 1, x,y > 0$ 10. $\frac{dy}{dx} = x^2\sqrt{y}, y > 0$ 
+9. $2\sqrt{xy}\frac{dy}{dx} = 1, x,y > 0$
+
+10. $\frac{dy}{dx} = x^2\sqrt{y}, y > 0$
 
 11. $\frac{dy}{dx} = e^{x - y}$ 
 
@@ -1323,11 +1321,15 @@ Separable Differential Equations
 
 18. $\frac{dy}{dx} = \frac{e^{2x - y}}{e^{x + y}}$ 
 
-19. $y^{2}\frac{dy}{dx} = 3x^{2}y^{3} - 6x^{2}$ 20. $\frac{dy}{dx} = xy + 3x - 2y - 6$ 
+19. $y^{2}\frac{dy}{dx} = 3x^{2}y^{3} - 6x^{2}$
 
-21. $\frac{1}{x}\frac{dy}{dx} = ye^{x^2} + 2\sqrt{y} e^{x^2}$ 22. $\frac{dy}{dx} = e^{x - y} + e^x +e^{-y} + 1$ 
+20. $\frac{dy}{dx} = xy + 3x - 2y - 6$
 
-## Applications and Examples
+21. $\frac{1}{x}\frac{dy}{dx} = ye^{x^2} + 2\sqrt{y} e^{x^2}$
+
+22. $\frac{dy}{dx} = e^{x - y} + e^x +e^{-y} + 1$
+
+#### Applications and Examples
 
 The answers to most of the following exercises are in terms of logarithms and exponentials. A calculator can be helpful, enabling you to express the answers in decimal form. 
 
@@ -1485,6 +1487,8 @@ a. How much of the original carbon-14 was present if the estimated age of the �
 
 b. If a 1% error can occur in the carbon-14 measurement, what is the oldest possible age for the Ice Maiden? 
 
+## 7.3 Hyperbolic Functions
+
 Hyperbolic cosine: 
 
 (b) 
@@ -1499,7 +1503,7 @@ Hyperbolic cosine:
 
 The hyperbolic functions are formed by taking combinations of the two exponential functions $e^{x}$ and $e^{-x}$ . The hyperbolic functions simplify many mathematical expressions and occur frequently in mathematical and engineering applications. 
 
-## Definitions and Identities
+#### Definitions and Identities
 
 The hyperbolic sine and hyperbolic cosine functions are defined by the equations 
 
@@ -1513,13 +1517,13 @@ We pronounce sinh x as “cinch x,” rhyming with “pinch x,” and cosh x as 
 TABLE 7.4 The six basic hyperbolic functions
 
 
-![[0c9fa110f7b69f381f809da6882f88ecec8d84e6dc622379029d22930de754ca.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0c9fa110f7b69f381f809da6882f88ecec8d84e6dc622379029d22930de754ca.jpg)
 
 
-![[f378a8a9ae74bae4cfe56187b997eee091e5086e593ba5cbbc74a14a7fcfb8fa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f378a8a9ae74bae4cfe56187b997eee091e5086e593ba5cbbc74a14a7fcfb8fa.jpg)
 
 
-![[070800968d3310de40c31be9ba962ff63df3d8561b06e6f48ae766ca845a4d6f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/070800968d3310de40c31be9ba962ff63df3d8561b06e6f48ae766ca845a4d6f.jpg)
 
 
 Hyperbolic sine: 
@@ -1530,7 +1534,7 @@ Hyperbolic tangent:
 
 $\sinh x = \frac{e^x - e^{-x}}{2}$ 
 
-![[643230e1ee32921617b14d294c9060525d6bf27a92ea31b5f65167bff494df0a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/643230e1ee32921617b14d294c9060525d6bf27a92ea31b5f65167bff494df0a.jpg)
 
 
 $$
@@ -1541,7 +1545,7 @@ $$
 x = \frac {e ^ {x} + e ^ {- x}}{2}
 $$
 
-![[ed6c650b87bc304a128cac4135648c2e2ed8ce39bfb1a184e39d7fb340f0bda4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ed6c650b87bc304a128cac4135648c2e2ed8ce39bfb1a184e39d7fb340f0bda4.jpg)
 
 
 Hyperbolic cotangent: 
@@ -1562,19 +1566,19 @@ $$
 \operatorname{csch} x = \frac {1}{\sinh x} = \frac {2}{e ^ {x} - e ^ {- x}}
 $$
 
-## TABLE 7.5 Identities for hyperbolic functions
+**TABLE 7.5 Identities for hyperbolic functions**
 
 $$
 \begin{array}{l} \hline \cosh^ {2} x - \sinh^ {2} x = 1 \\ \sinh 2 x = 2 \sinh x \cosh x \\ \cosh 2 x = \cosh^ {2} x + \sinh^ {2} x \\ \cosh^ {2} x = \frac {\cosh 2 x + 1}{2} \\ \sinh^ {2} x = \frac {\cosh 2 x - 1}{2} \\ \tanh ^ {2} x = 1 - \operatorname{sech} ^ {2} x \\ \coth^ {2} x = 1 + \operatorname{csch} ^ {2} x \end{array}
 $$
 
-## TABLE 7.6 Derivatives of hyperbolic functions
+**TABLE 7.6 Derivatives of hyperbolic functions**
 
 $$
 \begin{array}{l} \frac {d}{d x} (\sinh x) = \cosh x \\ \frac {d}{d x} (\cosh x) = \sinh x \\ \frac {d}{d x} (\tanh x) = \operatorname{sech} ^ {2} x \\ \frac {d}{d x} (\coth x) = - \operatorname{csch} ^ {2} x \\ \frac {d}{d x} (\operatorname{sech} x) = - \operatorname{sech} x \tanh x \\ \frac {d}{d x} (\operatorname{csch} x) = - \operatorname{csch} x \coth x \end{array}
 $$
 
-## TABLE 7.7 Integral formulas for hyperbolic functions
+**TABLE 7.7 Integral formulas for hyperbolic functions**
 
 $$
 \begin{array}{l} \hline \int \sinh x d x = \cosh x + C \\ \int \cosh x d x = \sinh x + C \\ \int \operatorname{sech} ^ {2} x d x = \tanh x + C \\ \int \operatorname{csch} ^ {2} x d x = - \coth x + C \\ \int \operatorname{sech} x \tanh x d x = - \operatorname{sech} x + C \\ \int \operatorname{csch} x \coth x d x = - \operatorname{csch} x + C \end{array}
@@ -1598,7 +1602,7 @@ with u substituted for x in Table 7.5, the point having coordinates $(\cosh u, \
 
 Hyperbolic functions are useful in finding integrals, which we will see in Chapter 8. They play an important role in science and engineering as well. The hyperbolic cosine describes the shape of a hanging cable or wire that is strung between two points at the same height and hanging freely (see Exercise 83). The shape of the St. Louis Arch is an inverted hyperbolic cosine. The hyperbolic tangent occurs in the formula for the velocity of an ocean wave moving over water having a constant depth, and the inverse hyperbolic tangent describes how relative velocities sum according to Einstein's Law in the Special Theory of Relativity. 
 
-## Derivatives and Integrals of Hyperbolic Functions
+#### Derivatives and Integrals of Hyperbolic Functions
 
 The six hyperbolic functions, being rational combinations of the differentiable functions $e^{x}$ and $e^{-x}$ , have derivatives at every point at which they are defined (Table 7.6). Again, there are similarities to trigonometric functions. 
 
@@ -1636,7 +1640,7 @@ $$
 \begin{array}{r l} \text {(d)} & \int_ {0} ^ {\ln 2} 4 e ^ {x} \sinh x d x = \int_ {0} ^ {\ln 2} 4 e ^ {x} \frac {e ^ {x} - e ^ {- x}}{2} d x = \int_ {0} ^ {\ln 2} (2 e ^ {2 x} - 2) d x \\ & = \left[ e ^ {2 x} - 2 x \right] _ {0} ^ {\ln 2} = (e ^ {2 \ln 2} - 2 \ln 2) - (1 - 0) \\ & = 4 - 2 \ln 2 - 1 \approx 1. 6 1 3 7 \end{array}
 $$
 
-## Inverse Hyperbolic Functions
+#### Inverse Hyperbolic Functions
 
 The inverses of the six basic hyperbolic functions are very useful in integration (see Chapter 8). Since $d(\sinh x) / dx = \cosh x > 0$ , the hyperbolic sine is an increasing function of $x$ . We denote its inverse by 
 
@@ -1652,17 +1656,17 @@ $$
 y = \cosh^ {- 1} x.
 $$
 
-![[04623ff60efad18a1b4a750bbef784c528576c722125e97193fba92c4d8ab840.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/04623ff60efad18a1b4a750bbef784c528576c722125e97193fba92c4d8ab840.jpg)
 
 
-![[79acc587678fabf6ae1308a750ab4c08240f53c5a95fc42791a2721d2ca79fd9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/79acc587678fabf6ae1308a750ab4c08240f53c5a95fc42791a2721d2ca79fd9.jpg)
 
 
 
 (b)
 
 
-![[9fc1162b0b9822d3ce22b4842adfa9fc7521ae4121a0ba859a5a48d7d04e9213.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9fc1162b0b9822d3ce22b4842adfa9fc7521ae4121a0ba859a5a48d7d04e9213.jpg)
 
 
 
@@ -1693,13 +1697,13 @@ $$
 
 These functions are graphed in Figure 7.9. 
 
-![[8d7f6b65ae18c5950057b8172e9b3cc9a9308c7983d57dacd07dbd92ed13ea97.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8d7f6b65ae18c5950057b8172e9b3cc9a9308c7983d57dacd07dbd92ed13ea97.jpg)
 
 
-![[509c0873443c93bf343283ec0a08f6bbd41005f84801a91b67200e794a33460d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/509c0873443c93bf343283ec0a08f6bbd41005f84801a91b67200e794a33460d.jpg)
 
 
-![[af4cde299b81e66360bdf170af8fdad4c55e222e3e07e40582ec6816f6040efa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/af4cde299b81e66360bdf170af8fdad4c55e222e3e07e40582ec6816f6040efa.jpg)
 
 
 
@@ -1710,7 +1714,7 @@ These functions are graphed in Figure 7.9.
 FIGURE 7.9 The graphs of the inverse hyperbolic tangent, cotangent, and cosecant of x.
 
 
-## Useful Identities
+#### Useful Identities
 
 TABLE 7.8 Identities for inverse hyperbolic functions 
 
@@ -1738,7 +1742,7 @@ $$
 \cosh^ {- 1} \left(\frac {1}{x}\right) = \operatorname{sech} ^ {- 1} x.
 $$
 
-## Derivatives of Inverse Hyperbolic Functions
+#### Derivatives of Inverse Hyperbolic Functions
 
 An important use of inverse hyperbolic functions lies in antiderivatives that reverse the derivative formulas in Table 7.9. 
 
@@ -1776,7 +1780,7 @@ $$
 \int_ {0} ^ {1} \frac {2 d x}{\sqrt {3 + 4 x ^ {2}}}.
 $$
 
-## TABLE 7.10 Integrals leading to inverse hyperbolic functions
+**TABLE 7.10 Integrals leading to inverse hyperbolic functions**
 
 $$
 \int \frac {d x}{\sqrt {a ^ {2} + x ^ {2}}} = \sinh^ {- 1} \left(\frac {x}{a}\right) + C,
@@ -1786,9 +1790,7 @@ $$
 a > 0
 $$
 
-$$
-\int \frac {d x}{\sqrt {x ^ {2} - a ^ {2}}} = \cosh^ {- 1} \left(\frac {x}{a}\right) + C, \tag {2.}
-$$
+2. $\int \frac {d x}{\sqrt {x ^ {2} - a ^ {2}}} = \cosh^ {- 1} \left(\frac {x}{a}\right) + C,$
 
 $$
 x > a > 0
@@ -1826,15 +1828,11 @@ $$
 \begin{array}{r l} \int_ {0} ^ {1} \frac {2 d x}{\sqrt {3 + 4 x ^ {2}}} & = \left[ \sinh^ {- 1} \left(\frac {2 x}{\sqrt {3}}\right) \right] _ {0} ^ {1} = \sinh^ {- 1} \left(\frac {2}{\sqrt {3}}\right) - \sinh^ {- 1} (0) \\ & = \sinh^ {- 1} \left(\frac {2}{\sqrt {3}}\right) - 0 \approx 0. 9 8 6 6 5. \end{array}
 $$
 
-## EXERCISES 7.3
+### EXERCISES 7.3
 
-## Values and Identities
+#### Values and Identities
 
 Each of Exercises 1–4 gives a value of $\sinh x$ or $\cosh x$ . Use the definitions and the identity $\cosh^{2}x - \sinh^{2}x = 1$ to find the values of the remaining five hyperbolic functions. 
-
-9. $(\sinh x + \cosh x)^{4}$ 
-
-10. $\ln(\cosh x + \sinh x) + \ln(\cosh x - \sinh x)$ 
 
 1. $\sinh x = -\frac{3}{4}$ 
 
@@ -1854,11 +1852,7 @@ b. $\cosh 2x = \cosh^{2}x + \sinh^{2}x.$
 
 5. $2 \cosh(\ln x)$ 
 
-11. Prove the identities $\sinh (x + y) = \sinh x\cosh y + \cosh x\sinh y,$ $\cosh (x + y) = \cosh x\cosh y + \sinh x\sinh y.$ 
-
 7. $\cosh 5x + \sinh 5x$ 
-
-12. Use the definitions of $\cosh x$ and $\sinh x$ to show that 
 
 8. $\cosh 3x - \sinh 3x$ 
 
@@ -1866,7 +1860,15 @@ $$
 \cosh^ {2} x - \sinh^ {2} x = 1.
 $$
 
-## Finding Derivatives
+9. $(\sinh x + \cosh x)^{4}$ 
+
+10. $\ln(\cosh x + \sinh x) + \ln(\cosh x - \sinh x)$ 
+
+11. Prove the identities $\sinh (x + y) = \sinh x\cosh y + \cosh x\sinh y,$ $\cosh (x + y) = \cosh x\cosh y + \sinh x\sinh y.$ 
+
+12. Use the definitions of $\cosh x$ and $\sinh x$ to show that 
+
+#### Finding Derivatives
 
 In Exercises 13–24, find the derivative of y with respect to the appropriate variable. 
 
@@ -1886,7 +1888,9 @@ In Exercises 13–24, find the derivative of y with respect to the appropriate v
 
 20. $y = (\operatorname{csch} \theta)(1 - \ln \operatorname{csch} \theta)$ 
 
-21. $y = \ln \cosh v - \frac{1}{2} \tanh^2 v$ 22. $y = \ln \sinh v - \frac{1}{2} \coth^2 v$ 
+21. $y = \ln \cosh v - \frac{1}{2} \tanh^2 v$
+
+22. $y = \ln \sinh v - \frac{1}{2} \coth^2 v$
 
 23. $y = (x^{2} + 1)\operatorname {sech}(\ln x)$ 
 
@@ -1938,21 +1942,27 @@ Evaluating Integrals
 
 Evaluate the integrals in Exercises 41–60. 
 
-41. $\int \sinh 2x dx$ 42. $\int \sinh \frac{x}{5} dx$ 
+41. $\int \sinh 2x dx$
 
-43. $\int 6\cosh \left(\frac{x}{2} -\ln 3\right)dx$ 44. $\int 4\cosh (3x - \ln 2)dx$ 
+42. $\int \sinh \frac{x}{5} dx$
+
+43. $\int 6\cosh \left(\frac{x}{2} -\ln 3\right)dx$
+
+44. $\int 4\cosh (3x - \ln 2)dx$
 
 45. $\int \tanh \frac{x}{7} dx$ 
 
 46. $\int \coth \frac{\theta}{\sqrt{3}} d\theta$ 
 
-47. $\int \operatorname{sech}^2\left(x - \frac{1}{2}\right)dx$ 48. $\int \operatorname{csch}^2(5 - x)dx$ 
+47. $\int \operatorname{sech}^2\left(x - \frac{1}{2}\right)dx$
+
+48. $\int \operatorname{csch}^2(5 - x)dx$
 
 49. $\int \frac{\operatorname{sech}\sqrt{t} \tanh\sqrt{t} dt}{\sqrt{t}}$ 
 
-51. $\int_{\ln 2}^{\ln 4}\coth x dx$ 
-
 50. $\int \frac{\operatorname{csch}(\ln t)\coth(\ln t)dt}{t}$ 
+
+51. $\int_{\ln 2}^{\ln 4}\coth x dx$ 
 
 52. $\int_0^{\ln 2}\tanh 2x dx$ 
 
@@ -1972,7 +1982,7 @@ Evaluate the integrals in Exercises 41–60.
 
 60. $\int_0^{\ln 10}4\sinh^2\left(\frac{x}{2}\right)dx$ 
 
-## Inverse Hyperbolic Functions and Integrals
+#### Inverse Hyperbolic Functions and Integrals
 
 Since the hyperbolic functions can be expressed in terms of exponential functions, it is possible to express the inverse hyperbolic functions in terms of logarithms, as shown in the following table. 
 
@@ -2040,7 +2050,7 @@ b. natural logarithms.
 
 74. $\int_{1}^{e}\frac{dx}{x\sqrt{1 + (\ln x)^2}}$ 
 
-## Applications and Examples
+#### Applications and Examples
 
 75. Show that if a function $f$ is defined on an interval symmetric about the origin (so that $f$ is defined at $-x$ whenever it is defined at $x$ ), then 
 
@@ -2108,7 +2118,7 @@ $$
 y = \frac {H}{w} \cosh \frac {w}{H} x.
 $$
 
-![[8e0ee0798668b42631c84ff2565ba6aa2e2a103a13402c79e7a4c139d2af83eb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8e0ee0798668b42631c84ff2565ba6aa2e2a103a13402c79e7a4c139d2af83eb.jpg)
 
 
 Such a curve is sometimes called a chain curve or a catenary, the latter deriving from the Latin catena, meaning “chain.” 
@@ -2119,7 +2129,7 @@ $$
 \tan \phi = \frac {d y}{d x} = \sinh \frac {w}{H} x.
 $$
 
-![[7b09b9782e007aa0c87fdfe9d2943534f59f21e8c0bbd799a6e4e8e8457c216e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7b09b9782e007aa0c87fdfe9d2943534f59f21e8c0bbd799a6e4e8e8457c216e.jpg)
 
 
 b. Using the result from part (a) and the fact that the horizontal tension at P must equal H (the cable is not moving), show that T = wy. Hence, the magnitude of the tension at $P(x, y)$ is exactly equal to the weight of y units of cable. 
@@ -2134,7 +2144,7 @@ $$
 
 86. The hyperbolic in hyperbolic functions Just as $x = \cos u$ and $y = \sin u$ are identified with points $(x, y)$ on the unit circle, the functions $x = \cosh u$ and $y = \sinh u$ are identified with points $(x, y)$ on the right-hand branch of the unit hyperbola, $x^2 - y^2 = 1$ . 
 
-![[d28601ae36f3656d8e03b1feffcddc2bf685bcbbc05dfce0aa149800112a5109.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d28601ae36f3656d8e03b1feffcddc2bf685bcbbc05dfce0aa149800112a5109.jpg)
 
 
 $$
@@ -2161,14 +2171,14 @@ $$
 
 c. Solve this last equation for $A(u)$ . What is the value of $A(0)$ ? What is the value of the constant of integration $C$ in your solution? With $C$ determined, what does your solution say about the relationship of $u$ to $A(u)$ ? 
 
-![[6baefc69dc952233a775d9ecdd2c057b5f143d1f77e20d5919bee1c14765dcdb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6baefc69dc952233a775d9ecdd2c057b5f143d1f77e20d5919bee1c14765dcdb.jpg)
 
 
 One of the analogies between hyperbolic and circular functions is revealed by these two diagrams (Exercise 86). 
 
 ## 7.4 Relative Rates of Growth
 
-![[66678e8acfec1131f30b2c49a1e30f05984231a6b6293cefa0ae0bf26e1496ca.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/66678e8acfec1131f30b2c49a1e30f05984231a6b6293cefa0ae0bf26e1496ca.jpg)
 
 
 
@@ -2177,13 +2187,13 @@ FIGURE 7.10 The graphs of $e^x, 2^x$ , and $x^2$ .
 
 It is often important in mathematics, computer science, and engineering to compare the rates at which functions of x grow as x becomes large. Exponential functions are important in these comparisons because of their very fast growth, and logarithmic functions because of their very slow growth. In this section we introduce the little-oh and big-oh notation used to describe the results of these comparisons. We restrict our attention to functions whose values eventually become and remain positive as $x \rightarrow \infty$ . 
 
-## Growth Rates of Functions
+### Growth Rates of Functions
 
 You may have noticed that exponential functions like $2^{x}$ and $e^{x}$ seem to grow more rapidly as x gets large than do polynomials and rational functions. These exponentials certainly grow more rapidly than x itself, and you can see $2^{x}$ outgrowing $x^{2}$ as x increases in Figure 7.10. In fact, as $x \to \infty$ , the functions $2^{x}$ and $e^{x}$ grow faster than any power of x, even $x^{1,000,000}$ (Exercise 19). In contrast, logarithmic functions like $y = \log_{2} x$ and $y = \ln x$ grow more slowly as $x \to \infty$ than any positive power of x (Exercise 21). 
 
 To get a feeling for how rapidly the values of $y = e^{x}$ grow with increasing $x$ , think of graphing the function on a large blackboard, with the axes scaled in centimeters. At $x = 1\mathrm{cm}$ , the graph is $e^1 \approx 3\mathrm{cm}$ above the $x$ -axis. At $x = 6\mathrm{cm}$ , the graph is $e^6 \approx 403\mathrm{cm} \approx 4\mathrm{m}$ high (it is about to go through the ceiling if it hasn't done so already). At $x = 10\mathrm{cm}$ , the graph is $e^{10} \approx 22,026\mathrm{cm} \approx 220\mathrm{m}$ high, higher than most buildings. At $x = 24\mathrm{cm}$ , the graph is more than halfway to the moon, and at $x = 43\mathrm{cm}$ from the origin, the graph is high enough to reach past the sun's closest stellar neighbor, the red dwarf star Proxima Centauri. By contrast, with axes scaled in centimeters, you have to go nearly 5 light-years out on the $x$ -axis to find a point where the graph of $y = \ln x$ is even $y = 43\mathrm{cm}$ high. See Figure 7.11. 
 
-![[e4c9a11e7e2d78c1a626bcd53f7df3687a8e0f0762dd5bfab883555c04c4e3e9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e4c9a11e7e2d78c1a626bcd53f7df3687a8e0f0762dd5bfab883555c04c4e3e9.jpg)
 
 
 
@@ -2224,7 +2234,7 @@ $$
 
 which is a finite, positive limit. The reason for this departure from more colloquial usage is that we want “f grows faster than g” to mean that for large x-values g is negligible when compared with f. 
 
-## **EXAMPLE 1** We compare the growth rates of several common functions.
+**EXAMPLE 1** We compare the growth rates of several common functions.
 
 (a) $e^x$ grows faster than $x^2$ as $x \to \infty$ because 
 
@@ -2290,7 +2300,7 @@ $$
 \lim _ {x \rightarrow \infty} \frac {(2 \sqrt {x} - 1) ^ {2}}{x} = \lim _ {x \rightarrow \infty} \left(\frac {2 \sqrt {x} - 1}{\sqrt {x}}\right) ^ {2} = \lim _ {x \rightarrow \infty} \left(2 - \frac {1}{\sqrt {x}}\right) ^ {2} = 4.
 $$
 
-## Order and Oh-Notation
+### Order and Oh-Notation
 
 The “little-oh” and “big-oh” notation was invented by number theorists over a hundred years ago and is now commonplace in mathematical analysis and computer science. According to this definition, saying $f = o(g)$ as $x \to \infty$ is another way to say that f grows slower than g as $x \to \infty$ . 
 
@@ -2330,7 +2340,7 @@ $$
 
 If you look at the definitions again, you will see that $f = o(g)$ implies $f = O(g)$ for functions that are positive for all sufficiently large x. Also, if f and g grow at the same rate, then $f = O(g)$ and $g = O(f)$ (Exercise 11). 
 
-## Sequential vs. Binary Search
+### Sequential vs. Binary Search
 
 Computer scientists often measure the efficiency of an algorithm by counting the number of steps a computer must take to execute the algorithm. There can be significant differences in how efficiently algorithms perform, even if they are designed to accomplish the same task. These differences are often described using big-oh notation. Here is an example. 
 
@@ -2348,9 +2358,9 @@ For a list of length n, a sequential search algorithm takes on the order of n st
 
 Big-oh notation provides a compact way to say all this. The number of steps in a sequential search of an ordered list is $O(n)$ ; the number of steps in a binary search is $O(\log_{2}n)$ . In our example, there is a big difference between the two (26,000 versus 15), and the difference can only increase with n because n grows faster than $\log_{2}n$ as $n \to \infty$ . 
 
-## EXERCISES 7.4
+### EXERCISES 7.4
 
-## Comparisons with the Exponential $e^x$
+#### Comparisons with the Exponential $e^x$
 
 1. Which of the following functions grow faster than $e^x$ as $x \to \infty$ ? Which grow at the same rate as $e^x$ ? Which grow slower?
 a. $x - 3$ b. $x^3 + \sin^2 x$ c. $\sqrt{x}$ d. $4^x$ e. $(3/2)^x$ f. $e^{x/2}$ g. $e^x / 2$ h. $\log_{10} x$ 
@@ -2358,7 +2368,7 @@ a. $x - 3$ b. $x^3 + \sin^2 x$ c. $\sqrt{x}$ d. $4^x$ e. $(3/2)^x$ f. $e^{x/2}$ 
 2. Which of the following functions grow faster than $e^{x}$ as $x \to \infty$ ? Which grow at the same rate as $e^{x}$ ? Which grow slower?
 a. $10x^{4} + 30x + 1$ b. $x \ln x - x$ c. $\sqrt{1 + x^{4}}$ d. $(5/2)^{x}$ e. $e^{-x}$ f. $xe^{x}$ g. $e^{\cos x}$ h. $e^{x-1}$ 
 
-## Comparisons with the Power $x^{2}$
+#### Comparisons with the Power $x^{2}$
 
 3. Which of the following functions grow faster than $x^{2}$ as $x \to \infty$ ? Which grow at the same rate as $x^{2}$ ? Which grow slower?
 a. $x^{2} + 4x$ b. $x^{5} - x^{2}$ c. $\sqrt{x^{4} + x^{3}}$ d. $(x + 3)^{2}$ e. $x \ln x$ f. $2^{x}$ g. $x^{3}e^{-x}$ h. $8x^{2}$ 
@@ -2366,7 +2376,7 @@ a. $x^{2} + 4x$ b. $x^{5} - x^{2}$ c. $\sqrt{x^{4} + x^{3}}$ d. $(x + 3)^{2}$ e.
 4. Which of the following functions grow faster than $x^{2}$ as $x \to \infty$ ? Which grow at the same rate as $x^{2}$ ? Which grow slower?
 a. $x^{2} + \sqrt{x}$ b. $10x^{2}$ c. $x^{2}e^{-x}$ d. $\log_{10}(x^{2})$ e. $x^{3} - x^{2}$ f. $(1/10)^{x}$ g. $(1.1)^{x}$ h. $x^{2} + 100x$ 
 
-## Comparisons with the Logarithm In x
+#### Comparisons with the Logarithm In x
 
 5. Which of the following functions grow faster than $\ln x$ as $x \to \infty$ ? Which grow at the same rate as $\ln x$ ? Which grow slower?
 a. $\log_3 x$ b. $\ln 2x$ c. $\ln \sqrt{x}$ d. $\sqrt{x}$ e. $x$ f. $5 \ln x$ g. $1/x$ h. $e^x$ 
@@ -2374,7 +2384,7 @@ a. $\log_3 x$ b. $\ln 2x$ c. $\ln \sqrt{x}$ d. $\sqrt{x}$ e. $x$ f. $5 \ln x$ g.
 6. Which of the following functions grow faster than $\ln x$ as $x \to \infty$ ? Which grow at the same rate as $\ln x$ ? Which grow slower?
 a. $\log_2(x^2)$ b. $\log_{10} 10x$ c. $1/\sqrt{x}$ d. $1/x^2$ e. $x - 2 \ln x$ f. $e^{-x}$ g. $\ln(\ln x)$ h. $\ln(2x + 5)$ 
 
-## Ordering Functions by Growth Rates
+#### Ordering Functions by Growth Rates
 
 7. Order the following functions from slowest growing to fastest growing as $x \to \infty$ .
 a. $e^x$ b. $x^x$ c. $(\ln x)^x$ d. $e^{x/2}$ 
@@ -2382,7 +2392,7 @@ a. $e^x$ b. $x^x$ c. $(\ln x)^x$ d. $e^{x/2}$
 8. Order the following functions from slowest growing to fastest growing as $x \to \infty$ .
 a. $2^{x}$ b. $x^{2}$ c. $(\ln 2)^{x}$ d. $e^{x}$ 
 
-## Big-oh and Little-oh; Order
+#### Big-oh and Little-oh; Order
 
 9. True, or false? As $x \to \infty$ ,  
 a. $x = o(x)$ b. $x = o(x + 5)$ c. $x = O(x + 5)$ d. $x = O(2x)$ e. $e^x = o(e^{2x})$ f. $x + \ln x = O(x)$ g. $\ln x = o(\ln 2x)$ h. $\sqrt{x^2 + 5} = O(x)$ 
@@ -2398,7 +2408,7 @@ a. $\frac{1}{x + 3} = O\left(\frac{1}{x}\right)$ b. $\frac{1}{x} + \frac{1}{x^2}
 
 14. What do the conclusions we drew in Section 2.8 about the limits of rational functions tell us about the relative growth of polynomials as $x \to \infty$ ? 
 
-## Other Comparisons
+#### Other Comparisons
 
 T 15. Investigate 
 
@@ -2498,7 +2508,7 @@ $$
 
 ## CHAPTER 7 Practice Exercises
 
-## Integration
+### Integration
 
 Evaluate the integrals in Exercises 1–12. 
 
@@ -2606,7 +2616,7 @@ f. $\cosh x = O(e^x)$
 22. True, or false? Give reasons for your answers.
 a. $\frac{1}{x^{4}} = O\left(\frac{1}{x^{2}} + \frac{1}{x^{4}}\right)$ b. $\frac{1}{x^{4}} = o\left(\frac{1}{x^{2}} + \frac{1}{x^{4}}\right)$ c. $\ln x = o(x + 1)$ d. $\ln 2x = O(\ln x)$ e. $\sec^{-1}x = O(1)$ f. $\sinh x = O(e^{x})$ 
 
-## Theory and Applications
+### Theory and Applications
 
 23. The function $f(x) = e^{x} + x$ , being differentiable and one-to-one, has a differentiable inverse $f^{-1}(x)$ . Find the value of $df^{-1}/dx$ at the point $f(\ln 2)$ . 
 
@@ -2650,7 +2660,9 @@ In Exercises 31–34, solve the differential equation.
 
 In Exercises 35–38, solve the initial value problem. 
 
-35. $\frac{dy}{dx} = e^{-x - y - 2},\quad y(0) = -2$ 36. $\frac{dy}{dx} = \frac{y\ln y}{1 + x^2},\quad y(0) = e^2$ 
+35. $\frac{dy}{dx} = e^{-x - y - 2},\quad y(0) = -2$
+
+36. $\frac{dy}{dx} = \frac{y\ln y}{1 + x^2},\quad y(0) = e^2$
 
 37. $xdy - (y + \sqrt{y})dx = 0, y(1) = 1$ 
 
@@ -2680,7 +2692,7 @@ c. When does $L = 2.5 \, \text{m}$ ?
 
 ## CHAPTER 7
 
-## Additional and Advanced Exercises
+### Additional and Advanced Exercises
 
 1. Let $A(t)$ be the area of the region in the first quadrant enclosed by the coordinate axes, the curve $y = e^{-x}$ , and the vertical line $x = t, t > 0$ . Let $V(t)$ be the volume of the solid generated by revolving the region about the $x$ -axis. Find the following limits.
 a. $\lim_{t\to\infty}A(t)\quad\mathbf{b.}\lim_{t\to\infty}V(t)/A(t)\quad\mathbf{c.}\lim_{t\to0^{+}}V(t)/A(t)$ 
@@ -2730,15 +2742,7 @@ b. Find the centroid of the region.
 
 10. Urban gardening A vegetable garden 15 m wide is to be grown between two buildings, which are 150 m apart along an east-west line. If the buildings are 60 m and 105 m tall, where should the garden be placed in order to receive the maximum number of hours of sunlight exposure? (Hint: Determine the value of x in the accompanying figure that maximizes sunlight exposure for the garden.) 
 
-![[268e8e461e3cf5c95483734dc9456046a2aad4575ea85fe8a42c2612f45a7dd6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/268e8e461e3cf5c95483734dc9456046a2aad4575ea85fe8a42c2612f45a7dd6.jpg)
 
 
-![[ea5ec7d80f4c859ab9d27db83b136f1b03d8e654fbc1814aac1b6fbecf527bd6.jpg|image]]
-
-
-# Techniques of Integration
-
-![[02be1889efb30b5f0a264cb318e01a7a1357a92283a7b8f890766a2c30bc8a4d.jpg|image]]
-
-
-OVERVIEW The Fundamental Theorem tells us how to evaluate a definite integral once we have an antiderivative for the integrand function. However, finding antiderivatives (or indefinite integrals) is not as straightforward as finding derivatives. In this chapter we study a number of important techniques that apply to finding integrals for specialized classes of functions such as trigonometric functions, products of certain functions, and rational functions. Since we cannot always find an antiderivative, we develop numerical methods for calculating definite integrals. We also study integrals for which the domain or range is infinite, called improper integrals.
+![教材插图](/books/thomas-calculus/assets/ea5ec7d80f4c859ab9d27db83b136f1b03d8e654fbc1814aac1b6fbecf527bd6.jpg)

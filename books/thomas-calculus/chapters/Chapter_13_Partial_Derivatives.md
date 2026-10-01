@@ -23,7 +23,7 @@ If f is a function of two independent variables, we usually call the independent
 
 In applications, we tend to use letters that remind us of what the variables stand for. To say that the volume of a right circular cylinder is a function of its radius and height, we might write $V = f ( r , h )$ . To be more specific, we might replace the notation $f ( r , h )$ by the formula that calculates the value of V from the values of r and $h ,$ and write $V \ = \ \pi r ^ { 2 } h$ In either case, r and h would be the independent variables and V the dependent variable of the function. 
 
-![[d959991b5d4c4c4b488bc8fc2048b72119916e436dda736652bfbfdbb7137c7c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d959991b5d4c4c4b488bc8fc2048b72119916e436dda736652bfbfdbb7137c7c.jpg)
 
 
 
@@ -36,11 +36,11 @@ $$
 f (3, 0, 4) = \sqrt {(3) ^ {2} + (0) ^ {2} + (4) ^ {2}} = \sqrt {2 5} = 5.
 $$
 
-## Domains and Ranges
+### Domains and Ranges
 
 In defining a function of more than one variable, we follow the usual practice of excluding inputs that lead to complex numbers or division by zero. If $f ( x , y ) = { \sqrt { y - x ^ { 2 } } }$ ,  then y cannot be less than $x ^ { 2 }$ . If $f ( x , y ) = 1 / ( x y )$ , then xy cannot be zero. The domain of a function is assumed to be the largest set for which the defining rule generates real numbers, unless the domain is otherwise specified explicitly. The range consists of the set of output values for the dependent variable. 
 
-## **EXAMPLE 1**
+**EXAMPLE 1**
 
 
 (a) These are functions of two variables. Note the restrictions that apply to their domains in order to obtain a real value for the dependent variable z.
@@ -54,25 +54,25 @@ In defining a function of more than one variable, we follow the usual practice o
 
 <table><tr><td>Function</td><td>Domain</td><td>Range</td></tr><tr><td><eq>w = \sqrt{x^{2} + y^{2} + z^{2}}</eq></td><td>Entire space</td><td><eq>[0, \infty)</eq></td></tr><tr><td><eq>w = \frac{1}{x^{2} + y^{2} + z^{2}}</eq></td><td><eq>(x, y, z) \neq (0, 0, 0)</eq></td><td><eq>(0, \infty)</eq></td></tr><tr><td><eq>w = xy \ln z</eq></td><td>Half-space <eq>z &gt; 0</eq></td><td><eq>(-\infty, \infty)</eq></td></tr></table>
 
-## Functions of Two Variables
+### Functions of Two Variables
 
 On the real line, closed intervals $[ a , b ]$ include their boundary points while open intervals $( a , b )$ do not. Intervals such as $[ a , b )$ , which includes only one of its two boundary points, are neither open nor closed. Regions in the plane can also be open, closed, or neither. 
 
-![[b0ab13f0068d5c75fba0d6984be1a43f9d547379c2ed7bae2ea0330825c905ec.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b0ab13f0068d5c75fba0d6984be1a43f9d547379c2ed7bae2ea0330825c905ec.jpg)
 
 
 
 (a) Interior point
 
 
-![[d0b2c44a58fe307dfeeb925f39ec5b50a5967ae3776c1eac50d2f37da1b61855.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d0b2c44a58fe307dfeeb925f39ec5b50a5967ae3776c1eac50d2f37da1b61855.jpg)
 
 
 
 FIGURE 13.2 Interior points and boundary points of a plane region R. An interior point is necessarily a point of R. A boundary point of R need not belong to R.
 
 
-![[9ee413a9d7873a4b8a98239d9c175cae2c6f3264056d8efe45799b8407ab0f64.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9ee413a9d7873a4b8a98239d9c175cae2c6f3264056d8efe45799b8407ab0f64.jpg)
 
 
 
@@ -83,7 +83,7 @@ FIGURE 13.4 The domain of $f ( x , y )$ in Example 2 consists of the shaded regi
 
 The interior points of a region, as a set, make up the interior of the region. The region’s boundary points make up its boundary. A region is open if it consists entirely of interior points. A region is closed if it contains all its boundary points (Figure 13.3). 
 
-![[a0acc298c88872540b9e2627781e55052279f50262a0039d779a624427d86dfb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a0acc298c88872540b9e2627781e55052279f50262a0039d779a624427d86dfb.jpg)
 
 
 
@@ -96,11 +96,11 @@ As with a half-open interval of real numbers [ )a b, , some regions in the plane
 
 Examples of bounded sets in the plane include line segments, triangles, interiors of triangles, rectangles, circles, and disks. Examples of unbounded sets in the plane include lines, coordinate axes, the graphs of functions defined on infinite intervals, quadrants, halfplanes, and the plane itself. 
 
-## **EXAMPLE 2** Describe the domain of the function $f ( x , y ) = { \sqrt { y - x ^ { 2 } } } .$
+**EXAMPLE 2** Describe the domain of the function $f ( x , y ) = { \sqrt { y - x ^ { 2 } } } .$
 
 **Solution** Since f is defined only where $y - x ^ { 2 } \geq 0 ,$ , the domain is the closed, unbounded region shown in Figure 13.4. The parabola $y = x ^ { 2 }$ is the boundary of the domain. The points above the parabola make up the domain’s interior. ■ 
 
-![[903e1f5f094658982ba7aef2804f60bbb1f75f569736d3ee59eab834db30570a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/903e1f5f094658982ba7aef2804f60bbb1f75f569736d3ee59eab834db30570a.jpg)
 
 
 
@@ -109,14 +109,14 @@ FIGURE 13.5 The graph and selected level curves of the function $f ( x , y )$ in
 
 The contour curve $f ( x , y ) = 1 0 0 - x ^ { 2 } - y ^ { 2 } = 7 5$ is the circle $x ^ { 2 } + y ^ { 2 } = 2 5$ in the plane $z = 7 5 .$ 
 
-![[50596ba9917fe31cba25f9f3d4ceb789328e5329d8e9481a3e39119f7af11339.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/50596ba9917fe31cba25f9f3d4ceb789328e5329d8e9481a3e39119f7af11339.jpg)
 
 
 The level curve $f ( x , y ) = 1 0 0 - x ^ { 2 } - y ^ { 2 } = 7 5$ is the circle $x ^ { 2 } + y ^ { 2 } = 2 5$ in the xy-plane. 
 
 FIGURE 13.6 A plane z = c parallel to the xy-plane intersecting a surface $z = f ( x , y )$ produces a contour curve. 
 
-## Graphs, Level Curves, and Contours of Functions of Two Variables
+### Graphs, Level Curves, and Contours of Functions of Two Variables
 
 There are two standard ways to picture the values of a function $f ( x , y )$ . One is to draw and label curves in the domain on which $f$ has a constant value. The other is to sketch the surface $z = f ( x , y )$ in space. 
 
@@ -146,27 +146,27 @@ The curve in space in which the plane $z = c$ cuts a surface $z = f ( x , y )$ i
 
 The distinction between level curves and contour curves is often overlooked, and it is common to call both types of curves by the same name, relying on context to make it clear which type of curve is meant. On most maps, for example, the curves that represent constant elevation (height above sea level) are called contours, not level curves (Figure 13.7). 
 
-## Functions of Three Variables
+### Functions of Three Variables
 
 In the plane, the points where a function of two independent variables has a constant value $f ( x , y ) = c$ make a curve in the function’s domain. In space, the points where a function of three independent variables has a constant value $f ( x , y , z ) = c$ make a surface in the function’s domain. 
 
 > ***DEFINITION*** The set of points $\left( x , y , z \right)$ in space where a function of three independent variables has a constant value $f ( x , y , z ) = c$ is called a level surface of $f .$ 
 
-![[5b4253499827b1bcfc0749ed53d7cab62fe073ec9fcd9609249af0eb37acb02d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5b4253499827b1bcfc0749ed53d7cab62fe073ec9fcd9609249af0eb37acb02d.jpg)
 
 
 
 FIGURE 13.8 The level surfaces of $f ( x , y , z ) = { \sqrt { x ^ { 2 } + y ^ { 2 } + z ^ { 2 } } }$ are concentric spheres (Example 4).
 
 
-![[4391910870bdb0ca625874e85eb222a956c7db77dbcdf269dfd2a638dd351728.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4391910870bdb0ca625874e85eb222a956c7db77dbcdf269dfd2a638dd351728.jpg)
 
 
 
 (a) Interior point
 
 
-![[ed2ca981fb0b6bf8262bbce89064514aa172a44707f0555b1cc0cb5251b033ea.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ed2ca981fb0b6bf8262bbce89064514aa172a44707f0555b1cc0cb5251b033ea.jpg)
 
 
 
@@ -177,7 +177,7 @@ FIGURE 13.8 The level surfaces of $f ( x , y , z ) = { \sqrt { x ^ { 2 } + y ^ {
 FIGURE 13.9 Interior points and boundary points of a region in space. As with regions in the plane, a boundary point need not belong to the space region R.
 
 
-![[c0da95cf141cf64a03324ed96c2e4b97c45b1005b596fe051dbdae3555764d87.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c0da95cf141cf64a03324ed96c2e4b97c45b1005b596fe051dbdae3555764d87.jpg)
 
 
 
@@ -208,11 +208,11 @@ Examples of open sets in space include the interior of a sphere, the open half-s
 
 Functions of more than three independent variables are also important. For example, a model that measures temperature in the atmosphere may depend not only on the location of the point $P ( x , y , z )$ in space, but also on the time t when it is measured, so we would write $T = f ( x , y , z , t )$ 
 
-## Computer Graphing
+### Computer Graphing
 
 Three-dimensional graphing software makes it possible to graph functions of two variables. We can often get information more quickly from a graph than from a formula, since the surfaces reveal increasing and decreasing behavior, and high points or low points. 
 
-![[0f7fee0518cc7680079b52d71d3c6fbba84f2fd771d6eb092937f929f23dd084.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0f7fee0518cc7680079b52d71d3c6fbba84f2fd771d6eb092937f929f23dd084.jpg)
 
 
 **EXAMPLE 5** The temperature w beneath the Earth’s surface is a function of the depth x beneath the surface and the time t of the year. If we measure x in meters and t as the number of days elapsed from the expected date of the yearly highest surface temperature, we can model the variation in temperature with the function 
@@ -233,18 +233,17 @@ The graph also shows that the temperature 5 m below the surface is about half a 
 
 Figure 13.11 shows computer-generated graphs of a number of functions of two variables together with their level curves. 
 
-![[630bfc13b64e922f94ad0143a81a575c965a1db77a660ec8cb062a9bc1a29228.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/630bfc13b64e922f94ad0143a81a575c965a1db77a660ec8cb062a9bc1a29228.jpg)
 
 
 
 FIGURE 13.11 Computer-generated graphs and level curves of typical functions of two variables.
 
 
-## EXERCISES
+### Exercises 13.1
 
-## 13.1
 
-## Domain, Range, and Level Curves
+#### Domain, Range, and Level Curves
 
 In Exercises 1–4, find the specific function values. 1. $f ( x , y ) = x ^ { 2 } + x y ^ { 3 }$ a. $f ( 0 , 0 )$ b. $f ( - 1 , 1 )$ c. $f ( 2 , 3 )$ d. $f ( - 3 , - 2 )$ 
 
@@ -312,7 +311,7 @@ In Exercises 17–30, (a) find the function’s domain, (b) find the function’
 
 30. f ( ) x y x y , ln 9 = − − ( ) 2 2 
 
-## Matching Surfaces with Level Curves
+#### Matching Surfaces with Level Curves
 
 Exercises 31–36 show level curves for six functions. The graphs of these functions are given on the next page (items a–f ), as are their equations (items g–l). Match each set of level curves with the appropriate graph and the appropriate equation. 
 
@@ -320,68 +319,68 @@ Exercises 31–36 show level curves for six functions. The graphs of these funct
 
 32. 
 
-![[f4fdcd3828614005c3fc1e505ad515bd4b740eb2f695bc3588b960897ed127ca.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f4fdcd3828614005c3fc1e505ad515bd4b740eb2f695bc3588b960897ed127ca.jpg)
 
 
-![[15d3a3cf6136869687e0dce8d4805dce23d3e03a46b008c5aac70fc0dfa0e796.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/15d3a3cf6136869687e0dce8d4805dce23d3e03a46b008c5aac70fc0dfa0e796.jpg)
 
 
 33. 
 
 34. 
 
-![[fc50131e7feba6d77339839e061f7ce02c701d076855ce046e1d0450acbc4e90.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fc50131e7feba6d77339839e061f7ce02c701d076855ce046e1d0450acbc4e90.jpg)
 
 
-![[07f362dd2a23532ede058dec00ff099679b6bf84a3d830ba700f2fea80343d11.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/07f362dd2a23532ede058dec00ff099679b6bf84a3d830ba700f2fea80343d11.jpg)
 
 
 35. 
 
 36. 
 
-![[fbbb80799aec4dcbf9cf6594af0736a38915150c10f4c94a8f519d092906b89d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fbbb80799aec4dcbf9cf6594af0736a38915150c10f4c94a8f519d092906b89d.jpg)
 
 
-![[10a4b73e5a90b1da525ed0ec6d8289aae9e4a1e41a564afb62412abd85880799.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/10a4b73e5a90b1da525ed0ec6d8289aae9e4a1e41a564afb62412abd85880799.jpg)
 
 
 
 a.
 
 
-![[3eb2969018ba344b673a13a12ce7b3a58c0dd149c2a85c78036a0e7effee1e32.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3eb2969018ba344b673a13a12ce7b3a58c0dd149c2a85c78036a0e7effee1e32.jpg)
 
 
 
 b.
 
 
-![[60ee19c58fff7876d091d386e0dee98bedcddc0f0f119d36c55a3440da9bfedb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/60ee19c58fff7876d091d386e0dee98bedcddc0f0f119d36c55a3440da9bfedb.jpg)
 
 
 
 c.
 
 
-![[51fc69c0e7eb1fc6cd4f3439fb8841c76a568a34e6952adae7272c6050c88247.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/51fc69c0e7eb1fc6cd4f3439fb8841c76a568a34e6952adae7272c6050c88247.jpg)
 
 
 
 d.
 
 
-![[0ea45d2a62fefc3f8fb733d9c09e255ae330189fb581daf01d2fdf30424d062a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0ea45d2a62fefc3f8fb733d9c09e255ae330189fb581daf01d2fdf30424d062a.jpg)
 
 
 
 e.
 
 
-![[4cfb05a66a984ec351312c6e819dbe75d3c68e435029617f4731978a2dae5ce5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4cfb05a66a984ec351312c6e819dbe75d3c68e435029617f4731978a2dae5ce5.jpg)
 
 
-![[30328145db326c6af1b88a9f61dc76b3a5a1df32451b45f3814ab42bc4735b04.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/30328145db326c6af1b88a9f61dc76b3a5a1df32451b45f3814ab42bc4735b04.jpg)
 
 
 xy<sup>2</sup> g. =z h. z = − − y y x 2 4 2 +x y2 2 
@@ -398,7 +397,7 @@ $$
 \mathbf {k}. z = \frac {1}{4 x ^ {2} + y ^ {2}}
 $$
 
-## Functions of Two Variables
+#### Functions of Two Variables
 
 Display the values of the functions in Exercises 37–48 in two ways: (a) by sketching the surface $z = f ( x , y )$ and (b) by drawing an assortment of level curves in the function’s domain. Label each level curve with its function value. 
 
@@ -406,15 +405,7 @@ Display the values of the functions in Exercises 37–48 in two ways: (a) by ske
 
 39. $f ( x , y ) = x ^ { 2 } + y ^ { 2 }$ 
 
-41. $f ( x , y ) = x ^ { 2 } - y$ 
-
-43. $f ( x , y ) = 4 x ^ { 2 } + y ^ { 2 }$ 
-
-45. $f ( x , y ) = 1 - | y |$ 
-
-47. $f ( x , y ) = \sqrt { x ^ { 2 } + y ^ { 2 } + 4 }$ 
-
-## Finding Level Curves
+#### Finding Level Curves
 
 $$
 f (x, y) = \sqrt {x}
@@ -422,9 +413,15 @@ $$
 
 40. $f ( x , y ) = \sqrt { x ^ { 2 } + y ^ { 2 } }$ 
 
+41. $f ( x , y ) = x ^ { 2 } - y$ 
+
 42. $f ( x , y ) = 4 - x ^ { 2 } - y ^ { 2 }$ 
 
+43. $f ( x , y ) = 4 x ^ { 2 } + y ^ { 2 }$ 
+
 44. $f ( x , y ) = 6 - 2 x - 3 y$ 
+
+45. $f ( x , y ) = 1 - | y |$ 
 
 46. $f ( x , y ) = 1 - | x | - | y |$ 
 
@@ -432,33 +429,31 @@ $$
 f (x, y) = \sqrt {x ^ {2} + y ^ {2} - 4}
 $$
 
+47. $f ( x , y ) = \sqrt { x ^ { 2 } + y ^ { 2 } + 4 }$ 
+
 In Exercises 49–52, find an equation for, and sketch the graph of, the level curve of the function $f ( x , y )$ that passes through the given point. 
 
-50. $f ( x , y ) = \sqrt { x ^ { 2 } - 1 } , ( 1 , 0 )$ 
-
 49. $f ( x , y ) = 1 6 - x ^ { 2 } - y ^ { 2 } , \left( 2 { \sqrt { 2 } } , { \sqrt { 2 } } \right)$ 
+
+50. $f ( x , y ) = \sqrt { x ^ { 2 } - 1 } , ( 1 , 0 )$ 
 
 51. $f ( x , y ) = { \sqrt { x + y ^ { 2 } - 3 } } , ( 3 , - 1 )$ 
 
 52. $f ( x , y ) = { \frac { 2 y - x } { x + y + 1 } } , ( - 1 , 1 )$ 
 
-## Sketching Level Surfaces
+#### Sketching Level Surfaces
 
 In Exercises 53–60, sketch a typical level surface for the function. 
 
 $$
 f (x, y, z) = x ^ {2} + y ^ {2} + z ^ {2}
-$$
-
-55. $f ( x , y , z ) = x + z$ 
-
-$$
+55. $$f ( x , y , z ) = x + z$$
 f (x, y, z) = \ln (x ^ {2} + y ^ {2} + z ^ {2})
 $$
 
-57. $f ( x , y , z ) = x ^ { 2 } + y ^ { 2 }$ 
-
 56. f ( ) x y z z , , = 
+
+57. $f ( x , y , z ) = x ^ { 2 } + y ^ { 2 }$ 
 
 59. $f ( x , y , z ) = z - x ^ { 2 } - y ^ { 2 }$ 
 
@@ -468,17 +463,13 @@ $$
 
 60. f ( ) ( ) ( ) ( ) x y z x y z , , 25 16 9 = + + 2 2 2 
 
-## Finding Level Surfaces
+#### Finding Level Surfaces
 
 In Exercises 61–64, find an equation for the level surface of the function through the given point. 
 
 $$
 f (x, y, z) = \sqrt {x - y} - \ln z, \quad (3, - 1, 1)
-$$
-
-62. $f ( x , y , z ) = \ln ( x ^ { 2 } + y + z ^ { 2 } ) , ( - 1 , 2 , 1 )$ 
-
-$$
+62. $$f ( x , y , z ) = \ln ( x ^ { 2 } + y + z ^ { 2 } ) , ( - 1 , 2 , 1 )$$
 g (x, y, z) = \sqrt {x ^ {2} + y ^ {2} + z ^ {2}}, \quad (1, - 1, \sqrt {2})
 $$
 
@@ -488,15 +479,13 @@ In Exercises 65–68, find and sketch the domain of $f .$ Then find an equation 
 
 65. $f ( x , y ) = \sum _ { n = 0 } ^ { \infty } \biggl ( { \frac { x } { y } } \biggr ) ^ { n } , ( 1 , 2 )$ 
 
-$$
-g (x, y, z) = \sum_ {n = 0} ^ {\infty} \frac {(x + y) ^ {n}}{n ! z ^ {n}}, (\ln 4, \ln 9, 2)
-$$
+66. $g (x, y, z) = \sum_ {n = 0} ^ {\infty} \frac {(x + y) ^ {n}}{n ! z ^ {n}}, (\ln 4, \ln 9, 2)$
 
 67. $f ( x , y ) = \int _ { x } ^ { y } \frac { d \theta } { \sqrt { 1 - \theta ^ { 2 } } } , ( 0 , 1 )$ 
 
 68. $g ( x , y , z ) = \int _ { x } ^ { y } { \frac { d t } { 1 + t ^ { 2 } } } + \int _ { 0 } ^ { z } { \frac { d \theta } { \sqrt { 4 - \theta ^ { 2 } } } } , ( 0 , 1 , { \sqrt { 3 } } )$ 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 Use a CAS to perform the following steps for each of the functions in Exercises 69–72. 
 
@@ -528,17 +517,11 @@ Use a CAS to plot the implicitly defined level surfaces in Exercises $^ { 7 3 - 
 
 Parametrized Surfaces Just as you describe curves in the plane parametrically with a pair of equations $x = f ( t ) , y = g ( t )$ defined on some parameter interval I, you can sometimes describe surfaces in space with a triple of equations $x = f ( u , v ) , y = g ( u , v ) , z = h ( u , v )$ defined on some parameter rectangle $a \leq u \leq b , c \leq v \leq d .$ Many computer algebra systems permit you to plot such surfaces in parametric mode. (Parametrized surfaces are discussed in detail in Section 15.5.) Use a CAS to plot the surfaces in Exercises 77–80. Also plot several level curves in the xy-plane. 
 
-$$
-7 7. x = u \cos v, y = u \sin v, z = u, 0 \leq u \leq 2,
-$$
+77. $x = u \cos v, y = u \sin v, z = u, 0 \leq u \leq 2,$
 
 $$
 0 \leq v \leq 2 \pi
-$$
-
-78. $x = u \cos v , \quad y = u \sin v , \quad z = v , 0 \leq u \leq 2 ,$ 
-
-$$
+78. $$x = u \cos v , \quad y = u \sin v , \quad z = v , 0 \leq u \leq 2 ,$$
 0 \leq v \leq 2 \pi
 $$
 
@@ -554,7 +537,7 @@ $$
 
 In this section we develop limits and continuity for multivariable functions. The theory is similar to that developed for single-variable functions, but since we now have more than one independent variable, there is additional complexity that requires some new ideas. 
 
-## Limits for Functions of Two Variables
+### Limits for Functions of Two Variables
 
 If the values of $f ( x , y )$ lie arbitrarily close to a fixed real number L for all points $( x , y )$ sufficiently close to a point $\left( x _ { 0 } , y _ { 0 } \right)$ , we say that $f$ approaches the limit L as $( x , y )$ approaches $\left( x _ { 0 } , y _ { 0 } \right)$ . This is similar to the informal definition for the limit of a function of a single variable. Notice, however, that when $\left( x _ { 0 } , y _ { 0 } \right)$ lies in the interior of $f ^ { \ast } \mathrm { s }$ domain, $( x , y )$ can approach $\left( x _ { 0 } , y _ { 0 } \right)$ from any direction, not just from the left or the right. For the limit to exist, the same limiting value must be obtained whatever direction of approach is taken. We illustrate this issue in several examples following the definition. 
 
@@ -572,7 +555,7 @@ If the values of $f ( x , y )$ lie arbitrarily close to a fixed real number L fo
 >
 The definition of limit says that the distance between $f ( x , y )$ and L becomes arbitrarily small whenever the distance from $( x , y )$ to $\left( x _ { 0 } , y _ { 0 } \right)$ is made sufficiently small (but not 0). The definition applies to interior points $\left( x _ { 0 } , y _ { 0 } \right)$ as well as boundary points of the domain of $f ,$ , although a boundary point need not lie within the domain. The points $( x , y )$ that approach $\left( x _ { 0 } , y _ { 0 } \right)$ are always taken to be in the domain of $f .$ See Figure 13.12. 
 
-![[e4180b1946d66e81ade4fad65c798e14edcea8ccdf5c81c33514c200aa9ebd1a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e4180b1946d66e81ade4fad65c798e14edcea8ccdf5c81c33514c200aa9ebd1a.jpg)
 
 
 
@@ -635,7 +618,7 @@ $$
 
 As with single-variable functions, the limit of the sum of two functions is the sum of their limits (when they both exist), with similar results for the limits of the differences, constant multiples, products, quotients, powers, and roots. These facts are summarized in Theorem 1. 
 
-## THEOREM 1—Properties of Limits of Functions of Two Variables
+**THEOREM 1—Properties of Limits of Functions of Two Variables**
 
 The following rules hold if L, M, and k are real numbers and 
 
@@ -733,7 +716,7 @@ $$
 
 We can cancel the factor $( x - y )$ because the path $y = x$ (where we would have $x - y = 0 )$ is not in the domain of the function 
 
-![[ffb9d1cedc0558fcb7ad226389b4cf3237e20c296797b31c0fb6df9e08260f12.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ffb9d1cedc0558fcb7ad226389b4cf3237e20c296797b31c0fb6df9e08260f12.jpg)
 
 
 
@@ -782,10 +765,10 @@ $$
 (a)
 
 
-![[ef5e10b63baa7b1bbbe652459f6ac87c389b1524d667446c1ad85e71567702c3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ef5e10b63baa7b1bbbe652459f6ac87c389b1524d667446c1ad85e71567702c3.jpg)
 
 
-![[47b5a5b621fbfc105cc801e43e7e39fa0967a9e593f63497d8d8bd6ad96591c2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/47b5a5b621fbfc105cc801e43e7e39fa0967a9e593f63497d8d8bd6ad96591c2.jpg)
 
 
 FIGURE 13.14 (a) The graph of 
@@ -804,7 +787,7 @@ $$
 
 **Solution** The domain of $f$ does not include the y-axis, so we do not consider any points $( x , y )$ where $x = 0$ in the approach toward the origin $( 0 , 0 )$ . Along the x-axis, the value of the function is $f ( x , 0 ) = 0$ for all $x \neq 0$ . So if the limit does exist as $( x , y ) \to ( 0 , 0 )$ the value of the limit must be $L = 0$ . On the other hand, along the line $y = x ,$ , the value of the function is $f ( x , x ) = x / x = 1$ for all $x \neq 0$ . That ${ \mathrm { i s } } ,$ the function $f$ approaches the value 1 along the line $y = x .$ This means that for every disk of radius $\delta$ centered at $( 0 , 0 )$ , the disk will contain points $( x , 0 )$ on the x-axis where the value of the function is $0 ,$ and also points $( x , x )$ along the line $y = x$ where the value of the function is 1. So no matter how small we choose $\delta$ as the radius of the disk in Figure 13.12, there will be points within the disk for which the function values differ by 1. Therefore, the limit cannot exist because we can take $\varepsilon$ to be any number less than 1 in the limit definition and deny that $L = 0 \mathrm { o r }$ 1, or any other real number. The limit does not exist because we have different limiting values along different paths approaching the point (0, 0 .) 
 
-## Continuity
+### Continuity
 
 As with functions of a single variable, continuity is defined in terms of limits. 
 
@@ -824,7 +807,7 @@ As with the definition of limit, the definition of continuity applies at boundar
 
 A consequence of Theorem 1 is that algebraic combinations of continuous functions are continuous at every point at which all the functions involved are defined. This means that sums, differences, constant multiples, products, quotients, and powers of continuous functions are continuous where defined. In particular, polynomials and rational functions of two variables are continuous at every point at which they are defined. 
 
-## **EXAMPLE 5** Show that
+**EXAMPLE 5** Show that
 
 $$
 f (x, y) = \left\{ \begin{array}{l l} \frac {2 x y}{x ^ {2} + y ^ {2}}, & (x, y) \neq (0, 0) \\ 0, & (x, y) = (0, 0). \end{array} \right.
@@ -834,14 +817,14 @@ is continuous at every point except the origin (Figure 13.14).
 
 **Solution** The function $f$ is continuous at every point $( x , y )$ except $( 0 , 0 )$ because its values at points other than $( 0 , 0 )$ are given by a rational function of x and y, and therefore at those points the limiting value is simply obtained by substituting the values of x and $y$ into that rational expression. 
 
-![[e20dfc2c7aadb4a1ebd65ed46bbeab447fbdd9fc15b7050611575e45b2355dc9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e20dfc2c7aadb4a1ebd65ed46bbeab447fbdd9fc15b7050611575e45b2355dc9.jpg)
 
 
 
 (a)
 
 
-![[a2c4b3c17a32d17fb0399ef56e6fca59f2bc8d9fe3d2164943d35ddfd5453e3f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a2c4b3c17a32d17fb0399ef56e6fca59f2bc8d9fe3d2164943d35ddfd5453e3f.jpg)
 
 
 
@@ -871,7 +854,7 @@ Examples 4 and 5 illustrate an important point about limits of functions of two 
 Two-Path Test for Nonexistence of a Limit
 If a function $f(x, y)$ has different limits along two different paths in the domain of f as $(x, y)$ approaches $(x_{0}, y_{0})$ , then $\lim_{(x, y) \to (x_{0}, y_{0})} f(x, y)$ does not exist. 
 
-## **EXAMPLE 6** Show that the function
+**EXAMPLE 6** Show that the function
 
 $$
 f (x, y) = \frac {2 x ^ {2} y}{x ^ {4} + y ^ {2}}
@@ -899,7 +882,7 @@ Having the same limit along all straight lines approaching $\left( x _ { 0 } , y
 
 Whenever it is correctly defined, the composition of continuous functions is also continuous. The only requirement is that each function be continuous where it is applied. The proof, omitted here, is similar to that for functions of a single variable (Theorem 9 in Section 2.6). 
 
-## Continuity of Compositions
+### Continuity of Compositions
 
 If $f$ is continuous at $\left( x _ { 0 } , y _ { 0 } \right)$ and g is a single-variable function continuous at $f ( x _ { 0 } , y _ { 0 } )$ , then the composition $h = g \circ f$ defined by $h ( x , y ) = g ( f ( x , y ) )$ is also continuous at $\left( x _ { 0 } , y _ { 0 } \right)$ 
 
@@ -911,7 +894,7 @@ $$
 
 are continuous at every point $( x , y )$ 
 
-## Functions of More Than Two Variables
+### Functions of More Than Two Variables
 
 The definitions of limit and continuity for functions of two variables and the conclusions about limits and continuity for sums, products, quotients, powers, and compositions all extend to functions of three or more variables. Functions like 
 
@@ -927,15 +910,15 @@ $$
 
 where P denotes the point $\left( x , y , z \right)$ , may be found by direct substitution. 
 
-## Extreme Values of Continuous Functions on Closed, Bounded Sets
+### Extreme Values of Continuous Functions on Closed, Bounded Sets
 
 The Extreme Value Theorem (Theorem 1, Section 4.1) states that a function of a single variable that is continuous at every point of a closed, bounded interval $\textstyle \left\lceil a , b \right\rceil$ takes on an absolute maximum value and an absolute minimum value at least once in $[ a , b ]$ . The same holds true of a function $z = f ( x , y )$ that is continuous on a closed, bounded set R in the plane (like a line segment, a disk, or a filled-in triangle). The function takes on an absolute maximum value at some point in R and an absolute minimum value at some point in R. The function may take on a maximum or minimum value more than once over R. 
 
 Similar results hold for functions of three or more variables. A continuous function $w = f ( x , y , z )$ must take on absolute maximum and minimum values on any closed, bounded set (such as a solid ball or cube, spherical shell, or rectangular solid) on which it is defined. We will learn how to find these extreme values in Section 13.7. 
 
-## EXERCISES
+### EXERCISES
 
-## Limits with Two Variables
+#### Limits with Two Variables
 
 Find the limits in Exercises 1–12. 
 
@@ -961,21 +944,23 @@ $$
 
 7. $\operatorname* { l i m } _ { ( x , y ) \to ( 0 , \ln 2 ) } e ^ { x - y }$ 
 
-9. $\operatorname* { l i m } _ { ( x , y ) \to ( 0 , 0 ) } { \frac { e ^ { y } \sin x } { x } }$ 
-
 8. $\operatorname* { l i m } _ { ( x , y )  ( 1 , 1 ) } \ln | 1 + x ^ { 2 } y ^ { 2 } |$ 
 
-11. $\operatorname* { l i m } _ { ( x , y ) \to ( 1 , \pi / 6 ) } { \frac { x \sin y } { x ^ { 2 } + 1 } }$ 
+9. $\operatorname* { l i m } _ { ( x , y ) \to ( 0 , 0 ) } { \frac { e ^ { y } \sin x } { x } }$ 
 
 10. $\operatorname* { l i m } _ { ( x , y ) \to \left( 1 / 2 7 , \pi ^ { 3 } \right) } \cos \sqrt [ 3 ] { x y }$ 
 
+11. $\operatorname* { l i m } _ { ( x , y ) \to ( 1 , \pi / 6 ) } { \frac { x \sin y } { x ^ { 2 } + 1 } }$ 
+
 12. $\operatorname* { l i m } _ { ( x , y ) \to ( \pi / 2 , 0 ) } { \frac { \cos y + 1 } { y - \sin x } }$ 
 
-## Limits of Quotients
+#### Limits of Quotients
 
 Find the limits in Exercises 13–24 by rewriting the fractions first. 
 
-13. $\operatorname* { l i m } _ { ( x , y ) \to ( 1 , 1 ) } { \frac { x ^ { 2 } - 2 x y + y ^ { 2 } } { x - y } }$ 14. $\operatorname* { l i m } _ { ( x , y ) \to ( 1 , 1 ) \atop { x \neq y } } { \frac { x ^ { 2 } - y ^ { 2 } } { x - y } }$ 
+13. $\operatorname* { l i m } _ { ( x , y ) \to ( 1 , 1 ) } { \frac { x ^ { 2 } - 2 x y + y ^ { 2 } } { x - y } }$
+
+14. $\operatorname* { l i m } _ { ( x , y ) \to ( 1 , 1 ) \atop { x \neq y } } { \frac { x ^ { 2 } - y ^ { 2 } } { x - y } }$
 
 15. $\operatorname* { l i m } _ { ( x , y ) \to ( 1 , 1 ) } { \frac { x y - y - 2 x + 2 } { x - 1 } }$ 
 
@@ -983,7 +968,9 @@ Find the limits in Exercises 13–24 by rewriting the fractions first.
 
 17. $\operatorname* { l i m } _ { ( x , y ) \to ( 0 , 0 ) } { \frac { x - y + 2 { \sqrt { x } } - 2 { \sqrt { y } } } { \sqrt { x } - { \sqrt { y } } } }$ 
 
-18. $\operatorname* { l i m } _ { ( x , y ) \to ( 2 , 2 ) } { \frac { x + y - 4 } { \sqrt { x + y } - 2 } }$ 19. $\operatorname* { l i m } _ { ( x , y ) \to ( 2 , 0 ) } { \frac { \sqrt { 2 x - y } - 2 } { 2 x - y - 4 } }$ 
+18. $\operatorname* { l i m } _ { ( x , y ) \to ( 2 , 2 ) } { \frac { x + y - 4 } { \sqrt { x + y } - 2 } }$
+
+19. $\operatorname* { l i m } _ { ( x , y ) \to ( 2 , 0 ) } { \frac { \sqrt { 2 x - y } - 2 } { 2 x - y - 4 } }$
 
 20. $\operatorname* { l i m } _ { ( x , y ) \to ( 4 , 3 ) } { \frac { \sqrt { x } - { \sqrt { y + 1 } } } { x - y - 1 } }$ 
 
@@ -995,19 +982,23 @@ Find the limits in Exercises 13–24 by rewriting the fractions first.
 
 24. $\operatorname* { l i m } _ { ( x , y ) \to ( 2 , 2 ) } { \frac { x - y } { x ^ { 4 } - y ^ { 4 } } }$ 
 
-## Limits with Three Variables
+#### Limits with Three Variables
 
 Find the limits in Exercises 25–30. 
 
-25. $\operatorname* { l i m } _ { \to ( 1 , 3 , 4 ) } \left( { \frac { 1 } { x } } + { \frac { 1 } { y } } + { \frac { 1 } { z } } \right)$ 26. $\operatorname * { l i m } _ { P \to ( 1 , - 1 , - 1 ) } { \frac { 2 x y + y z } { x ^ { 2 } + z ^ { 2 } } }$ P 
+25. $\operatorname* { l i m } _ { \to ( 1 , 3 , 4 ) } \left( { \frac { 1 } { x } } + { \frac { 1 } { y } } + { \frac { 1 } { z } } \right)$
+
+26. $\operatorname * { l i m } _ { P \to ( 1 , - 1 , - 1 ) } { \frac { 2 x y + y z } { x ^ { 2 } + z ^ { 2 } } }$ P
 
 27. $\operatorname* { l i m } _ { P \to ( \pi , \pi , 0 ) } ( \sin ^ { 2 } x + \cos ^ { 2 } y + \sec ^ { 2 } z )$ 
 
-28. $\operatorname * { l i m } _ { P \to ( - 1 / 4 , \pi / 2 , 2 ) } \tan ^ { - 1 } x y z$ 29. $\operatorname* { l i m } _ { P \to ( \pi , 0 , 3 ) } z e ^ { - 2 y } \cos 2 x$ 
+28. $\operatorname * { l i m } _ { P \to ( - 1 / 4 , \pi / 2 , 2 ) } \tan ^ { - 1 } x y z$
+
+29. $\operatorname* { l i m } _ { P \to ( \pi , 0 , 3 ) } z e ^ { - 2 y } \cos 2 x$
 
 30. $\operatorname * { l i m } _ { P \to ( 2 , - 3 , 6 ) } \ln \sqrt { x ^ { 2 } + y ^ { 2 } + z ^ { 2 } }$ 
 
-## Continuity for Two Variables
+#### Continuity for Two Variables
 
 At what points (x y, in the plane are the functions in Exercises 31–34) continuous? 
 
@@ -1025,7 +1016,7 @@ b. $g ( x , y ) = \frac { x + y } { 2 + \cos x }$
 
 34. a. $g ( x , y ) = { \frac { x ^ { 2 } + y ^ { 2 } } { x ^ { 2 } - 3 x + 2 } } \quad { \mathbf { b . } } \ g ( x , y ) = { \frac { 1 } { x ^ { 2 } - y } }$ 
 
-## Continuity for Three Variables
+#### Continuity for Three Variables
 
 At what points ( x y z , , in space are the functions in Exercises 35–40) continuous? 
 
@@ -1047,7 +1038,7 @@ b. $h ( x , y , z ) = \frac { 1 } { z - \sqrt { x ^ { 2 } + y ^ { 2 } } }$
 
 b. $h ( x , y , z ) = \frac { 1 } { 4 - \sqrt { x ^ { 2 } + y ^ { 2 } + z ^ { 2 } - 9 } }$ 
 
-## No Limit Exists at the Origin
+#### No Limit Exists at the Origin
 
 By considering different paths of approach, show that the functions in Exercises 41–48 have no limit as $( x , y ) \to ( 0 , 0 )$ 
 
@@ -1055,10 +1046,10 @@ By considering different paths of approach, show that the functions in Exercises
 
 42. $f ( x , y ) = { \frac { x ^ { 4 } } { x ^ { 4 } + y ^ { 2 } } }$ 
 
-![[5ed7c9567270def8c5400d44701e74dcb63960297906ba85739fc0cccaae4f00.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5ed7c9567270def8c5400d44701e74dcb63960297906ba85739fc0cccaae4f00.jpg)
 
 
-![[b5e838494fe3e22cfff75920801d2fc5b3c82f2456f837947eb4f5a83e27ad57.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b5e838494fe3e22cfff75920801d2fc5b3c82f2456f837947eb4f5a83e27ad57.jpg)
 
 
 43. $f ( x , y ) = { \frac { x ^ { 4 } - y ^ { 2 } } { x ^ { 4 } + y ^ { 2 } } }$ 
@@ -1067,13 +1058,13 @@ By considering different paths of approach, show that the functions in Exercises
 
 45. $g ( x , y ) = { \frac { x - y } { x + y } }$ 
 
-47. $h ( x , y ) = \frac { x ^ { 2 } + y } { y }$ 
-
 46. $g ( x , y ) = { \frac { x ^ { 2 } - y } { x - y } }$ 
+
+47. $h ( x , y ) = \frac { x ^ { 2 } + y } { y }$ 
 
 48. $h ( x , y ) = { \frac { x ^ { 2 } y } { x ^ { 4 } + y ^ { 2 } } }$ 
 
-## Theory and Examples
+#### Theory and Examples
 
 In Exercises 49–54, show that the limits do not exist. 
 
@@ -1081,13 +1072,13 @@ In Exercises 49–54, show that the limits do not exist.
 
 51. $\operatorname* { l i m } _ { ( x , y ) \to ( 0 , 1 ) } { \frac { x \ln y } { x ^ { 2 } + \left( \ln y \right) ^ { 2 } } }$ 
 
+52. $\operatorname* { l i m } _ { ( x , y ) \to ( 1 , 0 ) } \frac { x e ^ { y } - 1 } { x e ^ { y } - 1 + y }$ 
+
 53. $\operatorname* { l i m } _ { ( x , y ) \to ( 0 , 0 ) } { \frac { y + \sin x } { x + \sin y } }$ 
 
 $$
 \lim _ {(x, y) \rightarrow (1, - 1)} \frac {x y + 1}{x ^ {2} - y ^ {2}}
 $$
-
-52. $\operatorname* { l i m } _ { ( x , y ) \to ( 1 , 0 ) } \frac { x e ^ { y } - 1 } { x e ^ { y } - 1 + y }$ 
 
 54. $\operatorname* { l i m } _ { ( x , y ) \to ( 1 , 1 ) } { \frac { \tan y - y \tan x } { y - x } }$ 
 
@@ -1129,7 +1120,7 @@ $$
 
 Use this result to support your answers to the questions in Exercises 59–62. 
 
-## 59. Does knowing that
+59. Does knowing that
 
 $$
 1 - \frac {x ^ {2} y ^ {2}}{3} <   \frac {\tan^ {- 1} x y}{x y} <   1
@@ -1173,7 +1164,7 @@ $$
 
 Give reasons for your answer. 
 
-## 63. (Continuation of Example 5.)
+63. (Continuation of Example 5.)
 
 a. Reread Example 5. Then substitute m = tan into theθ formula 
 
@@ -1193,7 +1184,7 @@ $$
 
 to be continuous at the origin. 
 
-## Changing Variables to Polar Coordinates
+#### Changing Variables to Polar Coordinates
 
 If you cannot make any headway with $\operatorname* { l i m } _ { ( x , y ) \to ( 0 , 0 ) } f ( x , y )$ in rectangular coordinates, try changing to polar coordinates. Substitute $x = r \cos \theta , y = r \sin \theta$ , and investigate the limit of the resulting expression as $r  0$ . In other words, try to decide whether there exists a number L satisfying the following criterion: 
 
@@ -1251,17 +1242,15 @@ $$
 
 In Exercises 65–70, find the limit of $f \operatorname { a s } ( x , y ) \to ( 0 , 0 )$ or show that the limit does not exist. 
 
-$$
-\mathbf {6 5 .} f (x, y) = \frac {x ^ {3} - x y ^ {2}}{x ^ {2} + y ^ {2}} \quad \mathbf {6 6 .} f (x, y) = \cos \left(\frac {x ^ {3} - y ^ {3}}{x ^ {2} + y ^ {2}}\right)
-$$
+65. $f (x, y) = \frac {x ^ {3} - x y ^ {2}}{x ^ {2} + y ^ {2}}$
 
-$$
-\mathbf {6 7 .} f (x, y) = \frac {y ^ {2}}{x ^ {2} + y ^ {2}} \quad \mathbf {6 8 .} f (x, y) = \frac {2 x}{x ^ {2} + x + y ^ {2}}
-$$
+66. $f (x, y) = \cos \left(\frac {x ^ {3} - y ^ {3}}{x ^ {2} + y ^ {2}}\right)$
 
-$$
-f (x, y) = \tan^ {- 1} \left(\frac {| x | + | y |}{x ^ {2} + y ^ {2}}\right) \tag {69.}
-$$
+67. $f (x, y) = \frac {y ^ {2}}{x ^ {2} + y ^ {2}}$
+
+68. $f (x, y) = \frac {2 x}{x ^ {2} + x + y ^ {2}}$
+
+69. $f (x, y) = \tan^ {- 1} \left(\frac {| x | + | y |}{x ^ {2} + y ^ {2}}\right)$
 
 70. $f ( x , y ) = { \frac { x ^ { 2 } - y ^ { 2 } } { x ^ { 2 } + y ^ { 2 } } }$ 
 
@@ -1271,7 +1260,7 @@ In Exercises 71 and $^ { 7 2 , }$ , define $f ( 0 , 0 )$ in a way that extends $
 
 72. $f ( x , y ) = { \frac { 3 x ^ { 2 } y } { x ^ { 2 } + y ^ { 2 } } }$ 
 
-## Using the Limit Definition
+#### Using the Limit Definition
 
 Each of Exercises 73–78 gives a function $f ( x , y )$ and a positive number ε. In each exercise, show that there exists a $\delta > 0$ such that for all ( x y, ,) 
 
@@ -1321,11 +1310,11 @@ $$
 
 The calculus of several variables is similar to single-variable calculus applied to several variables, one at a time. When we hold all but one of the independent variables of a function constant and differentiate with respect to that one variable, we get a “partial” derivative. This section shows how partial derivatives are defined and interpreted geometrically, and how to calculate them by applying the familiar rules for differentiating functions of a single variable. The idea of differentiability for functions of several variables requires more than the existence of the partial derivatives, because a point can be approached from many different directions. However, we will see that differentiable functions of several variables behave similarly to differentiable single-variable functions. In particular, they are continuous and can be well approximated by linear functions. 
 
-## Partial Derivatives of a Function of Two Variables
+### Partial Derivatives of a Function of Two Variables
 
 $\operatorname { I f } \left( x _ { 0 } , y _ { 0 } \right)$ is a point in the domain of a function $f ( x , y )$ , the vertical plane $y = y _ { 0 }$ will cut the surface $z = f ( x , y )$ in the curve $z = f ( x , y _ { 0 } )$ (Figure 13.16). This curve is the graph 
 
-![[6e5f7708beffa7145a56cc16f4818a8598158d06f84359688279c14387d10e49.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6e5f7708beffa7145a56cc16f4818a8598158d06f84359688279c14387d10e49.jpg)
 
 
 
@@ -1364,7 +1353,7 @@ $$
 \frac {\partial f}{\partial x}, \quad f _ {x}, \quad \text { and } \quad \frac {\partial z}{\partial x}.
 $$
 
-![[d9faa651ba771cec7ddf7ad31825d9cb6941cd1eb998efed2c5d5b6325fb972d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d9faa651ba771cec7ddf7ad31825d9cb6941cd1eb998efed2c5d5b6325fb972d.jpg)
 
 
 
@@ -1391,14 +1380,14 @@ $$
 
 Notice that we now have two tangent lines associated with the surface $z = f ( x , y )$ at the point $P ( x _ { 0 } , y _ { 0 } , f ( x _ { 0 } , y _ { 0 } ) )$ (Figure 13.18). Is the plane they determine tangent to the surface at P? We will see that it is for the differentiable functions defined at the end of this section, and we will learn how to find the tangent plane in Section 13.6. First we have to better understand partial derivatives. 
 
-![[191bbf111de4c899b7dc6727d2011a2f0b34d2c87b4bcbd4e630000cea79c6e7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/191bbf111de4c899b7dc6727d2011a2f0b34d2c87b4bcbd4e630000cea79c6e7.jpg)
 
 
 
 FIGURE 13.18 Figures 13.16 and 13.17 combined. The tangent lines at the point $\left( x _ { 0 } , y _ { 0 } , f \left( x _ { 0 } , y _ { 0 } \right) \right)$ ) determine a plane that, in this picture at least, appears to be tangent to the surface.
 
 
-## Calculations
+### Calculations
 
 The definitions of $\partial f / \partial x$ and $\partial f / \partial y$ give us two different ways of differentiating $f$ at a point: with respect to x in the usual way while treating y as a constant, and with respect to $y$ in the usual way while treating x as a constant. As the following examples show, the values of these partial derivatives are usually different at a given point $\left( x _ { 0 } , y _ { 0 } \right)$ 
 
@@ -1452,7 +1441,7 @@ $$
 
 Implicit differentiation works for partial derivatives the way it works for ordinary derivatives, as the next example illustrates. 
 
-![[9f868e53527d3ede418dcc5cb116e9a5dbfb3bec49683c1005c356f0af05a1fa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9f868e53527d3ede418dcc5cb116e9a5dbfb3bec49683c1005c356f0af05a1fa.jpg)
 
 
 
@@ -1487,7 +1476,7 @@ $$
 \left. \frac {d z}{d y} \right| _ {y = 2} = \left. \frac {d}{d y} (1 + y ^ {2}) \right| _ {y = 2} = 2 y \Bigg | _ {y = 2} = 4.
 $$
 
-## Functions of More Than Two Variables
+### Functions of More Than Two Variables
 
 The definitions of the partial derivatives of functions of more than two independent variables are similar to the definitions for functions of two variables. They are ordinary derivatives with respect to one variable, taken while the other independent variables are held constant. 
 
@@ -1503,7 +1492,7 @@ $$
 \begin{array}{l l} \frac {\partial f}{\partial z} = \frac {\partial}{\partial z} [ x \sin (y + 3 z) ] = x \frac {\partial}{\partial z} \sin (y + 3 z) & x \text { held   constant } \\ = x \cos (y + 3 z) \frac {\partial}{\partial z} (y + 3 z) & \text { Chain   rule } \\ = 3 x \cos (y + 3 z). & y \text { held   constant } \end{array}
 $$
 
-![[68c21b658d46e5b69a7a272bcb37cfbb1fbc721ed2de8cb3fb670a14e52d103d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/68c21b658d46e5b69a7a272bcb37cfbb1fbc721ed2de8cb3fb670a14e52d103d.jpg)
 
 
 
@@ -1514,7 +1503,7 @@ $$
 \frac {1}{R} = \frac {1}{R _ {1}} + \frac {1}{R _ {2}} + \frac {1}{R _ {3}}.
 $$
 
-![[a06d4aa48ab1d26e647d2b89a9df5bdcde23da58c362134777197a0ca0660551.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a06d4aa48ab1d26e647d2b89a9df5bdcde23da58c362134777197a0ca0660551.jpg)
 
 
 
@@ -1563,11 +1552,11 @@ $$
 
 Thus at the given values, a small change in the resistance $R _ { 2 }$ leads to a change in R about one-ninth as large. ■ 
 
-## Partial Derivatives and Continuity
+### Partial Derivatives and Continuity
 
 A function $f ( x , y )$ can have partial derivatives with respect to both x and y at a point without the function being continuous there. This is different from functions of a single variable, where the existence of a derivative implies continuity. If the partial derivatives of $f ( x , y )$ exist and are continuous throughout a disk centered at $\left( x _ { 0 } , y _ { 0 } \right)$ , however, then $f$ is continuous at $\left( x _ { 0 } , y _ { 0 } \right)$ , as we see at the end of this section. 
 
-## **EXAMPLE 8** Let
+**EXAMPLE 8** Let
 
 $$
 f (x, y) = \left\{ \begin{array}{l l} 0, & x y \neq 0 \\ 1, & x y = 0 \end{array} \right.
@@ -1583,7 +1572,7 @@ $$
 
 (d) Show that both partial derivatives $\partial f / \partial x$ and $\partial f / \partial y$ exist at the origin. 
 
-## **Solution**
+**Solution**
 
 (a) Since $f ( x , y )$ is zero at every point on the line $y = x$ (except at the origin), we have 
 
@@ -1603,7 +1592,7 @@ $$
 
 What Example 8 suggests is that we need a stronger requirement for differentiability in higher dimensions than the mere existence of the partial derivatives. We define differentiability for functions of two variables (which is somewhat more complicated than for single-variable functions) at the end of this section and then revisit the connection to continuity. 
 
-## Second-Order Partial Derivatives
+### Second-Order Partial Derivatives
 
 When we differentiate a function $f ( x , y )$ twice, we produce its second-order derivatives. These derivatives are usually denoted by 
 
@@ -1623,7 +1612,7 @@ $$
 \begin{array}{l l} \frac {\partial^ {2} f}{\partial x   \partial y} & \text { Differentiate   first   with   respect   to } y, \text { then   with   respect   to } x. \\ f _ {y x} = (f _ {y}) _ {x} & \text { Means   the   same   thing } \end{array}
 $$
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
 Pierre-Simon Laplace 
 
@@ -1667,7 +1656,7 @@ $$
 \frac {\partial^ {2} f}{\partial y ^ {2}} = \frac {\partial}{\partial y} \left(\frac {\partial f}{\partial y}\right) = - x \cos y.
 $$
 
-## The Mixed Derivative Theorem
+### The Mixed Derivative Theorem
 
 You may have noticed that the “mixed” second-order partial derivatives 
 
@@ -1677,7 +1666,7 @@ $$
 
 in Example 9 are equal. This is not a coincidence. They must be equal whenever $f , f _ { x } , f _ { y } , f _ { x y }$ ,  and $f _ { y x }$ are continuous, as stated in the following theorem. However, the mixed derivatives can be different when the continuity conditions are not satisfied (see Exercise 82). 
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
 Alexis Clairaut 
 
@@ -1709,7 +1698,7 @@ $$
 
 If we differentiate first with respect to y, we obtain $\partial ^ { 2 } w / \partial x \partial y = 1$ as well, but with more work. We can differentiate in either order because the conditions of Theorem 2 hold for w at all points $( x _ { 0 } , y _ { 0 } )$ 
 
-## Partial Derivatives of Still Higher Order
+### Partial Derivatives of Still Higher Order
 
 Although we will deal mostly with first- and second-order partial derivatives, because these appear the most frequently in applications, there is no theoretical limit to how many times we can differentiate a function as long as the derivatives involved exist. Thus, we get third- and fourth-order derivatives denoted by symbols like 
 
@@ -1729,7 +1718,7 @@ $$
 \begin{array}{c} f _ {y} = - 4 x y z + x ^ {2} \\ f _ {y x} = - 4 y z + 2 x \\ f _ {y x y} = - 4 z \\ f _ {y x y z} = - 4. \end{array}
 $$
 
-## Differentiability
+### Differentiability
 
 The concept of differentiability for functions of several variables is more complicated than for single-variable functions, because a point in the domain can be approached from many directions and along any path, not just from the left or from the right. The existence of both partial derivatives at a point $\left( x _ { 0 } , y _ { 0 } \right)$ is not by itself even enough to show continuity at $\left( x _ { 0 } , y _ { 0 } \right)$ , as we saw in Example 8. The differentiability of $f$ is instead based on the idea that a linear function gives a good model of a differentiable function near a point. 
 
@@ -1816,33 +1805,19 @@ If a function $f(x, y)$ is differentiable at $(x_{0}, y_{0})$ , then f is contin
 
 As we can see from Corollary 3 and Theorem 4, a function $f ( x , y )$ must be continuous at a point $\left( x _ { 0 } , y _ { 0 } \right) \mathrm { i f } \ f _ { x }$ and $f _ { y }$ are continuous throughout an open region containing $\left( x _ { 0 } , y _ { 0 } \right)$ . Remember, however, that it is still possible for a function of two variables to be discontinuous at a point where its first partial derivatives exist, as we saw in Example 8. Existence alone of the partial derivatives at that point is not enough, but continuity of the partial derivatives guarantees differentiability. 
 
-## EXERCISES
+### EXERCISES
 
 13.3 
 
-## Calculating First-Order Partial Derivatives
+#### Calculating First-Order Partial Derivatives
 
 In Exercises 1–22, find $\partial f / \partial x$ and $\partial f / \partial y$ 
 
-15. $f ( x , y ) = \ln ( x + y )$ 
-
-16. $f ( x , y ) = e ^ { x y } \ln y$ 
-
 1. $f ( x , y ) = 2 x ^ { 2 } - 3 y - 4$ $2 . \ f ( x , y ) = x ^ { 2 } - x y + y ^ { 2 }$ 
-
-17. $f ( x , y ) = \sin ^ { 2 } ( x - 3 y )$ 
-
-18. $f \left( x , y \right) = \cos ^ { 2 } ( 3 x - y ^ { 2 } )$ 
-
-19. $f ( x , y ) = x ^ { y }$ 
 
 3. $f \bigl ( x , y \bigr ) = ( x ^ { 2 } - 1 ) ( y + 2 )$ 
 
-20. $f ( x , y ) = \log _ { y } x$ 
-
 4. f ( ) x y xy x y x y , 5 7 3 6 = − − + − + 2 2 2 
-
-21. $f ( x , y ) = \int _ { x } ^ { y } g ( t ) d t$ g t   continuous for all  ( ) 
 
 5. $f ( x , y ) = ( x y - 1 ) ^ { 2 }$ 
 
@@ -1850,23 +1825,41 @@ In Exercises 1–22, find $\partial f / \partial x$ and $\partial f / \partial y
 
 7. $f ( x , y ) = \sqrt { x ^ { 2 } + y ^ { 2 } }$ 
 
-22. $f ( x , y ) = \sum _ { n = 0 } ^ { \infty } ( x y ) ^ { n } \quad ( | x y | < 1 )$ 
-
 8. $f ( x , y ) = ( x ^ { 3 } + ( y / 2 ) ) ^ { 2 / 3 }$ 
 
 9. $f ( x , y ) = 1 / ( x + y )$ 
 
 10. $f ( x , y ) = x / ( x ^ { 2 } + y ^ { 2 } )$ 
 
-In Exercises 23–34, find $f _ { x } , f _ { y } ,$ ,  and $f _ { z } .$ 
+11. $f ( x , y ) = ( x + y ) / ( x y - 1 )$
 
-11. $f ( x , y ) = ( x + y ) / ( x y - 1 )$ 12. $f ( x , y ) = \tan ^ { - 1 } ( y / x )$ 
-
-23. f ( ) x y z xy z , , 1 2 = + −2 2 24. f ( ) x y z xy yz xz , , = + + 
+12. $f ( x , y ) = \tan ^ { - 1 } ( y / x )$
 
 13. $f ( x , y ) = e ^ { ( x + y + 1 ) }$ 
 
 14. $f ( x , y ) = e ^ { - x } \sin ( x + y )$ 
+
+15. $f ( x , y ) = \ln ( x + y )$ 
+
+16. $f ( x , y ) = e ^ { x y } \ln y$ 
+
+17. $f ( x , y ) = \sin ^ { 2 } ( x - 3 y )$ 
+
+18. $f \left( x , y \right) = \cos ^ { 2 } ( 3 x - y ^ { 2 } )$ 
+
+19. $f ( x , y ) = x ^ { y }$ 
+
+20. $f ( x , y ) = \log _ { y } x$ 
+
+21. $f ( x , y ) = \int _ { x } ^ { y } g ( t ) d t$ g t   continuous for all  ( ) 
+
+22. $f ( x , y ) = \sum _ { n = 0 } ^ { \infty } ( x y ) ^ { n } \quad ( | x y | < 1 )$ 
+
+In Exercises 23–34, find $f _ { x } , f _ { y } ,$ ,  and $f _ { z } .$ 
+
+23. f ( ) x y z xy z , , 1 2 = + −2 2
+
+24. f ( ) x y z xy yz xz , , = + +
 
 25. $f ( x , y , z ) = x - \sqrt { y ^ { 2 } + z ^ { 2 } }$ 
 
@@ -1902,15 +1895,11 @@ In Exercises 35–40, find the partial derivative of the function with respect t
 
 $$
 W (P, V, \delta , v, g) = P V + \frac {V \delta v ^ {2}}{2 g}
-$$
-
-40. Wilson lot size formula (Section 4.6, Exercise 61) 
-
-$$
+40. $Wilson lot size formula (Section 4.6, Exercise 61)$
 A (c, h, k, m, q) = \frac {k m}{q} + c m + \frac {h q}{2}
 $$
 
-## Calculating Second-Order Partial Derivatives
+#### Calculating Second-Order Partial Derivatives
 
 Find all the second-order partial derivatives of the functions in Exercises 41–54. 
 
@@ -1918,9 +1907,13 @@ Find all the second-order partial derivatives of the functions in Exercises 41�
 
 43. $g ( x , y ) = x ^ { 2 } y + \cos y + y \sin x$ 
 
-44. $h ( x , y ) = x e ^ { y } + y + 1$ 45. $r ( x , y ) = \ln ( x + y )$ 
+44. $h ( x , y ) = x e ^ { y } + y + 1$
 
-46. $s ( x , y ) = \arctan \left( y / x \right)$ 47. $w = x ^ { 2 } \tan \left( x y \right)$ 
+45. $r ( x , y ) = \ln ( x + y )$
+
+46. $s ( x , y ) = \arctan \left( y / x \right)$
+
+47. $w = x ^ { 2 } \tan \left( x y \right)$
 
 48. $w = y e ^ { x ^ { 2 } - y }$ 
 
@@ -1930,21 +1923,27 @@ Find all the second-order partial derivatives of the functions in Exercises 41�
 
 51. $f ( x , y ) = x ^ { 2 } y ^ { 3 } - x ^ { 4 } + y ^ { 5 }$ 
 
-52. $g ( x , y ) = \cos x ^ { 2 } - \sin 3 y$ 53. $z = x \sin ( 2 x - y ^ { 2 } )$ 
+52. $g ( x , y ) = \cos x ^ { 2 } - \sin 3 y$
+
+53. $z = x \sin ( 2 x - y ^ { 2 } )$
 
 54. $z = x e ^ { x / y ^ { 2 } }$ 
 
-## Mixed Partial Derivatives
+#### Mixed Partial Derivatives
 
 In Exercises 55–60, verify that $w _ { x y } ~ = ~ w _ { y x }$ 
 
-55. $w = \ln ( 2 x + 3 y )$ 56. $w = e ^ { x } + x \ln y + y$ x  ln 
+55. $w = \ln ( 2 x + 3 y )$
+
+56. $w = e ^ { x } + x \ln y + y$ x  ln
 
 57. $w = x y ^ { 2 } + x ^ { 2 } y ^ { 3 } + x ^ { 3 } y ^ { 4 }$ 
 
 58. $w = x \sin y + y \sin x + x y$ 
 
-59. $w = { \frac { x ^ { 2 } } { y ^ { 3 } } }$ 60. $w = { \frac { 3 x - y } { x + y } }$ 
+59. $w = { \frac { x ^ { 2 } } { y ^ { 3 } } }$
+
+60. $w = { \frac { 3 x - y } { x + y } }$
 
 61. Which order of differentiation enables one to calculate $f _ { x y }$ faster: x first or y first? Try to answer without writing anything down. 
 
@@ -1972,7 +1971,7 @@ c. $f ( x , y ) = x ^ { 2 } + 5 x y + \sin x + 7 e ^ { x }$
 
 d. $f ( x , y ) = x e ^ { y ^ { 2 } / 2 }$ 
 
-## Using the Partial Derivative Definition
+#### Using the Partial Derivative Definition
 
 In Exercises 63–66, use the limit definition of partial derivative to compute the partial derivatives of the functions at the specified points. 
 
@@ -1994,7 +1993,7 @@ $$
 
 68. Three variables Let $w = f ( x , y , z )$ be a function of three independent variables and write the formal definition of the partial derivative $\partial f / \partial y \mathrm { \ a t } \left( x _ { 0 } , y _ { 0 } , z _ { 0 } \right)$ . Use this definition to find $\partial f / \partial y \mathrm { a t } \left( - 1 , 0 , \dot { 3 } \right)$ for $f ( x , y , z ) = - 2 x y ^ { 2 } + y z ^ { 2 }$ 
 
-## Differentiating Implicitly
+#### Differentiating Implicitly
 
 69. Find the value of $\partial z / \partial x$ at the point (1, 1, 1 if the equation ) 
 
@@ -2014,7 +2013,7 @@ defines x as a function of the two independent variables y and z and the partial
 
 Exercises 71 and 72 are about the triangle shown here. 
 
-![[042766c0d93c4ac53cf848bff6e078125cf88a1ca4a9fac7c5fdaafb75751609.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/042766c0d93c4ac53cf848bff6e078125cf88a1ca4a9fac7c5fdaafb75751609.jpg)
 
 
 71. Express A implicitly as a function of $a , b ,$ and c and calculate ∂ ∂A a and $\partial A / \partial b$ 
@@ -2025,7 +2024,7 @@ Exercises 71 and 72 are about the triangle shown here.
 
 74. Two dependent variables Find $\partial x / \partial u$ and $\partial y / \partial u$ if the equations $u = x ^ { 2 } - y ^ { 2 }$ and $v = x ^ { 2 } - y$ define x and y as functions of the independent variables u and $v ,$ and the partial derivatives exist. (See the hint in Exercise 73.) Then let $s = x ^ { 2 } + y ^ { 2 }$ and find $\partial s / \partial u$ 
 
-## Theory and Examples
+#### Theory and Examples
 
 75. Let $f ( x , y ) = 2 x + 3 y - 4$ . Find the slope of the line tangent to this surface at the point (2, 1 and lying in − ) a. the plane $x = 2$ b. the plane $y = - 1$ 
 
@@ -2037,11 +2036,7 @@ In Exercises 77–80, find a function $z = f ( x , y )$ whose partial derivative
 
 $$
 \frac {\partial f}{\partial x} = 2 x e ^ {x y ^ {2}} + x ^ {2} y ^ {2} e ^ {x y ^ {2}} + 3, \quad \frac {\partial f}{\partial y} = 2 x ^ {3} y e ^ {x y ^ {2}} - e ^ {y}
-$$
-
-79. $\frac { \partial f } { \partial x } = \frac { 2 y } { \left( x + y \right) ^ { 2 } } , \frac { \partial f } { \partial y } = \frac { 2 x } { \left( x + y \right) ^ { 2 } }$ 
-
-$$
+79. $$\frac { \partial f } { \partial x } = \frac { 2 y } { \left( x + y \right) ^ { 2 } } , \frac { \partial f } { \partial y } = \frac { 2 x } { \left( x + y \right) ^ { 2 } }$$
 \frac {\partial f}{\partial x} = x y \cos (x y) + \sin (x y), \quad \frac {\partial f}{\partial y} = x \cos (x y)
 $$
 
@@ -2099,20 +2094,22 @@ $$
 
 where w is the wave height, x is the distance variable, t is the time variable, and c is the velocity with which the waves are propagated. 
 
-![[50a65146c9416620068c211caa3f0bf2626bd1f0b7f6bfb31f90e2d63205e413.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/50a65146c9416620068c211caa3f0bf2626bd1f0b7f6bfb31f90e2d63205e413.jpg)
 
 
 In our example, x is the distance across the ocean’s surface, but in other applications, x might be the distance along a vibrating string, distance through air (sound waves), or distance through space (light waves). The number c varies with the medium and type of wave. 
 
 Show that the functions in Exercises 91–97 are all solutions of the wave equation. 
 
-$$
-\mathbf {9 1 .} w = \sin (x + c t) \quad \mathbf {9 2 .} w = \cos (2 x + 2 c t)
-$$
+91. $w = \sin (x + c t)$
+
+92. $w = \cos (2 x + 2 c t)$
 
 93. $w = \sin ( x + c t ) + \cos ( 2 x + 2 c t )$ 
 
-94. w x ct= +ln 2 2( ) 95. w x ct= −tan 2 2( ) 
+94. w x ct= +ln 2 2( )
+
+95. w x ct= −tan 2 2( )
 
 96. $w = 5 \cos ( 3 x + 3 c t ) + e ^ { x + c t }$ 
 
@@ -2138,7 +2135,7 @@ Show that $f _ { x } \left( 0 , 0 \right)$ and $f _ { y } \left( 0 , 0 \right)$ 
 
 Show that $f _ { x } \left( 0 , 0 \right)$ and $f _ { y } ( 0 , 0 )$ exist, but $f$ is not differentiable at $( 0 , 0 )$ 
 
-## 103. The Korteweg–de Vries equation
+103. The Korteweg–de Vries equation
 
 This nonlinear differential equation, which describes wave motion on shallow water surfaces, is given by 
 
@@ -2156,7 +2153,7 @@ To find $d w / d t ,$ we read down the route from w to t, multiplying derivative
 
 The Chain Rule for functions of a single variable studied in Section 3.6 says that if $w = f ( x )$ is a differentiable function of $x ,$ and $x = g ( t )$ is a differentiable function of $t ,$ then w is a differentiable function of $t ,$ and $d w / d t$ can be calculated by the formula 
 
-![[f7921f7f8162c67baeac238d0f796f9a65e5b5ef657a89a61a7a17e481af86a1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f7921f7f8162c67baeac238d0f796f9a65e5b5ef657a89a61a7a17e481af86a1.jpg)
 
 
 $$
@@ -2167,11 +2164,11 @@ For this composite function $w ( t ) = f ( g ( t ) )$ , we can think of t as the
 
 For functions of several variables the Chain Rule has more than one form, which depends on how many independent and intermediate variables are involved. However, once the variables are taken into account, the Chain Rule works in the same way we just discussed. 
 
-## Functions of Two Variables
+### Functions of Two Variables
 
 The Chain Rule formula for a differentiable function $w = f ( x , y )$ when $x = x ( t )$ and $y = y ( t )$ are both differentiable functions of t is given in the following theorem. 
 
-## THEOREM 5—Chain Rule for Functions of One Independent Variable and Two Intermediate Variables
+**THEOREM 5—Chain Rule for Functions of One Independent Variable and Two Intermediate Variables**
 
 If $w = f ( x , y )$ is differentiable and if $x = x ( t ) , y = y ( t )$ are differentiable functions of $^ { \dag , } t ,$ then the composition $w = f ( x ( t ) , y ( t ) )$ is a differentiable function of t and 
 
@@ -2189,7 +2186,7 @@ Each of $\frac { \partial f } { \partial x } , \frac { \partial w } { \partial x
 
 To remember the Chain Rule, picture the diagram below. To find $d w / d t$ , start at w and read down each route to t, multiplying derivatives along the way. Then add the products. 
 
-![[cf964164ebc37e567cb693ec29da380f7964628d6737a9090db2461f5c77c1d9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cf964164ebc37e567cb693ec29da380f7964628d6737a9090db2461f5c77c1d9.jpg)
 
 
 Proof The proof consists of showing that if x and y are differentiable at $t ~ = ~ t _ { 0 }$ ,  then w is differentiable at $t _ { 0 }$ and 
@@ -2240,7 +2237,7 @@ $$
 \left. \frac {d w}{d t} \right| _ {t _ {0}} = \left. \frac {\partial f}{\partial x} \right| _ {(x _ {0}, y _ {0})} \left. \frac {d x}{d t} \right| _ {t _ {0}} + \left. \frac {\partial f}{\partial y} \right| _ {(x _ {0}, y _ {0})} \left. \frac {d y}{d t} \right| _ {t _ {0}}.
 $$
 
-## **EXAMPLE 1** Use the Chain Rule to find the derivative of
+**EXAMPLE 1** Use the Chain Rule to find the derivative of
 
 $$
 w = x y
@@ -2272,7 +2269,7 @@ $$
 \left. \frac {d w}{d t} \right| _ {t = \pi / 2} = \cos \left(2 \frac {\pi}{2}\right) = \cos \pi = - 1.
 $$
 
-## Functions of Three Variables
+### Functions of Three Variables
 
 You can probably predict the Chain Rule for functions of three intermediate variables, as it involves adding the expected third term to the two-variable formula. 
 
@@ -2282,7 +2279,7 @@ Chain Rule
 
 THEOREM 6—Chain Rule for Functions of One Independent Variable and Three Intermediate Variables 
 
-![[ae3fafbf906ed78aa1a8484dd1412a5c4fd43ff245759ae51752e07414b664a2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ae3fafbf906ed78aa1a8484dd1412a5c4fd43ff245759ae51752e07414b664a2.jpg)
 
 
 If $w = f ( x , y , z )$ is differentiable and x, y, and z are differentiable functions of $t ,$ then w is a differentiable function of t, and 
@@ -2319,7 +2316,7 @@ $$
 
 For a physical interpretation of change along a curve, think of an object whose position is changing with time t. If $w = T(x, y, z)$ is the temperature at each point $(x, y, z)$ along a curve C with parametric equations $x = x(t)$ , $y = y(t)$ , and $z = z(t)$ , then the composite function $w = T(x(t), y(t), z(t))$ represents the temperature relative to t along the curve. The derivative dw/dt is then the instantaneous rate of change of temperature due to the motion along the curve, as calculated in Theorem 6. 
 
-## Functions Defined on Surfaces
+### Functions Defined on Surfaces
 
 If we are interested in the temperature $w = f(x, y, z)$ at points $(x, y, z)$ on Earth's surface, we might prefer to think of $x, y$ , and $z$ as functions of the variables $r$ and $s$ that give the points' longitudes and latitudes. If $x = g(r, s), y = h(r, s)$ , and $z = k(r, s)$ , we could then express the temperature as a function of $r$ and $s$ with the composite function 
 
@@ -2329,7 +2326,7 @@ $$
 
 Under the conditions stated below, w has partial derivatives with respect to both r and s that can be calculated in the following way. 
 
-## THEOREM 7—Chain Rule for Two Independent Variables and Three Intermediate Variables
+**THEOREM 7—Chain Rule for Two Independent Variables and Three Intermediate Variables**
 
 Suppose that $w = f(x, y, z)$ , $x = g(r, s)$ , $y = h(r, s)$ , and $z = k(r, s)$ . If all four functions are differentiable, then w has partial derivatives with respect to r and s, given by the formulas 
 
@@ -2343,7 +2340,7 @@ $$
 
 The first of these equations can be derived from the Chain Rule in Theorem 6 by holding s fixed and treating r as t. The second can be derived in the same way, holding r fixed and treating s as t. The dependency diagrams for both equations are shown in Figure 13.22. 
 
-![[60c7daad98e5847ee2bad97cc206b05146b1772e0e3487c8f21a31d9143ae2d5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/60c7daad98e5847ee2bad97cc206b05146b1772e0e3487c8f21a31d9143ae2d5.jpg)
 
 
 
@@ -2368,7 +2365,7 @@ $$
 
 Chain Rule 
 
-![[67510c145ca290622d9c22a07f2c5b66806756e93edb290846e01841a12a28b9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/67510c145ca290622d9c22a07f2c5b66806756e93edb290846e01841a12a28b9.jpg)
 
 
 If $f$ is a function of two intermediate variables instead of three, each equation in Theorem 7 becomes correspondingly one term shorter. 
@@ -2391,12 +2388,12 @@ $$
 w = x ^ {2} + y ^ {2}, \quad x = r - s, \quad y = r + s.
 $$
 
-![[2327dc311ce7d6e7decb7680ddb0f2c2964c6cf90045aa8a98d8c00ff9834468.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2327dc311ce7d6e7decb7680ddb0f2c2964c6cf90045aa8a98d8c00ff9834468.jpg)
 
 
 FIGURE 13.24 Dependency diagram for differentiating f as a composite function of r and s with one intermediate variable. 
 
-![[561167c81dd3e7005a318178c47a6de644f8edb28dc8ccea3982a069197ed9d3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/561167c81dd3e7005a318178c47a6de644f8edb28dc8ccea3982a069197ed9d3.jpg)
 
 
 FIGURE 13.25 Dependency diagram for differentiating $w = F(x, y)$ with respect to x. Setting dw/dx = 0 leads to a simple computational formula for implicit differentiation (Theorem 8). 
@@ -2415,7 +2412,7 @@ $$
 
 In this case, we use the ordinary (single-variable) derivative, dw/dx. The dependency diagram is shown in Figure 13.24. 
 
-## Implicit Differentiation Revisited
+### Implicit Differentiation Revisited
 
 The two-variable Chain Rule in Theorem 5 leads to a formula that takes some of the algebra out of implicit differentiation. Suppose that 
 
@@ -2437,7 +2434,7 @@ $$
 
 We state this result formally. 
 
-## THEOREM 8—A Formula for Implicit Differentiation
+**THEOREM 8—A Formula for Implicit Differentiation**
 
 Suppose that $F(x, y)$ is differentiable and that the equation $F(x, y) = 0$ defines $y$ as a differentiable function of $x$ . Then, at any point where $F_y \neq 0$ , 
 
@@ -2445,7 +2442,7 @@ $$
 \frac {d y}{d x} = - \frac {F _ {x}}{F _ {y}}.\tag{1}
 $$
 
-## **EXAMPLE 5** Use Theorem 8 to find dy/dx if $y^{2} - x^{2} - \sin xy = 0$ .
+**EXAMPLE 5** Use Theorem 8 to find dy/dx if $y^{2} - x^{2} - \sin xy = 0$ .
 
 **Solution** Take $F(x, y) = y^{2} - x^{2} - \sin xy$ . Then 
 
@@ -2499,7 +2496,7 @@ $$
 \frac {\partial z}{\partial x} = - \frac {0}{1} = 0 \quad \text { and } \quad \frac {\partial z}{\partial y} = - \frac {1}{1} = - 1.
 $$
 
-## Functions of Many Variables
+### Functions of Many Variables
 
 We have seen several different forms of the Chain Rule in this section, but each one is just a special case of one general formula. When solving particular problems, it may help to draw the appropriate dependency diagram by placing the dependent variable on top, the intermediate variables in the middle, and the selected independent variable at the bottom. To find the derivative of the dependent variable with respect to the selected independent variable, start at the dependent variable and read down each route of the dependency diagram to the independent variable, calculating and multiplying the derivatives along each route. Then add the products found for the different routes. 
 
@@ -2517,9 +2514,9 @@ $$
 
 The first vector describes how w changes in various directions, while the second vector indicates the velocity vector of $\mathbf{x}(t_{i}) = \langle x_{1}(t_{i}), x_{2}(t_{i}), \ldots, x_{n}(t_{i}) \rangle$ . These concepts will be studied further in the next section. 
 
-## EXERCISES 13.4
+### EXERCISES 13.4
 
-## Chain Rule: One Independent Variable
+#### Chain Rule: One Independent Variable
 
 In Exercises 1–6, (a) express dw/dt as a function of t, both by using the Chain Rule and by expressing w in terms of t and differentiating directly with respect to t. Then (b) evaluate dw/dt at the given value of t. 
 
@@ -2543,11 +2540,9 @@ $$
 \begin{array}{l} \text {5.} w = 2 y e ^ {x} - \ln z, x = \ln (t ^ {2} + 1), y = \tan^ {- 1} t, z = e ^ {t}; \\ t = 1 \end{array}
 $$
 
-$$
-6. w = z - \sin x y, \quad x = t, \quad y = \ln t, \quad z = e ^ {t - 1}; \quad t = 1
-$$
+6. $w = z - \sin x y, \quad x = t, \quad y = \ln t, \quad z = e ^ {t - 1}; \quad t = 1$
 
-## Chain Rule: Two and Three Independent Variables
+#### Chain Rule: Two and Three Independent Variables
 
 In Exercises 7 and 8, (a) express $\partial z/\partial u$ and $\partial z/\partial v$ as functions of u and v both by using the Chain Rule and by expressing z directly in terms of u and v before differentiating. Then (b) evaluate $\partial z/\partial u$ and $\partial z/\partial v$ at the given point $(u,v)$ . 
 
@@ -2573,7 +2568,7 @@ $$
 
 12. $u = e^{qr}\sin^{-1}p, p = \sin x, q = z^2\ln y, r = 1 / z;$ $(x,y,z) = (\pi /4,1 / 2, - 1 / 2)$ 
 
-## Using a Dependency Diagram
+#### Using a Dependency Diagram
 
 In Exercises 13–24, draw a dependency diagram and write a Chain Rule formula for each derivative. 
 
@@ -2581,11 +2576,7 @@ In Exercises 13–24, draw a dependency diagram and write a Chain Rule formula f
 
 $$
 \frac {d z}{d t} \text {   for   } z = f (u, v, w), u = g (t), v = h (t), w = k (t)
-$$
-
-15. $\frac{\partial w}{\partial u}$ and $\frac{\partial w}{\partial v}$ for $w = h(x,y,z)$ , $x = f(u,v)$ , $y = g(u,v)$ , $z = k(u,v)$ 
-
-$$
+15. $$\frac{\partial w}{\partial u}$ and $\frac{\partial w}{\partial v}$ for $w = h(x,y,z)$ , $x = f(u,v)$ , $y = g(u,v)$ , $z = k(u,v)$$
 \begin{array}{l} \frac {\partial w}{\partial x} \text {   and   } \frac {\partial w}{\partial y} \text {   for   } w = f (r, s, t), r = g (x, y), s = h (x, y), \\ t = k (x, y) \end{array}
 $$
 
@@ -2593,9 +2584,7 @@ $$
 
 18. $\frac{\partial w}{\partial x}$ and $\frac{\partial w}{\partial y}$ for $w = g(u,v)$ , $u = h(x,y)$ , $v = k(x,y)$ 
 
-$$
-\mathbf {1 9 .} \frac {\partial z}{\partial t} \text {   and   } \frac {\partial z}{\partial s} \text {   for   } z = f (x, y), x = g (t, s), y = h (t, s)
-$$
+19. $\frac {\partial z}{\partial t} \text {   and   } \frac {\partial z}{\partial s} \text {   for   } z = f (x, y), x = g (t, s), y = h (t, s)$
 
 20. $\frac{\partial y}{\partial r}$ for $y = f(u), u = g(r,s)$ 
 
@@ -2607,7 +2596,7 @@ $$
 
 24. $\frac{\partial w}{\partial s}$ for $w = g(x,y)$ , $x = h(r,s,t)$ , $y = k(r,s,t)$ 
 
-## Implicit Differentiation
+#### Implicit Differentiation
 
 Assuming that the equations in Exercises 25–30 define y as a differentiable function of x, use Theorem 8 to find the value of dy/dx at the given point. 
 
@@ -2633,7 +2622,7 @@ Find the values of $\partial z / \partial x$ and $\partial z / \partial y$ at th
 
 34. $xe^{y} + ye^{z} + 2\ln x - 2 - 3\ln 2 = 0,\quad(1,\ln 2,\ln 3)$ 
 
-## Finding Partial Derivatives at Specified Points
+#### Finding Partial Derivatives at Specified Points
 
 35. Find $\partial w / \partial r$ when $r = 1, s = -1$ if $w = (x + y + z)^2$ , $x = r - s, y = \cos(r + s), z = \sin(r + s)$ . 
 
@@ -2647,7 +2636,7 @@ Find the values of $\partial z / \partial x$ and $\partial z / \partial y$ at th
 
 40. Find $\partial z/\partial u$ and $\partial z/\partial v$ when u = 1, v = -2 if $z = \ln q$ and $q = \sqrt{v + 3} \tan^{-1} u$ . 
 
-## Theory and Examples
+#### Theory and Examples
 
 41. Assume that $w = f(s^{3} + t^{2})$ and $f'(x) = e^{x}$ . Find $\frac{\partial w}{\partial t}$ and $\frac{\partial w}{\partial s}$ . 
 
@@ -2669,7 +2658,7 @@ $$
 
 to find how the current is changing at the instant when R = 600 ohms, I = 0.04 amp, dR/dt = 0.5 ohm/s, and dV/dt = -0.01 volt/s. 
 
-![[2125d3b732a488efb4d7aeaf028128fe3bf712a6e5ec34049ea727687cc8f848.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2125d3b732a488efb4d7aeaf028128fe3bf712a6e5ec34049ea727687cc8f848.jpg)
 
 
 48. Changing dimensions in a box The lengths $a$ , $b$ , and $c$ of the edges of a rectangular box are changing with time. At the instant in question, $a = 1\mathrm{m}$ , $b = 2\mathrm{m}$ , $c = 3\mathrm{m}$ , $da / dt = db / dt = 1\mathrm{m / s}$ , and $dc / dt = -3\mathrm{m / s}$ . At what rates are the box's volume $V$ and surface area $S$ changing at that instant? Are the box's interior diagonals increasing in length or decreasing? 
@@ -2764,13 +2753,9 @@ $$
 
 where $u = f(x)$ . Find the derivatives of the functions in Exercises 59 and 60. 
 
-$$
-\mathbf {5 9 .} F (x) = \int_ {0} ^ {x ^ {2}} \sqrt {t ^ {4} + x ^ {3}} d t
-$$
+59. $F (x) = \int_ {0} ^ {x ^ {2}} \sqrt {t ^ {4} + x ^ {3}} d t$
 
-$$
-\mathbf {6 0 .} F (x) = \int_ {x ^ {2}} ^ {1} \sqrt {t ^ {3} + x ^ {2}} d t
-$$
+60. $F (x) = \int_ {x ^ {2}} ^ {1} \sqrt {t ^ {3} + x ^ {2}} d t$
 
 61. Water is flowing into a tank in the form of a right-circular cylinder at the rate of $(4/5)\pi\ m^{3}/min$ . The tank is stretching in such a way that even though it remains cylindrical, its radius is increasing at the rate of 0.002 m/min. How fast is the surface of the water rising when the radius is 2 m and the volume of water in the tank is $20\pi\ m^{3}$ ? 
 
@@ -2780,14 +2765,14 @@ $$
 
 ## 13.5 Directional Derivatives and Gradient Vectors
 
-![[39cc1dd6011903e041a05c4c265c86b23b36ad88de1d00688cfc87837c5b4049.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/39cc1dd6011903e041a05c4c265c86b23b36ad88de1d00688cfc87837c5b4049.jpg)
 
 
 
 FIGURE 13.26 Contours within Yosemite National Park in California show streams, which follow paths of steepest descent, running perpendicular to the contours. (Source: Yosemite National Park Map from U.S. Geological Survey, http://www.usgs.gov)
 
 
-![[6130f5ebeca2a0c9c37c218ae0a18cc2c9d60c90d849d318e4a769d9b7565a00.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6130f5ebeca2a0c9c37c218ae0a18cc2c9d60c90d849d318e4a769d9b7565a00.jpg)
 
 
 
@@ -2796,7 +2781,7 @@ FIGURE 13.27 The rate of change of f in the direction of u at a point $P_{0}$ is
 
 If you look at the map (Figure 13.26) showing contours within Yosemite National Park in California, you will notice that the streams flow perpendicular to the contours. The streams are following paths of steepest descent so the waters reach lower elevations as quickly as possible. Therefore, the fastest instantaneous rate of change in a stream's elevation above sea level has a particular direction. In this section, you will see why this direction, called the “downhill” direction, is perpendicular to the contours. 
 
-## Directional Derivatives in the Plane
+### Directional Derivatives in the Plane
 
 We know from Section 13.4 that if $f(x, y)$ is differentiable, then the rate at which $f$ changes with respect to $t$ along a differentiable curve $x = g(t), y = h(t)$ is 
 
@@ -2846,11 +2831,11 @@ $$
 
 The rate of change of $f(x, y) = x^2 + xy$ at $P_0(1, 2)$ in the direction $\mathbf{u}$ is $5 / \sqrt{2}$ . 
 
-## Interpretation of the Directional Derivative
+### Interpretation of the Directional Derivative
 
 The equation $z = f(x, y)$ represents a surface S in space. If $z_{0} = f(x_{0}, y_{0})$ , then the point $P(x_{0}, y_{0}, z_{0})$ lies on S. The vertical plane that passes through P and $P_{0}(x_{0}, y_{0})$ parallel to u intersects S in a curve C (Figure 13.28). The rate of change of f in the direction of u is the slope of the tangent to C at P in the right-handed system formed by the vectors u and k. 
 
-![[6d0d9b8c02bed63c1a938da39de49f13ffbf3ed37d871998a9adb477e6e5e5da.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6d0d9b8c02bed63c1a938da39de49f13ffbf3ed37d871998a9adb477e6e5e5da.jpg)
 
 
 
@@ -2865,7 +2850,7 @@ When $\mathbf{u} = \mathbf{i}$ , the directional derivative at $P_0$ is $\partia
 
 For a physical interpretation of the directional derivative, suppose that $T = f(x, y)$ is the temperature at each point $(x, y)$ over a region in the plane. Then $f(x_{0}, y_{0})$ is the temperature at the point $P_{0}(x_{0}, y_{0})$ , and $D_{u}f|_{P_{0}}$ is the instantaneous rate of change of the temperature at $P_{0}$ stepping off in the direction u. 
 
-## Calculation and Gradients
+### Calculation and Gradients
 
 We now develop an efficient formula to calculate the directional derivative for a differentiable function f. We begin with the line 
 
@@ -2895,7 +2880,7 @@ $$
 
 The notation $\nabla f$ is read “grad f” as well as “gradient of f” and “del f.” The symbol $\nabla$ by itself is read “del.” Another notation for the gradient is grad f. Using the gradient notation, we restate Equation (3) as a theorem. 
 
-## THEOREM 9—The Directional Derivative Is a Dot Product
+**THEOREM 9—The Directional Derivative Is a Dot Product**
 
 If $f(x, y)$ is differentiable in an open region containing $P_0(x_0, y_0)$ , then 
 
@@ -2913,7 +2898,7 @@ $$
 \mathbf {u} = \frac {\mathbf {v}}{| \mathbf {v} |} = \frac {\mathbf {v}}{5} = \frac {3}{5} \mathbf {i} - \frac {4}{5} \mathbf {j}.
 $$
 
-![[bbef1479e06b5bfe489232d4ea29de108bf6d87cecc3900e145d1825e6b6738a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bbef1479e06b5bfe489232d4ea29de108bf6d87cecc3900e145d1825e6b6738a.jpg)
 
 
 
@@ -2952,7 +2937,7 @@ $$
 
 where $\theta$ is the angle between the vectors u and $\nabla f$ , and reveals the following properties. 
 
-## Properties of the Directional Derivative $D_{u}f = \nabla f \cdot u = |\nabla f| \cos \theta$
+### Properties of the Directional Derivative $D_{u}f = \nabla f \cdot u = |\nabla f| \cos \theta$
 
 1. The function f increases most rapidly when $\cos\theta=1$ , which means that $\theta=0$ and u is the direction of $\nabla f$ . That is, at each point P in its domain, f increases most rapidly in the direction of the gradient vector $\nabla f$ at P. The derivative in this direction is 
 
@@ -2970,7 +2955,7 @@ $$
 
 As we discuss later, these properties hold in three dimensions as well as two. 
 
-## **EXAMPLE 3** Find the directions in which $f(x, y) = (x^{2}/2) + (y^{2}/2)$
+**EXAMPLE 3** Find the directions in which $f(x, y) = (x^{2}/2) + (y^{2}/2)$
 
 (a) increases most rapidly at the point $(1,1)$ , and 
 
@@ -2978,7 +2963,7 @@ As we discuss later, these properties hold in three dimensions as well as two.
 
 (c) What are the directions of zero change in $f$ at (1, 1)? 
 
-## **Solution**
+**Solution**
 
 (a) The function increases most rapidly in the direction of $\nabla f$ at (1, 1). The gradient there is 
 
@@ -2992,14 +2977,14 @@ $$
 \mathbf {u} = \frac {\mathbf {i} + \mathbf {j}}{| \mathbf {i} + \mathbf {j} |} = \frac {\mathbf {i} + \mathbf {j}}{\sqrt {(1) ^ {2} + (1) ^ {2}}} = \frac {1}{\sqrt {2}} \mathbf {i} + \frac {1}{\sqrt {2}} \mathbf {j}.
 $$
 
-![[2860d0f19f7300a5fb700d67a05bbf1f79501b5233b4bce28720791f16cf5a2e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2860d0f19f7300a5fb700d67a05bbf1f79501b5233b4bce28720791f16cf5a2e.jpg)
 
 
 
 FIGURE 13.30 The direction in which $f(x, y)$ increases most rapidly at (1, 1) is the direction of $\nabla f|_{(1,1)} = \mathbf{i} + \mathbf{j}$ . It corresponds to the direction of steepest ascent on the surface at (1, 1, 1) (Example 3).
 
 
-![[fcdc45f6a6720ea82aeb48d3a139c300c7c2dcdf8ba38e3f6ecb088957d8ee65.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fcdc45f6a6720ea82aeb48d3a139c300c7c2dcdf8ba38e3f6ecb088957d8ee65.jpg)
 
 
 
@@ -3020,7 +3005,7 @@ $$
 
 See Figure 13.30. 
 
-## Gradients and Tangents to Level Curves
+### Gradients and Tangents to Level Curves
 
 If a differentiable function $f(x, y)$ has a constant value c along a smooth curve $\mathbf{r} = g(t)\mathbf{i} + h(t)\mathbf{j}$ (making the curve part of a level curve of f), then $f(g(t), h(t)) = c$ . Differentiating both sides of this equation with respect to t leads to the equations 
 
@@ -3048,7 +3033,7 @@ $$
 f _ {x} (x _ {0}, y _ {0}) (x - x _ {0}) + f _ {y} (x _ {0}, y _ {0}) (y - y _ {0}) = 0\tag{6}
 $$
 
-## **EXAMPLE 4** Find an equation for the tangent to the ellipse
+**EXAMPLE 4** Find an equation for the tangent to the ellipse
 
 $$
 \frac {x ^ {2}}{4} + y ^ {2} = 2
@@ -3056,7 +3041,7 @@ $$
 
 (Figure 13.32) at the point $(-2, 1)$ . 
 
-![[c2ef439e1fba0a0a37f2a370d7da7694037b10ad5d8a3415deb0e37171011197.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c2ef439e1fba0a0a37f2a370d7da7694037b10ad5d8a3415deb0e37171011197.jpg)
 
 
 **Solution** The ellipse is a level curve of the function 
@@ -3083,7 +3068,7 @@ $$
 
 If we know the gradients of two functions f and g, we automatically know the gradients of their sum, difference, constant multiples, product, and quotient. You are asked to establish the following rules in Exercise 40. Notice that these rules have the same form as the corresponding rules for derivatives of single-variable functions. 
 
-## Algebra Rules for Gradients
+### Algebra Rules for Gradients
 
 1. Sum Rule: 
 
@@ -3115,7 +3100,7 @@ $$
 
 Scalar multipliers on left of gradients 
 
-## **EXAMPLE 5** We illustrate two of the rules with
+**EXAMPLE 5** We illustrate two of the rules with
 
 $$
 \begin{array}{l l} f (x, y) = x - y & g (x, y) = 3 y \\ \nabla f = \mathbf {i} - \mathbf {j} & \nabla g = 3 \mathbf {j}. \end{array}
@@ -3141,7 +3126,7 @@ Simplify.
 
 We have therefore verified that for this example, $\nabla(fg) = f\nabla g + g\nabla f$ . 
 
-## Functions of Three Variables
+### Functions of Three Variables
 
 For a differentiable function $f(x, y, z)$ and a unit vector $\mathbf{u} = u_1\mathbf{i} + u_2\mathbf{j} + u_3\mathbf{k}$ in space, we have 
 
@@ -3163,13 +3148,13 @@ $$
 
 so the properties listed earlier for functions of two variables extend to three variables. At any given point, f increases most rapidly in the direction of $\nabla f$ and decreases most rapidly in the direction of $-\nabla f$ . In any direction orthogonal to $\nabla f$ , the derivative is zero. 
 
-## **EXAMPLE 6**
+**EXAMPLE 6**
 
 (a) Find the derivative of $f(x, y, z) = x^3 - xy^2 - z$ at $P_0(1, 1, 0)$ in the direction of $\mathbf{v} = 2\mathbf{i} - 3\mathbf{j} + 6\mathbf{k}$ . 
 
 (b) In what directions does $f$ change most rapidly at $P_0$ , and what are the rates of change in these directions? 
 
-## **Solution**
+**Solution**
 
 (a) The direction of v is obtained by dividing v by its length: 
 
@@ -3201,7 +3186,7 @@ $$
 | \nabla f | = \sqrt {(2) ^ {2} + (- 2) ^ {2} + (- 1) ^ {2}} = \sqrt {9} = 3 \quad \text { and } \quad - | \nabla f | = - 3.
 $$
 
-## Functions of More Than Three Variables
+### Functions of More Than Three Variables
 
 The gradient of a differentiable function of n variables $f(x_{1}, x_{2}, \ldots, x_{n})$ is 
 
@@ -3215,7 +3200,7 @@ $$
 D _ {u} f = \nabla f \cdot \mathbf {u} = \frac {\partial f}{\partial x _ {1}} u _ {1} + \frac {\partial f}{\partial x _ {2}} u _ {2} + \dots + \frac {\partial f}{\partial x _ {n}} u _ {n}.
 $$
 
-![[8afb4dcb3ee555983aac44affb65186a3c8517c07887c87343e3bcd03c76302a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8afb4dcb3ee555983aac44affb65186a3c8517c07887c87343e3bcd03c76302a.jpg)
 
 
 
@@ -3268,7 +3253,7 @@ $$
 
 (b) Geometrically, this means that if the dimensions are $x = 6$ , $y = 5$ , $z = 8$ , and $w = 4$ , and the dimensions are changed by moving at unit speed so that $x$ and $w$ increase at the same rate while both $y$ and $z$ decrease at that rate, then the volume of the solid decreases at the rate of 71/3. 
 
-## The Chain Rule for Paths
+### The Chain Rule for Paths
 
 If $\mathbf{r}(t) = x(t)\mathbf{i} + y(t)\mathbf{j} + z(t)\mathbf{k}$ is a smooth path C, and $w = f(\mathbf{r}(t))$ is a scalar function evaluated along C, then according to the Chain Rule, Theorem 6 in Section 13.4, 
 
@@ -3286,17 +3271,21 @@ $$
 
 What Equation (7) says is that the derivative of the composite function $f(\mathbf{r}(t))$ is the “derivative” (gradient) of the outside function f, evaluated at $\mathbf{r}(t)$ , “times” (dot product) the derivative of the inside function r. This is analogous to the “Outside-Inside” Rule for derivatives of composite functions studied in Section 3.6. That is, the multivariable Chain Rule for paths has exactly the same form as the rule for single-variable differential calculus when appropriate interpretations are given to the meanings of the terms and operations involved. 
 
-## EXERCISES 13.5
+### EXERCISES 13.5
 
-## Calculating Gradients
+#### Calculating Gradients
 
 In Exercises 1–6, find the gradient of the function at the given point. Then sketch the gradient, together with the level curve that passes through the point. 
 
-1. $f(x,y)=y-x,\quad(2,1)$ 2. $f(x,y)=\ln(x^{2}+y^{2})$ , 
+1. $f(x,y)=y-x,\quad(2,1)$
+
+2. $f(x,y)=\ln(x^{2}+y^{2})$ ,
 
 (1,1) 
 
-3. $g(x,y) = xy^2$ ， $(2, - 1)$ 4. $g(x,y) = \frac{x^2}{2} -\frac{y^2}{2},(\sqrt{2},1)$ 
+3. $g(x,y) = xy^2$ ， $(2, - 1)$
+
+4. $g(x,y) = \frac{x^2}{2} -\frac{y^2}{2},(\sqrt{2},1)$
 
 5. $f(x,y)=\sqrt{2x+3y},(-1,2)$ 
 
@@ -3308,13 +3297,11 @@ In Exercises 7–10, find $\nabla f$ at the given point.
 
 8. $f(x,y,z)=2z^{3}-3(x^{2}+y^{2})z+\arctan xz,\quad(1,1,1)$ 
 
-$$
-f (x, y, z) = \left(x ^ {2} + y ^ {2} + z ^ {2}\right) ^ {- 1 / 2} + \ln (x y z), (- 1, 2, - 2)
-$$
+9. $f (x, y, z) = \left(x ^ {2} + y ^ {2} + z ^ {2}\right) ^ {- 1 / 2} + \ln (x y z), (- 1, 2, - 2)$
 
 10. $f(x,y,z) = e^{x + y}\cos z + (y + 1)\arcsin x,\quad (0,0,\pi /6)$ 
 
-## Finding Directional Derivatives
+#### Finding Directional Derivatives
 
 In Exercises 11–18, find the derivative of the function at $P_{0}$ in the direction of v. 
 
@@ -3348,15 +3335,19 @@ In Exercises 19–24, find the directions in which the functions increase most r
 
 24. $h(x,y,z) = \ln (x^{2} + y^{2} - 1) + y + 6z, P_{0}(1,1,0)$ 
 
-## Tangent Lines to Level Curves
+#### Tangent Lines to Level Curves
 
 In Exercises 25–28, sketch the curve $f(x,y)=c$ , together with $\nabla f$ and the tangent line at the given point. Then write an equation for the tangent line. 
 
-25. $x^{2} + y^{2} = 4$ ， $(\sqrt{2},\sqrt{2})$ 26. $x^{2} - y = 1$ ， $(\sqrt{2},1)$ 
+25. $x^{2} + y^{2} = 4$ ， $(\sqrt{2},\sqrt{2})$
 
-27. $xy = -4, (2, -2)$ 28. $x^{2} - xy + y^{2} = 7, (-1, 2)$ 
+26. $x^{2} - y = 1$ ， $(\sqrt{2},1)$
 
-## Theory and Examples
+27. $xy = -4, (2, -2)$
+
+28. $x^{2} - xy + y^{2} = 7, (-1, 2)$
+
+#### Theory and Examples
 
 29. Let $f(x, y) = x^2 - xy + y^2 - y$ . Find the directions $\mathbf{u}$ and the values of $D_{\mathbf{u}}f(1, -1)$ for which  
 a. $D_{\mathbf{u}}f(1, -1)$ is largest b. $D_{\mathbf{u}}f(1, -1)$ is smallest  
@@ -3411,7 +3402,7 @@ In Exercises 41–44, find a parametric equation for the line that is perpendicu
 
 44. $z = x^{3} - xy^{2},(-1,1,0)$ 
 
-## Gradients and Directional Derivatives for Functions of More Than Three Variables
+#### Gradients and Directional Derivatives for Functions of More Than Three Variables
 
 In Exercises 45–48, find $\nabla f$ at the given point. 
 
@@ -3433,9 +3424,7 @@ $$
 
 In Exercises 49–52, find the derivative of the function at $P_{0}$ in the direction of v. 
 
-$$
-\mathbf {4 9 .} f (x, y, z, w) = \frac {w \ln x}{y ^ {2} z ^ {3}}, \quad P _ {0} (e ^ {2}, - 2, 1, - 3), \quad \mathbf {v} = \langle - 1, 2, - 2, 4 \rangle
-$$
+49. $f (x, y, z, w) = \frac {w \ln x}{y ^ {2} z ^ {3}}, \quad P _ {0} (e ^ {2}, - 2, 1, - 3), \quad \mathbf {v} = \langle - 1, 2, - 2, 4 \rangle$
 
 $$
 \begin{array}{l} \mathbf {5 0 .} f (x, y, z, w) = (x - y) ^ {2} + e ^ {z - w}, P _ {0} (4, 2, 3, 1), \\ \mathbf {v} = \langle 1, 0, - 2, 2 \rangle \end{array}
@@ -3455,14 +3444,14 @@ $$
 
 ## 13.6 Tangent Planes and Differentials
 
-![[04e3492af8f3c4638fb427d46889d0f92c3327b49cf1daae36b63d0299df9976.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/04e3492af8f3c4638fb427d46889d0f92c3327b49cf1daae36b63d0299df9976.jpg)
 
 
 FIGURE 13.34 The gradient $\nabla f$ is orthogonal to the velocity vector of every smooth curve in the surface through $P_{0}$ . The velocity vectors at $P_{0}$ therefore lie in a common plane, which we call the tangent plane at $P_{0}$ . 
 
 In single-variable differential calculus, we saw how the derivative defined the tangent line to the graph of a differentiable function at a point on the graph. The tangent line then provided for a linearization of the function at the point. In this section, we will see analogously how the gradient defines the tangent plane to the level surface of a function $w = f(x, y, z)$ at a point on the surface. The tangent plane then provides for a linearization of f at the point and defines the total differential of the function. 
 
-## Tangent Planes and Normal Lines
+### Tangent Planes and Normal Lines
 
 If $\mathbf{r}(t) = x(t)\mathbf{i} + y(t)\mathbf{j} + z(t)\mathbf{k}$ is a smooth curve on the level surface $f(x, y, z) = c$ of a differentiable function f, we found in Equation (7) of the last section that 
 
@@ -3474,7 +3463,7 @@ Since $f$ is constant along the curve $\mathbf{r}$ , the derivative on the left-
 
 Now let us restrict our attention to the curves that pass through a point $P_{0}$ (Figure 13.34). All the velocity vectors at $P_{0}$ are orthogonal to $\nabla f$ at $P_{0}$ , so the curves' tangent lines all lie in the plane through $P_{0}$ normal to $\nabla f$ . (assuming it is a nonzero vector). We now define this plane. 
 
-![[79adac33b198991bf5f02032aa83298502d367fdd8eb48f6ae91694f804af487.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/79adac33b198991bf5f02032aa83298502d367fdd8eb48f6ae91694f804af487.jpg)
 
 
 
@@ -3499,7 +3488,7 @@ $$
 x = x _ {0} + f _ {x} (P _ {0}) t, \quad y = y _ {0} + f _ {y} (P _ {0}) t, \quad z = z _ {0} + f _ {z} (P _ {0}) t\tag{2}
 $$
 
-## **EXAMPLE 1** Find the tangent plane and normal line of the level surface
+**EXAMPLE 1** Find the tangent plane and normal line of the level surface
 
 $$
 f (x, y, z) = x ^ {2} + y ^ {2} + z - 9 = 0 \quad \text { A   circular   paraboloid }
@@ -3553,7 +3542,7 @@ $$
 f _ {x} \left(x _ {0}, y _ {0}\right) \left(x - x _ {0}\right) + f _ {y} \left(x _ {0}, y _ {0}\right) \left(y - y _ {0}\right) - \left(z - z _ {0}\right) = 0.
 $$
 
-![[c1cd870f0ea05af768b2ae82a78d29cc835fb1d4b0d1c7764e408f3dfb662784.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c1cd870f0ea05af768b2ae82a78d29cc835fb1d4b0d1c7764e408f3dfb662784.jpg)
 
 
 
@@ -3562,7 +3551,7 @@ FIGURE 13.36 This cylinder and plane intersect in an ellipse E (Example 3).
 
 Plane Tangent to a Surface $z = f(x, y)$ at $(x_0, y_0, f(x_0, y_0))$ . The plane tangent to the surface $z = f(x, y)$ of a differentiable function $f$ at the point $P_0(x_0, y_0, z_0) = (x_0, y_0, f(x_0, y_0))$ is $f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0) - (z - z_0) = 0.$ (3) 
 
-## **EXAMPLE 2** Find the plane tangent to the surface $z = x \cos y - ye^{x}$ at $(0, 0, 0)$ .
+**EXAMPLE 2** Find the plane tangent to the surface $z = x \cos y - ye^{x}$ at $(0, 0, 0)$ .
 
 **Solution** We calculate the partial derivatives of $f(x, y) = x \cos y - ye^x$ and use Equation (3): 
 
@@ -3586,7 +3575,7 @@ $$
 x - y - z = 0.
 $$
 
-## **EXAMPLE 3** The surfaces
+**EXAMPLE 3** The surfaces
 
 $$
 f (x, y, z) = x ^ {2} + y ^ {2} - 2 = 0 \quad \text { A   cylinder }
@@ -3620,7 +3609,7 @@ $$
 x = 1 + 2 t, \quad y = 1 - 2 t, \quad z = 3 - 2 t.
 $$
 
-## Estimating Change in a Specific Direction
+### Estimating Change in a Specific Direction
 
 The directional derivative plays a role similar to that of an ordinary derivative when we want to estimate how much the value of a function f changes if we move a small distance ds from a point $P_{0}$ to another point nearby. If f were a function of a single variable, we would have 
 
@@ -3638,14 +3627,14 @@ Directional derivative $\times$ increment
 
 where u is the direction of the motion away from $P_{0}$ . 
 
-## Estimating the Change in f in a Direction u
+### Estimating the Change in f in a Direction u
 
 To estimate the change in the value of a differentiable function f when we move a small distance ds from a point $P_{0}$ in a particular direction u, use this formula: 
 
-![[503f5d3bb068f4edc27a69d9784c625bcbb83c98e7ecf3521cc3641985c9a3d3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/503f5d3bb068f4edc27a69d9784c625bcbb83c98e7ecf3521cc3641985c9a3d3.jpg)
 
 
-## **EXAMPLE 4** Estimate how much the value of
+**EXAMPLE 4** Estimate how much the value of
 
 $$
 df = \underbrace{\left(\nabla f|_{P_{0}}\cdot\mathbf{u}\right)}_{\substack{\text{Directional}\\ \text{derivative}}}\underbrace{ds}_{\substack{\text{Distance}\\ \text{increment}}}
@@ -3687,18 +3676,18 @@ $$
 
 See Figure 13.37. 
 
-## How to Linearize a Function of Two Variables
+### How to Linearize a Function of Two Variables
 
 Functions of two variables can be quite complicated, and we sometimes need to approximate them with simpler ones that give the accuracy required for specific applications without being so difficult to work with. We do this in a way that is similar to the way we find linear replacements for functions of a single variable (Section 3.11). 
 
-![[04be041489fb3a14cb0a711c36e7d0e8318ff92fd37682aa26d3d842a929463d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/04be041489fb3a14cb0a711c36e7d0e8318ff92fd37682aa26d3d842a929463d.jpg)
 
 
 
 FIGURE 13.38 If f is differentiable at $(x_{0}, y_{0})$ , then the value of f at point $(x, y)$ nearby is approximately $f(x_{0}, y_{0}) + f_{x}(x_{0}, y_{0})\Delta x + f_{y}(x_{0}, y_{0})\Delta y$ .
 
 
-![[3c5ac9563f354b73beeca80338a3608d2aba04be1092ff06ae2206a1c1986766.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3c5ac9563f354b73beeca80338a3608d2aba04be1092ff06ae2206a1c1986766.jpg)
 
 
 
@@ -3735,7 +3724,7 @@ is the standard linear approximation of $f$ at $(x_0, y_0)$ .
 
 From Equation (3), we find that the plane $z = L(x, y)$ is tangent to the surface $z = f(x, y)$ at the point $(x_{0}, y_{0})$ . Thus, the linearization of a function of two variables is a tangent-plane approximation in the same way that the linearization of a function of a single variable is a tangent-line approximation. (See Exercise 57.) 
 
-## **EXAMPLE 5** Find the linearization of
+**EXAMPLE 5** Find the linearization of
 
 $$
 f (x, y) = x ^ {2} - x y + \frac {1}{2} y ^ {2} + 3
@@ -3765,7 +3754,7 @@ $$
 
 The linearization of $f$ at (3, 2) is $L(x, y) = 4x - y - 2$ (see Figure 13.39). 
 
-![[df6fd1b34067c7e16769bb547da6ce0d0fe5b97146befcc903b0feda8ec58d12.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/df6fd1b34067c7e16769bb547da6ce0d0fe5b97146befcc903b0feda8ec58d12.jpg)
 
 
 
@@ -3776,7 +3765,7 @@ When we approximate a differentiable function $f(x, y)$ by its linearization $L(
 
 If we can find a common upper bound M for $|f_{xx}|$ , $|f_{yy}|$ , and $|f_{xy}|$ on a rectangle R centered at $(x_{0}, y_{0})$ (Figure 13.40), then we can bound the error E throughout R by using a simple formula. The error is defined by $E(x, y) = f(x, y) - L(x, y)$ . 
 
-## The Error in the Standard Linear Approximation
+### The Error in the Standard Linear Approximation
 
 If $f$ has continuous first and second partial derivatives throughout an open set containing a rectangle $R$ centered at $(x_0, y_0)$ , and if $M$ is any upper bound for the values of $|f_{xx}|, |f_{yy}|$ , and $|f_{xy}|$ on $R$ , then the error $E(x, y)$ incurred in replacing $f(x, y)$ on $R$ by its linearization 
 
@@ -3792,7 +3781,7 @@ $$
 
 To make $|E(x,y)|$ small for a given $M$ , we just make $|x - x_0|$ and $|y - y_0|$ small. 
 
-## Differentials
+### Differentials
 
 Recall from Section 3.11 that for a function of a single variable, $y = f(x)$ , we defined the change in f as x changes from a to $a + \Delta x$ by 
 
@@ -3830,7 +3819,7 @@ The differentials dx and dy are independent variables, so they can be assigned a
 >
 in the linearization of f is called the total differential of f. 
 
-![[387530d94a1ccb94c155351ed0a2fce7fd0d39a32bc131d09b2af3916ccf81c2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/387530d94a1ccb94c155351ed0a2fce7fd0d39a32bc131d09b2af3916ccf81c2.jpg)
 
 
 **EXAMPLE 6** Suppose that a cylindrical can is designed to have a radius of 1 cm and a height of 5 cm, but that the radius and height are off by the amounts dr = +0.03 and dh = -0.1. Estimate the resulting absolute change in the volume of the can. 
@@ -3871,7 +3860,7 @@ Now the volume is more sensitive to changes in h than to changes in r (Figure 13
 
 The general rule is that functions are most sensitive to small changes in the variables that generate the largest partial derivatives. 
 
-## Functions of More Than Two Variables
+### Functions of More Than Two Variables
 
 Analogous results hold for differentiable functions of more than two variables. 
 
@@ -3931,7 +3920,7 @@ $$
 | E | \leq \frac {1}{2} (2) (0. 0 1 + 0. 0 2 + 0. 0 1) ^ {2} = 0. 0 0 1 6.
 $$
 
-## EXERCISES 13.6
+### EXERCISES 13.6
 
 Tangent Planes and Normal Lines to Surfaces In Exercises 1–10, find equations for the 
 
@@ -3953,11 +3942,7 @@ $$
 
 $$
 x ^ {2} - x y - y ^ {2} - z = 0, \quad P _ {0} (1, 1, - 1)
-$$
-
-7. $x + y + z = 1,\quad P_{0}(0,1,0)$ 
-
-$$
+7. $$x + y + z = 1,\quad P_{0}(0,1,0)$$
 x ^ {2} + y ^ {2} - 2 x y - x + 3 y - z = - 4, \quad P _ {0} (2, - 3, 1 8)
 $$
 
@@ -3993,7 +3978,7 @@ $$
 
 20. Surfaces: $x^{2} + y^{2} = 4$ , $x^{2} + y^{2} - z = 0$ Point: $(\sqrt{2},\sqrt{2},4)$ 
 
-## Estimating Change
+#### Estimating Change
 
 21. By about how much will 
 
@@ -4039,7 +4024,7 @@ a. How fast is the temperature experienced by the particle changing in degrees C
 
 b. How fast is the temperature experienced by the particle changing in degrees Celsius per second at P? 
 
-## Finding Linearizations
+#### Finding Linearizations
 
 In Exercises 27–32, find the linearization $L(x, y)$ of the function at each point. 
 
@@ -4088,7 +4073,7 @@ b. $W(53,-19)$
 
 c. $W(60,-30)$ 
 
-## Bounding the Error in Linear Approximations
+#### Bounding the Error in Linear Approximations
 
 In Exercises 35–40, find the linearization $L(x,y)$ of the function $f(x,y)$ at $P_{0}$ . Then find an upper bound for the magnitude $|E|$ of the error in the approximation $f(x,y) \approx L(x,y)$ over the rectangle R. 
 
@@ -4125,7 +4110,7 @@ $$
 R: | x - 1 | \leq 0. 2, | y - 1 | \leq 0. 2
 $$
 
-## Linearizations for Three Variables
+#### Linearizations for Three Variables
 
 Find the linearizations $L(x, y, z)$ of the functions in Exercises 41–46 at the given points. 
 
@@ -4165,7 +4150,7 @@ R: $|x - 1| \leq 0.01, |y - 1| \leq 0.01, |z - 2| \leq 0.08$
 
 $R: |x| \leq 0.01, |y| \leq 0.01, |z - \pi / 4| \leq 0.01$ 
 
-## Estimating Error; Sensitivity to Change
+#### Estimating Error; Sensitivity to Change
 
 51. Estimating maximum error Suppose that $T$ is to be found from the formula $T = x(e^{y} + e^{-y})$ , where $x$ and $y$ are found to be 2 and $\ln 2$ with maximum possible errors of $|dx| = 0.1$ and $|dy| = 0.02$ . Estimate the maximum possible error in the computed value of $T$ . 
 
@@ -4183,7 +4168,7 @@ $$
 
 b. You have designed a two-resistor circuit, like the one shown, to have resistances of $R_{1} = 100$ ohms and $R_{2} = 400$ ohms, but there is always some variation in manufacturing, and the resistors received by your firm will probably not have these exact values. Will the value of R be more sensitive to variation in $R_{1}$ or to variation in $R_{2}$ ? Give reasons for your answer. 
 
-![[668bbf398f337b11c7f8bdede0fff8124b08f419bc3685f4ab2bb9e345816baa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/668bbf398f337b11c7f8bdede0fff8124b08f419bc3685f4ab2bb9e345816baa.jpg)
 
 
 c. In another circuit like the one shown, you plan to change $R_{1}$ from 20 to 20.1 ohms and $R_{2}$ from 25 to 24.9 ohms. By about what percentage will this change R? 
@@ -4204,7 +4189,7 @@ most sensitive? Give reasons for your answer.
 
 56. The Wilson lot size formula The Wilson lot size formula in economics says that the most economical quantity Q of goods (radios, shoes, brooms, whatever) for a store to order is given by the formula $Q = \sqrt{2KM/h}$ , where K is the cost of placing the order, M is the number of items sold per week, and h is the weekly holding cost for each item (cost of space, utilities, security, and so on). To which of the variables K, M, and h is Q most sensitive near the point $(K_{0}, M_{0}, h_{0}) = (2, 20, 0.05)$ ? Give reasons for your answer. 
 
-## Theory and Examples
+#### Theory and Examples
 
 57. The linearization of $f(x, y)$ is a tangent-plane approximation. Show that the tangent plane at the point $P_0(x_0, y_0, f(x_0, y_0))$ on the surface $z = f(x, y)$ defined by a differentiable function $f$ is the plane 
 
@@ -4220,18 +4205,14 @@ $$
 
 Thus, the tangent plane at $P_{0}$ is the graph of the linearization of f at $P_{0}$ (see accompanying figure). 
 
-![[d0c8680dbefbe83f6bffab66baad1e1b390524a3c76dc52b6e5e6e405df2e8ca.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d0c8680dbefbe83f6bffab66baad1e1b390524a3c76dc52b6e5e6e405df2e8ca.jpg)
 
 
 58. Change along the involute of a circle Find the derivative of $f(x,y) = x^{2} + y^{2}$ in the direction of the unit tangent vector of the curve 
 
 $$
 \mathbf {r} (t) = (\cos t + t \sin t) \mathbf {i} + (\sin t - t \cos t) \mathbf {j}, \quad t > 0.
-$$
-
-59. Tangent curves A smooth curve is tangent to the surface at a point of intersection if its velocity vector is orthogonal to $\nabla f$ there. Show that the curve 
-
-$$
+59. $Tangent curves A smooth curve is tangent to the surface at a point of intersection if its velocity vector is orthogonal to $\nabla f$ there. Show that the curve$
 \mathbf {r} (t) = \sqrt {t} \mathbf {i} + \sqrt {t} \mathbf {j} + (2 t - 1) \mathbf {k}
 $$
 
@@ -4249,7 +4230,7 @@ is normal to the surface $x^{2} + y^{2} - z = 3$ when t = 1.
 
 61. Consider a closed rectangular box with a square base, as shown in the figure. Assume x is measured with an error of at most 0.5% and y is measured with an error of at most 0.75%, so we have $|dx|/x < 0.005$ and $|dy|/y < 0.0075$ . 
 
-![[2084c512475181701494d2492bbbf614bfbe6bb63672aa53a2a16a901b38ec7c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2084c512475181701494d2492bbbf614bfbe6bb63672aa53a2a16a901b38ec7c.jpg)
 
 
 a. Use a differential to estimate the relative error $|dV| / V$ in computing the box's volume $V$ . 
@@ -4272,7 +4253,7 @@ French mathematician Poisson studied with Lagrange and Laplace at the École pol
 
 To know more, visit the companion Website. 
 
-![[5220118320b3e7d0af03fd611310a67b8452db6a38c125ac3995781ba61eeb0b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5220118320b3e7d0af03fd611310a67b8452db6a38c125ac3995781ba61eeb0b.jpg)
 
 
 FIGURE 13.42 The function 
@@ -4285,7 +4266,7 @@ has a maximum value of 1 and a minimum value of about -0.067 on the square regio
 
 Continuous functions of two variables assume extreme values on closed, bounded domains (see Figures 13.42 and 13.43). We see in this section that we can narrow the search for these extreme values by examining the functions' first partial derivatives. A function of two variables can assume extreme values only at boundary points of the domain or at interior domain points where both first partial derivatives are zero or where one or both of the first partial derivatives fail to exist. However, the vanishing of derivatives at an interior point $(a,b)$ does not always signal the presence of an extreme value. The surface that is the graph of the function might be shaped like a saddle right above $(a,b)$ and cross its tangent plane there. 
 
-## Local Extreme Values for Functions of Two Variables
+### Local Extreme Values for Functions of Two Variables
 
 To find the local extreme values of a function of a single variable, we look for points where the graph has a horizontal tangent line. At such points, we then look for local maxima, local minima, and points of inflection. For a function $f(x,y)$ of two variables, we look for points where the surface $z = f(x,y)$ has a horizontal tangent plane. At such points, we then look for local maxima, local minima, and saddle points. We begin by defining maxima and minima. 
 
@@ -4299,14 +4280,14 @@ To find the local extreme values of a function of a single variable, we look for
 FIGURE 13.43 The “roof surface” $z = \frac{1}{2}(|x| - |y| - |x| - |y|)$
 
 
-![[b8b054282439f89afd1bc0ce7e59a2ea732ae1169b32ce913786a77be35f1b1b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b8b054282439f89afd1bc0ce7e59a2ea732ae1169b32ce913786a77be35f1b1b.jpg)
 
 
 
 has a maximum value of 0 and a minimum value of -a on the square region $|x| \leq a$ , $|y| \leq a$ .
 
 
-![[d1beebfe4e1cbda905cb133a9197b7b5a82d436e11ea9875ef932358146dbc84.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d1beebfe4e1cbda905cb133a9197b7b5a82d436e11ea9875ef932358146dbc84.jpg)
 
 
 
@@ -4317,7 +4298,7 @@ Local maxima correspond to mountain peaks on the surface $z = f(x, y)$ , and loc
 
 As with functions of a single variable, the key to identifying the local extrema is the First Derivative Theorem, which we next state and prove. 
 
-![[da5f75424f50e566dee221082af1d19cccd0f69c4171e04a28f86f4f6b25ed0a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/da5f75424f50e566dee221082af1d19cccd0f69c4171e04a28f86f4f6b25ed0a.jpg)
 
 
 
@@ -4349,17 +4330,17 @@ Thus, Theorem 10 says that the surface does indeed have a horizontal tangent pla
 
 > ***DEFINITION*** An interior point of the domain of a function $f(x, y)$ where both $f_x$ and $f_y$ are zero or where one or both of $f_x$ and $f_y$ do not exist is a critical point of f. 
 
-![[8bdad1c99d5ad4ef0e40500735875714260f5ab5e9da827b807febe45c28bdb0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8bdad1c99d5ad4ef0e40500735875714260f5ab5e9da827b807febe45c28bdb0.jpg)
 
 
-![[09a933a5a60d386a6f82d0fc80252026b7a094150ebd50488317a05d5f27588b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/09a933a5a60d386a6f82d0fc80252026b7a094150ebd50488317a05d5f27588b.jpg)
 
 
 
 FIGURE 13.46 Saddle points at the origin.
 
 
-![[0f90dd27e9235250228fd75e02cec763297b9df462af0887193312fb5c08542b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0f90dd27e9235250228fd75e02cec763297b9df462af0887193312fb5c08542b.jpg)
 
 
 
@@ -4386,7 +4367,7 @@ The only possibility is the point $(0,2)$ , where the value of f is 5. Since $f(
 
 That $f_{x} = f_{y} = 0$ at an interior point $(a, b)$ of R does not guarantee that f has a local extreme value there. If f and its first and second partial derivatives are continuous on R, however, we may be able to learn more from the following theorem. 
 
-## THEOREM 11—Second Derivative Test for Local Extreme Values
+**THEOREM 11—Second Derivative Test for Local Extreme Values**
 
 Suppose that $f(x,y)$ and its first and second partial derivatives are continuous throughout a disk centered at $(a,b)$ and that $f_{x}(a,b)=f_{y}(a,b)=0$ . Then 
 
@@ -4404,17 +4385,17 @@ $$
 
 The expression $f_{xx}f_{yy} - f_{xy}^2$ is called the discriminant or Hessian of $f$ . It is sometimes easier to remember it in determinant form, 
 
-![[c5cc0bb8f0c7bd7803bdbde070fd98fc9227d07cb716fcb046e6f78d9de39e31.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c5cc0bb8f0c7bd7803bdbde070fd98fc9227d07cb716fcb046e6f78d9de39e31.jpg)
 
 
-![[36d06398d69ef87f0409410d53e6fc95f76fc062d493b30c202f5b6f20fdba99.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/36d06398d69ef87f0409410d53e6fc95f76fc062d493b30c202f5b6f20fdba99.jpg)
 
 
 
 FIGURE 13.48 (a) The origin is a saddle point of the function $f(x,y) = y^{2} - x^{2}$ . There are no local extreme values (Example 2). (b) Level curves for the function $f$ in Example 2.
 
 
-![[6719231fbb4b13db8ef0348a0801ba1882d8ef534e58bd2db8dc5ed3695d73c5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6719231fbb4b13db8ef0348a0801ba1882d8ef534e58bd2db8dc5ed3695d73c5.jpg)
 
 
 
@@ -4523,7 +4504,7 @@ $$
 
 The following table summarizes the values needed by the Second Derivative Test. 
 
-![[b3d45c3c9bd27f0148af3e7c9e37427fd84e9407279a7a822ba5b058d532191a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b3d45c3c9bd27f0148af3e7c9e37427fd84e9407279a7a822ba5b058d532191a.jpg)
 
 
 
@@ -4534,7 +4515,7 @@ FIGURE 13.50 A graph of the function in Example 5.
 
 From the table we find that D < 0 at the critical point $(0,0)$ , giving a saddle; D > 0 and $f_{xx} < 0$ at the critical points $(1/\sqrt{2},1/\sqrt{2})$ and $(-1/\sqrt{2},-1/\sqrt{2})$ , giving local maximum values there; and D > 0 and $f_{xx} > 0$ at the critical points $(-1/\sqrt{2},1/\sqrt{2})$ and $(1/\sqrt{2},-1/\sqrt{2})$ , each giving local minimum values. A graph of the surface is shown in Figure 13.50. 
 
-## Absolute Maxima and Minima on Closed Bounded Regions
+### Absolute Maxima and Minima on Closed Bounded Regions
 
 We organize the search for the absolute extrema of a continuous function $f(x, y)$ on a closed and bounded region R into three steps. 
 
@@ -4548,10 +4529,10 @@ We organize the search for the absolute extrema of a continuous function $f(x, y
 (b)
 
 
-![[cb241564aed05129924ea20b10d798a41316a72583a89c92d90bd454c9b1041e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cb241564aed05129924ea20b10d798a41316a72583a89c92d90bd454c9b1041e.jpg)
 
 
-![[782c33baab41393989cec9435eb5dff9a5f6a4342fca96c6b0e87841a2b0f9de.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/782c33baab41393989cec9435eb5dff9a5f6a4342fca96c6b0e87841a2b0f9de.jpg)
 
 
 
@@ -4634,7 +4615,7 @@ Summary We list all the function value candidates: 7, 2, -61, 3, -43, 6, -11. Th
 
 Solving extreme value problems with algebraic constraints on the variables usually requires the method of Lagrange multipliers, which is introduced in the next section. But sometimes we can solve such problems directly, as in the next example. 
 
-![[30fd5ef075b2d43bd0121fdf9d7ef0c56c54b6afd6b5240cdab5279a799cc811.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/30fd5ef075b2d43bd0121fdf9d7ef0c56c54b6afd6b5240cdab5279a799cc811.jpg)
 
 
 
@@ -4692,19 +4673,20 @@ i) $f_{xx} < 0$ and $f_{xx}f_{yy} - f_{xy}^2 > 0$ at $(a, b) \Rightarrow local m
 
 Finding maximum and minimum values for functions of more than two variables is an important problem with many important applications, from machine learning to making economic predictions. The problem becomes much harder as the number of variables increases. The process of finding extrema for functions with high-dimensional domains is discussed in Appendices B.2 and B.3. 
 
-## EXERCISES 13.7
+### EXERCISES 13.7
 
-## Finding Local Extrema
+#### Finding Local Extrema
 
 Find all the local maxima, local minima, and saddle points of the functions in Exercises 1–30. 
 
-$$
-f (x, y) = x ^ {2} + x y + y ^ {2} + 3 x - 3 y + 4
-$$
+1. $f (x, y) = x ^ {2} + x y + y ^ {2} + 3 x - 3 y + 4$
 
 2. $f(x,y)=2xy-5x^{2}-2y^{2}+4x+4y-4$ 
 
 3. $f(x,y) = x^{2} + xy + 3x + 2y + 5$ 
+
+![教材插图](/books/thomas-calculus/assets/b147bf9f866ab4d89bedd329df6dd1dc1de223b1b82c523c04b2854172b87282.jpg)
+
 
 4. $f(x,y)=5xy-7x^{2}+3x-6y+2$ 
 
@@ -4734,9 +4716,7 @@ $$
 
 15. $f(x,y) = 6x^{2} - 2x^{3} + 3y^{2} + 6xy$ 
 
-$$
-f (x, y) = x ^ {3} + y ^ {3} + 3 x ^ {2} - 3 y ^ {2} - 8
-$$
+16. $f (x, y) = x ^ {3} + y ^ {3} + 3 x ^ {2} - 3 y ^ {2} - 8$
 
 17. $f(x,y)=x^{3}+3xy^{2}-15x+y^{3}-15y$ 
 
@@ -4746,21 +4726,13 @@ $$
 
 20. $f(x,y)=x^{4}+y^{4}+4xy$ 
 
-$$
-2 1. f (x, y) = \frac {1}{x ^ {2} + y ^ {2} - 1} \quad 2 2. f (x, y) = \frac {1}{x} + x y + \frac {1}{y}
-$$
+21. $f (x, y) = \frac {1}{x ^ {2} + y ^ {2} - 1} \quad 2 2. f (x, y) = \frac {1}{x} + x y + \frac {1}{y}$
 
-$$
-2 3. f (x, y) = y \sin x \quad 2 4. f (x, y) = e ^ {2 x} \cos y
-$$
+23. $f (x, y) = y \sin x \quad 2 4. f (x, y) = e ^ {2 x} \cos y$
 
-$$
-2 5. f (x, y) = e ^ {x ^ {2} + y ^ {2} - 4 x} \quad 2 6. f (x, y) = e ^ {y} - y e ^ {x}
-$$
+25. $f (x, y) = e ^ {x ^ {2} + y ^ {2} - 4 x} \quad 2 6. f (x, y) = e ^ {y} - y e ^ {x}$
 
-$$
-2 7. f (x, y) = e ^ {- y} \left(x ^ {2} + y ^ {2}\right) \quad 2 8. f (x, y) = e ^ {x} \left(x ^ {2} - y ^ {2}\right)
-$$
+27. $f (x, y) = e ^ {- y} \left(x ^ {2} + y ^ {2}\right) \quad 2 8. f (x, y) = e ^ {x} \left(x ^ {2} - y ^ {2}\right)$
 
 29. $f(x,y) = 2\ln x + \ln y - 4x - y$ 
 
@@ -4890,7 +4862,7 @@ b. Find the absolute maximum value of f over the square.
 
 62. A rectangular box is inscribed in the region in the first octant bounded above by the plane with x-intercept 6, y-intercept 6, and z-intercept 6. 
 
-![[6744f418c2f0358e5a8b578ce3c7201161082e5840bda1fca033593c35090898.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6744f418c2f0358e5a8b578ce3c7201161082e5840bda1fca033593c35090898.jpg)
 
 
 a. Find an equation for the plane. 
@@ -4904,7 +4876,7 @@ b. The endpoints of the parameter domain.
 
 In Exercises 63–66, find the absolute maximum and minimum values of the following functions on the given curves. 
 
-## 63. Functions:
+63. Functions:
 
 a. $f(x, y) = x + y$ b. $g(x, y) = xy$ c. $h(x, y) = 2x^2 + y^2$ Curves: i) The semicircle $x^2 + y^2 = 4, \quad y \geq 0$ ii) The quarter circle $x^2 + y^2 = 4, \quad x \geq 0, \quad y \geq 0$ Use the parametric equations $x = 2\cos t, y = 2\sin t$ . 
 
@@ -4937,26 +4909,19 @@ with all sums running from k = 1 to k = n. Many scientific calculators have thes
 
 The line $y = mx + b$ determined by these values of m and b is called the least squares line, regression line, or trend line for the data under study. Finding a least squares line lets you 
 
-1. summarize data with a simple expression, 
-
-2. predict values of y for other, experimentally untried values of x, 
-
-3. handle data analytically. 
-
-![[b147bf9f866ab4d89bedd329df6dd1dc1de223b1b82c523c04b2854172b87282.jpg|image]]
-
+- summarize data with a simple expression,
+- predict values of y for other, experimentally untried values of x,
+- handle data analytically.
 
 In Exercises 68–70, use Equations (2) and (3) to find the least squares line for each set of data points. Then use the linear equation you obtain to predict the value of y that would correspond to x = 4. 
 
 68. $(-2,0),(0,2),(2,3)$ 
 
-$$
-\mathbf {6 9 .} (- 1, 2), (0, 1), (3, - 4)
-$$
+69. $(- 1, 2), (0, 1), (3, - 4)$
 
 70. $(0,0),(1,2),(2,3)$ 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 71–76, you will explore functions to identify their local extrema. Use a CAS to perform the following steps: 
 
@@ -4990,7 +4955,7 @@ $$
 
 ## 13.8 Lagrange Multipliers
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
 Joseph Louis Lagrange (1736–1813) 
 
@@ -5000,7 +4965,7 @@ To know more, visit the companion Website.
 
 Sometimes we need to find the extreme values of a function whose domain is constrained to lie within some particular subset of the plane—for example, a disk, a closed triangular region, or along a curve. We saw an instance of this situation in Example 6 of the previous section. Here we explore a powerful method for finding extreme values of constrained functions: the method of Lagrange multipliers. 
 
-## Constrained Maxima and Minima
+### Constrained Maxima and Minima
 
 To gain some insight, we first consider a problem where a constrained minimum can be found by eliminating a variable. 
 
@@ -5070,7 +5035,7 @@ The distance from P to the origin is $5/\sqrt{6} \approx 2.04$ .
 
 Attempts to solve a constrained maximum or minimum problem by substitution, as we might call the method of Example 1, do not always go smoothly. 
 
-![[ef047137bf026d52c9aa505f9239d24e1c6b5fe9c50b0f1697102b06cef2f9af.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ef047137bf026d52c9aa505f9239d24e1c6b5fe9c50b0f1697102b06cef2f9af.jpg)
 
 
 
@@ -5105,14 +5070,14 @@ $$
 
 The hyperbolic cylinder $x^{2} - z^{2} = 1$ 
 
-![[c93778ef26229ddcee47ac22403b0077a5a6427fcaa243a517087d5acf8e81d2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c93778ef26229ddcee47ac22403b0077a5a6427fcaa243a517087d5acf8e81d2.jpg)
 
 
 
 FIGURE 13.54 The region in the xy-plane from which the first two coordinates of the points $(x, y, z)$ on the hyperbolic cylinder $x^{2} - z^{2} = 1$ are selected excludes the band -1 < x < 1 in the xy-plane (Example 2).
 
 
-![[67302fcbdc1622672208456f6be6e5aacb2e4ef952d611e6d58acd4846ac88bb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/67302fcbdc1622672208456f6be6e5aacb2e4ef952d611e6d58acd4846ac88bb.jpg)
 
 
 
@@ -5201,7 +5166,7 @@ $$
 
 The points on the cylinder closest to the origin are the points $(\pm1,0,0)$ . 
 
-## The Method of Lagrange Multipliers
+### The Method of Lagrange Multipliers
 
 In **Solution** 2 of Example 2, we used the method of Lagrange multipliers. The method says that the local extreme values of a function $f(x, y, z)$ whose variables are subject to a constraint $g(x, y, z) = 0$ are to be found on the surface g = 0 among the points where 
 
@@ -5240,9 +5205,9 @@ Theorem 12 is the key to the method of Lagrange multipliers. Suppose that $f(x, 
 FIGURE 13.56 Example 3 shows how to find the largest and smallest values of the product $xy$ on this ellipse.
 
 
-## The Method of Lagrange Multipliers
+### The Method of Lagrange Multipliers
 
-![[4870e4b6bd245f1df8e2b0200742a9903e0191e13b4416b681250f1d18dbb58f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4870e4b6bd245f1df8e2b0200742a9903e0191e13b4416b681250f1d18dbb58f.jpg)
 
 
 Suppose that $f(x,y,z)$ and $g(x,y,z)$ are differentiable and $\nabla g \neq 0$ when $g(x,y,z) = 0$ . To find the local maximum and minimum values of f subject to the constraint $g(x,y,z) = 0$ (if these exist), find the values of x, y, z, and $\lambda$ that simultaneously satisfy the equations 
@@ -5255,7 +5220,7 @@ If they exist, absolute extrema can be found by comparing these values of f at e
 
 Some care must be used in applying this method. An extreme value may not actually exist (Exercise 45). 
 
-## **EXAMPLE 3** Find the largest and smallest values that the function
+**EXAMPLE 3** Find the largest and smallest values that the function
 
 $$
 f (x, y) = x y
@@ -5312,14 +5277,14 @@ $$
 \frac {(\pm 2 y) ^ {2}}{8} + \frac {y ^ {2}}{2} = 1, \quad 4 y ^ {2} + 4 y ^ {2} = 8 \quad \text { and } \quad y = \pm 1.
 $$
 
-![[cd18943dcc39acba4001685c3c05b759472041fa15ad3ab90cde7a147ae6d83b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cd18943dcc39acba4001685c3c05b759472041fa15ad3ab90cde7a147ae6d83b.jpg)
 
 
 
 FIGURE 13.57 When subjected to the constraint $g(x, y) = x^2 / 8 + y^2 / 2 - 1 = 0$ , the function $f(x, y) = xy$ takes on extreme values at the four points $(\pm 2, \pm 1)$ . These are the points on the ellipse where $\nabla f$ (red) is a scalar multiple of $\nabla g$ (blue) (Example 3).
 
 
-![[bb00cfe0d48e2617c9ee24597e4af3d59d4f823755805c26afbd5004ea1bd319.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bb00cfe0d48e2617c9ee24597e4af3d59d4f823755805c26afbd5004ea1bd319.jpg)
 
 
 FIGURE 13.58 The function $f(x,y)=3x+4y$ takes on its largest value on the unit circle $g(x,y)=x^{2}+y^{2}-1=0$ at the point $(3/5,4/5)$ and its smallest value at the point $(-3/5,-4/5)$ (Example 4). At each of these points, $\nabla f$ is a scalar multiple of $\nabla g$ . The figure shows the gradients at the first point but not at the second. 
@@ -5386,7 +5351,7 @@ $$
 
 The Geometry of the **Solution** The level curves of $f(x, y) = 3x + 4y$ are the lines $3x + 4y = c$ (Figure 13.58). The farther the lines lie from the origin, the larger the absolute value of f. We want to find the extreme values of $f(x, y)$ given that the point $(x, y)$ 
 
-![[9a94ba3b4feea0da68d1aa603c6fa2d96b67990db6b20fbebc1e05d43e7acd98.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9a94ba3b4feea0da68d1aa603c6fa2d96b67990db6b20fbebc1e05d43e7acd98.jpg)
 
 
 
@@ -5399,7 +5364,7 @@ $$
 \nabla f = 3 \mathbf {i} + 4 \mathbf {j}, \quad \nabla g = \frac {6}{5} \mathbf {i} + \frac {8}{5} \mathbf {j}, \quad \text { and } \quad \nabla f = \frac {5}{2} \nabla g.
 $$
 
-## Lagrange Multipliers with Two Constraints
+### Lagrange Multipliers with Two Constraints
 
 Many problems require us to find the extreme values of a differentiable function $f(x, y, z)$ whose variables are subject to two constraints. If the constraints are 
 
@@ -5417,7 +5382,7 @@ Equations (2) have a nice geometric interpretation. The surfaces $g_{1} = 0$ and
 
 **EXAMPLE 5** The plane $x + y + z = 1$ cuts the cylinder $x^{2} + y^{2} = 1$ in an ellipse (Figure 13.60). Find the points on the ellipse that lie closest to and farthest from the origin. 
 
-![[3159ad4c3318a81286e990a9d362c82d70cb94aa79595f374f9a3a85f8bc1955.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3159ad4c3318a81286e990a9d362c82d70cb94aa79595f374f9a3a85f8bc1955.jpg)
 
 
 
@@ -5490,7 +5455,7 @@ we see that the absolute minimum value of $f$ is 1 and is attained when $f$ is e
 
 The points on the ellipse closest to the origin are $(1,0,0)$ and $(0,1,0)$ . The point on the ellipse farthest from the origin is $P_{2}$ . (See Figure 13.60.) 
 
-## EXERCISES 13.8
+### EXERCISES 13.8
 
 Two Independent Variables with One Constraint 
 
@@ -5630,7 +5595,7 @@ $$
 
 36. Locating a radio telescope You are in charge of erecting a radio telescope on a newly discovered planet. To minimize interference, you want to place it where the magnetic field of the planet is weakest. The planet is spherical, with a radius of 6 units. Based on a coordinate system whose origin is at the center of the planet, the strength of the magnetic field is given by $M(x,y,z)=6x-y^{2}+xz+60$ . Where should you locate the radio telescope? 
 
-## Extreme Values Subject to Two Constraints
+#### Extreme Values Subject to Two Constraints
 
 37. Maximize the function $f(x, y, z) = x^{2} + 2y - z^{2}$ subject to the constraints 2x - y = 0 and $y + z = 0$ . 
 
@@ -5650,7 +5615,7 @@ b. Give a geometric argument to support your claim that you have found a maximum
 
 44. Minimum distance to the origin Find the point closest to the origin on the curve of intersection of the plane $2y + 4z = 5$ and the cone $z^{2} = 4x^{2} + 4y^{2}$ . 
 
-## Theory and Examples
+#### Theory and Examples
 
 45. The condition $\nabla f = \lambda \nabla g$ is not sufficient Even though $\nabla f = \lambda \nabla g$ is a necessary condition for the occurrence of an extreme value of $f(x, y)$ subject to the conditions $g(x, y) = 0$ and $\nabla g \neq 0$ , it does not in itself guarantee that one exists. As a case in point, try using the method of Lagrange multipliers to find a maximum value of $f(x, y) = x + y$ subject to the constraint that xy = 16. The method will identify the two points (4, 4) and (-4, -4) as candidates for the location of extreme values. Yet the sum $x + y$ has no maximum value on the hyperbola xy = 16. The farther you go from the origin on this hyperbola in the first quadrant, the larger the sum $f(x, y) = x + y$ becomes. 
 
@@ -5680,7 +5645,7 @@ that is, the geometric mean of three nonnegative numbers is less than or equal t
 
 48. Sum of products Let $a_{1}, a_{2}, \ldots, a_{n}$ be n positive numbers. Find the maximum of $\sum_{i=1}^{n} a_{i} x_{i}$ subject to the constraint $\sum_{i=1}^{n} x_{i}^{2} = 1$ . 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 49–54, use a CAS to perform the following steps implementing the method of Lagrange multipliers for finding constrained extrema: 
 
@@ -5708,10 +5673,10 @@ d. Evaluate f at each of the solution points found in part (c), and select the e
 
 In this section we use Taylor's formula to derive the Second Derivative Test for local extreme values (Section 13.7) and the error formula for linearizations of functions of two independent variables (Section 13.6). The use of Taylor's formula in these derivations leads to an extension of the formula that provides polynomial approximations of all orders for functions of two independent variables. 
 
-![[29f878fd939ea08aee728bf316dcbcfe360ea5f5d46ae30adc594dcc4984a97e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/29f878fd939ea08aee728bf316dcbcfe360ea5f5d46ae30adc594dcc4984a97e.jpg)
 
 
-## Derivation of the Second Derivative Test
+### Derivation of the Second Derivative Test
 
 
 FIGURE 13.61 We begin the derivation of the Second Derivative Test at $P(a, b)$ by parametrizing a typical line segment from P to a point S nearby.
@@ -5781,7 +5746,7 @@ From Equation (5) we see that
 
 4. If $f_{xx}f_{yy} - f_{xy}^2 = 0$ , another test is needed. The possibility that $Q(0)$ equals zero prevents us from drawing conclusions about the sign of $Q(c)$ . 
 
-## The Error Formula for Linear Approximations
+### The Error Formula for Linear Approximations
 
 We want to show that the difference $E(x, y)$ between the values of a function $f(x, y)$ and its linearization $L(x, y)$ at $(x_{0}, y_{0})$ satisfies the inequality 
 
@@ -5809,7 +5774,7 @@ $$
 \begin{array}{l} | E | \leq \frac {1}{2} \big (| x - x _ {0} | ^ {2} M + 2 | x - x _ {0} | | y - y _ {0} | M + | y - y _ {0} | ^ {2} M \big) \\ = \frac {1}{2} M (| x - x _ {0} | + | y - y _ {0} |) ^ {2}. \end{array}
 $$
 
-## Taylor's Formula for Functions of Two Variables
+### Taylor's Formula for Functions of Two Variables
 
 The formulas derived earlier for $F'$ and $F''$ can be obtained by applying to $f(x, y)$ the differentiation operators 
 
@@ -5907,11 +5872,10 @@ $$
 
 (rounded up). The error will not exceed 0.00134 if $|x| \leq 0.1$ and $|y| \leq 0.1$ . 
 
-## EXERCISES
+### Exercises 13.9
 
-## 13.9
 
-## Finding Quadratic and Cubic Approximations
+#### Finding Quadratic and Cubic Approximations
 
 In Exercises 1–10, use Taylor's formula for $f(x,y)$ at the origin to find quadratic and cubic approximations of f near the origin. 
 
@@ -5925,9 +5889,9 @@ In Exercises 1–10, use Taylor's formula for $f(x,y)$ at the origin to find qua
 
 5. $f(x,y)=e^{x}\ln(1+y)$ 
 
-7. $f(x,y) = \sin (x^{2} + y^{2})$ 
-
 6. $f(x,y) = \ln (2x + y + 1)$ 
+
+7. $f(x,y) = \sin (x^{2} + y^{2})$ 
 
 8. $f(x,y) = \cos (x^{2} + y^{2})$ 
 
@@ -5949,7 +5913,7 @@ $$
 
 and fail to be independent. In this section we learn how to find partial derivatives in situations like this, which occur in economics, engineering, and physics. 
 
-## Decide Which Variables Are Dependent and Which Are Independent
+### Decide Which Variables Are Dependent and Which Are Independent
 
 If the variables in a function $w = f(x, y, z)$ are constrained by a relation like the one imposed on x, y, and z by the equation $z = x^{2} + y^{2}$ , the geometric meanings and the numerical values of the partial derivatives of f will depend on which variables are chosen to be dependent and which are chosen to be independent. To see how this choice can affect the outcome, we consider the calculation of $\partial w/\partial x$ when $w = x^{2} + y^{2} + z^{2}$ and $z = x^{2} + y^{2}$ . 
 
@@ -5959,7 +5923,7 @@ $$
 
 **Solution** We are given two equations in the four unknowns x, y, z, and w. Like many such systems, this one can be solved for two of the unknowns (the dependent variables) in terms of the others (the independent variables). In being asked for $\partial w/\partial x$ , we are told that w is to be a dependent variable and x an independent variable. The possible choices for the other variables come down to 
 
-## Dependent Independent
+### Dependent Independent
 
 $$
 \begin{array}{l l} \text {Choice 1:} & w, z \\ \text {Choice 2:} & w, y \end{array} \qquad \qquad \begin{array}{l l} x, y \\ x, z \end{array}
@@ -5973,7 +5937,7 @@ $$
 \begin{array}{r l} w & = x ^ {2} + y ^ {2} + z ^ {2} = x ^ {2} + y ^ {2} + (x ^ {2} + y ^ {2}) ^ {2} \\ & = x ^ {2} + y ^ {2} + x ^ {4} + 2 x ^ {2} y ^ {2} + y ^ {4} \end{array}
 $$
 
-![[c27fe2978bb4af823ad7d111633cb6938b2cef5802d91fd1ddea76144ff0d384.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c27fe2978bb4af823ad7d111633cb6938b2cef5802d91fd1ddea76144ff0d384.jpg)
 
 
 
@@ -6026,7 +5990,7 @@ $$
 
 as we found in our second solution. 
 
-## How to Find $\partial w / \partial x$ When the Variables in $w = f(x, y, z)$ Are Constrained by Another Equation
+### How to Find $\partial w / \partial x$ When the Variables in $w = f(x, y, z)$ Are Constrained by Another Equation
 
 As we saw in Example 1, a typical routine for finding $\partial w/\partial x$ when the variables in the function $w = f(x, y, z)$ are related by another equation has three steps. These steps apply to finding $\partial w/\partial y$ and $\partial w/\partial z$ as well. 
 
@@ -6072,9 +6036,9 @@ $$
 
 The value of this derivative at $(x,y,z) = (2, - 1,1)$ is 
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
-## Sonya Kovalevsky (1850–1891)
+### Sonya Kovalevsky (1850–1891)
 
 $$
 \left. \frac {\partial w}{\partial x} \right| _ {(2, - 1, 1)} = 2 (2) + \frac {2 (- 1) (1)}{- 1 + 3 (1) ^ {2}} = 4 + \frac {- 2}{2} = 3.
@@ -6084,7 +6048,7 @@ Kovalevsky, a Russian mathematician, primarily worked on the theory of partial d
 
 To know more, visit the companion Website. 
 
-## Notation
+### Notation
 
 To show what variables are assumed to be independent in calculating a derivative, we can use the following notation: 
 
@@ -6106,7 +6070,7 @@ $$
 \begin{array}{c} t = x + y, \quad w = x ^ {2} + y - z + \sin (x + y) \\ \left(\frac {\partial w}{\partial x}\right) _ {y, z} = 2 x + 0 - 0 + \cos (x + y) \frac {\partial}{\partial x} (x + y) \\ = 2 x + \cos (x + y). \end{array}
 $$
 
-## Arrow Diagrams
+### Arrow Diagrams
 
 In solving problems like the one in Example 3, it often helps to start with an arrow diagram that shows how the variables and functions are related. If 
 
@@ -6144,9 +6108,9 @@ $$
 \begin{array}{l} \frac {\partial w}{\partial x} = \frac {\partial w}{\partial u} \frac {\partial u}{\partial x} + \frac {\partial w}{\partial v} \frac {\partial v}{\partial x} + \frac {\partial w}{\partial s} \frac {\partial s}{\partial x} + \frac {\partial w}{\partial t} \frac {\partial t}{\partial x} \\ = (2 u) (1) + (1) (0) + (- 1) (0) + (\cos t) (1) \\ = 2 u + \cos t \\ = 2 x + \cos (x + y). \end{array}
 $$
 
-## EXERCISES 13.10
+### EXERCISES 13.10
 
-## Finding Partial Derivatives with Constrained Variables
+#### Finding Partial Derivatives with Constrained Variables
 
 In Exercises 1–3, begin by drawing a diagram that shows the relations among the variables. 
 
@@ -6158,6 +6122,14 @@ a. $\left(\frac{\partial w}{\partial y}\right)_z$ b. $\left(\frac{\partial w}{\p
 
 3. Let $U = f(P, V, T)$ be the internal energy of a gas that obeys the ideal gas law $PV = nRT$ ( $n$ and $R$ constant). Find
 a. $\left(\frac{\partial U}{\partial P}\right)_V$ b. $\left(\frac{\partial U}{\partial T}\right)_V$ . 
+
+Show that the equations 
+
+$$
+\frac {\partial w}{\partial x} = 2 x - 1 \quad \text { and } \quad \frac {\partial w}{\partial x} = 2 x - 2
+$$
+
+each give $\partial w/\partial x$ , depending on which variables are chosen to be dependent and which variables are chosen to be independent. Identify the independent variables in each case. 
 
 4. Find
 a. $\left(\frac{\partial w}{\partial x}\right)_{y}$ b. $\left(\frac{\partial w}{\partial z}\right)_{y}$ at the point $(x, y, z) = (0, 1, \pi)$ if $w = x^{2} + y^{2} + z^{2}$ and $y \sin z + z \sin x = 0$ . 
@@ -6173,27 +6145,9 @@ $$
 \left(\frac {\partial x}{\partial r}\right) _ {\theta} \quad \text { and } \quad \left(\frac {\partial r}{\partial x}\right) _ {y}.
 $$
 
-8. Suppose that 
+8. Suppose that $w = x ^ {2} - y ^ {2} + 4 z + t$ and $x + 2 z + t = 2 5$.
 
-$$
-w = x ^ {2} - y ^ {2} + 4 z + t \quad \text { and } \quad x + 2 z + t = 2 5.
-$$
-
-1. What is a real-valued function of two independent variables? Three independent variables? Give examples. 
-
-2. What does it mean for sets in the plane or in space to be open? Closed? Give examples. Give examples of sets that are neither open nor closed. 
-
-3. How can you display the values of a function $f(x, y)$ of two independent variables graphically? How do you do the same for a function $f(x, y, z)$ of three independent variables? 
-
-Show that the equations 
-
-$$
-\frac {\partial w}{\partial x} = 2 x - 1 \quad \text { and } \quad \frac {\partial w}{\partial x} = 2 x - 2
-$$
-
-each give $\partial w/\partial x$ , depending on which variables are chosen to be dependent and which variables are chosen to be independent. Identify the independent variables in each case. 
-
-## Theory and Examples
+#### Theory and Examples
 
 9. Establish the fact, widely used in hydrodynamics, that if $f(x,y,z) = 0$ , then 
 
@@ -6202,8 +6156,6 @@ $$
 $$
 
 (Hint: Express all the derivatives in terms of the formal partial derivatives $\partial f/\partial x$ , $\partial f/\partial y$ , and $\partial f/\partial z$ .) 
-
-## CHAPTER 13 Questions to Guide Your Review
 
 10. If $z = x + f(u)$ , where $u = xy$ , show that 
 
@@ -6235,6 +6187,14 @@ $$
 \left(\frac {\partial w}{\partial y}\right) _ {x} = - \frac {\frac {\partial f}{\partial z} \frac {\partial g}{\partial y} - \frac {\partial f}{\partial y} \frac {\partial g}{\partial z}}{\frac {\partial f}{\partial z} \frac {\partial g}{\partial w} - \frac {\partial f}{\partial w} \frac {\partial g}{\partial z}}.
 $$
 
+## CHAPTER 13 Questions to Guide Your Review
+
+1. What is a real-valued function of two independent variables? Three independent variables? Give examples. 
+
+2. What does it mean for sets in the plane or in space to be open? Closed? Give examples. Give examples of sets that are neither open nor closed. 
+
+3. How can you display the values of a function $f(x, y)$ of two independent variables graphically? How do you do the same for a function $f(x, y, z)$ of three independent variables? 
+
 4. What does it mean for a function $f(x, y)$ to have limit $L$ as $(x, y) \to (x_0, y_0)$ ? What are the basic properties of limits of functions of two independent variables? 
 
 5. When is a function of two (three) independent variables continuous at a point in its domain? Give examples of functions that are continuous at some points but not others. 
@@ -6261,36 +6221,6 @@ $$
 
 16. How do you find the tangent line at a point on a level curve of a differentiable function $f(x, y)$ ? How do you find the tangent 
 
-In Exercises 1–4, find the domain and range of the given function and identify its level curves. Sketch a typical level curve. 
-
-## CHAPTER 13 Practice Exercises
-
-## Domain, Range, and Level Curves
-
-1. $f(x,y) = 9x^{2} + y^{2}$ 2. $f(x,y) = e^{x + y}$ 3. $g(x,y) = 1 / xy$ 4. $g(x,y) = \sqrt{x^2 - y}$ 
-
-In Exercises 5–8, find the domain and range of the given function and identify its level surfaces. Sketch a typical level surface. 
-
-$$
-5. f (x, y, z) = x ^ {2} + y ^ {2} - z \quad 6. g (x, y, z) = x ^ {2} + 4 y ^ {2} + 9 z ^ {2}
-$$
-
-7. $h(x,y,z)=\frac{1}{x^{2}+y^{2}+z^{2}}$ 8. $k(x,y,z)=\frac{1}{x^{2}+y^{2}+z^{2}+1}$ 
-
-Evaluating Limits 
-
-Find the limits in Exercises 9–14. 
-
-9. $\lim_{(x,y)\to (\pi ,\ln 2)}e^{y}\cos x$ 10. $\lim_{(x,y)\to (0,0)}\frac{2 + y}{x + \cos y}$ 
-
-11. $\lim_{(x,y)\to (1,1)}\frac{x - y}{x^2 - y^2}$ 
-
-12. $\lim_{(x,y)\to (1,1)}\frac{x^3y^3 - 1}{xy - 1}$ 
-
-13. $\lim_{P\to (1, - 1,e)}\ln |x + y + z|$ 
-
-14. $\lim_{P\to (1, - 1, - 1)}\arctan (x + y + z)$ 
-
 plane and normal line at a point on a level surface of a differentiable function $f(x, y, z)$ ? Give examples. 
 
 17. How can you use directional derivatives to estimate change? 
@@ -6313,9 +6243,51 @@ plane and normal line at a point on a level surface of a differentiable function
 
 26. If $w = f(x, y, z)$ , where the variables x, y, and z are constrained by an equation $g(x, y, z) = 0$ , what is the meaning of the notation $(\partial w / \partial x)_y$ ? How can an arrow diagram help you calculate this partial derivative with constrained variables? Give examples. 
 
+## CHAPTER 13 Practice Exercises
+
+### Domain, Range, and Level Curves
+
+In Exercises 1–4, find the domain and range of the given function and identify its level curves. Sketch a typical level curve. 
+
+1. $f(x,y) = 9x^{2} + y^{2}$
+
+2. $f(x,y) = e^{x + y}$
+
+3. $g(x,y) = 1 / xy$
+
+4. $g(x,y) = \sqrt{x^2 - y}$
+
+In Exercises 5–8, find the domain and range of the given function and identify its level surfaces. Sketch a typical level surface. 
+
+5. $f (x, y, z) = x ^ {2} + y ^ {2} - z$
+
+6. $g (x, y, z) = x ^ {2} + 4 y ^ {2} + 9 z ^ {2}$
+
+7. $h(x,y,z)=\frac{1}{x^{2}+y^{2}+z^{2}}$
+
+8. $k(x,y,z)=\frac{1}{x^{2}+y^{2}+z^{2}+1}$
+
+Evaluating Limits 
+
+Find the limits in Exercises 9–14. 
+
+9. $\lim_{(x,y)\to (\pi ,\ln 2)}e^{y}\cos x$
+
+10. $\lim_{(x,y)\to (0,0)}\frac{2 + y}{x + \cos y}$
+
+11. $\lim_{(x,y)\to (1,1)}\frac{x - y}{x^2 - y^2}$ 
+
+12. $\lim_{(x,y)\to (1,1)}\frac{x^3y^3 - 1}{xy - 1}$ 
+
+13. $\lim_{P\to (1, - 1,e)}\ln |x + y + z|$ 
+
+14. $\lim_{P\to (1, - 1, - 1)}\arctan (x + y + z)$ 
+
 By considering different paths of approach, show that the limits in Exercises 15 and 16 do not exist. 
 
-15. $\lim_{\substack{(x,y)\to (0,0)\\ y\neq x^2}}\frac{y}{x^2 - y}$ 16. $\lim_{\substack{(x,y)\to (0,0)\\ xy\neq 0}}\frac{x^2 + y^2}{xy}$ 
+15. $\lim_{\substack{(x,y)\to (0,0)\\ y\neq x^2}}\frac{y}{x^2 - y}$
+
+16. $\lim_{\substack{(x,y)\to (0,0)\\ xy\neq 0}}\frac{x^2 + y^2}{xy}$
 
 17. Continuous extension Let $f(x, y) = (x^2 - y^2) / (x^2 + y^2)$ for $(x, y) \neq (0, 0)$ . Is it possible to define $f(0, 0)$ in a way that makes $f$ continuous at the origin? Why? 
 
@@ -6343,17 +6315,19 @@ In Exercises 19–24, find the partial derivative of the function with respect t
 
 24. $f(r,l,T,w)=\frac{1}{2rl}\sqrt{\frac{T}{\pi w}}$ 
 
-## Second-Order Partials
+### Second-Order Partials
 
 Find the second-order partial derivatives of the functions in Exercises 25–28. 
 
-25. $g(x,y) = y + \frac{x}{y}$ 26. $g(x,y) = e^{x} + y\sin x$ 
+25. $g(x,y) = y + \frac{x}{y}$
+
+26. $g(x,y) = e^{x} + y\sin x$
 
 27. $f(x,y) = x + xy - 5x^{3} + \ln (x^{2} + 1)$ 
 
 28. $f(x,y) = y^{2} - 3xy + \cos y + 7e^{y}$ 
 
-## Chain Rule Calculations
+### Chain Rule Calculations
 
 29. Find $dw / dt$ at $t = 0$ if $w = \sin (xy + \pi)$ , $x = e^t$ , and $y = \ln (t + 1)$ . 
 
@@ -6371,7 +6345,7 @@ $$
 \frac {\partial w}{\partial x} - 5 \frac {\partial w}{\partial y} = 0.
 $$
 
-## Implicit Differentiation
+### Implicit Differentiation
 
 Assuming that the equations in Exercises 35 and 36 define $y$ as a differentiable function of $x$ , find the value of $dy / dx$ at point $P$ . 
 
@@ -6381,7 +6355,7 @@ $$
 
 36. $2xy + e^{x + y} - 2 = 0, P(0,\ln 2)$ 
 
-## Directional Derivatives
+### Directional Derivatives
 
 In Exercises 37–40, find the directions in which f increases and decreases most rapidly at $P_{0}$ and find the derivative of f in each direction. Also, find the derivative of f at $P_{0}$ in the direction of the vector v. 
 
@@ -6429,7 +6403,7 @@ c. The directional derivative of $f$ at $(x_0, y_0)$ has its greatest value in t
 
 d. At $(x_0, y_0)$ , vector $\nabla f$ is normal to the curve $f(x, y) = f(x_0, y_0)$ . 
 
-## Gradients, Tangent Planes, and Normal Lines
+### Gradients, Tangent Planes, and Normal Lines
 
 In Exercises 45 and 46, sketch the surface $f(x,y,z) = c$ together with $\nabla f$ at the given points. 
 
@@ -6457,21 +6431,15 @@ $$
 4 9. z = \ln (x ^ {2} + y ^ {2}), (0, 1, 0)
 $$
 
-$$
-\mathbf {5 0 .} z = 1 / (x ^ {2} + y ^ {2}), \quad (1, 1, 1 / 2)
-$$
+50. $z = 1 / (x ^ {2} + y ^ {2}), \quad (1, 1, 1 / 2)$
 
 In Exercises 51 and 52, find equations for the lines that are tangent and normal to the level curve $f(x, y) = c$ at the point $P_{0}$ . Then sketch the lines and level curve together with $\nabla f$ at $P_{0}$ . 
 
-$$
-\mathbf {5 1 .} y - \sin x = 1, P _ {0} (\pi , 1)
-$$
+51. $y - \sin x = 1, P _ {0} (\pi , 1)$
 
-$$
-\mathbf {5 2 .} \frac {y ^ {2}}{2} - \frac {x ^ {2}}{2} = \frac {3}{2}, P _ {0} (1, 2)
-$$
+52. $\frac {y ^ {2}}{2} - \frac {x ^ {2}}{2} = \frac {3}{2}, P _ {0} (1, 2)$
 
-## Tangent Lines to Curves
+### Tangent Lines to Curves
 
 In Exercises 53 and 54, find parametric equations for the line that is tangent to the curve of intersection of the surfaces at the given point. 
 
@@ -6483,7 +6451,7 @@ Point: $(1,1,1/2)$
 
 Point: $(1/2,1,1/2)$ 
 
-## Linearizations
+### Linearizations
 
 In Exercises 55 and 56, find the linearization $L(x, y)$ of the function $f(x, y)$ at the point $P_{0}$ . Then find an upper bound for the magnitude of the error E in the approximation $f(x, y) \approx L(x, y)$ over the rectangle R. 
 
@@ -6493,9 +6461,7 @@ $$
 R: \left| x - \frac {\pi}{4} \right| \leq 0. 1, \left| y - \frac {\pi}{4} \right| \leq 0. 1
 $$
 
-$$
-\mathbf {5 6 .} f (x, y) = x y - 3 y ^ {2} + 2, \quad P _ {0} (1, 1)
-$$
+56. $f (x, y) = x y - 3 y ^ {2} + 2, \quad P _ {0} (1, 1)$
 
 $$
 R \colon | x - 1 | \leq 0. 1, | y - 1 | \leq 0. 2
@@ -6539,7 +6505,7 @@ $$
 
 which gives B in square centimeters when w is measured in kilograms and h in centimeters. You are about to calculate the cardiac index of a person 180 cm tall, weighing 70 kg, with cardiac output of 7 L/min. Which will have a greater effect on the calculation, a 1-kg error in measuring the weight or a 1-cm error in measuring the height? 
 
-## Local Extrema
+### Local Extrema
 
 Test the functions in Exercises 65–70 for local maxima and minima and saddle points. Find each function's value at these points. 
 
@@ -6563,7 +6529,7 @@ $$
 f (x, y) = x ^ {4} - 8 x ^ {2} + 3 y ^ {2} - 6 y
 $$
 
-## Absolute Extrema
+### Absolute Extrema
 
 In Exercises 71–78, find the absolute maximum and minimum values of f on the region R. 
 
@@ -6589,11 +6555,11 @@ $$
 
 R: The square region bounded by the coordinate axes and the lines x = 2, y = 2 in the first quadrant 
 
-## 75. $f(x,y) = x^{2} - y^{2} - 2x + 4y$
+### 75. $f(x,y) = x^{2} - y^{2} - 2x + 4y$
 
 R: The triangular region bounded below by the x-axis, above by the line $y = x + 2$ , and on the right by the line x = 2 
 
-## 76. $f(x,y)=4xy-x^{4}-y^{4}+16$
+### 76. $f(x,y)=4xy-x^{4}-y^{4}+16$
 
 R: The triangular region bounded below by the line y = -2, above by the line y = x, and on the right by the line x = 2 
 
@@ -6601,7 +6567,7 @@ R: The square region enclosed by the lines $x = \pm1$ and $y = \pm1$
 
 78. $f(x,y) = x^{3} + 3xy + y^{3} + 1$ R: The square region enclosed by the lines $x = \pm 1$ and $y = \pm 1$ 
 
-## Lagrange Multipliers
+### Lagrange Multipliers
 
 79. Extrema on a circle Find the extreme values of $f(x, y) = x^3 + y^2$ on the circle $x^2 + y^2 = 1$ . 
 
@@ -6623,7 +6589,7 @@ R: The square region enclosed by the lines $x = \pm1$ and $y = \pm1$
 
 88. Minimum distance to origin on curve of intersecting plane and cone Find the point closest to the origin on the curve of intersection of the plane $x + y + z = 1$ and the cone $z^{2} = 2x^{2} + 2y^{2}$ . 
 
-## Theory and Examples
+### Theory and Examples
 
 89. Let $w = f(r, \theta)$ , $r = \sqrt{x^2 + y^2}$ , and $\theta = \tan^{-1}(y / x)$ . Find $\partial w / \partial x$ and $\partial w / \partial y$ , and express your answers in terms of $r$ and $\theta$ . 
 
@@ -6695,7 +6661,7 @@ b. Find a vector normal to the surface at $(2, -3, 3)$ . Add the vector to your 
 
 c. Find equations for the tangent plane and the normal line at $(2, -3, 3)$ . 
 
-## Partial Derivatives with Constrained Variables
+### Partial Derivatives with Constrained Variables
 
 In Exercises 101 and 102, begin by drawing a diagram that shows the relations among the variables. 
 
@@ -6711,9 +6677,9 @@ $$
 
 ## CHAPTER 13
 
-## Additional and Advanced Exercises
+### Additional and Advanced Exercises
 
-## Partial Derivatives
+### Partial Derivatives
 
 1. Function with saddle at the origin If you did Exercise 64 in Section 13.2, you know that the function 
 
@@ -6723,7 +6689,7 @@ $$
 
 (see the accompanying figure) is continuous at $(0,0)$ . Find $f_{xy}(0,0)$ and $f_{yx}(0,0)$ . 
 
-![[d0c1e214288d4a2a5b4352c87225b9099d2dfc657ac63b1cd564f9ac352dc2b3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d0c1e214288d4a2a5b4352c87225b9099d2dfc657ac63b1cd564f9ac352dc2b3.jpg)
 
 
 2. Finding a function from second partials Find a function $w = f(x, y)$ whose first partial derivatives are $\partial w / \partial x = 1 + e^x \cos y$ and $\partial w / \partial y = 2y - e^x \sin y$ and whose value at the point (ln 2, 0) is ln 2. 
@@ -6778,7 +6744,7 @@ b. $f_{r}(0,0)$
 
 c. $f_{\theta}(r,\theta)$ , $r \neq 0$ . 
 
-![[5523dedf8bc3d930be7ccfb52cd3bb2d13b058b3ea0e5b45f9b079e1dff221ef.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5523dedf8bc3d930be7ccfb52cd3bb2d13b058b3ea0e5b45f9b079e1dff221ef.jpg)
 
 
 Gradients and Tangents 
@@ -6831,7 +6797,7 @@ $$
 
 at $(0,-1,1)$ . 
 
-## Extreme Values
+### Extreme Values
 
 11. Extrema on a surface Show that the only possible maxima and minima of $z$ on the surface $z = x^3 + y^3 - 9xy + 27$ occur at (0,0) and (3,3). Show that neither a maximum nor a minimum occurs at (0,0). Determine whether $z$ has a maximum or a minimum at (3,3). 
 
@@ -6847,7 +6813,7 @@ at a point in the first octant.
 
 14. Minimum distance from a line to a parabola in xy-plane By minimizing the function $f(x,y,u,v)=(x-u)^{2}+(y-v)^{2}$ subject to the constraints $y=x+1$ and $u=v^{2}$ , find the minimum distance in the xy-plane from the line $y=x+1$ to the parabola $y^{2}=x$ . 
 
-## Theory and Examples
+### Theory and Examples
 
 15. Boundedness of first partials implies continuity Prove the following theorem: If $f(x, y)$ is defined in an open region $R$ of the $xy$ -plane and if $f_x$ and $f_y$ are bounded on $R$ , then $f(x, y)$ is continuous on $R$ . (The assumption of boundedness is essential.) 
 
@@ -6895,7 +6861,7 @@ This equation is called the one-dimensional heat equation. The value of the posi
 
 ## CHAPTER 13 Technology Application Projects
 
-## Mathematica/Maple Projects
+### Mathematica/Maple Projects
 
 Projects can be found within MyLab Math. 
 
@@ -6909,12 +6875,3 @@ The path of a skateboarder is introduced, first on a level plane, then on a ramp
 Fit a line to a set of numerical data points by choosing the line that minimizes the sum of the squares of the vertical distances from the points to the line. 
 
 - Lagrange Goes Skateboarding: How High Does He Go? Revisit and analyze the skateboarders' adventures for maximum and minimum heights from both a graphical and analytic perspective using Lagrange multipliers. 
-
-# 14 Multiple Integrals
-
-![[8b1797366df7b9ab72ebe30a9f09e6ff8d3aaecc1fd1ccb746c7d92156a30088.jpg|image]]
-
-
-OVERVIEW In this chapter we define the double integral of a function of two variables $f(x, y)$ over a region in the plane as the limit of approximating Riemann sums. Just as a single integral can represent signed area, so can a double integral represent signed volume. Double integrals can be evaluated using the Fundamental Theorem of Calculus studied in Section 5.4, but now the evaluations are done twice by integrating with respect to each of the variables x and y in turn. Double integrals can be used to find areas of more general regions in the plane than those encountered in Chapter 5. Moreover, just as the Substitution Rule could simplify finding single integrals, we can sometimes use polar coordinates to simplify computing a double integral. We study more general substitutions for evaluating double integrals as well. 
-
-We also define the triple integral of a function of three variables $f(x, y, z)$ over a region in space. Triple integrals can be used to find volumes of still more general regions in space, and their evaluation is like that of double integrals with yet a third evaluation. Cylindrical or spherical coordinates can sometimes be used to simplify the calculation of a triple integral, and we investigate those techniques. Double and triple integrals have a number of applications, such as calculating the average value of a multivariable function, and finding moments and centers of mass.

@@ -7,13 +7,20 @@ order: 11
 
 <!-- Extracted from Thomas-calculus Markdown source; chapters 1-17 only. -->
 
+![教材插图](/books/thomas-calculus/assets/c1d4de438c1fb68d22df1feb9ffc6e258e24cee4cf6009697d430eec49fb4739.jpg)
+
+
+OVERVIEW In this chapter we begin the study of multivariable calculus. To apply calculus in many real-world situations, we introduce three-dimensional coordinate systems and vectors. We establish coordinates in space by adding a third axis that measures distance above and below the xy-plane. Then we define vectors, which provide simple ways to introduce equations for lines, planes, curves, and surfaces in space.
+
+
+
 ## 11.1 Three-Dimensional Coordinate Systems
 
 To locate a point in space, we use three mutually perpendicular coordinate axes, arranged as in Figure 11.1. The axes shown there make a right-handed coordinate frame. When you hold your right hand so that the fingers curl from the positive x-axis toward the positive y-axis, your thumb points along the positive z-axis. So when you look down on the xyplane from the positive direction of the z-axis, positive angles in the plane are measured counterclockwise from the positive x-axis and around the positive z-axis. (In a left-handed coordinate frame, the z-axis would point downward in Figure 11.1, and angles in the plane would be positive when measured clockwise from the positive x-axis. Right-handed and left-handed coordinate frames are not equivalent.) 
 
 The Cartesian coordinates ( ) x y z,  ,  of a point P in space are the values at which the planes through P perpendicular to the axes cut the axes. Cartesian coordinates for space are also called rectangular coordinates because the axes that define them meet at right angles. Points on the x-axis have y- and z-coordinates equal to zero. That is, they have coordinates of the form ( ) x, 0, 0 . Similarly, points on the y-axis have coordinates of the form ( ) 0,  , 0y , and points on the z-axis have coordinates of the form ( ) 0, 0, z . 
 
-![[1f8582996f62589cd1a007675190e398f986deee98f61f41854ca5c9b0199c5a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1f8582996f62589cd1a007675190e398f986deee98f61f41854ca5c9b0199c5a.jpg)
 
 
 
@@ -26,14 +33,14 @@ The three coordinate planes x = = 0,  0, y and z = 0 divide space into eight ce
 
 The points in a plane perpendicular to the x-axis all have the same x-coordinate, this being the number at which that plane cuts the x-axis. The y- and z-coordinates can be any numbers. Similarly, the points in a plane perpendicular to the y-axis have a common y-coordinate, and the points in a plane perpendicular to the z-axis have a common zcoordinate. To write equations for these planes, we name the common coordinate’s value. The plane x = 2 is the plane perpendicular to the x-axis at x = 2. The plane y = 3 is the plane perpendicular to the y-axis at y = 3. The plane z = 5 is the plane perpendicular to the z-axis at z = 5. Figure 11.3 shows the planes x = =2,  3,y and $z = 5 ,$ together with their intersection point 2, 3, 5( ). 
 
-![[e646976274789f3397036c9dad4667c2914023d992bbaefa5dacd1356a22dc91.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e646976274789f3397036c9dad4667c2914023d992bbaefa5dacd1356a22dc91.jpg)
 
 
 
 FIGURE 11.2 The planes x = = 0,  0 y , and $z = 0$ divide space into eight octants.
 
 
-![[5e617f19482e1167046a6dffd186197fef0ca6b4f4835af71e54e6a826cdb65b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5e617f19482e1167046a6dffd186197fef0ca6b4f4835af71e54e6a826cdb65b.jpg)
 
 
 
@@ -52,7 +59,7 @@ The half-space consisting of the points on and above the xy-plane.
 
 (b) $x = - 3$ 
 
-![[ad9d1356c466ea07317658a098802bb1641299d219d6d85d93cfa945639ba9ec.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ad9d1356c466ea07317658a098802bb1641299d219d6d85d93cfa945639ba9ec.jpg)
 
 
 The plane perpendicular to the x-axis at $x = - 3$ . This plane lies parallel to the yz-plane and 3 units behind it. 
@@ -83,21 +90,21 @@ $$
 
 **Solution** The points lie in the horizontal plane $z = 3$ and, in this plane, make up the circle $x ^ { 2 } + y ^ { 2 } = 4 $ . We call this set of points “the circle $x ^ { 2 } + y ^ { 2 } = 4 $ in the plane $z = 3 "$ or, more simply, “the circle $x ^ { 2 } + y ^ { 2 } = 4 , z = 3 ^ { , , }$ (Figure 11.4). ■ 
 
-![[cc4637e99670ff559979f4c208ea361ffcca6e3fb612ce1a92e09cab56d916f1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cc4637e99670ff559979f4c208ea361ffcca6e3fb612ce1a92e09cab56d916f1.jpg)
 
 
 
 FIGURE 11.5 We find the distance between $P _ { 1 }$ and $P _ { 2 }$ by applying the Pythagorean theorem to the right triangles $P _ { 1 } A B$ and $P _ { 1 } B P _ { 2 }$
 
 
-![[450e939b89e3285b58b67068ccd3ecc6aaaec2ddc3e2d92d9d4b547b2e37b657.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/450e939b89e3285b58b67068ccd3ecc6aaaec2ddc3e2d92d9d4b547b2e37b657.jpg)
 
 
 
 FIGURE 11.6 The sphere of radius a centered at the point $( x _ { 0 } , y _ { 0 } , z _ { 0 } )$
 
 
-## Distance and Spheres in Space
+### Distance and Spheres in Space
 
 The formula for the distance between two points in the xy-plane extends to points in space. 
 
@@ -195,29 +202,23 @@ The lower hemisphere cut from the sphere $x ^ { 2 } + y ^ { 2 } + z ^ { 2 } = 4 
 
 Just as polar coordinates give another way to locate points in the xy-plane (Section 10.3), alternative coordinate systems, different from the Cartesian coordinate system developed here, exist for three-dimensional space. We examine two of these coordinate systems in Section 14.7. 
 
-## EXERCISES 11.1
+### EXERCISES 11.1
 
-## Geometric Interpretations of Equations
+#### Geometric Interpretations of Equations
 
 In Exercises 1–16, give a geometric description of the set of points in space whose coordinates satisfy the given pairs of equations. 
 
 1. $x = 2 , \ y = 3$ 
 
-$$
-2. x = - 1, z = 0
-$$
+2. $x = - 1, z = 0$
 
 3. $y = 0 , ~ z = 0$ 
 
-$$
-4. x = 1, y = 0
-$$
+4. $x = 1, y = 0$
 
 5. $x ^ { 2 } + y ^ { 2 } = 4 , z = 0$ 
 
-$$
-6. x ^ {2} + y ^ {2} = 4, z = - 2
-$$
+6. $x ^ {2} + y ^ {2} = 4, z = - 2$
 
 7. $x ^ { 2 } + z ^ { 2 } = 4 , \ y = 0$ 
 
@@ -239,7 +240,7 @@ $$
 
 16. $z = y ^ { 2 } , x = 1$ 
 
-## Geometric Interpretations of Inequalities and Equations
+#### Geometric Interpretations of Inequalities and Equations
 
 In Exercises 17–24, describe the sets of points in space whose coordinates satisfy the given inequalities or combinations of equations and inequalities. 
 
@@ -275,7 +276,7 @@ b. $x \leq y ^ { 2 } , 0 \leq z \leq 2$
 
 b. $z = y ^ { 3 } , \ x = 2$ 
 
-## Distance
+#### Distance
 
 In Exercises 25–30, find the distance between points $P _ { 1 }$ and $P _ { 2 }$ . 
 
@@ -321,7 +322,7 @@ In Exercises 35–44, describe the given set with a single equation or with a pa
 
 44. The set of points in space that lie 2 units from the point ( ) 0, 0, 1 and, at the same time, 2 units from the point ( ) 0, 0,  1 − 
 
-## Inequalities to Describe Sets of Points
+#### Inequalities to Describe Sets of Points
 
 Write inequalities to describe the sets in Exercises 45–50. 
 
@@ -337,7 +338,7 @@ Write inequalities to describe the sets in Exercises 45–50.
 
 50. The closed region bounded by the spheres of radius 1 and radius 2 centered at the origin. (Closed means the spheres are to be included. Had we wanted the spheres left out, we would have asked for the open region bounded by the spheres. This is analogous to the way we use closed and open to describe intervals: closed means endpoints included, open means endpoints left out. Closed sets include boundaries; open sets leave them out.) 
 
-## Spheres
+#### Spheres
 
 Find the center C and the radius a for the spheres in Exercises 51–60. 
 
@@ -365,7 +366,7 @@ Find equations for the spheres whose centers and radii are given in Exercises 61
 
 <table><tr><td></td><td>Center</td><td>Radius</td></tr><tr><td>61.</td><td>(1, 2, 3)</td><td><eq>\sqrt{14}</eq></td></tr><tr><td>62.</td><td>(0, -1, 5)</td><td>2</td></tr><tr><td>63.</td><td><eq>\left(-1, \frac{1}{2}, -\frac{2}{3}\right)</eq></td><td><eq>\frac{4}{9}</eq></td></tr><tr><td>64.</td><td>(0, -7, 0)</td><td>7</td></tr></table>
 
-## Theory and Examples
+#### Theory and Examples
 
 65. Find a formula for the distance from the point P x y z ( ) ,  ,  to the a. x-axis. b. y-axis. c. z-axis. 
 
@@ -389,8 +390,7 @@ Find equations for the spheres whose centers and radii are given in Exercises 61
 
 73. Find an equation for the set of points equidistant from the point ( ) 0, 0, 2 and the x-axis. 
 
-74. Find an equation for the set of points equidistant from the y-axis and the plane z 
- 6. 
+74. Find an equation for the set of points equidistant from the y-axis and the plane $z = 6$.
 
 75. Find an equation for the set of points equidistant from the a. xy-plane and the yz-plane. b. x-axis and the y-axis. 
 
@@ -400,10 +400,10 @@ Find equations for the spheres whose centers and radii are given in Exercises 61
 
 Some of the things we measure are determined simply by their magnitudes. To record mass, length, or time, for example, we need only write down a number and name an appropriate unit of measure. We need more information to describe a force, displacement, or velocity. To describe a force, we need to record the direction in which it acts as well as how large it is. To describe a body’s displacement, we have to say in what direction it moved as well as how far. To describe a body’s velocity, we have to know its direction of motion, as well as how fast it is going. In this section we show how to represent things that have both magnitude and direction in the plane or in space. 
 
-![[a5ae497f4a2f7915695738b1ebf9eef164db4030c07f311e6909a326bd8eb0b9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a5ae497f4a2f7915695738b1ebf9eef164db4030c07f311e6909a326bd8eb0b9.jpg)
 
 
-## Component Form
+### Component Form
 
 A quantity such as force, displacement, or velocity is called a vector and is represented by a directed line segment (Figure 11.7). The arrow points in the direction of the action and its length gives the magnitude of the action in terms of a suitably chosen unit. For example, a force vector points in the direction in which the force acts and its length is a measure of the force’s strength; a velocity vector points in the direction of motion and its length is the speed of the moving object. Figure 11.8 displays the velocity vector v at a specific location for a particle moving along a path in the plane or in space. (This application of vectors is studied in Chapter 12.) 
 
@@ -411,13 +411,13 @@ A quantity such as force, displacement, or velocity is called a vector and is re
 FIGURE 11.7 The directed line segment AB is called a vector.
 
 
-![[793ee13be41257071045aa9f3b2cbe7fd7a60e8209d1e0ec471b10628cf802a8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/793ee13be41257071045aa9f3b2cbe7fd7a60e8209d1e0ec471b10628cf802a8.jpg)
 
 
-![[d32b2b7960d88488a6364861cc08f539ab817ee8a733df3dc0ec065909f211e6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d32b2b7960d88488a6364861cc08f539ab817ee8a733df3dc0ec065909f211e6.jpg)
 
 
-![[aba811e20e8ed5b93b602f1f30411d73704c6eb175071ff322877de28d6d3eb7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/aba811e20e8ed5b93b602f1f30411d73704c6eb175071ff322877de28d6d3eb7.jpg)
 
 
 
@@ -434,14 +434,14 @@ FIGURE 11.8 The velocity vector of a particle moving along a path (a) in the pla
 
 The arrows we use when we draw vectors are understood to represent the same vector if they have the same length, are parallel, and point in the same direction (Figure 11.9) regardless of the initial point. 
 
-![[368503d718f570fb0de8e56aee3a9ca8442051dc5a0dd1b7edfe09373b4caf38.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/368503d718f570fb0de8e56aee3a9ca8442051dc5a0dd1b7edfe09373b4caf38.jpg)
 
 
 
 FIGURE 11.10 A vector $\overrightarrow { P Q }$ in standard position has its initial point at the origin. The directed line segments $\overrightarrow { P Q }$ and v are parallel and have the same length.
 
 
-## HISTORICAL BIOGRAPHY Carl Friedrich Gauss (1777–1855)
+**HISTORICAL BIOGRAPHY Carl Friedrich Gauss (1777–1855)**
 
 Gauss was born in Brunswick, Germany. The list of Gauss’s accomplishments in science and mathematics is astonishing, ranging from the invention of the electric telegraph (with Wilhelm Weber in 1833) to the development of a theory of planetary orbits and the development of an accurate theory of non-Euclidean geometry. 
 
@@ -489,21 +489,21 @@ $$
 
 The only vector with length 0 is the zero vector $\mathbf { 0 } = \langle 0 , 0 \rangle$ or $\mathbf { 0 } = \langle 0 , 0 , 0 \rangle$ . This vector is also the only vector with no specific direction. 
 
-![[48ce5414f09939240d5b53841a0734cacbf57d9c96aed99db51fdd13be5c5c10.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/48ce5414f09939240d5b53841a0734cacbf57d9c96aed99db51fdd13be5c5c10.jpg)
 
 
 
 FIGURE 11.11 The force pulling the cart forward is represented by the vector F whose horizontal component is the effective force (Example 2).
 
 
-![[af29feedf184fc28fd7bd46a3116084af53fba546b3d46e191821175201cf408.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/af29feedf184fc28fd7bd46a3116084af53fba546b3d46e191821175201cf408.jpg)
 
 
 
 (a)
 
 
-![[846e198241fb4bba243ce1dfff61dedd08acf14ddc83562e28a1b4b98d5c002a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/846e198241fb4bba243ce1dfff61dedd08acf14ddc83562e28a1b4b98d5c002a.jpg)
 
 
 
@@ -512,7 +512,7 @@ FIGURE 11.12 (a) Geometric interpretation of the vector sum. (b) The parallelogr
 
 **EXAMPLE 1** Find the (a) component form and (b) length of the vector with initial point $P ( - 3 , 4 , 1 )$ ) and terminal point Q( ) −5, 2, 2 . 
 
-## **Solution**
+**Solution**
 
 (a) The vector ${ \bf v } = \overrightarrow { P Q }$ has components 
 
@@ -548,7 +548,7 @@ $$
 
 Notice that F is a two-dimensional vector. 
 
-## Vector Algebra Operations
+### Vector Algebra Operations
 
 Two principal operations involving vectors are vector addition and scalar multiplication. A scalar is simply a real number; we call it a scalar when we want to draw attention to the differences between numbers and vectors. Scalars can be positive, negative, or zero and are used to “scale” a vector by multiplication. 
 
@@ -574,22 +574,22 @@ The definition of vector addition is illustrated geometrically for planar vector
 (b)
 
 
-![[f5c08eb7bf4e55f3c4d0a9fe10838f70bc2a985fc4663c28787b514388a48870.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f5c08eb7bf4e55f3c4d0a9fe10838f70bc2a985fc4663c28787b514388a48870.jpg)
 
 
-![[2a8ad00045e05841b1491f3f492169d93525ede6499e21634da001170e6fbdfc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2a8ad00045e05841b1491f3f492169d93525ede6499e21634da001170e6fbdfc.jpg)
 
 
 FIGURE 11.13 (a) Scalar multiples of u. (b) Scalar multiples of a vector u in standard position. 
 
-![[abbe6c0ce6387567d7ac988eb582bb073fd98a0602cbf56e20022fda6f2c45e5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/abbe6c0ce6387567d7ac988eb582bb073fd98a0602cbf56e20022fda6f2c45e5.jpg)
 
 
 
 (a)
 
 
-![[fa836c34f4ec3fd486d3edc18848600b2119e6a7e52032ed3ed03d09aed7ee83.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fa836c34f4ec3fd486d3edc18848600b2119e6a7e52032ed3ed03d09aed7ee83.jpg)
 
 
 
@@ -670,16 +670,16 @@ Definition of vector addition
 
 When three or more space vectors lie in the same plane, we say they are coplanar vectors. For example, the vectors u, v, and $\mathbf { u } + \mathbf { v }$ are always coplanar. 
 
-![[ffa6b82e1062312af5595064411876d5e7565752634057408cd5d8a94d9a824f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ffa6b82e1062312af5595064411876d5e7565752634057408cd5d8a94d9a824f.jpg)
 
 
 
 FIGURE 11.15 The vector from $P _ { 1 }$ to $P _ { 2 }$ is $\overline { { P _ { 1 } P _ { 2 } } } = ( x _ { 2 } - x _ { 1 } ) { \bf i } + ( y _ { 2 } - y _ { 1 } ) { \bf j } +$ $( z _ { 2 } \mathrm { ~ - ~ } z _ { 1 } ) \mathbf { k } .$
 
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
-## Hermann Grassmann
+### Hermann Grassmann
 
 (1809–1877) 
 
@@ -687,7 +687,7 @@ Grassmann was born in Prussia (modern-day Poland) and attended the University of
 
 To know more, visit the companion Website. 
 
-## Unit Vectors
+### Unit Vectors
 
 A vector v of length 1 is called a unit vector. The standard unit vectors are 
 
@@ -757,7 +757,7 @@ If $\mathbf { \dot { \textbf { v } } } \neq \mathbf { \textbf { 0 } }$ , then
 
 **Solution** The force vector has magnitude 6 and direction ${ \frac { \mathbf { v } } { | \mathbf { v } | } } ,$ so 
 
-![[608b4077ee2b22a96278b4afe10b9c5b284a188ec97286fcb1791c0394175fca.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/608b4077ee2b22a96278b4afe10b9c5b284a188ec97286fcb1791c0394175fca.jpg)
 
 
 
@@ -768,7 +768,7 @@ $$
 \begin{array}{l} \mathbf {F} = 6 \frac {\mathbf {v}}{| \mathbf {v} |} = 6 \frac {2 \mathbf {i} + 2 \mathbf {j} - \mathbf {k}}{\sqrt {2 ^ {2} + 2 ^ {2} + (- 1) ^ {2}}} = 6 \frac {2 \mathbf {i} + 2 \mathbf {j} - \mathbf {k}}{3} \\ = 6 \left(\frac {2}{3} \mathbf {i} + \frac {2}{3} \mathbf {j} - \frac {1}{3} \mathbf {k}\right). \end{array}
 $$
 
-## Midpoint of a Line Segment
+### Midpoint of a Line Segment
 
 Vectors are often useful in geometry. For example, the coordinates of the midpoint of a line segment are found by averaging. 
 
@@ -790,7 +790,7 @@ $$
 \left(\frac {3 + 7}{2}, \frac {- 2 + 4}{2}, \frac {0 + 4}{2}\right) = (5, 1, 2).
 $$
 
-![[003d57b2f40ddba997dfbe8060e554026f3d9f18bb6b3d95e58cedd4a2e90738.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/003d57b2f40ddba997dfbe8060e554026f3d9f18bb6b3d95e58cedd4a2e90738.jpg)
 
 
 
@@ -801,14 +801,14 @@ NOT TO SCALE
 FIGURE 11.17 Vectors representing the velocities of the airplane u and tailwind v in Example 8.
 
 
-![[7920ab7779ddb353f908db992018092ef035291e87cb1fadf83ea1bbc9334b52.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7920ab7779ddb353f908db992018092ef035291e87cb1fadf83ea1bbc9334b52.jpg)
 
 
 
 (b)
 
 
-## Applications
+### Applications
 
 
 FIGURE 11.18 The suspended weight in Example 9.
@@ -836,7 +836,7 @@ $$
 \theta = \tan^ {- 1} \frac {5 5 \sqrt {3}}{8 5 5} \approx 6. 4 ^ {\circ}.
 $$
 
-![[ec5eefd417e33fb2711752700937b03fac9348315b4505d5538cedd220a181da.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ec5eefd417e33fb2711752700937b03fac9348315b4505d5538cedd220a181da.jpg)
 
 
 
@@ -891,7 +891,7 @@ $$
 \mathbf {F} _ {2} = \langle | \mathbf {F} _ {2} | \cos 4 0 ^ {\circ}, | \mathbf {F} _ {2} | \sin 4 0 ^ {\circ} \rangle \approx \langle 3 3. 0 8, 2 7. 7 6 \rangle .
 $$
 
-## Vectors in n Dimensions
+### Vectors in n Dimensions
 
 So far in this section, we introduced two- and three-dimensional vectors. We extend these notions by considering an n-dimensional vector $\mathbf { v } = \langle v _ { 1 } , v _ { 2 } , . . . , v _ { n } \rangle$ (an n-tuple of real numbers). We define 
 
@@ -929,42 +929,42 @@ In parts c, d, and e of Figure 11.19, we show different linear combinations of t
 
 In Figure 11.19f, the image corresponds to the difference $\mathbf { w } - \mathbf { v }$ , effectively inverting the grayscale in that image. 
 
-![[9ac23987633b872f527a153db2592f615c4f09db1fe52875bb14c76d081226b0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9ac23987633b872f527a153db2592f615c4f09db1fe52875bb14c76d081226b0.jpg)
 
 
 
 (a)
 
 
-![[71d2e0ab3c0b2ed72c3d610207f3d2d6c2e7718aa23bfdeccdbe1cc4185c2012.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/71d2e0ab3c0b2ed72c3d610207f3d2d6c2e7718aa23bfdeccdbe1cc4185c2012.jpg)
 
 
 
 (b)
 
 
-![[aa6fa7a4ea06197e800892c810073c5707f34177b4b4e155ca73b2b25f46ee63.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/aa6fa7a4ea06197e800892c810073c5707f34177b4b4e155ca73b2b25f46ee63.jpg)
 
 
 
 (c)
 
 
-![[c9b042d04ac039819d56dec3a638845ae22c7ec81f6f76bf154aadf7b7cdd05e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c9b042d04ac039819d56dec3a638845ae22c7ec81f6f76bf154aadf7b7cdd05e.jpg)
 
 
 
 (d)
 
 
-![[e9db030ed098b433f7712c09cd6d959895fa2a5eae95420a278b828452292cc2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e9db030ed098b433f7712c09cd6d959895fa2a5eae95420a278b828452292cc2.jpg)
 
 
 
 (e)
 
 
-![[4312d4f273d2ac80e27a06fffb1429b5b224caa043511bf016548df92df4ba5a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4312d4f273d2ac80e27a06fffb1429b5b224caa043511bf016548df92df4ba5a.jpg)
 
 
 
@@ -975,15 +975,14 @@ In Figure 11.19f, the image corresponds to the difference $\mathbf { w } - \math
 FIGURE 11.19 Each 400 400× pixel image corresponds to a 160,000-dimensional vector: (a) u; (b) $\begin{array} { r } { { \bf v } ; ( { \bf c } ) \frac { 1 } { 4 } { \bf u } + \frac { 3 } { 4 } { \bf v } ; ( { \bf d } ) \frac { 1 } { 2 } { \bf u } + \frac { 1 } { 2 } { \bf v } ; ( { \bf e } ) \frac { 3 } { 4 } { \bf u } + \frac { 1 } { 4 } { \bf v } ; ( \mathrm { f } ) { \bf w } - { \bf v } . } \end{array}$
 
 
-## EXERCISES
+### Exercises 11.2
+In Exercises 1–8, let $\mathbf { u } = \langle 3 , - 2 \rangle$ and $\mathbf { v } = \langle - 2 , 5 \rangle$ 〉. Find the (a) com- 5. $2  { \mathbf { u } } - 3  { \mathbf { v } }$ 
 
-## 11.2
+
 
 Vectors in the Plane 
 
 3. $\mathbf { u } + \mathbf { v }$ 
-
-In Exercises 1–8, let $\mathbf { u } = \langle 3 , - 2 \rangle$ and $\mathbf { v } = \langle - 2 , 5 \rangle$ 〉. Find the (a) com- 5. $2  { \mathbf { u } } - 3  { \mathbf { v } }$ 
 
 4. $\mathbf { u } - \mathbf { v }$ 
 
@@ -1011,7 +1010,7 @@ In Exercises 9–16, find the component form of the vector.
 
 16. The unit vector obtained by rotating the vector 〈 〉1, 0  by $1 3 5 ^ { \circ }$ counterclockwise about the origin 
 
-## Vectors in Space
+#### Vectors in Space
 
 In Exercises 17–22, express each vector in the form $\mathbf { w } = w _ { 1 } \mathbf { i } + w _ { 2 } \mathbf { j } + w _ { 3 } \mathbf { k } .$ 
 
@@ -1027,7 +1026,7 @@ In Exercises 17–22, express each vector in the form $\mathbf { w } = w _ { 1 }
 
 22. u v −2 3 + if u = 〈− 〉 1, 0, 2 and v = 〈 〉 1, 1, 1 
 
-## Geometric Representations
+#### Geometric Representations
 
 In Exercises 23 and 24, copy vectors u, v, and w head to tail as needed to sketch the indicated vector. 
 
@@ -1035,7 +1034,7 @@ In Exercises 23 and 24, copy vectors u, v, and w head to tail as needed to sketc
 23.
 
 
-![[af5e2577a44db4a150387038ac0a2fe19093a0222be1a183a4bddbd0c241dd1a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/af5e2577a44db4a150387038ac0a2fe19093a0222be1a183a4bddbd0c241dd1a.jpg)
 
 
 a. $\mathbf { u } + \mathbf { v }$ 
@@ -1044,14 +1043,16 @@ b. $\mathbf { u } + \mathbf { v } + \mathbf { w }$
 
 c. $\mathbf { u } - \mathbf { v }$ 
 
-![[66b992ed69dfdb87e61f38bd169f1bb9fe0db64637524c810986d2570b5d5804.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/66b992ed69dfdb87e61f38bd169f1bb9fe0db64637524c810986d2570b5d5804.jpg)
 
 
-## Length and Direction
+#### Length and Direction
 
 In Exercises 25–30, express each vector as a product of its length and direction. 
 
-25. $2 \mathbf { i } + \mathbf { j } - 2 \mathbf { k }$ 26. $9 { \bf i } - 2 { \bf j } + 6 { \bf k }$ 
+25. $2 \mathbf { i } + \mathbf { j } - 2 \mathbf { k }$
+
+26. $9 { \bf i } - 2 { \bf j } + 6 { \bf k }$
 
 27. 5k 
 
@@ -1073,7 +1074,7 @@ In Exercises 25–30, express each vector as a product of its length and directi
 
 34. Find a vector of magnitude 3 in the direction opposite to the direction of $\mathbf { v } = ( 1 / 2 ) \mathbf { i } - ( 1 / 2 ) \mathbf { j } - ( 1 / 2 ) \mathbf { k }$ 
 
-## Direction and Midpoints
+#### Direction and Midpoints
 
 In Exercises 35–38, find a. the direction of $\overrightarrow { P _ { 1 } P _ { 2 } }$ and b. the midpoint of line segment $P _ { 1 } P _ { 2 }$ 
 
@@ -1089,7 +1090,7 @@ In Exercises 35–38, find a. the direction of $\overrightarrow { P _ { 1 } P _ 
 
 40. $\mathrm { I f } \ \overline { { A B } } = - 7 \mathbf { i } + 3 \mathbf { j } + 8$ k  and A is the point $( - 2 , - 3 , 6 )$ , find B. 
 
-## Theory and Applications
+#### Theory and Applications
 
 41. Linear combination Let $\mathbf { u } = 2 \mathbf { i } + \mathbf { j } ,$ v i j = + , and w i j= − . Find scalars a and b such that $\mathbf { u } = a \mathbf { v } + b \mathbf { w } .$ 
 
@@ -1107,22 +1108,22 @@ When solving Exercises 45–50, you may need to use a calculator or a computer.
 
 47. Consider a 100-N weight suspended by two wires as shown in the accompanying figure. Find the magnitudes and components of the force vectors $\mathbf { F } _ { 1 }$ and $\mathbf { F } _ { 2 }$ . 
 
-![[fe769ef8fdc3c54a462999891ec42827ae940d34dfa169e4cf63f5cfd5a11dcc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fe769ef8fdc3c54a462999891ec42827ae940d34dfa169e4cf63f5cfd5a11dcc.jpg)
 
 
 48. Consider a 50-N weight suspended by two wires as shown in the accompanying figure. If the magnitude of vector $\mathbf { F } _ { 1 }$ is 35 N, find angle α and the magnitude of vector $\mathbf { F } _ { 2 } ^ { \phantom { \dagger } }$ 
 
-![[6e72d4326b28a491ee9a5f8ef6e42e94b4b3e3d6f4359480f33a1e553e4d2b11.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6e72d4326b28a491ee9a5f8ef6e42e94b4b3e3d6f4359480f33a1e553e4d2b11.jpg)
 
 
 49. Consider a w-N weight suspended by two wires as shown in the accompanying figure. If the magnitude of vector $\mathbf { F } _ { 2 }$ is 100 N, find w and the magnitude of vector $\mathbf { F } _ { 1 }$ 
 
-![[e1e557cc4e4843e63980ba573afc64bb687cbb02414030cd86932f72d2ba04f8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e1e557cc4e4843e63980ba573afc64bb687cbb02414030cd86932f72d2ba04f8.jpg)
 
 
 50. Consider a 25-N weight suspended by two wires as shown in the accompanying figure. If the magnitudes of vectors $\mathbf { F } _ { 1 }$ and $\mathbf { F } _ { 2 }$ are both 75 N, then angles α and β are equal. Find . α 
 
-![[f0d9f39fd45d70b7ea2fcfaa2f194efde5f2d0ed3a14809fa4f25af19361059e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f0d9f39fd45d70b7ea2fcfaa2f194efde5f2d0ed3a14809fa4f25af19361059e.jpg)
 
 
 51. Location A bird flies from its nest 5 km in the direction $6 0 ^ { \circ }$ north of east, where it stops to rest on a tree. It then flies 10 km in the direction due southeast and lands atop a telephone pole. Place an xy-coordinate system so that the origin is the bird’s nest, the x-axis points east, and the y-axis points north. 
@@ -1141,7 +1142,7 @@ b. Find the vector from C to the point that lies two-thirds of the way from C to
 
 c. Find the coordinates of the point in which the medians of ΔABC intersect. According to Exercise 27, Section 6.6, this point is the plate’s center of mass. (See the figure.) 
 
-![[312c3b2c778c7756f3b72f944e04563e4a9111e9e1f4154392515143ab310a4b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/312c3b2c778c7756f3b72f944e04563e4a9111e9e1f4154392515143ab310a4b.jpg)
 
 
 54. Find the vector from the origin to the point of intersection of the medians of the triangle whose vertices are 
@@ -1166,14 +1167,14 @@ In Exercises 60–65, let $\mathbf { u } = \langle 2 , - 3 , 0 , 1 \rangle$ and 
 
 ## 11.3 The Dot Product
 
-![[26fc76e33c154494cbb88ca46e4700ea91a7fe0b51f6dfdc29541e45f808f1d1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/26fc76e33c154494cbb88ca46e4700ea91a7fe0b51f6dfdc29541e45f808f1d1.jpg)
 
 
 
 FIGURE 11.20 The magnitude of the force F in the direction of vector v is the length F cos θ of the projection of F onto v.
 
 
-![[4ec9f253b08e39e23ab6718fb100ab8d42a01a418574b215fc5b10dd6156c3fc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4ec9f253b08e39e23ab6718fb100ab8d42a01a418574b215fc5b10dd6156c3fc.jpg)
 
 
 
@@ -1184,7 +1185,7 @@ If a force F is applied to a particle moving along a path, we often need to know
 
 In this section we show how to calculate easily the angle between two vectors directly from their components. A key part of the calculation is an expression called the dot product. Dot products are also called inner or scalar products because the product results in a scalar, not a vector. After investigating the dot product, we apply it to finding the projection of one vector onto another (as displayed in Figure 11.20) and to finding the work done by a constant force acting through a displacement. 
 
-## Angle Between Vectors
+### Angle Between Vectors
 
 When two nonzero vectors u and v are placed so their initial points coincide, they form an angle θ of measure $0 \leq \theta \leq \pi$ (Figure 11.21). If the vectors do not lie along the same line, the angle θ is measured in the plane containing both of them. If they do lie along the same line, the angle between them is 0 if they point in the same direction and π if they point in opposite directions. The angle θ is the angle between u and v. Theorem 1 gives a formula to determine this angle. 
 
@@ -1220,7 +1221,7 @@ $$
 
 We will see throughout the remainder of this text that the dot product is a key tool for many important geometric and physical calculations in space (and the plane). 
 
-![[345276488f2aa926746b6eec97223046729fe059cd7d0b0099a5ea4ff6d88740.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/345276488f2aa926746b6eec97223046729fe059cd7d0b0099a5ea4ff6d88740.jpg)
 
 
 
@@ -1269,7 +1270,7 @@ Dot Product and Angles
 The angle between two nonzero vectors u and v is $\theta = \arccos\left(\frac{\mathbf{u} \cdot \mathbf{v}}{|\mathbf{u}||\mathbf{v}|}\right)$ .
 The dot product of two vectors u and v is given by $u \cdot v = |u||v| \cos \theta$ . 
 
-## **EXAMPLE 2** Find the angle between u = − − i j k 2 2 and $\mathbf { v } = 6 \mathbf { i } + 3 \mathbf { j } + 2 \mathbf { k }$
+**EXAMPLE 2** Find the angle between u = − − i j k 2 2 and $\mathbf { v } = 6 \mathbf { i } + 3 \mathbf { j } + 2 \mathbf { k }$
 
 **Solution** We use the formula above: 
 
@@ -1277,7 +1278,7 @@ $$
 \mathbf {u} \cdot \mathbf {v} = (1) (6) + (- 2) (3) + (- 2) (2) = 6 - 6 - 4 = - 4
 $$
 
-![[3397e4b3cf84cef38abf7fe0b6660de4803593bfbca74a74f2fc3ec177d1bddc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3397e4b3cf84cef38abf7fe0b6660de4803593bfbca74a74f2fc3ec177d1bddc.jpg)
 
 
 $$
@@ -1328,13 +1329,13 @@ $$
 
 $\approx 7 8 . 1 ^ { \circ }$ or 1.36 radians. 
 
-## Orthogonal Vectors
+### Orthogonal Vectors
 
 Two nonzero vectors u and v are perpendicular if the angle between them is $\pi / 2$ . For such vectors, we have u $\mathbf { \nabla } \cdot \mathbf { v } = 0$ because $\cos ( \pi / 2 ) = 0$ . The converse is also true. If u and v are nonzero vectors with $\mathbf { u } \cdot \mathbf { v } = | \mathbf { u } | | \mathbf { v } | \cos \theta = 0$ , then cos $\theta = 0$ and $\theta = \operatorname { a r c c o s } 0 = \pi / 2$ . The following definition also allows for one or both of the vectors to be the zero vector. 
 
 > ***DEFINITION*** Vectors u and v are orthogonal if u ${ \textbf { v } } = 0$ 
 
-## **EXAMPLE 4** To determine if two vectors are orthogonal, calculate their dot product.
+**EXAMPLE 4** To determine if two vectors are orthogonal, calculate their dot product.
 
 (a) $\mathbf { u } = \langle 3 , - 2 \rangle \mathrm { a n d } \mathbf { v } = \langle 4 , 6 \rangle$ are orthogonal because u $\mathbf { \nabla \cdot v } = ( 3 ) ( 4 ) + ( - 2 ) ( 6 ) = 0$ 
 
@@ -1350,7 +1351,7 @@ $$
 \begin{array}{c} \mathbf {0} \cdot \mathbf {u} = \langle 0, 0, 0 \rangle \cdot \langle u _ {1}, u _ {2}, u _ {3} \rangle \\ = (0) (u _ {1}) + (0) (u _ {2}) + (0) (u _ {3}) = 0. \end{array}
 $$
 
-## Dot Product Properties and Vector Projections
+### Dot Product Properties and Vector Projections
 
 The dot product obeys many of the laws that hold for ordinary products of real numbers (scalars). 
 
@@ -1370,17 +1371,17 @@ $$
 4. \mathbf {u} \cdot \mathbf {u} = | \mathbf {u} | ^ {2}
 $$
 
-![[94eef6a4bb0643e597a970a866377d16bbfc11a0455faf53b80ed59103fb028c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/94eef6a4bb0643e597a970a866377d16bbfc11a0455faf53b80ed59103fb028c.jpg)
 
 
-![[e82bb7445accf1c295f5740ace5de6d5acd3c34f86457b8e8335333eb0ee60e1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e82bb7445accf1c295f5740ace5de6d5acd3c34f86457b8e8335333eb0ee60e1.jpg)
 
 
 
 FIGURE 11.24 The vector projection of u onto v.
 
 
-![[b5da12ca9202034bf5beeb7bc9deb0a65612ef7222101ebb989c2d1ec746e041.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b5da12ca9202034bf5beeb7bc9deb0a65612ef7222101ebb989c2d1ec746e041.jpg)
 
 
 
@@ -1407,14 +1408,14 @@ $$
 \begin{array}{l} \operatorname{proj} _ {\mathbf {v}} \mathbf {u} = (| \mathbf {u} | \cos \theta) \frac {\mathbf {v}}{| \mathbf {v} |} \\ = \left(\frac {\mathbf {u} \cdot \mathbf {v}}{| \mathbf {v} |}\right) \frac {\mathbf {v}}{| \mathbf {v} |} \\ = \left(\frac {\mathbf {u} \cdot \mathbf {v}}{| \mathbf {v} | ^ {2}}\right) \mathbf {v}. \end{array} \quad | \mathbf {u} | \cos \theta = \frac {| \mathbf {u} | | \mathbf {v} | \cos \theta}{| \mathbf {v} |} = \frac {\mathbf {u} \cdot \mathbf {v}}{| \mathbf {v} |}
 $$
 
-![[248485ede6773000179c20de2abd57e06b8f9eac1e698c75beade26c2591af4e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/248485ede6773000179c20de2abd57e06b8f9eac1e698c75beade26c2591af4e.jpg)
 
 
 
 (a)
 
 
-![[c329518ebd1021a5085ed06c3f2eb205d86f9ab294fa8086b98bbebde1747e19.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c329518ebd1021a5085ed06c3f2eb205d86f9ab294fa8086b98bbebde1747e19.jpg)
 
 
 
@@ -1479,12 +1480,12 @@ $$
 \begin{array}{l l} \left(\mathbf {u} - \operatorname{proj} _ {\mathbf {v}} \mathbf {u}\right) \cdot \mathbf {v} = \mathbf {u} \cdot \mathbf {v} - \left(\frac {\mathbf {u} \cdot \mathbf {v}}{| \mathbf {v} | ^ {2}} \mathbf {v}\right) \cdot \mathbf {v} & \text {Definition of proj, u} \\ = \mathbf {u} \cdot \mathbf {v} - \frac {\mathbf {u} \cdot \mathbf {v}}{| \mathbf {v} | ^ {2}} (\mathbf {v} \cdot \mathbf {v}) & \text {Dot product property (2)} \\ = \mathbf {u} \cdot \mathbf {v} - \frac {\mathbf {u} \cdot \mathbf {v}}{| \mathbf {v} | ^ {2}} | \mathbf {v} | ^ {2} & \mathbf {v} \cdot \mathbf {v} = | \mathbf {v} | ^ {2} \\ = \mathbf {u} \cdot \mathbf {v} - \mathbf {u} \cdot \mathbf {v} = 0. \end{array}
 $$
 
-![[f2c04494d7799d1be9eea13f2bbd1d4f5123493485da1845b4b29f02e738e68c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f2c04494d7799d1be9eea13f2bbd1d4f5123493485da1845b4b29f02e738e68c.jpg)
 
 
 FIGURE 11.27 The vector u is the sum of two perpendicular vectors: a vector proj , u parallel to v, and a vector $\mathbf { u } \mathrm { ~ - ~ } \mathsf { p r o j }$ , u perpendicular to v. 
 
-![[0c48ee112bb3c9edeb216d45cae3edbe09ccb7f35186bae39304a3a869f03218.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0c48ee112bb3c9edeb216d45cae3edbe09ccb7f35186bae39304a3a869f03218.jpg)
 
 
 
@@ -1499,7 +1500,7 @@ $$
 
 expresses u as a sum of orthogonal vectors (see Figure 11.27). 
 
-## Work
+### Work
 
 In Chapter 6, we calculated the work done by a constant force of magnitude F in moving an object through a distance d as $W = F d .$ That formula holds only if the force is directed along the line of motion. If a force F moving an object through a displacement $\mathbf { D } = { \overrightarrow { P Q } }$ has some other direction, the work is performed by the component of F in the direction of D. If R is the angle between F and D (Figure 11.28), then 
 
@@ -1521,7 +1522,7 @@ $$
 
 We encounter more challenging work problems in Chapter 15 when we learn to find the work done by a variable force along a more general path in space. 
 
-## The Dot Product of Two n-Dimensional Vectors
+### The Dot Product of Two n-Dimensional Vectors
 
 If $\mathbf { u } = \langle u _ { 1 } , u _ { 2 } , . . . , u _ { n } \rangle$ and $\mathbf { v } = \langle v _ { 1 } , v _ { 2 } , . . . , v _ { n } \rangle$ are n-dimensional vectors, then we define the dot product to be 
 
@@ -1549,7 +1550,7 @@ $$
 
 The value $3,870,000 represents the total hourly revenue. 
 
-## EXERCISES 11.3
+### EXERCISES 11.3
 
 For some exercises, a calculator may be helpful when expressing answers in decimal form. 
 
@@ -1565,9 +1566,7 @@ d. the vector proj . <sub>v</sub> u
 
 1. v i j k u i j k = − + = − + − 2 4 5 , 2 4 5 
 
-$$
-\mathbf {v} = (3 / 5) \mathbf {i} + (4 / 5) \mathbf {k}, \quad \mathbf {u} = 5 \mathbf {i} + 1 2 \mathbf {j}
-$$
+2. $\mathbf {v} = (3 / 5) \mathbf {i} + (4 / 5) \mathbf {k}, \quad \mathbf {u} = 5 \mathbf {i} + 1 2 \mathbf {j}$
 
 3. $\mathbf { v } = 1 0 \mathbf { i } + 1 1 \mathbf { j } - 2 \mathbf { k } , \mathbf { u } = 3 \mathbf { j } + 4 \mathbf { k }$ 
 
@@ -1575,11 +1574,7 @@ $$
 
 $$
 \mathbf {v} = 5 \mathbf {j} - 3 \mathbf {k}, \quad \mathbf {u} = \mathbf {i} + \mathbf {j} + \mathbf {k}
-$$
-
-6. ${ \mathbf { v } } = - \mathbf { i } + \mathbf { j } , { \mathbf { u } } = { \sqrt { 2 } } \mathbf { i } + { \sqrt { 3 } } \mathbf { j } + 2 \mathbf { k }$ 
-
-$$
+6. $${ \mathbf { v } } = - \mathbf { i } + \mathbf { j } , { \mathbf { u } } = { \sqrt { 2 } } \mathbf { i } + { \sqrt { 3 } } \mathbf { j } + 2 \mathbf { k }$$
 \mathbf {7 . v} = 5 \mathbf {i} + \mathbf {j}, \quad \mathbf {u} = 2 \mathbf {i} + \sqrt {1 7} \mathbf {j}
 $$
 
@@ -1607,7 +1602,7 @@ $$
 
 15. Direction angles and direction cosines The direction angles $\alpha , \beta ,$ and γ of a vector ${ \bf v } = a { \bf i } + b { \bf j } + { }$ k c are defined as follows: α is the angle between v and the positive x-axis $( 0 \leq \alpha \leq \pi )$ $\beta$ is the angle between v and the positive y-axis $( 0 \leq \beta \leq \pi )$ γ is the angle between v and the positive z-axis $( 0 \leq \gamma \leq \pi )$ 
 
-![[806e5b5ccd266c1c8d09e9ce949ca27bd48d8e4c59931009f6d916ad5e4d2a8a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/806e5b5ccd266c1c8d09e9ce949ca27bd48d8e4c59931009f6d916ad5e4d2a8a.jpg)
 
 
 a. Show that 
@@ -1622,7 +1617,7 @@ b. Unit vectors are built from direction cosines Show that ${ \mathrm { i f } } 
 
 16. Water main construction A water main is to be constructed with a 20% grade in the north direction and a 10% grade in the east direction. Determine the angle θ required in the water main for the turn from north to east. 
 
-![[4bd25a3f4c604f03f87fbf427802182d4ec0f3bb0682168026041077993158cb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4bd25a3f4c604f03f87fbf427802182d4ec0f3bb0682168026041077993158cb.jpg)
 
 
 For Exercises 17 and 18, find the acute angle between the given lines by using vectors parallel to the lines. 
@@ -1635,12 +1630,12 @@ Theory and Examples
 
 19. Sums and differences In the accompanying figure, it looks as if $\mathbf { v } _ { 1 } + \mathbf { v } _ { 2 }$ and $\mathbf { v } _ { 1 } - \mathbf { v } _ { 2 }$ are orthogonal. Is this mere coincidence, or are there circumstances under which we may expect the sum of two vectors to be orthogonal to their difference? Give reasons for your answer. 
 
-![[7d341adec575462c44a5adcd78e5ed158395195841bd98ba66c864ad02206cb7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7d341adec575462c44a5adcd78e5ed158395195841bd98ba66c864ad02206cb7.jpg)
 
 
 20. Orthogonality on a circle Suppose that AB is the diameter of a circle with center O and that C is a point on one of the two arcs joining A and B. Show that CA and CB are orthogonal. 
 
-![[fa5b7bde0944f6390472ce45e0858f6070ffa5b105b8629076a8723de04538ba.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fa5b7bde0944f6390472ce45e0858f6070ffa5b105b8629076a8723de04538ba.jpg)
 
 
 21. Diagonals of a rhombus Show that the diagonals of a rhombus (parallelogram with sides of equal length) are perpendicular. 
@@ -1651,14 +1646,14 @@ Theory and Examples
 
 24. Diagonal of parallelogram Show that the indicated diagonal of the parallelogram determined by vectors u and v bisects the angle between u and v if u v= . 
 
-![[03307867ca4dc698b414ae57a5cd2e4ba63fe3ccf76581fef5b826ecf9b4f06d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/03307867ca4dc698b414ae57a5cd2e4ba63fe3ccf76581fef5b826ecf9b4f06d.jpg)
 
 
 25. Projectile motion A gun with muzzle velocity of 400 m s is fired at an angle of $8 ^ { \circ }$ above the horizontal. Find the horizontal and vertical components of the velocity. 
 
 26. Inclined plane Suppose that a box is being towed up an inclined plane as shown in the figure. Find the force w needed to make the component of the force parallel to the inclined plane equal to 2.5 N. 
 
-![[cb4bd788f4c1a8f8096054b725b6ff8639c1b7c3c87fdd861bdd5a237f0e9369.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cb4bd788f4c1a8f8096054b725b6ff8639c1b7c3c87fdd861bdd5a237f0e9369.jpg)
 
 
 27. a. Cauchy-Schwarz inequality Since u ⋅ =v u v cos θ, show that the inequality u $\mathbf { \partial } \cdot \mathbf { v } | \leq | \mathbf { u } | | \mathbf { v } |$ holds for any vectors u and v. 
@@ -1703,14 +1698,14 @@ Work
 
 46. Sailboat The wind passing over a boat’s sail exerted a 1000 N magnitude force F as shown here. How much work did the wind perform in moving the boat forward 1 km? Answer in joules. 
 
-![[5f73c18cbdb83d7e9754f9a577fe7b60b1d6c6ba3992fe99b4078e9c7c817bbe.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5f73c18cbdb83d7e9754f9a577fe7b60b1d6c6ba3992fe99b4078e9c7c817bbe.jpg)
 
 
 Angles Between Lines in the Plane 
 
 The acute angle between intersecting lines that do not cross at right angles is the same as the angle determined by vectors normal to the lines or by vectors parallel to the lines. 
 
-![[03c1ddd0e77888099fc08638c4b21a4f27acc8ba842c305f553d4897e0564b00.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/03c1ddd0e77888099fc08638c4b21a4f27acc8ba842c305f553d4897e0564b00.jpg)
 
 
 Use this fact and the results of Exercise 33 or 34 to find the acute angles between the lines in Exercises 47–52. 
@@ -1723,17 +1718,11 @@ $$
 \sqrt {3} x - y = - 2, \quad x - \sqrt {3} y = 1
 $$
 
-$$
-\mathbf {5 0 .} x + \sqrt {3} y = 1, (1 - \sqrt {3}) x + (1 + \sqrt {3}) y = 8
-$$
+50. $x + \sqrt {3} y = 1, (1 - \sqrt {3}) x + (1 + \sqrt {3}) y = 8$
 
-$$
-\mathbf {5 1 .} 3 x - 4 y = 3, \quad x - y = 7
-$$
+51. $3 x - 4 y = 3, \quad x - y = 7$
 
-$$
-5 2. 1 2 x + 5 y = 1, \quad 2 x - 2 y = 3
-$$
+52. $1 2 x + 5 y = 1, \quad 2 x - 2 y = 3$
 
 Dot Products of n-Dimensional Vectors 
 
@@ -1757,7 +1746,7 @@ $$
 
 ## 11.4 The Cross Product
 
-![[efc926aa85680340f10a36f909cfbb3b0be9cca6fbae9d11bea3629b4a61feaf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/efc926aa85680340f10a36f909cfbb3b0be9cca6fbae9d11bea3629b4a61feaf.jpg)
 
 
 
@@ -1766,7 +1755,7 @@ FIGURE 11.29 The construction of ${ \textbf { u } } \times { \textbf { v } } .$
 
 In studying lines in the plane, when we needed to describe how a line was tilting, we used the notions of slope and angle of inclination. In space, we want a way to describe how a plane is tilting. We accomplish this by multiplying two vectors in the plane together to get a third vector perpendicular to the plane. The direction of this third vector tells us the “inclination” of the plane. The product we use to multiply the vectors together is the vector or cross product, the second of the two vector multiplication methods. The cross product gives us a simple way to find a variety of geometric quantities, including volumes, areas, and perpendicular vectors. We study the cross product in this section. 
 
-## The Cross Product of Two Vectors in Space
+### The Cross Product of Two Vectors in Space
 
 We start with two nonzero vectors u and v in space. Two vectors are parallel if one is a nonzero multiple of the other. If u and v are not parallel, they determine a plane. The vectors in this plane are linear combinations of u and v, so they can be written as a sum $a \mathbf { u } + b \mathbf { v }$ . We select the unit vector n perpendicular to the plane by the right-hand rule. This means that we choose n to be the unit normal vector that points the way your right thumb points when your fingers curl through the angle θ from u to v (Figure 11.29). Then we define a new vector as follows. 
 
@@ -1776,14 +1765,14 @@ We start with two nonzero vectors u and v in space. Two vectors are parallel if 
 > \mathbf {u} \times \mathbf {v} = (| \mathbf {u} | | \mathbf {v} | \sin \theta) \mathbf {n}.
 > $$
 >
-![[3e8c814858a2f3d22320f37678d6233f21e39faee9d76904d69d2785e8653d0b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3e8c814858a2f3d22320f37678d6233f21e39faee9d76904d69d2785e8653d0b.jpg)
 
 
 
 FIGURE 11.30 The construction of $\textbf { v } \times \textbf { u } .$
 
 
-![[8bbaa7b3aa4f6a036322d7809ca6fb3434df41b49e35dafdcbac39c17a8b4481.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8bbaa7b3aa4f6a036322d7809ca6fb3434df41b49e35dafdcbac39c17a8b4481.jpg)
 
 
 
@@ -1829,7 +1818,7 @@ $$
 | \mathbf {u} \times \mathbf {v} | = | \mathbf {u} | | \mathbf {v} | \left| \sin \theta \right| | \mathbf {n} | = | \mathbf {u} | | \mathbf {v} | \sin \theta .
 $$
 
-![[f6af72ee226220fcbcd15c7188ce00bedaacd077a8441f823a6db7abc8ab8322.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f6af72ee226220fcbcd15c7188ce00bedaacd077a8441f823a6db7abc8ab8322.jpg)
 
 
 
@@ -1852,14 +1841,14 @@ $$
 - a _ {2} \left| \begin{array}{c c} b _ {1} & b _ {3} \\ c _ {1} & c _ {3} \end{array} \right| + a _ {3} \left| \begin{array}{c c} b _ {1} & b _ {2} \\ c _ {1} & c _ {2} \end{array} \right|
 $$
 
-![[c3b425ca4648fa962d484b31b30a3ac2248ee022a5b98ae60646bef3e0764a36.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c3b425ca4648fa962d484b31b30a3ac2248ee022a5b98ae60646bef3e0764a36.jpg)
 
 
 FIGURE 11.33 The vector ${ \overrightarrow { P Q } } \times { \overrightarrow { P R } }$ is perpendicular to the plane of triangle PQR (Example 2). The area of triangle $P Q R$ is half of ${ \big | } { \overrightarrow { P Q } } \times { \overrightarrow { P R } } { \big | }$ (Example 3). 
 
 This is the area of the parallelogram determined by u and v (Figure 11.32), u being the base of the parallelogram and v sin θ being the height. 
 
-## Determinant Formula for $\mathbf { u } \times \mathbf { v }$
+### Determinant Formula for $\mathbf { u } \times \mathbf { v }$
 
 Our next objective is to calculate $\textbf { u } \times \textbf { v }$ from the components of u and v relative to a Cartesian coordinate system. 
 
@@ -1931,9 +1920,9 @@ $$
 
 For ease in calculating the cross product using determinants, we usually write vectors in the form $\mathbf { v } = v _ { 1 } \mathbf { i } + v _ { 2 } \mathbf { j } + v _ { 3 } \mathbf { k }$ rather than as ordered triples $\mathbf { v } = \langle v _ { 1 } , v _ { 2 } , v _ { 3 } \rangle$ 
 
-## Torque
+### Torque
 
-![[e3d497adc19ebc79c0f6bc8c8eed04aa460d3c1d968d31a79ba76423a05dabd2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e3d497adc19ebc79c0f6bc8c8eed04aa460d3c1d968d31a79ba76423a05dabd2.jpg)
 
 
 FIGURE 11.34 The torque vector describes the tendency of the force F to drive the bolt forward. 
@@ -1952,7 +1941,7 @@ $$
 
 Recall that we defined u × v to be 0 when u and v are parallel. This is consistent with the torque interpretation as well. If the force F in Figure 11.34 is parallel to the wrench, meaning that we are trying to turn the bolt by pushing or pulling along the line of the wrench’s handle, the torque produced is zero. 
 
-![[3876fd2085c111746a06b4e46b6907ff805d9132b9ef03cb2e70891209f3ba87.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3876fd2085c111746a06b4e46b6907ff805d9132b9ef03cb2e70891209f3ba87.jpg)
 
 
 
@@ -1969,7 +1958,7 @@ $$
 
 In this example, the torque vector is pointing out of the page toward you. 
 
-## Triple Scalar or Box Product
+### Triple Scalar or Box Product
 
 The product $( \mathbf { u } \times \mathbf { v } )$ w ⋅ is called the triple scalar product of u, v, and w (in that order). As you can see from the formula 
 
@@ -1979,7 +1968,7 @@ $$
 
 the absolute value of this product is the volume of the parallelepiped (parallelogram-sided box) determined by u, v, and w (Figure 11.36). The number $| \mathbf { u } \times \mathbf { v } |$ is the area of the base parallelogram. The number w cos R is the parallelepiped’s height. Because of this geometry, $( \mathbf { u } \times \mathbf { v } )$ w⋅ is also called the box product of u, v, and w. 
 
-![[245dcb36417d17b484afb731b8cf2ebfa14534c42dffb6b5bbd35cc76d4913ab.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/245dcb36417d17b484afb731b8cf2ebfa14534c42dffb6b5bbd35cc76d4913ab.jpg)
 
 
 
@@ -2004,7 +1993,7 @@ $$
 \begin{array}{l} (\mathbf {u} \times \mathbf {v}) \cdot \mathbf {w} = \left(\left| \begin{array}{c c} u _ {2} & u _ {3} \\ v _ {2} & v _ {3} \end{array} \right| \mathbf {i} - \left| \begin{array}{c c} u _ {1} & u _ {3} \\ v _ {1} & v _ {3} \end{array} \right| \mathbf {j} + \left| \begin{array}{c c} u _ {1} & u _ {2} \\ v _ {1} & v _ {2} \end{array} \right| \mathbf {k}\right) \cdot \mathbf {w} \\ = w _ {1} \left| \begin{array}{c c} u _ {2} & u _ {3} \\ v _ {2} & v _ {3} \end{array} \right| - w _ {2} \left| \begin{array}{c c} u _ {1} & u _ {3} \\ v _ {1} & v _ {3} \end{array} \right| + w _ {3} \left| \begin{array}{c c} u _ {1} & u _ {2} \\ v _ {1} & v _ {2} \end{array} \right| \\ = \left| \begin{array}{c c c} u _ {1} & u _ {2} & u _ {3} \\ v _ {1} & v _ {2} & v _ {3} \\ w _ {1} & w _ {2} & w _ {3} \end{array} \right|. \end{array}
 $$
 
-![[a71d428c4f41061bfe9c53014d3c0b64a4d02df13d60d11c1c20c9acae27f22d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a71d428c4f41061bfe9c53014d3c0b64a4d02df13d60d11c1c20c9acae27f22d.jpg)
 
 
 Calculating the Triple Scalar Product as a Determinant 
@@ -2029,9 +2018,8 @@ $$
 
 The volume is $| ( \mathbf { u } \times \mathbf { v } ) \cdot \mathbf { w } | = 2 3$ units cubed. 
 
-## EXERCISES
+### Exercises 11.4
 
-## 11.4
 
 Cross Product Calculations 
 
@@ -2063,9 +2051,7 @@ $$
 
 In Exercises 9–14, sketch the coordinate axes and then include the vectors u, v, and u q v as vectors starting at the origin. 
 
-$$
-9. \mathbf {u} = \mathbf {i}, \quad \mathbf {v} = \mathbf {j}
-$$
+9. $\mathbf {u} = \mathbf {i}, \quad \mathbf {v} = \mathbf {j}$
 
 Triangles in Space 
 
@@ -2125,7 +2111,7 @@ In Exercises 25 and 26, find the magnitude of the torque exerted by F on the bol
 
 ## 11.5 Lines and Planes in Space
 
-## Area of a Parallelogram
+### Area of a Parallelogram
 
 Find the areas of the parallelograms whose vertices are given in Exercises 35–40. 
 
@@ -2141,7 +2127,7 @@ Find the areas of the parallelograms whose vertices are given in Exercises 35–
 
 40. A B C D ( ) ( ) ( ) ( ) 1, 0,  1 , 1, 7, 2 , 2, 4,  1 , 0, 3, 2 − − 
 
-## Area of a Triangle
+### Area of a Triangle
 
 Find the areas of the triangles whose vertices are given in Exercises 41–47. 
 
@@ -2165,7 +2151,7 @@ Find the areas of the triangles whose vertices are given in Exercises 41–47.
 
 50. Triangle area Find a concise $3 \times 3$ determinant formula that gives the area of a triangle in the xy-plane having vertices $( a _ { 1 } , a _ { 2 } ) , ( b _ { 1 } , b _ { 2 } )$ ,  and $( c _ { 1 } , c _ { 2 } )$ 
 
-## Volume of a Tetrahedron
+### Volume of a Tetrahedron
 
 Using the methods of Section 6.1, where volume is computed by integrating cross-sectional area, it can be shown that the volume of a tetrahedron formed by three vectors is equal $\mathrm { t o } { \frac { 1 } { 6 } }$ the volume of the parallelepiped formed by the three vectors. Find the volumes of the tetrahedra whose vertices are given in Exercises 51–54. 
 
@@ -2185,7 +2171,7 @@ In Exercises 55–57, determine whether the given points are coplanar.
 
 57. A B C D ( ) ( ) ( ) ( ) 0, 1, 2 , 1, 1, 0 , 2, 0,  1 , 1,  1, 1 − − − 
 
-![[5ead38c95c4c7f91d338e786a6abcae82774d2c40c2135350a0e9cf9b0a91e08.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5ead38c95c4c7f91d338e786a6abcae82774d2c40c2135350a0e9cf9b0a91e08.jpg)
 
 
 
@@ -2196,11 +2182,11 @@ FIGURE 11.37 A point P lies on L through $P _ { 0 }$ parallel to v if and only i
 FIGURE 11.38 Selected points and parameter values on the line in Example 1. The arrows show the direction of increasing t.
 
 
-## Lines and Line Segments in Space
+### Lines and Line Segments in Space
 
 In the plane, a line is determined by a point and a number giving the slope of the line. In space a line is determined by a point and a vector giving the direction of the line. 
 
-![[cd5b91f2bed304875d049ae58c7908493e1703322b72a437c0189098bb790be4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cd5b91f2bed304875d049ae58c7908493e1703322b72a437c0189098bb790be4.jpg)
 
 
 Suppose that L is a line in space passing through a point $P _ { 0 } ( x _ { 0 } , y _ { 0 } , z _ { 0 } )$ parallel to a vector $\mathbf { v } = v _ { 1 } \mathbf { i } + v _ { 2 } \mathbf { j } + v _ { 3 } \mathbf { k } .$ Then L is the set of all points $P ( x , y , z )$ for which $\overrightarrow { P _ { 0 } P }$ is parallel to v (Figure 11.37). Thus, ${ \overrightarrow { P _ { 0 } P } } = t { \mathbf v }$ for some scalar parameter t. The value of t depends on the location of the point P along the line, and the domain of t is $( - \infty , \infty )$ . The expanded form of the equation ${ \overrightarrow { P _ { 0 } P } } = t { \mathbf v }$ is 
@@ -2217,7 +2203,7 @@ $$
 
 If r( ) is the position vector of a pointt $P ( x , y , z )$ on the line and $\mathbf { r } _ { 0 }$ is the position vector of the point $P _ { 0 } ( x _ { 0 } , y _ { 0 } , z _ { 0 } )$ , then Equation (1) gives the following vector form for the equation of a line in space. 
 
-## Vector Equation for a Line
+### Vector Equation for a Line
 
 A vector equation for the line L through $P _ { 0 } ( x _ { 0 } , y _ { 0 } , z _ { 0 } )$ parallel to a nonzero vector v is 
 
@@ -2235,7 +2221,7 @@ $$
 
 These equations give us the standard parametrization of the line for the parameter interval $- \infty < t < \infty .$ 
 
-## Parametric Equations for a Line
+### Parametric Equations for a Line
 
 The standard parametrization of the line through $P _ { 0 } ( x _ { 0 } , y _ { 0 } , z _ { 0 } )$ parallel to a nonzero vector $\mathbf { v } = v _ { 1 } \mathbf { i } + v _ { 2 } \mathbf { j } + v _ { 3 } \mathbf { k }$ is 
 
@@ -2265,7 +2251,7 @@ $$
 x = - 3 + 4 t, \quad y = 2 - 3 t, \quad z = - 3 + 7 t.
 $$
 
-![[ea4bffa69ef37f3d20a1096c138a74101192da7ff4559e7d3df7debe5579900e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ea4bffa69ef37f3d20a1096c138a74101192da7ff4559e7d3df7debe5579900e.jpg)
 
 
 
@@ -2306,7 +2292,7 @@ $$
 
 The vector form (Equation (2)) for a line in space is more revealing if we think of a line as the path of a particle starting at position $P _ { 0 } ( x _ { 0 } , y _ { 0 } , z _ { 0 } )$ and moving in the direction of vector v. Rewriting Equation (2), we have 
 
-![[5c1e1935b6cf7f2cb8686cb1b7604b8ca81d82c90ebb26a0c062538d97288af0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5c1e1935b6cf7f2cb8686cb1b7604b8ca81d82c90ebb26a0c062538d97288af0.jpg)
 
 
 (4) 
@@ -2337,12 +2323,12 @@ $$
 FIGURE 11.40 The distance from S to the line through P parallel to v is PS sin ,  θ where θ is the angle between PS and v.
 
 
-![[2b82c6ef932ea90e24401490d25ab321056312dd6e4cd750612b0ae4aa537cf6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2b82c6ef932ea90e24401490d25ab321056312dd6e4cd750612b0ae4aa537cf6.jpg)
 
 
 After 10 s of flight from the origin toward 1, 1, 1( ), the helicopter is located at the point $( 2 0 0 { \sqrt { 3 } } , 2 0 0 { \sqrt { 3 } } , 2 0 0 { \sqrt { 3 } } )$ in space. It has traveled a distance of $( 6 0 ~ \mathrm { m / s } ) ( 1 0 ~ \mathrm { \dot { s } } ) = 6 0 0$ m, which is the length of the vector r(10). ■ 
 
-## The Distance from a Point to a Line in Space
+### The Distance from a Point to a Line in Space
 
 To find the distance from a point S to a line that passes through a point P parallel to a vector v, we find the absolute value of the scalar component of PS in the direction of a vector normal to the line (Figure 11.40). In the notation of the figure, the absolute value of the scalar component is PS sin , θ which is ${ \frac { \left| { \overline { { P S } } } \right| | \mathbf { v } | \sin \theta } { | \mathbf { v } | } } = { \frac { \left| { \overline { { P S } } } \times \mathbf { v } \right| } { | \mathbf { v } | } } .$ 
 
@@ -2376,11 +2362,11 @@ $$
 d = \frac {\left| \overrightarrow {P S} \times \mathbf {v} \right|}{\left| \mathbf {v} \right|} = \frac {\sqrt {1 + 2 5 + 4}}{\sqrt {1 + 1 + 4}} = \frac {\sqrt {3 0}}{\sqrt {6}} = \sqrt {5}.
 $$
 
-## An Equation for a Plane in Space
+### An Equation for a Plane in Space
 
 A plane in space is determined by knowing a point on the plane and its “tilt” or orientation. This “tilt” is defined by specifying a vector that is perpendicular, or normal, to the plane. 
 
-![[5383331040c8c300d3771fad7fb72ae3efa6abb1bf24dbb778b4fdba1e0a475e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5383331040c8c300d3771fad7fb72ae3efa6abb1bf24dbb778b4fdba1e0a475e.jpg)
 
 
 
@@ -2435,11 +2421,11 @@ $$
 \begin{array}{c} 3 (x - 0) + 2 (y - 0) + 6 (z - 1) = 0 \\ 3 x + 2 y + 6 z = 6. \end{array}
 $$
 
-## Lines of Intersection
+### Lines of Intersection
 
 Just as lines are parallel if and only if they have the same direction, two planes are parallel if and only if their normals are parallel, or $\mathbf { n } _ { 1 } ~ = ~ k \mathbf { n } .$ for some scalar k. Two planes that are not parallel intersect in a line. 
 
-![[2d48ef0686d1209a11cb72465db0e3d039ed0db84863b1d69eaea4fe2fcf1dda.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2d48ef0686d1209a11cb72465db0e3d039ed0db84863b1d69eaea4fe2fcf1dda.jpg)
 
 
 
@@ -2494,7 +2480,7 @@ $$
 (x, y, z) | _ {t = - 1} = \left(\frac {8}{3} - 2, 2, 1 - 1\right) = \left(\frac {2}{3}, 2, 0\right).
 $$
 
-## The Distance from a Point to a Plane
+### The Distance from a Point to a Plane
 
 If P is a point on a plane with a normal n, then the distance from any point S to the plane is the length of the vector projection of PS onto n, as given in the following formula. 
 
@@ -2504,7 +2490,7 @@ $$
 d = \left| \overrightarrow {P S} \cdot \frac {\mathbf {n}}{| \mathbf {n} |} \right|\tag{6}
 $$
 
-## **EXAMPLE 11** Find the distance from S( ) 1, 1, 3 to the plane $3 x + 2 y + 6 z = 6$
+**EXAMPLE 11** Find the distance from S( ) 1, 1, 3 to the plane $3 x + 2 y + 6 z = 6$
 
 **Solution** We find a point P in the plane and calculate the length of the vector projection of PS onto a vector n normal to the plane (Figure 11.43). The coefficients in the equation $3 x + 2 y + 6 z = 6$ give 
 
@@ -2512,7 +2498,7 @@ $$
 \mathbf {n} = 3 \mathbf {i} + 2 \mathbf {j} + 6 \mathbf {k}.
 $$
 
-![[28d64d0305038ac631b4434506d385b8e19d0ccb893b03c21446e7175a9dfe55.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/28d64d0305038ac631b4434506d385b8e19d0ccb893b03c21446e7175a9dfe55.jpg)
 
 
 
@@ -2531,11 +2517,11 @@ $$
 \begin{array}{l} d = \left| \overrightarrow {P S} \cdot \frac {\mathbf {n}}{| \mathbf {n} |} \right| \\ = \left| (\mathbf {i} - 2 \mathbf {j} + 3 \mathbf {k}) \cdot \left(\frac {3}{7} \mathbf {i} + \frac {2}{7} \mathbf {j} + \frac {6}{7} \mathbf {k}\right) \right| \\ = \left| \frac {3}{7} - \frac {4}{7} + \frac {1 8}{7} \right| = \frac {1 7}{7}. \end{array} \text { Length   of   proj } _ {\mathbf {n}} \overrightarrow {P S}
 $$
 
-## Angles Between Planes
+### Angles Between Planes
 
 The angle between two intersecting planes is defined to be the acute angle between their normal vectors (Figure 11.44). 
 
-![[7231914fa60963461fa10a1869c02af93dbc3ed98eb6d7b43695bb85a01c3458.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7231914fa60963461fa10a1869c02af93dbc3ed98eb6d7b43695bb85a01c3458.jpg)
 
 
 **Solution** The vectors 
@@ -2556,7 +2542,7 @@ $$
 \begin{array}{l} \theta = \arccos \left(\frac {\mathbf {n} _ {1} \cdot \mathbf {n} _ {2}}{| \mathbf {n} _ {1} | | \mathbf {n} _ {2} |}\right) \\ = \arccos \left(\frac {4}{2 1}\right) \approx 1. 3 8 \text {   radians. } \quad \text { About   79   degrees } \end{array}
 $$
 
-## EXERCISES 11.5
+### EXERCISES 11.5
 
 Lines and Line Segments 
 
@@ -2582,7 +2568,9 @@ Find parametric equations for the lines in Exercises 1–12.
 
 10. The line through ( ) 2, 3, 0 perpendicular to the vectors u = + +i j k2 3 and v i j k= + +3 4 5 
 
-11. The x-axis 12. The z-axis 
+11. The x-axis
+
+12. The z-axis
 
 Find parametrizations for the line segments joining the points in Exercises 13–20. Draw coordinate axes and sketch each segment, indicating the direction of increasing t for your parametrization. 
 
@@ -2602,7 +2590,7 @@ Find parametrizations for the line segments joining the points in Exercises 13�
 
 20. ( ) ( ) 1, 0,  1 , 0, 3, 0 − 
 
-## Planes
+#### Planes
 
 Find equations for the planes in Exercises 21–26. 
 
@@ -2644,7 +2632,7 @@ $$
 
 32. Find a plane through the points $P _ { 1 } ( 1 , 2 , 3 )$ ,  and $P _ { 2 } ( 3 , 2 , 1 )$ and perpendicular to the plane 4x y z − + = 2 7. 
 
-## Distances
+#### Distances
 
 In Exercises 33–38, find the distance from the point to the line. 
 
@@ -2652,9 +2640,7 @@ $$
 \text {   33.   } (0, 0, 1 2); \quad x = 4 t, \quad y = - 2 t, \quad z = 2 t
 $$
 
-$$
-3 4. (0, 0, 0); x = 5 + 3 t, y = 5 + 4 t, z = - 3 - 5 t
-$$
+34. $(0, 0, 0); x = 5 + 3 t, y = 5 + 4 t, z = - 3 - 5 t$
 
 35. ( ) 2, 1, 3 ; 2 2 , 1 6 , 3 x t y t z = + = + = 
 
@@ -2662,9 +2648,7 @@ $$
 
 37. $( 3 , - 1 , 4 ) ; x = 4 - t , y = 3 + 2 t , z = - 5 + 3 t$ 
 
-$$
-\mathbf {3 8 .} (- 1, 4, 3); \quad x = 1 0 + 4 t, \quad y = - 3, \quad z = 4 t
-$$
+38. $(- 1, 4, 3); \quad x = 1 0 + 4 t, \quad y = - 3, \quad z = 4 t$
 
 In Exercises 39–44, find the distance from the point to the plane. 
 
@@ -2672,9 +2656,7 @@ $$
 \text {   39.   } (2, - 3, 4), \quad x + 2 y + 2 z = 1 3
 $$
 
-$$
-\mathbf {4 0 .} (0, 0, 0), \quad 3 x + 2 y + 6 z = 6
-$$
+40. $(0, 0, 0), \quad 3 x + 2 y + 6 z = 6$
 
 41. ( ) 0, 1, 1 , 4 3 12y z+ = − 
 
@@ -2688,7 +2670,7 @@ $$
 
 46. Find the distance from the line $x = 2 + t , y = 1 + t ,$ $z = - ( 1 / 2 ) - ( 1 / 2 ) i$ to the plane $x + 2 y + 6 z = 1 0$ 
 
-## Angles
+#### Angles
 
 In Exercises 47 and 48, find the angles between the planes. 
 
@@ -2722,35 +2704,27 @@ Use a calculator to find the acute angles between the planes inT Exercises 53–
 
 56. $4 y + 3 z = - 1 2 , 3 x + 2 y + 6 z = 6$ 
 
-## Intersecting Lines and Planes
+#### Intersecting Lines and Planes
 
 In Exercises 57–60, find the point in which the line meets the plane. 
 
-$$
-5 7. x = 1 - t, \quad y = 3 t, \quad z = 1 + t; \quad 2 x - y + 3 z = 6
-$$
+57. $x = 1 - t, \quad y = 3 t, \quad z = 1 + t; \quad 2 x - y + 3 z = 6$
 
 58. x = = + = − − + − = −2, 3 2 , 2 2 ; 6 3 4 12y t z t x y z 
 
 59. x = + = + = + + = 1 2 , 1 5 , 3 ; 2 t y t z t x y z 
 
-$$
-\mathbf {6 0 .} x = - 1 + 3 t, \quad y = - 2, \quad z = 5 t; \quad 2 x - 3 z = 7
-$$
+60. $x = - 1 + 3 t, \quad y = - 2, \quad z = 5 t; \quad 2 x - 3 z = 7$
 
 Find parametrizations for the lines in which the planes in Exercises 61–64 intersect. 
 
-$$
-\mathbf {6 1 .} x + y + z = 1, \quad x + y = 2
-$$
+61. $x + y + z = 1, \quad x + y = 2$
 
 62. 3 6 2 3, 2 2 2 x y z x y z − − = + − = 
 
 63. x − + = + − = 2 4 2, 2 5 y z x y z 
 
-$$
-6 4. 5 x - 2 y = 1 1, \quad 4 y - 5 z = - 1 7
-$$
+64. $5 x - 2 y = 1 1, \quad 4 y - 5 z = - 1 7$
 
 Given two lines in space, either they are parallel, they intersect, or they are skew (lie in parallel planes). In Exercises 65 and 66, determine whether the lines, taken two at a time, are parallel, intersect, or are skew. If they intersect, find the point of intersection. Otherwise, find the distance between the two lines. 
 
@@ -2772,7 +2746,7 @@ $$
 L 3: x = 5 + 2 r, y = 1 - r, z = 8 + 3 r; - \infty <   r <   \infty
 $$
 
-## Theory and Examples
+#### Theory and Examples
 
 67. Use Equations (3) to generate a parametrization of the line through $P ( 2 , - 4 , 7 )$ parallel to $\mathbf { v } _ { 1 } = 2 \mathbf { i } - \mathbf { j } + 3 \mathbf { k } .$ Then generate another parametrization of the line using the point $P _ { 2 } ( - 2 , - 2 , 1 )$ and the vector $\mathbf { v } _ { 2 } = - \mathbf { i } + ( 1 / 2 ) \mathbf { j } - ( 3 / 2 ) \mathbf { k }$ 
 
@@ -2800,7 +2774,7 @@ a. Write a vector equation that holds between $\overrightarrow { E P }$ and $\ov
 
 b. Test the formulas obtained for y and z in part (a) by investigating their behavior at $x _ { 1 } = 0$ and $x _ { 1 } = x _ { 0 }$ and by seeing what happens as $x _ { 0 } \ \longrightarrow \ \infty .$ What do you find? 
 
-![[5bfd7dd6cf96aa2822c274fbc6987366936493aeb43109c3324a388ae092e7f7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5bfd7dd6cf96aa2822c274fbc6987366936493aeb43109c3324a388ae092e7f7.jpg)
 
 
 78. Hidden lines in computer graphics Here is another typical problem in computer graphics. Your eye is at ( ) 4, 0, 0 . You are looking at a triangular plate whose vertices are at ( ) ( ) 1, 0, 1 ,   1, 1, 0 , and $( - 2 , 2 , 2 )$ . The line segment from 1, 0, 0( ) to 0, 2, 2( ) 
@@ -2809,14 +2783,14 @@ passes through the plate. What portion of the line segment is hidden from your v
 
 ## 11.6 Cylinders and Quadric Surfaces
 
-![[5db692de5207a6a9421ee3ea454a5b6af8fb63c49a24c1cf71ed7abbb436af18.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5db692de5207a6a9421ee3ea454a5b6af8fb63c49a24c1cf71ed7abbb436af18.jpg)
 
 
 
 FIGURE 11.45 A cylinder and generating curve.
 
 
-![[926f2d6f4bf9a295c11492de9cab590252fb47f929155f36a0b3d6eaa1578d62.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/926f2d6f4bf9a295c11492de9cab590252fb47f929155f36a0b3d6eaa1578d62.jpg)
 
 
 
@@ -2825,7 +2799,7 @@ FIGURE 11.46 Every point of the cylinder in Example 1 has coordinates of the for
 
 Up to now, we have studied two special types of surfaces: spheres and planes. In this section, we extend our inventory to include a variety of cylinders and quadric surfaces. Quadric surfaces are surfaces defined by second-degree equations in x, y, and z. Spheres are quadric surfaces, but there are others of equal interest that will be needed in Chapters 13–15. 
 
-## Cylinders
+### Cylinders
 
 Suppose we are given a plane in space that contains a curve, and in addition we are given a line that is not parallel to this plane. A cylinder is a surface that is generated by moving a line that is parallel to the given line along the curve, while keeping it parallel to the given line. The curve is called a generating curve for the cylinder (Figure 11.45 illustrates this when the given plane is the yz-plane and the given line is the x-axis). In solid geometry, where cylinder means circular cylinder, the generating curves are circles, but now we allow generating curves of any kind. The cylinder in our first example is generated by a parabola. 
 
@@ -2839,7 +2813,7 @@ As Example 1 suggests, any curve $f ( x , y ) = c$ in the xy-plane generates a c
 
 In a similar way, any curve $g ( x , z ) = c$ in the xz-plane generates a cylinder parallel to the y-axis whose space equation is also $g ( x , z ) = c .$ Any curve $h ( y , z ) = c$ generates a cylinder parallel to the x-axis whose space equation is also $h ( y , z ) = c .$ . The axis of a cylinder need not be parallel to a coordinate axis, however. 
 
-## Quadric Surfaces
+### Quadric Surfaces
 
 A quadric surface is the graph in space of a second-degree equation in $x , y ,$ and z. We first focus on quadric surfaces given by the equation 
 
@@ -2849,7 +2823,7 @@ $$
 
 where $A , \ B , \ C , \ D ,$ , and E are constants. The basic quadric surfaces are ellipsoids, paraboloids, elliptical cones, and hyperboloids. Spheres are special cases of ellipsoids. We present a few examples illustrating how to sketch a quadric surface, and then we give a summary table of graphs of the basic types. 
 
-## **EXAMPLE 2** The ellipsoid
+**EXAMPLE 2** The ellipsoid
 
 $$
 \frac {x ^ {2}}{a ^ {2}} + \frac {y ^ {2}}{b ^ {2}} + \frac {z ^ {2}}{c ^ {2}} = 1
@@ -2857,10 +2831,10 @@ $$
 
 (Figure 11.47) cuts the coordinate axes at ( ) ± ± a b , 0, 0 ,   0,  , 0 , ( ) and $( 0 , 0 , \pm c )$ . It lies within the rectangular box defined by the inequalities $| x | \leq a , | y | \leq b$ , and $| z | \leq c .$ The surface is symmetric with respect to each of the coordinate planes because each variable in the defining equation is squared. 
 
-![[916f91a2af5e260314e09f43d9bf00b0e56b9b1a907166aaf30f5d9da96c67d6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/916f91a2af5e260314e09f43d9bf00b0e56b9b1a907166aaf30f5d9da96c67d6.jpg)
 
 
-![[d62527324797fb0cbaf594219af50757c8dbf52ff9de35e42bece907b0711d9a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d62527324797fb0cbaf594219af50757c8dbf52ff9de35e42bece907b0711d9a.jpg)
 
 
 FIGURE 11.47 The ellipsoid ${ \frac { x ^ { 2 } } { a ^ { 2 } } } + { \frac { y ^ { 2 } } { b ^ { 2 } } } + { \frac { z ^ { 2 } } { c ^ { 2 } } } = 1$ in Example 2 has elliptical cross-sections in each of the three coordinate planes. 
@@ -2879,7 +2853,7 @@ $$
 
 If any two of the semiaxes a, b, and c are equal, the surface is an ellipsoid of revolution. If all three are equal, the surface is a sphere. 
 
-## **EXAMPLE 3** The hyperbolic paraboloid
+**EXAMPLE 3** The hyperbolic paraboloid
 
 $$
 \frac {y ^ {2}}{b ^ {2}} - \frac {x ^ {2}}{a ^ {2}} = \frac {z}{c}, \quad c > 0
@@ -2897,7 +2871,7 @@ $$
 
 In the plane $x = 0 ,$ , the parabola opens upward from the origin. The parabola in the plane $y = 0$ opens downward. 
 
-![[3ed90fd4da53518a6bb0f0b24c201d5ddaebe72bc9d777a1500b9b14a9f585d7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3ed90fd4da53518a6bb0f0b24c201d5ddaebe72bc9d777a1500b9b14a9f585d7.jpg)
 
 
 
@@ -2916,7 +2890,7 @@ Near the origin, the surface is shaped like a saddle or mountain pass. To a pers
 
 Table 11.1 shows graphs of the six basic types of quadric surfaces. Each surface shown is symmetric with respect to the z-axis, but other coordinate axes can serve as well (with appropriate changes to the equation). 
 
-## General Quadric Surfaces
+### General Quadric Surfaces
 
 The quadric surfaces we have considered have symmetries relative to the $x \mathrm { - } , y \mathrm { - } ,$ , or z-axes. The general equation of second degree in three variables $x , y , z$ is 
 
@@ -2944,14 +2918,14 @@ ELLIPTICAL PARABOLOID
 TABLE 11.1 Graphs of Quadric Surfaces
 
 
-![[50df8840618dd4feaf05222bab933be42c6c84d4483239d5d77be03891a163db.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/50df8840618dd4feaf05222bab933be42c6c84d4483239d5d77be03891a163db.jpg)
 
 
 $$
 \frac {x ^ {2}}{a ^ {2}} + \frac {y ^ {2}}{b ^ {2}} + \frac {z ^ {2}}{c ^ {2}} = 1
 $$
 
-![[b1471e61858255dd0e5539f5d616a95974c974debb9867fd980c03bca1b1a75f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b1471e61858255dd0e5539f5d616a95974c974debb9867fd980c03bca1b1a75f.jpg)
 
 
 ELLIPTICAL CONE 
@@ -2960,10 +2934,10 @@ $$
 \frac {x ^ {2}}{a ^ {2}} + \frac {y ^ {2}}{b ^ {2}} = \frac {z ^ {2}}{c ^ {2}}
 $$
 
-![[7c806441a51781dfa059db63379512232e13fd3538700d81e0bf01bac748f4bd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7c806441a51781dfa059db63379512232e13fd3538700d81e0bf01bac748f4bd.jpg)
 
 
-![[ab1214d2d8e280d9b60d4129b021b7808d3005b933550b1f32b285adb40c9368.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ab1214d2d8e280d9b60d4129b021b7808d3005b933550b1f32b285adb40c9368.jpg)
 
 
 HYPERBOLOID OF TWO SHEETS 
@@ -2972,7 +2946,7 @@ $$
 \frac {z ^ {2}}{c ^ {2}} - \frac {x ^ {2}}{a ^ {2}} - \frac {y ^ {2}}{b ^ {2}} = 1
 $$
 
-![[d0c558bcb714830891b02c8185b92933aed45af04d6e47d2f9e000b2c067aecf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d0c558bcb714830891b02c8185b92933aed45af04d6e47d2f9e000b2c067aecf.jpg)
 
 
 $$
@@ -2981,7 +2955,7 @@ $$
 
 Part of the hyperbola x<sup>2</sup> z<sup>2</sup> = 1 in the xz-plane z a<sup>2</sup> c<sup>2</sup> 
 
-![[6a88ffbbc4a3eec90f00cd1bc1fea45d278b53874a0bd2e4dcce54f356ac4ed1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6a88ffbbc4a3eec90f00cd1bc1fea45d278b53874a0bd2e4dcce54f356ac4ed1.jpg)
 
 
 HYPERBOLOID OF ONE SHEET 
@@ -2992,10 +2966,10 @@ $$
 
 The parabola z = 
 
-![[42c4b07eab7d70e44330ab4d397f5759c91b4dc4067f4c69c3f6effe0ee59d97.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/42c4b07eab7d70e44330ab4d397f5759c91b4dc4067f4c69c3f6effe0ee59d97.jpg)
 
 
-![[579a603d7103d2f6fbbcf0058c9e4bb8eab52895048f4aeb630353493fe006ce.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/579a603d7103d2f6fbbcf0058c9e4bb8eab52895048f4aeb630353493fe006ce.jpg)
 
 
 HYPERBOLIC PARABOLOID 
@@ -3008,7 +2982,7 @@ $$
 a.
 
 
-![[5f0d9cf83f9f4765d52a6fd13be3c307db9a4f73f815db0d3cead73824f87c42.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5f0d9cf83f9f4765d52a6fd13be3c307db9a4f73f815db0d3cead73824f87c42.jpg)
 
 
 
@@ -3033,25 +3007,25 @@ in the plane z = 0 (This ellipse is a circle.)
 
 FIGURE 11.49 An ellipsoid centered at the point 1,  2, 0 . ( ) − 
 
-## EXERCISES 11.6
+### EXERCISES 11.6
 
-## Matching Equations with Surfaces
+#### Matching Equations with Surfaces
 
 In Exercises 1–12, match the equation with the surface it defines. Also, identify each surface by type (paraboloid, ellipsoid, etc.). The surfaces are labeled (a)–(l). 
 
 1. $x ^ { 2 } + y ^ { 2 } + 4 z ^ { 2 } = 1 0$ 
 
-3. $9 y ^ { 2 } + z ^ { 2 } = 1 6$ 
-
 2. $z ^ { 2 } + 4 y ^ { 2 } - 4 x ^ { 2 } = 4$ 
 
-5. $x = y ^ { 2 } - z ^ { 2 }$ 
+3. $9 y ^ { 2 } + z ^ { 2 } = 1 6$ 
 
 4. $y ^ { 2 } + z ^ { 2 } = x ^ { 2 }$ 
 
-7. $x ^ { 2 } + 2 z ^ { 2 } = 8$ 
+5. $x = y ^ { 2 } - z ^ { 2 }$ 
 
 6. $x = - y ^ { 2 } - z ^ { 2 }$ 
+
+7. $x ^ { 2 } + 2 z ^ { 2 } = 8$ 
 
 8. $z ^ { 2 } + x ^ { 2 } - y ^ { 2 } = 1$ 
 
@@ -3061,7 +3035,7 @@ In Exercises 1–12, match the equation with the surface it defines. Also, ident
 
 11. $x ^ { 2 } + 4 z ^ { 2 } = y ^ { 2 }$ 
 
-![[914e7b6ce8106925ec12649bc5499a008e8da7f6bde0dcb8a498ea4fabfacdd5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/914e7b6ce8106925ec12649bc5499a008e8da7f6bde0dcb8a498ea4fabfacdd5.jpg)
 
 
 12. $9 x ^ { 2 } + 4 y ^ { 2 } + 2 z ^ { 2 } = 3 6$ 
@@ -3070,28 +3044,28 @@ In Exercises 1–12, match the equation with the surface it defines. Also, ident
 b.
 
 
-![[66287b1a76901054c70f31c7214b98f0c992e58c2112d824c926d12ca6f46673.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/66287b1a76901054c70f31c7214b98f0c992e58c2112d824c926d12ca6f46673.jpg)
 
 
 
 c.
 
 
-![[3980a97e9815eacefc33512186cff3d52e6fde04e9296850f57c2b72fd3c76b3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3980a97e9815eacefc33512186cff3d52e6fde04e9296850f57c2b72fd3c76b3.jpg)
 
 
 
 d.
 
 
-![[94d4d93e21e96c28a8cbf9f729c88e90851e6d9bae24ca49cabe7cc90ce0b0d7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/94d4d93e21e96c28a8cbf9f729c88e90851e6d9bae24ca49cabe7cc90ce0b0d7.jpg)
 
 
 
 e.
 
 
-![[62096f2575a856b6d04d0e161b7cf879f1e24630c98b15537bea1a18b66c01fb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/62096f2575a856b6d04d0e161b7cf879f1e24630c98b15537bea1a18b66c01fb.jpg)
 
 
 
@@ -3102,48 +3076,48 @@ f.
 g.
 
 
-![[db0e603d4afe6d3a65f85868444357446a691f6ba1fbdb1647bad1ffee394d62.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/db0e603d4afe6d3a65f85868444357446a691f6ba1fbdb1647bad1ffee394d62.jpg)
 
 
-![[70569cbecf308b7f7bdaa2ed9db055eac063c79233179371f2e25d09af4a9381.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/70569cbecf308b7f7bdaa2ed9db055eac063c79233179371f2e25d09af4a9381.jpg)
 
 
 
 h.
 
 
-![[0cf8bf3a67c5575f366f5b9480b5796a5f51f20afb15d20d4254ab18efeadc96.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0cf8bf3a67c5575f366f5b9480b5796a5f51f20afb15d20d4254ab18efeadc96.jpg)
 
 
 
 k.
 
 
-![[9816d89c5cc41ace92ff0f48112f92e3f0912af3464765e4c08c038b057bb1ac.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9816d89c5cc41ace92ff0f48112f92e3f0912af3464765e4c08c038b057bb1ac.jpg)
 
 
-![[6d405e5f327d1b401f9f274acf65435d0a0c588fda3d9e39f3a7e5820737fd19.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6d405e5f327d1b401f9f274acf65435d0a0c588fda3d9e39f3a7e5820737fd19.jpg)
 
 
 
 j.
 
 
-![[8692c8e9564352a41d9d95629d984ce0f2a74d50e2dd40f8039209b9154b134e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8692c8e9564352a41d9d95629d984ce0f2a74d50e2dd40f8039209b9154b134e.jpg)
 
 
 
 l.
 
 
-![[92e8b19963cf90ab13a87ca7ad95d3c114c566dea5a699b23cd24540e1c97f8c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/92e8b19963cf90ab13a87ca7ad95d3c114c566dea5a699b23cd24540e1c97f8c.jpg)
 
 
-## Drawing
+#### Drawing
 
 Sketch the surfaces in Exercises 13–44. 
 
-## CYLINDERS
+#### CYLINDERS
 
 13. $x ^ { 2 } + y ^ { 2 } = 4 $ 
 
@@ -3153,7 +3127,7 @@ Sketch the surfaces in Exercises 13–44.
 
 16. $4 x ^ { 2 } + y ^ { 2 } = 3 6$ 
 
-## ELLIPSOIDS
+#### ELLIPSOIDS
 
 17. $9 x ^ { 2 } + y ^ { 2 } + z ^ { 2 } = 9$ 
 
@@ -3163,63 +3137,63 @@ Sketch the surfaces in Exercises 13–44.
 
 20. $9 x ^ { 2 } + 4 y ^ { 2 } + 3 6 z ^ { 2 } = 3 6$ 
 
-## PARABOLOIDS AND CONES
+#### PARABOLOIDS AND CONES
 
 21. $z = x ^ { 2 } + 4 y ^ { 2 }$ 
 
-23. $x = 4 - 4 y ^ { 2 } - z ^ { 2 }$ 
-
 22. $z = 8 - x ^ { 2 } - y ^ { 2 }$ 
 
-25. $x ^ { 2 } + y ^ { 2 } = z ^ { 2 }$ 
+23. $x = 4 - 4 y ^ { 2 } - z ^ { 2 }$ 
 
 24. $y = 1 - x ^ { 2 } - z ^ { 2 }$ 
 
+25. $x ^ { 2 } + y ^ { 2 } = z ^ { 2 }$ 
+
 26. $4 x ^ { 2 } + 9 z ^ { 2 } = 9 y ^ { 2 }$ 
 
-## HYPERBOLOIDS
+#### HYPERBOLOIDS
 
 27. $x ^ { 2 } + y ^ { 2 } - z ^ { 2 } = 1$ 
 
-29. $z ^ { 2 } - x ^ { 2 } - y ^ { 2 } = 1$ 
-
 28. $y ^ { 2 } + z ^ { 2 } - x ^ { 2 } = 1$ 
+
+29. $z ^ { 2 } - x ^ { 2 } - y ^ { 2 } = 1$ 
 
 30. $( y ^ { 2 } / 4 ) - ( x ^ { 2 } / 4 ) - z ^ { 2 } = 1$ 
 
-## HYPERBOLIC PARABOLOIDS
+#### HYPERBOLIC PARABOLOIDS
 
 31. $y ^ { 2 } - x ^ { 2 } = z$ 
 
-## ASSORTED
-
-33. $z = 1 + y ^ { 2 } - x ^ { 2 }$ 
-
-35. $y = - ( x ^ { 2 } + z ^ { 2 } )$ 
-
-37. $x ^ { 2 } + y ^ { 2 } - z ^ { 2 } = 4 $ 
-
-39. $x ^ { 2 } + z ^ { 2 } = 1$ 
+#### ASSORTED
 
 32. $x ^ { 2 } - y ^ { 2 } = z$ 
 
-41. $z = - ( x ^ { 2 } + y ^ { 2 } )$ 
-
-43. $4 y ^ { 2 } + z ^ { 2 } - 4 x ^ { 2 } = 4 $ 
+33. $z = 1 + y ^ { 2 } - x ^ { 2 }$ 
 
 34. $4 x ^ { 2 } + 4 y ^ { 2 } = z ^ { 2 }$ 
 
+35. $y = - ( x ^ { 2 } + z ^ { 2 } )$ 
+
 36. $1 6 x ^ { 2 } + 4 y ^ { 2 } = 1 $ 
+
+37. $x ^ { 2 } + y ^ { 2 } - z ^ { 2 } = 4 $ 
 
 38. $x ^ { 2 } + z ^ { 2 } = y$ 
 
+39. $x ^ { 2 } + z ^ { 2 } = 1$ 
+
 40. $1 6 y ^ { 2 } + 9 z ^ { 2 } = 4 x ^ { 2 }$ 
+
+41. $z = - ( x ^ { 2 } + y ^ { 2 } )$ 
 
 42. $y ^ { 2 } - x ^ { 2 } - z ^ { 2 } = 1$ 
 
+43. $4 y ^ { 2 } + z ^ { 2 } - 4 x ^ { 2 } = 4 $ 
+
 44. $x ^ { 2 } + y ^ { 2 } = z$ 
 
-## Theory and Examples
+#### Theory and Examples
 
 45. a. Express the area A of the cross-section cut from the ellipsoid 
 
@@ -3241,7 +3215,7 @@ Does your formula give the volume of a sphere of radius a if $a = b = c ?$
 
 46. The barrel shown here is shaped like an ellipsoid with equal pieces cut from the ends by planes perpendicular to the z-axis. The crosssections perpendicular to the z-axis are circular. The barrel is 2h units high, its midsection radius is R, and its end radii are both r. Find a formula for the barrel’s volume. Then check two things. First, suppose the sides of the barrel are straightened to turn the barrel into a cylinder of radius R and height 2h. Does your formula give the cylinder’s volume? Second, suppose r = 0 and h = R so the barrel is a sphere. Does your formula give the sphere’s volume? 
 
-![[724cf71932427ec128ecdee0aaf4198f607c40999ae9b749ba379413499ad315.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/724cf71932427ec128ecdee0aaf4198f607c40999ae9b749ba379413499ad315.jpg)
 
 
 47. Show that the volume of the segment cut from the paraboloid 
@@ -3270,13 +3244,11 @@ $$
 
 where $A _ { m }$ is the area of the region cut by the hyperboloid from the plane $z = h / 2$ 
 
-## Viewing Surfaces
+#### Viewing Surfaces
 
 Plot the surfaces in Exercises 49–52 over the indicated domains. If youT can, rotate the surface into different viewing positions. 
 
-$$
-4 9. z = y ^ {2}, - 2 \leq x \leq 2, - 0. 5 \leq y \leq 2
-$$
+49. $z = y ^ {2}, - 2 \leq x \leq 2, - 0. 5 \leq y \leq 2$
 
 50. z 1 , 2 2, 2 2 y x y = − − ≤ ≤ − ≤ ≤ 2 
 
@@ -3300,19 +3272,19 @@ $$
 \mathbf {d}. - 2 \leq x \leq 2, - 1 \leq y \leq 1
 $$
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 Use a CAS to plot the surfaces in Exercises 53–58. Identify the type of quadric surface from your graph. 
 
 53. $\frac { x ^ { 2 } } { 9 } + \frac { y ^ { 2 } } { 3 6 } = 1 - \frac { z ^ { 2 } } { 2 5 }$ 
 
-55. $5 x ^ { 2 } = z ^ { 2 } - 3 y ^ { 2 }$ 
-
-57. $\frac { x ^ { 2 } } { 9 } - 1 = \frac { y ^ { 2 } } { 1 6 } + \frac { z ^ { 2 } } { 2 }$ 
-
 54. ${ \frac { x ^ { 2 } } { 9 } } - { \frac { z ^ { 2 } } { 9 } } = 1 - { \frac { y ^ { 2 } } { 1 6 } }$ 
 
+55. $5 x ^ { 2 } = z ^ { 2 } - 3 y ^ { 2 }$ 
+
 56. ${ \frac { y ^ { 2 } } { 1 6 } } = 1 - { \frac { x ^ { 2 } } { 9 } } + z$ 
+
+57. $\frac { x ^ { 2 } } { 9 } - 1 = \frac { y ^ { 2 } } { 1 6 } + \frac { z ^ { 2 } } { 2 }$ 
 
 58. $y - { \sqrt { 4 - z ^ { 2 } } } = 0$ 
 
@@ -3354,7 +3326,7 @@ Use a CAS to plot the surfaces in Exercises 53–58. Identify the type of quadri
 
 ## CHAPTER 11 Practice Exercises
 
-## Vector Calculations in Two Dimensions
+### Vector Calculations in Two Dimensions
 
 In Exercises 1–4, let u = 〈− 〉3, 4 and v = 〈 − 〉2,  5 . Find (a) the component form of the vector and (b) its magnitude. 
 
@@ -3370,7 +3342,9 @@ In Exercises 5–8, find the component form of the vector.
 
 Express the vectors in Exercises 9–12 in terms of their lengths and directions. 
 
-9. ${ \sqrt { 2 } } \mathbf { i } + { \sqrt { 2 } } \mathbf { j }$ 10. i j − − 
+9. ${ \sqrt { 2 } } \mathbf { i } + { \sqrt { 2 } } \mathbf { j }$
+
+10. i j − −
 
 11. Velocity vector v i j = − + ( ) ( ) 2 sin 2 cos t t when t = π 2. 
 
@@ -3380,7 +3354,9 @@ Vector Calculations in Three Dimensions
 
 Express the vectors in Exercises 13 and 14 in terms of their lengths and directions. 
 
-13. 2 3 6 i j k − + 14. i j k + − 2 
+13. 2 3 6 i j k − +
+
+14. i j k + − 2
 
 15. Find a vector 2 units long in the direction of v i j k = − + 4 4 . 
 
@@ -3408,7 +3384,9 @@ $$
 
 In Exercises 21 and 22, draw coordinate axes and then sketch u, v, and u × v as vectors at the origin. 
 
-21. u = = + i v i j , 22. u = − = + i j v i j , 
+21. u = = + i v i j ,
+
+22. u = − = + i j v i j ,
 
 23. If v w = = 2,  3, and the angle between v and w is π 3, find v w − 2 . 
 
@@ -3420,7 +3398,7 @@ In Exercises 25 and 26, find (a) the area of the parallelogram determined by vec
 
 26. u = + = = + + i j v j w i j k , , 
 
-## Lines, Planes, and Distances
+### Lines, Planes, and Distances
 
 27. Suppose that n is normal to a plane and that v is parallel to the plane. Describe how you would find a vector n that is both perpendicular to v and parallel to the plane. 
 
@@ -3542,7 +3520,7 @@ $$
 
 62. The parallelogram shown here has vertices at $A ( 2 , - 1 , 4 )$ $B ( 1 , 0 , - 1 )$ ( ) ,   1, 2, 3 ,C and D. Find 
 
-![[8cb9b91ecbbeb800cc8f2d0599e3d64af19c4abd7a154f5a1e278cf4738d1f12.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8cb9b91ecbbeb800cc8f2d0599e3d64af19c4abd7a154f5a1e278cf4738d1f12.jpg)
 
 
 a. the coordinates of D. 
@@ -3561,7 +3539,7 @@ f. the areas of the orthogonal projections of the parallelogram on the three coo
 
 64. (Continuation of Exercise 63.) Find the distance between the line through $A ( 4 , 0 , 2 )$ and B( ) 2, 4, 1 and the line through C( ) 1, 3, 2 and D( ) 2, 2, 4 . 
 
-## Quadric Surfaces
+### Quadric Surfaces
 
 Identify and sketch the surfaces in Exercises 65–76. 
 
@@ -3593,7 +3571,7 @@ Identify and sketch the surfaces in Exercises 65–76.
 
 1. Submarine hunting Two surface ships on maneuvers are trying to determine a submarine’s course and speed to prepare for an aircraft intercept. As shown here, ship A is located at $( 4 , 0 , 0 ) ,$ whereas ship B is located at ( ) 0, 5, 0 . All coordinates are given in thousands of meters. Ship A locates the submarine in the direction of the vector $2 \mathbf { i } + 3 \mathbf { j } - ( 1 / 3 ) \mathbf { k }$ k, and ship B locates it in the direction of the vector $1 8 \mathbf { i } - 6 \mathbf { j } - \mathbf { k }$ . Four minutes ago, the submarine was located at $( 2 , - 1 , - 1 / 3 )$ . The aircraft is due in 20 min. Assuming that the submarine moves in a straight line at a constant speed, to what position should the surface ships direct the aircraft? 
 
-![[956e7f512d7fc36cb408f7bd164a06fe8011d7754b849975dac445c329b4a22a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/956e7f512d7fc36cb408f7bd164a06fe8011d7754b849975dac445c329b4a22a.jpg)
 
 
 2. A helicopter rescue Two helicopters, $H _ { 1 }$ and $H _ { 2 } ,$ , are traveling together. At time $t = 0 .$ , they separate and follow different straight-line paths given by 
@@ -3606,27 +3584,27 @@ Time t is measured in hours, and all coordinates are measured in kilometers. Due
 
 3. Torque The operator’s manual for the $\operatorname { T o r o } ^ { \mathbb { \left( B \right) } }$ 53-cm lawnmower says, “tighten the spark plug to $2 0 . 4 ~ \mathrm { N \cdot m ^ { 3 } }$ If you are installing the plug with a 26.5-cm socket wrench that places the center of your hand 23 cm from the axis of the spark plug, about how hard should you pull? Answer in newtons. 
 
-![[582bbb1f2ea110511d5e492058c267b8c3269f3c0e402b1f59be469c1fa1149c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/582bbb1f2ea110511d5e492058c267b8c3269f3c0e402b1f59be469c1fa1149c.jpg)
 
 
 4. Rotating body The line through the origin and the point A( ) 1, 1, 1 is the axis of rotation of a rigid body rotating with a constant angular speed of $3 / 2$ rad s. The rotation appears to be clockwise when we look toward the origin from A. Find the velocity v of the point of the body that is at the position B( ) 1, 3, 2 . 
 
-![[341d1ee9bcdda270400e38b4be6a5bcfaf1419fa1a9a7b44a98f20a99c94650a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/341d1ee9bcdda270400e38b4be6a5bcfaf1419fa1a9a7b44a98f20a99c94650a.jpg)
 
 
 5. Consider the weight suspended by two wires in each diagram. Find the magnitudes and components of vectors $\mathbf { F } _ { 1 }$ and $\mathbf { F } _ { 2 } ,$ , and angles B and . C 
 
-![[232615ba7adaad42bb4c214fc6c9ac81b56a66667ad77726a6173855d3c53aa4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/232615ba7adaad42bb4c214fc6c9ac81b56a66667ad77726a6173855d3c53aa4.jpg)
 
 
-![[0a6f1c338ab830465210174173363b79a3771eda3bdae7d091f81573481f32dc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0a6f1c338ab830465210174173363b79a3771eda3bdae7d091f81573481f32dc.jpg)
 
 
 (Hint: This triangle is a right triangle.) 
 
 6. Consider a weight of w N suspended by two wires in the diagram, where $\mathbf { T } _ { 1 }$ and $\mathbf { T } _ { 2 }$ are force vectors directed along the wires. 
 
-![[5b317ead9bbf1a58f06284b26457582c9e58c67abaf0016e7cbd9f6e1f522592.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5b317ead9bbf1a58f06284b26457582c9e58c67abaf0016e7cbd9f6e1f522592.jpg)
 
 
 a. Find the vectors $\mathbf { T } _ { 1 }$ and $\mathbf { T } _ { 2 }$ and show that their magnitudes are 
@@ -3645,7 +3623,7 @@ b. For a fixed $\beta ,$ determine the value of B that minimizes the magnitude $
 
 c. For a fixed B, determine the value of C that minimizes the magnitude $| \mathbf { T } _ { 2 } |$ 
 
-## 7. Determinants and planes
+### 7. Determinants and planes
 
 a. Show that 
 
@@ -3679,14 +3657,14 @@ $$
 
 a. Use vectors to find the angle R formed by the base of the tetrahedron and any one of its other edges. 
 
-![[d6ccb4bd43f4771f0c4c53130439ff53b76fedd331a8e13f612c5df4af34ed4e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d6ccb4bd43f4771f0c4c53130439ff53b76fedd331a8e13f612c5df4af34ed4e.jpg)
 
 
 b. Use vectors to find the angle R formed by any two adjacent faces of the tetrahedron. This angle is commonly referred to as a dihedral angle. 
 
 10. In the figure here, D is the midpoint of side AB of triangle ABC, and E is one-third of the way between C and B. Use vectors to prove that F is the midpoint of line segment CD. 
 
-![[d2f746a06e07feecd24bb160d8e0829868ea52e1e38dca0a38dc2f616d887587.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d2f746a06e07feecd24bb160d8e0829868ea52e1e38dca0a38dc2f616d887587.jpg)
 
 
 11. Use vectors to show that the distance from $P _ { 1 } ( x _ { 1 } , y _ { 1 } )$ to the line $a x + b y = c$ is 
@@ -3721,7 +3699,7 @@ d. Write equations for the planes that lie parallel to, and 5 units away from, t
 
 16. The accompanying figure shows nonzero vectors v, w, and z, with z orthogonal to the line L, and v and w making equal angles β with L. Assuming v w= , find w in terms of v and z. 
 
-![[3f96708cfd781cc90996ce15f10807502783a39e83a2fbb23965988a0f07614f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3f96708cfd781cc90996ce15f10807502783a39e83a2fbb23965988a0f07614f.jpg)
 
 
 17. Triple vector products The triple vector products $( \mathbf { u } \times \mathbf { v } ) \times \mathbf { w }$ and u $\mathbf { \nabla } \times \left( \mathbf { v } \times \mathbf { w } \right)$ ) are usually not equal, although the formulas for evaluating them from components are similar: 
@@ -3781,10 +3759,3 @@ Projects can be found within MyLab Math.
 Part II: Plot functions that are defined implicitly. 
 
 • Getting Started in Plotting in 3D Part I: Use the vector definition of lines and planes to generate graphs and equations, and to compare different forms for the equations of a single line. 
-
-# Vector-Valued Functions and Motion in Space
-
-![[0b745910ffc0610665a974d7b2b002796a50ed3d5b7916834562545c6ead8531.jpg|image]]
-
-
-OVERVIEW In this chapter we introduce the calculus of vector-valued functions. The domains of these functions are sets of real numbers, as before, but their ranges consist of vectors instead of scalars. When a vector-valued function changes, the change can occur in both magnitude and direction, so the derivative is itself a vector. The integral of a vectorvalued function is also a vector. We use the calculus of these functions to describe the paths and motions of objects moving in a plane or in space, so their velocities and accelerations are given by vectors.

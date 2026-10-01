@@ -7,9 +7,16 @@ order: 15
 
 <!-- Extracted from Thomas-calculus Markdown source; chapters 1-17 only. -->
 
+![教材插图](/books/thomas-calculus/assets/20225632bcd2f4f25fe3e0218bb4767555e8ade3846304a4567e12308e8053be.jpg)
+
+
+OVERVIEW In this chapter we extend the theory of integration to functions whose domains are curves and surfaces in space. The resulting line and surface integrals give powerful mathematical tools for science and engineering. Line integrals are used to find the work done by a force in moving an object along a path and to find the mass of a curved wire with variable density. Surface integrals are used to find the rate of flow of a fluid across a surface and to describe the interactions of electric and magnetic forces. We present the fundamental theorems of vector integral calculus and discuss their mathematical consequences and physical applications. The theorems of vector calculus are then shown to be generalized versions of the Fundamental Theorem of Calculus.
+
+
+
 ## 15.1 Line Integrals of Scalar Functions
 
-![[fb4c1be22667014cc7940f186de23f113c1acd36ad830ea8879740a486ce12ba.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fb4c1be22667014cc7940f186de23f113c1acd36ad830ea8879740a486ce12ba.jpg)
 
 
 To calculate the total mass of a wire lying along a curve in space, or to find the work done by a variable force acting along such a curve, we need a more general notion of integral than was defined in Chapter 5. We need to integrate over a curve C rather than over an interval $[a, b]$ . These more general integrals are called line integrals (although path integrals might be more descriptive). We make our definitions for space curves, with curves in the xy-plane being the special case with z-coordinate identically zero. 
@@ -20,12 +27,12 @@ FIGURE 15.1 The curve $\mathbf{r}(t)$ partitioned into small arcs from $t = a$ t
 
 Suppose that $f(x,y,z)$ is a real-valued function we wish to integrate over the curve C lying within the domain of f and parametrized by $\mathbf{r}(t)=g(t)\mathbf{i}+h(t)\mathbf{j}+k(t)\mathbf{k}, a\leq t\leq b$ . The values of f along the curve are given by the composite function $f(g(t),h(t),k(t))$ . We are going to integrate this composition with respect to arc length from t=a to t=b. To begin, we first partition the curve C into a finite number n of subarcs (Figure 15.1). The typical subarc has length $\Delta s_{k}$ . In each subarc we choose a point $(x_{k},y_{k},z_{k})$ and form the sum 
 
-![[04e0104471dc9e779f46707f525690d024e84537498d21bf68e539e7d26412cd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/04e0104471dc9e779f46707f525690d024e84537498d21bf68e539e7d26412cd.jpg)
 
 
 which is similar to a Riemann sum. Depending on how we partition the curve C and pick $(x_{k}, y_{k}, z_{k})$ in the kth subarc, we may get different values for $S_{n}$ . If f is continuous and the functions g, h, and k have continuous first derivatives, then these sums approach a limit as n increases and the lengths $\Delta s_{k}$ approach zero. This leads to the following definition, which is similar to that for a single integral. In the definition, we assume that the norm of the partition approaches zero as $n \to \infty$ , so that the length of the longest subarc approaches zero. 
 
-![[10071838b4e24978685a41e44128734c624671e05bb4f33e643d86762001bb4e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/10071838b4e24978685a41e44128734c624671e05bb4f33e643d86762001bb4e.jpg)
 
 
 
@@ -62,7 +69,7 @@ FIGURE 15.2 The integration path in Example 1.
 >
 The integral on the right side of Equation (2) is just an ordinary definite integral, as defined in Chapter 5, where we are integrating with respect to the parameter t. The formula evaluates the line integral on the left side correctly no matter what smooth parametrization is used. Note that the parameter t defines a direction along the path. The starting point on C is the position $\mathbf{r}(a)$ , and movement along the path is in the direction of increasing t (see Figure 15.1). 
 
-## How to Evaluate a Line Integral
+### How to Evaluate a Line Integral
 
 To integrate a continuous function $f(x, y, z)$ over a curve C: 
 
@@ -90,7 +97,7 @@ $$
 
 The components have continuous first derivatives, and $|\mathbf{v}(t)| = |\mathbf{i} + \mathbf{j} + \mathbf{k}| = \sqrt{1^{2} + 1^{2} + 1^{2}} = \sqrt{3}$ is never 0, so the parametrization is smooth. The integral of f over C is 
 
-![[9e115c359f4e1f507e16e2abaa336eee772876cac8b5331f0498d631f3102e69.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9e115c359f4e1f507e16e2abaa336eee772876cac8b5331f0498d631f3102e69.jpg)
 
 
 
@@ -101,7 +108,7 @@ $$
 \begin{array}{l} \int_ {C} f (x, y, z) d s = \int_ {0} ^ {1} f (t, t, t) \sqrt {3} d t \quad \text {Eq. (2),} d s = | \mathbf {v} (t) | d t = \sqrt {3} d t \\ = \int_ {0} ^ {1} (t - 3 t ^ {2} + t) \sqrt {3} d t \\ = \sqrt {3} \int_ {0} ^ {1} (2 t - 3 t ^ {2}) d t = \sqrt {3} \left[ t ^ {2} - t ^ {3} \right] _ {0} ^ {1} = 0. \end{array}
 $$
 
-## Additivity
+### Additivity
 
 Line integrals have the useful property that if a piecewise smooth curve C is made by joining a finite number of smooth curves $C_{1}, C_{2}, \ldots, C_{n}$ end to end (Section 12.1), then the integral of a function over C is the sum of the integrals over the curves that make it up: 
 
@@ -125,7 +132,7 @@ $$
 
 Notice three things about the integrations in Examples 1 and 2. First, as soon as the components of the appropriate curve were substituted into the formula for f, the integration became a standard integration with respect to t. Second, the integral of f over $C_{1} \cup C_{2}$ was obtained by integrating f over each section of the path and adding the results. Third, the integrals of f over C and $C_{1} \cup C_{2}$ had different values. We investigate this third observation in Section 15.3. 
 
-![[6de29c8a50c8eb87fd53b9e343cea08ff39de1de1034e2136775dbd24813801e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6de29c8a50c8eb87fd53b9e343cea08ff39de1de1034e2136775dbd24813801e.jpg)
 
 
 
@@ -148,7 +155,7 @@ $$
 \begin{array}{l} \int_ {C} f (x, y, z) d s = \int_ {0} ^ {\pi} (\sin 2 t + \sqrt {t}) \sqrt {2} d t \\ \qquad = \sqrt {2} \left[ - \frac {1}{2} \cos 2 t + \frac {2}{3} t ^ {3 / 2} \right] _ {0} ^ {\pi} \\ \qquad = \frac {2 \sqrt {2}}{3} \pi^ {3 / 2} \approx 5. 2 5. \end{array}
 $$
 
-## Mass and Moment Calculations
+### Mass and Moment Calculations
 
 We treat coil springs and wires as masses distributed along smooth curves in space. The distribution is described by a continuous density function $\delta(x,y,z)$ representing mass per unit length. When a curve C is parametrized by $\mathbf{r}(t)=x(t)\mathbf{i}+y(t)\mathbf{j}+z(t)\mathbf{k}, a\leq t\leq b$ , then x,y, and z are functions of the parameter t, the density is the function $\delta(x(t),y(t),z(t))$ , and the arc length differential is given by 
 
@@ -162,7 +169,7 @@ $$
 M = \int_ {a} ^ {b} \delta (x (t), y (t), z (t)) \sqrt {\left(\frac {d x}{d t}\right) ^ {2} + \left(\frac {d y}{d t}\right) ^ {2} + \left(\frac {d z}{d t}\right) ^ {2}} d t.
 $$
 
-![[cda51139b2d353d45abb7e45b15d7dc53b3e4a6368fd90eb41ced68c88457a9f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cda51139b2d353d45abb7e45b15d7dc53b3e4a6368fd90eb41ced68c88457a9f.jpg)
 
 
 These formulas also apply to thin rods, and their derivations are similar to those in Section 6.6. Notice how similar the formulas are to those in Tables 15.1 and 15.2 for double and triple integrals. The double integrals for planar regions, and the triple integrals for solids, become line integrals for coil springs, wires, and thin rods. 
@@ -219,7 +226,7 @@ $$
 
 so ds = |v| dt = dt. 
 
-![[864668c5938168711c6e7bfea8f8b3fe56e2f58935bd7143b7d8024518a40c4c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/864668c5938168711c6e7bfea8f8b3fe56e2f58935bd7143b7d8024518a40c4c.jpg)
 
 
 
@@ -234,7 +241,7 @@ $$
 
 With $\overline{z}$ to the nearest hundredth, the center of mass is $(0, 0, 0.57)$ . 
 
-## Line Integrals in the Plane
+### Line Integrals in the Plane
 
 Line integrals for curves in the plane have a natural geometric interpretation. If C is a smooth curve in the xy-plane parametrized by $\mathbf{r}(t) = x(t)\mathbf{i} + y(t)\mathbf{j}, a \leq t \leq b$ , we generate a cylindrical surface by moving a straight line along C perpendicular to the plane, holding the line parallel to the z-axis, as in Figure 15.6. If $z = f(x, y)$ is a nonnegative continuous function over a region in the plane containing the curve C, then the graph of f is a surface that lies above the plane. The cylinder cuts through this surface, forming a curve on it that lies above the curve C and follows its winding nature. The part of the cylindrical surface that lies beneath the surface curve and above the xy-plane forms a “curved wall” or “fence” standing on the curve C and orthogonal to the plane. At any point $(x, y)$ along the curve, the height of the wall is $f(x, y)$ . From the definition 
 
@@ -252,7 +259,7 @@ $$
 
 where $\Delta s_k \to 0$ as $n \to \infty$ , we see that the line integral $\int_{C} f ds$ is the area of the wall shown in the figure. 
 
-## EXERCISES 15.1
+### EXERCISES 15.1
 
 Graphs of Vector Equations 
 
@@ -266,10 +273,10 @@ a.
 b.
 
 
-![[369649bff90ce181bf953565c76adfd804546dda0a659f62d77490820b799295.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/369649bff90ce181bf953565c76adfd804546dda0a659f62d77490820b799295.jpg)
 
 
-![[c5dc3d78ab5673e6425af62026bb06063e533f92c02476eafa392e0fc8d36469.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c5dc3d78ab5673e6425af62026bb06063e533f92c02476eafa392e0fc8d36469.jpg)
 
 
 
@@ -280,30 +287,30 @@ c.
 d.
 
 
-![[dcae3c7a14475026cf546f3586b72440f1d8e622f77effc22c49ee75f1ae3f24.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dcae3c7a14475026cf546f3586b72440f1d8e622f77effc22c49ee75f1ae3f24.jpg)
 
 
-![[ef8ec0edfc1b32dd51ecbda7f36c48acf7b920299cd8de64d73aa744897c9a70.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ef8ec0edfc1b32dd51ecbda7f36c48acf7b920299cd8de64d73aa744897c9a70.jpg)
 
 
 
 e.
 
 
-![[1ae53e6a631931f64fe46442aaeaafeb7253ac5402a46acd267585790e4e3228.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1ae53e6a631931f64fe46442aaeaafeb7253ac5402a46acd267585790e4e3228.jpg)
 
 
 
 g.
 
 
-![[34b0ba9e1d973ae353862ab4e3b903b05e0680225e6ff46afdbcd03b5658dad1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/34b0ba9e1d973ae353862ab4e3b903b05e0680225e6ff46afdbcd03b5658dad1.jpg)
 
 
-![[00a7b183f5f2a3cec18e1dc48f70e628b1eed34028fdb1c11f9a6b10527c0ff3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/00a7b183f5f2a3cec18e1dc48f70e628b1eed34028fdb1c11f9a6b10527c0ff3.jpg)
 
 
-![[e283b12b8d2467168b153c37d33ee0eb477cb211246c74135bee172201a1ffd1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e283b12b8d2467168b153c37d33ee0eb477cb211246c74135bee172201a1ffd1.jpg)
 
 
 $$
@@ -338,7 +345,7 @@ $$
 \mathbf {8 . r} (t) = (2 \cos t) \mathbf {i} + (2 \sin t) \mathbf {k}, 0 \leq t \leq \pi
 $$
 
-## Evaluating Line Integrals over Space Curves
+#### Evaluating Line Integrals over Space Curves
 
 9. Evaluate $\int_{C}(x + y)ds$ , where $C$ is the straight-line segment $x = t$ , $y = (1 - t)$ , $z = 0$ , from $(0,1,0)$ to $(1,0,0)$ . 
 
@@ -358,10 +365,10 @@ $$
 \begin{array}{l l} C _ {1}: & \mathbf {r} (t) = t \mathbf {i} + t ^ {2} \mathbf {j}, 0 \leq t \leq 1 \\ C _ {2}: & \mathbf {r} (t) = \mathbf {i} + \mathbf {j} + t \mathbf {k}, 0 \leq t \leq 1. \end{array}
 $$
 
-![[dd0ef34301314322c1825010e489d7664bb11774297d735c416988bcb425ea9c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dd0ef34301314322c1825010e489d7664bb11774297d735c416988bcb425ea9c.jpg)
 
 
-![[e2cf98d998d884f4a90a1e75178d8110ee1c3c61c0012377884705a1021d83ea.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e2cf98d998d884f4a90a1e75178d8110ee1c3c61c0012377884705a1021d83ea.jpg)
 
 
 
@@ -394,7 +401,7 @@ $$
 \mathbf {r} (t) = (a \cos t) \mathbf {j} + (a \sin t) \mathbf {k}, \quad 0 \leq t \leq 2 \pi .
 $$
 
-## Line Integrals over Plane Curves
+#### Line Integrals over Plane Curves
 
 19. Evaluate $\int_{C} x ds$ , where $C$ is
     a. the straight-line segment $x = t$ , $y = t/2$ , from $(0,0)$ to $(4,2)$ .
@@ -415,12 +422,12 @@ b. $C_1 \cup C_2$ ; $C_1$ is the line segment from (0,0) to (1,0) and $C_2$ is t
 
 25. Evaluate $\int_{C}(x + \sqrt{y})ds$ , where $C$ is given in the accompanying figure. 
 
-![[cb4751bb7d3c9e94ca12537cd2f3a327722c58e5a91aef22242b72a84f25a4c7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cb4751bb7d3c9e94ca12537cd2f3a327722c58e5a91aef22242b72a84f25a4c7.jpg)
 
 
 26. Evaluate $\int_{C} \frac{1}{x^2 + y^2 + 1} ds$ , where $C$ is given in the accompanying figure. 
 
-![[6d0b5c0b13bf21ada77995e72c69513eb8903ea4af1728196ee4dd7a2ca507f7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6d0b5c0b13bf21ada77995e72c69513eb8903ea4af1728196ee4dd7a2ca507f7.jpg)
 
 
 In Exercises 27–30, integrate f over the given curve. 
@@ -437,7 +444,7 @@ In Exercises 27–30, integrate f over the given curve.
 
 32. Find the area of one side of the “wall” standing perpendicularly on the curve $2x + 3y = 6$ , $0 \leq x \leq 6$ , and beneath the curve on the surface $f(x, y) = 4 + 3x + 2y$ . 
 
-## Masses and Moments
+#### Masses and Moments
 
 33. Mass of a wire Find the mass of a wire that lies along the curve $\mathbf{r}(t) = (t^{2} - 1)\mathbf{j} + 2t\mathbf{k}, 0 \leq t \leq 1$ , if the density is $\delta = (3/2)t$ . 
 
@@ -479,7 +486,7 @@ $$
 
 if the density is $\delta = 1 / (t + 1)$ . 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 43–46, use a CAS to perform the following steps to evaluate the line integrals. 
 
@@ -503,7 +510,7 @@ $$
 
 ## 15.2 Vector Fields and Line Integrals: Work, Circulation, and Flux
 
-![[8546c78a0cf9ba054a477da90baff979b749caa1995912084228434bcc70fc36.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8546c78a0cf9ba054a477da90baff979b749caa1995912084228434bcc70fc36.jpg)
 
 
 Gravitational and electric forces have both a direction and a magnitude. They are represented by a vector at each point in their domain, producing a vector field. In this section we show how to compute the work done in moving an object through such a field by using a line integral involving the vector field. We also discuss velocity fields, such as the vector field representing the velocity of a flowing fluid in its domain. A line integral can be used to find the rate at which the fluid flows along or across a curve within the domain. 
@@ -512,10 +519,10 @@ Gravitational and electric forces have both a direction and a magnitude. They ar
 FIGURE 15.7 Velocity vectors of a flow around an airfoil.
 
 
-![[20e6b21fba6c889b818ce1a16bce2b9ff73111a45650313b295b3a8435827c17.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/20e6b21fba6c889b818ce1a16bce2b9ff73111a45650313b295b3a8435827c17.jpg)
 
 
-## Vector Fields
+### Vector Fields
 
 
 FIGURE 15.8 Streamlines in a contracting channel. The water speeds up as the channel narrows, and the velocity vectors increase in length.
@@ -543,36 +550,36 @@ $$
 
 If we attach the gradient vector $\nabla f$ of a scalar function $f(x,y,z)$ to each point of a level surface of the function, we obtain a three-dimensional field on the surface. If we attach the velocity vector to each point of a flowing fluid, we have a three-dimensional field 
 
-![[a680a1ef0a37086f50e565c2933c57b7ed523d0604e4dea6c9a63dfd970fc186.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a680a1ef0a37086f50e565c2933c57b7ed523d0604e4dea6c9a63dfd970fc186.jpg)
 
 
 
 FIGURE 15.9 Vectors in a gravitational field point toward the center of mass that gives the source of the field.
 
 
-![[69878f054e2fe8057ca27ec51b3b141967bda93d51244ae3bac8841fba021863.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/69878f054e2fe8057ca27ec51b3b141967bda93d51244ae3bac8841fba021863.jpg)
 
 
 FIGURE 15.11 The field of gradient vectors $\nabla f$ on a level surface $f(x,y,z)=c$ . The function f is constant on the surface, and each vector points in the direction where f is increasing fastest. 
 
-![[b1231114dceeb4ab0231fd7100c133c0cef1a513c05db13b6c584462d79ed236.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b1231114dceeb4ab0231fd7100c133c0cef1a513c05db13b6c584462d79ed236.jpg)
 
 
 FIGURE 15.14 The flow of fluid in a long cylindrical pipe. The vectors $\mathbf{v} = (a^{2} - r^{2})\mathbf{k}$ inside the cylinder that have their bases in the xy-plane have their tips on the paraboloid $z = a^{2} - r^{2}$ . 
 
 defined on a region in space. These and other fields are illustrated in Figures 15.7–15.16. To sketch the fields, we picked a representative selection of domain points and drew the vectors attached to them. The arrows are drawn with their tails, not their heads, attached to the points where the vector functions are evaluated. 
 
-![[a058893d0f0e36a6a60143cbbd54391c3f04719c1f182bade10339293c05e7ca.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a058893d0f0e36a6a60143cbbd54391c3f04719c1f182bade10339293c05e7ca.jpg)
 
 
 
 FIGURE 15.10 A surface might represent a filter (or a net or a parachute) in a vector field representing water or wind flow velocity vectors. The arrows show the direction of fluid flow, and their lengths indicate speed.
 
 
-![[6b62a02e50c018c33a620099461f2ba34ac4a517edf5da311f2c51af6ab2fa09.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6b62a02e50c018c33a620099461f2ba34ac4a517edf5da311f2c51af6ab2fa09.jpg)
 
 
-![[afeae12f99e510e19869049b384c8bb5c693102518f202f9197e5f7dd81fcdd7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/afeae12f99e510e19869049b384c8bb5c693102518f202f9197e5f7dd81fcdd7.jpg)
 
 
 
@@ -591,7 +598,7 @@ $$
 
 in the plane. The field is not defined at the origin. 
 
-## Gradient Fields
+### Gradient Fields
 
 The gradient vector of a differentiable scalar-valued function at a point gives the direction of greatest increase of the function. An important type of vector field is formed by all the gradient vectors of the function (see Section 13.5). We define the gradient field of a differentiable function $f(x, y, z)$ to be the field of gradient vectors 
 
@@ -601,21 +608,21 @@ $$
 
 At each point $(x, y, z)$ , the gradient field gives a vector pointing in the direction of greatest increase of f, with magnitude being the value of the directional derivative in that direction. The gradient field might represent a force field, or a velocity field that gives the motion of a fluid, or the flow of heat through a medium, depending on the application being considered. 
 
-![[0f451223bbfd02a11a2e2da51d5d46241389fe042cba4e3f7d0eb87b8b72a92c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0f451223bbfd02a11a2e2da51d5d46241389fe042cba4e3f7d0eb87b8b72a92c.jpg)
 
 
 
 FIGURE 15.15 The velocity vectors $\mathbf{v}(t)$ of a projectile's motion make a vector field along the trajectory.
 
 
-![[2c97a073b343e3366fe78b1664f0538a557f9efa04e6c9c87d462bc5c6ea7e13.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2c97a073b343e3366fe78b1664f0538a557f9efa04e6c9c87d462bc5c6ea7e13.jpg)
 
 
 
 FIGURE 15.17 The vectors in a temperature gradient field point in the direction of greatest increase in temperature. In this case they are pointing toward the origin.
 
 
-![[babba8d7f17253b79bb0669484d28d87f28715417eeb8ff629256b42c1de1bd1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/babba8d7f17253b79bb0669484d28d87f28715417eeb8ff629256b42c1de1bd1.jpg)
 
 
 
@@ -634,7 +641,7 @@ and that $\mathbf{F}(x,y,z)$ is defined to be the gradient of T. Find the vector
 
 **Solution** The gradient field F is the field $F = \nabla T = -2x\mathbf{i} - 2y\mathbf{j} - 2z\mathbf{k}$ . At each point in the region, the vector field F gives the direction for which the increase in temperature is greatest. The vectors point toward the origin, where the temperature is greatest. See Figure 15.17. 
 
-## Line Integrals of Vector Fields
+### Line Integrals of Vector Fields
 
 In Section 15.1 we defined the line integral of a scalar function $f(x, y, z)$ over a path C. We turn our attention now to the idea of a line integral of a vector field F along the curve C. Such line integrals have important applications in the study of fluid flows, work and energy, and electrical or gravitational fields. 
 
@@ -646,7 +653,7 @@ $$
 
 so we are led to the following definition. 
 
-![[7a9228ee0dec2c544951a6866611472681f515edea19705238c2f137a5b02236.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7a9228ee0dec2c544951a6866611472681f515edea19705238c2f137a5b02236.jpg)
 
 
 
@@ -693,7 +700,7 @@ $$
 \begin{array}{r l} \int_ {C} \mathbf {F} \cdot d \mathbf {r} & = \int_ {0} ^ {1} \mathbf {F} (\mathbf {r} (t)) \cdot \frac {d \mathbf {r}}{d t} d t \\ & = \int_ {0} ^ {1} \left(2 t ^ {3 / 2} + t ^ {3} - \frac {1}{2} t ^ {3 / 2}\right) d t \\ & = \left[ \left(\frac {3}{2}\right) \left(\frac {2}{5} t ^ {5 / 2}\right) + \frac {1}{4} t ^ {4} \right] _ {0} ^ {1} = \frac {1 7}{2 0}. \end{array}\tag{Eq. (2}
 $$
 
-## Line Integrals with Respect to dx, dy, or dz
+### Line Integrals with Respect to dx, dy, or dz
 
 When analyzing forces or flows, it is often useful to consider each component direction separately. For example, when analyzing the effect of a gravitational force, we might want to consider motion and forces in the vertical direction, while ignoring horizontal motions. Or we might be interested only in the force exerted horizontally by water pushing against the face of a dam or in wind affecting the course of a plane. In such situations we want to evaluate a line integral of a scalar function with respect to only one of the coordinates, such as $\int_{C} M dx$ . This type of integral is not the same as the arc length line integral $\int_{C} M ds$ we defined in Section 15.1, since it picks out displacement in the direction of only one coordinate. To define the integral $\int_{C} M dx$ for the scalar function $M(x, y, z)$ , we specify a vector field $\mathbf{F} = M(x, y, z)\mathbf{i}$ having a component only in the x-direction, and none in the y- or the z-direction. Then, over the curve C parametrized by $\mathbf{r}(t) = g(t)\mathbf{i} + h(t)\mathbf{j} + k(t)\mathbf{k}$ for $a \leq t \leq b$ , we have $x = g(t)$ , $dx = g'(t)dt$ , and 
 
@@ -701,7 +708,7 @@ $$
 \int_ {C} M d x + N d y + P d z
 $$
 
-## Line Integral Notation
+### Line Integral Notation
 
 To evaluate these integrals, we parametrize C as $g(t)\mathbf{i} + h(t)\mathbf{j} + k(t)\mathbf{k}$ and use Equations (3), (4), and (5). 
 
@@ -751,21 +758,21 @@ $$
 \begin{array}{l} \int_ {C} - y d x + z d y + 2 x d z = \int_ {0} ^ {2 \pi} [ (- \sin t) (- \sin t) + t \cos t + 2 \cos t ] d t \\ \qquad = \int_ {0} ^ {2 \pi} [ 2 \cos t + t \cos t + \sin^ {2} t ] d t \\ \qquad = \left[ 2 \sin t + (t \sin t + \cos t) + \left(\frac {t}{2} - \frac {\sin 2 t}{4}\right) \right] _ {0} ^ {2 \pi} \\ \qquad = [ 0 + (0 + 1) + (\pi - 0) ] - [ 0 + (0 + 1) + (0 - 0) ] \\ \qquad = \pi . \end{array}
 $$
 
-![[1baa89286331dd72a5298b464ff3b744f87b5915e321f281ab8f713dbabe5a0f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1baa89286331dd72a5298b464ff3b744f87b5915e321f281ab8f713dbabe5a0f.jpg)
 
 
 
 FIGURE 15.19 The work done along the subarc shown here is approximately $\mathbf{F}_k\cdot \mathbf{T}_k\Delta s_k$ , where $\mathbf{F}_k = \mathbf{F}(x_k,y_k,z_k)$ and $\mathbf{T}_k = \mathbf{T}(x_k,y_k,z_k)$
 
 
-![[2eae35cb7b338cb1e01b1152812ca1bab42660f764bbd5c1417030019cac2acd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2eae35cb7b338cb1e01b1152812ca1bab42660f764bbd5c1417030019cac2acd.jpg)
 
 
 
 FIGURE 15.20 The work done by a force F is the line integral of the scalar component $F \cdot T$ over the smooth curve from A to B.
 
 
-## Work Done by a Force over a Curve in Space
+### Work Done by a Force over a Curve in Space
 
 Suppose that the vector field $\mathbf{F} = M(x, y, z)\mathbf{i} + N(x, y, z)\mathbf{j} + P(x, y, z)\mathbf{k}$ represents a force throughout a region in space (it might be the force of gravity or an electromagnetic force) and that 
 
@@ -803,7 +810,7 @@ Using the notations we have presented, we can express the work integral in a var
 TABLE 15.2 Different ways to write the work integral for F = M i + N j + P k over the curve C: r(t) = g(t)i + h(t)j + k(t)k, a ≤ t ≤ b
 
 
-![[50e4472b8347ab0f553834b24d50db3935593872b7ada8ac42eb06d6c00bd692.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/50e4472b8347ab0f553834b24d50db3935593872b7ada8ac42eb06d6c00bd692.jpg)
 
 
 
@@ -866,7 +873,7 @@ $$
 \int_ {a} ^ {b} \mathbf {F} (\mathbf {r} (t)) \cdot \frac {d \mathbf {r}}{d t} d t = \left. \int_ {0} ^ {1} 2 t ^ {3} d t = \frac {t ^ {4}}{2} \right| _ {0} ^ {1} = \frac {1}{2}.
 $$
 
-## Flow Integrals and Circulation for Velocity Fields
+### Flow Integrals and Circulation for Velocity Fields
 
 Suppose that $\mathbf{F}$ represents the velocity field of a fluid flowing through a region in space (a tidal basin or the turbine chamber of a hydroelectric generator, for example). Under these circumstances, the integral of $\mathbf{F} \cdot \mathbf{T}$ along a curve in the region gives the fluid's flow along, or circulation around, the curve. For instance, the vector field in Figure 15.12 gives zero circulation around the unit circle in the plane. By contrast, the vector field in Figure 15.13 gives a nonzero circulation around the unit circle. 
 
@@ -906,7 +913,7 @@ $$
 \begin{array}{l} \text { Flow } = \int_ {t = a} ^ {t = b} \mathbf {F} \cdot \frac {d \mathbf {r}}{d t} d t = \int_ {0} ^ {\pi / 2} (- \sin t \cos t + t \cos t + \sin t) d t \\ = \left[ \frac {\cos^ {2} t}{2} + t \sin t \right] _ {0} ^ {\pi / 2} = \left(0 + \frac {\pi}{2}\right) - \left(\frac {1}{2} + 0\right) = \frac {\pi}{2} - \frac {1}{2}. \end{array}
 $$
 
-![[f295d169604a32f75ff085058666bb4fb931021358c76373e546af840fde24d0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f295d169604a32f75ff085058666bb4fb931021358c76373e546af840fde24d0.jpg)
 
 
 
@@ -916,7 +923,7 @@ FIGURE 15.22 The vector field F and curve $\mathbf{r}(t)$ in Example 7.
 Simple,
 not closed 
 
-![[63d8c70a962b97ed5a78e6ad8a998afd0fe0f8b2f748a6333ae3eaf37f58fdcb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/63d8c70a962b97ed5a78e6ad8a998afd0fe0f8b2f748a6333ae3eaf37f58fdcb.jpg)
 
 
 
@@ -945,7 +952,7 @@ $$
 
 As Figure 15.22 suggests, a fluid with this velocity field is circulating counterclockwise around the circle. The circle is also traversed counterclockwise as t increases from 0 to $2\pi$ , so the circulation is positive. 
 
-## Flux Across a Simple Closed Plane Curve
+### Flux Across a Simple Closed Plane Curve
 
 A curve in the xy-plane is simple if it does not cross itself (Figure 15.23). When a curve starts and ends at the same point, it is a closed curve or loop. To find the rate at which a fluid is entering or leaving a region enclosed by a smooth simple closed curve C in the xy-plane, we calculate the line integral over C of $F \cdot n$ , the scalar component of the fluid's velocity field in the direction of the curve's outward-pointing normal vector. We use only the normal component of F, while ignoring the tangential component, because the normal component leads to the flow across C. The value of this integral is the flux of F across C. Flux is Latin for flow, but many flux calculations involve no motion at all. When F is an electric or magnetic field, for instance, the integral of $F \cdot n$ is still called the flux of the field across C. 
 
@@ -963,10 +970,10 @@ $$
 x = g (t), \quad y = h (t), \quad a \leq t \leq b,
 $$
 
-![[f8b49359c6df10df11e27bc9d9eea8bb0fbc63c90851f20c8745c38320579629.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f8b49359c6df10df11e27bc9d9eea8bb0fbc63c90851f20c8745c38320579629.jpg)
 
 
-![[1338010b34600195af0f9d3af44a72f73bf5b1d630e82cfce0bb584d279dd01f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1338010b34600195af0f9d3af44a72f73bf5b1d630e82cfce0bb584d279dd01f.jpg)
 
 
 
@@ -1019,11 +1026,10 @@ $$
 
 The flux of $\mathbf{F}$ across the circle is $\pi$ . Since the answer is positive, the net flow across the curve is outward. A net inward flow would have given a negative flux. 
 
-## EXERCISES
+### Exercises 15.2
 
-## 15.2
 
-## Vector Fields
+#### Vector Fields
 
 Find the gradient fields of the functions in Exercises 1–4. 
 
@@ -1053,15 +1059,19 @@ b. The curved path $C_2$ : $\mathbf{r}(t) = t\mathbf{i} + t^2\mathbf{j} + t^4\ma
 
 c. The path $C_3 \cup C_4$ consisting of the line segment from (0, 0, 0) to (1, 1, 0) followed by the segment from (1, 1, 0) to (1, 1, 1) 
 
-7. $\mathbf{F} = 3y\mathbf{i} + 2x\mathbf{j} + 4z\mathbf{k}$ 8. $\mathbf{F} = [1 / (x^2 + 1)]\mathbf{j}$ 
+7. $\mathbf{F} = 3y\mathbf{i} + 2x\mathbf{j} + 4z\mathbf{k}$
 
-9. $\mathbf{F} = \sqrt{z}\mathbf{i} - 2x\mathbf{j} + \sqrt{y}\mathbf{k}$ 10. $\mathbf{F} = xy\mathbf{i} + yz\mathbf{j} + xz\mathbf{k}$ 
+8. $\mathbf{F} = [1 / (x^2 + 1)]\mathbf{j}$
+
+9. $\mathbf{F} = \sqrt{z}\mathbf{i} - 2x\mathbf{j} + \sqrt{y}\mathbf{k}$
+
+10. $\mathbf{F} = xy\mathbf{i} + yz\mathbf{j} + xz\mathbf{k}$
 
 11. $\mathbf{F} = (3x^{2} - 3x)\mathbf{i} + 3z\mathbf{j} + \mathbf{k}$ 
 
 12. $\mathbf{F} = (y + z)\mathbf{i} + (z + x)\mathbf{j} + (x + y)\mathbf{k}$ 
 
-![[e70eebbbde10f436c6679fb89db42a7345da000bfcd01fb639ae876104f9658f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e70eebbbde10f436c6679fb89db42a7345da000bfcd01fb639ae876104f9658f.jpg)
 
 
 Line Integrals with Respect to $x, y$ , and $z$ 
@@ -1074,12 +1084,12 @@ In Exercises 13–16, find the line integrals along the given path C.
 
 15. $\int_{C}(x^{2} + y^{2})dy$ , where C is given in the accompanying figure 
 
-![[06199355588bfec6fca47a8296a94326d985bf0f289d3b1a84eec43604a0b5df.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/06199355588bfec6fca47a8296a94326d985bf0f289d3b1a84eec43604a0b5df.jpg)
 
 
 16. $\int_{C}\sqrt{x+y}dx$ , where C is given in the accompanying figure 
 
-![[f7df10eb8d3b3546550a7903d93b59afa81d1ae9d247252c2acf35c623256e40.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f7df10eb8d3b3546550a7903d93b59afa81d1ae9d247252c2acf35c623256e40.jpg)
 
 
 17. Along the curve $\mathbf{r}(t) = t\mathbf{i} - \mathbf{j} + t^2\mathbf{k}$ , $0 \leq t \leq 1$ , evaluate each of the following integrals. 
@@ -1108,29 +1118,17 @@ In Exercises 19–22, find the work done by F over the curve in the direction of
 
 $$
 \mathbf {r} (t) = t \mathbf {i} + t ^ {2} \mathbf {j} + t \mathbf {k}, 0 \leq t \leq 1
-$$
-
-20. $\mathbf{F} = 2y\mathbf{i} + 3x\mathbf{j} + (x + y)\mathbf{k}$ 
-
-$$
+20. $$\mathbf{F} = 2y\mathbf{i} + 3x\mathbf{j} + (x + y)\mathbf{k}$$
 \mathbf {r} (t) = (\cos t) \mathbf {i} + (\sin t) \mathbf {j} + (t / 6) \mathbf {k}, 0 \leq t \leq 2 \pi
-$$
-
-21. $\mathbf{F} = z\mathbf{i} + x\mathbf{j} + y\mathbf{k}$ 
-
-$$
+21. $$\mathbf{F} = z\mathbf{i} + x\mathbf{j} + y\mathbf{k}$$
 \mathbf {r} (t) = (\sin t) \mathbf {i} + (\cos t) \mathbf {j} + t \mathbf {k}, 0 \leq t \leq 2 \pi
-$$
-
-22. $\mathbf{F} = 6\mathbf{zi} + y^2\mathbf{j} + 12x\mathbf{k}$ 
-
-$$
+22. $$\mathbf{F} = 6\mathbf{zi} + y^2\mathbf{j} + 12x\mathbf{k}$$
 \mathbf {r} (t) = (\sin t) \mathbf {i} + (\cos t) \mathbf {j} + (t / 6) \mathbf {k}, \quad 0 \leq t \leq 2 \pi
 $$
 
 a. 
 
-## Line Integrals in the Plane
+#### Line Integrals in the Plane
 
 23. Evaluate $\int_{C} xy dx + (x + y) dy$ along the curve $y = x^2$ from $(-1, 1)$ to $(2, 4)$ . 
 
@@ -1140,7 +1138,7 @@ a.
 
 26. Evaluate $\int_{C} F \cdot dr$ for the vector field $F = yi - xj$ counterclockwise along the unit circle $x^{2} + y^{2} = 1$ from (1,0) to (0,1). 
 
-## Work, Circulation, and Flux in the Plane
+#### Work, Circulation, and Flux in the Plane
 
 27. Work Find the work done by the force $\mathbf{F} = xy\mathbf{i} + (y - x)\mathbf{j}$ over the straight line from (1,1) to (2,3). 
 
@@ -1176,11 +1174,7 @@ In Exercises 31–34, find the circulation and flux of the field F around and ac
 
 $$
 \mathbf {3 2 . F} = x ^ {2} \mathbf {i} + y ^ {2} \mathbf {j}
-$$
-
-33. $\mathbf{F} = -y\mathbf{i} + x\mathbf{j}$ 
-
-$$
+33. $$\mathbf{F} = -y\mathbf{i} + x\mathbf{j}$$
 \mathbf {3 4 . F} = - y ^ {2} \mathbf {i} + x ^ {2} \mathbf {j}
 $$
 
@@ -1204,10 +1198,10 @@ c. The line segment from $(1,0)$ to $(0, - 1)$ followed by the line segment from
 b.
 
 
-![[37268968bbf4ffb0e1a675ffabd4e4e58d0c03dfe38f8555aab6425f0937d7b4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/37268968bbf4ffb0e1a675ffabd4e4e58d0c03dfe38f8555aab6425f0937d7b4.jpg)
 
 
-![[4ad9313a4355329eecc120d6acf92d558e2f2bf6b4639ea1c64c2c503c6fcdf1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4ad9313a4355329eecc120d6acf92d558e2f2bf6b4639ea1c64c2c503c6fcdf1.jpg)
 
 
 c. Use any path from $(0,0)$ to $(2,4)$ different from parts (a) and (b). 
@@ -1218,14 +1212,14 @@ c. Use any path from $(0,0)$ to $(2,4)$ different from parts (a) and (b).
 a.
 
 
-![[7d2d692a82eecf5a89bd5de3e2fe28dd7b807ef260d9a7e7adab400b31860ae2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7d2d692a82eecf5a89bd5de3e2fe28dd7b807ef260d9a7e7adab400b31860ae2.jpg)
 
 
 
 b.
 
 
-![[a051c79f55a060a9ed2d0c67bbcef44387398cb63d8c25eaeb0dd44eb66d68d0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a051c79f55a060a9ed2d0c67bbcef44387398cb63d8c25eaeb0dd44eb66d68d0.jpg)
 
 
 c. Use any closed path different from parts (a) and (b). 
@@ -1242,7 +1236,7 @@ c. Use any closed path different from parts (a) and (b).
 
 46. Propyl alcohol with a density of $\delta = 0.2 \, g/cm^{2}$ flows over the closed curve $\mathbf{r}(t) = (\sin t)\mathbf{i} - (\cos t)\mathbf{j}, 0 \leq t \leq 2\pi$ , according to the vector field $F = \delta v$ , where $\mathbf{v} = (x - y)\mathbf{i} + x^{2}\mathbf{j}$ is a velocity field measured in centimeters per second. Find the circulation of F around the curve $\mathbf{r}(t)$ . 
 
-## Vector Fields in the Plane
+#### Vector Fields in the Plane
 
 47. Spin field Draw the spin field 
 
@@ -1260,7 +1254,7 @@ $$
 
 (see Figure 15.12) along with its horizontal and vertical components at a representative assortment of points on the circle $x^{2} + y^{2} = 1$ . 
 
-## 49. A field of tangent vectors
+49. A field of tangent vectors
 
 a. Find a field $\mathbf{G} = P(x,y)\mathbf{i} + Q(x,y)\mathbf{j}$ in the $xy$ -plane with the property that at any point $(a,b) \neq (0,0)$ , $\mathbf{G}$ is a vector of magnitude $\sqrt{a^2 + b^2}$ tangent to the circle $x^2 + y^2 = a^2 + b^2$ and pointing in the counterclockwise direction. (The field is undefined at $(0,0)$ .) 
 
@@ -1290,7 +1284,7 @@ $$
 \int_ {C} \mathbf {F} \cdot \mathbf {T} d s = k \left[ \left(b ^ {2} + (f (b)) ^ {2}\right) ^ {1 / 2} - \left(a ^ {2} + (f (a)) ^ {2}\right) ^ {1 / 2} \right].
 $$
 
-## Flow Integrals in Space
+#### Flow Integrals in Space
 
 In Exercises 55–58, F is the velocity field of a fluid flowing through a region in space. Find the flow along the given curve in the direction of increasing t. 
 
@@ -1320,22 +1314,18 @@ $$
 
 $$
 \mathbf {r} (t) = (- 2 \cos t) \mathbf {i} + (2 \sin t) \mathbf {j} + 2 t \mathbf {k}, 0 \leq t \leq 2 \pi
-$$
-
-59. Circulation Find the circulation of $F = 2xi + 2zj + 2yk$ around the closed path consisting of the following three curves traversed in the direction of increasing t. 
-
-$$
+59. $Circulation Find the circulation of $F = 2xi + 2zj + 2yk$ around the closed path consisting of the following three curves traversed in the direction of increasing t.$
 \begin{array}{l l} C _ {1} \colon & \mathbf {r} (t) = (\cos t) \mathbf {i} + (\sin t) \mathbf {j} + t \mathbf {k}, 0 \leq t \leq \pi / 2 \\ C _ {2} \colon & \mathbf {r} (t) = \mathbf {j} + (\pi / 2) (1 - t) \mathbf {k}, 0 \leq t \leq 1 \\ C _ {3} \colon & \mathbf {r} (t) = t \mathbf {i} + (1 - t) \mathbf {j}, 0 \leq t \leq 1 \end{array}
 $$
 
-![[18a506bb982a01c819e9caaac5fd46878602891018b3e5cc594168e9def13603.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/18a506bb982a01c819e9caaac5fd46878602891018b3e5cc594168e9def13603.jpg)
 
 
 60. Zero circulation Let C be the ellipse in which the plane $2x + 3y - z = 0$ meets the cylinder $x^{2} + y^{2} = 12$ . Show, without evaluating either line integral directly, that the circulation of the field $F = xi + yj + zk$ around C in either direction is zero. 
 
 61. Flow along a curve The field $F = xyi + yj - yzk$ is the velocity field of a flow in space. Find the flow from $(0, 0, 0)$ to $(1, 1, 1)$ along the curve of intersection of the cylinder $y = x^{2}$ and the plane z = x. (Hint: Use t = x as the parameter.) 
 
-![[f981edd463910a34dc3c5f0663c2ea16cbc55896f3c08a817c3530046e631a5c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f981edd463910a34dc3c5f0663c2ea16cbc55896f3c08a817c3530046e631a5c.jpg)
 
 
 62. Flow of a gradient field Find the flow of the field $\mathbf{F} = \nabla (xy^{2}z^{3})$ : 
@@ -1344,7 +1334,7 @@ a. Once around the curve C in Exercise 58, clockwise as viewed from above;
 
 b. Along the line segment from $(1,1,1)$ to $(2,1,-1)$ . 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 63–68, use a CAS to perform the following steps for finding the work done by force F over the given path: 
 
@@ -1374,7 +1364,7 @@ $$
 
 A gravitational field G is a vector field that represents the effect of gravity at a point in space due to the presence of a massive object. The gravitational force on a body of mass m placed in the field is given by F = mG. Similarly, an electric field E is a vector field in space that represents the effect of electric forces on a charged particle placed within it. The force on a body of charge q placed in the field is given by F = qE. In gravitational and electric fields, the amount of work it takes to move a mass or charge from one point to another depends on the initial and final positions of the object—not on which path is taken between these positions. In this section we study vector fields with this independence-of-path property and the calculation of work integrals associated with them. 
 
-## Path Independence
+### Path Independence
 
 If $A$ and $B$ are two points in an open region $D$ in space, the line integral of $\mathbf{F}$ along $C$ from $A$ to $B$ for a field $\mathbf{F}$ defined on $D$ usually depends on the path $C$ taken, as we saw in Section 15.1. For some special fields, however, the integral's value is the same for all paths from $A$ to $B$ . 
 
@@ -1382,21 +1372,21 @@ If $A$ and $B$ are two points in an open region $D$ in space, the line integral 
 
 The word conservative comes from physics, where it refers to fields in which the principle of conservation of energy holds. When a line integral is independent of the path C from point A to point B, we sometimes represent the integral by the symbol $\int_{A}^{B}$ rather than the usual line integral symbol $\int_{C}$ . This substitution helps us remember the path-independence property by indicating that the integral depends only on the initial and final points, not on the path connecting them. 
 
-![[5a40879038c38d961a36da13dceb3ff6b740a21047f29fedaba52cfc0c714fea.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5a40879038c38d961a36da13dceb3ff6b740a21047f29fedaba52cfc0c714fea.jpg)
 
 
 
 (a)
 
 
-![[5055d12f916332d4ffd12c37c14059199f801c798f3645a05bc9f11973b91130.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5055d12f916332d4ffd12c37c14059199f801c798f3645a05bc9f11973b91130.jpg)
 
 
 
 (b)
 
 
-![[9fb3d591c84b4a0fac87d929e6c567ad07c4f92764ffa7214f251737c2e22e46.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9fb3d591c84b4a0fac87d929e6c567ad07c4f92764ffa7214f251737c2e22e46.jpg)
 
 
 
@@ -1407,7 +1397,7 @@ Not simply connected
 (c)
 
 
-![[fce9b811133ab0c9799b6b3fe182d85484b37a64b03f4d04bba2b4f6ea9bd210.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fce9b811133ab0c9799b6b3fe182d85484b37a64b03f4d04bba2b4f6ea9bd210.jpg)
 
 
 
@@ -1436,7 +1426,7 @@ $$
 
 Conservative fields have other important properties. For example, saying that F is conservative on D is equivalent to saying that the integral of F around every closed path in D is zero. Certain conditions on the curves, fields, and domains must be satisfied for Equation (1) to be valid. We discuss these conditions next. 
 
-## Assumptions on Curves, Vector Fields, and Domains
+### Assumptions on Curves, Vector Fields, and Domains
 
 In order for the computations and results we derive below to be valid, we must assume certain properties for the curves, surfaces, domains, and vector fields we consider. We give these assumptions in the statements of theorems, and they also apply to the examples and exercises unless otherwise stated. 
 
@@ -1448,13 +1438,13 @@ Connectivity and simple connectivity are not the same, and neither property impl
 
 Caution Some of the results in this chapter can fail to hold if applied to situations where the conditions we've imposed are not met. In particular, the component test for conservative fields, given later in this section, is not valid on domains that are not simply connected (see Example 5). The condition will be stated when needed. 
 
-## Line Integrals in Conservative Fields
+### Line Integrals in Conservative Fields
 
 A gradient field F is obtained by differentiating a scalar function f. A theorem analogous to the Fundamental Theorem of Calculus gives a way to evaluate the line integrals of gradient fields. 
 
 Like the Fundamental Theorem of Calculus, Theorem 1 gives a direct way to evaluate line integrals without having to take limits of Riemann sums and without needing to compute a line integral by the procedure used in Section 15.2. Before proving Theorem 1, we give an example. 
 
-## THEOREM 1—Fundamental Theorem of Line Integrals
+**THEOREM 1—Fundamental Theorem of Line Integrals**
 
 Let C be a smooth curve joining the point A to the point B in the plane or in space and parametrized by $\mathbf{r}(t)$ . Let f be a differentiable function with a continuous gradient vector $F = \nabla f$ on a domain D containing C. Then 
 
@@ -1484,7 +1474,7 @@ $$
 \begin{array}{l l} \int_ {C} \mathbf {F} \cdot d \mathbf {r} = \int_ {C} \nabla f \cdot d \mathbf {r} & \mathbf {F} = \nabla f \\ = \int_ {t = a} ^ {t = b} \nabla f (\mathbf {r} (t)) \cdot \mathbf {r} ^ {\prime} (t) d t & \text { Eq.   (2)   of   Section   15.2   for   computing   } d \mathbf {r} \\ = \int_ {a} ^ {b} \frac {d}{d t} f (\mathbf {r} (t)) d t & \text { Eq.   (7)   of   Section   13.5   giving   derivative   along   a   path } \\ = f (\mathbf {r} (b)) - f (\mathbf {r} (a)) & \text { Fundamental   Theorem   of   Calculus } \\ = f (B) - f (A). & \mathbf {r} (a) = A, \mathbf {r} (b) = B \end{array}
 $$
 
-![[7919662988fc40b94de2405f04829144894c8f85f76ebe276ce0b7f0030aaca5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7919662988fc40b94de2405f04829144894c8f85f76ebe276ce0b7f0030aaca5.jpg)
 
 
 
@@ -1493,7 +1483,7 @@ FIGURE 15.26 The function $f(x,y,z)$ in the proof of Theorem 2 is computed by a 
 
 We see from Theorem 1 that the line integral of a gradient field $F = \nabla f$ is straightforward to compute once we know the function f. Many important vector fields arising in applications are indeed gradient fields. The next result, which follows from Theorem 1, shows that any conservative field is of this type. 
 
-## THEOREM 2—Conservative Fields Are Gradient Fields
+**THEOREM 2—Conservative Fields Are Gradient Fields**
 
 Let $F = M\mathbf{i} + N\mathbf{j} + P\mathbf{k}$ be a vector field whose components are continuous throughout an open connected region D in space. Then F is conservative if and only if F is a gradient field $\nabla f$ for a differentiable function f. 
 
@@ -1529,14 +1519,14 @@ $$
 
 by the Fundamental Theorem of Calculus. The partial derivatives $\partial f / \partial y = N$ and $\partial f / \partial z = P$ follow similarly, showing that $\mathbf{F} = \nabla f$ . 
 
-![[4a50d83a5255aeacd6bfb6772f10801135b0bf05d81e780ca3b23f0700714643.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4a50d83a5255aeacd6bfb6772f10801135b0bf05d81e780ca3b23f0700714643.jpg)
 
 
 
 FIGURE 15.27 If we have two paths from A to B, one of them can be reversed to make a loop.
 
 
-![[6d4fc94899ebedc20cbc4cefdf63bd20da7b4002ef76176c2472ee891e2e26e9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6d4fc94899ebedc20cbc4cefdf63bd20da7b4002ef76176c2472ee891e2e26e9.jpg)
 
 
 
@@ -1590,7 +1580,7 @@ Two questions arise:
 
 2. If $\mathbf{F}$ is in fact conservative, how do we find a potential function $f$ (so that $\mathbf{F} = \nabla f$ )? 
 
-## Finding Potentials for Conservative Fields
+### Finding Potentials for Conservative Fields
 
 The test for a vector field being conservative involves the equivalence of certain first partial derivatives of the field components. 
 
@@ -1700,7 +1690,7 @@ $$
 
 We found infinitely many potential functions of $\mathbf{F}$ , one for each value of $C$ . 
 
-## **EXAMPLE 4** Show that $\mathbf{F} = (2x - 3)\mathbf{i} - z\mathbf{j} + (\cos z)\mathbf{k}$ is not conservative.
+**EXAMPLE 4** Show that $\mathbf{F} = (2x - 3)\mathbf{i} - z\mathbf{j} + (\cos z)\mathbf{k}$ is not conservative.
 
 **Solution** We apply the Component Test in Equations (2) and find immediately that 
 
@@ -1742,7 +1732,7 @@ Since the line integral of $\mathbf{F}$ around the loop $C$ is not zero, the fie
 
 Example 5 shows that the Component Test does not apply when the domain of the field is not simply connected. However, if we change the domain in the example so that it is restricted to the ball of radius 1 centered at the point $(2, 2, 2)$ , or to any similar ball-shaped region that does not contain a piece of the z-axis, then this new domain D is simply connected. Now the partial derivative Equations (2), as well as all the assumptions of the Component Test, are satisfied. In this new situation, the field F in Example 5 is conservative on D. Just as we must be careful with a function when determining whether it satisfies a property throughout its domain (such as continuity, which is required for the Intermediate Value Property), so must we also be careful with a vector field in determining the properties it may or may not have over its assigned domain. 
 
-## Exact Differential Forms
+### Exact Differential Forms
 
 It is often convenient to express work and circulation integrals in the differential form 
 
@@ -1778,7 +1768,7 @@ for some scalar function f throughout D.
 
 Notice that if $M \, dx + N \, dy + P \, dz = df$ on D, then $F = M\mathbf{i} + N\mathbf{j} + P\mathbf{k}$ is the gradient field of f on D. Conversely, if $F = \nabla f$ , then the form $M \, dx + N \, dy + P \, dz$ is exact. The test for the form being exact is therefore the same as the test for F being conservative. 
 
-## Component Test for Exactness of M dx + N dy + P dz
+### Component Test for Exactness of M dx + N dy + P dz
 
 The differential form $M \, dx + N \, dy + P \, dz$ is exact on an open simply connected domain if and only if 
 
@@ -1788,7 +1778,7 @@ $$
 
 This is equivalent to saying that the field $F = M i + N j + P k$ is conservative. 
 
-## **EXAMPLE 6** Show that $y \, dx + x \, dy + 4 \, dz$ is exact, and evaluate the integral
+**EXAMPLE 6** Show that $y \, dx + x \, dy + 4 \, dz$ is exact, and evaluate the integral
 
 $$
 \int_ {(1, 1, 1)} ^ {(2, 3, - 1)} y d x + x d y + 4 d z
@@ -1852,9 +1842,8 @@ $$
 f (2, 3, - 1) - f (1, 1, 1) = 2 + C - (5 + C) = - 3.
 $$
 
-## EXERCISES
+### Exercises 15.3
 
-## 15.3
 
 Testing for Conservative Fields 
 
@@ -1870,11 +1859,7 @@ $$
 
 $$
 \mathbf {F} = y \mathbf {i} + (x + z) \mathbf {j} - y \mathbf {k}
-$$
-
-4. $\mathbf{F} = -y\mathbf{i} + x\mathbf{j}$ 
-
-$$
+4. $$\mathbf{F} = -y\mathbf{i} + x\mathbf{j}$$
 \mathbf {5 . F} = (z + y) \mathbf {i} + z \mathbf {j} + (y + x) \mathbf {k}
 $$
 
@@ -1896,11 +1881,7 @@ $$
 
 $$
 \mathbf {9 . F} = e ^ {y + 2 z} (\mathbf {i} + x \mathbf {j} + 2 x \mathbf {k})
-$$
-
-10. $\mathbf{F} = (y \sin z) \mathbf{i} + (x \sin z) \mathbf{j} + (xy \cos z) \mathbf{k}$ 
-
-$$
+10. $$\mathbf{F} = (y \sin z) \mathbf{i} + (x \sin z) \mathbf{j} + (xy \cos z) \mathbf{k}$$
 \mathbf {1 1 .} \mathbf {F} = (\ln x + \sec^ {2} (x + y)) \mathbf {i} +
 $$
 
@@ -1926,7 +1907,7 @@ In Exercises 13–17, show that the differential forms in the integrals are exac
 
 17. $\int_{(1,0,0)}^{(0,1,1)}\sin y\cos x dx + \cos y\sin x dy + dz$ 
 
-## Finding Potential Functions to Evaluate Line Integrals
+#### Finding Potential Functions to Evaluate Line Integrals
 
 Although they are not defined on all of space $R^{3}$ , the fields associated with Exercises 18–22 are conservative. Find a potential function for each field, and evaluate the integrals as in Example 6. 
 
@@ -1966,36 +1947,32 @@ Independence of path Show that the values of the integrals in Exercises 25 and 2
 
 In Exercises 27 and 28, find a potential function for $\mathbf{F}$ . 
 
-$$
-\mathbf {2 7 .} \mathbf {F} = \frac {2 x}{y} \mathbf {i} + \left(\frac {1 - x ^ {2}}{y ^ {2}}\right) \mathbf {j}, \quad \{(x, y): y > 0 \}
-$$
+27. $\mathbf {F} = \frac {2 x}{y} \mathbf {i} + \left(\frac {1 - x ^ {2}}{y ^ {2}}\right) \mathbf {j}, \quad \{(x, y): y > 0 \}$
 
-$$
-\mathbf {2 8 .} \mathbf {F} = (e ^ {x} \ln y) \mathbf {i} + \left(\frac {e ^ {x}}{y} + \sin z\right) \mathbf {j} + (y \cos z) \mathbf {k}
-$$
+28. $\mathbf {F} = (e ^ {x} \ln y) \mathbf {i} + \left(\frac {e ^ {x}}{y} + \sin z\right) \mathbf {j} + (y \cos z) \mathbf {k}$
 
 29. Work along different paths Find the work done by $\mathbf{F} = (x^{2} + y)\mathbf{i} + (y^{2} + x)\mathbf{j} + ze^{z}\mathbf{k}$ over the following paths from $(1, 0, 0)$ to $(1, 0, 1)$ . 
 
 a. The line segment $x = 1, y = 0, 0 \leq z \leq 1$ b. The helix $\mathbf{r}(t) = (\cos t)\mathbf{i} + (\sin t)\mathbf{j} + (t / 2\pi)\mathbf{k}$ , $0 \leq t \leq 2\pi$ c. The $x$ -axis from $(1,0,0)$ to $(0,0,0)$ followed by the parabola $z = x^2$ , $y = 0$ from $(0,0,0)$ to $(1,0,1)$ 
 
-![[d46057fe84aead52487be71485716070d4fc15c775cb22c36e65100ff7fdc6d0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d46057fe84aead52487be71485716070d4fc15c775cb22c36e65100ff7fdc6d0.jpg)
 
 
 30. Work along different paths Find the work done by $\mathbf{F} = e^{yz}\mathbf{i} + (xze^{yz} + z\cos y)\mathbf{j} + (xye^{yz} + \sin y)\mathbf{k}$ over the following paths from $(1,0,1)$ to $(1,\pi /2,0)$ . 
 
 a. The line segment $x = 1$ , $y = \pi t / 2$ , $z = 1 - t$ , $0 \leq t \leq 1$ 
 
-![[0d9d836b8cac66f586722c6ce078ca51a301dd07eb4ad10749782270c6131968.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0d9d836b8cac66f586722c6ce078ca51a301dd07eb4ad10749782270c6131968.jpg)
 
 
 b. The line segment from $(1,0,1)$ to the origin followed by the line segment from the origin to $(1,\pi/2,0)$ 
 
-![[f6c0ae81217c2e4f9ea7f372ce44f696b9323bdf4818bfed5a38b37b3374b2b5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f6c0ae81217c2e4f9ea7f372ce44f696b9323bdf4818bfed5a38b37b3374b2b5.jpg)
 
 
 c. The line segment from $(1,0,1)$ to $(1,0,0)$ , followed by the x-axis from $(1,0,0)$ to the origin, followed by the parabola $y = \pi x^{2}/2$ , z = 0 from there to $(1,\pi/2,0)$ 
 
-![[2b0394f4f14c7237a4bf8205dd7e734b711b38d96ca2f562d585384f2d82840c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2b0394f4f14c7237a4bf8205dd7e734b711b38d96ca2f562d585384f2d82840c.jpg)
 
 
 31. Evaluating a work integral two ways Let $\mathbf{F} = \nabla (x^3y^2)$ and let $C$ be the path in the $xy$ -plane from $(-1,1)$ to $(1,1)$ that consists of the line segment from $(-1,1)$ to $(0,0)$ followed by the line segment from $(0,0)$ to $(1,1)$ . Evaluate $\int_{C}\mathbf{F}\cdot dr$ in two ways. 
@@ -2014,7 +1991,7 @@ c. The x-axis from $(-1,0)$ to $(1,0)$
 
 d. The astroid $\mathbf{r}(t) = (\cos^3 t)\mathbf{i} + (\sin^3 t)\mathbf{j}, 0 \leq t \leq 2\pi$ , counterclockwise from (1, 0) back to (1, 0) 
 
-![[c84dd043aa17bdaf8979aeca06f0ed0ca42a6ab9ec5a8bb85085ce9591847998.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c84dd043aa17bdaf8979aeca06f0ed0ca42a6ab9ec5a8bb85085ce9591847998.jpg)
 
 
 33. a. Exact differential form How are the constants $a, b$ , and $c$ related if the following differential form is exact? 
@@ -2067,7 +2044,7 @@ If $\mathbf{F}$ is a conservative field, then we know $\mathbf{F} = \nabla f$ fo
 
 The discussion is given in terms of velocity fields of fluid flows (a fluid is a liquid or a gas) because they are easy to visualize. However, Green's Theorem applies to any vector field, independent of any particular interpretation of the field, provided the assumptions of the theorem are satisfied. We introduce two new ideas for Green's Theorem: circulation density around an axis perpendicular to the plane and divergence (or flux density). 
 
-## Spin Around an Axis: The k-Component of Curl
+### Spin Around an Axis: The k-Component of Curl
 
 Suppose that $\mathbf{F}(x,y) = M(x,y)\mathbf{i} + N(x,y)\mathbf{j}$ is the velocity field of a fluid flowing in the plane and that the first partial derivatives of $M$ and $N$ are continuous at each point of a region $R$ . Let $(x,y)$ be a point in $R$ , and let $A$ be a small rectangle with one corner at $(x,y)$ 
 
@@ -2079,7 +2056,7 @@ $$
 
 and the rectangle A in Figure 15.29 (where we assume both components of F are positive). 
 
-![[328fac2500641b1abedf6a22e4afe07403f2b041721a60c44aca9f095ecf71d8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/328fac2500641b1abedf6a22e4afe07403f2b041721a60c44aca9f095ecf71d8.jpg)
 
 
 
@@ -2122,10 +2099,10 @@ $$
 \left(N (x + \Delta x, y) - N (x, y)\right) \Delta y \approx \left(\frac {\partial N}{\partial x} \Delta x\right) \Delta y.
 $$
 
-![[2904069973daad303cd35ad803b363fb77f3a1649c3eb6a3e133af6444bf6ee1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2904069973daad303cd35ad803b363fb77f3a1649c3eb6a3e133af6444bf6ee1.jpg)
 
 
-![[e22eba4ebbb536423ba4296079010d09bce62d5437af2d74d8489cdc9fa42ba9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e22eba4ebbb536423ba4296079010d09bce62d5437af2d74d8489cdc9fa42ba9.jpg)
 
 
 
@@ -2178,28 +2155,28 @@ If water is moving about a region in the xy-plane in a thin layer, then the k-co
 
 (b) Rotation: (curl $\mathbf{F}$ ) $\cdot \mathbf{k} = \frac{\partial}{\partial x}(cx) - \frac{\partial}{\partial y}(-cy) = 2c$ . The constant circulation density indicates rotation around every point. If $c > 0$ , the rotation is counterclockwise; if $c < 0$ , the rotation is clockwise. 
 
-![[460308b1b3b0548840036362d622da58f76bf4d3a790ce292c901c4f7a08b83f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/460308b1b3b0548840036362d622da58f76bf4d3a790ce292c901c4f7a08b83f.jpg)
 
 
 
 (a)
 
 
-![[e03550e38cb93db6fe6cc029a7a11929873dda03a589cbb4f3048dec9d3b0aed.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e03550e38cb93db6fe6cc029a7a11929873dda03a589cbb4f3048dec9d3b0aed.jpg)
 
 
 
 (b)
 
 
-![[04ff6885d1e6a1e43e1173121f5c03126afe2b604c6a989585f04108721a7e4c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/04ff6885d1e6a1e43e1173121f5c03126afe2b604c6a989585f04108721a7e4c.jpg)
 
 
 
 (c)
 
 
-![[86483fd9279a7620f8ce4c99defce6a82c96fc298ca3f15d6d664e6566bde2f6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/86483fd9279a7620f8ce4c99defce6a82c96fc298ca3f15d6d664e6566bde2f6.jpg)
 
 
 
@@ -2210,7 +2187,7 @@ If water is moving about a region in the xy-plane in a thin layer, then the k-co
 FIGURE 15.31 Velocity fields of a gas flowing in the plane (Example 1).
 
 
-![[981b9ec21857699a17a13592ec7bcd053b353df11033aa858c31890e1aade06b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/981b9ec21857699a17a13592ec7bcd053b353df11033aa858c31890e1aade06b.jpg)
 
 
 (c) Shear: (curl $\mathbf{F}$ ) $\cdot \mathbf{k} = -\frac{\partial}{\partial y}(y) = -1$ . The circulation density is constant and negative, so a paddle wheel floating in water undergoing such a shearing flow spins clockwise. The rate of rotation is the same at each point. The average rotational effect of the fluid flow is to push fluid clockwise around each of the small circles shown in Figure 15.32. 
@@ -2229,11 +2206,11 @@ The circulation density is 0 at every point away from the origin (where the vect
 
 One form of Green's Theorem tells us how circulation density can be used to calculate the line integral for flow in the $xy$ -plane. (The flow integral was defined in Section 15.2.) A second form of the theorem tells us how we can calculate the flux integral, which gives the flow across the boundary, from flux density. We define this idea next and then present both versions of the theorem. 
 
-## Divergence
+### Divergence
 
 Consider again the velocity field $\mathbf{F}(x,y)=M(x,y)\mathbf{i}+N(x,y)\mathbf{j}$ in a domain containing the rectangle A, as shown in Figure 15.33. As before, we assume the field components do not change sign throughout a small region containing the rectangle A. Our interest now is to determine the rate at which the fluid leaves A by flowing across its boundary. 
 
-![[def0b7828701dc1af9915198bd29489dd9b2a5ffdb986315a31cfcca300607dd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/def0b7828701dc1af9915198bd29489dd9b2a5ffdb986315a31cfcca300607dd.jpg)
 
 
 
@@ -2294,14 +2271,14 @@ $$
 \mathbf {F} (x _ {0}, y _ {0}) > 0
 $$
 
-![[beea84b6c75d4e7d50b4141c33fff0eb1e46dc25a9839dae2383753dc116d17d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/beea84b6c75d4e7d50b4141c33fff0eb1e46dc25a9839dae2383753dc116d17d.jpg)
 
 
 
 Sink: div $\mathbf{F}(x_0,y_0) < 0$
 
 
-![[ab73fcc39b7809e4e171be4364c1d9eec4d9952695b02940548671b359497789.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ab73fcc39b7809e4e171be4364c1d9eec4d9952695b02940548671b359497789.jpg)
 
 
 
@@ -2332,7 +2309,7 @@ A gas is compressible, unlike a liquid, and the divergence of its velocity field
 
 Cases (b), (c), and (d) of Figure 15.31 are plausible models for the two-dimensional flow of a liquid. In fluid dynamics, when the velocity field of a flowing fluid always has divergence equal to zero, as in those cases, the flow is said to be incompressible. 
 
-## Two Forms for Green's Theorem
+### Two Forms for Green's Theorem
 
 A simple closed curve C can be traversed in two possible directions. (Recall that a curve is simple if it does not cross itself.) The curve is traversed counterclockwise, and said to be positively oriented, if the region it encloses is always to the left when moving along the curve. If the curve is traversed clockwise, then the enclosed region is on the right when moving along the curve, and the curve is said to be negatively oriented. The line integral of a vector field F along C reverses sign if we change the orientation. We use the notation 
 
@@ -2352,7 +2329,7 @@ Flux of $\mathbf{F}$ across $C = \oint_{C} \mathbf{F} \cdot \mathbf{n} ds$
 
 $\operatorname {div}\mathbf{F} = \frac{\partial M}{\partial x} +\frac{\partial N}{\partial y}$ 
 
-## THEOREM 4—Green's Theorem (Circulation-Curl or Tangential Form)
+**THEOREM 4—Green's Theorem (Circulation-Curl or Tangential Form)**
 
 Let C be a piecewise smooth, simple closed curve enclosing a region R in the plane. Let $F = M\mathbf{i} + N\mathbf{j}$ be a vector field with M and N having continuous first partial derivatives in an open region containing R. Then the counterclockwise circulation of F around C equals the double integral of $(\text{curl } \mathbf{F}) \cdot \mathbf{k}$ over R. 
 
@@ -2362,7 +2339,7 @@ $$
 
 A second form of Green's Theorem says that the outward flux of a vector field across a simple closed curve in the plane equals the double integral of the divergence of the field over the region enclosed by the curve. Recall the formulas for flux in Equations (8) and (9) in Section 15.2. 
 
-## THEOREM 5—Green's Theorem (Flux-Divergence or Normal Form)
+**THEOREM 5—Green's Theorem (Flux-Divergence or Normal Form)**
 
 Let C be a piecewise smooth, simple closed curve enclosing a region R in the plane. Let $F = M i + N j$ be a vector field with M and N having continuous first partial derivatives in an open region containing R. Then the outward flux of F across C equals the double integral of div F over the region R enclosed by C. 
 
@@ -2410,7 +2387,7 @@ $$
 \begin{array}{r l} \iint_ {R} \left(\frac {\partial N}{\partial x} - \frac {\partial M}{d y}\right) d x d y & = \iint_ {R} (1 - (- 1)) d x d y \\ & = 2 \iint_ {R} d x d y = 2 (\text { area   inside   the   unit   circle }) = 2 \pi . \end{array}
 $$
 
-![[5cb7ba3f78df30e942d8ec77580dfb28bf61e7b228968c0737fb0a6415cecabe.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5cb7ba3f78df30e942d8ec77580dfb28bf61e7b228968c0737fb0a6415cecabe.jpg)
 
 
 Thus, the right and left sides of Equation (3) both equal $2\pi$ , as asserted by the circulation-curl version of Green's Theorem. 
@@ -2435,7 +2412,7 @@ $$
 
 Hence the right and left sides of Equation (4) both equal $\pi$ , as asserted by the flux-divergence version of Green's Theorem. 
 
-## Using Green's Theorem to Evaluate Line Integrals
+### Using Green's Theorem to Evaluate Line Integrals
 
 If we construct a closed curve $C$ by piecing together a number of different curves end to end, the process of evaluating a line integral over $C$ can be lengthy because there are so many different integrals to evaluate. If $C$ bounds a region $R$ to which Green's Theorem applies, however, we can use Green's Theorem to change the line integral around $C$ into one double integral over $R$ . 
 
@@ -2469,14 +2446,14 @@ $$
 \begin{array}{l} \text { Flux } = \oint_ {C} \mathbf {F} \cdot \mathbf {n} d s = \oint_ {C} M d y - N d x \\ = \iint_ {R} \left(\frac {\partial M}{\partial x} + \frac {\partial N}{\partial y}\right) d x d y \quad \text { Green's   Theorem,   Eq.   (4) } \\ = \int_ {- 1} ^ {1} \int_ {- 1} ^ {1} (2 y e ^ {x y} + 3 y ^ {2}) d x d y = \int_ {- 1} ^ {1} \left[ 2 e ^ {x y} + 3 x y ^ {2} \right] _ {x = - 1} ^ {x = 1} d y \\ = \int_ {- 1} ^ {1} (2 e ^ {y} + 6 y ^ {2} - 2 e ^ {- y}) d y = \left[ 2 e ^ {y} + 2 y ^ {3} + 2 e ^ {- y} \right] _ {- 1} ^ {1} = 4. \end{array}
 $$
 
-![[cade3a2199581f8951b6af7533c063490d0dd24c8b3902bcf0160e3008030a3a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cade3a2199581f8951b6af7533c063490d0dd24c8b3902bcf0160e3008030a3a.jpg)
 
 
 
 FIGURE 15.36 The boundary curve C is made up of $C_{1}$ , the graph of $y = f_{1}(x)$ , and $C_{2}$ , the graph of $y = f_{2}(x)$ .
 
 
-## Proof of Green's Theorem for Special Regions
+### Proof of Green's Theorem for Special Regions
 
 Let $C$ be a smooth simple closed curve in the $xy$ -plane with the property that lines parallel to the axes cut it at no more than two points. Let $R$ be the region enclosed by $C$ and suppose that $M, N$ , and their first partial derivatives are continuous at every point of some open region containing $C$ and $R$ . We want to prove the circulation-curl form of Green's Theorem, 
 
@@ -2510,7 +2487,7 @@ Therefore, reversing the order of the equations, we have
 
 (6) 
 
-![[e990d81dd3d21cf0ecf581250fceb7dafe94a18d663e27090650ac23e1fadf76.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e990d81dd3d21cf0ecf581250fceb7dafe94a18d663e27090650ac23e1fadf76.jpg)
 
 
 $$
@@ -2531,28 +2508,27 @@ FIGURE 15.37 The boundary curve $C$ is made up of $C_1'$ , the graph of $x = g_1
 
 Green's Theorem also holds for more general regions, such as those shown in Figure 15.38. Notice that the region in Figure 15.38c is not simply connected. The curves $C_1$ and $C_h$ on its boundary are oriented so that the region $R$ is always on the left-hand side as the curves are traversed in the directions shown, and cancelation occurs over common boundary arcs traversed in opposite directions. With this convention, Green's Theorem is valid for regions that are not simply connected. The proof proceeds by summing the contributions to the integral of a collection of special regions, which overlap along their boundaries. Cancelation occurs along arcs that are traversed twice, once in each direction, as in Figure 15.38c. We do not give the full proof here. 
 
-![[3ee2a58325192459a01a96806415ba7e8006595040d2c4b46bfdf3bf58da7245.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3ee2a58325192459a01a96806415ba7e8006595040d2c4b46bfdf3bf58da7245.jpg)
 
 
-![[85f3540d2360b31c711d1986d120239b94163f705ca0504eac49f17991bb3013.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/85f3540d2360b31c711d1986d120239b94163f705ca0504eac49f17991bb3013.jpg)
 
 
 
 (b)
 
 
-![[99328e16c937444407271b40ee43e23768b7c7a7ab315085b7501a2bba3b4df8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/99328e16c937444407271b40ee43e23768b7c7a7ab315085b7501a2bba3b4df8.jpg)
 
 
 
 FIGURE 15.38 Other regions to which Green's Theorem applies. In (c) the axes convert the region into four simply connected regions, and we sum the line integrals along the oriented boundaries.
 
 
-## EXERCISES
+### Exercises 15.4
 
-## 15.4
 
-## Computing the k-Component of Curl(F)
+#### Computing the k-Component of Curl(F)
 
 In Exercises 1–6, find the k-component of $\text{curl}(\mathbf{F})$ for the following vector fields on the plane. 
 
@@ -2568,7 +2544,7 @@ In Exercises 1–6, find the k-component of $\text{curl}(\mathbf{F})$ for the fo
 
 6. $\mathbf{F} = (x / y)\mathbf{i} - (y / x)\mathbf{j}$ 
 
-## Verifying Green's Theorem
+#### Verifying Green's Theorem
 
 In Exercises 7–10, verify the conclusion of Green's Theorem by evaluating both sides of Equations (3) and (4) for the field $\mathbf{F} = M\mathbf{i} + N\mathbf{j}$ . Take the domains of integration in each case to be the disk $R$ : $x^{2} + y^{2} \leq a^{2}$ and its bounding circle $C$ : $\mathbf{r} = (a \cos t)\mathbf{i} + (a \sin t)\mathbf{j}$ , $0 \leq t \leq 2\pi$ . 
 
@@ -2584,9 +2560,7 @@ Circulation and Flux
 
 In Exercises 11–20, use Green's Theorem to find the counterclockwise circulation and outward flux for the field F and the curve C. 
 
-$$
-\mathbf {1 1 .} \mathbf {F} = (x - y) \mathbf {i} + (y - x) \mathbf {j}
-$$
+11. $\mathbf {F} = (x - y) \mathbf {i} + (y - x) \mathbf {j}$
 
 C: The square bounded by x = 0, x = 1, y = 0, and y = 1 
 
@@ -2602,12 +2576,14 @@ C: The triangle bounded by y = 0, x = 3, and y = x
 
 C: The triangle bounded by y = 0, x = 1, and y = x 
 
-15. $\mathbf{F} = (xy + y^{2})\mathbf{i} + (x - y)\mathbf{j}$ 16. $\mathbf{F} = (x + 3y)\mathbf{i} + (2x - y)\mathbf{j}$ 
+15. $\mathbf{F} = (xy + y^{2})\mathbf{i} + (x - y)\mathbf{j}$
 
-![[f1a1ed63f7ed62b8817bd6a2218e82f1c9b14f841e6756b4ee0a563ba89ab542.jpg|image]]
+16. $\mathbf{F} = (x + 3y)\mathbf{i} + (2x - y)\mathbf{j}$
+
+![教材插图](/books/thomas-calculus/assets/f1a1ed63f7ed62b8817bd6a2218e82f1c9b14f841e6756b4ee0a563ba89ab542.jpg)
 
 
-![[30fc81b41990efc711b4c303a15765fc8a71ac4e5514d07e7e30aa28c8b7834f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/30fc81b41990efc711b4c303a15765fc8a71ac4e5514d07e7e30aa28c8b7834f.jpg)
 
 
 17. $\mathbf{F} = x^{3}y^{2}\mathbf{i} + \frac{1}{2} x^{4}y\mathbf{j}$ 
@@ -2616,10 +2592,10 @@ $$
 \mathbf {1 8 . F} = \frac {x}{1 + y ^ {2}} \mathbf {i} + (\tan^ {- 1} y) \mathbf {j}
 $$
 
-![[2da05e23139d2c65ea3b6c9a7fc5c11542ba750cc3c1f96667845199824a3849.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2da05e23139d2c65ea3b6c9a7fc5c11542ba750cc3c1f96667845199824a3849.jpg)
 
 
-![[10277208db5283a7fca1aed34507dcb8df06901ccc2b8a683483cb56493e4937.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/10277208db5283a7fca1aed34507dcb8df06901ccc2b8a683483cb56493e4937.jpg)
 
 
 19. $\mathbf{F} = (x + e^{x}\sin y)\mathbf{i} + (x + e^{x}\cos y)\mathbf{j}$ 
@@ -2660,9 +2636,7 @@ Using Green's Theorem
 
 Apply Green's Theorem to evaluate the integrals in Exercises 27–30. 
 
-$$
-2 7. \oint_ {C} (y ^ {2} d x + x ^ {2} d y)
-$$
+27. $\oint_ {C} (y ^ {2} d x + x ^ {2} d y)$
 
 C: The boundary of the triangle enclosed by the lines $x = 0$ , $x + y = 1$ , and $y = 0$ 
 
@@ -2736,29 +2710,13 @@ for any closed path $C$ .
 
 $$
 \text { Area   of } R = \oint_ {C} x d y = - \oint_ {C} y d x.
-$$
-
-40. Definite integral as a line integral Suppose that a nonnegative function $y = f(x)$ has a continuous first derivative on $[a, b]$ . Let C be the boundary of the region in the xy-plane that is bounded below by the x-axis, above by the graph of f, and on the sides by the lines x = a and x = b. Show that 
-
-$$
+40. $Definite integral as a line integral Suppose that a nonnegative function $y = f(x)$ has a continuous first derivative on $[a, b]$ . Let C be the boundary of the region in the xy-plane that is bounded below by the x-axis, above by the graph of f, and on the sides by the lines x = a and x = b. Show that$
 \int_ {a} ^ {b} f (x) d x = - \oint_ {C} y d x.
-$$
-
-41. Area and the centroid Let $\overline{x}$ be the x-coordinate of the centroid of a region R that is bounded by a piecewise smooth, simple closed curve C in the xy-plane. If A is the area of R, show that 
-
-$$
+41. $Area and the centroid Let $\overline{x}$ be the x-coordinate of the centroid of a region R that is bounded by a piecewise smooth, simple closed curve C in the xy-plane. If A is the area of R, show that$
 \frac {1}{2} \oint_ {C} x ^ {2} d y = - \oint_ {C} x y d x = \frac {1}{3} \oint_ {C} x ^ {2} d y - x y d x = A \overline {{x}}.
-$$
-
-42. Moment of inertia Let $I_{y}$ be the moment of inertia about the y-axis of the region in Exercise 41. Show that 
-
-$$
+42. $Moment of inertia Let $I_{y}$ be the moment of inertia about the y-axis of the region in Exercise 41. Show that$
 \frac {1}{3} \oint_ {C} x ^ {3} d y = - \oint_ {C} x ^ {2} y d x = \frac {1}{4} \oint_ {C} x ^ {3} d y - x ^ {2} y d x = I _ {y}.
-$$
-
-43. Green's Theorem and Laplace's equation Assuming that all the necessary derivatives exist and are continuous, show that if $f(x,y)$ satisfies the Laplace equation 
-
-$$
+43. $Green's Theorem and Laplace's equation Assuming that all the necessary derivatives exist and are continuous, show that if $f(x,y)$ satisfies the Laplace equation$
 \frac {\partial^ {2} f}{\partial x ^ {2}} + \frac {\partial^ {2} f}{\partial y ^ {2}} = 0,
 $$
 
@@ -2780,7 +2738,7 @@ is greatest. (Hint: Where is (curl F) · k positive?)
 
 45. Regions with many holes Green's Theorem holds for a region $R$ with any finite number of holes as long as the bounding curves are smooth, simple, and closed and we integrate over each component of the boundary in the direction that keeps $R$ on our immediate left as we proceed along the curve (see accompanying figure). 
 
-![[96f05142224aaa24d6f0d5d4c478415b8f44f681aeb8624e40147f7c0d214132.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/96f05142224aaa24d6f0d5d4c478415b8f44f681aeb8624e40147f7c0d214132.jpg)
 
 
 a. Let $f(x, y) = \ln(x^{2} + y^{2})$ and let C be the circle $x^{2} + y^{2} = a^{2}$ . Evaluate the flux integral 
@@ -2789,7 +2747,7 @@ $$
 \oint_ {C} \nabla f \cdot \mathbf {n} d s.
 $$
 
-![[791e571408fe4a899180c6f797e784c57b08de54930587126442d0e3fee4c22b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/791e571408fe4a899180c6f797e784c57b08de54930587126442d0e3fee4c22b.jpg)
 
 
 b. Let $K$ be an arbitrary smooth, simple closed curve in the plane that does not pass through $(0, 0)$ . Use Green's Theorem to show that 
@@ -2806,7 +2764,7 @@ has two possible values, depending on whether $(0,0)$ lies inside K or outside K
 
 48. Curl component of conservative fields Can anything be said about the curl component of a conservative two-dimensional vector field? Give reasons for your answer. 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 49–52, use a CAS and Green's Theorem to find the counterclockwise circulation of the field F around the simple closed curve C. Perform the following CAS steps. 
 
@@ -2830,7 +2788,7 @@ C: The triangle with vertices $(0,0)$ , $(2,0)$ , and $(0,4)$
 
 ## 15.5 Surfaces and Area
 
-![[3b88b9945d74e57a1a5ce19dbdac8c9847f5ef48287cf44e3c94e59b3d0c8f7f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3b88b9945d74e57a1a5ce19dbdac8c9847f5ef48287cf44e3c94e59b3d0c8f7f.jpg)
 
 
 We have described curves in the plane in three different ways. 
@@ -2859,14 +2817,14 @@ $$
 \begin{array}{l} z = f (x, y) \\ F (x, y, z) = 0. \end{array}
 $$
 
-![[f704b0c7014209dcbb04cf54eea0c29d684ccbb6d68bebf8024a13680e99306b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f704b0c7014209dcbb04cf54eea0c29d684ccbb6d68bebf8024a13680e99306b.jpg)
 
 
 FIGURE 15.39 A parametrized surface S expressed as a vector function of two variables defined on a region R. 
 
 There is also a parametric form for surfaces that gives the position of a point on the surface as a vector function of two variables. We discuss this new form in this section and apply the form to obtain the area of a surface as a double integral. Double integral formulas for areas of surfaces given in implicit and explicit forms are then obtained as special cases of the more general parametric formula. 
 
-## Parametrizations of Surfaces
+### Parametrizations of Surfaces
 
 Suppose 
 
@@ -2880,21 +2838,21 @@ $$
 x = f (u, v), \quad y = g (u, v), \quad z = h (u, v).
 $$
 
-![[ccb1c2cf5cc2f7a036426992cd716e1a98a6bfbbebd2e4eb323d954b973b9bf5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ccb1c2cf5cc2f7a036426992cd716e1a98a6bfbbebd2e4eb323d954b973b9bf5.jpg)
 
 
 
 FIGURE 15.40 The cone in Example 1 can be parametrized using cylindrical coordinates.
 
 
-![[720dc681d0fd8bef468d228c40fb8c7a6a1d4efaf9a4cb12fe474571151495f2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/720dc681d0fd8bef468d228c40fb8c7a6a1d4efaf9a4cb12fe474571151495f2.jpg)
 
 
 
 FIGURE 15.41 The sphere in Example 2 can be parametrized using spherical coordinates.
 
 
-![[3e365ea716fbbb7d8b6e04690b051a87c52fb529a74f9f0267e2348b7d6cc017.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3e365ea716fbbb7d8b6e04690b051a87c52fb529a74f9f0267e2348b7d6cc017.jpg)
 
 
 
@@ -2915,7 +2873,7 @@ $$
 
 The parametrization is one-to-one on the interior of the domain, though not on the boundary where r = 0 (mapped to the tip of the cone) or where $\theta = 0$ or $\theta = 2\pi$ (where the cone glues together along a seam above the x-axis). 
 
-## **EXAMPLE 2** Find a parametrization of the sphere $x^{2} + y^{2} + z^{2} = a^{2}$ .
+**EXAMPLE 2** Find a parametrization of the sphere $x^{2} + y^{2} + z^{2} = a^{2}$ .
 
 **Solution** Spherical coordinates provide what we need. A typical point $(x, y, z)$ on the sphere (Figure 15.41) has $x = a \sin \phi \cos \theta$ , $y = a \sin \phi \sin \theta$ , and $z = a \cos \phi$ , $0 \leq \phi \leq \pi$ , $0 \leq \theta \leq 2\pi$ . Taking $u = \phi$ and $v = \theta$ in Equation (1) gives the parametrization 
 
@@ -2957,7 +2915,7 @@ $$
 
 which is one-to-one on the interior of the domain. 
 
-## Surface Area
+### Surface Area
 
 Our goal is to find a double integral that gives the area of a curved surface S based on the parametrization 
 
@@ -2981,21 +2939,21 @@ The condition that $\mathbf{r}_u\times \mathbf{r}_v$ is never the zero vector in
 
 Now consider a small rectangle $\Delta A_{uv}$ in R with sides on the lines $u = u_{0}$ , $u = u_{0} + \Delta u$ , $v = v_{0}$ , and $v = v_{0} + \Delta v$ (Figure 15.43). Each side of $\Delta A_{uv}$ maps onto a curve on the surface S, and together these four curves bound a “curved patch element” $\Delta \sigma_{uv}$ . In the notation of the figure, the side $v = v_{0}$ maps to curve $C_{1}$ , the side $u = u_{0}$ maps onto $C_{2}$ , and their common vertex $(u_{0}, v_{0})$ maps to $P_{0}$ . 
 
-![[ab8b1e3f32037e988daad95e63fc80af0013a02a1d27af8fd145c682f2e6a018.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ab8b1e3f32037e988daad95e63fc80af0013a02a1d27af8fd145c682f2e6a018.jpg)
 
 
 
 FIGURE 15.43 A rectangular area element $\Delta A_{uv}$ in the uv-plane maps onto a curved patch element $\Delta\sigma_{uv}$ on S.
 
 
-![[2b3615c62003580462a4140d2a2a7eb2e480c97eda7bc887c0b24eb64121f4c2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2b3615c62003580462a4140d2a2a7eb2e480c97eda7bc887c0b24eb64121f4c2.jpg)
 
 
 
 FIGURE 15.44 A magnified view of a surface patch element $\Delta\sigma_{uv}$ .
 
 
-![[fc9a12f18ed733f7e5bbc18d471228d703d4a387e0f6445f1cfdb084f7343de5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fc9a12f18ed733f7e5bbc18d471228d703d4a387e0f6445f1cfdb084f7343de5.jpg)
 
 
 
@@ -3032,7 +2990,7 @@ As $\Delta u$ and $\Delta v$ approach zero independently, the number of area ele
 >
 We can abbreviate the integral in Equation (4) by writing $d\sigma$ for $|r_{u} \times r_{v}| du dv$ . The surface area differential $d\sigma$ is analogous to the arc length differential ds in Section 12.3. 
 
-## Surface Area Differential for a Parametrized Surface
+### Surface Area Differential for a Parametrized Surface
 
 $$
 d \sigma = | \mathbf {r} _ {u} \times \mathbf {r} _ {v} | d u d v
@@ -3046,7 +3004,7 @@ Surface area differential, also called surface area element
 
 Differential formula for surface area 
 
-## **EXAMPLE 4** Find the surface area of the cone in Example 1 (Figure 15.40).
+**EXAMPLE 4** Find the surface area of the cone in Example 1 (Figure 15.40).
 
 **Solution** In Example 1, we found the parametrization 
 
@@ -3066,14 +3024,14 @@ $$
 \begin{array}{l} A = \int_ {0} ^ {2 \pi} \int_ {0} ^ {1} | \mathbf {r} _ {r} \times \mathbf {r} _ {\theta} | d r d \theta \quad \text { Eq.   (4)   with } u = r, v = \theta \\ = \int_ {0} ^ {2 \pi} \int_ {0} ^ {1} \sqrt {2} r d r d \theta = \int_ {0} ^ {2 \pi} \frac {\sqrt {2}}{2} d \theta = \frac {\sqrt {2}}{2} (2 \pi) = \pi \sqrt {2} \text { square   units }. \end{array}
 $$
 
-![[32d5af7ef198e3a7d347f00e1423d473b7ee7f19fa35188579c0b36ab5e2bb91.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/32d5af7ef198e3a7d347f00e1423d473b7ee7f19fa35188579c0b36ab5e2bb91.jpg)
 
 
 
 FIGURE 15.46 The “football” surface in Example 6 obtained by rotating the curve x = cos z about the z-axis.
 
 
-## **EXAMPLE 5** Find the surface area of a sphere of radius a.
+**EXAMPLE 5** Find the surface area of a sphere of radius a.
 
 **Solution** We use the parametrization from Example 2: 
 
@@ -3149,9 +3107,9 @@ $$
 \begin{array}{l} A = 2 \int_ {0} ^ {2 \pi} \int_ {0} ^ {1} \sqrt {1 + w ^ {2}} d w d v \\ = 2 \int_ {0} ^ {2 \pi} \left[ \frac {w}{2} \sqrt {1 + w ^ {2}} + \frac {1}{2} \ln (w + \sqrt {1 + w ^ {2}}) \right] _ {w = 0} ^ {w = 1} d v \quad \text { Integral   Table   Formula   35 } \\ = \int_ {0} ^ {2 \pi} 2 \left[ \frac {1}{2} \sqrt {2} + \frac {1}{2} \ln (1 + \sqrt {2}) \right] d v \\ = 2 \pi [ \sqrt {2} + \ln (1 + \sqrt {2}) ]. \end{array}
 $$
 
-## Implicit Surfaces
+### Implicit Surfaces
 
-![[45ca1829bc51342f8e7a97c0567f39fa8deec7455b40bd75c9270fd20dbfe16a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/45ca1829bc51342f8e7a97c0567f39fa8deec7455b40bd75c9270fd20dbfe16a.jpg)
 
 
 Surfaces are often presented as level sets of a function, described by an equation such as 
@@ -3178,7 +3136,7 @@ $$
 \mathbf {r} _ {u} = \mathbf {i} + \frac {\partial h}{\partial u} \mathbf {k} \quad \text { and } \quad \mathbf {r} _ {v} = \mathbf {j} + \frac {\partial h}{\partial v} \mathbf {k}.
 $$
 
-![[ef9b63236d25d5d195fa3512a4816e7f755456ffc566f6a503a3f029d045d526.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ef9b63236d25d5d195fa3512a4816e7f755456ffc566f6a503a3f029d045d526.jpg)
 
 
 
@@ -3257,7 +3215,7 @@ Example 7 illustrates how to find the surface area for a function $z = f(x, y)$ 
 
 **EXAMPLE 8** Derive the surface area differential $d\sigma$ of the surface $z = f(x, y)$ over a region R in the xy-plane (a) parametrically using Equation (5), and (b) implicitly, as in Equation (7). 
 
-## **Solution**
+**Solution**
 
 (a) We parametrize the surface by taking $x = u$ , $y = v$ , and $z = f(x, y)$ over $R$ . This gives the parametrization 
 
@@ -3291,9 +3249,9 @@ $$
 A = \iint_ {R} \sqrt {f _ {x} ^ {2} + f _ {y} ^ {2} + 1} d x d y.\tag{8}
 $$
 
-## EXERCISES 15.5
+### EXERCISES 15.5
 
-## Finding Parametrizations
+#### Finding Parametrizations
 
 In Exercises 1–16, find a parametrization of the surface. (There are many correct ways to do these, so your answers may not be the same as those in the back of the text.) 
 
@@ -3337,7 +3295,7 @@ b. Inside the cylinder $y^{2} + z^{2} = 2$
 
 16. Circular cylinder band The portion of the cylinder $y^{2} + (z - 5)^{2} = 25$ between the planes x = 0 and x = 10 
 
-## Surface Area of Parametrized Surfaces
+#### Surface Area of Parametrized Surfaces
 
 In Exercises 17–26, use a parametrization to express the area of the surface as a double integral. Then evaluate the integral. (There are many correct ways to set up the integrals, so your integrals may not be the same as those in the back of the text. They should have the same values, however.) 
 
@@ -3361,7 +3319,7 @@ In Exercises 17–26, use a parametrization to express the area of the surface a
 
 26. Spherical band The portion of the sphere $x^{2} + y^{2} + z^{2} = 4$ between the planes $z = -1$ and $z = \sqrt{3}$ 
 
-## Planes Tangent to Parametrized Surfaces
+#### Planes Tangent to Parametrized Surfaces
 
 The tangent plane at a point $P_{0}(f(u_{0},v_{0}), g(u_{0},v_{0}), h(u_{0},v_{0}))$ on a parametrized surface $\mathbf{r}(u,v)=f(u,v)\mathbf{i}+g(u,v)\mathbf{j}+h(u,v)\mathbf{k}$ is the plane through $P_{0}$ normal to the vector $\mathbf{r}_{u}(u_{0},v_{0})\times\mathbf{r}_{v}(u_{0},v_{0})$ , the cross product of the tangent vectors $\mathbf{r}_{u}(u_{0},v_{0})$ and $\mathbf{r}_{v}(u_{0},v_{0})$ at $P_{0}$ . In Exercises 27–30, find an equation for the plane tangent to the surface at $P_{0}$ . Then find a Cartesian equation for the surface, and sketch the surface and tangent plane together. 
 
@@ -3373,7 +3331,7 @@ The tangent plane at a point $P_{0}(f(u_{0},v_{0}), g(u_{0},v_{0}), h(u_{0},v_{0
 
 30. Parabolic cylinder The parabolic cylinder surface $\mathbf{r}(x,y)=x\mathbf{i}+y\mathbf{j}-x^{2}\mathbf{k},-\infty<x<\infty,-\infty<y<\infty,$ at the point $P_{0}(1,2,-1)$ corresponding to $(x,y)=(1,2)$ 
 
-## More Parametrizations of Surfaces
+#### More Parametrizations of Surfaces
 
 31. a. A torus of revolution (doughnut) is obtained by rotating a circle C in the xz-plane about the z-axis in space. (See the accompanying figure.) If C has radius r > 0 and center $(R, 0, 0)$ , show that a parametrization of the torus is 
 
@@ -3385,10 +3343,10 @@ where $0 \leq u \leq 2\pi$ and $0 \leq v \leq 2\pi$ are the angles in the figure
 
 b. Show that the surface area of the torus is $A = 4\pi^2 Rr$ . 
 
-![[618c3b2ffa7318ed62370719e01e7c5d9cf53bb05f9a1b82ecdace52f79f1d4c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/618c3b2ffa7318ed62370719e01e7c5d9cf53bb05f9a1b82ecdace52f79f1d4c.jpg)
 
 
-![[b5c499b4c8a55ff4a552143268f12101502e3345f99e9242ee4ba811cd935bdb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b5c499b4c8a55ff4a552143268f12101502e3345f99e9242ee4ba811cd935bdb.jpg)
 
 
 32. Parametrization of a surface of revolution Suppose that the parametrized curve $C \colon (f(u), g(u))$ is revolved about the $x$ -axis, where $g(u) > 0$ for $a \leq u \leq b$ . 
@@ -3401,7 +3359,7 @@ $$
 
 is a parametrization of the resulting surface of revolution, where $0 \leq v \leq 2\pi$ is the angle from the xy-plane to the point $\mathbf{r}(u,v)$ on the surface. (See the accompanying figure.) Notice that $f(u)$ measures distance along the axis of revolution and $g(u)$ measures distance from the axis of revolution. 
 
-![[3d5edab7215f4e015f152d1d2605f85ac92c3ddfc37a123e0b7951ae2c697c25.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3d5edab7215f4e015f152d1d2605f85ac92c3ddfc37a123e0b7951ae2c697c25.jpg)
 
 
 b. Find a parametrization for the surface obtained by revolving the curve $x = y^{2}$ , $y \geq 0$ , about the x-axis. 
@@ -3420,7 +3378,7 @@ $$
 
 b. Write an integral for the surface area of the ellipsoid, but do not evaluate the integral. 
 
-## 34. Hyperboloid of one sheet
+34. Hyperboloid of one sheet
 
 a. Find a parametrization for the hyperboloid of one sheet $x^{2} + y^{2} - z^{2} = 1$ in terms of the angle $\theta$ associated with the circle $x^{2} + y^{2} = r^{2}$ and the hyperbolic parameter u associated with the hyperbolic function $r^{2} - z^{2} = 1$ .
 (Hint: $\cosh^{2}u - \sinh^{2}u = 1$ .) 
@@ -3435,7 +3393,7 @@ $$
 
 36. Hyperboloid of two sheets Find a parametrization of the hyperboloid of two sheets $(z^2 / c^2) - (x^2 / a^2) - (y^2 / b^2) = 1$ . 
 
-## Surface Area for Implicit and Explicit Forms
+#### Surface Area for Implicit and Explicit Forms
 
 37. Find the area of the surface cut from the paraboloid $x^{2} + y^{2} - z = 0$ by the plane $z = 2$ . 
 
@@ -3493,7 +3451,7 @@ $$
 
 is a parametrization of S, where $\theta$ is the angle of rotation around the x-axis (see the accompanying figure). 
 
-![[377d2262c51d83f5f13059a6c37a5e2105ceee1b68958b8c197f8238af0711d7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/377d2262c51d83f5f13059a6c37a5e2105ceee1b68958b8c197f8238af0711d7.jpg)
 
 
 b. Use Equation (4) to show that the surface area of this surface of revolution is given by 
@@ -3506,11 +3464,11 @@ $$
 
 To compute the mass of a surface, the flow of a liquid across a curved membrane, or the total electrical charge on a surface, we need to integrate a function over a curved surface in space. Such a surface integral is the two-dimensional extension of the line integral concept used to integrate over a one-dimensional curve. Like line integrals, surface integrals arise in two forms. The first occurs when we integrate a scalar function over a surface, such as integrating a mass density function defined on a surface to find its total mass. This form corresponds to line integrals of scalar functions defined in Section 15.1 and can be used to find the mass of a thin wire. The second form involves surface integrals of vector fields, analogous to the line integrals for vector fields defined in Section 15.2. An example occurs when we want to measure the net flow of a fluid across a surface submerged in the fluid (just as we previously defined the flux of F across a curve). In this section we investigate these ideas and their applications. 
 
-## Surface Integrals
+### Surface Integrals
 
 Suppose that the function $G(x, y, z)$ gives the mass density (mass per unit area) at each point on a surface S. Then we can calculate the total mass of S as an integral in the following way. 
 
-![[4b2531f1b6568b5419ad3bb00699633396ae1fad63335896a8d2560ca66d40f9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4b2531f1b6568b5419ad3bb00699633396ae1fad63335896a8d2560ca66d40f9.jpg)
 
 
 
@@ -3545,7 +3503,7 @@ Notice the analogy with the definition of the double integral (Section 14.2) and
 
 The formula for evaluating the surface integral depends on the manner in which S is described—parametrically, implicitly, or explicitly—as discussed in Section 15.5. 
 
-## Formulas for a Surface Integral of a Scalar Function
+### Formulas for a Surface Integral of a Scalar Function
 
 1. For a smooth surface S defined parametrically as 
 
@@ -3593,7 +3551,7 @@ When S is partitioned by smooth curves into a finite number of smooth patches wi
 
 **EXAMPLE 2** Integrate $G(x, y, z) = xyz$ over the surface of the cube cut from the first octant by the planes x = 1, y = 1, and z = 1 (Figure 15.50). 
 
-![[4ff8db3c2095ab5a0528abec4c3d475ba7937d1198b981abc0f7cee1b52ccc06.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4ff8db3c2095ab5a0528abec4c3d475ba7937d1198b981abc0f7cee1b52ccc06.jpg)
 
 
 
@@ -3664,7 +3622,7 @@ $$
 FIGURE 15.51 The surface S in Example 4.
 
 
-![[c433371f5a794990f05023c965386c10e9a12fee63a8a53ed3bbdebcdf22f073.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c433371f5a794990f05023c965386c10e9a12fee63a8a53ed3bbdebcdf22f073.jpg)
 
 
 **Solution** The function G on the surface S is given by 
@@ -3685,10 +3643,10 @@ $$
 \begin{array}{l l} \iint_ {S} G (x, y, z) d \sigma = \iint_ {R} \left(\sqrt {x} \sqrt {1 + y ^ {2}}\right) \sqrt {1 + y ^ {2}} d x d y \\ = \int_ {0} ^ {1} \int_ {0} ^ {1 - x} \sqrt {x} (1 + y ^ {2}) d y d x \\ = \int_ {0} ^ {1} \sqrt {x} \left[ (1 - x) + \frac {1}{3} (1 - x) ^ {3} \right] d x & \text {   Integrate   and   evaluate.   } \\ = \int_ {0} ^ {1} \left(\frac {4}{3} x ^ {1 / 2} - 2 x ^ {3 / 2} + x ^ {5 / 2} - \frac {1}{3} x ^ {7 / 2}\right) d x & \text {   Routine   algebra   } \\ = \left[ \frac {8}{9} x ^ {3 / 2} - \frac {4}{5} x ^ {5 / 2} + \frac {2}{7} x ^ {7 / 2} - \frac {2}{2 7} x ^ {9 / 2} \right] _ {0} ^ {1} \\ = \frac {8}{9} - \frac {4}{5} + \frac {2}{7} - \frac {2}{2 7} = \frac {2 8 4}{9 4 5} \approx 0. 3 0. \end{array}
 $$
 
-![[2b490d2777732db94c1f5a126e48548204d6496b110f0180aa9903708f5a7098.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2b490d2777732db94c1f5a126e48548204d6496b110f0180aa9903708f5a7098.jpg)
 
 
-![[a2cbaaefc61d037029cb0ba48cceb46d1927cf954ff0920f79a619cf249973cd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a2cbaaefc61d037029cb0ba48cceb46d1927cf954ff0920f79a619cf249973cd.jpg)
 
 
 
@@ -3703,14 +3661,14 @@ $$
 FIGURE 15.52 (a) An outward-pointing vector field and (b) an inward-pointing vector field give the two possible orientations of a sphere.
 
 
-![[25f8a07d755ee160ff3ddc7fc44a69e3f067cfd5218a4a9b56f2e4e8db53e31e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/25f8a07d755ee160ff3ddc7fc44a69e3f067cfd5218a4a9b56f2e4e8db53e31e.jpg)
 
 
 
 FIGURE 15.53 To make a Möbius band, take a rectangular strip of paper abcd, give the end bc a single twist, and paste the ends of the strip together to match a with c and b with d. The Möbius band is a nonorientable, or one-sided, surface.
 
 
-## Orientation of a Surface
+### Orientation of a Surface
 
 A curve C with a parametrization $\mathbf{r}(t)$ has a natural orientation, or direction, that comes from the direction of increasing t. The unit tangent vector T along C points in this forward direction at each point on the curve. There are two possible orientations for a curve, corresponding to whether we follow the direction of the tangent vector T at each point, or the direction of -T. 
 
@@ -3722,7 +3680,7 @@ When we can choose a continuous field of unit normal vectors $\mathbf{n}$ on a s
 
 A surface together with its normal field n, or, equivalently, a surface with a consistent choice of sides, is called an oriented surface. The vector n at any point gives the positive direction or positively oriented side at that point (Figure 15.52). Not all surfaces can be oriented. The Möbius band in Figure 15.53 is an example of a surface that is not orientable. No matter how you try to construct a continuous unit normal vector field (shown as the shafts of thumbtacks in the figure), starting at one point and moving the vector continuously around the surface in the manner shown will return it to the starting point, but pointing in the opposite direction. No choice of a vectors can give a continuous normal vector field on the Möbius band, so the Möbius band is not orientable. 
 
-## Surface Integrals of Vector Fields
+### Surface Integrals of Vector Fields
 
 In Section 15.2 we defined the line integral of a vector field along a path $C$ as $\int_{C} \mathbf{F} \cdot \mathbf{T} ds$ , where $\mathbf{T}$ is the unit tangent vector to the path pointing in the forward-oriented direction. We have a similar definition for surface integrals. 
 
@@ -3736,14 +3694,14 @@ This integral is also called the flux of the vector field F across S.
 
 If F is the velocity field of a three-dimensional fluid flow, then the flux of F across S is the net rate at which fluid is crossing S per unit time in the chosen positive direction n defined by the orientation of S. Fluid flows are discussed in more detail in Section 15.7. 
 
-![[1dde29e5c623d2f3319196aeeef5d3c20f2a0668d5e8a7460f17de46944be824.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1dde29e5c623d2f3319196aeeef5d3c20f2a0668d5e8a7460f17de46944be824.jpg)
 
 
 
 FIGURE 15.54 Finding the flux through the surface of a parabolic cylinder (Example 5).
 
 
-## Computing a Surface Integral for a Parametrized Surface
+### Computing a Surface Integral for a Parametrized Surface
 
 **EXAMPLE 5** Find the flux of $\mathbf{F} = yz\mathbf{i} + x\mathbf{j} - z^2\mathbf{k}$ through the parabolic cylinder $y = x^{2}, 0 \leq x \leq 1, 0 \leq z \leq 4$ , in the direction $\mathbf{n}$ indicated in Figure 15.54. 
 
@@ -3809,7 +3767,7 @@ $$
 \begin{array}{c} \mathbf {F} \cdot (\mathbf {r} _ {x} \times \mathbf {r} _ {z}) = (y z \mathbf {i} + x \mathbf {j} - z ^ {2} \mathbf {k} = x ^ {2} z \mathbf {i} + x \mathbf {j} - z ^ {2} \mathbf {k}) \cdot (2 x \mathbf {i} - \mathbf {j}) \\ = (x ^ {2} z) (2 x) + (x) (- 1) = 2 x ^ {3} z - x, \end{array}
 $$
 
-![[58b9564377ba44f022dd5e40f21b6bc2936863d2d1859a4a12a9be7cb08dff96.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/58b9564377ba44f022dd5e40f21b6bc2936863d2d1859a4a12a9be7cb08dff96.jpg)
 
 
 
@@ -3824,7 +3782,7 @@ $$
 
 in Example 5. 
 
-## Computing a Surface Integral for a Level Surface
+### Computing a Surface Integral for a Level Surface
 
 If S is part of a level surface $g(x, y, z) = c$ , then n may be taken to be one of the two fields 
 
@@ -3866,7 +3824,7 @@ $$
 \iint_ {S} \mathbf {F} \cdot \mathbf {n} d \sigma = \iint_ {R _ {x y}} (z) \left(\frac {1}{z} d A\right) = \iint_ {R _ {x y}} d A = \operatorname{area} \left(R _ {x y}\right) = 2.
 $$
 
-## Moments and Masses of Thin Shells
+### Moments and Masses of Thin Shells
 
 Thin shells of material like bowls, metal drums, and domes are modeled with surfaces. Their moments and masses are calculated with the formulas in Table 15.3. The derivations are similar to those in Section 6.6. The formulas resemble those for line integrals in Table 15.1, Section 15.1. 
 
@@ -3896,7 +3854,7 @@ $$
 FIGURE 15.56 The center of mass of a thin hemispherical shell of constant density lies on the axis of symmetry halfway from the base to the top (Example 7).
 
 
-![[f989133a0e9b38ab41083c83f20d6d7d244ebd7be4f12a313fe5f9df841a2a63.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f989133a0e9b38ab41083c83f20d6d7d244ebd7be4f12a313fe5f9df841a2a63.jpg)
 
 
 **EXAMPLE 7** Find the center of mass of a thin hemispherical shell of radius a and constant density $\delta$ . 
@@ -3941,7 +3899,7 @@ $$
 
 The shell's center of mass is the point $(0, 0, a/2)$ . 
 
-![[fa6b08a71be51eae7cd8b9e5aeb41f4f2d2e5da113d86b97b4e36895e6d7a6c4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fa6b08a71be51eae7cd8b9e5aeb41f4f2d2e5da113d86b97b4e36895e6d7a6c4.jpg)
 
 
 and 
@@ -3974,7 +3932,7 @@ $$
 
 The shell's center of mass is the point $(0,0,1 / \ln 2)$ . 
 
-## EXERCISES 15.6
+### EXERCISES 15.6
 
 Surface Integrals of Scalar Functions 
 
@@ -4010,7 +3968,7 @@ In Exercises 1–8, integrate the given function over the given surface.
 
 15. Integrate $G(x,y,z)=z-x$ over the portion of the graph of $z=x+y^{2}$ above the triangle in the xy-plane having vertices $(0,0,0)$ , $(1,1,0)$ , and $(0,1,0)$ . (See accompanying figure.) 
 
-![[6dd230fe3f2ad305fccdd16e3db21bd7cbdc7da036e70a1ad5b7a0f1ac7e709d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6dd230fe3f2ad305fccdd16e3db21bd7cbdc7da036e70a1ad5b7a0f1ac7e709d.jpg)
 
 
 16. Integrate $G(x, y, z) = x$ over the surface given by 
@@ -4021,12 +3979,12 @@ $$
 
 17. Integrate $G(x, y, z) = xyz$ over the triangular surface with vertices $(1, 0, 0)$ , $(0, 2, 0)$ , and $(0, 1, 1)$ . 
 
-![[114bfe5231628dd5c5144322e8c725b40694ff87dba5d4fb2dc99ecf17e021b8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/114bfe5231628dd5c5144322e8c725b40694ff87dba5d4fb2dc99ecf17e021b8.jpg)
 
 
 18. Integrate $G(x, y, z) = x - y - z$ over the portion of the plane $x + y = 1$ in the first octant between $z = 0$ and $z = 1$ (see the figure below). 
 
-![[52661bc271d6728174091775414fcb44e8dba8f191f11cf428429b02748ca426.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/52661bc271d6728174091775414fcb44e8dba8f191f11cf428429b02748ca426.jpg)
 
 
 Finding Flux or Surface Integrals of Vector Fields 
@@ -4079,7 +4037,7 @@ In Exercises 31–36, use Equation (7) to find the surface integral of the field
 
 39. Let S be the portion of the cylinder $y = e^{x}$ in the first octant that projects parallel to the x-axis onto the rectangle $R_{yz}: 1 \leq y \leq 2, 0 \leq z \leq 1$ , in the yz-plane (see the accompanying figure). Let n be the unit vector normal to S that points away from the yz-plane. Find the flux of the field $\mathbf{F}(x, y, z) = -2\mathbf{i} + 2y\mathbf{j} + z\mathbf{k}$ across S in the direction of n. 
 
-![[c1e7e33ca4cc7be67acd33adc7a902785aa5e81ba37f704a7f369ce53c1696b5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c1e7e33ca4cc7be67acd33adc7a902785aa5e81ba37f704a7f369ce53c1696b5.jpg)
 
 
 40. Let S be the portion of the cylinder $y = \ln x$ in the first octant whose projection parallel to the y-axis onto the xz-plane is the rectangle $R_{xz}: 1 \leq x \leq e, 0 \leq z \leq 1$ . Let n be the unit vector normal to S that points away from the xz-plane. Find the flux of $F = 2yj + zk$ through S in the direction of n. 
@@ -4088,7 +4046,7 @@ In Exercises 31–36, use Equation (7) to find the surface integral of the field
 
 42. Find the outward flux of the field $F = xzi + yzj + k$ across the surface of the upper cap cut from the ball $x^{2} + y^{2} + z^{2} \leq 25$ by the plane z = 3. 
 
-## Moments and Masses
+#### Moments and Masses
 
 43. Centroid Find the centroid of the portion of the sphere $x^{2} + y^{2} + z^{2} = a^{2}$ that lies in the first octant. 
 
@@ -4100,7 +4058,7 @@ In Exercises 31–36, use Equation (7) to find the surface integral of the field
 
 46. Conical surface of constant density Find the moment of inertia about the z-axis of a thin shell of constant density $\delta$ cut from the cone $4x^{2} + 4y^{2} - z^{2} = 0$ , $z \geq 0$ , by the circular cylinder $x^{2} + y^{2} = 2x$ (see the accompanying figure). 
 
-![[e75b1a5130cc0c559da7f7bf6cfcdb29502b69cd369b5b451c087b7a5d609539.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e75b1a5130cc0c559da7f7bf6cfcdb29502b69cd369b5b451c087b7a5d609539.jpg)
 
 
 47. Spherical shells Find the moment of inertia about a diameter of a thin spherical shell of radius a and constant density $\delta$ . (Work with a hemispherical shell and double the result.) 
@@ -4113,7 +4071,7 @@ In Exercises 31–36, use Equation (7) to find the surface integral of the field
 
 To calculate the counterclockwise circulation of a two-dimensional vector field $\mathbf{F} = M\mathbf{i} + N\mathbf{j}$ around a simple closed curve in the plane, Green's Theorem says we can compute the double integral over the region enclosed by the curve of the scalar quantity $(\partial N / \partial x - \partial M / \partial y)$ . This expression is the k-component of a curl vector field, and it measures the rate of rotation of $\mathbf{F}$ at each point in the region around an axis parallel to $\mathbf{k}$ . For a vector field in three-dimensional space, the rotation at each point is around an axis that is parallel to the curl vector at that point. When a closed curve $C$ in space is the boundary of an oriented surface, we will see that the circulation of $\mathbf{F}$ around $C$ is equal to the surface integral of the curl vector field. This result extends Green's Theorem from regions in the plane to general surfaces in space having a smooth boundary curve. 
 
-![[9a8ad8e5e7318b67629331c7fbfcd86b9d268bd46acdfc266e439f57d4d7a469.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9a8ad8e5e7318b67629331c7fbfcd86b9d268bd46acdfc266e439f57d4d7a469.jpg)
 
 
 
@@ -4122,7 +4080,7 @@ FIGURE 15.58 The circulation vector at a point $(x, y, z)$ in a plane in a three
 
 ∇ is the symbol “del.” 
 
-## The Curl Vector Field
+### The Curl Vector Field
 
 Suppose that $\mathbf{F}$ is the velocity field of a fluid flowing in space. Particles near the point $(x, y, z)$ in the fluid tend to rotate around an axis through $(x, y, z)$ that is parallel to a certain vector we are about to identify. This vector points in the direction for which the rotation is counterclockwise when viewed looking down onto the plane of the circulation from the tip of the arrow representing the vector. This is the direction your right-hand thumb points when your fingers curl around the axis of rotation in the way consistent with the rotating motion of the particles in the fluid (see Figure 15.58). The length of the vector measures the rate of rotation. The vector, introduced in Equation (3) of Section 15.3, is called the curl vector for the vector field $\mathbf{F} = M\mathbf{i} + N\mathbf{j} + P\mathbf{k}$ , and it is given by 
 
@@ -4150,7 +4108,7 @@ $$
 \operatorname{curl} \mathbf {F} = \nabla \times \mathbf {F}\tag{3}
 $$
 
-## **EXAMPLE 1** Find the curl of $\mathbf{F} = (x^{2} - z)\mathbf{i} + xe^{z}\mathbf{j} + xy\mathbf{k}$ .
+**EXAMPLE 1** Find the curl of $\mathbf{F} = (x^{2} - z)\mathbf{i} + xe^{z}\mathbf{j} + xy\mathbf{k}$ .
 
 **Solution** We use Equation (3) and the determinant form for the cross product, which gives, 
 
@@ -4158,7 +4116,7 @@ $$
 \begin{array}{l} \operatorname{curl} \mathbf {F} = \nabla \times \mathbf {F} \\ = \left| \begin{array}{c c c} \mathbf {i} & \mathbf {j} & \mathbf {k} \\ \frac {\partial}{\partial x} & \frac {\partial}{\partial y} & \frac {\partial}{\partial z} \\ x ^ {2} - z & x e ^ {z} & x y \end{array} \right| \\ = \left(\frac {\partial}{\partial y} (x y) - \frac {\partial}{\partial z} (x e ^ {z})\right) \mathbf {i} - \left(\frac {\partial}{\partial x} (x y) - \frac {\partial}{\partial z} (x ^ {2} - z)\right) \mathbf {j} \\ + \left(\frac {\partial}{\partial x} (x e ^ {z}) - \frac {\partial}{\partial y} (x ^ {2} - z)\right) \mathbf {k} & \text { Curl   F   is   a   vector,   not } \\ = (x - x e ^ {z}) \mathbf {i} - (y + 1) \mathbf {j} + (e ^ {z} - 0) \mathbf {k} \\ = x (1 - e ^ {z}) \mathbf {i} - (y + 1) \mathbf {j} + e ^ {z} \mathbf {k}. \end{array}
 $$
 
-![[0a60797cd1b25ceeba577274501e1e9287888076531d188a639404928a834f89.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0a60797cd1b25ceeba577274501e1e9287888076531d188a639404928a834f89.jpg)
 
 
 
@@ -4173,11 +4131,11 @@ $$
 
 In this setting it is read sometimes as “del f” and sometimes as “grad f.” 
 
-## Stokes' Theorem
+### Stokes' Theorem
 
 Stokes' Theorem generalizes Green's Theorem to three dimensions. The circulation-curl form of Green's Theorem relates the counterclockwise circulation of a vector field around a simple closed curve $C$ in the $xy$ -plane to a double integral over the plane region $R$ enclosed by $C$ . Stokes' Theorem relates the circulation of a vector field around the boundary $C$ of an oriented surface $S$ in space (Figure 15.59) to a surface integral over the surface $S$ . We require that the surface be piecewise smooth, which means that it is a finite union of smooth surfaces joining along smooth curves. 
 
-## THEOREM 6—Stokes' Theorem
+**THEOREM 6—Stokes' Theorem**
 
 Let $S$ be a piecewise smooth oriented surface having a piecewise smooth boundary curve $C$ . Let $\mathbf{F} = M\mathbf{i} + N\mathbf{j} + P\mathbf{k}$ be a vector field whose components have continuous first partial derivatives on an open region containing $S$ . Then the circulation of $\mathbf{F}$ around $C$ in the direction counterclockwise with respect to the surface's unit normal vector $\mathbf{n}$ equals the integral of the curl vector field $\nabla \times \mathbf{F}$ over $S$ : 
 
@@ -4207,7 +4165,7 @@ $$
 
 which is the circulation-curl form of the equation in Green's Theorem. Conversely, by reversing these steps we can rewrite the circulation-curl form of Green's Theorem for two-dimensional fields in del notation as 
 
-![[d82413c2535f7642d567ac4c75535a7c434eb9c68698807d9b02d4adc0e86149.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d82413c2535f7642d567ac4c75535a7c434eb9c68698807d9b02d4adc0e86149.jpg)
 
 
 (5) 
@@ -4216,14 +4174,14 @@ which is the circulation-curl form of the equation in Green's Theorem. Conversel
 FIGURE 15.60 When applied to curves and surfaces in the plane, Stokes' Theorem gives the circulation-curl version of Green's Theorem. But Stokes' Theorem also applies more generally, to curves and surfaces not lying in the plane.
 
 
-![[6015ce5fbb2ef24da188bc3e02a51f5a0f6cfdafddab5a49efb701bf20f7cb72.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6015ce5fbb2ef24da188bc3e02a51f5a0f6cfdafddab5a49efb701bf20f7cb72.jpg)
 
 
 $$
 \oint_ {C} \mathbf {F} \cdot d \mathbf {r} = \iint_ {R} (\nabla \times \mathbf {F}) \cdot \mathbf {k}   d A.
 $$
 
-![[43aa25f07a59d13f4ef875f83b1b181b0e18140a29bd947885d1a00ad4ffed97.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/43aa25f07a59d13f4ef875f83b1b181b0e18140a29bd947885d1a00ad4ffed97.jpg)
 
 
 
@@ -4264,7 +4222,7 @@ $$
 (\nabla \times \mathbf {F}) \cdot \mathbf {n} d \sigma = - 2 \mathbf {k} \cdot \mathbf {k} d A = - 2 d A
 $$
 
-![[7a42a8762e5022fae56c8251bd9830acab87c0e02372118161a6667cf7d3901d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7a42a8762e5022fae56c8251bd9830acab87c0e02372118161a6667cf7d3901d.jpg)
 
 
 
@@ -4315,10 +4273,10 @@ $$
 
 This result agrees with the circulation value found in Example 4. 
 
-![[744840cb09da186f24d54d4cae6f883ac45b22972a3e55bf07a3249f6f2510fc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/744840cb09da186f24d54d4cae6f883ac45b22972a3e55bf07a3249f6f2510fc.jpg)
 
 
-![[6ee1ba70df517cea8571b430be126dfb20b0e4faf26e4a316fe81ed08d8ee094.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6ee1ba70df517cea8571b430be126dfb20b0e4faf26e4a316fe81ed08d8ee094.jpg)
 
 
 
@@ -4375,7 +4333,7 @@ $$
 \mathbf {n} = + \frac {(\mathbf {r} _ {r} \times \mathbf {r} _ {\theta})}{| \mathbf {r} _ {r} \times \mathbf {r} _ {\theta} |}.
 $$
 
-![[b91e99a10bd44cfac79b3dbc0c6f04dd43060f2ea980fb3f382b7ace90645616.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b91e99a10bd44cfac79b3dbc0c6f04dd43060f2ea980fb3f382b7ace90645616.jpg)
 
 
 $$
@@ -4410,7 +4368,7 @@ $$
 \begin{array}{l} \oint_ {C} \mathbf {F} \cdot d \mathbf {r} = \iint_ {S} (\nabla \times \mathbf {F}) \cdot \mathbf {k} d \sigma \\ = \iint_ {S} 2 d \sigma = 2 \cdot \text { area   of   disk } = 2 \cdot \pi \left(\frac {1}{\sqrt {2}}\right) ^ {2} = \pi . \end{array}
 $$
 
-## Paddle Wheel Interpretation of $\nabla \times \mathbf { F }$
+### Paddle Wheel Interpretation of $\nabla \times \mathbf { F }$
 
 Suppose that F is the velocity field of a fluid moving in a region R in space containing the closed curve C. Then 
 
@@ -4418,21 +4376,21 @@ $$
 \oint_ {C} \mathbf {F} \cdot d \mathbf {r}
 $$
 
-![[f7bbbb8249e5dbfcf28f98ce0fedd1da78925ef897a3b743dfc82d9ffec951b2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f7bbbb8249e5dbfcf28f98ce0fedd1da78925ef897a3b743dfc82d9ffec951b2.jpg)
 
 
 
 FIGURE 15.65 A small paddle wheel in a fluid spins fastest at point Q when its axle points in the direction of curl F.
 
 
-![[cf84d07ad58e31e2056f5c8127cbb8d48fc6b7c837fcd78e8bed38f0e3ccfab6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cf84d07ad58e31e2056f5c8127cbb8d48fc6b7c837fcd78e8bed38f0e3ccfab6.jpg)
 
 
 
 FIGURE 15.66 A steady rotational flow parallel to the xy-plane, with constant angular velocity ω in the positive (counterclockwise) direction (Example 8).
 
 
-![[31f53740681da37cfa541048f5f70f62654e5b5c56ec45a828cd4fa51de0a0ac.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/31f53740681da37cfa541048f5f70f62654e5b5c56ec45a828cd4fa51de0a0ac.jpg)
 
 
 
@@ -4521,7 +4479,7 @@ $$
 d \sigma = \frac {| \nabla f |}{| \nabla f \cdot \mathbf {k} |} d A = \frac {\sqrt {6}}{1} d x d y. \quad \text { Formula   (7)   in   Section   15.5 }
 $$
 
-![[f772705788d6f2d741cae6f87df9309541db9116d45b5a0c7d222a9662f6b84e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f772705788d6f2d741cae6f87df9309541db9116d45b5a0c7d222a9662f6b84e.jpg)
 
 
 The circulation is 
@@ -4544,14 +4502,14 @@ $$
 \mathbf {F} (\mathbf {r} (t)) = \frac {1}{2} (\sin t) \mathbf {i} - (\cos t) \mathbf {j} + (\cos t) \mathbf {k}
 $$
 
-![[333688a98b6e0b276ab25bf7abb302f94d42d1eb5ec6945330aad2dfedd7b0cd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/333688a98b6e0b276ab25bf7abb302f94d42d1eb5ec6945330aad2dfedd7b0cd.jpg)
 
 
 
 (a)
 
 
-![[d55c2a50b0ed278fd58bdfe3bde8eaada67e561f100dc4d35e112741001e1e05.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d55c2a50b0ed278fd58bdfe3bde8eaada67e561f100dc4d35e112741001e1e05.jpg)
 
 
 
@@ -4580,7 +4538,7 @@ $$
 \iint_ {S} (\nabla \times \mathbf {F}) \cdot \mathbf {n} d \sigma = - \pi .
 $$
 
-## Proof Outline of Stokes’ Theorem for Polyhedral Surfaces
+### Proof Outline of Stokes’ Theorem for Polyhedral Surfaces
 
 Let S be a polyhedral surface consisting of a finite number of plane regions or faces. (See Figure 15.69 for examples.) We apply Green’s Theorem to each separate face of S. There are two types of faces: 
 
@@ -4610,35 +4568,35 @@ $$
 (b)
 
 
-![[352f2e67a4792711a941f8c7f5800db58bb29130444ee73ca1ef070148e328c8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/352f2e67a4792711a941f8c7f5800db58bb29130444ee73ca1ef070148e328c8.jpg)
 
 
 
 FIGURE 15.70 Stokes’ Theorem also holds for oriented surfaces with holes. Consistent with the orientation of S, the outer curve is traversed counterclockwise around n, and the inner curves surrounding the holes are traversed clockwise.
 
 
-![[9bf24ef800ff172eec35de949ef241291bade59380df51380fca9163201d996f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9bf24ef800ff172eec35de949ef241291bade59380df51380fca9163201d996f.jpg)
 
 
 
 (a)
 
 
-![[3a4be3e3ce8c34deff3a97e5fa5753fc92bdf2e20054015fc5f770e0e8df5a13.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3a4be3e3ce8c34deff3a97e5fa5753fc92bdf2e20054015fc5f770e0e8df5a13.jpg)
 
 
-![[af9c2115fb6413552d680de758a0557ec44d55a8d95c41b92133dd46937b59fb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/af9c2115fb6413552d680de758a0557ec44d55a8d95c41b92133dd46937b59fb.jpg)
 
 
 FIGURE 15.71 (a) In a simply connected open region in space, a simple closed curve C is the boundary of a smooth surface S. (b) Smooth curves that cross themselves can be divided into loops to which Stokes’ Theorem applies. 
 
 This is Stokes’ Theorem for the polyhedral surface S in Figure 15.69a. More general polyhedral surfaces are shown in Figure 15.69b, and the proof can be extended to them. General smooth surfaces can be obtained as limits of polyhedral surfaces. 
 
-## Stokes’ Theorem for Surfaces with Holes
+### Stokes’ Theorem for Surfaces with Holes
 
 Stokes’ Theorem holds for an oriented surface S that has one or more holes (Figure 15.70). The surface integral over S of the normal component of $\nabla \times \mathbf { F }$ equals the sum of the line integrals around all the boundary curves of the tangential component of F, where the curves are to be traced in the direction induced by the orientation of S. For such surfaces the theorem is unchanged, but C is considered as a union of simple closed curves. 
 
-## An Important Identity
+### An Important Identity
 
 The following identity arises frequently in mathematics and the physical sciences. 
 
@@ -4654,7 +4612,7 @@ $$
 
 If the second partial derivatives are continuous, the mixed second derivatives in parentheses are equal (Theorem 2, Section 13.3) and the vector is zero. 
 
-## Conservative Fields and Stokes’ Theorem
+### Conservative Fields and Stokes’ Theorem
 
 In Section 15.3, we found that a field F being conservative in an open region D in space is equivalent to the integral of F around every closed loop in D being zero. This, in turn, is equivalent in simply connected open regions to saying that $\nabla \times \mathbf { F } = \mathbf { 0 }$ (which gives a test for determining whether F is conservative for such regions). 
 
@@ -4678,15 +4636,12 @@ $$
 \begin{array}{l l} \oint_ {C} \mathbf {F} \cdot d \mathbf {r} = 0 & \Longleftrightarrow \nabla \times \mathbf {F} = \mathbf {0} \text {   throughout   } D \\ \text {   over   any   closed   path   in   } D & \text {   Theorem   7   Domain's   simple   connectivity   and   Stokes'   Theorem   } \end{array}
 $$
 
-## EXERCISES
+### Exercises 15.7
 
-## 15.7
 
 In Exercises 1–6, find the curl of each vector field F. 
 
-$$
-\mathbf {1 .} \mathbf {F} = (x + y - z) \mathbf {i} + (2 x - y + 3 z) \mathbf {j} + (3 x + 2 y + z) \mathbf {k}
-$$
+1. $\mathbf {F} = (x + y - z) \mathbf {i} + (2 x - y + 3 z) \mathbf {j} + (3 x + 2 y + z) \mathbf {k}$
 
 $$
 \mathbf {2 . F} = (x ^ {2} - y) \mathbf {i} + (y ^ {2} - z) \mathbf {j} + (z ^ {2} - x) \mathbf {k}
@@ -4708,7 +4663,7 @@ $$
 \mathbf {6 . F} = \frac {x}{y z} \mathbf {i} - \frac {y}{x z} \mathbf {j} + \frac {z}{x y} \mathbf {k}
 $$
 
-## Using Stokes’ Theorem to Find Line Integrals
+#### Using Stokes’ Theorem to Find Line Integrals
 
 In Exercises 7–12, use the surface integral in Stokes’ Theorem to calculate the circulation of the field F around the curve C in the indicated direction. 
 
@@ -4736,9 +4691,7 @@ $$
 
 C: The boundary of the triangle cut from the plane x $+ \ y + \ z = 1$ by the first octant, counterclockwise when viewed from above 
 
-$$
-\mathbf {1 1 .} \mathbf {F} = (y ^ {2} + z ^ {2}) \mathbf {i} + (x ^ {2} + y ^ {2}) \mathbf {j} + (x ^ {2} + y ^ {2}) \mathbf {k}
-$$
+11. $\mathbf {F} = (y ^ {2} + z ^ {2}) \mathbf {i} + (x ^ {2} + y ^ {2}) \mathbf {j} + (x ^ {2} + y ^ {2}) \mathbf {k}$
 
 C: The square bounded by the lines $x = \pm 1$ and $y = \pm 1$ in the xy-plane, counterclockwise when viewed from above 
 
@@ -4748,7 +4701,7 @@ $$
 
 C: The intersection of the cylinder $x ^ { 2 } + y ^ { 2 } = 4 $ and the hemisphere $x ^ { 2 } + y ^ { 2 } + z ^ { 2 } = 1 6 , z \geq 0 ,$ counterclockwise when viewed from above 
 
-## Integral of the Curl Vector Field
+#### Integral of the Curl Vector Field
 
 13. Let n be the unit normal in the direction away from the origin of the elliptic shell 
 
@@ -4808,7 +4761,7 @@ Determine the flux of F through the hemisphere $x ^ { 2 } + y ^ { 2 } + z ^ { 2 
 
 18. Repeat Exercise 17 for the flux of F across the entire unit sphere. 
 
-## Stokes’ Theorem for Parametrized Surfaces
+#### Stokes’ Theorem for Parametrized Surfaces
 
 In Exercises 19–24, use the surface integral in Stokes’ Theorem to calculate the flux of the curl of the field F across the surface S. 
 
@@ -4824,9 +4777,7 @@ $$
 
 in the direction away from the origin. 
 
-$$
-\mathbf {2 0 .} \mathbf {F} = (y - z) \mathbf {i} + (z - x) \mathbf {j} + (x + z) \mathbf {k}
-$$
+20. $\mathbf {F} = (y - z) \mathbf {i} + (z - x) \mathbf {j} + (x + z) \mathbf {k}$
 
 $$
 S: \quad \mathbf {r} (r, \theta) = (r \cos \theta) \mathbf {i} + (r \sin \theta) \mathbf {j} + (9 - r ^ {2}) \mathbf {k},
@@ -4884,11 +4835,11 @@ $$
 
 in the direction away from the origin. 
 
-## Theory and Examples
+#### Theory and Examples
 
 25. Let C be the smooth curve ${ \bf r } ( t ) = ( 2 \cos t ) { \bf i } + ( 2 \sin t ) { \bf j } + $ $\big ( 3 - 2 \cos ^ { 3 } t \big ) \mathbf { k }$ , oriented to be traversed counterclockwise around the z-axis when viewed from above. Let S be the piecewise smooth cylindrical surface $x ^ { 2 } + y ^ { 2 } = 4 $ , below the curve for $z \geq 0 ,$ together with the base disk in the xy-plane. Note that C lies on the cylinder S and above the xy-plane (see the accompanying figure). Verify Equation (4) in Stokes’ Theorem for the vector field $\mathbf { F } = { y \mathbf { i } } - x \mathbf { j } + x ^ { 2 } \mathbf { k } .$ 
 
-![[05b07b1ca6b47cfd43bf1de0c75f6250d53b7cf8de917d31c9c1c43f11c67fd9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/05b07b1ca6b47cfd43bf1de0c75f6250d53b7cf8de917d31c9c1c43f11c67fd9.jpg)
 
 
 26. Verify Stokes’ Theorem for the vector field ${ \bf F } = 2 x y { \bf i } + x { \bf j } { \bf \alpha } + { \bf \alpha }$ $( y + z ) \mathbf { k }$ and surface $z = 4 - x ^ { 2 } - y ^ { 2 } , z \geq 0$ , oriented with unit normal n pointing upward. 
@@ -4913,7 +4864,7 @@ $$
 \oint_ {C} 2 y d x + 3 z d y - x d z
 $$
 
-![[823d12be61c05259d50d338df88eff3288443090895ab2c734b11b555dee468f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/823d12be61c05259d50d338df88eff3288443090895ab2c734b11b555dee468f.jpg)
 
 
 depends only on the area of the region enclosed by C and not on the position or shape of C. 
@@ -4950,7 +4901,7 @@ is not zero if C is the circle $x ^ { 2 } + y ^ { 2 } = 1$ in the xy-plane. (The
 
 The divergence form of Green’s Theorem in the plane states that the net outward flux of a vector field across a simple closed curve can be calculated by integrating the divergence of the field over the region enclosed by the curve. The corresponding theorem in three dimensions, called the Divergence Theorem, states that the net outward flux of a vector field across a closed surface in space can be calculated by integrating the divergence of the field over the solid region enclosed by the surface. In this section we prove the Divergence Theorem and show how it simplifies the calculation of flux, which is the integral of the field over the closed oriented surface. We also derive Gauss’s law for flux in an electric field and the continuity equation of hydrodynamics. Finally, we summarize the chapter’s vector integral theorems in a single unifying principle generalizing the Fundamental Theorem of Calculus. 
 
-## Divergence in Three Dimensions
+### Divergence in Three Dimensions
 
 The divergence of a vector field $\mathbf { F } = M ( x , y , z ) \mathbf { i } + N ( x , y , z ) \mathbf { j } + P ( x , y , z ) \mathbf { k }$ is the scalar function 
 
@@ -4972,24 +4923,24 @@ Div F has the same physical interpretation in three dimensions as it has in two.
 
 (d) Shearing along parallel horizontal planes: $\mathbf { F } ( x , y , z ) = z \mathbf { j }$ 
 
-## **Solution**
+**Solution**
 
 (a) div $\mathbf { F } = \frac { \partial } { \partial x } ( x ) + \frac { \partial } { \partial y } ( y ) + \frac { \partial } { \partial z } ( z ) = 3 \colon$ The gas is undergoing constant uniform expansion at all points. 
 
-![[de4499120ad968d39e4e8b7760f84d7f921d633d8ed1242ff3b4ae815170bdbb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/de4499120ad968d39e4e8b7760f84d7f921d633d8ed1242ff3b4ae815170bdbb.jpg)
 
 
-![[23db42d13ff5b0b0c4dd81c3e419d9ae174612d0da751d386d479d3d2612a8ef.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/23db42d13ff5b0b0c4dd81c3e419d9ae174612d0da751d386d479d3d2612a8ef.jpg)
 
 
-![[517071965c5c2fe3e2245c71a218f46cd8c4dda3c52f07ad8940531c66bd0c3a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/517071965c5c2fe3e2245c71a218f46cd8c4dda3c52f07ad8940531c66bd0c3a.jpg)
 
 
 
 (c)
 
 
-![[e1d17ec244369947a7ca856e9fcb5873a8ac9acb642f54ef53c923495db66984.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e1d17ec244369947a7ca856e9fcb5873a8ac9acb642f54ef53c923495db66984.jpg)
 
 
 
@@ -5004,11 +4955,11 @@ FIGURE 15.72 Velocity fields of a gas flowing in space (Example 1).
 
 (d) div $\mathbf { F } = { \frac { \partial } { \partial y } } ( z ) = 0 \colon \mathbf { A }$ gain, the divergence is zero at all points in the domain of thevelocity field, so the gas is neither expanding nor compressing at any point. 一
 
-## Divergence Theorem
+### Divergence Theorem
 
 The Divergence Theorem says that under suitable conditions, the outward flux of a vector field across a closed surface equals the triple integral of the divergence of the field over the three-dimensional region enclosed by the surface. 
 
-## THEOREM 8—Divergence Theorem
+**THEOREM 8—Divergence Theorem**
 
 Let F be a vector field whose components have continuous first partial derivatives, and let S be a piecewise smooth oriented closed surface. The flux of F across S in the direction of the surface’s outward unit normal field n equals the triple integral of the divergence ∇ ⋅ F over the solid region D enclosed by the surface: 
 
@@ -5048,7 +4999,7 @@ $$
 \iiint_ {D} \nabla \cdot \mathbf {F} d V = \iiint_ {D} 3 d V = 3 \left(\frac {4}{3} \pi a ^ {3}\right) = 4 \pi a ^ {3}.
 $$
 
-![[c7c7e990b504927958cc15845d1ad766591c51563650199371ecc7016c808a7f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c7c7e990b504927958cc15845d1ad766591c51563650199371ecc7016c808a7f.jpg)
 
 
 
@@ -5073,14 +5024,14 @@ $$
 \begin{array}{l l} \text { Flux } = \iint_ {\substack {\text { Cube } \\ \text { surface }}} \mathbf {F} \cdot \mathbf {n} d \sigma = \iiint_ {\substack {\text { Cube } \\ \text { interior }}} \nabla \cdot \mathbf {F} d V & \text { The   Divergence   Theorem } \\ = \int_ {0} ^ {1} \int_ {0} ^ {1} \int_ {0} ^ {1} (x + y + z) d x d y d z = \frac {3}{2}. & \text { Routine   integration } \end{array}
 $$
 
-![[766e7301d3b6f44945d14637484ef49e563564f0bc3343c95b846e71be2c54d5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/766e7301d3b6f44945d14637484ef49e563564f0bc3343c95b846e71be2c54d5.jpg)
 
 
 
 FIGURE 15.74 The integral of div F over this region equals the total flux across the six sides (Example 4).
 
 
-## **EXAMPLE 4**
+**EXAMPLE 4**
 
 (a) Calculate the flux of the vector field 
 
@@ -5092,7 +5043,7 @@ out of the box-shaped region $D \colon 0 \le x \le 3 , 0 \le y \le 2 , 0 \le z \
 
 (b) Integrate div F over this region and show that the result is the same value as in part (a), as asserted by the Divergence Theorem. 
 
-## **Solution**
+**Solution**
 
 (a) The region D has six sides. We calculate the flux across each side in turn. Consider the top side in the plane z = 1, having outward normal n k = . The flux across this side is given by $\mathbf { F } \cdot \mathbf { n } = z e ^ { x }$ . Since $z = 1$ on this side, the flux at a point $( x , y , z )$ on the top is $e ^ { x }$ . The total outward flux across this side is given by the surface integral 
 
@@ -5124,7 +5075,7 @@ $$
 
 As asserted by the Divergence Theorem, the integral of the divergence over D equals the outward flux across the boundary surface of D. ■ 
 
-## Divergence and the Curl
+### Divergence and the Curl
 
 If F is a vector field on three-dimensional space, then the curl $\nabla \times \mathbf { F }$ is also a vector field on three-dimensional space. So we can calculate the divergence of $\nabla \times \mathbf { F }$ using Equation (1). The result of this calculation is always 0. 
 
@@ -5140,14 +5091,14 @@ $$
 \begin{array}{l} \operatorname{div} (\operatorname{curl} \mathbf {F}) = \nabla \cdot (\nabla \times \mathbf {F}) \\ \qquad = \frac {\partial}{\partial x} \left(\frac {\partial P}{\partial y} - \frac {\partial N}{\partial z}\right) + \frac {\partial}{\partial y} \left(\frac {\partial M}{\partial z} - \frac {\partial P}{\partial x}\right) + \frac {\partial}{\partial z} \left(\frac {\partial N}{\partial x} - \frac {\partial M}{\partial y}\right) \\ \qquad = \frac {\partial^ {2} P}{\partial x \partial y} - \frac {\partial^ {2} N}{\partial x \partial z} + \frac {\partial^ {2} M}{\partial y \partial z} - \frac {\partial^ {2} P}{\partial y \partial x} + \frac {\partial^ {2} N}{\partial z \partial x} - \frac {\partial^ {2} M}{\partial z \partial y} \\ \qquad = 0, \end{array}
 $$
 
-![[50494d2957681130c3f58390df5f3759e90b0ee4aca23956f300030697a443bc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/50494d2957681130c3f58390df5f3759e90b0ee4aca23956f300030697a443bc.jpg)
 
 
 
 FIGURE 15.75 We prove the Divergence Theorem for the kind of threedimensional region shown here.
 
 
-![[650359553306e4060c8b2b83c5d4949dd2010907c6f220fdab5ff251fa0b04f0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/650359553306e4060c8b2b83c5d4949dd2010907c6f220fdab5ff251fa0b04f0.jpg)
 
 
 
@@ -5158,7 +5109,7 @@ because the mixed second partial derivatives cancel by the Mixed Derivative Theo
 
 Theorem 9 has some interesting applications. If a vector field G = curl F, then the field G must have divergence 0. Saying this another way, if div $\mathbf { G } \neq 0$ , then G cannot be the curl of any vector field F having continuous second partial derivatives. Moreover, if $\mathbf { G } = \mathrm { c u r l } \mathbf { F } .$ , then the outward flux of G across any closed surface S is zero by the corollary to the Divergence Theorem, provided the conditions of the theorem are satisfied. So if there is a closed surface for which the surface integral of the vector field G is nonzero, we can conclude that G is not the curl of some vector field F. 
 
-## Proof of the Divergence Theorem for Special Regions
+### Proof of the Divergence Theorem for Special Regions
 
 To prove the Divergence Theorem, we take the components of ${ \bf F } = M { \bf i } + N { \bf j } + P { \bf k }$ to have continuous first partial derivatives. We first assume that D is a convex region with no holes or bubbles, such as a solid ball, cube, or ellipsoid, and that S is a piecewise smooth surface. In addition, we assume that any line perpendicular to the xy-plane at an interior point of the region $R _ { x y }$ that is the projection of D on the xy-plane intersects the surface S in exactly two points, producing surfaces 
 
@@ -5206,19 +5157,19 @@ $$
 \iint_ {S} P \cos \gamma d \sigma = \iiint_ {D} \frac {\partial P}{\partial z} d x d y d z\tag{5}
 $$
 
-![[72824f1c01637c6dc7bf6aed9ad61a2114de98c06fce42567e810f6c5bc86979.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/72824f1c01637c6dc7bf6aed9ad61a2114de98c06fce42567e810f6c5bc86979.jpg)
 
 
 
 FIGURE 15.77 The region D enclosed by the surfaces $S _ { 1 }$ and $S _ { 2 }$ projects vertically onto $R _ { x y }$ in the xy-plane.
 
 
-![[e9587b7786f964793b7c4b9a488f90dff16820e56499f60de80ed2901e09cb92.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e9587b7786f964793b7c4b9a488f90dff16820e56499f60de80ed2901e09cb92.jpg)
 
 
 FIGURE 15.78 An enlarged view of the area patches in Figure 15.77. The relations dσ γ= ±dx dy cos come from Eq. (7) in Section 15.5 with $F = \mathbf { F } \cdot \mathbf { n }$ 
 
-![[9cd6cd021a6843c0038637cac69b2e99cd6ce4fe107493f448f4557e940634be.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9cd6cd021a6843c0038637cac69b2e99cd6ce4fe107493f448f4557e940634be.jpg)
 
 
 
@@ -5245,7 +5196,7 @@ $$
 
 This proves Equation (5). The proofs for Equations (3) and (4) follow the same pattern; just permute $x , y , z ; M , N , P ; \alpha , \beta , \gamma .$ , in order, and get those results from Equation (5). This proves the Divergence Theorem for these special regions. 
 
-## Divergence Theorem for Other Regions
+### Divergence Theorem for Other Regions
 
 The Divergence Theorem can be extended to regions that can be partitioned into a finite number of simple regions of the type just discussed and to regions that can be defined as limits of simpler regions in certain ways. For an example of one step in such a splitting process, suppose that $D$ is the region between two concentric spheres and that F has continuously differentiable components throughout $D$ and on the bounding surfaces. Split D by an equatorial plane and apply the Divergence Theorem to each half separately. The bottom half, $D _ { 1 }$ ,  is shown in Figure 15.79. The surface $S _ { 1 }$ that bounds $D _ { 1 }$ consists of an outer hemisphere, a plane washer-shaped base, and an inner hemisphere. The Divergence Theorem says that 
 
@@ -5261,14 +5212,14 @@ $$
 
 As we follow $\mathbf { n } _ { 2 }$ over $S _ { 2 }$ , pointing outward from $D _ { 2 }$ , we see that $\mathbf { n } _ { 2 }$ equals −k along the washer-shaped base in the xy-plane, points away from the origin on the outer sphere, and points toward the origin on the inner sphere. When we add Equations (6) and (7), the integrals over the flat base cancel because of the opposite signs of ${ \bf n } _ { 1 }$ and $\mathbf { n } _ { 2 }$ . We thus arrive at the result 
 
-![[fa8f0286bf38662c3c93eac687caaa9e7dfa0d103ef2abbf4f65480605644557.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fa8f0286bf38662c3c93eac687caaa9e7dfa0d103ef2abbf4f65480605644557.jpg)
 
 
 
 FIGURE 15.80 The upper half of the solid region between two concentric spheres.
 
 
-![[1d526b68bd60a46d2827ab6e776953e8bbd60b9eff1c679e98eb8e8b5fefa9cc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1d526b68bd60a46d2827ab6e776953e8bbd60b9eff1c679e98eb8e8b5fefa9cc.jpg)
 
 
 
@@ -5335,21 +5286,21 @@ $$
 
 The outward flux of F in Equation (8) across any sphere centered at the origin is $4 \pi$ This result does not contradict the Divergence Theorem because F is not continuous at the origin. 
 
-![[207daa4a87e7e4c60f9264d1a4ef653c3aeafd35f70e2d61d608031bbee7f3fd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/207daa4a87e7e4c60f9264d1a4ef653c3aeafd35f70e2d61d608031bbee7f3fd.jpg)
 
 
 
 FIGURE 15.82 A sphere $S _ { a }$ surrounding another surface S. The tops of the surfaces are removed for visualization.
 
 
-![[bbe04a21bbe66efe4001683b17557ebc0a31ce39a8027335e3ca424952caa10e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bbe04a21bbe66efe4001683b17557ebc0a31ce39a8027335e3ca424952caa10e.jpg)
 
 
 
 FIGURE 15.83 The fluid that flows upward through the patch $\Delta \sigma$ in a short time $\Delta t$ fills a “cylinder” whose volume is approximately base height× = v n⋅ Δσ $\Delta t .$
 
 
-## Gauss’s Law: One of the Four Great Laws of Electromagnetic Theory
+### Gauss’s Law: One of the Four Great Laws of Electromagnetic Theory
 
 In electromagnetic theory, the electric field created by a point charge q located at the origin is 
 
@@ -5381,7 +5332,7 @@ $$
 \text { Gauss's   law: } \iint_ {S} \mathbf {E} \cdot \mathbf {n}   d \sigma = \frac {q}{\varepsilon_ {0}}.
 $$
 
-## Continuity Equation of Hydrodynamics
+### Continuity Equation of Hydrodynamics
 
 Let D be a region in space bounded by a closed oriented surface $S . \operatorname { I f } \mathbf { v } ( x , y , z )$ is the velocity field of a fluid flowing smoothly through D, $\delta = \delta ( t , x , y , z )$ is the fluid’s density at $( x , y , z )$ at time $t ,$ and $\mathbf { F } = \delta \mathbf { v }$ , then the continuity equation of hydrodynamics states that 
 
@@ -5461,7 +5412,7 @@ $$
 
 now says that the net decrease in density of the fluid in region D (divergence integral) is accounted for by the mass transported across the surface S (outward flux integral). So, the theorem is a statement about conservation of mass (Exercise 35). 
 
-## Unifying the Integral Theorems
+### Unifying the Integral Theorems
 
 If we think of a two-dimensional field $\mathbf { F } = M ( x , y ) \mathbf { i } + N ( x , y ) \mathbf { j }$ as a three-dimensional field whose k-component is zero, then $\nabla \cdot \mathbf { F } = ( \partial M / \partial x ) + ( \partial N / \partial y )$ , and the normal form of Green’s Theorem can be written as 
 
@@ -5513,7 +5464,7 @@ $$
 \int_ {a} ^ {b} \frac {d f}{d x} d x = f (b) - f (a).
 $$
 
-![[496e37098cccf948f294cebb9099b3152d62ce69e3b4f5d05c397e81a2ce3a11.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/496e37098cccf948f294cebb9099b3152d62ce69e3b4f5d05c397e81a2ce3a11.jpg)
 
 
 
@@ -5538,13 +5489,13 @@ Stokes’ Theorem and the tangential form of Green’s Theorem say that, when th
 
 The beauty of these interpretations is the observance of a single unifying principle, which we can state as follows. 
 
-## A Unifying Fundamental Theorem of Vector Integral Calculus
+### A Unifying Fundamental Theorem of Vector Integral Calculus
 
 The integral of a differential operator acting on a field over a region equals the sum of the field components appropriate to the operator over the boundary of the region. 
 
-## EXERCISES 15.8
+### EXERCISES 15.8
 
-## Calculating Divergence
+#### Calculating Divergence
 
 In Exercises 1–8, find the divergence of the field. 
 
@@ -5606,7 +5557,7 @@ $$
 
 20. Thick cylinder $\mathbf { F } = \ln ( x ^ { 2 } + y ^ { 2 } ) \mathbf { i } - \left( { \frac { 2 z } { x } } \arctan { \frac { y } { x } } \right) \mathbf { j } +$ $z { \sqrt { x ^ { 2 } + y ^ { 2 } } } \mathbf { k }$ D: The thick-walled cylinder $1 \leq x ^ { 2 } + y ^ { 2 } \leq 2 , - 1 \leq z \leq 2$ 
 
-## Theory and Examples
+#### Theory and Examples
 
 21. a. Show that the outward flux of the position vector field F = xi j k+ +y z through a smooth closed surface S is three times the volume of the region enclosed by the surface. 
 
@@ -5614,7 +5565,7 @@ b. Let n be the outward unit normal vector field on S. Show that it is not possi
 
 22. The base of the closed cubelike surface shown here is the unit square in the xy-plane. The four sides lie in the planes $x = 0 ,$ $x = 1 , y = 0 , \mathrm { a n d } y = 1$ . The top is an arbitrary smooth surface whose identity is unknown. $\operatorname { L e t } \mathbf { F } = x \mathbf { i } - 2 y \mathbf { j } + ( z + 3 ) \mathbf { k }$ , and suppose the outward flux of F through Side A is 1 and through Side $B { \mathrm { ~ i s ~ } } - 3 .$ . Can you conclude anything about the outward flux through the top? Give reasons for your answer. 
 
-![[89e7f0131166bceb0f6c70b5d31b18c7ddf94f9ea46c640ee45ed41f5a8eb004.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/89e7f0131166bceb0f6c70b5d31b18c7ddf94f9ea46c640ee45ed41f5a8eb004.jpg)
 
 
 23. Let $\mathbf { F } = \left( y \cos 2 x \right) \mathbf { i } + \left( y ^ { 2 } \sin 2 x \right) \mathbf { j } + ( x ^ { 2 } y + z ) \mathbf { k }$ . Is there a vector field A such that $\mathbf { F } = \nabla \times \mathbf { A } \boldsymbol { ? }$ Explain your answer. 
@@ -5667,11 +5618,7 @@ $$
 
 $$
 \nabla \cdot (\mathbf {F} _ {1} \times \mathbf {F} _ {2}) = \mathbf {F} _ {2} \cdot \nabla \times \mathbf {F} _ {1} - \mathbf {F} _ {1} \cdot \nabla \times \mathbf {F} _ {2}
-$$
-
-31. If ${ \bf F } = M { \bf i } + N { \bf j } + P { \bf k }$ is a differentiable vector field, we define the notation $\mathbf { F } \cdot \nabla$ to mean 
-
-$$
+31. $If ${ \bf F } = M { \bf i } + N { \bf j } + P { \bf k }$ is a differentiable vector field, we define the notation $\mathbf { F } \cdot \nabla$ to mean$
 M \frac {\partial}{\partial x} + N \frac {\partial}{\partial y} + P \frac {\partial}{\partial z}.
 $$
 
@@ -5695,11 +5642,7 @@ b. Show that if f is harmonic on $D ,$ then
 
 $$
 \iint_ {S} f \nabla f \cdot \mathbf {n} d \sigma = \iiint_ {D} | \nabla f | ^ {2} d V.
-$$
-
-33. Green’s first formula Suppose that $f$ and $g$ are scalar functions with continuous first- and second-order partial derivatives throughout a region D that is bounded by a closed piecewise smooth surface S. Show that 
-
-$$
+33. $Green’s first formula Suppose that $f$ and $g$ are scalar functions with continuous first- and second-order partial derivatives throughout a region D that is bounded by a closed piecewise smooth surface S. Show that$
 \iint_ {S} f \nabla g \cdot \mathbf {n} d \sigma = \iiint_ {D} \left(f \nabla^ {2} g + \nabla f \cdot \nabla g\right) d V.\tag{10}
 $$
 
@@ -5787,14 +5730,14 @@ where $K = k / ( c \rho ) > 0$ is the diffusivity constant. (Notice that if $T (
 
 ## CHAPTER 15 Practice Exercises
 
-## Evaluating Line Integrals
+### Evaluating Line Integrals
 
 1. The accompanying figure shows two polygonal paths in space joining the origin to the point (1, 1, 1 . Integrate) $f ( x , y , z ) =$ $2 x - 3 y ^ { 2 } - 2 z + 3$ over each path. 
 
-![[3edfc7a0458ddb41ba0b676758b4eb3912c96e695171a00234ecb0aa8b443489.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3edfc7a0458ddb41ba0b676758b4eb3912c96e695171a00234ecb0aa8b443489.jpg)
 
 
-![[15f32ea0c5f52eaae20a78377b8ae90671649294129be2c0cae76418734f953a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/15f32ea0c5f52eaae20a78377b8ae90671649294129be2c0cae76418734f953a.jpg)
 
 
 
@@ -5807,10 +5750,10 @@ Path 2
 
 2. The accompanying figure shows three polygonal paths joining the origin to the point (1, 1, 1 . Integrate) $f ( x , y , z ) = x ^ { 2 } + y - z$ over each path. 
 
-![[1abc588c5f347bfeeabb479157f3bc6c56ea6bfd1351643fff59793936f7d1c9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1abc588c5f347bfeeabb479157f3bc6c56ea6bfd1351643fff59793936f7d1c9.jpg)
 
 
-![[c1f50364314a1ae5d58205300fd1e6950af55caf8847e4d080e989e6755b710f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c1f50364314a1ae5d58205300fd1e6950af55caf8847e4d080e989e6755b710f.jpg)
 
 
 3. Integrate $f ( x , y , z ) = \sqrt { x ^ { 2 } + z ^ { 2 } }$ over the circle 
@@ -5845,7 +5788,7 @@ C is the square cut from the first quadrant by the lines $x = \pi / 2$ and $y = 
 
 C is the circle $x ^ { 2 } + y ^ { 2 } = 4 .$ 
 
-## Finding and Evaluating Surface Integrals
+### Finding and Evaluating Surface Integrals
 
 11. Area of an elliptic region Find the area of the elliptic region cut from the plane $x + y + z = .$ 1 by the cylinder $x ^ { 2 } + y ^ { 2 } = 1$ 
 
@@ -5857,7 +5800,7 @@ C is the circle $x ^ { 2 } + y ^ { 2 } = 4 .$
 
 b. Find the area of the portion of the cylinder that lies inside the hemisphere. (Hint: Project onto the xz-plane. Or evaluate the integral $\int h d s ,$ , where h is the altitude of the cylinder and ds is the element of arc length on the circle $x ^ { 2 } + y ^ { 2 } = 2 x$ in the xy-plane.) 
 
-![[19d45b60dfbfcabc8e6940f7bb12bb2e6d63872690623cae94358e060f688735.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/19d45b60dfbfcabc8e6940f7bb12bb2e6d63872690623cae94358e060f688735.jpg)
 
 
 15. Area of a triangle Find the area of the triangle in which the plane $\left( x / a \right) + \left( y / b \right) + \left( z / c \right) = 1 \left( a , b , c > 0 \right)$ intersects the first octant. Check your answer with an appropriate vector calculation. 
@@ -5874,7 +5817,7 @@ over the surface cut from the parabolic cylinder $y ^ { 2 } - z = 1$ by the plan
 
 18. Area of Wyoming The state of Wyoming is bounded by the meridians 1 $1 1 ^ { \circ } 3 ^ { \prime }$ and $1 0 4 ^ { \circ } 3 ^ { \prime }$ west longitude and by the circles $4 1 ^ { \circ }$ and $4 5 ^ { \circ }$ north latitude. Assuming that Earth is a sphere of radius $R = 6 3 7 0 { \mathrm { k m } }$ , find the area of Wyoming. 
 
-## Parametrized Surfaces
+### Parametrized Surfaces
 
 Find parametrizations for the surfaces in Exercises 19–24. (There are many ways to do these, so your answers may not be the same as those in the back of the text.) 
 
@@ -5904,12 +5847,12 @@ $$
 
 27. Area of a helicoid Find the surface area of the helicoid $\mathbf { r } ( r , \theta ) =$ (r cos $\theta ) \mathbf { i } + ( r \sin \theta ) \mathbf { j } + \theta \mathbf { k } , ~ 0 \leq \theta \leq 2 \pi , ~ 0 \leq r \leq 1 ,$ in the accompanying figure. 
 
-![[989d9852acca1cd7f7ad5450dd54f178e015e83b0917f292edb56db026ae1830.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/989d9852acca1cd7f7ad5450dd54f178e015e83b0917f292edb56db026ae1830.jpg)
 
 
 28. Surface integral Evaluate the integral $\begin{array} { r } { \int \int _ { S } \sqrt { x ^ { 2 } + y ^ { 2 } + 1 } \ d y } \end{array}$ d , σ where S is the helicoid in Exercise 27. 
 
-## Conservative Fields
+### Conservative Fields
 
 Which of the fields in Exercises 29–32 are conservative, and which are not? 
 
@@ -5963,7 +5906,7 @@ C: The ellipse in which the plane $2 x + 6 y - 3 z = 6$ meets the cylinder $x ^ 
 
 C: The circle in which the plane $z = - y$ meets the sphere $x ^ { 2 } + y ^ { 2 } + z ^ { 2 } = 4 ,$ counterclockwise as viewed from above 
 
-## Masses and Moments
+### Masses and Moments
 
 41. Wire with different densities Find the mass of a thin wire lying along the curve $\mathbf { r } ( t ) = { \sqrt { 2 t } } \mathbf { i } + { \sqrt { 2 t } } \mathbf { j } + ( 4 - t ^ { 2 } ) \mathbf { k } , 0 \leq t \leq 1 ,$ if the density at t is $\mathbf { ( a ) } \delta = 3 t$ and $( { \bf b } ) \delta = 1$ 
 
@@ -6045,25 +5988,25 @@ Use the Green’s Theorem area formula in Exercises 15.4 to find the areas of th
 
 1. The limaçon $x = 2 \cos t - \cos 2 t , y = 2 \sin t , 0 \leq t \leq 2 \pi$ 
 
-![[caec64472b22b293fb28f6f1c26d4232f0ceb4236615c24ba087fd4dcfd5e89e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/caec64472b22b293fb28f6f1c26d4232f0ceb4236615c24ba087fd4dcfd5e89e.jpg)
 
 
 2. The deltoid $x = 2 \cos t + \cos 2 t , y = 2 \sin t - \sin 2 t ,$ $0 \leq t \leq 2 \pi$ 
 
-![[2b2a2c6bb48c504fb3e90e1296fa152bb3640775e4ad42174b92aa8eb96da6d1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2b2a2c6bb48c504fb3e90e1296fa152bb3640775e4ad42174b92aa8eb96da6d1.jpg)
 
 
 3. The eight curve $x = ( 1 / 2 )$ = sin 2 ,  sin ,t y t $0 \leq t \leq \pi$ (one loop) 
 
-![[dae2d116b0dd7656d2a800f4611c381188c4146d49103dd93f9ea135f4253a91.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dae2d116b0dd7656d2a800f4611c381188c4146d49103dd93f9ea135f4253a91.jpg)
 
 
 4. The teardrop x = − = ≤ ≤ 2 cos sin 2 ,  sin , 0 2 a t a t y b t t π 
 
-![[ec085ab88164780b24c8b52df7a7648097b08b047aacabdb1612bf4564a57be9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ec085ab88164780b24c8b52df7a7648097b08b047aacabdb1612bf4564a57be9.jpg)
 
 
-## Theory and Applications
+### Theory and Applications
 
 5. a. Give an example of a vector field $\mathbf { F } ( x , y , z )$ that has value 0 at only one point and such that curl F is nonzero everywhere. Be sure to identify the point and compute the curl. 
 
@@ -6155,7 +6098,7 @@ $$
 
 around C. The surface integral on the right side of the equation is called the magnetic flux, and S is any oriented surface with boundary C. 
 
-15. Let 
+16. Let 
 
 $$
 \mathbf {F} = - \frac {G m M}{| \mathbf {r} | ^ {3}} \mathbf {r}
@@ -6195,7 +6138,7 @@ where r is the position vector of the point $\left( x , y , z \right) \operatorn
 
 ## CHAPTER 15 Technology Application Projects
 
-## Mathematica/Maple Projects
+### Mathematica/Maple Projects
 
 Projects can be found within MyLab Math. 
 
@@ -6204,16 +6147,3 @@ Projects can be found within MyLab Math.
 • How Can You Visualize Green’s Theorem? Explore integration over vector fields and use parametrizations to compute line integrals. Both forms of Green’s Theorem are explored. 
 
 • Visualizing and Interpreting the Divergence Theorem Verify the Divergence Theorem by formulating and evaluating certain divergence and surface integrals. 
-
-# 16 First-Order Differential Equations
-
-Chapter 17 is available online. 
-
-To access this chapter, visit the companion Website. 
-
-![[36d2bdcb1b1a05338f7c8917c637782676cddcad24cf6a35a01d91cf067dd7c9.jpg|image]]
-
-
-OVERVIEW Many real-world problems, when formulated mathematically, lead to differential equations. We encountered a number of these equations in previous chapters when studying phenomena such as the motion of an object along a straight line, the decay of a radioactive material, the growth of a population, and the cooling of a heated object placed within a medium of lower temperature. 
-
-Section 4.8 introduced diferential equations of the form $d y / d x = f ( x )$ , where f is given and $y$ is an unknown function of x. We learned that when f is continuous over some interval, the general solution $y ( x )$ is found directly by integration, $y = \int f ( x )$ dx  . In Section 7.2 we investigated diferential equations of the form $d y / d x \ : = \ : f ( x , y )$ , where $f$ is a function of both the independent variable x and the dependent variable y. There we learned how to find the general solution for the special case when the diferential equation is separable. In this chapter we further extend our study to include other commonly occurring first-order diferential equations. These diferential equations involve only first derivatives of the unknown function y x( ), and they model phenomena varying from simple electrical circuits to the concentration of a chemical in a container. Diferential equations involving second derivatives are examined in Chapter 17.

@@ -1,15 +1,21 @@
 :root {
   --reader-bg: #ffffff;
-  --reader-text: #242424;
+  --reader-text: #333333;
+  --reader-muted: #777777;
+  --reader-blue: #0072c1;
+  --reader-nav: #026ebb;
+  --word-highlight: #fff200;
+}
 
-  --reader-muted: #6b7280;
+strong {
+  color: var(--reader-blue);
+}
 
-  --reader-font-size: 18px;
-  --reader-line-height: 1.8;
-
-  --reader-width: 760px;
-
-  --reader-inline-padding: 24px;
-
-  --word-highlight: #e7f3cc;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--reader-blue);
 }

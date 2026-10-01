@@ -7,9 +7,16 @@ order: 6
 
 <!-- Extracted from Thomas-calculus Markdown source; chapters 1-17 only. -->
 
+![教材插图](/books/thomas-calculus/assets/792f7d1d8f92580fe01bd553d56af3abfc4ae72a7f2e54ddf23224778e1d533c.jpg)
+
+
+OVERVIEW In Chapter 5 we saw that a continuous function over a closed interval has a definite integral, which is the limit of Riemann sum approximations for the function. We found a way to evaluate definite integrals using the Fundamental Theorem of Calculus. We saw that the area under a curve and the area between two curves could be defined and computed as definite integrals. In this chapter we will see some of the many additional applications of definite integrals. We will use the definite integral to define and find volumes, lengths of plane curves, and areas of surfaces of revolution. We will see how integrals are used to solve physical problems involving the work done by a force, and how they give the location of an object's center of mass. The integral arises in these and other applications in which we can approximate a desired quantity by Riemann sums. The limit of those Riemann sums, which is the quantity we seek, is given by a definite integral.
+
+
+
 ## 6.1 Volumes Using Cross-Sections
 
-![[b05138901261665a4ec5e3b37197128a0968ea3132168b721c60dd157c613e89.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b05138901261665a4ec5e3b37197128a0968ea3132168b721c60dd157c613e89.jpg)
 
 
 In this section we define volumes of solids by using the areas of their cross-sections. A cross-section of a solid S is the planar region formed by intersecting S with a plane (Figure 6.1). We present three different methods for obtaining the cross-sections appropriate to finding the volume of a particular solid: the method of slicing, the disk method, and the washer method. 
@@ -22,14 +29,14 @@ FIGURE 6.1 A cross-section $S(x)$ of the solid $S$ formed by intersecting $S$ wi
 
 Before showing how this method works, we need to extend the definition of a cylinder from the usual cylinders of classical geometry (which have circular, square, or other regular bases) to cylindrical solids that have more general bases. As shown in Figure 6.2, if the cylindrical solid has a base whose area is A and its height is h, then the volume of the cylindrical solid is 
 
-![[f4fff53c68503a40f788d72981e9ac6cb8ed54faa4ac5745aa0623975736e13f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f4fff53c68503a40f788d72981e9ac6cb8ed54faa4ac5745aa0623975736e13f.jpg)
 
 
 
 Plane region whose area we know
 
 
-![[4ce1029981511ed70897570bfef575b8c71b11e68e21cbcf813c467b1e73ab0d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4ce1029981511ed70897570bfef575b8c71b11e68e21cbcf813c467b1e73ab0d.jpg)
 
 
 
@@ -41,14 +48,14 @@ Volume = base area × height = Ah
 FIGURE 6.2 The volume of a cylindrical solid is equal to its base area times its height.
 
 
-![[700c9355ed109915a45eaa4341242b4b21435eee1a4242e374a641638ac7041a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/700c9355ed109915a45eaa4341242b4b21435eee1a4242e374a641638ac7041a.jpg)
 
 
 
 FIGURE 6.3 A typical thin slab in the solid S.
 
 
-![[d146b176a3443409a791fe902efe43ff590d7c553b6115b7c696a29fa1f40a61.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d146b176a3443409a791fe902efe43ff590d7c553b6115b7c696a29fa1f40a61.jpg)
 
 
 
@@ -61,7 +68,7 @@ $$
 
 In the method of slicing, the base will be the cross-section of S that has area $A(x)$ , and the height will correspond to the width $\Delta x_{k}$ of subintervals formed by partitioning the interval $[a,b]$ into finitely many subintervals $[x_{k-1},x_{k}]$ . 
 
-## Slicing by Parallel Planes
+### Slicing by Parallel Planes
 
 We partition $[a,b]$ into subintervals of width (length) $\Delta x_{k}$ and slice the solid, as we would a loaf of bread, by planes perpendicular to the x-axis at the partition points $a = x_{0} < x_{1} < \cdots < x_{n} = b$ . These planes slice S into thin “slabs” (like thin slices of a loaf of bread). A typical slab is shown in Figure 6.3. We approximate the slab between the plane at $x_{k-1}$ and the plane at $x_{k}$ by a cylindrical solid with base area $A(x_{k})$ and height $\Delta x_{k} = x_{k} - x_{k-1}$ (Figure 6.4). The volume $V_{k}$ of this cylindrical solid is $A(x_{k}) \cdot \Delta x_{k}$ , which is approximately the same volume as that of the slab: 
 
@@ -89,7 +96,7 @@ Therefore, we define this definite integral to be the volume of the solid S.
 >
 This definition applies whenever $A(x)$ is integrable, and in particular when $A(x)$ is continuous. To apply this definition to calculate the volume of a solid using cross-sections perpendicular to the x-axis, take the following steps: 
 
-## Calculating the Volume of a Solid
+### Calculating the Volume of a Solid
 
 1. Sketch the solid and a typical cross-section. 
 
@@ -99,30 +106,30 @@ This definition applies whenever $A(x)$ is integrable, and in particular when $A
 
 4. Integrate $A(x)$ to find the volume. 
 
-## **EXAMPLE 1** A pyramid 3 meters high has a square base that is 3 meters on a side. The cross-section of the pyramid perpendicular to the altitude x meters down from the vertex is a square x meters on a side. Find the volume of the pyramid.
+**EXAMPLE 1** A pyramid 3 meters high has a square base that is 3 meters on a side. The cross-section of the pyramid perpendicular to the altitude x meters down from the vertex is a square x meters on a side. Find the volume of the pyramid.
 
-![[b6a7b2160558f1aa6d2fda14aa8d6d6f29366d7910ec0513a1d31f686ddf1e9d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b6a7b2160558f1aa6d2fda14aa8d6d6f29366d7910ec0513a1d31f686ddf1e9d.jpg)
 
 
 
 FIGURE 6.5 The cross-sections of the pyramid in Example 1 are squares.
 
 
-![[6b2a4f621893a3d22005e1ceca6e80c941185ced62f05ac060c79c9881311306.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6b2a4f621893a3d22005e1ceca6e80c941185ced62f05ac060c79c9881311306.jpg)
 
 
 
 FIGURE 6.6 The wedge of Example 2, sliced perpendicular to the x-axis. The cross-sections are rectangles.
 
 
-![[ffb203b44dc89030291462ecf4c24ddb4de9fe3f15b5ed2930e5b2244acd26fd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ffb203b44dc89030291462ecf4c24ddb4de9fe3f15b5ed2930e5b2244acd26fd.jpg)
 
 
 
 FIGURE 6.7 Cavalieri's principle: These solids have the same volume (imagine each solid as a stack of coins).
 
 
-## **Solution**
+**Solution**
 
 1. A sketch. We draw the pyramid with its altitude along the $x$ -axis and its vertex at the origin and include a typical cross-section (Figure 6.5). Note that by positioning the pyramid in this way, we have vertical cross-sections that are squares, whose areas are easy to calculate. 
 
@@ -156,7 +163,7 @@ $$
 
 **EXAMPLE 3** Cavalieri's principle says that solids with equal altitudes and identical cross-sectional areas at each height have the same volume (Figure 6.7). This follows immediately from the definition of volume, because the cross-sectional area function $A(x)$ and the interval $[a, b]$ are the same for both solids. 
 
-## Solids of Revolution: The Disk Method
+### Solids of Revolution: The Disk Method
 
 The solid generated by rotating (or revolving) a planar region about an axis in its plane is called a solid of revolution. To find the volume of a solid like the one shown in Figure 6.8, we first observe that the cross-sectional area $A(x)$ is the area of a disk of radius $R(x)$ , where $R(x)$ is the distance from the axis of revolution to the planar region's boundary. The area is then 
 
@@ -186,10 +193,10 @@ This method for calculating the volume of a solid of revolution is often called 
 
 **Solution** We draw the region and a typical radius (Figure 6.8a) and the generated solid (Figure 6.8b). The volume is 
 
-![[8415dee536c41fc5c736dd3a0dbe647f3619e08f1e95fcfb563b656fe61b6e95.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8415dee536c41fc5c736dd3a0dbe647f3619e08f1e95fcfb563b656fe61b6e95.jpg)
 
 
-![[bc9eba706ea8cec3989f87eabc8f7a1666b9b6e965cb63d856a6216993aeb57d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bc9eba706ea8cec3989f87eabc8f7a1666b9b6e965cb63d856a6216993aeb57d.jpg)
 
 
 
@@ -208,7 +215,7 @@ $$
 
 is rotated about the x-axis to generate a sphere. Find its volume. 
 
-![[cd465dbb602b754dfc326b6fc81fec2a2f827e7a76229f9b2954e4a46a1db86c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cd465dbb602b754dfc326b6fc81fec2a2f827e7a76229f9b2954e4a46a1db86c.jpg)
 
 
 
@@ -241,14 +248,14 @@ $$
 \begin{array}{l l} V = \int_ {1} ^ {4} \pi [ R (x) ] ^ {2} d x \\ = \int_ {1} ^ {4} \pi [ \sqrt {x} - 1 ] ^ {2} d x & \text { Radius } R (x) = \sqrt {x} - 1 \text { for   rotation   around } y = 1. \\ = \pi \int_ {1} ^ {4} [ x - 2 \sqrt {x} + 1 ] d x & \text { Expand   integrand. } \\ = \pi \left[ \frac {x ^ {2}}{2} - 2 \cdot \frac {2}{3} x ^ {3 / 2} + x \right] _ {1} ^ {4} = \frac {7 \pi}{6}. & \text { Integrate. } \end{array}
 $$
 
-![[1b22e51570d0b316e72a8dc65dd2b6cf8faf1b369165aad1d1717127905c107a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1b22e51570d0b316e72a8dc65dd2b6cf8faf1b369165aad1d1717127905c107a.jpg)
 
 
 
 (a)
 
 
-![[2cc4927de3f722ff98e4717ade8255a0aaf136ce38d7af3508efa7f0f18f6f23.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2cc4927de3f722ff98e4717ade8255a0aaf136ce38d7af3508efa7f0f18f6f23.jpg)
 
 
 
@@ -269,20 +276,20 @@ $$
 V = \int_ {c} ^ {d} A (y) d y = \int_ {c} ^ {d} \pi [ R (y) ] ^ {2} d y.
 $$
 
-## **EXAMPLE 7** Find the volume of the solid generated by revolving the region between the y-axis and the curve $x = 2/y$ , $1 \leq y \leq 4$ , about the y-axis.
+**EXAMPLE 7** Find the volume of the solid generated by revolving the region between the y-axis and the curve $x = 2/y$ , $1 \leq y \leq 4$ , about the y-axis.
 
 
 (a)
 
 
-![[270513d0da39662f37d1d745baa91ebf2c2d80bdd9b97142874fbc4bb28be77f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/270513d0da39662f37d1d745baa91ebf2c2d80bdd9b97142874fbc4bb28be77f.jpg)
 
 
 
 (a)
 
 
-![[d29693afbf6b699bee0cdf7ae329efe3bb7c81893a3c9292a5a98da67d170fc8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d29693afbf6b699bee0cdf7ae329efe3bb7c81893a3c9292a5a98da67d170fc8.jpg)
 
 
 
@@ -303,10 +310,10 @@ $$
 \begin{array}{l l} V = \int_ {- \sqrt {2}} ^ {\sqrt {2}} \pi [ R (y) ] ^ {2} d y & y = \pm \sqrt {2} \text {   when   } x = 3 \\ = \int_ {- \sqrt {2}} ^ {\sqrt {2}} \pi [ 2 - y ^ {2} ] ^ {2} d y & \text { Radius   } R (y) = 3 - (y ^ {2} + 1) \\ & \text { for   rotation   around   axis   } x = 3. \\ = \pi \int_ {- \sqrt {2}} ^ {\sqrt {2}} [ 4 - 4 y ^ {2} + y ^ {4} ] d y & \text { Expand   integrand. } \\ = \pi \left[ 4 y - \frac {4}{3} y ^ {3} + \frac {y ^ {5}}{5} \right] _ {- \sqrt {2}} ^ {\sqrt {2}} & \text { Integrate. } \\ = \frac {6 4 \pi \sqrt {2}}{1 5}. \end{array}
 $$
 
-![[22c7b5d921232907226cf77b5e166e924642a1770624b756b73f16ace0eac198.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/22c7b5d921232907226cf77b5e166e924642a1770624b756b73f16ace0eac198.jpg)
 
 
-![[72e2dcfa9942b64a3482c850d830dbc362dc41ec8dae39ca16fb868633170dc3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/72e2dcfa9942b64a3482c850d830dbc362dc41ec8dae39ca16fb868633170dc3.jpg)
 
 
 
@@ -317,7 +324,7 @@ $$
 FIGURE 6.12 The region (a) and solid of revolution (b) in Example 8.
 
 
-## Solids of Revolution: The Washer Method
+### Solids of Revolution: The Washer Method
 
 If the region we revolve to generate a solid does not border on or cross the axis of revolution, then the solid has a hole in it (Figure 6.13). The cross-sections perpendicular to the axis of revolution are washers (the purplish circular surface in Figure 6.13) instead of disks. The dimensions of a typical washer are 
 
@@ -327,17 +334,17 @@ $$
 
 Inner radius: $r(x)$ 
 
-![[1f688490e6a136f162cce013d628b38db71b036c2cbc65b5f304a891086f3dea.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1f688490e6a136f162cce013d628b38db71b036c2cbc65b5f304a891086f3dea.jpg)
 
 
 
 FIGURE 6.13 The cross-sections of the solid of revolution generated here are washers, not disks, so the integral $\int_{a}^{b} A(x) dx$ leads to a slightly different formula.
 
 
-![[566aef42495ae75460587b7ef52648e346f7de895686b81a75c1c7547009cca0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/566aef42495ae75460587b7ef52648e346f7de895686b81a75c1c7547009cca0.jpg)
 
 
-![[852b5584117281bda99026421f3c44d53ebc2d9c5af402964b59d2bcfc507c2f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/852b5584117281bda99026421f3c44d53ebc2d9c5af402964b59d2bcfc507c2f.jpg)
 
 
 
@@ -378,10 +385,10 @@ $$
 \begin{array}{c} x ^ {2} + 1 = - x + 3 \\ x ^ {2} + x - 2 = 0 \\ (x + 2) (x - 1) = 0 \\ x = - 2, \quad x = 1 \end{array} \quad \text { Limits   of   integration }
 $$
 
-![[e4e65a5209ffe5cef7ba5ac2a0daac64a42a324c90afc5433cf45a96123e5670.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e4e65a5209ffe5cef7ba5ac2a0daac64a42a324c90afc5433cf45a96123e5670.jpg)
 
 
-![[63e8ea5562cba0cf35cbd1201d04493dd0b6467f8ad6e3e90dc2b81b69cd9444.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/63e8ea5562cba0cf35cbd1201d04493dd0b6467f8ad6e3e90dc2b81b69cd9444.jpg)
 
 
 The volume is 
@@ -410,11 +417,10 @@ FIGURE 6.15 (a) The region being rotated about the y-axis, the washer radii, and
 
 Substitute for radii and limits of integration. 
 
-## EXERCISES
+### Exercises 6.1
 
-## 6.1
 
-## Volumes by Slicing
+#### Volumes by Slicing
 
 Find the volumes of the solids in Exercises 1–10. 
 
@@ -422,7 +428,7 @@ Find the volumes of the solids in Exercises 1–10.
 
 2. The solid lies between planes perpendicular to the x-axis at x = -1 and x = 1. The cross-sections perpendicular to the x-axis are circular disks whose diameters run from the parabola $y = x^{2}$ to the parabola $y = 2 - x^{2}$ . 
 
-![[1366aab767af075b33e8ed3b90bb11ee9ba0e8f5d973cbbcc7b9d4b14d93d1e8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1366aab767af075b33e8ed3b90bb11ee9ba0e8f5d973cbbcc7b9d4b14d93d1e8.jpg)
 
 
 3. The solid lies between planes perpendicular to the x-axis at x = -1 and x = 1. The cross-sections perpendicular to the x-axis between these planes are squares whose bases run from the semicircle $y = -\sqrt{1 - x^{2}}$ to the semicircle $y = \sqrt{1 - x^{2}}$ . 
@@ -433,7 +439,7 @@ Find the volumes of the solids in Exercises 1–10.
 
 a. equilateral triangles with bases running from the x-axis to the curve as shown in the accompanying figure. 
 
-![[8f3cf6623e659540558d33a8ceaffbd7295a64a4300d04185a0df799443b709f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8f3cf6623e659540558d33a8ceaffbd7295a64a4300d04185a0df799443b709f.jpg)
 
 
 b. squares with bases running from the x-axis to the curve. 
@@ -458,17 +464,17 @@ b. semicircles with diameters running across the base of the solid.
 
 10. The base of the solid is the disk $x^{2} + y^{2} \leq 1$ . The cross-sections by planes perpendicular to the $y$ -axis between $y = -1$ and $y = 1$ are isosceles right triangles with one leg in the disk. 
 
-![[38cc9a7690e80562b48f6bb89f3bd9a9e373641897713d918ec318581a82fb84.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/38cc9a7690e80562b48f6bb89f3bd9a9e373641897713d918ec318581a82fb84.jpg)
 
 
 11. Find the volume of the given right tetrahedron. (Hint: Consider slices perpendicular to one of the labeled edges.) 
 
-![[d9fbda56f3182fbadd6331b7ad3d60d8dd100e58ca3174558668a5f423762977.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d9fbda56f3182fbadd6331b7ad3d60d8dd100e58ca3174558668a5f423762977.jpg)
 
 
 12. Find the volume of the given pyramid, which has a square base of area 9 and height 5. 
 
-![[3bdc31eacc644fa3fa90e0c2f4ebaa90583ba92de486729104589905415cf44e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3bdc31eacc644fa3fa90e0c2f4ebaa90583ba92de486729104589905415cf44e.jpg)
 
 
 13. A twisted solid A square of side length s lies in a plane perpendicular to a line L. One vertex of the square lies on L. As this square moves a distance h along L, the square turns one revolution about L to generate a corkscrew-like column with square cross-sections. 
@@ -479,17 +485,17 @@ b. What will the volume be if the square turns twice instead of once? Give reaso
 
 14. Cavalieri's principle A solid lies between planes perpendicular to the $x$ -axis at $x = 0$ and $x = 12$ . The cross-sections by planes perpendicular to the $x$ -axis are circular disks whose diameters run from the line $y = x / 2$ to the line $y = x$ as shown in the accompanying figure. Explain why the solid has the same volume as a right circular cone with base radius 3 and height 12. 
 
-![[aa57764a4e7b4d6678f6fffa84023275b2881f2d41a86e0a84c6408033f7e23f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/aa57764a4e7b4d6678f6fffa84023275b2881f2d41a86e0a84c6408033f7e23f.jpg)
 
 
 15. Intersection of two half-cylinders Two half-cylinders of diameter 2 meet at a right angle in the accompanying figure. Find the volume of the solid region common to both half-cylinders. (Hint: Consider slices parallel to the base of the solid.) 
 
-![[8fa97ca1a2e1e4c30a0aa010cc8cd14ed2f55dda6ed133fb151f5ab1bc2e01d2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8fa97ca1a2e1e4c30a0aa010cc8cd14ed2f55dda6ed133fb151f5ab1bc2e01d2.jpg)
 
 
 16. Gasoline in a tank A gasoline tank is in the shape of a right circular cylinder (lying on its side) of length 3 m and radius 1 m. Set up an integral that represents the volume of the gas in the tank if it is filled to a depth of 1.5 m. You will learn how to compute this integral in Chapter 8 (or you may use geometry to find its value). 
 
-![[08a1263c26ace6588cb5af62509ca87aa7459991fa0c0302671b9c37b3f96a90.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/08a1263c26ace6588cb5af62509ca87aa7459991fa0c0302671b9c37b3f96a90.jpg)
 
 
 Volumes by the Disk Method 
@@ -498,27 +504,29 @@ In Exercises 17–20, find the volume of the solid generated by revolving the sh
 
 17. About the $x$ -axis 
 
-![[90f6f12f33f7073c62f31a2670a19f8a415aef1ff19a4e9d332c5c7c6c3ab60e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/90f6f12f33f7073c62f31a2670a19f8a415aef1ff19a4e9d332c5c7c6c3ab60e.jpg)
 
 
 18. About the $y$ -axis 
 
 19. About the y-axis 
 
-![[6949d041c727da29a4dd16501d4408139ab5b02741a3bb0f09e74252a076ad7f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6949d041c727da29a4dd16501d4408139ab5b02741a3bb0f09e74252a076ad7f.jpg)
 
 
-![[52fb725406f8dc1eabe3e92fccf54b75e42b8afe9afe1095f50111e2693806f1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/52fb725406f8dc1eabe3e92fccf54b75e42b8afe9afe1095f50111e2693806f1.jpg)
 
 
 20. About the x-axis 
 
-![[16824b665ade7146a2d4e44208586f7570a8b31ab2df377bbffe0bed6103d045.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/16824b665ade7146a2d4e44208586f7570a8b31ab2df377bbffe0bed6103d045.jpg)
 
 
 Find the volumes of the solids generated by revolving the regions bounded by the lines and curves in Exercises 21–30 about the x-axis. 
 
-21. $y = x^{2}$ , $y = 0$ , $x = 2$ 22. $y = x^{3}$ , $y = 0$ , $x = 2$ 
+21. $y = x^{2}$ , $y = 0$ , $x = 2$
+
+22. $y = x^{3}$ , $y = 0$ , $x = 2$
 
 $$
 y = \sqrt {9 - x ^ {2}}, y = 0 \quad 2 4. y = x - x ^ {2}, y = 0
@@ -534,9 +542,7 @@ $$
 
 29. The region between the curve $y = 1 / (2\sqrt{x})$ and the $x$ -axis from $x = 1/4$ to $x = 4$ 
 
-$$
-\mathbf {3 0 .} y = e ^ {x - 1}, \quad y = 0, \quad x = 1, \quad x = 3
-$$
+30. $y = e ^ {x - 1}, \quad y = 0, \quad x = 1, \quad x = 3$
 
 In Exercises 31 and 32, find the volume of the solid generated by revolving the region about the given line. 
 
@@ -556,9 +562,7 @@ Find the volumes of the solids generated by revolving the regions bounded by the
 
 37. $x = 2/\sqrt{y + 1}$ , x = 0, y = 0, y = 3 
 
-$$
-3 8. x = \sqrt {2 y} / (y ^ {2} + 1), x = 0, y = 1
-$$
+38. $x = \sqrt {2 y} / (y ^ {2} + 1), x = 0, y = 1$
 
 Volumes by the Washer Method 
 
@@ -566,39 +570,27 @@ Find the volumes of the solids generated by revolving the shaded regions in Exer
 
 39. The $x$ -axis 
 
-![[65d46897b309a8649fb9d5a7b2fa25e9f84d630f74a9aafe62b2a7bd7ed263b5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/65d46897b309a8649fb9d5a7b2fa25e9f84d630f74a9aafe62b2a7bd7ed263b5.jpg)
 
 
 40. The y-axis 
 
-![[03000ae93191bd5b004c3f7c8f32548ba846488317636ef27db88fbc0a0e48bf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/03000ae93191bd5b004c3f7c8f32548ba846488317636ef27db88fbc0a0e48bf.jpg)
 
 
 Find the volumes of the solids generated by revolving the regions bounded by the lines and curves in Exercises 41–46 about the x-axis. 
 
-$$
-4 1. y = x, \quad y = 1, \quad x = 0
-$$
+41. $y = x, \quad y = 1, \quad x = 0$
 
-$$
-4 2. y = 2 \sqrt {x}, y = 2, x = 0
-$$
+42. $y = 2 \sqrt {x}, y = 2, x = 0$
 
-$$
-4 3. y = x ^ {2} + 1, \quad y = x + 3
-$$
+43. $y = x ^ {2} + 1, \quad y = x + 3$
 
-$$
-4 4. y = 4 - x ^ {2}, \quad y = 2 - x
-$$
+44. $y = 4 - x ^ {2}, \quad y = 2 - x$
 
-$$
-4 5. y = \sec x, \quad y = \sqrt {2}, - \pi / 4 \leq x \leq \pi / 4
-$$
+45. $y = \sec x, \quad y = \sqrt {2}, - \pi / 4 \leq x \leq \pi / 4$
 
-$$
-4 6. y = \sec x, \quad y = \tan x, \quad x = 0, \quad x = 1
-$$
+46. $y = \sec x, \quad y = \tan x, \quad x = 0, \quad x = 1$
 
 In Exercises 47–50, find the volume of the solid generated by revolving each region about the y-axis. 
 
@@ -616,7 +608,7 @@ In Exercises 51 and 52, find the volume of the solid generated by revolving each
 
 52. The region in the second quadrant bounded above by the curve $y = -x^{3}$ , below by the x-axis, and on the left by the line x = -1, about the line x = -2 
 
-## Volumes of Solids of Revolution
+#### Volumes of Solids of Revolution
 
 53. Find the volume of the solid generated by revolving the region bounded by $y = \sqrt{x}$ and the lines $y = 2$ and $x = 0$ about a. the $x$ -axis. b. the $y$ -axis. c. the line $y = 2$ . d. the line $x = 4$ . 
 
@@ -632,7 +624,7 @@ c. the line $y = -1$ .
 56. By integration, find the volume of the solid generated by revolving the triangular region with vertices $(0,0)$ , $(b,0)$ , $(0,h)$ about a. the x-axis.
 b. the y-axis. 
 
-## Theory and Applications
+#### Theory and Applications
 
 57. The volume of a torus The disk $x^{2} + y^{2} \leq a^{2}$ is revolved about the line $x = b (b > a)$ to generate a solid shaped like a doughnut and called a torus. Find its volume. (Hint: $\int_{-a}^{a} \sqrt{a^2 - y^2} dy = \pi a^2 / 2$ , since it is the area of a semicircle of radius $a$ .) 
 
@@ -642,7 +634,7 @@ a. Find the volume of the bowl.
 
 b. Related rates If we fill the bowl with water at a constant rate of 3 cubic units per second, how fast will the water level in the bowl be rising when the water is 4 units deep? 
 
-## 59. Volume of a bowl
+59. Volume of a bowl
 
 a. A hemispherical bowl of radius a contains water to a depth h. Find the volume of water in the bowl. 
 
@@ -652,17 +644,17 @@ b. Related rates Water runs into a sunken concrete hemispherical bowl of radius 
 
 61. Volume of a hemisphere Derive the formula $V = (2/3)\pi R^{3}$ for the volume of a hemisphere of radius R by comparing its cross-sections with the cross-sections of a solid right circular cylinder of radius R and height R from which a solid right circular cone of base radius R and height R has been removed, as suggested by the accompanying figure. 
 
-![[b1f7a4bfa721c3d52c1af09cc3d3c41f4c37e786ec13c8bd5b4ef8065362f8af.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b1f7a4bfa721c3d52c1af09cc3d3c41f4c37e786ec13c8bd5b4ef8065362f8af.jpg)
 
 
 62. Designing a plumb bob Having been asked to design a brass plumb bob that will weigh in the neighborhood of $190\mathrm{g}$ , you decide to shape it like the solid of revolution shown here. Find the plumb bob's volume. If you specify a brass that weighs $8.5\mathrm{g/cm}^3$ , how much will the plumb bob weigh (to the nearest gram)? 
 
-![[1fde1f404ba8c171c34d8f1083eff83118a6372224426255438afcb240ccc834.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1fde1f404ba8c171c34d8f1083eff83118a6372224426255438afcb240ccc834.jpg)
 
 
 63. Designing a wok You are designing a wok frying pan that will be shaped like a spherical bowl with handles. A bit of experimentation at home persuades you that you can get one that holds about 3 L if you make it 9 cm deep and give the sphere a radius of 16 cm. To be sure, you picture the wok as a solid of revolution, as shown here, and calculate its volume with an integral. To the nearest cubic centimeter, what volume do you really get? (1 L = 1000 cm $^{3}$ ) 
 
-![[2d53f19a8386ca5c826c87651bafc2b4b48cd6b50b47ac94c28fb0f287def653.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2d53f19a8386ca5c826c87651bafc2b4b48cd6b50b47ac94c28fb0f287def653.jpg)
 
 
 64. Max-min The arch $y = \sin x, 0 \leq x \leq \pi$ , is revolved about the line $y = c, 0 \leq c \leq 1$ , to generate the solid in the accompanying figure. 
@@ -673,12 +665,12 @@ b. What value of $c$ in [0, 1] maximizes the volume of the solid?
 
 T c. Graph the solid's volume as a function of $c$ , first for $0 \leq c \leq 1$ and then on a larger domain. What happens to the volume of the solid as $c$ moves away from [0, 1]? Does this make sense physically? Give reasons for your answers. 
 
-![[faed801bb47a711c74d4cf4dc2e7e272422cf30d7be3915d455c41ee2b85e02d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/faed801bb47a711c74d4cf4dc2e7e272422cf30d7be3915d455c41ee2b85e02d.jpg)
 
 
 65. Consider the region R bounded by the graphs of $y = f(x) > 0$ , x = a > 0, x = b > a, and y = 0 (see accompanying figure). If the volume of the solid formed by revolving R about the x-axis is $4\pi$ , and the volume of the solid formed by revolving R about the line y = -1 is $8\pi$ , find the area of R. 
 
-![[55cf453a4f87f349290bd56bc4a0a6abdd0e6cd00628619a4577a6b3bf5f30ca.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/55cf453a4f87f349290bd56bc4a0a6abdd0e6cd00628619a4577a6b3bf5f30ca.jpg)
 
 
 66. Consider the region R given in Exercise 65. If the volume of the solid formed by revolving R around the x-axis is $6\pi$ , and the volume of the solid formed by revolving R around the line y = -2 is $10\pi$ , find the area of R. 
@@ -687,7 +679,7 @@ T c. Graph the solid's volume as a function of $c$ , first for $0 \leq c \leq 1$
 
 In Section 6.1 we defined the volume of a solid to be the definite integral $V = \int_{a}^{b} A(x) \, dx$ , where $A(x)$ is an integrable cross-sectional area of the solid from x = a to x = b. The area $A(x)$ was obtained by slicing through the solid with a plane perpendicular to the x-axis. However, this method of slicing is sometimes awkward to apply, as we will illustrate in our first example. To overcome this difficulty, we use the same integral definition for volume, but obtain the area by slicing through the solid in a different way. 
 
-## Slicing with Cylinders
+### Slicing with Cylinders
 
 Suppose we slice through the solid using circular cylinders of increasing radii, like cookie cutters. We slice straight down through the solid so that the axis of each cylinder is parallel to the y-axis. The vertical axis of each cylinder is always the same line, but the radii of the cylinders increase with each slice. In this way the solid is sliced up into thin cylindrical shells of constant thickness that grow outward from their common axis, like circular tree rings. Unrolling a cylindrical shell shows that its volume is approximately that of a rectangular slab with area $A(x)$ and thickness $\Delta x$ . This slab interpretation allows us to apply the same integral definition for volume as before. The following example provides some insight. 
 
@@ -695,14 +687,14 @@ Suppose we slice through the solid using circular cylinders of increasing radii,
 
 **Solution** Using the washer method from Section 6.1 would be awkward here because we would need to express the x-values of the left and right sides of the parabola in Figure 6.16a in terms of y. This is because these x-values, which describe the inner and outer radii of a typical washer, are solutions to the equation $y = 3x - x^{2}$ , and this gives a complicated formula for x. Therefore, instead of rotating a horizontal strip of thickness $\Delta y$ , we rotate a vertical strip of thickness $\Delta x$ . This rotation produces a cylindrical shell of height $y_{k}$ above a point $x_{k}$ within the base of the vertical strip and of thickness $\Delta x$ . An example of a cylindrical shell is shown as the orange-shaded region in Figure 6.17. We can think of the cylindrical shell shown in the figure as approximating a slice of the solid obtained by cutting straight down through it, parallel to the axis of revolution, all the way around. We start by cutting close to the inside hole and then cut another cylindrical slice around the enlarged hole, then another, and so on, obtaining n cylinders. The radii of the cylinders gradually increase, and the heights of the cylinders follow the contour of the parabola: shorter to taller, then back to shorter (Figure 6.16a). The sum of the volumes of the shells is a Riemann sum that approximates the volume of the entire solid. 
 
-![[164fa84f4ac3291941f4c39aa1b5f5917b3f7c8c0498d41e2f7cfc3945b41a06.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/164fa84f4ac3291941f4c39aa1b5f5917b3f7c8c0498d41e2f7cfc3945b41a06.jpg)
 
 
 
 FIGURE 6.17 A cylindrical shell of height $y_{k}$ obtained by rotating a vertical strip of thickness $\Delta x_{k}$ about the line x = -1. The outer radius of the cylinder occurs at $x_{k}$ , where the height of the parabola is $y_{k} = 3x_{k} - x_{k}^{2}$ (Example 1).
 
 
-![[abab334331f238fb6978ee5c36ca54350723be5d5f8d4adc30cb636a3c17bca0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/abab334331f238fb6978ee5c36ca54350723be5d5f8d4adc30cb636a3c17bca0.jpg)
 
 
 
@@ -715,7 +707,7 @@ $$
 \begin{array}{r l} \Delta V _ {k} & = \text { circumference } \times \text { height } \times \text { thickness } \\ & = 2 \pi (1 + x _ {k}) \cdot (3 x _ {k} - x _ {k} ^ {2}) \cdot \Delta x _ {k}. \end{array}
 $$
 
-![[9d44e76914de507048cfe1d413865ac9d4cac79067418348b20118019bce9907.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9d44e76914de507048cfe1d413865ac9d4cac79067418348b20118019bce9907.jpg)
 
 
 
@@ -736,20 +728,20 @@ $$
 
 We now generalize this procedure to a broader class of solids. 
 
-## The Shell Method
+### The Shell Method
 
 Suppose that the region bounded by the graph of a nonnegative continuous function $y = f(x)$ and the x-axis over the finite closed interval $[a, b]$ lies to the right of the vertical line x = L (see Figure 6.19a). We assume $a \geq L$ , so the vertical line may touch the region but cannot pass through it. We generate a solid S by rotating this region about the vertical line L. 
 
 Let P be a partition of the interval $[a, b]$ by the points $a = x_{0} < x_{1} < \cdots < x_{n} = b$ . As usual, we choose a point $c_{k}$ in each subinterval $[x_{k-1}, x_{k}]$ . In Example 1 we chose $c_{k}$ to be the endpoint $x_{k}$ , but now it will be more convenient to let $c_{k}$ be the midpoint of the subinterval $[x_{k-1}, x_{k}]$ . We approximate the region in Figure 6.19a with rectangles based on this partition of $[a, b]$ . A typical approximating rectangle has height $f(c_{k})$ and width 
 
-![[a5adedc28df58731ffdcc891c5ef298c702920c3b4fc87e7e6be4c12cdae0e2b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a5adedc28df58731ffdcc891c5ef298c702920c3b4fc87e7e6be4c12cdae0e2b.jpg)
 
 
 
 FIGURE 6.19 When the region shown in (a) is revolved about the vertical line x = L, a solid is produced which can be sliced into cylindrical shells. A typical shell is shown in (b).
 
 
-![[dbf953ca1c98ad3b0c2d461ecabb71d1c316d3b6e3c6cfd9b38abe37f1549ccf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dbf953ca1c98ad3b0c2d461ecabb71d1c316d3b6e3c6cfd9b38abe37f1549ccf.jpg)
 
 
 The volume of a cylindrical shell of height h with inner radius r and outer radius R is 
@@ -778,7 +770,7 @@ $$
 
 We refer to the variable of integration, here x, as the thickness variable. To emphasize the process of the shell method, we state the general formula in terms of the shell radius and shell height. This will allow for rotations about a horizontal line y = L as well. 
 
-## Shell Formula for Revolution About a Vertical Line
+### Shell Formula for Revolution About a Vertical Line
 
 The volume of the solid generated by revolving the region between the x-axis and the graph of a continuous function $y = f(x) \geq 0$ , $L \leq a \leq x \leq b$ , about a vertical line x = L is 
 
@@ -812,17 +804,17 @@ $$
 \begin{array}{l} V = \int_ {a} ^ {b} 2 \pi \binom {\text { shell }} {\text { radius }} \binom {\text { shell }} {\text { height }} d y \\ = \int_ {0} ^ {2} 2 \pi (y) (4 - y ^ {2}) d y \\ = 2 \pi \int_ {0} ^ {2} (4 y - y ^ {3}) d y \\ = 2 \pi \left[ 2 y ^ {2} - \frac {y ^ {4}}{4} \right] _ {0} ^ {2} = 8 \pi . \end{array}
 $$
 
-![[d723dec346656c96c4d303aee42c4774942d25ee93da41a9fb765932b08aaf10.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d723dec346656c96c4d303aee42c4774942d25ee93da41a9fb765932b08aaf10.jpg)
 
 
-![[81ee7b87f03d4dab62615847d7055ee81f112827d9bacde259daa8112e8167a8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/81ee7b87f03d4dab62615847d7055ee81f112827d9bacde259daa8112e8167a8.jpg)
 
 
 
 FIGURE 6.21 (a) The region, shell dimensions, and interval of integration in Example 3. (b) The shell swept out by the horizontal segment in part (a) with a width $\Delta y$ .
 
 
-## Summary of the Shell Method
+### Summary of the Shell Method
 
 Regardless of the position of the axis of revolution (horizontal or vertical), the steps for implementing the shell method are these. 
 
@@ -834,9 +826,9 @@ Regardless of the position of the axis of revolution (horizontal or vertical), t
 
 The shell method gives the same answer as the washer method when both are used to calculate the volume of a region. We do not prove that result here, but it is illustrated in Exercises 37 and 38. (Exercise 45 outlines a proof.) Both volume formulas are actually special cases of a general volume formula we will look at when studying double and triple integrals in Chapter 14. That general formula also allows for computing volumes of solids other than those swept out by regions of revolution. 
 
-## EXERCISES 6.2
+### EXERCISES 6.2
 
-## Revolution About the Axes
+#### Revolution About the Axes
 
 In Exercises 1–6, use the shell method to find the volumes of the solids generated by revolving the shaded region about the indicated axis. 
 
@@ -844,14 +836,14 @@ In Exercises 1–6, use the shell method to find the volumes of the solids gener
 1.
 
 
-![[bcb81bcd02170025c12efe89f1d3b3e750469b00564e8fbb8609232da57e1781.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bcb81bcd02170025c12efe89f1d3b3e750469b00564e8fbb8609232da57e1781.jpg)
 
 
 
 2.
 
 
-![[9212953a06b6dbc9d53367ab5f8fad4785e11cc789543574a941d34f6cd9341f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9212953a06b6dbc9d53367ab5f8fad4785e11cc789543574a941d34f6cd9341f.jpg)
 
 
 
@@ -862,24 +854,24 @@ In Exercises 1–6, use the shell method to find the volumes of the solids gener
 4.
 
 
-![[0733e927bdb28a90c1304fef4720c9e4324a171370614d40999eeda3c9488f39.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0733e927bdb28a90c1304fef4720c9e4324a171370614d40999eeda3c9488f39.jpg)
 
 
-![[1313baedc4c7127476db68b5360e6f76dfc243b28234ff3f97977b03ba70aa50.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1313baedc4c7127476db68b5360e6f76dfc243b28234ff3f97977b03ba70aa50.jpg)
 
 
 
 5. The y-axis
 
 
-![[c23ede21e320ba6e354bbc64e7157d04be15dfd9ad6d9b9ba989e8b56f635cd5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c23ede21e320ba6e354bbc64e7157d04be15dfd9ad6d9b9ba989e8b56f635cd5.jpg)
 
 
 
 6. The y-axis
 
 
-![[a5b96df8dd0a3123a071bf719ae765b4ecc1eaf78dfc5aae287df03757d4fa6d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a5b96df8dd0a3123a071bf719ae765b4ecc1eaf78dfc5aae287df03757d4fa6d.jpg)
 
 
 
@@ -888,29 +880,17 @@ Revolution About the y-Axis
 
 Use the shell method to find the volumes of the solids generated by revolving the regions bounded by the curves and lines in Exercises 7–12 about the y-axis. 
 
-$$
-7. y = x, \quad y = - x / 2, \quad x = 2
-$$
+7. $y = x, \quad y = - x / 2, \quad x = 2$
 
-$$
-\mathbf {8 .} y = 2 x, \quad y = x / 2, \quad x = 1
-$$
+8. $y = 2 x, \quad y = x / 2, \quad x = 1$
 
-$$
-9. y = x ^ {2}, \quad y = 2 - x, \quad x = 0, \text {   for   } x \geq 0
-$$
+9. $y = x ^ {2}, \quad y = 2 - x, \quad x = 0, \text {   for   } x \geq 0$
 
-$$
-\mathbf {1 0 .} y = 2 - x ^ {2}, \quad y = x ^ {2}, \quad x = 0
-$$
+10. $y = 2 - x ^ {2}, \quad y = x ^ {2}, \quad x = 0$
 
-$$
-\mathbf {1 1 .} y = 2 x - 1, \quad y = \sqrt {x}, \quad x = 0
-$$
+11. $y = 2 x - 1, \quad y = \sqrt {x}, \quad x = 0$
 
-$$
-\mathbf {1 2 .} y = 3 / (2 \sqrt {x}), y = 0, x = 1, x = 4
-$$
+12. $y = 3 / (2 \sqrt {x}), y = 0, x = 1, x = 4$
 
 13. Let $f(x) = \left\{ \begin{array}{ll} (\sin x) / x, & 0 < x \leq \pi \\ 1, & x = 0. \end{array} \right.$ 
 
@@ -918,7 +898,7 @@ a. Show that $x f(x) = \sin x, 0 \leq x \leq \pi.$
 
 b. Find the volume of the solid generated by revolving the shaded region about the y-axis in the accompanying figure. 
 
-![[7e83649180334043c4bb213037d21ea96758ddb59d85534207d73580e23ef10c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7e83649180334043c4bb213037d21ea96758ddb59d85534207d73580e23ef10c.jpg)
 
 
 14. Let $g(x) = \left\{ \begin{array}{ll} (\tan x)^2 / x, & 0 < x \leq \pi / 4 \\ 0, & x = 0. \end{array} \right.$ 
@@ -927,14 +907,28 @@ a. Show that $x g(x) = (\tan x)^{2}, 0 \leq x \leq \pi/4.$
 
 b. Find the volume of the solid generated by revolving the shaded region about the y-axis in the accompanying figure. 
 
-![[d35e4710189da785956e9ce1b1d4586413d3f0279cc6f2842b7180486ca629df.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d35e4710189da785956e9ce1b1d4586413d3f0279cc6f2842b7180486ca629df.jpg)
 
 
 Revolution About the x-Axis 
 
 Use the shell method to find the volumes of the solids generated by revolving the regions bounded by the curves and lines in Exercises 15–22 about the x-axis. 
 
-15. $x = \sqrt{y}, x = -y, y = 2$ 16. $x = y^2, x = -y, y = 2, y \geq 0$ 17. $x = 2y - y^2, x = 0$ 18. $x = 2y - y^2, x = y$ 19. $y = |x|, y = 1$ 20. $y = x, y = 2x, y = 2$ 21. $y = \sqrt{x}, y = 0, y = x - 2$ 22. $y = \sqrt{x}, y = 0, y = 2 - x$ 
+15. $x = \sqrt{y}, x = -y, y = 2$
+
+16. $x = y^2, x = -y, y = 2, y \geq 0$
+
+17. $x = 2y - y^2, x = 0$
+
+18. $x = 2y - y^2, x = y$
+
+19. $y = |x|, y = 1$
+
+20. $y = x, y = 2x, y = 2$
+
+21. $y = \sqrt{x}, y = 0, y = x - 2$
+
+22. $y = \sqrt{x}, y = 0, y = 2 - x$
 
 Revolution About Horizontal and Vertical Lines 
 
@@ -952,12 +946,12 @@ In Exercises 27 and 28, use the shell method to find the volumes of the solids g
 
 27. a. The $x$ -axis b. The line $y = 1$ c. The line $y = 8 / 5$ d. The line $y = -2 / 5$ 
 
-![[a43e9eaed230f72c296919289527645537dbb6459342dec0aa68d537c35669d1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a43e9eaed230f72c296919289527645537dbb6459342dec0aa68d537c35669d1.jpg)
 
 
 28. a. The $x$ -axis b. The line $y = 2$ c. The line $y = 5$ d. The line $y = -5 / 8$ 
 
-![[d7f6fff42a76702447367acb7d82e64fa9e7884ab73f504ed67a3d36c679bcf8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d7f6fff42a76702447367acb7d82e64fa9e7884ab73f504ed67a3d36c679bcf8.jpg)
 
 
 Choosing the Washer Method or the Shell Method 
@@ -1004,16 +998,16 @@ a. the washer method. b. the shell method.
 a. the washer method.
 b. the shell method. 
 
-## Theory and Examples
+#### Theory and Examples
 
 39. The region shown here is to be revolved about the x-axis to generate a solid. Which of the methods (disk, washer, shell) could you use to find the volume of the solid? How many integrals would be required in each case? Explain. 
 
-![[7b5a24ddee3a553fae8c2dab3ae8240c361dc9fda20d5372f124b26d74adc6c1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7b5a24ddee3a553fae8c2dab3ae8240c361dc9fda20d5372f124b26d74adc6c1.jpg)
 
 
 40. The region shown here is to be revolved about the y-axis to generate a solid. Which of the methods (disk, washer, shell) could you use to find the volume of the solid? How many integrals would be required in each case? Give reasons for your answers. 
 
-![[892da04ceb3824f24f8f906cfa18e938b2b74ae8552271bf9c75b2fec1bfac20.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/892da04ceb3824f24f8f906cfa18e938b2b74ae8552271bf9c75b2fec1bfac20.jpg)
 
 
 41. A bead is formed from a sphere of radius 5 by drilling through a diameter of the sphere with a drill bit of radius 3. 
@@ -1044,7 +1038,7 @@ Then show that the functions W and S agree at a point of $[a, b]$ and have ident
 
 46. The region between the curve $y = \sec^{-1} x$ and the x-axis from x = 1 to x = 2 (shown here) is revolved about the y-axis to generate a solid. Find the volume of the solid. 
 
-![[d8baf6eda07f557303383ce7df3e28a5b519c96b0db072a53da3ebcf9895878d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d8baf6eda07f557303383ce7df3e28a5b519c96b0db072a53da3ebcf9895878d.jpg)
 
 
 47. Find the volume of the solid generated by revolving the region enclosed by the graphs of $y = e^{-x^2}, y = 0, x = 0$ , and $x = 1$ about the $y$ -axis. 
@@ -1053,7 +1047,7 @@ Then show that the functions W and S agree at a point of $[a, b]$ and have ident
 
 49. Consider the region R bounded by the graphs of $y = f(x) > 0$ , x = a > 0, and x = b > a. If the volume of the solid formed by revolving R about the y-axis is $2\pi$ , and the volume formed by revolving R about the line x = -2 is $10\pi$ , find the area of R. 
 
-![[c110536b7e2828e9b48eaaf67220e009cdf73839218e7f2fe18d88741bde5a70.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c110536b7e2828e9b48eaaf67220e009cdf73839218e7f2fe18d88741bde5a70.jpg)
 
 
 
@@ -1064,7 +1058,7 @@ Then show that the functions W and S agree at a point of $[a, b]$ and have ident
 
 We know what is meant by the length of a straight-line segment, but without calculus, we have no precise definition of the length of a general winding curve. If the curve is the graph of a continuous function defined over an interval, then we can find the length of the curve using a procedure similar to that we used for defining the area between the curve and the x-axis. We divide the curve into many pieces, and we approximate each piece by a straight-line segment. The sum of the lengths of these segments is an approximation to the total curve length that we seek. The total length of the curve is the limiting value of these approximations as the number of segments goes to infinity. 
 
-## Length of a Curve $y = f(x)$
+### Length of a Curve $y = f(x)$
 
 Suppose the curve whose length we want to find is the graph of the function $y = f(x)$ from x = a to x = b. In order to derive an integral formula for the length of the curve, we assume that f has a continuous derivative at every point of $[a, b]$ . Such a function is called smooth, and its graph is a smooth curve because it does not have any breaks, corners, or cusps. 
 
@@ -1096,7 +1090,7 @@ $$
 FIGURE 6.22 The length of the polygonal path $P_{0}P_{1}P_{2}\cdots P_{n}$ approximates the length of the curve $y = f(x)$ from point A to point B.
 
 
-![[80b3b3ecbfc0e7d5eac644e97fd2012570f7a58ada8a245b922ad01fe1b051a5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/80b3b3ecbfc0e7d5eac644e97fd2012570f7a58ada8a245b922ad01fe1b051a5.jpg)
 
 
 
@@ -1107,7 +1101,7 @@ FIGURE 6.23 The arc $P_{k-1}P_{k}$ of the curve $y = f(x)$ is approximated by th
 FIGURE 6.24 The length of the curve is slightly larger than the length of the line segment joining points A and B (Example 1).
 
 
-![[806789269e4004bd06d59b7d8eac5808e4b6f643288f1e2f1fa4b9745e1b8a10.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/806789269e4004bd06d59b7d8eac5808e4b6f643288f1e2f1fa4b9745e1b8a10.jpg)
 
 
 
@@ -1126,7 +1120,7 @@ $$
 
 We define the length of the curve to be this integral. 
 
-![[31f73621b110c5a9b7c0395ec76a55e880ffa7b212ae2b16c67cf683b686888d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/31f73621b110c5a9b7c0395ec76a55e880ffa7b212ae2b16c67cf683b686888d.jpg)
 
 
 > ***DEFINITION*** If $f'$ is continuous on $[a, b]$ , then the length (arc length) of the curve $y = f(x)$ from the point $A = (a, f(a))$ to the point $B = (b, f(b))$ is the value of the integral 
@@ -1153,7 +1147,7 @@ $$
 \begin{array}{l l} L = \int_ {0} ^ {1} \sqrt {1 + \left(\frac {d y}{d x}\right) ^ {2}} d x = \int_ {0} ^ {1} \sqrt {1 + 8 x} d x & \text { Eq. (3) with } a = 0, b = 1 \\ = \frac {2}{3} \cdot \frac {1}{8} (1 + 8 x) ^ {3 / 2} \bigg | _ {0} ^ {1} = \frac {1 3}{6} \approx 2. 1 7. & \text { Let } u = 1 + 8 x, \text { integrate }, \\ & \text { and replace } u \text { by } 1 + 8 x. \end{array}
 $$
 
-![[891a5090661582a30417cc8a9d1f2652ac1809bc0cbbb6ef8a20a8c246931cb2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/891a5090661582a30417cc8a9d1f2652ac1809bc0cbbb6ef8a20a8c246931cb2.jpg)
 
 
 
@@ -1238,7 +1232,7 @@ $$
 
 Even if the derivative $dy / dx$ does not exist at some point on a curve, it is possible that $dx / dy$ could exist. This can happen, for example, when a curve has a vertical tangent. In this case, we may be able to find the curve's length by expressing $x$ as a function of $y$ and applying the following analogue of Equation (3). 
 
-## Dealing with Discontinuities in dy/dx
+### Dealing with Discontinuities in dy/dx
 
 
 FIGURE 6.26 The graph of $y = (x / 2)^{2 / 3}$ from $x = 0$ to $x = 2$ is also the graph of $x = 2y^{3 / 2}$ from $y = 0$ to $y = 1$ (Example 4).
@@ -1248,12 +1242,12 @@ $$
 \begin{array}{l} \text {Formula for the Length of x = g(y), c\leq y\leq d} \\ \text {If g^{\prime} is continuous on [c,d], the length of the curve x = g(y) from A = (g(c),c)} \\ \text {to B = (g(d),d) is} \\ L = \int_ {c} ^ {d} \sqrt {1 + \left(\frac {d x}{d y}\right) ^ {2}} d y = \int_ {c} ^ {d} \sqrt {1 + \left[ g ^ {\prime} (y) \right] ^ {2}} d y. \end{array} \tag {4}
 $$
 
-![[780b42987f61188913f91e65cd430523720caf58e3ac66e31b12e3892f268ce8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/780b42987f61188913f91e65cd430523720caf58e3ac66e31b12e3892f268ce8.jpg)
 
 
-## **EXAMPLE 4** Find the length of the curve $y = (x/2)^{2/3}$ from x = 0 to x = 2.
+**EXAMPLE 4** Find the length of the curve $y = (x/2)^{2/3}$ from x = 0 to x = 2.
 
-## **Solution** The derivative
+**Solution** The derivative
 
 $$
 \frac {d y}{d x} = \frac {2}{3} \left(\frac {x}{2}\right) ^ {- 1 / 3} \left(\frac {1}{2}\right) = \frac {1}{3} \left(\frac {2}{x}\right) ^ {1 / 3}
@@ -1281,7 +1275,7 @@ $$
 \begin{array}{l l} L = \int_ {c} ^ {d} \sqrt {1 + \left(\frac {d x}{d y}\right) ^ {2}} d y = \int_ {0} ^ {1} \sqrt {1 + 9 y} d y & \text { Eq. (4) with } c = 0, d = 1 \\ = \frac {1}{9} \cdot \frac {2}{3} (1 + 9 y) ^ {3 / 2} \Big | _ {0} ^ {1} & \text { Let } u = 1 + 9 y, d u / 9 = d y, \\ & \text { integrate,and substitute back. } \\ = \frac {2}{2 7} (1 0 \sqrt {1 0} - 1) \approx 2. 2 7. \end{array}
 $$
 
-## The Differential Formula for Arc Length
+### The Differential Formula for Arc Length
 
 If $y = f(x)$ and if $f'$ is continuous on $[a, b]$ , then by the Fundamental Theorem of Calculus, we can define a new function 
 
@@ -1289,10 +1283,10 @@ $$
 s (x) = \int_ {a} ^ {x} \sqrt {1 + \left[ f ^ {\prime} (t) \right] ^ {2}} d t.\tag{5}
 $$
 
-![[04f659cc57bcee975b7378f77569c74178d636f9d0a62e63e22fc199e7d637c6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/04f659cc57bcee975b7378f77569c74178d636f9d0a62e63e22fc199e7d637c6.jpg)
 
 
-![[abb64a2ea618d3afa509b609396b61b26efe943c12834b86990daf80e7879ef8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/abb64a2ea618d3afa509b609396b61b26efe943c12834b86990daf80e7879ef8.jpg)
 
 
 
@@ -1341,33 +1335,14 @@ $$
 
 This is the same result we obtained in Example 2. 
 
-## EXERCISES
+### Exercises 6.3
 
-## 6.3
 
-## Finding Lengths of Curves
+#### Finding Lengths of Curves
 
 Find the lengths of the curves in Exercises 1–16. If you have graphing software, you may want to graph these curves to see what they look like. 
 
-$$
-5. x = \left(y ^ {4} / 4\right) + 1 / (8 y ^ {2}) \text {   from   } y = 1 \text {   to   } y = 2
-$$
-
-$$
-y = (1 / 3) \left(x ^ {2} + 2\right) ^ {3 / 2} \text {   from   } x = 0 \text {   to   } x = 3
-$$
-
-$$
-4. x = \left(y ^ {3 / 2} / 3\right) - y ^ {1 / 2} \text {   from   } y = 1 \text {   to   } y = 9
-$$
-
-$$
-6. x = (y ^ {3} / 6) + 1 / (2 y) \text {   from   } y = 2 \text {   to   } y = 3
-$$
-
-$$
-2. y = x ^ {3 / 2} \text {   from   } x = 0 \text {   to   } x = 4
-$$
+2. $y = x ^ {3 / 2} \text {   from   } x = 0 \text {   to   } x = 4$
 
 $$
 x = (y ^ {3} / 3) + 1 / (4 y) \text {   from   } y = 1 \text {   to   } y = 3
@@ -1380,6 +1355,16 @@ $$
 $$
 y = (x ^ {3} / 3) + x ^ {2} + x + 1 / (4 x + 4), \quad 0 \leq x \leq 2
 $$
+
+4. $x = \left(y ^ {3 / 2} / 3\right) - y ^ {1 / 2} \text {   from   } y = 1 \text {   to   } y = 9$
+
+5. $x = \left(y ^ {4} / 4\right) + 1 / (8 y ^ {2}) \text {   from   } y = 1 \text {   to   } y = 2$
+
+$$
+y = (1 / 3) \left(x ^ {2} + 2\right) ^ {3 / 2} \text {   from   } x = 0 \text {   to   } x = 3
+$$
+
+6. $x = (y ^ {3} / 6) + 1 / (2 y) \text {   from   } y = 2 \text {   to   } y = 3$
 
 9. $y = \ln x - \frac{x^{2}}{8}$ from x = 1 to x = 2 
 
@@ -1397,7 +1382,7 @@ $$
 
 16. $y = \int_{-2}^{x}\sqrt{3t^4 - 1} dt, -2 \leq x \leq -1$ 
 
-## T Finding Integrals for Lengths of Curves
+#### T Finding Integrals for Lengths of Curves
 
 In Exercises 17–24, do the following. 
 
@@ -1423,7 +1408,7 @@ c. Use your grapher's or computer's integral evaluator to find the curve's lengt
 
 24. $x = \int_0^y\sqrt{\sec^2t - 1} dt, - \pi /3\leq y\leq \pi /4$ 
 
-## Theory and Examples
+#### Theory and Examples
 
 25. a. Find a curve with a positive derivative through the point $(1,1)$ whose length integral (Equation 3) is 
 
@@ -1451,7 +1436,7 @@ from x = 0 to $x = \pi/4$ .
 
 28. The length of an astroid The graph of the equation $x^{2/3} + y^{2/3} = 1$ is one of a family of curves called astroids (not “asteroids”) because of their starlike appearance (see the accompanying figure). Find the length of this particular astroid by finding the length of half the first-quadrant portion, $y = (1 - x^{2/3})^{3/2}$ , $\sqrt{2}/4 \leq x \leq 1$ , and multiplying by 8. 
 
-![[f095d97f4974e6d269d26be5cca542caa4c54e063656810f67b8d9cbc98ad485.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f095d97f4974e6d269d26be5cca542caa4c54e063656810f67b8d9cbc98ad485.jpg)
 
 
 29. Length of a line segment Use the arc length formula (Equation 3) to find the length of the line segment $y = 3 - 2x$ , $0 \leq x \leq 2$ . Check your answer by finding the length of the segment as the hypotenuse of a right triangle. 
@@ -1462,11 +1447,7 @@ from x = 0 to $x = \pi/4$ .
 
 $$
 d s ^ {2} = \frac {(y + 1) ^ {2}}{4 y} d y ^ {2}.
-$$
-
-32. If $4x^{2} - y^{2} = 64$ , show that 
-
-$$
+32. $If $4x^{2} - y^{2} = 64$ , show that$
 d s ^ {2} = \frac {4}{y ^ {2}} (5 x ^ {2} - 1 6) d x ^ {2}.
 $$
 
@@ -1486,12 +1467,12 @@ $\lim_{n\to\infty}\sum_{k=1}^{n}(\text{length of kth tangent fin})=\int_{a}^{b}\
 
 which is the length L of the curve $y = f(x)$ from a to b. 
 
-![[721ca098ba1153b737f1a5280279d9ed9427e8a154e3af71f81e001be9012fca.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/721ca098ba1153b737f1a5280279d9ed9427e8a154e3af71f81e001be9012fca.jpg)
 
 
 35. Approximate the arc length of one-quarter of the unit circle (which is $\pi/2$ ) by computing the length of the polygonal approximation with n = 4 segments (see accompanying figure). 
 
-![[bc2893647fc256b1f71f2104d4b755c69a4ef4aaf805680edd14b10bc1bb00d7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bc2893647fc256b1f71f2104d4b755c69a4ef4aaf805680edd14b10bc1bb00d7.jpg)
 
 
 36. Distance between two points Assume that the two points $(x_{1}, y_{1})$ and $(x_{2}, y_{2})$ lie on the graph of the straight line $y = mx + b$ . Use the arc length formula (Equation 3) to find the distance between the two points. 
@@ -1500,7 +1481,7 @@ which is the length L of the curve $y = f(x)$ from a to b.
 
 38. Find the arc length function for the curve in Exercise 8, using $(0,1/4)$ as the starting point. What is the length of the curve from $(0,1/4)$ to $(1,59/24)$ ? 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 39–44, use a CAS to perform the following steps for the given graph of the function over the closed interval. 
 
@@ -1526,12 +1507,12 @@ c. Evaluate the length of the curve using an integral. Compare your approximatio
 
 When you jump rope, the rope sweeps out a surface in the space around you similar to what is called a surface of revolution. The surface surrounds a volume of revolution, and many applications require that we know the area of the surface rather than the volume it encloses. In this section we define areas of surfaces of revolution. More general surfaces are treated in Chapter 15. 
 
-![[0839ed6e1207212315ae90e4ed9120e642b0d9ca3fd54277d3cbd270e18fc704.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0839ed6e1207212315ae90e4ed9120e642b0d9ca3fd54277d3cbd270e18fc704.jpg)
 
 
-## Defining Surface Area
+### Defining Surface Area
 
-![[e4f6199c46744496c833bb00cbef3532744b12295dadf9571c1f40197cd1fac8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e4f6199c46744496c833bb00cbef3532744b12295dadf9571c1f40197cd1fac8.jpg)
 
 
 
@@ -1544,21 +1525,21 @@ Before considering general curves, we begin by rotating horizontal and slanted l
 
 Suppose the line segment AB has length L and is slanted rather than horizontal. Now when AB is rotated about the x-axis, it generates a frustum of a cone (Figure 6.29a). From classical geometry, the surface area of this frustum is $2\pi y^{*}L$ , where $y^{*} = (y_{1} + y_{2})/2$ is the average height of the slanted segment AB above the x-axis. This surface area is the same as that of a rectangle with side lengths L and $2\pi y^{*}$ (Figure 6.29b). 
 
-![[1dc8105c569c2c2df4546e0f4f92d1d26158c1ded773a0d974b132fc53d20fa9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1dc8105c569c2c2df4546e0f4f92d1d26158c1ded773a0d974b132fc53d20fa9.jpg)
 
 
 
 FIGURE 6.29 (a) The frustum of a cone generated by rotating the slanted line segment AB of length L about the x-axis has area $2\pi y^{*}L$ . (b) The area of the rectangle for $y^{*} = \frac{y_{1} + y_{2}}{2}$ , the average height of AB above the x-axis.
 
 
-![[385c7d4f240180494161984ed3dd7de66ed16034cc07a477593195184bd3d9d8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/385c7d4f240180494161984ed3dd7de66ed16034cc07a477593195184bd3d9d8.jpg)
 
 
 
 FIGURE 6.30 The surface generated by revolving the graph of a nonnegative function $y = f(x)$ , $a \leq x \leq b$ , about the x-axis. The surface is a union of bands like the one swept out by the arc PQ.
 
 
-![[8d907f92a0b49e8f76e9ac9b3370129a5bfa82272392bd4f96f5c8a12a23ba7a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8d907f92a0b49e8f76e9ac9b3370129a5bfa82272392bd4f96f5c8a12a23ba7a.jpg)
 
 
 
@@ -1569,7 +1550,7 @@ FIGURE 6.31 The line segment joining P and Q sweeps out a frustum of a cone.
 FIGURE 6.32 Dimensions associated with the arc and line segment PQ.
 
 
-![[a1008396d7ab7cd760c8923074cc77d7d46cd4cd80105e3fcdf68b3e59b12c9c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a1008396d7ab7cd760c8923074cc77d7d46cd4cd80105e3fcdf68b3e59b12c9c.jpg)
 
 
 Let's build on these geometric principles to define the area of a surface swept out by revolving more general curves about the $x$ -axis. Suppose we want to find the area of the surface swept out by revolving the graph of a nonnegative continuous function $y = f(x)$ , $a \leq x \leq b$ , about the $x$ -axis. We partition the closed interval $[a, b]$ in the usual way and use the points in the partition to subdivide the graph into short arcs. Figure 6.30 shows a typical arc $PQ$ and the band it sweeps out as part of the graph of $f$ . 
@@ -1592,14 +1573,14 @@ $$
 \begin{array}{c} f ^ {\prime} (c _ {k}) = \frac {\Delta y _ {k}}{\Delta x _ {k}}, \\ \Delta y _ {k} = f ^ {\prime} (c _ {k}) \Delta x _ {k}. \end{array}
 $$
 
-![[a7d96a666ba3f5a5dcacb462af41bfa1626eb84247ddf1ba5918f7af47fd66c6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a7d96a666ba3f5a5dcacb462af41bfa1626eb84247ddf1ba5918f7af47fd66c6.jpg)
 
 
 
 FIGURE 6.33 If f is smooth, the Mean Value Theorem guarantees the existence of a point $c_{k}$ where the tangent is parallel to segment PQ.
 
 
-![[d10596daf70341a80e49438dcb8f0f67b65bc48d31b5f2a0c377afc13569d26d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d10596daf70341a80e49438dcb8f0f67b65bc48d31b5f2a0c377afc13569d26d.jpg)
 
 
 
@@ -1654,11 +1635,11 @@ $$
 \begin{array}{l} S = \int_ {1} ^ {2} 2 \pi \cdot 2 \sqrt {x} \frac {\sqrt {x + 1}}{\sqrt {x}} d x = 4 \pi \int_ {1} ^ {2} \sqrt {x + 1} d x \\ = 4 \pi \cdot \frac {2}{3} (x + 1) ^ {3 / 2} \bigg | _ {1} ^ {2} = \frac {8 \pi}{3} \big (3 \sqrt {3} - 2 \sqrt {2} \big). \end{array}
 $$
 
-## Revolution About the y-Axis
+### Revolution About the y-Axis
 
 For revolution about the y-axis, we interchange x and y in Equation (3). 
 
-![[b965022ef52362e6b429620634afee5154c9c46de7a9f81f9042b5f84a6031b4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b965022ef52362e6b429620634afee5154c9c46de7a9f81f9042b5f84a6031b4.jpg)
 
 
 
@@ -1697,9 +1678,9 @@ $$
 \begin{array}{l} S = \int_ {c} ^ {d} 2 \pi x \sqrt {1 + \left(\frac {d x}{d y}\right) ^ {2}} d y = \int_ {0} ^ {1} 2 \pi (1 - y) \sqrt {2} d y \\ = 2 \pi \sqrt {2} \left[ y - \frac {y ^ {2}}{2} \right] _ {0} ^ {1} = 2 \pi \sqrt {2} \left(1 - \frac {1}{2}\right) = \pi \sqrt {2}. \end{array}
 $$
 
-## EXERCISES 6.4
+### EXERCISES 6.4
 
-## Finding Integrals for Surface Area
+#### Finding Integrals for Surface Area
 
 In Exercises 1–8: 
 
@@ -1755,17 +1736,17 @@ Find the areas of the surfaces generated by revolving the curves in Exercises 13
 
 19. $x = 2\sqrt{4 - y}$ , $0 \leq y \leq 15/4$ ; y-axis 
 
-![[3c8bd0d3799b718e8479cccf7571ba20109e1ea59c000220e65a411c07f78173.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3c8bd0d3799b718e8479cccf7571ba20109e1ea59c000220e65a411c07f78173.jpg)
 
 
 20. $x = \sqrt{2y - 1}$ , 5/8 ≤ y ≤ 1; y-axis 
 
-![[f7411fa3e7963350344933a97d1982505516e48ce88609f12dc92cf5ccf3622d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f7411fa3e7963350344933a97d1982505516e48ce88609f12dc92cf5ccf3622d.jpg)
 
 
 21. $x = (e^{y} + e^{-y})/2,\quad 0 \leq y \leq \ln 2;\quad y$ -axis 
 
-![[9b3b776ba8229d59303a5fdd406840cf3f1c28c4b943d160fc52356621a20f8b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9b3b776ba8229d59303a5fdd406840cf3f1c28c4b943d160fc52356621a20f8b.jpg)
 
 
 22. $y = (1/3)(x^{2} + 2)^{3/2}, \quad 0 \leq x \leq \sqrt{2}; \quad y$ -axis (Hint: Express $ds = \sqrt{dx^{2} + dy^{2}}$ in terms of dx, and evaluate the integral $S = \int 2\pi x ds$ with appropriate limits.) 
@@ -1780,7 +1761,7 @@ Find the areas of the surfaces generated by revolving the curves in Exercises 13
 
 27. Enameling woks Your company decided to put out a deluxe version of a wok you designed. The plan is to coat it inside with white enamel and outside with blue enamel. Each enamel will be sprayed on 0.5 mm thick before baking. (See accompanying figure.) Your manufacturing department wants to know how much enamel to have on hand for a production run of 5000 woks. What do you tell them? (Neglect waste and unused material and give your answer in liters. Remember that $1 \, cm^{3} = 1 \, mL$ , so $1 \, L = 1000 \, cm^{3}$ .) 
 
-![[e179bd4611fe8003ac128937496f06bd5308fb81d887435c47a8151cd96577f4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e179bd4611fe8003ac128937496f06bd5308fb81d887435c47a8151cd96577f4.jpg)
 
 
 28. Here is a schematic drawing of the 30-m dome used by the U.S. National Weather Service to house radar in Bozeman, Montana. 
@@ -1789,17 +1770,17 @@ a. How much outside surface is there to paint (not counting the bottom)?
 
 T b. Express the answer to the nearest square meter. 
 
-![[6d63af40d9d51607d9b0dfc23a35ac8dc1900104e3c7e300905626b5bc15168a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6d63af40d9d51607d9b0dfc23a35ac8dc1900104e3c7e300905626b5bc15168a.jpg)
 
 
 29. The shaded band shown here is cut from a sphere of radius $R$ by parallel planes $h$ units apart. Show that the surface area of the band is $2\pi Rh$ . 
 
-![[0be4944b22e0e7d01acb4c1370c7292fc404d30ab2e4fa0fe1ee39c7d8333112.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0be4944b22e0e7d01acb4c1370c7292fc404d30ab2e4fa0fe1ee39c7d8333112.jpg)
 
 
 30. Slicing bread Did you know that if you cut a spherical loaf of bread into slices of equal width, each slice will have the same amount of crust? To see why, suppose the semicircle $y = \sqrt{r^{2} - x^{2}}$ shown here is revolved about the x-axis to generate a sphere. Let AB be an arc of the semicircle that lies above an interval of length h on the x-axis. Show that the area swept out by AB does not depend on the location of the interval. (It does depend on the length of the interval.) 
 
-![[4f1fde3e8a2eeeb900449d63b5973aab322d4a4f47520bab341a62d3b48c6b6f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4f1fde3e8a2eeeb900449d63b5973aab322d4a4f47520bab341a62d3b48c6b6f.jpg)
 
 
 31. An alternative derivation of the surface area formula Assume $f$ is smooth on $[a, b]$ and partition $[a, b]$ in the usual way. In the $k$ th subinterval $[x_{k-1}, x_k]$ , construct the tangent line to the curve at the midpoint $m_k = (x_{k-1} + x_k)/2$ , as in the accompanying figure. 
@@ -1810,7 +1791,7 @@ $$
 
 b. Show that the length $L_{k}$ of the tangent line segment in the $k$ th subinterval is $L_{k} = \sqrt{(\Delta x_{k})^{2} + (f'(m_{k})\Delta x_{k})^{2}}$ . 
 
-![[5db467d9aa5b6296b2c7cf49126920dba0d257d7f5447310cc0c1d638ef1715b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5db467d9aa5b6296b2c7cf49126920dba0d257d7f5447310cc0c1d638ef1715b.jpg)
 
 
 c. Show that the lateral surface area of the frustum of the cone swept out by the tangent line segment as it revolves about the $x$ -axis is $2\pi f(m_k)\sqrt{1 + (f'(m_k))^2}\Delta x_k$ . 
@@ -1823,14 +1804,14 @@ $\lim_{n\to\infty}\sum_{k=1}^{n}\left(\begin{array}{c}\text{lateral surface area
 
 (Hint: Revolve the first-quadrant portion $y = (1 - x^{2/3})^{3/2}$ , $0 \leq x \leq 1$ , about the x-axis and double your result.) 
 
-![[0af118ef108323883b67400266374c6732e9a33f03de30231571b23fa705d299.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0af118ef108323883b67400266374c6732e9a33f03de30231571b23fa705d299.jpg)
 
 
 ## 6.5 Work and Fluid Forces
 
 In everyday life, work means an activity that requires muscular or mental effort. In science, the term refers specifically to a force acting on an object and the object's subsequent displacement. This section shows how to calculate work. The applications run from compressing railroad car springs and emptying subterranean tanks to forcing subatomic particles to collide and lifting satellites into orbit. 
 
-## Work Done by a Constant Force
+### Work Done by a Constant Force
 
 When an object moves a distance d along a straight line as a result of being acted on by a force of constant magnitude F in the direction of motion, we define the work W done by the force on the object with the formula 
 
@@ -1840,7 +1821,7 @@ $$
 
 From Equation (1) we see that the unit of work in any system is the unit of force multiplied by the unit of distance. In SI units (SI stands for Système International, or International System), the unit of force is a newton (N), the unit of distance is a meter (m), and the unit of work is a newton-meter (N·m). This combination appears so often, it has 
 
-## Joules
+### Joules
 
 The joule, abbreviated J, is named after the English physicist James Prescott Joule (1818–1889). The defining equation is 
 
@@ -1854,7 +1835,7 @@ a special name, the joule (J). Taking gravitational acceleration at sea level to
 
 **EXAMPLE 1** Suppose you jack up the side of a 1000-kg car 35 cm to change a tire. The jack applies a constant vertical force of about 5000 N in lifting the side of the car (but because of the mechanical advantage of the jack, the force you apply to the jack itself is only about 150 N). The total work performed by the jack on the car is $5000 \times 0.35 = 1750$ J. 
 
-## Work Done by a Variable Force Along a Line
+### Work Done by a Variable Force Along a Line
 
 If the force you apply varies along the way, as it will if you are stretching or compressing a spring, the formula W = Fd has to be replaced by an integral formula that takes the variation in F into account. 
 
@@ -1882,7 +1863,7 @@ $$
 W = \int_ {1} ^ {1 0} \frac {1}{x ^ {2}} d x = - \left. \frac {1}{x} \right] _ {1} ^ {1 0} = - \frac {1}{1 0} + 1 = 0. 9 \mathrm{J}.
 $$
 
-## Hooke's Law for Springs: $F = kx$
+### Hooke's Law for Springs: $F = kx$
 
 One calculation for work arises in finding the work required to stretch or compress a spring. Hooke's Law says that the force required to hold a stretched or compressed spring $x$ units from its natural (unstressed) length is proportional to $x$ . In symbols, 
 
@@ -1890,24 +1871,24 @@ $$
 F = k x.\tag{3}
 $$
 
-![[2c865506efb108b3822a922838f226bbec12b0535dfe66acb2b708b3fa2d4f39.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2c865506efb108b3822a922838f226bbec12b0535dfe66acb2b708b3fa2d4f39.jpg)
 
 
-![[727202c20790d418fe6205b69ab17e41ac81f13019e627ecf8e26d51e89a16d0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/727202c20790d418fe6205b69ab17e41ac81f13019e627ecf8e26d51e89a16d0.jpg)
 
 
 
 FIGURE 6.36 The force F needed to hold a spring under compression increases linearly as the spring is compressed (Example 2).
 
 
-![[5b18bc884e064c9aa3cd809a4bfe688e767193d54ccc56d6a36a5561ac29e257.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5b18bc884e064c9aa3cd809a4bfe688e767193d54ccc56d6a36a5561ac29e257.jpg)
 
 
 
 FIGURE 6.37 A 24-N weight stretches this spring 0.8 m beyond its unstressed length (Example 3).
 
 
-![[a27a0b92726a4b92e16311a8162be1d5a52d1b204bcf4ebc084a3f1c3e6bc28b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a27a0b92726a4b92e16311a8162be1d5a52d1b204bcf4ebc084a3f1c3e6bc28b.jpg)
 
 
 
@@ -1937,7 +1918,7 @@ $$
 (b) How much work will it take to stretch the spring from its natural length to a length of $3\mathrm{m}$ ?  
 (c) How far will a 45-N force stretch the spring? 
 
-## **Solution**
+**Solution**
 
 (a) The force constant. We find the force constant from Equation (3). A force of 24 N maintains the spring at a position where it is stretched 0.8 m from its natural length, so 
 
@@ -1965,7 +1946,7 @@ $$
 
 A 45-N force will keep the spring stretched 1.5 m beyond its natural length. 
 
-## Lifting Objects and Pumping Liquids from Containers
+### Lifting Objects and Pumping Liquids from Containers
 
 The work integral is useful for calculating the work done in lifting objects whose weights vary with their elevation. 
 
@@ -1995,7 +1976,7 @@ $$
 
 How much work does it take to pump all or part of the liquid from a container? Engineers often need to know the answer in order to design or choose the right pump, or to compute the cost to transport water or some other liquid from one place to another. To find out how much work is required to pump the liquid, we imagine lifting the liquid out one thin horizontal slab at a time and applying the equation W = Fd to each slab. We then evaluate the integral that this leads to as the slabs become thinner and more numerous. 
 
-![[9c457698617c32117a0d1e8b72860fdeb0b7e54605e90f49a065b85d6dae97ff.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9c457698617c32117a0d1e8b72860fdeb0b7e54605e90f49a065b85d6dae97ff.jpg)
 
 
 **EXAMPLE 5** The conical tank in Figure 6.39 is filled to within 2 m of the top with olive oil weighing 0.9 g/cm $^{3}$ or 8820 N/m $^{3}$ . How much work does it take to pump the oil to the rim of the tank? 
@@ -2032,14 +2013,14 @@ $$
 \begin{array}{r l}W = \lim _ {n \rightarrow \infty} \sum_ {k = 1} ^ {n} \frac {8 8 2 0 \pi}{4} (1 0 - y _ {k}) y _ {k} ^ {2} \Delta y _ {k}&= \int_ {0} ^ {8} \frac {8 8 2 0 \pi}{4} (1 0 - y) y ^ {2} d y\\&= \frac {8 8 2 0 \pi}{4} \int_ {0} ^ {8} (1 0 y ^ {2} - y ^ {3}) d y\\&= \frac {8 8 2 0 \pi}{4} \left[ \frac {1 0 y ^ {3}}{3} - \frac {y ^ {4}}{4} \right] _ {0} ^ {8} \approx 4, 7 2 8, 9 7 7 \mathrm{J}.\end{array}
 $$
 
-![[25cf426c942dd026f76118b0a203c5e7b8c4a41529cf9d68f9c4bfe857c31c98.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/25cf426c942dd026f76118b0a203c5e7b8c4a41529cf9d68f9c4bfe857c31c98.jpg)
 
 
 
 FIGURE 6.40 To withstand the increasing pressure, dams are built thicker as they go down.
 
 
-## Weight-density
+### Weight-density
 
 
 A fluid's weight-density $w$ is its weight per unit volume. Typical values $(\mathrm{N} / \mathrm{m}^3)$ are listed below.
@@ -2047,7 +2028,7 @@ A fluid's weight-density $w$ is its weight per unit volume. Typical values $(\ma
 
 <table><tr><td>Gasoline</td><td>6600</td></tr><tr><td>Mercury</td><td>133,000</td></tr><tr><td>Milk</td><td>10,100</td></tr><tr><td>Molasses</td><td>15,700</td></tr><tr><td>Olive oil</td><td>8820</td></tr><tr><td>Seawater</td><td>10,050</td></tr><tr><td>Freshwater</td><td>9800</td></tr></table>
 
-![[cea50f72429de15518d50804d929585719da91cf68a99d5185dadf1ddb1e444f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cea50f72429de15518d50804d929585719da91cf68a99d5185dadf1ddb1e444f.jpg)
 
 
 
@@ -2056,7 +2037,7 @@ FIGURE 6.41 These containers are
 
 filled with water to the same depth and have the same base area. The total force is therefore the same on the bottom of each container. The containers' shapes do not matter here. 
 
-![[8c4c087ec4186d32e47b8e12effbeaef715463f5c2471e2d8cb62223e41c20eb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8c4c087ec4186d32e47b8e12effbeaef715463f5c2471e2d8cb62223e41c20eb.jpg)
 
 
 
@@ -2071,11 +2052,11 @@ $$
 w \times (\text { strip   depth }) \times L (y) \Delta y.
 $$
 
-## Fluid Pressure and Forces
+### Fluid Pressure and Forces
 
 Dams are built thicker at the bottom than at the top (Figure 6.40) because the pressure against them increases with depth. The pressure at any point on a dam depends only on how far below the surface the point is and not on how much the surface of the dam happens to be tilted at that point. The pressure, in newtons per square meter at a point h meters below the surface, is always 9800h. The number 9800 is the weight-density of freshwater in newtons per cubic meter. The pressure h meters below the surface of any fluid is the fluid's weight-density times h. 
 
-## The Pressure-Depth Equation
+### The Pressure-Depth Equation
 
 In a fluid that is standing still, the pressure $p$ at depth $h$ is the fluid's weight-density $w$ times $h$ : 
 
@@ -2127,12 +2108,12 @@ $$
 FIGURE 6.43 To find the force on one side of the submerged plate in Example 6, we can use a coordinate system like the one here.
 
 
-![[3611eb09167cd56abac727241d5581d3fd1c2ebaa247836a8897bc2fc24aaeb0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3611eb09167cd56abac727241d5581d3fd1c2ebaa247836a8897bc2fc24aaeb0.jpg)
 
 
 Suppose that a plate submerged vertically in fluid of weight-density w runs from y = a to y = b on the y-axis. Let $L(y)$ be the length of the horizontal strip measured from left to right along the surface of the plate at level y. Then the force exerted by the fluid against one side of the plate is 
 
-## The Integral for Fluid Force Against a Vertical Flat Plate
+### The Integral for Fluid Force Against a Vertical Flat Plate
 
 $$
 F = \int_ {a} ^ {b} w \cdot (\text { strip   depth }) \cdot L (y) d y.\tag{7}
@@ -2152,22 +2133,21 @@ $$
 \begin{array}{l} F = \int_ {a} ^ {b} w \cdot \left( \begin{array}{c} \text { strip } \\ \text { depth } \end{array} \right) \cdot L (y) d y \\ = \int_ {0} ^ {1} 9 8 0 0 (1. 6 - y) 2 y d y \\ = 1 9, 6 0 0 \int_ {0} ^ {1} (1. 6 y - y ^ {2}) d y \\ = 1 9, 6 0 0 \left[ 0. 8 y ^ {2} - \frac {y ^ {3}}{3} \right] _ {0} ^ {1} = 9 1 4 7 \mathrm{N}. \end{array} \tag {Eq.(7)}
 $$
 
-## EXERCISES
+### Exercises 6.5
 
-## 6.5
 
 For some exercises, a calculator may be helpful when expressing answers in decimal form. 
 
-## Springs
+#### Springs
 
 The graphs of force functions (in newtons) are given in Exercises 1 and 2. How much work is done by each force in moving an object $10\mathrm{m}$ ? 
 
 1. $F(N)$ 
 
-![[203218ee68a8424a4894433fc830d6af738a92473ff3358cf61736a53275dd0b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/203218ee68a8424a4894433fc830d6af738a92473ff3358cf61736a53275dd0b.jpg)
 
 
-![[48788ac682c950735df940fbb6d5edc7631ad1d8bed13d88c19393ffc1a7f43f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/48788ac682c950735df940fbb6d5edc7631ad1d8bed13d88c19393ffc1a7f43f.jpg)
 
 
 3. Spring constant It took 1800 J of work to stretch a spring from its natural length of 2 m to a length of 5 m. Find the spring's force constant. 
@@ -2192,7 +2172,7 @@ b. How much work does it take to compress the assembly the first centimeter? the
 
 8. Bathroom scale A bathroom scale is compressed 1.5 mm when a 70-kg person stands on it. Assuming that the scale behaves like a spring that obeys Hooke's Law, how much does someone who compresses the scale 3 mm weigh? How much work is done compressing the scale 3 mm? 
 
-## Work Done by a Variable Force
+#### Work Done by a Variable Force
 
 9. Lifting a rope A mountain climber is about to haul up a 50-m length of hanging rope. How much work will it take if the rope weighs 0.624 N/m? 
 
@@ -2206,7 +2186,7 @@ b. How much work does it take to compress the assembly the first centimeter? the
 
 14. (Continuation of Exercise 11) The workers in Example 4 and Exercise 11 changed to a larger bucket that held 20 L (195 N) of water, but the new bucket had an even larger leak so that it, too, was empty by the time it reached the top. Assuming that the water leaked out at a steady rate, how much work was done lifting the water alone? (Do not include the rope and bucket.) 
 
-## Pumping Liquids from Containers
+#### Pumping Liquids from Containers
 
 15. Pumping water The rectangular tank shown here, with its top at ground level, is used to catch runoff water. Assume that the water weighs $9800\mathrm{N / m^3}$ . 
 
@@ -2218,7 +2198,7 @@ c. Show that the pump in part (b) will lower the water level 10 m (halfway) duri
 
 d. The weight of water What are the answers to parts (a) and (b) in a location where water weighs $9780 \, N/m^{3}$ ? $9820 \, N/m^{3}$ ? 
 
-![[b0a131e606d1a53124041f176e50f3bf6136aa48d27804a4f1a87a8321b7cf84.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b0a131e606d1a53124041f176e50f3bf6136aa48d27804a4f1a87a8321b7cf84.jpg)
 
 
 16. Emptying a cistern The rectangular cistern (storage tank for rainwater) shown has its top 3 m below ground level. The cistern, currently full, is to be emptied for inspection by pumping its contents to ground level. 
@@ -2231,7 +2211,7 @@ c. How long will it take the pump in part (b) to empty the tank halfway? (It wil
 
 d. The weight of water What are the answers to parts (a) through (c) in a location where water weighs $9780\mathrm{N / m}^3?$ $9820\mathrm{N / m}^3?$ 
 
-![[c52b340342a4b43b1c4d97490c04be496226a627b94cf7b0c51b18b48721bf2d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c52b340342a4b43b1c4d97490c04be496226a627b94cf7b0c51b18b48721bf2d.jpg)
 
 
 17. Pumping oil How much work would it take to pump oil from the tank in Example 5 to the level of the top of the tank if the tank were completely full? 
@@ -2250,12 +2230,12 @@ b. Pumping oil How much work will it take to pump the oil in Example 5 to a leve
 
 23. Emptying a water reservoir We model pumping from spherical containers the way we do from other containers, with the axis of integration along the vertical axis of the sphere. Use the figure here to find how much work it takes to empty a full hemispherical water reservoir of radius 5 m by pumping the water to a height of 4 m above the top of the reservoir. Water weighs $9800 \, N/m^{3}$ . 
 
-![[ac3df1b7e0e95b6a32c951ea27587b43ae8329f28b8e49659b5a1f4ce28e6c00.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ac3df1b7e0e95b6a32c951ea27587b43ae8329f28b8e49659b5a1f4ce28e6c00.jpg)
 
 
 24. You are in charge of the evacuation and repair of the storage tank shown here. The tank is a hemisphere of radius 3 m and is full of benzene weighing 8800 N/m $^{3}$ . A firm you contacted says it can empty the tank for 0.4¢ per joule of work. Find the work required to empty the tank by pumping the benzene to an outlet 0.6 m above the top of the tank. If you have $5000 budgeted for the job, can you afford to hire the firm? 
 
-![[c13d041b1167408938cd00143cc8a4aff3380edb1b085648ad72937408adefe5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c13d041b1167408938cd00143cc8a4aff3380edb1b085648ad72937408adefe5.jpg)
 
 
 Work and Kinetic Energy 
@@ -2288,7 +2268,7 @@ In Exercises 26–30, use the result of Exercise 25.
 
 31. Drinking a milkshake The truncated conical container shown here is full of strawberry milkshake, which has a density of $0.8 \, g/cm^{3}$ . As you can see, the container is 18 cm deep, 6 cm across at the base, and 9 cm across at the top (a standard size at Brigham's in Boston). The straw sticks up 3 cm above the top. About how much work does it take to suck up the milkshake through the straw (neglecting friction)? 
 
-![[36fa5d611f80969750e1622de68a4383b0144dd8b14f153ce9a6315c28d2dfb3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/36fa5d611f80969750e1622de68a4383b0144dd8b14f153ce9a6315c28d2dfb3.jpg)
 
 
 
@@ -2297,7 +2277,7 @@ Dimensions in centimeters
 
 32. Water tower Your town has decided to drill a well to increase its water supply. As the town engineer, you have determined that a water tower will be necessary to provide the pressure needed for distribution, and you have designed the system shown here. The water is to be pumped from a 90 m well through a vertical 10 cm pipe into the base of a cylindrical tank 6 m in diameter and 7.5 m high. The base of the tank will be 18 m above ground. The pump is a 3-hp pump, rated at 2200 W (J/s). To the nearest hour, how long will it take to fill the tank the first time? (Include the time it takes to fill the pipe.) Assume that water weighs $9800 \, N/m^{3}$ . 
 
-![[4210fcaa273c02d21ab9b2b593e3959543c75b7aec42c7a946799d540cc217a5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4210fcaa273c02d21ab9b2b593e3959543c75b7aec42c7a946799d540cc217a5.jpg)
 
 
 
@@ -2334,16 +2314,16 @@ a. Suppose one electron is held fixed at the point $(1,0)$ on the x-axis (units 
 
 b. Suppose an electron is held fixed at each of the points $(-1,0)$ and $(1,0)$ . How much work does it take to move a third electron along the x-axis from $(5,0)$ to $(3,0)$ ? 
 
-## Finding Fluid Forces
+#### Finding Fluid Forces
 
 35. Triangular plate Calculate the fluid force on one side of the plate in Example 6 using the coordinate system shown here. 
 
-![[417a40e2472446a8304e06bd2ca55bb79a391166e01a766dd1ff52f96af2620d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/417a40e2472446a8304e06bd2ca55bb79a391166e01a766dd1ff52f96af2620d.jpg)
 
 
 36. Triangular plate Calculate the fluid force on one side of the plate in Example 6 using the coordinate system shown here. 
 
-![[ca99091358ebbc042346c3f34e062135688d37d70be1eda149ae149b8b177e53.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ca99091358ebbc042346c3f34e062135688d37d70be1eda149ae149b8b177e53.jpg)
 
 
 37. Rectangular plate In a pool filled with water to a depth of 3 m, calculate the fluid force on one side of a 0.9 m by 1.2 m rectangular plate if the plate rests vertically at the bottom of the pool 
@@ -2354,12 +2334,12 @@ b. on its 0.9-m edge.
 
 38. Semicircular plate Calculate the fluid force on one side of a semicircular plate of radius 5 m that rests vertically on its diameter at the bottom of a pool filled with water to a depth of 6 m. 
 
-![[f81ace98b421b9d9f9d910dae30020f167a9c23a32823e24ba57a26d6f336fb6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f81ace98b421b9d9f9d910dae30020f167a9c23a32823e24ba57a26d6f336fb6.jpg)
 
 
 End view of trough 
 
-![[154d2a466a8d980d9c083944d4432dd5fb5746145633ee898611d52bb62c5d40.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/154d2a466a8d980d9c083944d4432dd5fb5746145633ee898611d52bb62c5d40.jpg)
 
 
 39. Triangular plate The isosceles triangular plate shown here is submerged vertically 1 m below the surface of a freshwater lake.
@@ -2367,12 +2347,12 @@ a. Find the fluid force against one face of the plate.
 
 b. What would be the fluid force on one side of the plate if the water were seawater instead of freshwater? 
 
-![[e3598d0c2a1c0c1a6ef4302b4f2467c2e5d557d3f10743133083aa0d28ebc349.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e3598d0c2a1c0c1a6ef4302b4f2467c2e5d557d3f10743133083aa0d28ebc349.jpg)
 
 
 40. Rotated triangular plate The plate in Exercise 37 is revolved $180^{\circ}$ about line $AB$ so that part of the plate sticks out of the lake, as shown here. What force does the water exert on one face of the plate now? 
 
-![[2f32e7e5e22c433f0bb00af842bbd93db6fb94e8b541452d34f5dcdc7dd4eb5d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2f32e7e5e22c433f0bb00af842bbd93db6fb94e8b541452d34f5dcdc7dd4eb5d.jpg)
 
 
 41. New England Aquarium The viewing portion of the rectangular glass window in a typical fish tank at the New England Aquarium in Boston is $1.6\mathrm{m}$ wide and runs from $0.01\mathrm{m}$ below the water's surface to $0.85\mathrm{m}$ below the surface. Find the fluid force against this portion of the window. The weight-density of seawater is $10,050\mathrm{N} / \mathrm{m}^3$ . (In case you were wondering, the glass is $2\mathrm{cm}$ thick and the tank walls extend $10\mathrm{cm}$ above the water to keep the fish from jumping out.) 
@@ -2395,7 +2375,7 @@ a. What is the fluid force on the gate when the liquid is $2 \mathrm{~m}$ deep?
 
 b. What is the maximum height to which the container can be filled without exceeding the gate's design limitation? 
 
-![[55eade99563b8166da6f4c27365db181db1db1ede5817e69904b1ee20b453fd4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/55eade99563b8166da6f4c27365db181db1db1ede5817e69904b1ee20b453fd4.jpg)
 
 
 46. The end plates of the trough shown here were designed to withstand a fluid force of 25,000 N. How many cubic meters of water can the tank hold without exceeding this limitation? Round down to the nearest cubic meter. What is the value of h? 
@@ -2406,7 +2386,7 @@ b. What is the maximum height to which the container can be filled without excee
 
 49. Water pours into the tank shown here at the rate of $0.5\mathrm{m}^3/\mathrm{min}$ . The tank's cross-sections are 2-m-diameter semicircles. One end of the tank is movable, but moving it to increase the volume compresses a spring. The spring constant is $k = 3000\mathrm{N/m}$ . If the end of the tank moves $2.5\mathrm{m}$ against the spring, the water will drain out of a safety hole in the bottom at the rate of $0.6\mathrm{m}^3/\mathrm{min}$ . Will the movable end reach the hole before the tank overflows? 
 
-![[4a1e57509d1ebbd8d0ae529f2770140061d8def67262ea865f551348b6a2e00c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4a1e57509d1ebbd8d0ae529f2770140061d8def67262ea865f551348b6a2e00c.jpg)
 
 
 50. Watering trough The vertical ends of a watering trough are squares 1 m on a side. 
@@ -2417,7 +2397,7 @@ b. How many centimeters do you have to lower the water level in the trough to re
 
 ## 6.6 Moments and Centers of Mass
 
-![[6a864b0a8eec88ec3788206e5b89ebfe8974793ae4041771533101a3b5392237.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6a864b0a8eec88ec3788206e5b89ebfe8974793ae4041771533101a3b5392237.jpg)
 
 
 
@@ -2426,11 +2406,11 @@ FIGURE 6.44 A wrench gliding on ice turning about its center of mass as the cent
 
 Many structures and mechanical systems behave as if their masses were concentrated at a single point, called the center of mass (Figure 6.44). It is important to know how to locate this point, and doing so is basically a mathematical enterprise. Here we consider masses distributed along a line or region in the plane. Masses distributed across a region or curve in three-dimensional space are treated in Chapters 14 and 15. 
 
-## Masses Along a Line
+### Masses Along a Line
 
 We develop our mathematical model in stages. The first stage is to imagine masses $m_{1}$ , $m_{2}$ , and $m_{3}$ on a rigid x-axis supported by a fulcrum at the origin. 
 
-![[9fcb73482e9383df8fc3015cebefe3583b96880004d2721ac6cba47a4e150cb4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9fcb73482e9383df8fc3015cebefe3583b96880004d2721ac6cba47a4e150cb4.jpg)
 
 
 The resulting system might balance, or it might not, depending on how large the masses are and how they are arranged along the x-axis. 
@@ -2463,7 +2443,7 @@ $$
 
 We usually want to know where to place the fulcrum to make the system balance; that is, we want to know at what point $\overline{x}$ to place the fulcrum to make the torques add to zero. 
 
-![[dbbc2727831f548915dbf0d18530217a79f90c6c8a957bce4da2e7dc1fd900fe.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dbbc2727831f548915dbf0d18530217a79f90c6c8a957bce4da2e7dc1fd900fe.jpg)
 
 
 The torque of each mass about the fulcrum in this special location is 
@@ -2486,14 +2466,14 @@ $$
 
 The point $\overline{x}$ is called the system's center of mass. 
 
-![[f0b4eb336148290d336142b00d50888fbe96fe88b2d51cae6d4d0eaa69939484.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f0b4eb336148290d336142b00d50888fbe96fe88b2d51cae6d4d0eaa69939484.jpg)
 
 
 
 FIGURE 6.45 A rod of varying density can be modeled by a finite number of point masses of mass $\Delta m_{k} = \delta(x_{k}) \Delta x_{k}$ located at points $x_{k}$ along the rod.
 
 
-## Thin Wires
+### Thin Wires
 
 Instead of a discrete set of masses arranged in a line, suppose that we have a straight wire or rod located on interval $[a, b]$ on the x-axis. Suppose further that this wire is not homogeneous, but rather the density varies continuously from point to point. If a short segment of a rod containing the point x with length $\Delta x$ has mass $\Delta m$ , then the density at x is given by 
 
@@ -2531,32 +2511,32 @@ $$
 \overline {{x}} = \frac {M _ {0}}{M} = \frac {\int_ {1} ^ {2} x (2 + 3 x ^ {2}) d x}{9} = \frac {\left[ x ^ {2} + \frac {3 x ^ {4}}{4} \right] _ {1} ^ {2}}{9} = \frac {1 9}{1 2}.
 $$
 
-![[a31d82271c79a5ad7c660de026a6494b17dda5c8c6b1c73ac5f494bf09bc97bf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a31d82271c79a5ad7c660de026a6494b17dda5c8c6b1c73ac5f494bf09bc97bf.jpg)
 
 
 
 FIGURE 6.46 Each mass $m_{k}$ has a moment about each axis.
 
 
-![[bc1b8c350dd475f77a97264e71eda67e7bd93c9d2f09b0b6774c4fc4fc95e3d4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bc1b8c350dd475f77a97264e71eda67e7bd93c9d2f09b0b6774c4fc4fc95e3d4.jpg)
 
 
 
 FIGURE 6.47 A two-dimensional array of masses balances on its center of mass.
 
 
-![[a8be33e94a2613fdc1247cf4ccd4cbe13f563d6a4d0e4117a4007ab5a6e16069.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a8be33e94a2613fdc1247cf4ccd4cbe13f563d6a4d0e4117a4007ab5a6e16069.jpg)
 
 
 
 FIGURE 6.48 A plate cut into thin strips parallel to the y-axis. The moment exerted by a typical strip about each axis is the moment its mass $\Delta m$ would exert if concentrated at the strip's center of mass ( $\tilde{x}, \tilde{y}$ ).
 
 
-## Density of a plate
+### Density of a plate
 
 A material's density is its mass per unit area. For wires, rods, and narrow strips, the density is given in terms of mass per unit length. 
 
-## Masses Distributed over a Plane Region
+### Masses Distributed over a Plane Region
 
 Suppose that we have a finite collection of masses located in the plane, with mass $m_{k}$ at the point $(x_{k}, y_{k})$ (see Figure 6.46). The mass of the system is 
 
@@ -2594,7 +2574,7 @@ $$
 
 With this choice of $\overline{y}$ , the system balances about the line $y = \overline{y}$ as well. The torques exerted by the masses about the line $y = \overline{y}$ cancel out. Thus, as far as balance is concerned, the system behaves as if all its mass were at the single point $(\overline{x}, \overline{y})$ . We call this point the system's center of mass (c.m.). 
 
-## Thin, Flat Plates
+### Thin, Flat Plates
 
 In many applications, we need to find the center of mass of a thin, flat plate: a disk of aluminum, say, or a triangular sheet of steel. In such cases, we assume the distribution of mass to be continuous, and the formulas we use to calculate $\overline{x}$ and $\overline{y}$ contain integrals instead of finite sums. The integrals arise in the following way. 
 
@@ -2636,21 +2616,21 @@ $$
 \overline {{{{x}}}} = \frac {M _ {y}}{M}, \quad \overline {{{{y}}}} = \frac {M _ {x}}{M}
 $$
 
-![[0bc9d6c43e161aa872845728e2be8f8ed30f3c2bfb7a7ec375ca6122fdd9a004.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0bc9d6c43e161aa872845728e2be8f8ed30f3c2bfb7a7ec375ca6122fdd9a004.jpg)
 
 
 
 FIGURE 6.49 The plate in Example 2.
 
 
-![[6ce053c9011b326f11b3a9e119b8adb837cd079d55a5728599d6a4151c99e110.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6ce053c9011b326f11b3a9e119b8adb837cd079d55a5728599d6a4151c99e110.jpg)
 
 
 
 FIGURE 6.50 Modeling the plate in Example 2 with vertical strips.
 
 
-![[c53181ebb386a966fd7daa74486b3b46f21d128f22aa705a13c3883b343fa057.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c53181ebb386a966fd7daa74486b3b46f21d128f22aa705a13c3883b343fa057.jpg)
 
 
 
@@ -2767,7 +2747,7 @@ By a similar computation, we could find $M_{x}$ and $\overline{y}$ .
 
 If the distribution of mass in a thin, flat plate has an axis of symmetry, the center of mass will lie on this axis. If there are two axes of symmetry, the center of mass will lie at their intersection. These facts often help to simplify our work. 
 
-![[e0895867d495d2daa349b7ec849573e6ba6cf2019c38efa60cffa1ab3610dd0d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e0895867d495d2daa349b7ec849573e6ba6cf2019c38efa60cffa1ab3610dd0d.jpg)
 
 
 **EXAMPLE 3** Find the center of mass of a thin plate covering the region bounded above by the parabola $y = 4 - x^{2}$ and below by the x-axis (Figure 6.52). Assume the density of the plate at the point $(x, y)$ is $\delta = 2x^{2}$ , which is twice the square of the distance from the point to the y-axis. 
@@ -2804,7 +2784,7 @@ $$
 \begin{array}{l} M = \int d m = \int_ {- 2} ^ {2} \delta (4 - x ^ {2}) d x = \int_ {- 2} ^ {2} 2 x ^ {2} (4 - x ^ {2}) d x \\ = \int_ {- 2} ^ {2} (8 x ^ {2} - 2 x ^ {4}) d x = \frac {2 5 6}{1 5}. \end{array}
 $$
 
-![[02d7ee32f5bb0fdaa87b100aa5df2da148e8c66e1bdd6ae182a4e749451cc8d2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/02d7ee32f5bb0fdaa87b100aa5df2da148e8c66e1bdd6ae182a4e749451cc8d2.jpg)
 
 
 Therefore, 
@@ -2819,7 +2799,7 @@ $$
 (\overline {{x}}, \overline {{y}}) = \Big (0, \frac {8}{7} \Big).
 $$
 
-## Plates Bounded by Two Curves
+### Plates Bounded by Two Curves
 
 Suppose a plate covers a region that lies between two curves $y = g(x)$ and $y = f(x)$ , where $f(x) \geq g(x)$ and $a \leq x \leq b$ . The typical vertical strip (see Figure 6.53) has 
 
@@ -2851,7 +2831,7 @@ $$
 \overline {{y}} = \frac {1}{M} \int_ {a} ^ {b} \frac {\delta}{2} \big [ f ^ {2} (x) - g ^ {2} (x) \big ] d x\tag{7}
 $$
 
-![[610013bf3df6e45effa71620114f8bea30b2d6bfda3894f3f53ed69c142c91ab.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/610013bf3df6e45effa71620114f8bea30b2d6bfda3894f3f53ed69c142c91ab.jpg)
 
 
 
@@ -2880,14 +2860,14 @@ $$
 
 The center of mass is shown in Figure 6.54. 
 
-![[021c65bc80aa536e001fb70b75df9da3daa625cf9cdf0ae6f76f221ae9b479aa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/021c65bc80aa536e001fb70b75df9da3daa625cf9cdf0ae6f76f221ae9b479aa.jpg)
 
 
-## Centroids
+### Centroids
 
 The center of mass in Example 4 is not located at the geometric center of the region. This is due to the region's nonuniform density. When the density function is constant, it cancels out of the numerator and denominator of the formulas for $\overline{x}$ and $\overline{y}$ . Thus, when the density is constant, the location of the center of mass is a feature of the geometry of the object and not of the material from which it is made. In such cases, engineers may call the center of mass the centroid of the shape, as in "Find the centroid of a triangle or a solid cone." To do so, just set $\delta$ equal to 1 and proceed to find $\overline{x}$ and $\overline{y}$ as before, by dividing moments by masses. 
 
-![[257257eefd602c041be3222f8f610be65e8a87f2a5a97835705e11e6ec1959a2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/257257eefd602c041be3222f8f610be65e8a87f2a5a97835705e11e6ec1959a2.jpg)
 
 
 
@@ -2912,14 +2892,14 @@ The center of mass lies on the axis of symmetry at the point $(0, 2a/\pi)$ , abo
 
 In Example 5 we found the center of mass of a thin wire lying along the graph of a differentiable function in the xy-plane. In Chapter 15 we will learn how to find the center of mass of a wire lying along a more general smooth curve in the plane or in space. 
 
-![[7170676b0498c8bd1c77a6a7a8a872828f71dc45f5ad9e3e55cde276eded5565.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7170676b0498c8bd1c77a6a7a8a872828f71dc45f5ad9e3e55cde276eded5565.jpg)
 
 
 
 FIGURE 6.56 The force against one side of the plate is $w \cdot \overline{h} \cdot$ plate area.
 
 
-## Fluid Forces and Centroids
+### Fluid Forces and Centroids
 
 If we know the location of the centroid of a submerged flat vertical plate (Figure 6.56), we can take a shortcut to find the force against one side of the plate. From Equation (7) in Section 6.5, and the definition of the moment about the x-axis, we have 
 
@@ -2927,7 +2907,7 @@ $$
 \begin{array}{l} F = \int_ {a} ^ {b} w \times (\text { strip   depth }) \times L (y) d y \\ = w \int_ {a} ^ {b} (\text { strip   depth }) \times L (y) d y \\ = w \times (\text { moment   about   surface   level   line   of   region   occupied   by   plate }) \\ = w \times (\text { depth   of   plate's   centroid }) \times (\text { area   of   plate }). \end{array}
 $$
 
-## Fluid Forces and Centroids
+### Fluid Forces and Centroids
 
 The force of a fluid of weight-density $w$ against one side of a submerged flat vertical plate is the product of $w$ , the distance $\overline{h}$ from the plate's centroid to the fluid surface, and the plate's area: 
 
@@ -2949,32 +2929,32 @@ $$
 F = w \bar {h} A = (9 8 0 0) (2. 8 / 3) (1) = 9 1 4 7 \mathrm{N}.
 $$
 
-## The Theorems of Pappus
+### The Theorems of Pappus
 
 In the fourth century, an Alexandrian Greek named Pappus discovered two formulas that relate centroids to surfaces and solids of revolution. The formulas provide shortcuts to a number of otherwise lengthy calculations. 
 
-![[b09a269b5f91c51f7d5e7e6b740bae9b2cb3517b65af7e8fb2c9f7cae2d18c27.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b09a269b5f91c51f7d5e7e6b740bae9b2cb3517b65af7e8fb2c9f7cae2d18c27.jpg)
 
 
 
 FIGURE 6.57 The region R is to be revolved (once) about the x-axis to generate a solid. A 1700-year-old theorem says that the solid's volume can be calculated by multiplying the region's area by the distance traveled by its centroid during the revolution.
 
 
-![[944099acf914313f8ed30b2ee937fb22a57abaf16cac4b8284b16664b4fc1d11.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/944099acf914313f8ed30b2ee937fb22a57abaf16cac4b8284b16664b4fc1d11.jpg)
 
 
 
 FIGURE 6.58 With Pappus's first theorem, we can find the volume of a torus without having to integrate (Example 7).
 
 
-![[5a3e7ef57c1b1cdd9bb018aa60823e360366833fc622a56e39e131bbcd1e681e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5a3e7ef57c1b1cdd9bb018aa60823e360366833fc622a56e39e131bbcd1e681e.jpg)
 
 
 
 FIGURE 6.59 With Pappus's first theorem, we can locate the centroid of a semicircular region without having to integrate (Example 8).
 
 
-## THEOREM 1—Pappus's Theorem for Volumes
+**THEOREM 1—Pappus's Theorem for Volumes**
 
 If a plane region is revolved once about a line in the plane that does not cut through the region's interior, then the volume of the solid it generates is equal to the region's area times the distance traveled by the region's centroid during the revolution. If $\rho$ is the distance from the axis of revolution to the centroid, then 
 
@@ -3014,7 +2994,7 @@ $$
 
 The next example shows how we can use Equation (9) in Pappus's Theorem to find one of the coordinates of the centroid of a plane region of known area $A$ when we also know the volume $V$ of the solid generated by revolving the region about the other coordinate axis. That is, if $\overline{y}$ is the coordinate we want to find, we revolve the region around the $x$ -axis so that $\overline{y} = \rho$ is the distance from the centroid to the axis of revolution. The idea is that the rotation generates a solid of revolution whose volume $V$ is an already known quantity. Then we can solve Equation (9) for $\rho$ , which is the value of the centroid's coordinate $\overline{y}$ . 
 
-## **EXAMPLE 8** Locate the centroid of a semicircular region of radius a.
+**EXAMPLE 8** Locate the centroid of a semicircular region of radius a.
 
 **Solution** We consider the region between the semicircle $y = \sqrt{a^{2} - x^{2}}$ (Figure 6.59) and the x-axis and imagine revolving the region about the x-axis to generate a solid sphere. By symmetry, the x-coordinate of the centroid is $\overline{x} = 0$ . With $\overline{y} = \rho$ in Equation (9), we have 
 
@@ -3022,7 +3002,7 @@ $$
 \overline {{y}} = \frac {V}{2 \pi A} = \frac {(4 / 3) \pi a ^ {3}}{2 \pi (1 / 2) \pi a ^ {2}} = \frac {4}{3 \pi} a.
 $$
 
-![[6cf4d56756dcd2de18cbf287cf79c515efdc1caaf4859af175f11dde896d114f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6cf4d56756dcd2de18cbf287cf79c515efdc1caaf4859af175f11dde896d114f.jpg)
 
 
 
@@ -3031,7 +3011,7 @@ FIGURE 6.60 Figure for proving Pappus's Theorem for surface area. The arc length
 
 Hence 
 
-## THEOREM 2—Pappus's Theorem for Surface Areas
+**THEOREM 2—Pappus's Theorem for Surface Areas**
 
 If an arc of a smooth plane curve is revolved once about a line in the plane that does not cut through the arc's interior, then the area of the surface generated by the arc equals the length $L$ of the arc times the distance traveled by the arc's centroid during the revolution. If $\rho$ is the distance from the axis of revolution to the centroid, then 
 
@@ -3067,27 +3047,19 @@ $$
 S = 2 \pi (b) (2 \pi a) = 4 \pi^ {2} b a.
 $$
 
-## EXERCISES 6.6
+### EXERCISES 6.6
 
-## Mass of a wire
+#### Mass of a wire
 
 In Exercises 1–6, find the mass M and center of mass $\overline{x}$ of the linear wire covering the given interval and having the given density $\delta(x)$ . 
 
-$$
-1. 1 \leq x \leq 4, \delta (x) = \sqrt {x}
-$$
+1. $1 \leq x \leq 4, \delta (x) = \sqrt {x}$
 
-$$
-2. - 3 \leq x \leq 3, \delta (x) = 1 + 3 x ^ {2}
-$$
+2. $- 3 \leq x \leq 3, \delta (x) = 1 + 3 x ^ {2}$
 
-$$
-3. 0 \leq x \leq 3, \delta (x) = \frac {1}{x + 1}
-$$
+3. $0 \leq x \leq 3, \delta (x) = \frac {1}{x + 1}$
 
-$$
-4. 1 \leq x \leq 2, \delta (x) = \frac {8}{x ^ {3}}
-$$
+4. $1 \leq x \leq 2, \delta (x) = \frac {8}{x ^ {3}}$
 
 $$
 \delta (x) = \left\{ \begin{array}{l l} 4, & 0 \leq x \leq 2 \\ 5, & 2 <   x \leq 3 \end{array} \right.
@@ -3103,7 +3075,7 @@ In Exercises 7–20, find the center of mass of a thin plate of constant density
 
 7. The region bounded by the parabola $y = x^{2}$ and the line y = 4 
 
-![[9bd13bbb066a2d2109d8d70c75a0eac26a6816290c388a35475d72cca2077070.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9bd13bbb066a2d2109d8d70c75a0eac26a6816290c388a35475d72cca2077070.jpg)
 
 
 8. The region bounded by the parabola $y = 25 - x^{2}$ and the x-axis 
@@ -3156,7 +3128,7 @@ g. mass.
 
 h. center of mass. 
 
-## Thin Plates with Varying Density
+#### Thin Plates with Varying Density
 
 23. Find the center of mass of a thin plate covering the region between the $x$ -axis and the curve $y = 2 / x^2$ , $1 \leq x \leq 2$ , if the plate's density at the point $(x, y)$ is $\delta(x) = x^2$ . 
 
@@ -3177,7 +3149,7 @@ b. Find the center of mass of a thin plate covering the region if the plate's de
 
 c. Sketch the plate and show the center of mass in your sketch. 
 
-## Centroids of Triangles
+#### Centroids of Triangles
 
 27. The centroid of a triangle lies at the intersection of the triangle's medians You may recall that the point inside a triangle that lies one-third of the way from each side toward the opposite vertex is the point where the triangle's three medians intersect. Show that the centroid lies at the intersection of the medians by showing that it too lies one-third of the way from each side toward the opposite vertex. To do so, take the following steps. 
 
@@ -3189,10 +3161,10 @@ iii) Show that $\overline{y} = h / 3$ .
 
 iv) Extend the argument to the other sides. 
 
-![[cab2716255d7bd9e3fb832d54f429c6f757a9fc39ce8569c7fa9691a1d6f1c90.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cab2716255d7bd9e3fb832d54f429c6f757a9fc39ce8569c7fa9691a1d6f1c90.jpg)
 
 
-![[7b831bc1130bf001e892993e0fd1640e2dd69449b5e4b6b43670f59f274adfe1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7b831bc1130bf001e892993e0fd1640e2dd69449b5e4b6b43670f59f274adfe1.jpg)
 
 
 
@@ -3205,9 +3177,7 @@ iv) Extend the argument to the other sides.
 
 Use the result in Exercise 27 to find the centroids of the triangles whose vertices appear in Exercises 28–32. Assume a, b > 0. 
 
-$$
-\mathbf {2 8 .} (- 1, 0), (1, 0), (0, 3)
-$$
+28. $(- 1, 0), (1, 0), (0, 3)$
 
 29. $(0,0)$ , $(1,0)$ , $(0,1)$ 
 
@@ -3227,7 +3197,7 @@ Thin Wires
 
 36. Variable density Suppose that the density of the wire in Example 5 is $\delta = 1 + k|\cos \theta |$ ( $k$ constant). Find the center of mass. 
 
-## Plates Bounded by Two Curves
+#### Plates Bounded by Two Curves
 
 In Exercises 37–40, find the centroid of the thin plate bounded by the graphs of the given functions. Use Equations (6) and (7) with $\delta = 1$ and M = area of the region covered by the plate. 
 
@@ -3241,7 +3211,7 @@ In Exercises 37–40, find the centroid of the thin plate bounded by the graphs 
 
 (Hint: $\int x\sin x dx = \sin x - x\cos x + C.$ ) 
 
-## Theory and Examples
+#### Theory and Examples
 
 Verify the statements and formulas in Exercises 41 and 42. 
 
@@ -3251,15 +3221,15 @@ $$
 \overline {{x}} = \frac {\int x d s}{\text { length }}, \quad \overline {{y}} = \frac {\int y d s}{\text { length }}.
 $$
 
-![[1c07b3b2cb4a421a1b2ef367cea8f198123360e16c91a04007803c6184b5ed44.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1c07b3b2cb4a421a1b2ef367cea8f198123360e16c91a04007803c6184b5ed44.jpg)
 
 
 42. Whatever the value of $p > 0$ in the equation $y = x^2 / (4p)$ , the $y$ -coordinate of the centroid of the parabolic segment shown here is $\overline{y} = (3/5)a$ . 
 
-![[c20b2c032d71a228cbfb8d8af81e50f5ea7eee5b298e546e16c28d08ff5dfee2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c20b2c032d71a228cbfb8d8af81e50f5ea7eee5b298e546e16c28d08ff5dfee2.jpg)
 
 
-## The Theorems of Pappus
+#### The Theorems of Pappus
 
 43. The square region with vertices $(0,2)$ , $(2,0)$ , $(4,2)$ , and $(2,4)$ is revolved about the x-axis to generate a solid. Find the volume and surface area of the solid. 
 
@@ -3287,14 +3257,14 @@ In Exercises 53 and 54, use a theorem of Pappus to find the centroid of the give
 53.
 
 
-![[9b9aa09273e7720f24cc29699031e9f65f1b183ea2e36c4f5a7823176a3a27a5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9b9aa09273e7720f24cc29699031e9f65f1b183ea2e36c4f5a7823176a3a27a5.jpg)
 
 
 
 54.
 
 
-![[ac57da0c13699c9fe86ce93052f2cd81a7952e4e64c2e435e662bff74afd6778.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ac57da0c13699c9fe86ce93052f2cd81a7952e4e64c2e435e662bff74afd6778.jpg)
 
 
 ## CHAPTER 6 Questions to Guide Your Review
@@ -3319,7 +3289,7 @@ In Exercises 53 and 54, use a theorem of Pappus to find the centroid of the give
 
 ## CHAPTER 6 Practice Exercises
 
-## Volumes
+### Volumes
 
 Find the volumes of the solids in Exercises 1–18. 
 
@@ -3331,7 +3301,7 @@ Find the volumes of the solids in Exercises 1–18.
 
 4. The solid lies between planes perpendicular to the x-axis at x = 0 and x = 6. The cross-sections between these planes are squares whose bases run from the x-axis up to the curve $x^{1/2} + y^{1/2} = \sqrt{6}$ . 
 
-![[03113d6fae71b5705502761ead07f25527a0b4077173edf1708efb17db35641e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/03113d6fae71b5705502761ead07f25527a0b4077173edf1708efb17db35641e.jpg)
 
 
 5. The solid lies between planes perpendicular to the x-axis at x = 0 and x = 4. The cross-sections of the solid perpendicular to the x-axis between these planes are circular disks whose diameters run from the curve $x^{2} = 4y$ to the curve $y^{2} = 4x$ . 
@@ -3358,20 +3328,20 @@ Find the volumes of the solids in Exercises 1–18.
 
 16. Volume of a football A football resembles the surface of revolution obtained by revolving the ellipse shown here around the $x$ -axis. Find the football's volume to the nearest cubic centimeter. 
 
-![[21edc35ed54aca29552ee74fdc6913b6b6f7335e1cbfefd9a5338af93ac2a06c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/21edc35ed54aca29552ee74fdc6913b6b6f7335e1cbfefd9a5338af93ac2a06c.jpg)
 
 
 17. Set up and evaluate an integral to find the volume of the given circular frustum of height h and radii a and b. 
 
-![[0e4024b3ca2287b7779ad3709adb9ed32356ec905bc11ac71a150a48b50da369.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0e4024b3ca2287b7779ad3709adb9ed32356ec905bc11ac71a150a48b50da369.jpg)
 
 
 18. The graph of $x^{2/3} + y^{2/3} = 1$ is called an astroid and is given below. Find the volume of the solid formed by revolving the region enclosed by the astroid about the x-axis. 
 
-![[968fb3af407e938acd431e3f1edd4605b9f84165fec204d473efa277843db449.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/968fb3af407e938acd431e3f1edd4605b9f84165fec204d473efa277843db449.jpg)
 
 
-## Lengths of Curves
+### Lengths of Curves
 
 Find the lengths of the curves in Exercises 19-24. 
 
@@ -3389,7 +3359,7 @@ $$
 
 24. $y = \frac{2}{3} x^{3 / 2} - 1, 0 \leq x \leq 1$ 
 
-## Areas of Surfaces of Revolution
+### Areas of Surfaces of Revolution
 
 In Exercises 25–28, find the areas of the surfaces generated by revolving the curves about the given axes. 
 
@@ -3401,7 +3371,7 @@ In Exercises 25–28, find the areas of the surfaces generated by revolving the 
 
 28. $x = \sqrt{y}, \quad 2 \leq y \leq 6; \quad y$ -axis 
 
-## Work
+### Work
 
 29. Lifting equipment A rock climber is about to haul up 100 N of equipment that has been hanging beneath her on 40 m of rope that weighs 0.8 N/m. How much work will it take? (Hint: Solve for the rope and equipment separately, then add.) 
 
@@ -3431,7 +3401,7 @@ a. If a 3-N force stretches the spring 2 m, find the value of k.
 
 b. How much work is required to stretch the spring 1 m from its natural length? 
 
-## Centers of Mass and Centroids
+### Centers of Mass and Centroids
 
 39. Find the centroid of a thin, flat plate covering the region enclosed by the parabolas $y = 2x^{2}$ and $y = 3 - x^{2}$ . 
 
@@ -3447,11 +3417,11 @@ b. How much work is required to stretch the spring 1 m from its natural length?
 
 b. Find the plate's center of mass if, instead of being constant, the density is $\delta(x) = x$ . (Use vertical strips.) 
 
-## Fluid Force
+### Fluid Force
 
 45. Trough of water The vertical triangular plate shown here is the end plate of a trough full of water (w = 9800). What is the fluid force against the plate? 
 
-![[32c0cb5953b95a1e40d5bc6212c63799a9707aeb6f024e91f8d14ed220f07b9b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/32c0cb5953b95a1e40d5bc6212c63799a9707aeb6f024e91f8d14ed220f07b9b.jpg)
 
 
 
@@ -3460,7 +3430,7 @@ UNITS IN METERS
 
 46. Trough of maple syrup The vertical trapezoidal plate shown here is the end plate of a trough full of maple syrup weighing $11,000 \, N/m^{3}$ . What is the force exerted by the syrup against the end plate of the trough when the syrup is 0.5 m deep? 
 
-![[c3a4c66ab6b780d1678db1a899b7b5df752c68612bb25b5d922bcbf7518b63c0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c3a4c66ab6b780d1678db1a899b7b5df752c68612bb25b5d922bcbf7518b63c0.jpg)
 
 
 
@@ -3473,7 +3443,7 @@ T 48. You plan to store mercury ( $w = 133,350 \, N/m^{3}$ ) in a vertical recta
 
 ## CHAPTER 6 Additional and Advanced Exercises
 
-## Volume and Length
+### Volume and Length
 
 1. A solid is generated by revolving about the x-axis the region bounded by the graph of the positive continuous function $y = f(x)$ , the x-axis, the fixed line x = a, and the variable line x = b, b > a. Its volume, for all b, is $b^{2} - ab$ . Find $f(x)$ . 
 
@@ -3493,28 +3463,28 @@ b. Generalize the result in part (a).
 
 6. Consider a right-circular cylinder of diameter 1. Form a wedge by making one slice parallel to the base of the cylinder completely through the cylinder, and another slice at an angle of $45^{\circ}$ to the first slice and intersecting the first slice at the opposite edge of the cylinder (see accompanying diagram). Find the volume of the wedge. 
 
-![[9cd3899dc7707129c27d2f1e5823b005480e0d20433e632ca970cd7500801b9d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9cd3899dc7707129c27d2f1e5823b005480e0d20433e632ca970cd7500801b9d.jpg)
 
 
-## Surface Area
+### Surface Area
 
 7. At points on the curve $y = 2\sqrt{x}$ , line segments of length h = y are drawn perpendicular to the xy-plane. (See accompanying figure.) Find the area of the surface formed by these perpendiculars from $(0, 0)$ to $(3, 2\sqrt{3})$ . 
 
-![[8b55afb393acbc12cf75cafbcbd9d0d5d948c9d5e04df7799d517d277ef8e93e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8b55afb393acbc12cf75cafbcbd9d0d5d948c9d5e04df7799d517d277ef8e93e.jpg)
 
 
 8. At points on a circle of radius $a$ , line segments are drawn perpendicular to the plane of the circle, the perpendicular at each point $P$ being of length $ks$ , where $s$ is the length of the arc of the circle measured counterclockwise from $(a, 0)$ to $P$ , and $k$ is a positive constant, as shown here. Find the area of the surface formed by the perpendiculars along the arc beginning at $(a, 0)$ and extending once around the circle. 
 
-![[d3c0df7e5b17520a8f0c78b725fd3fd4db4ecc7e6c50bd9605d550da9f2efe15.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d3c0df7e5b17520a8f0c78b725fd3fd4db4ecc7e6c50bd9605d550da9f2efe15.jpg)
 
 
-## Work
+### Work
 
 9. A particle of mass m starts from rest at time t = 0 and is moved along the x-axis with constant acceleration a from x = 0 to x = h against a variable force of magnitude $F(t) = t^{2}$ . Find the work done. 
 
 10. Work and kinetic energy Suppose a 50-g golf ball is placed on a vertical spring with force constant $k = 2 \, \mathrm{N/cm}$ . The spring is compressed 15 cm and released. About how high does the ball go (measured from the spring's rest position)? 
 
-## Centers of Mass
+### Centers of Mass
 
 11. Find the centroid of the region bounded below by the $x$ -axis and above by the curve $y = 1 - x^n$ , $n$ an even positive integer. What is the limiting position of the centroid as $n \to \infty$ ? 
 
@@ -3534,7 +3504,7 @@ b. Find the limits of the coordinates of the centroid as $a \to b$ and discuss t
 
 16. A triangular corner is cut from a square 40 cm on a side. The area of the triangle removed is $400 \, cm^2$ . If the centroid of the remaining region is 22 cm from one side of the original square, how far is it from the remaining sides? 
 
-## Fluid Force
+### Fluid Force
 
 17. A triangular plate ABC is submerged in water with its plane vertical. The side AB, 4 m long, is 6 m below the surface of the water, while the vertex C is 2 m below the surface. Find the force exerted by the water on one side of the plate. 
 
@@ -3542,9 +3512,9 @@ b. Find the limits of the coordinates of the centroid as $a \to b$ and discuss t
 
 ## CHAPTER 6
 
-## Technology Application Projects
+### Technology Application Projects
 
-## Mathematica/Maple Projects
+### Mathematica/Maple Projects
 
 Projects can be found within MyLab Math. 
 
@@ -3555,7 +3525,7 @@ Collect data (or use data previously collected) to build and refine a model for 
 
 Integrals and Transcendental Functions 
 
-![[ffe59e81e23a921b8c14b2ea1f9b043249bdab9389f6cf9dc05dcfaccc30e7fb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ffe59e81e23a921b8c14b2ea1f9b043249bdab9389f6cf9dc05dcfaccc30e7fb.jpg)
 
 
 OVERVIEW Our treatment of the logarithmic and exponential functions has been rather informal. In this chapter, we give a rigorous analytic approach to the definitions and properties of these functions. We also introduce the hyperbolic functions and their inverses. Like the trigonometric functions, these functions belong to the class of transcendental functions.

@@ -7,9 +7,20 @@ order: 5
 
 <!-- Extracted from Thomas-calculus Markdown source; chapters 1-17 only. -->
 
+![教材插图](/books/thomas-calculus/assets/d933596094bbe2a27155d0772194f318bfed0d3a2bde2cb202e3cc4a3f21a06b.jpg)
+
+
+OVERVIEW A great achievement of classical geometry was obtaining formulas for the areas and volumes of triangles, spheres, and cones. In this chapter we develop a method, called integration, to calculate the areas and volumes of more general shapes. The definite integral is the key tool in calculus for defining and calculating areas and volumes. We also use it to compute quantities such as the lengths of curved paths, probabilities, averages, energy consumption, the mass of an object, and the force against a dam's floodgates. 
+
+Like the derivative, the definite integral is defined as a limit. The definite integral is a limit of increasingly fine approximations. The idea is to approximate a quantity (such as the area of a curvy region) by dividing it into many small pieces, each of which we can approximate by something simple (such as a rectangle). Summing the contributions of each of the simple pieces gives us an approximation to the original quantity. As we divide the region into more and more pieces, the approximation given by the sum of the pieces will generally improve, converging to the quantity we are measuring. We take a limit as the number of terms increases to infinity, and when the limit exists, the result is a definite integral. We develop this idea in Section 5.3. 
+
+We also show that the process of computing these definite integrals is closely connected to finding antiderivatives. This is one of the most important relationships in calculus; it gives us an efficient way to compute definite integrals, providing a simple and powerful method that eliminates the difficulty of directly computing limits of approximations. This connection is captured in the Fundamental Theorem of Calculus.
+
+
+
 ## 5.1 Area and Estimating with Finite Sums
 
-![[842226d492067833dd013465582b476fb4dfcd620107f6355b61ef00b0c09962.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/842226d492067833dd013465582b476fb4dfcd620107f6355b61ef00b0c09962.jpg)
 
 
 
@@ -18,14 +29,14 @@ FIGURE 5.1 The area of the shaded region R cannot be found by a simple formula.
 
 The basis for formulating definite integrals is the construction of approximations by finite sums. In this section we consider three examples of this process: finding the area under a graph, the distance traveled by a moving object, and the average value of a function. Although we have yet to define precisely what we mean by the area of a general region in the plane, or the average value of a function over a closed interval, we do have intuitive ideas of what these notions mean. We begin our approach to integration by approximating these quantities with simpler finite sums related to these intuitive ideas. We then consider what happens when we take more and more terms in the summation process. In subsequent sections we look at taking the limit of these sums as the number of terms goes to infinity, which leads to a precise definition of the definite integral. 
 
-## Area
+### Area
 
 Suppose we want to find the area of the shaded region R that lies above the x-axis, below the graph of $y = 1 - x^{2}$ , and between the vertical lines x = 0 and x = 1 (see Figure 5.1). 
 
-![[32d015918a173b0d0ed2ac283a3e00e9a4b987ceb4fae2a8798623bbfcb6a3c1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/32d015918a173b0d0ed2ac283a3e00e9a4b987ceb4fae2a8798623bbfcb6a3c1.jpg)
 
 
-![[9e9a9df8a654ba90af75e1691ead7877763379170c3d909d9f0f5f3fefc5350d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9e9a9df8a654ba90af75e1691ead7877763379170c3d909d9f0f5f3fefc5350d.jpg)
 
 
 
@@ -60,10 +71,10 @@ $$
 0. 5 3 1 2 5 <   A <   0. 7 8 1 2 5.
 $$
 
-![[932e3b9cea2aed282ec669a7a4e8959731da0f980efb145782075530cb2ebe2d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/932e3b9cea2aed282ec669a7a4e8959731da0f980efb145782075530cb2ebe2d.jpg)
 
 
-![[58924dcb7e765faa7d4fb5c1d18dc1313fc783cd05a51b49aae85e78b46ac690.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/58924dcb7e765faa7d4fb5c1d18dc1313fc783cd05a51b49aae85e78b46ac690.jpg)
 
 
 
@@ -71,14 +82,14 @@ FIGURE 5.4 (a) A lower sum using 16 rectangles of equal width $\Delta x = 1/16$ 
 (b) An upper sum using 16 rectangles.
 
 
-![[47738918a359187d993f8ec4ae418dcd75439781f479d305b48627a13a78f327.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/47738918a359187d993f8ec4ae418dcd75439781f479d305b48627a13a78f327.jpg)
 
 
 
 (a)
 
 
-![[70fa9137d481a3f9ec08b3333d1d474c77d47988f717b5fc068a70601cc70f56.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/70fa9137d481a3f9ec08b3333d1d474c77d47988f717b5fc068a70601cc70f56.jpg)
 
 
 
@@ -117,7 +128,7 @@ TABLE 5.1 Finite approximations for the area of R
 
 <table><tr><td>Number of subintervals</td><td>Lower sum</td><td>Midpoint sum</td><td>Upper sum</td></tr><tr><td>2</td><td>0.375</td><td>0.6875</td><td>0.875</td></tr><tr><td>4</td><td>0.5313</td><td>0.6719</td><td>0.7813</td></tr><tr><td>16</td><td>0.6348</td><td>0.6670</td><td>0.6973</td></tr><tr><td>50</td><td>0.6566</td><td>0.6667</td><td>0.6766</td></tr><tr><td>100</td><td>0.66165</td><td>0.666675</td><td>0.67165</td></tr><tr><td>1000</td><td>0.6661665</td><td>0.66666675</td><td>0.6671665</td></tr></table>
 
-## Distance Traveled
+### Distance Traveled
 
 Suppose we know the velocity function $v(t)$ of a car that moves straight down a highway without changing direction, and we want to know how far it traveled between times $t = a$ and $t = b$ . The position function $s(t)$ of the car has derivative $v(t)$ . If we can find an antiderivative $F(t)$ of $v(t)$ , then we can find the car's position function $s(t)$ by setting $s(t) = F(t) + C$ . The distance traveled can then be found by calculating the change in position, $s(b) - s(a) = F(b) - F(a)$ . However, if the velocity is known only by the readings at various times of a speedometer on the car, then we have no formula for the velocity from which to obtain an antiderivative that gives the position function. So what do we do in this situation? 
 
@@ -191,7 +202,7 @@ $$
 
 It is reasonable to conclude from the table's last entries that the projectile rose about 436 m during its first 3 sec of flight. 
 
-![[76612b8f0dc2447817a2c3f44ce0d9d5b7a32007a36aab125e3254c4733a82fe.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/76612b8f0dc2447817a2c3f44ce0d9d5b7a32007a36aab125e3254c4733a82fe.jpg)
 
 
 
@@ -204,7 +215,7 @@ TABLE 5.2 Travel-distance estimates
 
 <table><tr><td>Number of subintervals</td><td>Length of each subinterval</td><td>Upper sum</td><td>Lower sum</td></tr><tr><td>3</td><td>1</td><td>450.6</td><td>421.2</td></tr><tr><td>6</td><td>1/2</td><td>443.25</td><td>428.55</td></tr><tr><td>12</td><td>1/4</td><td>439.58</td><td>432.23</td></tr><tr><td>24</td><td>1/8</td><td>437.74</td><td>434.06</td></tr><tr><td>48</td><td>1/16</td><td>436.82</td><td>434.98</td></tr><tr><td>96</td><td>1/32</td><td>436.36</td><td>435.44</td></tr><tr><td>192</td><td>1/64</td><td>436.13</td><td>435.67</td></tr></table>
 
-## Displacement Versus Distance Traveled
+### Displacement Versus Distance Traveled
 
 If an object with position function $s(t)$ moves along a coordinate line without changing direction, we can calculate the total distance it travels from t = a to t = b by summing the distance traveled over small intervals, as in Example 1. If the object reverses direction one or more times during the trip, then we need to use the object's speed $|v(t)|$ , which is the absolute value of its velocity function, $v(t)$ , to find the total distance traveled. Using the velocity itself, as in Example 1, gives instead an estimate of the object's displacement, $s(b) - s(a)$ , the difference between its initial and final positions. To see the difference, think about what happens when you walk a kilometer from your home and then walk back. The total distance traveled is two kilometers, but your displacement is zero, because you end up back where you started. 
 
@@ -266,21 +277,21 @@ TABLE 5.4 Travel estimates for a rock blown straight up during the time interval
 
 <table><tr><td>Number of subintervals</td><td>Length of each subinterval</td><td>Displacement</td><td>Total distance</td></tr><tr><td>16</td><td>1/2</td><td>58.8</td><td>161.7</td></tr><tr><td>32</td><td>1/4</td><td>68.6</td><td>164.15</td></tr><tr><td>64</td><td>1/8</td><td>73.5</td><td>165.375</td></tr><tr><td>128</td><td>1/16</td><td>75.95</td><td>165.9875</td></tr><tr><td>256</td><td>1/32</td><td>77.175</td><td>166.29375</td></tr><tr><td>512</td><td>1/64</td><td>77.7875</td><td>166.446875</td></tr></table>
 
-## Average Value of a Nonnegative Continuous Function
+### Average Value of a Nonnegative Continuous Function
 
 The average value of a collection of n numbers $x_{1}, x_{2}, \ldots, x_{n}$ is obtained by adding them together and dividing by n. But what is the average value of a continuous function f on an interval $[a, b]$ ? Such a function can assume infinitely many values. For example, the temperature at a certain location in a town is a continuous function that goes up and down each day. What does it mean to say that the average temperature in the town over the course of a day is 73 degrees? 
 
-![[998ef8c41a077b4cf048c34f6179e005d0b1743155422c5fa95dce0b0304a744.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/998ef8c41a077b4cf048c34f6179e005d0b1743155422c5fa95dce0b0304a744.jpg)
 
 
-![[935839894e36114c40a393accc70b7d06ed2ac12d3d278cde86f69d5cf5281f7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/935839894e36114c40a393accc70b7d06ed2ac12d3d278cde86f69d5cf5281f7.jpg)
 
 
 
 FIGURE 5.6 (a) The average value of $f(x) = c$ on [a, b] is the area of the rectangle divided by b - a. (b) The average value of $g(x)$ on [a, b] is the area beneath its graph divided by b - a.
 
 
-![[5c30f2683c89fbdf7a750e3ad1bbac3cd0c838518282d2c7dc757a56b1b7b1bf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5c30f2683c89fbdf7a750e3ad1bbac3cd0c838518282d2c7dc757a56b1b7b1bf.jpg)
 
 
 
@@ -291,7 +302,7 @@ When a function is constant, this question is easy to answer. A function with co
 
 What if we want to find the average value of a nonconstant function, such as the function g in Figure 5.6b? We can think of this graph as a snapshot of the height of some water that is sloshing around in a tank between enclosing walls at x = a and x = b. As the water moves, its height over each point changes, but its average height remains the same. To get the average height of the water, we let it settle down until it is level and its height is constant. The resulting height c equals the area under the graph of g divided by b - a. We are led to define the average value of a nonnegative function on an interval $[a, b]$ to be the area under its graph divided by b - a. For this definition to be valid, we need a precise understanding of what is meant by the area under a graph. This will be obtained in Section 5.3, but for now we look at an example. 
 
-## **EXAMPLE 3** Estimate the average value of the function $f(x) = \sin x$ on the interval $[0, \pi]$ .
+**EXAMPLE 3** Estimate the average value of the function $f(x) = \sin x$ on the interval $[0, \pi]$ .
 
 **Solution** Looking at the graph of $\sin x$ between 0 and $\pi$ in Figure 5.7, we can see that its average height is somewhere between 0 and 1. To find the average, we need to calculate the area A under the graph and then divide this area by the length of the interval, $\pi - 0 = \pi$ . 
 
@@ -313,7 +324,7 @@ TABLE 5.5 Average value of sin x on $0 \leq x \leq \pi$
 
 As before, we could just as well have used rectangles lying under the graph of $y = \sin x$ and calculated a lower sum approximation, or we could have used the midpoint rule. In each case, the approximations are close to the true area if all the rectangles are sufficiently thin. 
 
-## Summary
+### Summary
 
 The area under the graph of a positive function, the distance traveled by a moving object that doesn't change direction, and the average value of a nonnegative function $f$ over an interval can all be approximated by finite sums constructed in a certain way. First we subdivide the interval into subintervals, treating $f$ as if it were constant over each subinterval. Then we multiply the width of each subinterval by the value of $f$ at some point within it and add these products together. If the interval $[a,b]$ is subdivided into $n$ subintervals of equal widths $\Delta x = (b - a) / n$ , and if $f(c_k)$ is the value of $f$ at the chosen point $c_k$ in the $k$ th subinterval, this process gives a finite sum of the form 
 
@@ -323,9 +334,9 @@ $$
 
 The choices for the $c_{k}$ could maximize or minimize the value of f in the kth subinterval, or give some value in between. The true value lies somewhere between the approximations given by upper sums and lower sums. In the examples that we looked at, the finite sum approximations improved as we took more subintervals of smaller width. 
 
-## EXERCISES 5.1
+### EXERCISES 5.1
 
-## Area
+#### Area
 
 In Exercises 1–4, apply finite approximations to estimate the area under the graph of the function using 
 
@@ -355,7 +366,7 @@ Using rectangles, each of whose height is given by the value of the function at 
 
 8. $f(x) = 4 - x^{2}$ between x = -2 and x = 2. 
 
-## Distance
+#### Distance
 
 9. Distance traveled The accompanying table shows the velocity of a model train engine moving along a track for 10 s. Estimate the distance traveled by the engine using 10 subintervals of length 1 with a. left-endpoint values. 
 
@@ -383,7 +394,7 @@ b. right-endpoint values.
 
 <table><tr><td>Time (h)</td><td>Velocity (km/h)</td><td>Time (h)</td><td>Velocity (km/h)</td></tr><tr><td>0.0</td><td>0</td><td>0.006</td><td>187</td></tr><tr><td>0.001</td><td>64</td><td>0.007</td><td>201</td></tr><tr><td>0.002</td><td>100</td><td>0.008</td><td>212</td></tr><tr><td>0.003</td><td>132</td><td>0.009</td><td>220</td></tr><tr><td>0.004</td><td>154</td><td>0.010</td><td>228</td></tr><tr><td>0.005</td><td>174</td><td></td><td></td></tr></table>
 
-![[769d6a35ed05752a1cde9e3e825b79344768962289384e715a976fd56930c289.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/769d6a35ed05752a1cde9e3e825b79344768962289384e715a976fd56930c289.jpg)
 
 
 a. Use rectangles to estimate how far the car traveled during the 36 s it took to reach 228 km/h. 
@@ -406,7 +417,7 @@ a. Assuming that gravity is the only force acting on the object, give an upper e
 
 b. Find a lower estimate for the height attained after 5 s. 
 
-## Average Value of a Function
+#### Average Value of a Function
 
 In Exercises 15–18, use a finite sum to estimate the average value of f on the given interval by partitioning the interval into four subintervals of equal length and evaluating f at the subinterval midpoints. 
 
@@ -418,19 +429,17 @@ $$
 f (x) = 1 / x \text {   on   } [ 1, 9 ]
 $$
 
-$$
-\mathbf {1 7 .} f (t) = (1 / 2) + \sin^ {2} \pi t \text {   on   } [ 0, 2 ]
-$$
+17. $f (t) = (1 / 2) + \sin^ {2} \pi t \text {   on   } [ 0, 2 ]$
 
-![[beccf5681b5ac3518e54aeb5ddad9e51466ef635adaf1e605d6a40ea90f93223.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/beccf5681b5ac3518e54aeb5ddad9e51466ef635adaf1e605d6a40ea90f93223.jpg)
 
 
 T 18. $f(t) = 1 - \left(\cos \frac{\pi t}{4}\right)^{4}$ on [0, 4] 
 
-![[54126926ae0b4eaa71c7ec46d97112c970cad24f042461b779ae240c0795757b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/54126926ae0b4eaa71c7ec46d97112c970cad24f042461b779ae240c0795757b.jpg)
 
 
-## Estimations
+#### Estimations
 
 19. Water pollution Oil is leaking out of a tanker damaged at sea. The damage to the tanker is worsening as evidenced by the increased leakage each hour, recorded in the following table. 
 
@@ -465,7 +474,7 @@ b. Compute the limit of the area of the inscribed polygon as $n \rightarrow \inf
 
 c. Repeat the computations in parts (a) and (b) for a circle of radius r. 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 23–26, use a CAS to perform the following steps. 
 
@@ -485,7 +494,7 @@ $$
 
 While estimating with finite sums in Section 5.1, we encountered sums that had many terms (up to 1000 terms in Table 5.1). In this section we introduce a notation for sums that have a large number of terms. After describing this notation and its properties, we consider what happens as the number of terms in a sum approaches infinity. 
 
-## Finite Sums and Sigma Notation
+### Finite Sums and Sigma Notation
 
 Sigma notation enables us to write a sum with many terms in the compact form 
 
@@ -497,7 +506,7 @@ $\sum$ is the capital Greek letter sigma
 
 The Greek letter $\sum$ (capital sigma, corresponding to our letter S), stands for “sum.” The index of summation k tells us where the sum begins (at the number below the $\sum$ symbol) and where it ends (at the number above $\sum$ ). Any letter can be used to denote the index, but the letters i, j, k, and n are customary. 
 
-![[4d14671b416ee2efe76f5e4bd8c4d2318b3c6bb203e0075d1504fef5e2ad4dc7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4d14671b416ee2efe76f5e4bd8c4d2318b3c6bb203e0075d1504fef5e2ad4dc7.jpg)
 
 
 Thus we can write the sum of the squares of the numbers 1 through 11 as 
@@ -514,11 +523,11 @@ $$
 
 The starting index does not have to be 1; it can be any integer. 
 
-## **EXAMPLE 1**
+**EXAMPLE 1**
 
 <table><tr><td>A sum in sigma notation</td><td>The sum written out, one term for each value of <eq>k</eq></td><td>The value of the sum</td></tr><tr><td><eq>\sum_{k=1}^{5} k</eq></td><td><eq>1 + 2 + 3 + 4 + 5</eq></td><td>15</td></tr><tr><td><eq>\sum_{k=1}^{3} (-1)^{k} k</eq></td><td><eq>(-1)^{1}(1) + (-1)^{2}(2) + (-1)^{3}(3)</eq></td><td><eq>-1 + 2 - 3 = -2</eq></td></tr><tr><td><eq>\sum_{k=1}^{2} \frac{k}{k+1}</eq></td><td><eq>\frac{1}{1+1} + \frac{2}{2+1}</eq></td><td><eq>\frac{1}{2} + \frac{2}{3} = \frac{7}{6}</eq></td></tr><tr><td><eq>\sum_{k=4}^{5} \frac{k^{2}}{k-1}</eq></td><td><eq>\frac{4^{2}}{4-1} + \frac{5^{2}}{5-1}</eq></td><td><eq>\frac{16}{3} + \frac{25}{4} = \frac{139}{12}</eq></td></tr></table>
 
-## **EXAMPLE 2** Express the sum $1 + 3 + 5 + 7 + 9$ in sigma notation.
+**EXAMPLE 2** Express the sum $1 + 3 + 5 + 7 + 9$ in sigma notation.
 
 **Solution** The formula generating the terms depends on what we choose the lower limit of summation to be, but the terms generated remain the same. It is often simplest to choose the starting index to be k = 0 or k = 1, but we can start with any integer. 
 
@@ -558,7 +567,7 @@ $$
 
 This and three other rules are given below. Proofs of these rules can be obtained using mathematical induction (see Appendix A.3). 
 
-## Algebra Rules for Finite Sums
+### Algebra Rules for Finite Sums
 
 1. Sum Rule: 
 
@@ -588,7 +597,7 @@ $$
 
 (Any number $c$ ) 
 
-## **EXAMPLE 3** We demonstrate the use of the algebra rules.
+**EXAMPLE 3** We demonstrate the use of the algebra rules.
 
 $$
 \text { (a) } \sum_ {k = 1} ^ {n} (3 k - k ^ {2}) = 3 \sum_ {k = 1} ^ {n} k - \sum_ {k = 1} ^ {n} k ^ {2}
@@ -602,9 +611,9 @@ $$
 
 Constant Multiple Rule 
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
-## Carl Friedrich Gauss
+### Carl Friedrich Gauss
 
 (1777-1855) 
 
@@ -666,7 +675,7 @@ $$
 \sum_ {k = 1} ^ {n} k ^ {3} = \left(\frac {n (n + 1)}{2}\right) ^ {2}
 $$
 
-## Limits of Finite Sums
+### Limits of Finite Sums
 
 The finite sum approximations that we considered in Section 5.1 became more accurate as the number of terms increased and the subinterval widths (lengths) narrowed. The next example shows how to calculate a limiting value as the widths of the subintervals go to zero and the number of subintervals grows to infinity. 
 
@@ -698,20 +707,20 @@ $$
 
 The lower sum approximations converge to 2/3. A similar calculation shows that the upper sum approximations also converge to 2/3. Any finite sum approximation $\sum_{k=1}^{n} f(c_k)(1/n)$ also converges to the same value, 2/3. This is because it is possible to show that any finite sum approximation is trapped between the lower and upper sum approximations. For this reason we are led to define the area of the region $R$ as this limiting value. In Section 5.3 we study the limits of such finite approximations in a general setting. 
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
-## Georg Friedrich Bernhard Riemann (1826–1866)
+### Georg Friedrich Bernhard Riemann (1826–1866)
 
 Riemann was born in Hanover, Germany. His doctorate was obtained under the direction of Gauss in the theory of complex variables. He also worked with physicist Wilhelm Weber. He introduced the foundational ideas of differential geometry and contributed to dynamics, non-Euclidean geometry, and computational physics. To know more, visit the companion Website. 
 
-![[bf890eebfde0318a194f260e2d3830dbf39f484f968a0cc0352196c65ffbe2cf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bf890eebfde0318a194f260e2d3830dbf39f484f968a0cc0352196c65ffbe2cf.jpg)
 
 
 
 FIGURE 5.8 A typical continuous function $y = f(x)$ over a closed interval $[a, b]$ .
 
 
-## Riemann Sums
+### Riemann Sums
 
 The theory of limits of finite approximations was made precise by the German mathematician Bernhard Riemann. We now introduce the notion of a Riemann sum, which underlies the theory of the definite integral that will be presented in the next section. 
 
@@ -741,7 +750,7 @@ $$
 \left[ x _ {0}, x _ {1} \right], \left[ x _ {1}, x _ {2} \right], \dots , \left[ x _ {n - 1}, x _ {n} \right].
 $$
 
-## HISTORICAL BIOGRAPHY Richard Dedekind (1831–1916)
+**HISTORICAL BIOGRAPHY Richard Dedekind (1831–1916)**
 
 Dedekind grew up in Germany and in 1850 entered the University of Gottingen. There he studied with Bernhard Riemann and Carl Gauss. Like Gauss, Dedekind preferred to study the theoretical aspects of number theory. His work on irrational numbers gave the subject a logical foundation. 
 
@@ -749,19 +758,19 @@ To know more, visit the companion Website.
 
 The first of these subintervals is $[x_{0}, x_{1}]$ , the second is $[x_{1}, x_{2}]$ , and the kth subinterval is $[x_{k-1}, x_{k}]$ (where k is an integer between 1 and n). 
 
-![[e74e3c46f07f74d38ec2d4f571c3361ab15160e83126d185e0bf662a1fd97f71.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e74e3c46f07f74d38ec2d4f571c3361ab15160e83126d185e0bf662a1fd97f71.jpg)
 
 
 The width of the first subinterval $[x_0, x_1]$ is denoted $\Delta x_1$ , the width of the second $[x_1, x_2]$ is $\Delta x_2$ , and the width of the $k$ th subinterval is $\Delta x_k = x_k - x_{k-1}$ . 
 
-![[4bda995aefa40ff84ce7d07844f058377839fba80e0cddf7b69b821cd49eb346.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4bda995aefa40ff84ce7d07844f058377839fba80e0cddf7b69b821cd49eb346.jpg)
 
 
 If all n subintervals have equal width, then their common width, which we call $\Delta x$ , is equal to $(b - a)/n$ . Using equal width subintervals is often the simplest choice when doing computations. 
 
 In each subinterval we select some point. The point chosen in the kth subinterval $\left[x_{k-1}, x_{k}\right]$ is called $c_{k}$ . Then on each subinterval, we stand a vertical rectangle that stretches from the x-axis to touch the curve at $(c_{k}, f(c_{k}))$ . These rectangles can be above or below the x-axis, depending on whether $f(c_{k})$ is positive or negative, or on the x-axis if $f(c_{k}) = 0$ (see Figure 5.9). 
 
-![[070ea59dc4ae1552790e24bce260c5c73503870837d508e35866e6ce6abfb403.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/070ea59dc4ae1552790e24bce260c5c73503870837d508e35866e6ce6abfb403.jpg)
 
 
 
@@ -778,14 +787,14 @@ $$
 
 The sum $S_{P}$ is called a Riemann sum for f on the interval $[a, b]$ . There are many such sums, depending on the partition P we choose and on the choices of the points $c_{k}$ in the subintervals. For instance, we could choose n subintervals all having equal width $\Delta x = (b - a)/n$ to partition $[a, b]$ , and then choose the point $c_{k}$ to be the right-hand endpoint of each subinterval when forming the Riemann sum (as we did in Example 5). This choice leads to the Riemann sum formula 
 
-![[82296d1aba45123e2191e5d31dc49a736dfae0355ae27717a32584a312ad1d39.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/82296d1aba45123e2191e5d31dc49a736dfae0355ae27717a32584a312ad1d39.jpg)
 
 
 
 (a)
 
 
-![[72bafe101db40076f34b251505ec119016ea71a4f4c2089c20cec55eacb59ee4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/72bafe101db40076f34b251505ec119016ea71a4f4c2089c20cec55eacb59ee4.jpg)
 
 
 
@@ -806,19 +815,29 @@ FIGURE 5.10 The curve of Figure 5.9 with rectangles from finer partitions of $[a
 
 **EXAMPLE 6** The set $P = \{0, 0.2, 0.6, 1, 1.5, 2\}$ is a partition of $[0, 2]$ . There are five subintervals of $P$ : $[0, 0.2], [0.2, 0.6], [0.6, 1], [1, 1.5]$ , and $[1.5, 2]$ : 
 
-![[b59e3c996f777c8ff4b07e69307b275b6fe11d673c276daa496391c96f2b64b9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b59e3c996f777c8ff4b07e69307b275b6fe11d673c276daa496391c96f2b64b9.jpg)
 
 
 The lengths of the subintervals are $\Delta x_{1} = 0.2$ , $\Delta x_{2} = 0.4$ , $\Delta x_{3} = 0.4$ , $\Delta x_{4} = 0.5$ , and $\Delta x_{5} = 0.5$ . The longest subinterval length is 0.5, so the norm of the partition is $||P|| = 0.5$ . In this example, there are two subintervals of this length. 
 
 Any Riemann sum associated with a partition of a closed interval $[a, b]$ defines rectangles that approximate the region between the graph of a continuous function f and the x-axis. Partitions with norm approaching zero lead to collections of rectangles that approximate this region with increasing accuracy, as suggested by Figure 5.10. We will see in the next section that if the function f is continuous over the closed interval $[a, b]$ , then no matter how we choose the partition P and the points $c_{k}$ in its subintervals, the Riemann sums corresponding to these choices will approach a single limiting value as the subinterval widths (which are controlled by the norm of the partition) approach zero. 
 
-## EXERCISES 5.2
+### EXERCISES 5.2
 
-## Sigma Notation
+#### Sigma Notation
 
 Write the sums in Exercises 1–6 without sigma notation. Then evaluate them.
-1. $\sum_{k=1}^{2}\frac{6k}{k+1}$ 2. $\sum_{k=1}^{3}\frac{k-1}{k}$ 3. $\sum_{k=1}^{4}\cos k\pi$ 4. $\sum_{k=1}^{5}\sin k\pi$ 5. $\sum_{k=1}^{3}(-1)^{k+1}\sin\frac{\pi}{k}$ 6. $\sum_{k=1}^{4}(-1)^{k}\cos k\pi$ 
+1. $\sum_{k=1}^{2}\frac{6k}{k+1}$
+
+2. $\sum_{k=1}^{3}\frac{k-1}{k}$
+
+3. $\sum_{k=1}^{4}\cos k\pi$
+
+4. $\sum_{k=1}^{5}\sin k\pi$
+
+5. $\sum_{k=1}^{3}(-1)^{k+1}\sin\frac{\pi}{k}$
+
+6. $\sum_{k=1}^{4}(-1)^{k}\cos k\pi$
 
 7. Which of the following express $1 + 2 + 4 + 8 + 16 + 32$ in sigma notation? a. $\sum_{k=1}^{6} 2^{k-1}$ b. $\sum_{k=0}^{5} 2^k$ c. $\sum_{k=-1}^{4} 2^{k+1}$ 
 
@@ -831,11 +850,19 @@ a. $\sum_{k=2}^{4}\frac{(-1)^{k-1}}{k-1}$ b. $\sum_{k=0}^{2}\frac{(-1)^{k}}{k+1}
 a. $\sum_{k=1}^{4}(k-1)^{2}$ b. $\sum_{k=-1}^{3}(k+1)^{2}$ c. $\sum_{k=-3}^{-1}k^{2}$ 
 
 Express the sums in Exercises 11–16 in sigma notation. The form of your answer will depend on your choice for the starting index.
-11. $1 + 2 + 3 + 4 + 5 + 6$ 12. $1 + 4 + 9 + 16$ 13. $\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16}$ 14. $2 + 4 + 6 + 8 + 10$ 
+11. $1 + 2 + 3 + 4 + 5 + 6$
 
-15. $1 - \frac{1}{2} +\frac{1}{3} -\frac{1}{4} +\frac{1}{5}$ 16. $-\frac{1}{5} +\frac{2}{5} -\frac{3}{5} +\frac{4}{5} -\frac{5}{5}$ 
+12. $1 + 4 + 9 + 16$
 
-## Values of Finite Sums
+13. $\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16}$
+
+14. $2 + 4 + 6 + 8 + 10$
+
+15. $1 - \frac{1}{2} +\frac{1}{3} -\frac{1}{4} +\frac{1}{5}$
+
+16. $-\frac{1}{5} +\frac{2}{5} -\frac{3}{5} +\frac{4}{5} -\frac{5}{5}$
+
+#### Values of Finite Sums
 
 17. Suppose that $\sum_{k=1}^{n} a_k = -5$ and $\sum_{k=1}^{n} b_k = 6$ . Find the values of a. $\sum_{k=1}^{n} 3a_k$ b. $\sum_{k=1}^{n} \frac{b_k}{6}$ c. $\sum_{k=1}^{n} (a_k + b_k)$ 
 
@@ -844,19 +871,27 @@ d. $\sum_{k=1}^{n}(a_k - b_k)$ e. $\sum_{k=1}^{n}(b_k - 2a_k)$
 18. Suppose that $\sum_{k=1}^{n} a_k = 0$ and $\sum_{k=1}^{n} b_k = 1$ . Find the values of
 a. $\sum_{k=1}^{n} 8a_k$ b. $\sum_{k=1}^{n} 250b_k$ c. $\sum_{k=1}^{n} (a_k + 1)$ d. $\sum_{k=1}^{n} (b_k - 1)$ 
 
-## Evaluate the sums in Exercises 19–36.
+#### Evaluate the sums in Exercises 19–36.
 
 19. a. $\sum_{k=1}^{10} k$ b. $\sum_{k=1}^{10} k^2$ c. $\sum_{k=1}^{10} k^3$ 
 
 20. a. $\sum_{k=1}^{13} k$ b. $\sum_{k=1}^{13} k^2$ c. $\sum_{k=1}^{13} k^3$ 
 
-21. $\sum_{k=1}^{7} (-2k)$ 22. $\sum_{k=1}^{5} \frac{\pi k}{15}$ 
+21. $\sum_{k=1}^{7} (-2k)$
 
-23. $\sum_{k=1}^{6}(3 - k^2)$ 24. $\sum_{k=1}^{6}(k^2 - 5)$ 
+22. $\sum_{k=1}^{5} \frac{\pi k}{15}$
 
-25. $\sum_{k=1}^{5} k(3k + 5)$ 26. $\sum_{k=1}^{7} k(2k + 1)$ 
+23. $\sum_{k=1}^{6}(3 - k^2)$
 
-27. $\sum_{k=1}^{5} \frac{k^3}{225} + \left( \sum_{k=1}^{5} k \right)^3$ 28. $\left( \sum_{k=1}^{7} k \right)^2 - \sum_{k=1}^{7} \frac{k^3}{4}$ 
+24. $\sum_{k=1}^{6}(k^2 - 5)$
+
+25. $\sum_{k=1}^{5} k(3k + 5)$
+
+26. $\sum_{k=1}^{7} k(2k + 1)$
+
+27. $\sum_{k=1}^{5} \frac{k^3}{225} + \left( \sum_{k=1}^{5} k \right)^3$
+
+28. $\left( \sum_{k=1}^{7} k \right)^2 - \sum_{k=1}^{7} \frac{k^3}{4}$
 
 29. a. $\sum_{k=1}^{7} 3$ b. $\sum_{k=1}^{500} 7$ c. $\sum_{k=3}^{264} 10$ 
 
@@ -874,7 +909,7 @@ a. $\sum_{k=1}^{n} 8a_k$ b. $\sum_{k=1}^{n} 250b_k$ c. $\sum_{k=1}^{n} (a_k + 1)
 
 36. $\sum_{k=1}^{40} \frac{1}{k(k+1)}$ (Hint: $\frac{1}{k(k+1)} = \frac{1}{k} - \frac{1}{k+1}$ ) 
 
-## Riemann Sums
+### Riemann Sums
 
 In Exercises 37–40, graph each function $f(x)$ over the given interval. Partition the interval into four subintervals of equal length. Then add to your sketch the rectangles associated with the Riemann sum $\sum_{k=1}^{4} f(c_k) \Delta x_k$ , given that $c_k$ is the (a) left-hand endpoint, (b) right-hand endpoint, (c) midpoint of the kth subinterval. (Make a separate sketch for each set of rectangles.) 
 
@@ -888,7 +923,7 @@ In Exercises 37–40, graph each function $f(x)$ over the given interval. Partit
 
 42. Find the norm of the partition $P = \{-2, -1.6, -0.5, 0, 0.8, 1\}$ . 
 
-## Limits of Riemann Sums
+### Limits of Riemann Sums
 
 For the functions in Exercises 43–50, find a formula for the Riemann sum obtained by dividing the interval $[a, b]$ into n equal subintervals and using the right-hand endpoint for each $c_{k}$ . Then take a limit of these sums as $n \to \infty$ to calculate the area under the curve over $[a, b]$ . 
 
@@ -910,7 +945,7 @@ For the functions in Exercises 43–50, find a formula for the Riemann sum obtai
 
 In this section we consider the limit of general Riemann sums as the norm of the partitions of a closed interval $[a, b]$ approaches zero. This limiting process leads us to the definition of the definite integral of a function over a closed interval $[a, b]$ . 
 
-## Definition of the Definite Integral
+### Definition of the Definite Integral
 
 The definition of the definite integral is based on the fact that for some functions, as the norm of the partitions of $[a, b]$ approaches zero, the values of the corresponding Riemann sums approach a limiting value J. In particular, this is true for continuous and piecewise-continuous functions. We again use the symbol $\varepsilon$ to represent a small positive number, and use it to specify how close to J the Riemann sum must be. The symbol $\delta$ is used for a second small positive number that specifies how small the norm of a partition must be in order for the Riemann sum to differ from J by no more than $\varepsilon$ . We now define this limit precisely. 
 
@@ -942,7 +977,7 @@ $$
 
 We read this as “the integral from a to b of f of x dee x” or sometimes as “the integral from a to b of f of x with respect to x.” The component parts in the integral symbol also have names: 
 
-![[6bb9dc246c639cfeb392bd51da0e9d876d17164da87071dca85f69395524cf88.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6bb9dc246c639cfeb392bd51da0e9d876d17164da87071dca85f69395524cf88.jpg)
 
 
 When the definite integral exists, we say that the Riemann sums of $f$ on $[a, b]$ converge to the definite integral $J = \int_{a}^{b} f(x) dx$ and that $f$ is integrable over $[a, b]$ . 
@@ -977,7 +1012,7 @@ $$
 
 No matter how we write the integral, it is still the same number, the limit of the Riemann sums as the norm of the partition approaches zero. Since it does not matter what letter we use, the variable of integration is called a dummy variable. In the three integrals given above, the dummy variables are t, u, and x. 
 
-## Integrable and Nonintegrable Functions
+### Integrable and Nonintegrable Functions
 
 Not every function defined over a closed interval $[a, b]$ is integrable even if the function is bounded. That is, the Riemann sums for some functions might not converge to the same limiting value, or to any value at all. Understanding which functions defined over $[a, b]$ are integrable and which are not requires advanced mathematical analysis, but fortunately most functions that commonly occur in applications are integrable. In particular, every continuous function over $[a, b]$ is integrable over this interval, and so is every function that has no more than a finite number of jump discontinuities on $[a, b]$ . (See Figures 1.9 and 1.10. Such functions are called piecewise continuous functions, and they are defined in Additional Exercises 11–18 at the end of this chapter.) The following theorem, which is proved in more advanced courses, establishes these results. 
 
@@ -987,7 +1022,7 @@ The idea behind Theorem 1 for continuous functions is given in Exercises 86 and 
 
 For integrability to fail, a function needs to be sufficiently discontinuous that the region between its graph and the x-axis cannot be approximated well by increasingly thin rectangles. Our first example is a function that is not integrable over a closed interval. 
 
-## **EXAMPLE 1** The function
+**EXAMPLE 1** The function
 
 $$
 f (x) = \left\{ \begin{array}{l l} 1, & \text { if   } x \text {   is   rational }, \\ 0, & \text { if   } x \text {   is   irrational }, \end{array} \right.
@@ -1015,7 +1050,7 @@ Thus making different choices for the points $c_{k}$ results in different limits
 
 Theorem 1 says nothing about how to calculate definite integrals. A method of calculation will be developed in Section 5.4, through a connection of definite integrals to antiderivatives. Meanwhile, finite approximations can be used to calculate an approximation for a definite integral. 
 
-## The Midpoint Rule
+### The Midpoint Rule
 
 When setting up a Riemann sum 
 
@@ -1043,7 +1078,7 @@ $$
 
 The midpoint rule becomes more powerful when we can combine it with an error bound that tells us how close the approximation it gives with n intervals is to the integral. In Chapter 8 we will examine error bounds in approximations of integrals. 
 
-## Properties of Definite Integrals
+### Properties of Definite Integrals
 
 In defining $\int_{a}^{b}f(x)dx$ as a limit of sums $\sum_{k=1}^{n}f(c_{k})\Delta x_{k}$ , we moved from left to right across the interval [a,b]. What would happen if we instead move right to left, starting with $x_{0}=b$ and ending at $x_{n}=a$ ? Each $\Delta x_{k}$ in the Riemann sum would change its sign, with $x_{k}-x_{k-1}$ now negative instead of positive. With the same choices of $c_{k}$ in each subinterval, the sign of any Riemann sum would change, as would the sign of the limit, the integral $\int_{b}^{a}f(x)dx$ . Since we have not previously given a meaning to integrating backward, we are led to define 
 
@@ -1057,7 +1092,7 @@ $$
 \int_ {a} ^ {a} f (x)   d x = 0. \quad \begin{array}{l} a \text {   is   both   the   lower   and   the } \\ \text { upper   limit   of   integration. } \end{array}
 $$
 
-## TABLE 5.6 Rules satisfied by definite integrals
+**TABLE 5.6 Rules satisfied by definite integrals**
 
 1. Order of Integration: $\int_{b}^{a}f(x)dx = -\int_{a}^{b}f(x)dx$ A definition 
 
@@ -1095,10 +1130,10 @@ $$
 \begin{array}{l l} (\min f) \cdot (b - a) = (\min f) \cdot \sum_ {k = 1} ^ {n} \Delta x _ {k} & \sum_ {k = 1} ^ {n} \Delta x _ {k} = b - a \\ = \sum_ {k = 1} ^ {n} (\min f) \cdot \Delta x _ {k} & \text { Constant   Multiple   Rule } \\ \leq \sum_ {k = 1} ^ {n} f (c _ {k}) \Delta x _ {k} & \min f \leq f (c _ {k}) \\ \leq \sum_ {k = 1} ^ {n} (\max f) \cdot \Delta x _ {k} & f (c _ {k}) \leq \max f \\ = (\max f) \cdot \sum_ {k = 1} ^ {n} \Delta x _ {k} & \text { Constant   Multiple   Rule } \\ = (\max f) \cdot (b - a). \end{array}
 $$
 
-![[1aa400c283713b702c621cfa61c04987e25adca097156e9dfdea8f6bd59b987c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1aa400c283713b702c621cfa61c04987e25adca097156e9dfdea8f6bd59b987c.jpg)
 
 
-![[ef4fb7f4e6dc9e58bcbd2f53ec9dd5e48f1fdf37c953bc3f5ab6fb03e89ff46c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ef4fb7f4e6dc9e58bcbd2f53ec9dd5e48f1fdf37c953bc3f5ab6fb03e89ff46c.jpg)
 
 
 
@@ -1109,7 +1144,7 @@ $$
 (b) Constant Multiple: $(k = 2)$
 
 
-![[c8bbe5ecccb4389aef753a959ae2f7a27b79d6249795249e4702444435ce1867.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c8bbe5ecccb4389aef753a959ae2f7a27b79d6249795249e4702444435ce1867.jpg)
 
 
 $$
@@ -1128,13 +1163,13 @@ $$
 \int_ {a} ^ {b} (f (x) + g (x)) d x = \int_ {a} ^ {b} f (x) d x + \int_ {a} ^ {b} g (x) d x
 $$
 
-![[1e068f68bd6258f22a0cfa981b3117eb67b675396aea20d40deac45ce49c5c76.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1e068f68bd6258f22a0cfa981b3117eb67b675396aea20d40deac45ce49c5c76.jpg)
 
 
-![[a5b217e9217903439ba5dbbc6c9165917829613cf20361c92c60eb7dd2390ece.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a5b217e9217903439ba5dbbc6c9165917829613cf20361c92c60eb7dd2390ece.jpg)
 
 
-![[15d09213232af2f4cf0adb00986538efb2aad3431268c16b3873be53cd198bfd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/15d09213232af2f4cf0adb00986538efb2aad3431268c16b3873be53cd198bfd.jpg)
 
 
 
@@ -1203,14 +1238,14 @@ $$
 \int_ {0} ^ {1} \sqrt {1 + \cos x} d x \leq \sqrt {2} \cdot (1 - 0) = \sqrt {2}.
 $$
 
-![[cd4a7c17780a2bc9150d9c3a11e56e253c60af58a3245cb28967ced7fb6d862a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cd4a7c17780a2bc9150d9c3a11e56e253c60af58a3245cb28967ced7fb6d862a.jpg)
 
 
 
 FIGURE 5.12 The region in Example 5 is a triangle.
 
 
-## Area Under the Graph of a Nonnegative Function
+### Area Under the Graph of a Nonnegative Function
 
 We now return to the problem that started this chapter, which is defining what we mean by the area of a region having a curved boundary. In Section 5.1 we approximated the area under the graph of a nonnegative continuous function using several types of finite sums of areas of rectangles that approximate the region—upper sums, lower sums, and sums using the midpoints of each subinterval—all of which are Riemann sums constructed in special ways. Theorem 1 guarantees that all of these Riemann sums converge to a single definite integral as the norm of the partitions approaches zero and the number of subintervals goes to infinity. As a result, we can now define the area under the graph of a nonnegative integrable function to be the value of that definite integral. 
 
@@ -1240,21 +1275,21 @@ $$
 
 (b) Since the area equals the definite integral for a nonnegative function, we can quickly derive the definite integral by using the formula for the area of a triangle having base length $b$ and height $y = b$ . The area is $A = (1/2)b \cdot b = b^2/2$ . Again we conclude that $\int_0^b x dx = b^2/2$ . 
 
-![[a7d3734d7dc8c7f2002d5e980f69e21622930185f6847571032fecd61b059ef0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a7d3734d7dc8c7f2002d5e980f69e21622930185f6847571032fecd61b059ef0.jpg)
 
 
 
 (a)
 
 
-![[b896dced32c08242abc1259701a8cc2111449c3b24c964522cbe1bdd9f17b57a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b896dced32c08242abc1259701a8cc2111449c3b24c964522cbe1bdd9f17b57a.jpg)
 
 
 
 (b)
 
 
-![[323b8cd8b574996c9a7bede0f9705387c0945dfbc8920a3925b180b270a048fa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/323b8cd8b574996c9a7bede0f9705387c0945dfbc8920a3925b180b270a048fa.jpg)
 
 
 
@@ -1265,7 +1300,7 @@ $$
 FIGURE 5.13 (a) The area of this trapezoidal region is $A = (b^2 - a^2)/2$ . (b) The definite integral in Equation (2) gives the negative of the area of this trapezoidal region. (c) The definite integral in Equation (2) gives the area of the blue triangular region added to the negative of the area of the tan triangular region.
 
 
-![[1e1d90db8d065c81181a186d9a61875472250412bba0505099fa7a4b7b8cbeba.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1e1d90db8d065c81181a186d9a61875472250412bba0505099fa7a4b7b8cbeba.jpg)
 
 
 
@@ -1304,7 +1339,7 @@ $$
 \int_ {a} ^ {b} x ^ {2} d x = \frac {b ^ {3}}{3} - \frac {a ^ {3}}{3}, \quad a <   b\tag{4}
 $$
 
-## Average Value of a Continuous Function Revisited
+### Average Value of a Continuous Function Revisited
 
 In Section 5.1 we informally introduced the average value of a nonnegative continuous function f over an interval $[a, b]$ , leading us to define this average as the area under the graph of $y = f(x)$ divided by b - a. In integral notation we write this as 
 
@@ -1334,7 +1369,7 @@ The average of the samples is obtained by dividing a Riemann sum for $f$ on $[a,
 
 So the average value of f on the interval $[1,3]$ is $(1/2)(4)=2$ . 
 
-![[58f426b208f8f4de6bc476c73e84bc0aeb014cb75beece4828dd6976e12d1d7a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/58f426b208f8f4de6bc476c73e84bc0aeb014cb75beece4828dd6976e12d1d7a.jpg)
 
 
 **EXAMPLE 7** Find the average value of $f(x) = \sqrt{4 - x^{2}}$ on $[-2, 2]$ . 
@@ -1363,7 +1398,7 @@ $$
 
 Notice that the average value of f over $[-2, 2]$ is the same as the height of a rectangle over $[-2, 2]$ whose area equals the area of the upper semicircle (see Figure 5.15). 
 
-## EXERCISES 5.3
+### EXERCISES 5.3
 
 Interpreting Limits of Sums as Integrals 
 
@@ -1407,7 +1442,7 @@ d. $\int_{2}^{5}f(x)dx$
 
 e. $\int_{1}^{5}[f(x) - g(x)]dx$ f. $\int_{1}^{5}[4f(x) - g(x)]dx$ 
 
-## 10. Suppose that $f$ and $h$ are integrable and that
+10. Suppose that $f$ and $h$ are integrable and that
 
 $\int_{1}^{9}f(x)dx = -1,\quad \int_{7}^{9}f(x)dx = 5,\quad \int_{7}^{9}h(x)dx = 4.$ 
 
@@ -1451,7 +1486,7 @@ a. $\int_3^4 f(z)dz$ b. $\int_4^3 f(t)dt$
 14. Suppose that $h$ is integrable and that $\int_{-1}^{1} h(r) dr = 0$ and $\int_{-1}^{3} h(r) dr = 6$ . Find
 a. $\int_{1}^{3} h(r) dr$ b. $-\int_{3}^{1} h(u) du$ 
 
-## Using Known Areas to Find Integrals
+#### Using Known Areas to Find Integrals
 
 In Exercises 15–22, graph the integrands and use known area formulas to evaluate the integrals. 
 
@@ -1473,19 +1508,27 @@ In Exercises 15–22, graph the integrands and use known area formulas to evalua
 
 Use known area formulas to evaluate the integrals in Exercises 23–28. 
 
-23. $\int_0^b\frac{x}{2} dx,\quad b > 0$ 24. $\int_0^b 4xdx,\quad b > 0$ 
+23. $\int_0^b\frac{x}{2} dx,\quad b > 0$
 
-25. $\int_{a}^{b} 2s ds, \quad 0 < a < b$ 26. $\int_{a}^{b} 3t dt, \quad 0 < a < b$ 
+24. $\int_0^b 4xdx,\quad b > 0$
+
+25. $\int_{a}^{b} 2s ds, \quad 0 < a < b$
+
+26. $\int_{a}^{b} 3t dt, \quad 0 < a < b$
 
 27. $f(x) = \sqrt{4 - x^2}$ on a. $[-2, 2]$ , b. $[0, 2]$ 
 
 28. $f(x) = 3x + \sqrt{1 - x^2}$ on a. $[-1,0]$ , b. $[-1,1]$ 
 
-## Evaluating Definite Integrals
+#### Evaluating Definite Integrals
 
 Use the results of Equations (2) and (4) to evaluate the integrals in Exercises 29–40. 
 
-29. $\int_{1}^{\sqrt{2}}x dx$ 30. $\int_{0.5}^{2.5}x dx$ 31. $\int_{\pi}^{2\pi}\theta d\theta$ 
+29. $\int_{1}^{\sqrt{2}}x dx$
+
+30. $\int_{0.5}^{2.5}x dx$
+
+31. $\int_{\pi}^{2\pi}\theta d\theta$
 
 32. $\int_{\sqrt{2}}^{5\sqrt{2}}rdr$ 
 
@@ -1499,15 +1542,17 @@ Use the results of Equations (2) and (4) to evaluate the integrals in Exercises 
 
 37. $\int_{a}^{2a}x dx$ 
 
-38. $\int_{a}^{\sqrt{3}}x dx$ 39. $\int_0^{\sqrt[3]{b}}x^2 dx$ 40. $\int_0^{3b}x^2 dx$ 
+38. $\int_{a}^{\sqrt{3}}x dx$
+
+39. $\int_0^{\sqrt[3]{b}}x^2 dx$
+
+40. $\int_0^{3b}x^2 dx$
 
 Use the rules in Table 5.6 and Equations (2)-(4) to evaluate the integrals in Exercises 41-50. 
 
 41. $\int_{3}^{1}7dx$ 
 
-$$
-\int_ {0} ^ {2} 5 x d x
-$$
+42. $\int_ {0} ^ {2} 5 x d x$
 
 43. $\int_0^2 (2t - 3)dt$ 
 
@@ -1525,33 +1570,39 @@ $$
 
 50. $\int_1^0 (3x^2 + x - 5)dx$ 
 
-## Finding Area by Definite Integrals
+#### Finding Area by Definite Integrals
 
 In Exercises 51–54, use a definite integral to find the area of the region between the given curve and the x-axis on the interval $[0, b]$ . 
 
 51. $y = 3x^{2}$ 
 
-53. $y = 2x$ 
-
 52. $y = \pi x^{2}$ 
+
+53. $y = 2x$ 
 
 54. $y = \frac{x}{2} + 1$ 
 
-## Finding Average Value
+#### Finding Average Value
 
 In Exercises 55–62, graph the function and find its average value over the given interval. 
 
-55. $f(x) = x^2 - 1$ on $[0, \sqrt{3}]$ 56. $f(x) = -\frac{x^2}{2}$ on $[0, 3]$ 
+55. $f(x) = x^2 - 1$ on $[0, \sqrt{3}]$
 
-57. $f(x) = -3x^{2} - 1$ on [0,1] 58. $f(x) = 3x^{2} - 3$ on [0,1] 
+56. $f(x) = -\frac{x^2}{2}$ on $[0, 3]$
 
-59. $f(t) = (t - 1)^2$ on [0,3] 60. $f(t) = t^2 - t$ on $[-2,1]$ 
+57. $f(x) = -3x^{2} - 1$ on [0,1]
+
+58. $f(x) = 3x^{2} - 3$ on [0,1]
+
+59. $f(t) = (t - 1)^2$ on [0,3]
+
+60. $f(t) = t^2 - t$ on $[-2,1]$
 
 61. $g(x) = |x| - 1$ on a. $[-1,1]$ , b. $[1,3]$ , and c. $[-1,3]$ 
 
 62. $h(x) = -|x|$ on a. $[-1,0]$ , b. $[0,1]$ , and c. $[-1,1]$ 
 
-## Definite Integrals as Limits of Sums
+#### Definite Integrals as Limits of Sums
 
 Use the method of Example 5a or Equation (1) to evaluate the definite integrals in Exercises 63–70. 
 
@@ -1571,7 +1622,7 @@ Use the method of Example 5a or Equation (1) to evaluate the definite integrals 
 
 70. $\int_0^1 (3x - x^3)dx$ 
 
-## Theory and Examples
+#### Theory and Examples
 
 71. What values of a and b, with a < b, maximize the value of 
 
@@ -1585,17 +1636,9 @@ $$
 
 $$
 \int_ {a} ^ {b} (x ^ {4} - 2 x ^ {2}) d x?
-$$
-
-73. Use the Max-Min Inequality to find upper and lower bounds for the value of 
-
-$$
+73. $Use the Max-Min Inequality to find upper and lower bounds for the value of$
 \int_ {0} ^ {1} \frac {1}{1 + x ^ {2}} d x.
-$$
-
-74. (Continuation of Exercise 73.) Use the Max-Min Inequality to find upper and lower bounds for 
-
-$$
+74. $(Continuation of Exercise 73.) Use the Max-Min Inequality to find upper and lower bounds for$
 \int_ {0} ^ {0. 5} \frac {1}{1 + x ^ {2}} d x \quad \text { and } \quad \int_ {0. 5} ^ {1} \frac {1}{1 + x ^ {2}} d x.
 $$
 
@@ -1613,11 +1656,7 @@ $$
 
 $$
 f (x) \geq 0 \quad \text { on } \quad [ a, b ] \Rightarrow \int_ {a} ^ {b} f (x)   d x \geq 0.
-$$
-
-78. Integrals of nonpositive functions show that if $f$ is integrable, then 
-
-$$
+78. $Integrals of nonpositive functions show that if $f$ is integrable, then$
 f (x) \leq 0 \quad \text { on } \quad [ a, b ] \Rightarrow \int_ {a} ^ {b} f (x) d x \leq 0.
 $$
 
@@ -1645,7 +1684,7 @@ $$
 
 Do these rules ever hold? Give reasons for your answers. 
 
-## 83. Upper and lower sums for increasing functions
+83. Upper and lower sums for increasing functions
 
 a. Suppose the graph of a continuous function $f(x)$ rises steadily as $x$ moves from left to right across an interval $[a, b]$ . Let $P$ be a partition of $[a, b]$ into $n$ subintervals of equal length $\Delta x = (b - a) / n$ . Show by referring to the accompanying figure that the difference between the upper and lower sums for f on this partition can be represented graphically as the area of a rectangle R whose dimensions are $[f(b) - f(a)]$ by $\Delta x$ . (Hint: The difference U - L is the sum of areas of rectangles whose diagonals $Q_{0}Q_{1}, Q_{1}Q_{2}, \ldots, Q_{n-1}Q_{n}$ lie approximately along the curve. There is no overlapping when these rectangles are shifted horizontally onto R.) 
 
@@ -1657,7 +1696,7 @@ $$
 
 where $\Delta x_{max}$ is the norm of P, and that hence $\lim_{||P||\to0}(U-L)=0$ . 
 
-![[7cc808c1b10dcd75e441165f72cc0395aa74a0aa73d6820b4ce66b03d6074801.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7cc808c1b10dcd75e441165f72cc0395aa74a0aa73d6820b4ce66b03d6074801.jpg)
 
 
 84. Upper and lower sums for decreasing functions (Continuation of Exercise 83.) 
@@ -1710,16 +1749,16 @@ and the shaded regions in the second part of the figure.
 
 c. Explain the connection between $U - L$ and the shaded regions along the curve in the third part of the figure. 
 
-![[8a9295814af51de3244b6d6b7279bc5920d13968b8393af3ae057a3c933582b4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8a9295814af51de3244b6d6b7279bc5920d13968b8393af3ae057a3c933582b4.jpg)
 
 
-![[5396593cdf75a9dbcedeafb05fb839346c8de8a9c55b1e87914cfe0f22c281c9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5396593cdf75a9dbcedeafb05fb839346c8de8a9c55b1e87914cfe0f22c281c9.jpg)
 
 
-![[72847003a17180a4cb4173593e6b3c58af665371abdf639b7fd9f7f58a9f1079.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/72847003a17180a4cb4173593e6b3c58af665371abdf639b7fd9f7f58a9f1079.jpg)
 
 
-![[29cf9cb5a951c8e6eb4141d40758bbbe525d2680468e68125f10a0a5c3108ca4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/29cf9cb5a951c8e6eb4141d40758bbbe525d2680468e68125f10a0a5c3108ca4.jpg)
 
 
 
@@ -1730,19 +1769,19 @@ c. Explain the connection between $U - L$ and the shaded regions along the curve
 
 89. Integrals of functions that are equal except at one point Suppose that $f(x)$ is a continuous function over the interval $[a, b]$ and that $g(x)$ is a function on $[a, b]$ such that $g(x) = f(x)$ except at a single point $c \in [a, b]$ . Show that $g(x)$ is also integrable over $[a, b]$ and that $\int_{a}^{b} g(x) dx = \int_{a}^{b} f(x) dx$ . (Hint: For a given $n$ , by how much can two different Riemann sums as given in Equation (1) differ?) 
 
-## 90. Some integrable functions that are not continuous
+90. Some integrable functions that are not continuous
 
 a. The floor function $f(x) = \lfloor x \rfloor$ gives the greatest integer smaller than or equal to x (Example 5 of Section 1.1). This function is not continuous on the interval [1, 3]. Show that f is integrable on [1, 3] and that $\int_{1}^{3} \lfloor x \rfloor dx = 3$ . 
 
 b. The function $f(x) = \left\{ \begin{array}{l} -1 \text{ if } x < 0, \\ 2 \text{ if } 0 \leq x, \end{array} \right.$ is not continuous on the interval $[-1, 1]$ . Show that $f$ is integrable on $[-1, 1]$ and that $\int_{-1}^{1} f(x) dx = 1$ . 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 If your CAS can draw rectangles associated with Riemann sums, use it to draw rectangles associated with Riemann sums that converge to the integrals in Exercises 91–96. Use n = 4, 10, 20, and 50 subintervals of equal length in each case. 
 
-$$
-\mathbf {9 1 .} \int_ {0} ^ {1} (1 - x) d x = \frac {1}{2} \quad \mathbf {9 2 .} \int_ {0} ^ {1} (x ^ {2} + 1) d x = \frac {4}{3}
-$$
+91. $\int_ {0} ^ {1} (1 - x) d x = \frac {1}{2}$
+
+92. $\int_ {0} ^ {1} (x ^ {2} + 1) d x = \frac {4}{3}$
 
 $$
 \int_ {- \pi} ^ {\pi} \cos x d x = 0 \quad 9 3. \int_ {0} ^ {\pi / 4} \sec^ {2} x d x = 1
@@ -1790,7 +1829,7 @@ on [2,5]
 
 ## 5.4 The Fundamental Theorem of Calculus
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
 Sir Isaac Newton 
 
@@ -1798,7 +1837,7 @@ Sir Isaac Newton
 
 In his youth in England, Newton was interested in mechanical devices and their underlying theories. He even constructed lanterns and windmills that he designed. During the 1670s and 1680s, he built his reputation as a scientific genius. His contributions included the theory of universal gravitation, the laws of motion, methods of calculus, and the composition of white light. To know more, visit the companion Website. 
 
-![[1e3d52b4d6ba801a69dc7eb8e3fbee882aa14b37c727646da19f13b5200906aa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1e3d52b4d6ba801a69dc7eb8e3fbee882aa14b37c727646da19f13b5200906aa.jpg)
 
 
 
@@ -1809,7 +1848,7 @@ $$
 f (c) (b - a) = \int_ {a} ^ {b} f (x) d x.
 $$
 
-![[d71fd606fefa8b17bea8a4d8ab0f47e309eebbd7ce7e5089e063ea78c8727fd4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d71fd606fefa8b17bea8a4d8ab0f47e309eebbd7ce7e5089e063ea78c8727fd4.jpg)
 
 
 
@@ -1820,7 +1859,7 @@ In this section we present the Fundamental Theorem of Calculus, which is the cen
 
 Along the way, we will present an integral version of the Mean Value Theorem, which is another important theorem of integral calculus and is used to prove the Fundamental Theorem. We also find that the net change of a function over an interval is the integral of its rate of change, as suggested by Example 2 in Section 5.1. 
 
-## Mean Value Theorem for Definite Integrals
+### Mean Value Theorem for Definite Integrals
 
 In the previous section we defined the average value of a continuous function over a closed interval $[a, b]$ to be the definite integral $\int_{a}^{b} f(x) \, dx$ divided by the length or width b - a of the interval. The Mean Value Theorem for Definite Integrals asserts that this average value is always taken on at least once by the function f in the interval. 
 
@@ -1857,21 +1896,21 @@ $$
 \operatorname{av} (f) = \frac {1}{b - a} \int_ {a} ^ {b} f (x) d x = \frac {1}{b - a} \cdot 0 = 0.
 $$
 
-![[2c0e745beda92c0b63ad8d6a3d4832b1927f2d8005e22cc5620b6755277be659.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2c0e745beda92c0b63ad8d6a3d4832b1927f2d8005e22cc5620b6755277be659.jpg)
 
 
 
 FIGURE 5.18 The function $f(x) = 9x^{2} - 16x + 4$ satisfies $\int_0^2 f(x)dx = 0$ , and there are two values of $c$ in the interval [0, 2] where $f(c) = 0$ .
 
 
-![[e81694b01d8eaba33b175b8fed84af8f33ed07b83d46aeda9d44f8d5029c7836.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e81694b01d8eaba33b175b8fed84af8f33ed07b83d46aeda9d44f8d5029c7836.jpg)
 
 
 
 FIGURE 5.19 The function $F(x)$ defined by Equation (1) gives the area under the graph of f from a to x when f is nonnegative and x > a.
 
 
-![[3825347590c010b52dd476b9b8c94510d3845082fedc1088d938497472302de3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3825347590c010b52dd476b9b8c94510d3845082fedc1088d938497472302de3.jpg)
 
 
 
@@ -1880,7 +1919,7 @@ FIGURE 5.20 In Equation (1), $F(x)$ is the area to the left of $x$ . Also, $F(x 
 
 By the Mean Value Theorem for Definite Integrals, $f$ assumes this value at some point $c \in [a, b]$ . This is illustrated in Figure 5.18 for the function $f(x) = 9x^2 - 16x + 4$ on the interval [0, 2]. 
 
-## Fundamental Theorem, Part 1
+### Fundamental Theorem, Part 1
 
 It can be very difficult to compute definite integrals by taking the limit of Riemann sums. We now develop a powerful new method for evaluating definite integrals, based on using antiderivatives. This method combines the two strands of calculus. One strand involves the idea of taking the limits of finite sums to obtain a definite integral, and the other strand contains derivatives and antiderivatives. They come together in the Fundamental Theorem of Calculus. We begin by considering how to differentiate a certain type of function that is described as an integral. 
 
@@ -2015,7 +2054,7 @@ $$
 
 and therefore F is differentiable at x. Since differentiability implies continuity, this also shows that F is continuous on the open interval $(a, b)$ . To complete the proof, we just have to show that F is also continuous at x = a and x = b. To do this, we make a very similar argument, except that at x = a we need only consider the one-sided limit as $h \rightarrow 0^{+}$ , and similarly at x = b we need only consider $h \rightarrow 0^{-}$ . This shows that F has a one-sided derivative at x = a and at x = b, and therefore Theorem 1 in Section 3.2 implies that F is continuous at those two points. 
 
-## Fundamental Theorem, Part 2 (The Evaluation Theorem)
+### Fundamental Theorem, Part 2 (The Evaluation Theorem)
 
 We now come to the second part of the Fundamental Theorem of Calculus. This part describes how to evaluate definite integrals without having to calculate limits of Riemann sums. Instead we find and evaluate an antiderivative at the upper and lower limits of integration. 
 
@@ -2079,7 +2118,7 @@ $$
 
 Exercise 82 offers another proof of the Evaluation Theorem, bringing together the ideas of Riemann sums, the Mean Value Theorem, and the definition of the definite integral. 
 
-## The Integral of a Rate
+### The Integral of a Rate
 
 We can interpret Part 2 of the Fundamental Theorem in another way. If F is any antiderivative of f, then $F' = f$ . The equation in the theorem can then be rewritten as 
 
@@ -2089,7 +2128,7 @@ $$
 
 Now $F'(x)$ represents the rate of change of the function $F(x)$ with respect to x, so the last equation asserts that the integral of $F'$ is just the net change in F as x changes from a to b. Formally, we have the following result. 
 
-## THEOREM 5—The Net Change Theorem
+**THEOREM 5—The Net Change Theorem**
 
 The net change in a differentiable function $F(x)$ over an interval $a \leq x \leq b$ is the integral of its rate of change: 
 
@@ -2097,7 +2136,7 @@ $$
 F (b) - F (a) = \int_ {a} ^ {b} F ^ {\prime} (x) d x.\tag{6}
 $$
 
-## **EXAMPLE 4** Here are several interpretations of the Net Change Theorem.
+**EXAMPLE 4** Here are several interpretations of the Net Change Theorem.
 
 (a) If $c(x)$ is the cost of producing x units of a certain commodity, then $c'(x)$ is the marginal cost (Section 3.4). From Theorem 5, 
 
@@ -2129,7 +2168,7 @@ we see that the Net Change Theorem also says that the final value of a function 
 
 (b) Find the total distance traveled during this time period. 
 
-## **Solution**
+**Solution**
 
 (a) From Example 4b, the displacement is the integral 
 
@@ -2147,17 +2186,17 @@ $$
 
 Again, this calculation agrees with our conclusion in Example 2, Section 5.1. That is, the total distance of 166.6 m traveled by the rock during the time period $0 \leq t \leq 8$ is (i) the maximum height of 122.5 m it reached over the time interval [0, 5] plus (ii) the additional distance of 44.1 m the rock fell over the time interval [5, 8]. 
 
-![[dea7fc65b545a38e876e0c17d20b7599dbcfe7d691ef33a201ced74ff9ec0337.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dea7fc65b545a38e876e0c17d20b7599dbcfe7d691ef33a201ced74ff9ec0337.jpg)
 
 
-![[a7992f203a217de440876bb5e45b24c151f0a40e2ccc7d634a3a1e106474bc93.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a7992f203a217de440876bb5e45b24c151f0a40e2ccc7d634a3a1e106474bc93.jpg)
 
 
 
 FIGURE 5.21 These graphs enclose the same amount of area with the x-axis, but the definite integrals of the two functions over $[-2, 2]$ differ in sign (Example 6).
 
 
-## The Relationship Between Integration and Differentiation
+### The Relationship Between Integration and Differentiation
 
 The conclusions of the Fundamental Theorem tell us several things. Equation (2) can be rewritten as 
 
@@ -2173,7 +2212,7 @@ $$
 
 so that if you first differentiate the function F and then integrate the result, you get the function F back (adjusted by an integration constant). In a sense, the processes of integration and differentiation are “inverses” of each other. The Fundamental Theorem also says that every continuous function f has an antiderivative F. It shows the importance of finding antiderivatives in order to evaluate definite integrals easily. Furthermore, it says that the differential equation $dy/dx = f(x)$ has a solution (namely, any of the functions $y = F(x) + C$ ) when f is a continuous function. 
 
-## Total Area
+### Total Area
 
 Area is always a nonnegative quantity. The Riemann sum approximations contain terms such as $f(c_k) \Delta x_k$ that give the area of a rectangle when $f(c_k)$ is positive. When $f(c_k)$ is negative, then the product $f(c_k) \Delta x_k$ is the negative of the rectangle's area. When we add up such terms for a negative function, we get the negative of the area between the curve and the $x$ -axis. If we then take the absolute value, we obtain the correct positive area. 
 
@@ -2199,14 +2238,14 @@ $$
 
 To compute the area of the region bounded by the graph of a function $y = f(x)$ and the x-axis when the function takes on both positive and negative values, we must be careful to break up the interval $[a, b]$ into subintervals on which the function doesn't change sign. Otherwise, we might get cancelation between positive and negative signed areas, leading to an incorrect total. The correct total area is obtained by adding the absolute value of the definite integral over each subinterval where $f(x)$ does not change sign. The term “area” will be taken to mean this total area. 
 
-![[d279f26d48107b991f83d057b087663c2e8c2cb78d63656dec5d4a4d6969cdbc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d279f26d48107b991f83d057b087663c2e8c2cb78d63656dec5d4a4d6969cdbc.jpg)
 
 
 
 FIGURE 5.22 The total area between $y = \sin x$ and the $x$ -axis for $0 \leq x \leq 2\pi$ is the sum of the absolute values of two integrals (Example 7).
 
 
-![[287f3c7974acfced462f4dd5640376be4009c78d780015ed83edad497a13cd9b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/287f3c7974acfced462f4dd5640376be4009c78d780015ed83edad497a13cd9b.jpg)
 
 
 
@@ -2219,7 +2258,7 @@ FIGURE 5.23 The region between the curve $y = x^{3} - x^{2} - 2x$ and the x-axis
 
 (b) the area between the graph of $f(x)$ and the x-axis over $[0, 2\pi]$ . 
 
-## **Solution**
+**Solution**
 
 (a) The definite integral for $f(x) = \sin x$ is given by 
 
@@ -2279,7 +2318,7 @@ $$
 \text { Total   enclosed   area } = \frac {5}{1 2} + \left| - \frac {8}{3} \right| = \frac {3 7}{1 2}
 $$
 
-## EXERCISES 5.4
+### EXERCISES 5.4
 
 Evaluating Integrals 
 
@@ -2363,12 +2402,22 @@ In Exercises 35–38, guess an antiderivative for the integrand function. Valida
 
 38. $\int_0^{\pi /3}\sin^2 x\cos xdx$ 
 
-## Derivatives of Integrals
+#### Derivatives of Integrals
 
 Find the derivatives in Exercises 39–44.
 a. by evaluating the integral and differentiating the result.
 b. by differentiating the integral directly.
-39. $\frac{d}{dx}\int_{0}^{\sqrt{x}}\cos t dt$ 40. $\frac{d}{dx}\int_{1}^{\sin x}3t^{2}dt$ 41. $\frac{d}{dt}\int_{0}^{t^{4}}\sqrt{u}du$ 42. $\frac{d}{d\theta}\int_{0}^{\tan\theta}\sec^{2}ydy$ 43. $\frac{d}{dx}\int_{0}^{x^{3}}e^{-t}dt$ 44. $\frac{d}{dt}\int_{0}^{\sqrt{t}}\left(x^{4}+\frac{3}{\sqrt{1-x^{2}}}\right)dx$ 
+39. $\frac{d}{dx}\int_{0}^{\sqrt{x}}\cos t dt$
+
+40. $\frac{d}{dx}\int_{1}^{\sin x}3t^{2}dt$
+
+41. $\frac{d}{dt}\int_{0}^{t^{4}}\sqrt{u}du$
+
+42. $\frac{d}{d\theta}\int_{0}^{\tan\theta}\sec^{2}ydy$
+
+43. $\frac{d}{dx}\int_{0}^{x^{3}}e^{-t}dt$
+
+44. $\frac{d}{dt}\int_{0}^{\sqrt{t}}\left(x^{4}+\frac{3}{\sqrt{1-x^{2}}}\right)dx$
 
 Find $dy / dx$ in Exercises 45-56. 
 
@@ -2400,13 +2449,9 @@ Area
 
 In Exercises 57–60, find the total area between the region and the x-axis. 
 
-$$
-5 7. y = - x ^ {2} - 2 x, \quad - 3 \leq x \leq 2
-$$
+57. $y = - x ^ {2} - 2 x, \quad - 3 \leq x \leq 2$
 
-$$
-\mathbf {5 8 .} y = 3 x ^ {2} - 3, \quad - 2 \leq x \leq 2
-$$
+58. $y = 3 x ^ {2} - 3, \quad - 2 \leq x \leq 2$
 
 59. $y = x^{3} - 3x^{2} + 2x,\quad 0 \leq x \leq 2$ 
 
@@ -2418,14 +2463,14 @@ Find the areas of the shaded regions in Exercises 61–64.
 61.
 
 
-![[216c4b9fcab7427f298c400031950d5c7a6e28fb5206ee6ad35d21b72e564b06.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/216c4b9fcab7427f298c400031950d5c7a6e28fb5206ee6ad35d21b72e564b06.jpg)
 
 
 
 62.
 
 
-![[965e36c6617e104e1420f34b384d08a274e9c73f2b02ba059619f782ddbbb8d9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/965e36c6617e104e1420f34b384d08a274e9c73f2b02ba059619f782ddbbb8d9.jpg)
 
 
 
@@ -2436,10 +2481,10 @@ Find the areas of the shaded regions in Exercises 61–64.
 64.
 
 
-![[d84a5fe5c40e723984732b2f96a6b00fe99310f6888cc6a1050aa8bdae8a95f1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d84a5fe5c40e723984732b2f96a6b00fe99310f6888cc6a1050aa8bdae8a95f1.jpg)
 
 
-![[dbe739b14840340f745f9dae206995f70fab7ec6747bafa5fea3defc90be2694.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dbe739b14840340f745f9dae206995f70fab7ec6747bafa5fea3defc90be2694.jpg)
 
 
 Initial Value Problems 
@@ -2462,27 +2507,19 @@ $$
 \mathbf {d}. y = \int_ {\pi} ^ {x} \frac {1}{t} d t - 3
 $$
 
-$$
-\mathbf {6 5 .} \frac {d y}{d x} = \frac {1}{x}, \quad y (\pi) = - 3
-$$
+65. $\frac {d y}{d x} = \frac {1}{x}, \quad y (\pi) = - 3$
 
 $$
 \mathbf {6 6 .} y ^ {\prime} = \sec x, \quad y (- 1) = 4
-$$
-
-$$
-6 7. y ^ {\prime} = \sec x, \quad y (0) = 4
-$$
-
-$$
+67. $$y ^ {\prime} = \sec x, \quad y (0) = 4$$
 \mathbf {6 8 .} y ^ {\prime} = \frac {1}{x}, \quad y (1) = - 3
 $$
 
 Express the solutions of the initial value problems in Exercises 69 and 70 in terms of integrals. 
 
-$$
-\mathbf {6 9 .} \frac {d y}{d x} = \sec x, \quad y (2) = 3 \quad \mathbf {7 0 .} \frac {d y}{d x} = \sqrt {1 + x ^ {2}}, \quad y (1) = - 2
-$$
+69. $\frac {d y}{d x} = \sec x, \quad y (2) = 3$
+
+70. $\frac {d y}{d x} = \sqrt {1 + x ^ {2}}, \quad y (1) = - 2$
 
 For Exercises 71 and 72, find a function f satisfying each equation. 
 
@@ -2546,11 +2583,7 @@ $$
 
 $$
 \text {   at   } x = 1.
-$$
-
-82. Find the linearization of 
-
-$$
+82. $Find the linearization of$
 g (x) = 3 + \int_ {1} ^ {x ^ {2}} \sec (t - 1) d t
 $$
 
@@ -2578,7 +2611,7 @@ f. The graph of g has an inflection point at x = 1.
 
 g. The graph of $dg / dx$ crosses the $x$ -axis at $x = 1$ . 
 
-## 84. Another proof of the Evaluation Theorem
+84. Another proof of the Evaluation Theorem
 
 a. Let $a = x_{0} < x_{1} < x_{2} \cdots < x_{n} = b$ be any partition of $[a, b]$ , and let F be any antiderivative of f. Show that 
 
@@ -2592,11 +2625,7 @@ c. From part (b) and the definition of the definite integral, show that
 
 $$
 F (b) - F (a) = \int_ {a} ^ {b} f (x) d x.
-$$
-
-85. Suppose that $f$ is the differentiable function shown in the accompanying graph and that the position at time $t$ (in s) of a particle moving along a coordinate axis is 
-
-$$
+85. $Suppose that $f$ is the differentiable function shown in the accompanying graph and that the position at time $t$ (in s) of a particle moving along a coordinate axis is$
 s = \int_ {0} ^ {t} f (x) d x
 $$
 
@@ -2622,7 +2651,7 @@ g. On which side of the origin does the particle lie at time t = 9?
 
 86. Find $\lim_{x\to \infty}\frac{1}{\sqrt{x}}\int_1^x\frac{dt}{\sqrt{t}}.$ 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 87–90, let $F(x) = \int_{a}^{x} f(t) dt$ for the specified function f and interval $[a, b]$ . Use a CAS to perform the following steps and answer the questions posed. 
 
@@ -2638,11 +2667,7 @@ d. Calculate the derivative $f'$ and plot it together with $F$ . What can you se
 
 $$
 \mathbf {8 8 .} f (x) = 2 x ^ {4} - 1 7 x ^ {3} + 4 6 x ^ {2} - 4 3 x + 1 2, \quad \left[ 0, \frac {9}{2} \right]
-$$
-
-89. $f(x) = \sin 2x\cos \frac{x}{3},[0,2\pi ]$ 
-
-$$
+89. $$f(x) = \sin 2x\cos \frac{x}{3},[0,2\pi ]$$
 \mathbf {9 0 .} f (x) = x \cos \pi x, [ 0, 2 \pi ]
 $$
 
@@ -2656,21 +2681,13 @@ c. Calculate $F''(x)$ and determine its zero. Identify the local extrema and the
 
 d. Using the information from parts (a)-(c), draw a rough handsketch of $y = F(x)$ over its domain. Then graph $F(x)$ on your CAS to support your sketch. 
 
-$$
-\mathbf {9 1 .} a = 1, \quad u (x) = x ^ {2}, \quad f (x) = \sqrt {1 - x ^ {2}}
-$$
+91. $a = 1, \quad u (x) = x ^ {2}, \quad f (x) = \sqrt {1 - x ^ {2}}$
 
-$$
-9 2. a = 0, \quad u (x) = x ^ {2}, \quad f (x) = \sqrt {1 - x ^ {2}}
-$$
+92. $a = 0, \quad u (x) = x ^ {2}, \quad f (x) = \sqrt {1 - x ^ {2}}$
 
-$$
-9 3. a = 0, \quad u (x) = 1 - x, \quad f (x) = x ^ {2} - 2 x - 3
-$$
+93. $a = 0, \quad u (x) = 1 - x, \quad f (x) = x ^ {2} - 2 x - 3$
 
-$$
-\mathbf {9 4 .} a = 0, \quad u (x) = 1 - x ^ {2}, \quad f (x) = x ^ {2} - 2 x - 3
-$$
+94. $a = 0, \quad u (x) = 1 - x ^ {2}, \quad f (x) = x ^ {2} - 2 x - 3$
 
 In Exercises 95 and 96, assume that $f$ is continuous and $u(x)$ is twice-differentiable. 
 
@@ -2698,7 +2715,7 @@ We must keep in mind the difference between definite and indefinite integrals. A
 
 So far, we have only been able to find antiderivatives of functions that are clearly recognizable as derivatives. In this section we begin to develop more general techniques for finding antiderivatives of functions. 
 
-## Substitution: Running the Chain Rule Backwards
+### Substitution: Running the Chain Rule Backwards
 
 If $u$ is a differentiable function of $x$ , and $n$ is any number different from -1, the Chain Rule tells us that 
 
@@ -2762,7 +2779,7 @@ $$
 
 The substitutions in Examples 1 and 2 are instances of the following general rule. 
 
-## THEOREM 6—The Substitution Rule
+**THEOREM 6—The Substitution Rule**
 
 If $u = g(x)$ is a differentiable function whose range is an interval I, and f is continuous on I, then 
 
@@ -2810,7 +2827,7 @@ $$
 
 There is another approach to this problem. With $u = 7\theta + 3$ and du = 7 d $\theta$ as before, we solve for $d\theta$ to obtain $d\theta = (1/7)du$ . Then the integral becomes 
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
 Birkhoff attended Harvard and the University of Chicago. He received his PhD from Chicago in 1907 for his dissertation on differential equations. He also worked on the four-color problem (colors required to produce a map) and applying mathematics to aesthetics in art, poetry, and music. 
 
@@ -2880,7 +2897,7 @@ $$
 \begin{array}{l l} \int \tan x d x = \ln | \sec x | + C & \int \sec x d x = \ln | \sec x + \tan x | + C \\ \int \cot x d x = \ln | \sin x | + C & \int \csc x d x = - \ln | \csc x + \cot x | + C \end{array}
 $$
 
-## Trying Different Substitutions
+### Trying Different Substitutions
 
 The success of the substitution method depends on finding a substitution that changes an integral we cannot directly evaluate into one that we can. Finding the right substitution gets easier with practice and experience. If your first substitution fails, try another substitution, possibly coupled with other algebraic or trigonometric simplifications to the integrand. Several more complicated types of substitutions will be studied in Chapter 8. 
 
@@ -2902,9 +2919,9 @@ $$
 \begin{array}{l l} \int \frac {2 z d z}{\sqrt [ 3 ]{z ^ {2} + 1}} = \int \frac {3 u ^ {2} d u}{u} & \text { Let } u = \sqrt [ 3 ]{z ^ {2} + 1}, \\ & u ^ {2} = z ^ {2} + 1, 3 u ^ {2} d u = 2 z d z. \\ = 3 \int u d u \\ = 3 \cdot \frac {u ^ {2}}{2} + C & \text { Integrate }. \\ = \frac {3}{2} (z ^ {2} + 1) ^ {2 / 3} + C & \text { Replace } u \text { by } (z ^ {2} + 1) ^ {1 / 3}. \end{array}
 $$
 
-## EXERCISES 5.5
+### EXERCISES 5.5
 
-## Evaluating Indefinite Integrals
+#### Evaluating Indefinite Integrals
 
 In Exercises 1–16, make the given substitutions to evaluate the indefinite integrals. 
 
@@ -2916,19 +2933,7 @@ In Exercises 1–16, make the given substitutions to evaluate the indefinite int
 
 4. $\int \frac{4x^3}{(x^4 + 1)^2} dx, u = x^4 + 1$ 
 
-27. $\int r^2\left(\frac{r^3}{18} - 1\right)^5 dr$ 
-
-29. $\int x^{1 / 2}\sin (x^{3 / 2} + 1)dx$ 
-
 5. $\int (3x + 2)(3x^2 +4x)^4 dx,\quad u = 3x^2 +4x$ 
-
-30. $\int \csc \left(\frac{v - \pi}{2}\right)\cot \left(\frac{v - \pi}{2}\right)d\nu$ 
-
-25. $\int \sin^5\frac{x}{3}\cos \frac{x}{3} dx$ 
-
-31. $\int \frac{\sin(2t + 1)}{\cos^2(2t + 1)} dt$ 
-
-23. $\int \sec^2 (3x + 2)dx$ 
 
 6. $\int \frac{(1 + \sqrt{x})^{1 / 3}}{\sqrt{x}} dx, u = 1 + \sqrt{x}$ 
 
@@ -2938,75 +2943,25 @@ $$
 
 7. $\int \sin 3x dx, u = 3x$ 
 
-32. $\int \frac{\sec z \tan z}{\sqrt{\sec z}} dz$ 
-
-35. $\int \frac{1}{\theta^2}\sin \frac{1}{\theta}\cos \frac{1}{\theta} d\theta$ 
-
-34. $\int \frac{1}{\sqrt{t}}\cos (\sqrt{t} +3)dt$ 
-
 8. $\int x\sin (2x^{2})dx,\quad u = 2x^{2}$ 
-
-37. $\int \frac{x}{\sqrt{1 + x}} dx$ 
-
-36. $\int \frac{\cos\sqrt{\theta}}{\sqrt{\theta}\sin^2\sqrt{\theta}} d\theta$ 
 
 9. $\int \sec 2t\tan 2tdt,u = 2t$ 
 
-28. $\int r^4\left(7 - \frac{r^5}{10}\right)^3 dr$ 
-
-39. $\int \frac{1}{x^2}\sqrt{2 - \frac{1}{x}} dx$ 
-
-38. $\int \sqrt{\frac{x - 1}{x^5}} dx$ 
-
-26. $\int \tan^7\frac{x}{2}\sec^2\frac{x}{2} dx$ 
-
-40. $\int \frac{1}{x^3}\sqrt{\frac{x^2 - 1}{x^2}} dx$ 
-
 10. $\int \left(1 - \cos \frac{t}{2}\right)^2\sin \frac{t}{2} dt,\quad u = 1 - \cos \frac{t}{2}$ 
-
-41. $\int \sqrt{\frac{x^3 - 3}{x^{11}}} dx$ 
-
-24. $\int \tan^2 x\sec^2 xdx$ 
-
-43. $\int x(x - 1)^{10}dx$ 
-
-42. $\int \sqrt{\frac{x^4}{x^3 - 1}} dx$ 
 
 11. $\int \frac{9r^2dr}{\sqrt{1 - r^3}}, u = 1 - r^3$ 
 
-44. $\int x\sqrt{4 - x} dx$ 
-
 12. $\int 12(y^4 + 4y^2 + 1)^2 (y^3 + 2y)dy,\quad u = y^4 + 4y^2 + 1$ 
-
-45. $\int (x + 1)^2 (1 - x)^5 dx$ 
-
-46. $\int (x + 5)(x - 5)^{1 / 3}dx$ 
 
 13. $\int \sqrt{x}\sin^2 (x^{3 / 2} - 1)dx,\quad u = x^{3 / 2} - 1$ 
 
-48. $\int 3x^{5}\sqrt{x^{3} + 1} dx$ 
-
 14. $\int \frac{1}{x^2}\cos^2\left(\frac{1}{x}\right)dx,\quad u = \frac{1}{x}$ 
-
-47. $\int x^{3}\sqrt{x^{2} + 1} dx$ 
-
-50. $\int \frac{x}{(2x - 1)^{2 / 3}} dx$ 
 
 15. $\int \csc^2 2\theta \cot 2\theta d\theta$ a. Using $u = \cot 2\theta$ b. Using $u = \csc 2\theta$ 
 
-49. $\int \frac{x}{(x^2 - 4)^3} dx$ 
-
-52. $\int (\sin 2\theta)e^{\sin^2\theta}d\theta$ 
-
 16. $\int \frac{dx}{\sqrt{5x + 8}}$ a. Using $u = 5x + 8$ b. Using $u = \sqrt{5x + 8}$ 
 
-51. $\int (\cos x)e^{\sin x}dx$ 
-
-54. $\int \frac{1}{x^2} e^{1 / x}\sec (1 + e^{1 / x})\tan (1 + e^{1 / x})dx$ 
-
 Evaluate the integrals in Exercises 17–66. 
-
-53. $\int \frac{1}{\sqrt{x}e^{-\sqrt{x}}}\sec^2 (e^{\sqrt{x}} + 1)dx$ 
 
 17. $\int \sqrt{3 - 2s} ds$ 
 
@@ -3016,17 +2971,79 @@ Evaluate the integrals in Exercises 17–66.
 
 20. $\int 3y\sqrt{7 - 3y^2} dy$ 
 
+21. $\int \frac{1}{\sqrt{x} (1 + \sqrt{x})^2} dx$ 
+
 22. $\int \sqrt{\sin x} \cos^3 x dx$ 
 
-56. $\int \frac{\ln\sqrt{t}}{t} dt$ 
+23. $\int \sec^2 (3x + 2)dx$ 
 
-21. $\int \frac{1}{\sqrt{x} (1 + \sqrt{x})^2} dx$ 
+24. $\int \tan^2 x\sec^2 xdx$ 
+
+25. $\int \sin^5\frac{x}{3}\cos \frac{x}{3} dx$ 
+
+26. $\int \tan^7\frac{x}{2}\sec^2\frac{x}{2} dx$ 
+
+27. $\int r^2\left(\frac{r^3}{18} - 1\right)^5 dr$ 
+
+28. $\int r^4\left(7 - \frac{r^5}{10}\right)^3 dr$ 
+
+29. $\int x^{1 / 2}\sin (x^{3 / 2} + 1)dx$ 
+
+30. $\int \csc \left(\frac{v - \pi}{2}\right)\cot \left(\frac{v - \pi}{2}\right)d\nu$ 
+
+31. $\int \frac{\sin(2t + 1)}{\cos^2(2t + 1)} dt$ 
+
+32. $\int \frac{\sec z \tan z}{\sqrt{\sec z}} dz$ 
+
+34. $\int \frac{1}{\sqrt{t}}\cos (\sqrt{t} +3)dt$ 
+
+35. $\int \frac{1}{\theta^2}\sin \frac{1}{\theta}\cos \frac{1}{\theta} d\theta$ 
+
+36. $\int \frac{\cos\sqrt{\theta}}{\sqrt{\theta}\sin^2\sqrt{\theta}} d\theta$ 
+
+37. $\int \frac{x}{\sqrt{1 + x}} dx$ 
+
+38. $\int \sqrt{\frac{x - 1}{x^5}} dx$ 
+
+39. $\int \frac{1}{x^2}\sqrt{2 - \frac{1}{x}} dx$ 
+
+40. $\int \frac{1}{x^3}\sqrt{\frac{x^2 - 1}{x^2}} dx$ 
+
+41. $\int \sqrt{\frac{x^3 - 3}{x^{11}}} dx$ 
+
+42. $\int \sqrt{\frac{x^4}{x^3 - 1}} dx$ 
+
+43. $\int x(x - 1)^{10}dx$ 
+
+44. $\int x\sqrt{4 - x} dx$ 
+
+45. $\int (x + 1)^2 (1 - x)^5 dx$ 
+
+46. $\int (x + 5)(x - 5)^{1 / 3}dx$ 
+
+47. $\int x^{3}\sqrt{x^{2} + 1} dx$ 
+
+48. $\int 3x^{5}\sqrt{x^{3} + 1} dx$ 
+
+49. $\int \frac{x}{(x^2 - 4)^3} dx$ 
+
+50. $\int \frac{x}{(2x - 1)^{2 / 3}} dx$ 
+
+51. $\int (\cos x)e^{\sin x}dx$ 
+
+52. $\int (\sin 2\theta)e^{\sin^2\theta}d\theta$ 
+
+53. $\int \frac{1}{\sqrt{x}e^{-\sqrt{x}}}\sec^2 (e^{\sqrt{x}} + 1)dx$ 
+
+54. $\int \frac{1}{x^2} e^{1 / x}\sec (1 + e^{1 / x})\tan (1 + e^{1 / x})dx$ 
 
 55. $\int \frac{dx}{x\ln x}$ 
 
-58. $\int \frac{dx}{x\sqrt{x^4 - 1}}$ 
+56. $\int \frac{\ln\sqrt{t}}{t} dt$ 
 
 57. $\int \frac{dz}{1 + e^z}$ 
+
+58. $\int \frac{dx}{x\sqrt{x^4 - 1}}$ 
 
 59. $\int \frac{5}{9 + 4r^2} dr$ 
 
@@ -3096,11 +3113,11 @@ Solve the initial value problems in Exercises 73–78.
 
 There are two methods for evaluating a definite integral by substitution. One method is to find an antiderivative using substitution and then to evaluate the definite integral by applying the Evaluation Theorem. The other method extends the process of substitution directly to definite integrals by changing the limits of integration. We will use these methods to compute the area between two curves. 
 
-## The Substitution Formula
+### The Substitution Formula
 
 The following formula shows how the limits of integration change when we apply a substitution to an integral. 
 
-## THEOREM 7—Substitution in Definite Integrals
+**THEOREM 7—Substitution in Definite Integrals**
 
 If $g'$ is continuous on the interval $[a, b]$ and $f$ is continuous on the range of $g(x) = u$ , then 
 
@@ -3154,14 +3171,14 @@ $$
 \begin{array}{l l} \int_ {- \pi / 4} ^ {\pi / 4} \tan x   d x = \int_ {- \pi / 4} ^ {\pi / 4} \frac {\sin x}{\cos x}   d x \\ = - \int_ {\sqrt {2} / 2} ^ {\sqrt {2} / 2} \frac {d u}{u} & \text { Let } u = \cos x, d u = - \sin x   d x. \\ & \text { When } x = - \pi / 4, u = \sqrt {2} / 2. \\ & \text { When } x = \pi / 4, u = \sqrt {2} / 2. \\ = 0 & \text { Zero width interval } \end{array}
 $$
 
-## Definite Integrals of Symmetric Functions
+### Definite Integrals of Symmetric Functions
 
 The Substitution Formula in Theorem 7 simplifies the calculation of definite integrals of even and odd functions (Section 1.1) over a symmetric interval $[-a, a]$ (Figure 5.24). 
 
-![[d6ddafbeae16ef2425552be9093d28e519e6452af3c3e999257dcb3cb3247f21.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d6ddafbeae16ef2425552be9093d28e519e6452af3c3e999257dcb3cb3247f21.jpg)
 
 
-![[a6901fcb6f1bbad15ca25fd7ab3ff98f5173c783a6a2341dfa6d763178d565db.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a6901fcb6f1bbad15ca25fd7ab3ff98f5173c783a6a2341dfa6d763178d565db.jpg)
 
 
 
@@ -3178,21 +3195,21 @@ THEOREM 8 Let $f$ be continuous on the symmetric interval $[-a, a]$ .
 
 (b) If $f$ is odd, then $\int_{-a}^{a} f(x) dx = 0$ . 
 
-![[fe04729ca24e21638e0ff0e75757f061444683e6e544ceee304b3881fb30c65c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fe04729ca24e21638e0ff0e75757f061444683e6e544ceee304b3881fb30c65c.jpg)
 
 
 
 FIGURE 5.25 The region between the curves $y = f(x)$ and $y = g(x)$ and the lines $x = a$ and $x = b$ .
 
 
-![[fe3d12cd41ec989076506c2e3d97ba55239be29c5535bed748d43ba3a4373eac.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fe3d12cd41ec989076506c2e3d97ba55239be29c5535bed748d43ba3a4373eac.jpg)
 
 
 
 FIGURE 5.26 We approximate the region with rectangles perpendicular to the x-axis.
 
 
-![[34e5c3947522c6db6ee5ad5d37cc95f83407c89c057340470af0bd5d72155f79.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/34e5c3947522c6db6ee5ad5d37cc95f83407c89c057340470af0bd5d72155f79.jpg)
 
 
 
@@ -3215,7 +3232,7 @@ $$
 \begin{array}{r l} \int_ {- 2} ^ {2} x ^ {4} - 4 x ^ {2} + 6 d x & = 2 \int_ {0} ^ {2} x ^ {4} - 4 x ^ {2} + 6 d x \\ & = 2 \left[ \frac {x ^ {5}}{5} - \frac {4}{3} x ^ {3} + 6 x \right] _ {0} ^ {2} \\ & = 2 \left(\frac {3 2}{5} - \frac {3 2}{3} + 1 2\right) = \frac {2 3 2}{1 5}. \end{array}
 $$
 
-## Areas Between Curves
+### Areas Between Curves
 
 Suppose we want to find the area of a region that is bounded above by the curve $y = f(x)$ , below by the curve $y = g(x)$ , and on the left and right by the lines x = a and x = b (Figure 5.25). The region might accidentally have a shape whose area we could find with geometry, but if f and g are arbitrary continuous functions, we usually have to find the area by computing an integral. 
 
@@ -3237,14 +3254,14 @@ $$
 A = \lim _ {\| P \| \rightarrow 0} \sum_ {k = 1} ^ {n} \left[ f \left(c _ {k}\right) - g \left(c _ {k}\right)\right] \Delta x _ {k} = \int_ {a} ^ {b} [ f (x) - g (x) ] d x.
 $$
 
-![[46c8f980ed7b5bd259080876b985da1ebf4a3a3cfabe7cbf836a43609751e7ef.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/46c8f980ed7b5bd259080876b985da1ebf4a3a3cfabe7cbf836a43609751e7ef.jpg)
 
 
 
 FIGURE 5.28 The region in Example 4 with a typical approximating rectangle.
 
 
-![[f747064a8a35492c163fd83e9e2a4bb5ce68c4acac322b0b65909ca21a027ae4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f747064a8a35492c163fd83e9e2a4bb5ce68c4acac322b0b65909ca21a027ae4.jpg)
 
 
 
@@ -3283,7 +3300,7 @@ $$
 
 If the formula for a bounding curve changes at one or more points, we subdivide the region into subregions that correspond to the formula changes and apply the formula for the area between curves to each subregion. 
 
-![[f03c7bf107b8b943d0b5dcd5cb2ba3753c04ddd120ba127fd1d5fcd9b34b6f20.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f03c7bf107b8b943d0b5dcd5cb2ba3753c04ddd120ba127fd1d5fcd9b34b6f20.jpg)
 
 
 
@@ -3312,13 +3329,13 @@ $$
 \begin{array}{l} \text { Total   area } = \underbrace {\int_ {0} ^ {2} \sqrt {x} d x} _ {\text { area   of   A }} + \underbrace {\int_ {2} ^ {4} (\sqrt {x} - x + 2) d x} _ {\text { area   of   B }} \\ = \left[ \frac {2}{3} x ^ {3 / 2} \right] _ {0} ^ {2} + \left[ \frac {2}{3} x ^ {3 / 2} - \frac {x ^ {2}}{2} + 2 x \right] _ {2} ^ {4} \\ = \frac {2}{3} (2) ^ {3 / 2} - 0 + \left(\frac {2}{3} (4) ^ {3 / 2} - 8 + 8\right) - \left(\frac {2}{3} (2) ^ {3 / 2} - 2 + 4\right) \\ = \frac {2}{3} (8) - 2 = \frac {1 0}{3}. \end{array}
 $$
 
-## Integration with Respect to y
+### Integration with Respect to y
 
 If a region's bounding curves are described by functions of $y$ , the approximating rectangles are horizontal instead of vertical, and the basic formula has $y$ in place of $x$ . 
 
 To find the areas of regions like these: 
 
-![[811a42432322143beaf2dc55d0cdf1682ae9c26cfa5b53a95e0c6478658d6e9b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/811a42432322143beaf2dc55d0cdf1682ae9c26cfa5b53a95e0c6478658d6e9b.jpg)
 
 
 
@@ -3329,7 +3346,7 @@ $$
 A = \int_ {c} ^ {d} [ f (y) - g (y) ] d y.
 $$
 
-![[00337c47ea45c8486c2327a81b477b1049b93cba53059cb78b13c26732570d58.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/00337c47ea45c8486c2327a81b477b1049b93cba53059cb78b13c26732570d58.jpg)
 
 
 
@@ -3338,7 +3355,7 @@ FIGURE 5.31 It takes two integrations to find the area of this region if we inte
 
 In this equation $f$ always denotes the right-hand curve and $g$ the left-hand curve, so $f(y) - g(y)$ is nonnegative. 
 
-## **EXAMPLE 7** Find the area of the region in Example 6 by integrating with respect to y.
+**EXAMPLE 7** Find the area of the region in Example 6 by integrating with respect to y.
 
 **Solution** We first sketch the region and a typical horizontal rectangle based on a partition of an interval of $y$ -values (Figure 5.31). The region's right-hand boundary is the line $x = y + 2$ , so $f(y) = y + 2$ . The left-hand boundary is the curve $x = y^2$ , so $g(y) = y^2$ . The lower limit of integration is $y = 0$ . We find the upper limit by solving $x = y + 2$ and $x = y^2$ simultaneously for $y$ : 
 
@@ -3358,7 +3375,7 @@ $$
 \begin{array}{l} A = \int_ {c} ^ {d} [ f (y) - g (y) ] d y = \int_ {0} ^ {2} [ y + 2 - y ^ {2} ] d y \\ = \int_ {0} ^ {2} [ 2 + y - y ^ {2} ] d y \\ = \left[ 2 y + \frac {y ^ {2}}{2} - \frac {y ^ {3}}{3} \right] _ {0} ^ {2} \\ = 4 + \frac {4}{2} - \frac {8}{3} = \frac {1 0}{3}. \end{array}
 $$
 
-![[fff859756efbd4af286958f24e2c1bd7cf00112c12ceec85e61ddf321df59ba8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fff859756efbd4af286958f24e2c1bd7cf00112c12ceec85e61ddf321df59ba8.jpg)
 
 
 This is the result of Example 6, found with less work. 
@@ -3369,9 +3386,9 @@ $$
 \begin{array}{r l} \text { Area } & = \int_ {0} ^ {4} \sqrt {x} d x - \frac {1}{2} (2) (2) \\ & = \left. \frac {2}{3} x ^ {3 / 2} \right] _ {0} ^ {4} - 2 \\ & = \frac {2}{3} (8) - 0 - 2 = \frac {1 0}{3}. \end{array}
 $$
 
-## EXERCISES 5.6
+### EXERCISES 5.6
 
-## Evaluating Definite Integrals
+#### Evaluating Definite Integrals
 
 Evaluating Definite Integrals
 Use the Substitution Formula in Theorem 7 to evaluate the integrals in Exercises 1–48.
@@ -3381,67 +3398,201 @@ Use the Substitution Formula in Theorem 7 to evaluate the integrals in Exercises
 
 b. $\int_{2\pi}^{3\pi} 3\cos^2 x \sin x dx$ 
 
-29. $\int_{1}^{2}\frac{2\ln x}{x} dx$ 
-
-30. $\int_{2}^{4}\frac{dx}{x\ln x}$ 
-
 5. a. $\int_0^1 t^3 (1 + t^4)^3 dt$ 
 
 b. $\int_{-1}^{1} t^3 (1 + t^4)^3 dt$ 
-
-31. $\int_{2}^{4}\frac{dx}{x(\ln x)^{2}}$ 
-
-32. $\int_{2}^{16}\frac{dx}{2x\sqrt{\ln x}}$ 
 
 6. a. $\int_0^{\sqrt{7}}t(t^2 +1)^{1 / 3}dt$ 
 
 b. $\int_{-\sqrt{7}}^{0}t(t^2 +1)^{1 / 3}dt$ 
 
-33. $\int_0^{\pi /2}\tan \frac{x}{2} dx$ 
-
-34. $\int_{\pi /4}^{\pi /2}\cot tdt$ 
-
 7. a. $\int_{-1}^{1}\frac{5r}{(4 + r^2)^2} dr$ 
 
 b. $\int_0^1\frac{5r}{(4 + r^2)^2} dr$ 
-
-35. $\int_0^{\pi /3}\tan^2\theta \cos \theta d\theta$ 
-
-36. $\int_0^{\pi /12}6\tan 3x dx$ 
 
 8. a. $\int_0^1\frac{10\sqrt{v}}{(1 + v^{3 / 2})^2} dv$ 
 
 b. $\int_{1}^{4}\frac{10\sqrt{v}}{(1 + v^{3/2})^2} dv$ 
 
-37. $\int_{-\pi /2}^{\pi /2}\frac{2\cos\theta d\theta}{1 + (\sin\theta)^2}$ 
-
-38. $\int_{\pi /6}^{\pi /4}\frac{\csc^2xdx}{1 + (\cot x)^2}$ 
-
 9. a. $\int_0^{\sqrt{3}}\frac{4x}{\sqrt{x^2 + 1}} dx$ 
 
 b. $\int_{-\sqrt{3}}^{\sqrt{3}}\frac{4x}{\sqrt{x^2 + 1}} dx$ 
-
-39. $\int_0^{\ln \sqrt{3}}\frac{e^xdx}{1 + e^{2x}}$ 
-
-40. $\int_{1}^{e^{\pi /4}}\frac{4dt}{t(1 + \ln^2t)}$ 
 
 10. a. $\int_0^1\frac{x^3}{\sqrt{x^4 + 9}} dx$ 
 
 b. $\int_{-1}^{0}\frac{x^3}{\sqrt{x^4 + 9}} dx$ 
 
-41. $\int_0^1\frac{4ds}{\sqrt{4 - s^2}}$ 
-
-42. $\int_0^{(3 / 4)\sqrt{2}}\frac{ds}{\sqrt{9 - 4s^2}}$ 
-
 11. a. $\int_0^1 t\sqrt{4 + 5t} dt$ 
 
 b. $\int_{1}^{9} t\sqrt{4 + 5t} dt$ 
 
+12. a. $\int_0^{\pi /6}(1 - \cos 3t)\sin 3tdt$ 
+
+13. a. $\int_0^{2\pi}\frac{\cos z}{\sqrt{4 + 3\sin z}} dz$ b. $\int_{-\pi}^{\pi}\frac{\cos z}{\sqrt{4 + 3\sin z}} dz$ 
+
+Area 
+
+14. a. $\int_{-\pi /2}^{0}\left(2 + \tan \frac{t}{2}\right)\sec^2\frac{t}{2} dt$ 
+
+50. 
+
+b. $\int_{-\pi /2}^{\pi /2}\left(2 + \tan \frac{t}{2}\right)\sec^2\frac{t}{2} dt$ 
+
+![教材插图](/books/thomas-calculus/assets/5c36b341770e2ca5a7b791d499f66581b2823da41b9ca0b8ba387f7d9fed393b.jpg)
+
+
+15. $\int_0^1\sqrt{t^5 + 2t} (5t^4 +2)dt$
+
+16. $\int_1^4\frac{dy}{2\sqrt{y}\left(1 + \sqrt{y}\right)^2}$
+
+17. $\int_0^{\pi /6}\cos^{-3}2\theta \sin 2\theta d\theta$
+
+18. $\int_{\pi}^{3\pi /2}\cot^{5}\left(\frac{\theta}{6}\right)\sec^{2}\left(\frac{\theta}{6}\right)d\theta$
+
+49. 
+
+19. $\int_0^\pi 5(5 - 4\cos t)^{1 / 4}\sin tdt$
+
+20. $\int_0^{\pi /4}(1 - \sin 2t)^{3 / 2}\cos 2tdt$
+
+![教材插图](/books/thomas-calculus/assets/e2ada74f86bd41410314858265dda0094078e82a3c709637acd5b3859e9ca4a2.jpg)
+
+
+21. $\int_0^1 (4y - y^2 + 4y^3 + 1)^{-2/3}(12y^2 - 2y + 4)dy$ 
+
+22. $\int_0^1 (y^3 +6y^2 -12y + 9)^{-1 / 2}(y^2 +4y - 4)dy$ 
+
+23. $\int_0^{\sqrt[3]{\pi^2}}\sqrt{\theta}\cos^2 (\theta^{3 / 2})d\theta$
+
+24. $\int_{-1}^{-1 / 2}t^{-2}\sin^2\left(1 + \frac{1}{t}\right)dt$
+
+![教材插图](/books/thomas-calculus/assets/7aec808ecea06c5fa779ebda81d269336e55e198cc6226b1817fb3af54483928.jpg)
+
+
+25. $\int_0^{\pi /4}(1 + e^{\tan \theta})\sec^2\theta d\theta$
+
+26. $\int_{\pi /4}^{\pi /2}(1 + e^{\cot \theta})\csc^2\theta d\theta$
+
+27. $\int_0^\pi \frac{\sin t}{2 - \cos t} dt$
+
+28. $\int_0^{\pi /3}\frac{4\sin\theta}{1 - 4\cos\theta} d\theta$
+
+51. 
+
+![教材插图](/books/thomas-calculus/assets/e3426e47bafb70cdeec97a359f0888340af7858a8179d314399e807213fe3717.jpg)
+
+
+53. 
+
+![教材插图](/books/thomas-calculus/assets/bc8123e5c6c0fd2bf21d6586b1d48e7d85dbfaf46c2f4be9c83d6c5f5d1a9dca.jpg)
+
+
+54. 
+
+![教材插图](/books/thomas-calculus/assets/1cc6ff701690c6ca00f3a3d6f6ed15834c16f37e2c4812ac0533f54873f922b1.jpg)
+
+
+
+55.
+
+
+![教材插图](/books/thomas-calculus/assets/08e1d272b5c5dcaebcd721ac93b6f8b48a5d04cf0dd01a29ed10101aa4d16586.jpg)
+
+
+
+56.
+
+
+![教材插图](/books/thomas-calculus/assets/b06d1551e575c84e15986574cfd73193cc316c9fdc64404a858bcc1054978633.jpg)
+
+
+
+57.
+
+
+![教材插图](/books/thomas-calculus/assets/efc4cd5d49344e71f11ee9b256eb743c1372e95b7c8edeca2bad1d214240ecef.jpg)
+
+
+
+58.
+
+
+![教材插图](/books/thomas-calculus/assets/b7d330af0204ac70f4ff28f50e45ffc10bc77d80587f03788da409b4054d3672.jpg)
+
+
+
+59.
+
+
+![教材插图](/books/thomas-calculus/assets/1d34d3fa12faaca7b737eb3c0bd7a12f31a1d9800c2dc06d6d79de0c43da2d0d.jpg)
+
+
+
+60.
+
+
+![教材插图](/books/thomas-calculus/assets/a5a9e1c9a04d03aeda4115dee2171c956ea9677a817fed131364f4fc68bc3152.jpg)
+
+
+
+61.
+
+
+![教材插图](/books/thomas-calculus/assets/79655c398a1b335d54a6fdb0bc7859401bf3288d2fa642ccc4382782e18b63cd.jpg)
+
+
+
+62.
+
+
+![教材插图](/books/thomas-calculus/assets/a34edba64fb524746bf93811d056b1c2ecdc07190bd647673020306f37b0ea40.jpg)
+
+
+
+63.
+
+
+
+64.
+
+
+![教材插图](/books/thomas-calculus/assets/a94beb2d43baf0ed177bed5fa57f5c7f4844678ab5029f0dd0a61528ac35d819.jpg)
+
+
+![教材插图](/books/thomas-calculus/assets/3da65745d82276dc3ee90742cb4128082cc0d017d0102211b45f36106ee2d363.jpg)
+
+
+29. $\int_{1}^{2}\frac{2\ln x}{x} dx$ 
+
+30. $\int_{2}^{4}\frac{dx}{x\ln x}$ 
+
+31. $\int_{2}^{4}\frac{dx}{x(\ln x)^{2}}$ 
+
+32. $\int_{2}^{16}\frac{dx}{2x\sqrt{\ln x}}$ 
+
+33. $\int_0^{\pi /2}\tan \frac{x}{2} dx$ 
+
+34. $\int_{\pi /4}^{\pi /2}\cot tdt$ 
+
+35. $\int_0^{\pi /3}\tan^2\theta \cos \theta d\theta$ 
+
+36. $\int_0^{\pi /12}6\tan 3x dx$ 
+
+37. $\int_{-\pi /2}^{\pi /2}\frac{2\cos\theta d\theta}{1 + (\sin\theta)^2}$ 
+
+38. $\int_{\pi /6}^{\pi /4}\frac{\csc^2xdx}{1 + (\cot x)^2}$ 
+
+39. $\int_0^{\ln \sqrt{3}}\frac{e^xdx}{1 + e^{2x}}$ 
+
+40. $\int_{1}^{e^{\pi /4}}\frac{4dt}{t(1 + \ln^2t)}$ 
+
+41. $\int_0^1\frac{4ds}{\sqrt{4 - s^2}}$ 
+
+42. $\int_0^{(3 / 4)\sqrt{2}}\frac{ds}{\sqrt{9 - 4s^2}}$ 
+
 43. $\int_{\sqrt{2}}^{2}\frac{\sec^2(\sec^{-1}x)dx}{x\sqrt{x^2 - 1}}$ 
 
 44. $\int_{2 / \sqrt{3}}^{2}\frac{\cos(\sec^{-1}x)dx}{x\sqrt{x^2 - 1}}$ 
-
-12. a. $\int_0^{\pi /6}(1 - \cos 3t)\sin 3tdt$ 
 
 45. $\int_{-1}^{-\sqrt{2} / 2}\frac{dy}{y\sqrt{4y^2 - 1}}$ 
 
@@ -3453,131 +3604,9 @@ b. $\int_{\pi /6}^{\pi /3}(1 - \cos 3t)\sin 3tdt$
 
 48. $\int_{-\sqrt{3}}^{1 / \sqrt{3}}\frac{\cos(\tan^{-1}3x)}{1 + 9x^2} dx$ 
 
-13. a. $\int_0^{2\pi}\frac{\cos z}{\sqrt{4 + 3\sin z}} dz$ b. $\int_{-\pi}^{\pi}\frac{\cos z}{\sqrt{4 + 3\sin z}} dz$ 
-
-Area 
-
 Find the total areas of the shaded regions in Exercises 49–64. 
 
-14. a. $\int_{-\pi /2}^{0}\left(2 + \tan \frac{t}{2}\right)\sec^2\frac{t}{2} dt$ 
-
-50. 
-
-b. $\int_{-\pi /2}^{\pi /2}\left(2 + \tan \frac{t}{2}\right)\sec^2\frac{t}{2} dt$ 
-
-![[5c36b341770e2ca5a7b791d499f66581b2823da41b9ca0b8ba387f7d9fed393b.jpg|image]]
-
-
-15. $\int_0^1\sqrt{t^5 + 2t} (5t^4 +2)dt$ 16. $\int_1^4\frac{dy}{2\sqrt{y}\left(1 + \sqrt{y}\right)^2}$ 
-
-17. $\int_0^{\pi /6}\cos^{-3}2\theta \sin 2\theta d\theta$ 18. $\int_{\pi}^{3\pi /2}\cot^{5}\left(\frac{\theta}{6}\right)\sec^{2}\left(\frac{\theta}{6}\right)d\theta$ 
-
-49. 
-
-19. $\int_0^\pi 5(5 - 4\cos t)^{1 / 4}\sin tdt$ 20. $\int_0^{\pi /4}(1 - \sin 2t)^{3 / 2}\cos 2tdt$ 
-
-![[e2ada74f86bd41410314858265dda0094078e82a3c709637acd5b3859e9ca4a2.jpg|image]]
-
-
-21. $\int_0^1 (4y - y^2 + 4y^3 + 1)^{-2/3}(12y^2 - 2y + 4)dy$ 
-
 52. $y = \frac{\pi}{2} (\cos x)(\sin (\pi + \frac{\pi}{y}\sin x))$ 
-
-22. $\int_0^1 (y^3 +6y^2 -12y + 9)^{-1 / 2}(y^2 +4y - 4)dy$ 
-
-23. $\int_0^{\sqrt[3]{\pi^2}}\sqrt{\theta}\cos^2 (\theta^{3 / 2})d\theta$ 24. $\int_{-1}^{-1 / 2}t^{-2}\sin^2\left(1 + \frac{1}{t}\right)dt$ 
-
-![[7aec808ecea06c5fa779ebda81d269336e55e198cc6226b1817fb3af54483928.jpg|image]]
-
-
-25. $\int_0^{\pi /4}(1 + e^{\tan \theta})\sec^2\theta d\theta$ 26. $\int_{\pi /4}^{\pi /2}(1 + e^{\cot \theta})\csc^2\theta d\theta$ 
-
-27. $\int_0^\pi \frac{\sin t}{2 - \cos t} dt$ 28. $\int_0^{\pi /3}\frac{4\sin\theta}{1 - 4\cos\theta} d\theta$ 
-
-51. 
-
-![[e3426e47bafb70cdeec97a359f0888340af7858a8179d314399e807213fe3717.jpg|image]]
-
-
-53. 
-
-![[bc8123e5c6c0fd2bf21d6586b1d48e7d85dbfaf46c2f4be9c83d6c5f5d1a9dca.jpg|image]]
-
-
-54. 
-
-![[1cc6ff701690c6ca00f3a3d6f6ed15834c16f37e2c4812ac0533f54873f922b1.jpg|image]]
-
-
-
-55.
-
-
-![[08e1d272b5c5dcaebcd721ac93b6f8b48a5d04cf0dd01a29ed10101aa4d16586.jpg|image]]
-
-
-
-56.
-
-
-![[b06d1551e575c84e15986574cfd73193cc316c9fdc64404a858bcc1054978633.jpg|image]]
-
-
-
-57.
-
-
-![[efc4cd5d49344e71f11ee9b256eb743c1372e95b7c8edeca2bad1d214240ecef.jpg|image]]
-
-
-
-58.
-
-
-![[b7d330af0204ac70f4ff28f50e45ffc10bc77d80587f03788da409b4054d3672.jpg|image]]
-
-
-
-59.
-
-
-![[1d34d3fa12faaca7b737eb3c0bd7a12f31a1d9800c2dc06d6d79de0c43da2d0d.jpg|image]]
-
-
-
-60.
-
-
-![[a5a9e1c9a04d03aeda4115dee2171c956ea9677a817fed131364f4fc68bc3152.jpg|image]]
-
-
-
-61.
-
-
-![[79655c398a1b335d54a6fdb0bc7859401bf3288d2fa642ccc4382782e18b63cd.jpg|image]]
-
-
-
-62.
-
-
-![[a34edba64fb524746bf93811d056b1c2ecdc07190bd647673020306f37b0ea40.jpg|image]]
-
-
-
-63.
-
-
-
-64.
-
-
-![[a94beb2d43baf0ed177bed5fa57f5c7f4844678ab5029f0dd0a61528ac35d819.jpg|image]]
-
-
-![[3da65745d82276dc3ee90742cb4128082cc0d017d0102211b45f36106ee2d363.jpg|image]]
-
 
 Find the areas of the regions enclosed by the lines and curves in Exercises 65–74. 
 
@@ -3585,123 +3614,69 @@ Find the areas of the regions enclosed by the lines and curves in Exercises 65�
 
 $$
 \mathbf {6 6 .} y = 2 x - x ^ {2} \quad \text { and } \quad y = - 3
-$$
-
-$$
-6 7. y = x ^ {4} \quad \text { and } \quad y = 8 x
-$$
-
-$$
+67. $$y = x ^ {4} \quad \text { and } \quad y = 8 x$$
 \mathbf {6 8 .} y = x ^ {2} - 2 x \quad \text { and } \quad y = x
 $$
 
-$$
-\mathbf {6 9 .} y = x ^ {2} \quad \text { and } \quad y = - x ^ {2} + 4 x
-$$
+69. $y = x ^ {2} \quad \text { and } \quad y = - x ^ {2} + 4 x$
 
-$$
-\mathbf {7 0 .} y = 7 - 2 x ^ {2} \quad \text { and } \quad y = x ^ {2} + 4
-$$
+70. $y = 7 - 2 x ^ {2} \quad \text { and } \quad y = x ^ {2} + 4$
 
-$$
-\mathbf {7 1 .} y = x ^ {4} - 4 x ^ {2} + 4 \quad \text { and } \quad y = x ^ {2}
-$$
+71. $y = x ^ {4} - 4 x ^ {2} + 4 \quad \text { and } \quad y = x ^ {2}$
 
 72. $y = x\sqrt{a^2 - x^2}$ , $a > 0$ , and $y = 0$ 
 
 73. $y = \sqrt{|x|}$ and $5y = x + 6$ (How many intersection points are there?) 
 
-$$
-7 4. y = | x ^ {2} - 4 | \quad \text { and } \quad y = (x ^ {2} / 2) + 4
-$$
+74. $y = | x ^ {2} - 4 | \quad \text { and } \quad y = (x ^ {2} / 2) + 4$
 
 Find the areas of the regions enclosed by the lines and curves in Exercises 75–82. 
 
-$$
-7 5. x = 2 y ^ {2}, \quad x = 0, \text { and } y = 3
-$$
+75. $x = 2 y ^ {2}, \quad x = 0, \text { and } y = 3$
 
-$$
-7 6. x = y ^ {2} \quad \text { and } \quad x = y + 2
-$$
+76. $x = y ^ {2} \quad \text { and } \quad x = y + 2$
 
-$$
-7 7. y ^ {2} - 4 x = 4 \quad \text { and } \quad 4 x - y = 1 6
-$$
+77. $y ^ {2} - 4 x = 4 \quad \text { and } \quad 4 x - y = 1 6$
 
-$$
-7 8. x - y ^ {2} = 0 \quad \text { and } \quad x + 2 y ^ {2} = 3
-$$
+78. $x - y ^ {2} = 0 \quad \text { and } \quad x + 2 y ^ {2} = 3$
 
-$$
-7 9. x + y ^ {2} = 0 \quad \text { and } \quad x + 3 y ^ {2} = 2
-$$
+79. $x + y ^ {2} = 0 \quad \text { and } \quad x + 3 y ^ {2} = 2$
 
-$$
-\mathbf {8 0 .} x - y ^ {2 / 3} = 0 \quad \text { and } \quad x + y ^ {4} = 2
-$$
+80. $x - y ^ {2 / 3} = 0 \quad \text { and } \quad x + y ^ {4} = 2$
 
-$$
-\mathbf {8 1 .} x = y ^ {2} - 1 \quad \text { and } \quad x = | y | \sqrt {1 - y ^ {2}}
-$$
+81. $x = y ^ {2} - 1 \quad \text { and } \quad x = | y | \sqrt {1 - y ^ {2}}$
 
-$$
-\mathbf {8 2 .} x = y ^ {3} - y ^ {2} \quad \text { and } \quad x = 2 y
-$$
+82. $x = y ^ {3} - y ^ {2} \quad \text { and } \quad x = 2 y$
 
 Find the areas of the regions enclosed by the curves in Exercises 83–86. 
 
-$$
-8 3. 4 x ^ {2} + y = 4 \quad \text { and } \quad x ^ {4} - y = 1
-$$
+83. $4 x ^ {2} + y = 4 \quad \text { and } \quad x ^ {4} - y = 1$
 
-$$
-\mathbf {8 4 .} x ^ {3} - y = 0 \quad \text { and } \quad 3 x ^ {2} - y = 4
-$$
+84. $x ^ {3} - y = 0 \quad \text { and } \quad 3 x ^ {2} - y = 4$
 
-$$
-\mathbf {8 5 .} x + 4 y ^ {2} = 4 \quad \text { and } \quad x + y ^ {4} = 1, \quad \text { for } \quad x \geq 0
-$$
+85. $x + 4 y ^ {2} = 4 \quad \text { and } \quad x + y ^ {4} = 1, \quad \text { for } \quad x \geq 0$
 
-$$
-\mathbf {8 6 .} x + y ^ {2} = 3 \quad \text { and } \quad 4 x + y ^ {2} = 0
-$$
+86. $x + y ^ {2} = 3 \quad \text { and } \quad 4 x + y ^ {2} = 0$
 
 Find the areas of the regions enclosed by the lines and curves in Exercises 87–94. 
 
-$$
-\mathbf {8 7 .} y = 2 \sin x \quad \text { and } \quad y = \sin 2 x, \quad 0 \leq x \leq \pi
-$$
+87. $y = 2 \sin x \quad \text { and } \quad y = \sin 2 x, \quad 0 \leq x \leq \pi$
 
-$$
-\mathbf {8 8 .} y = 8 \cos x \quad \text { and } \quad y = \sec^ {2} x, \quad - \pi / 3 \leq x \leq \pi / 3
-$$
+88. $y = 8 \cos x \quad \text { and } \quad y = \sec^ {2} x, \quad - \pi / 3 \leq x \leq \pi / 3$
 
-$$
-\mathbf {8 9 .} y = \cos (\pi x / 2) \quad \text { and } \quad y = 1 - x ^ {2}
-$$
+89. $y = \cos (\pi x / 2) \quad \text { and } \quad y = 1 - x ^ {2}$
 
-$$
-\mathbf {9 0 .} y = \sin (\pi x / 2) \quad \text { and } \quad y = x
-$$
+90. $y = \sin (\pi x / 2) \quad \text { and } \quad y = x$
 
-$$
-\mathbf {9 1 .} y = \sec^ {2} x, \quad y = \tan^ {2} x, \quad x = - \pi / 4, \text { and } x = \pi / 4
-$$
+91. $y = \sec^ {2} x, \quad y = \tan^ {2} x, \quad x = - \pi / 4, \text { and } x = \pi / 4$
 
-$$
-9 2. x = \tan^ {2} y \quad \text { and } \quad x = - \tan^ {2} y, \quad - \pi / 4 \leq y \leq \pi / 4
-$$
+92. $x = \tan^ {2} y \quad \text { and } \quad x = - \tan^ {2} y, \quad - \pi / 4 \leq y \leq \pi / 4$
 
-$$
-9 3. x = 3 \sin y \sqrt {\cos y} \quad \text { and } \quad x = 0, \quad 0 \leq y \leq \pi / 2
-$$
+93. $x = 3 \sin y \sqrt {\cos y} \quad \text { and } \quad x = 0, \quad 0 \leq y \leq \pi / 2$
 
-$$
-\mathbf {9 4 .} y = \sec^ {2} (\pi x / 3) \quad \text { and } \quad y = x ^ {1 / 3}, \quad - 1 \leq x \leq 1
-$$
+94. $y = \sec^ {2} (\pi x / 3) \quad \text { and } \quad y = x ^ {1 / 3}, \quad - 1 \leq x \leq 1$
 
-## Area Between Curves
+#### Area Between Curves
 
 95. Find the area of the propeller-shaped region enclosed by the curve $x - y^{3} = 0$ and the line x - y = 0. 
 
@@ -3737,12 +3712,12 @@ c. Find c by integrating with respect to x. (This puts c into the integrand as w
 
 108. Find the area of the region in the first quadrant bounded on the left by the y-axis, below by the curve $x = 2\sqrt{y}$ , above left by the curve $x = (y - 1)^{2}$ , and above right by the line x = 3 - y. 
 
-![[e23ffbc9267dccc02680c7aedc2df1dbb4559a3bdc48dac2efcf243eefc676f1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e23ffbc9267dccc02680c7aedc2df1dbb4559a3bdc48dac2efcf243eefc676f1.jpg)
 
 
 109. The figure here shows triangle $AOC$ inscribed in the region cut from the parabola $y = x^2$ by the line $y = a^2$ . Find the limit of the ratio of the area of the triangle to the area of the parabolic region as $a$ approaches zero. 
 
-![[c7d1d7abe320343d025dde99bd475adeae951d4644842b3bf6a12928d71275ab.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c7d1d7abe320343d025dde99bd475adeae951d4644842b3bf6a12928d71275ab.jpg)
 
 
 110. Suppose the area of the region between the graph of a positive continuous function $f$ and the $x$ -axis from $x = a$ to $x = b$ is 4 square units. Find the area between the curves $y = f(x)$ and $y = 2f(x)$ from $x = a$ to $x = b$ . 
@@ -3755,7 +3730,7 @@ $$
 
 b. $\int_{-1}^{1}(-x - (x))dx = \int_{-1}^{1} - 2xdx$ 
 
-![[35f7c4b5275fc0e35810c0ec7fac28816313753f9cd6798aae475e6ee51ef320.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/35f7c4b5275fc0e35810c0ec7fac28816313753f9cd6798aae475e6ee51ef320.jpg)
 
 
 112. True, sometimes true, or never true? The area of the region between the graphs of the continuous functions $y = f(x)$ and $y = g(x)$ and the vertical lines $x = a$ and $x = b (a < b)$ is 
@@ -3766,32 +3741,32 @@ $$
 
 Give reasons for your answer. 
 
-## Comparing Areas
+#### Comparing Areas
 
 Compute the areas of the light blue and dark blue regions in each of Exercises 113 to 116 and determine which is larger, or show that they have equal area. 
 
-![[689a3bf828e8768a917f3d59327b6b69878175e92c1df67ae8695e605126146c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/689a3bf828e8768a917f3d59327b6b69878175e92c1df67ae8695e605126146c.jpg)
 
 
 
 114.
 
 
-![[ec744ae86089a0325e037bd776406e7d02e915a48df7aae69b30035397b60976.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ec744ae86089a0325e037bd776406e7d02e915a48df7aae69b30035397b60976.jpg)
 
 
 
 115.
 
 
-![[de9547dbcfe789365504adf84d0d29ce73bd7d0dcf1a632f478d8973629275e9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/de9547dbcfe789365504adf84d0d29ce73bd7d0dcf1a632f478d8973629275e9.jpg)
 
 
 
 116.
 
 
-![[2ac95a7862afcc7158e75fd5ec7b83508358b7ae306dc7d326fb59d792426df1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2ac95a7862afcc7158e75fd5ec7b83508358b7ae306dc7d326fb59d792426df1.jpg)
 
 
 Theory and Examples 
@@ -3808,11 +3783,7 @@ in terms of $F$ .
 
 $$
 \int_ {0} ^ {1} f (x) d x = \int_ {0} ^ {1} f (1 - x) d x.
-$$
-
-119. Suppose that 
-
-$$
+119. $Suppose that$
 \int_ {0} ^ {1} f (x) d x = 3.
 $$
 
@@ -3860,7 +3831,7 @@ $$
 
 because the areas of the shaded regions are congruent. 
 
-![[4489b8694b87d340669386d348b7ed2b968a9264c91532042fd5b1b59f592fe8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4489b8694b87d340669386d348b7ed2b968a9264c91532042fd5b1b59f592fe8.jpg)
 
 
 123. Use a substitution to verify Equation (1). 
@@ -3929,11 +3900,11 @@ d. Sum together the integrals found in part (c).
 
 ## CHAPTER 5 Practice Exercises
 
-## Finite Sums and Estimates
+### Finite Sums and Estimates
 
 1. The accompanying figure shows the graph of the velocity (m/s) of a model rocket for the first 8 s after launch. The rocket accelerated straight up for the first 2 s and then coasted to reach its maximum height at t = 8 s. 
 
-![[40dec01e133bd157c7784aba267ce66e7c2aefbe92efce37ea2a489fd29d260d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/40dec01e133bd157c7784aba267ce66e7c2aefbe92efce37ea2a489fd29d260d.jpg)
 
 
 
@@ -3948,7 +3919,7 @@ b. Sketch a graph of the rocket's height above ground as a function of time for 
 
 b. Sketch a graph of $s$ as a function of $t$ for $0 \leq t \leq 10$ , assuming $s(0) = 0$ . 
 
-![[bdab302bc02c63a49e6680d20a6ae4cb77ddd856201c2445f860116b2991e91d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bdab302bc02c63a49e6680d20a6ae4cb77ddd856201c2445f860116b2991e91d.jpg)
 
 
 
@@ -3961,7 +3932,7 @@ a. $\sum_{k=1}^{10} \frac{a_k}{4}$ b. $\sum_{k=1}^{10} (b_k - 3a_k)$ c. $\sum_{k
 4. Suppose that $\sum_{k=1}^{20} a_k = 0$ and $\sum_{k=1}^{20} b_k = 7$ . Find the value of
 a. $\sum_{k=1}^{20} 3a_k$ b. $\sum_{k=1}^{20}(a_k + b_k)$ c. $\sum_{k=1}^{20}\left(\frac{1}{2}-\frac{2b_k}{7}\right)$ d. $\sum_{k=1}^{20}(a_k - 2)$ 
 
-## Definite Integrals
+### Definite Integrals
 
 In Exercises 5–8, express each limit as a definite integral. Then evaluate the integral to find the value of the limit. In each case, P is a partition of the given interval, and the numbers $c_{k}$ are chosen from the subintervals of P. 
 
@@ -3999,15 +3970,17 @@ Find the areas of the regions enclosed by the curves and lines in Exercises 15�
 
 17. $\sqrt{x} +\sqrt{y} = 1$ $x = 0,y = 0$ 
 
-![[18c07cdeb2a3536b3ea658220c0751a38c65513ba79a3267b3fbffe8a3dd14ed.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/18c07cdeb2a3536b3ea658220c0751a38c65513ba79a3267b3fbffe8a3dd14ed.jpg)
 
 
 18. $x^{3} + \sqrt{y} = 1,\quad x = 0,\quad y = 0,\quad for\quad 0 \leq x \leq 1$ 
 
-![[ab8e010c3027ec817972dd1b3fce0a7793ce2a14eb7441d5fa423d785dbb4fdd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ab8e010c3027ec817972dd1b3fce0a7793ce2a14eb7441d5fa423d785dbb4fdd.jpg)
 
 
-19. $x = 2y^{2}$ , $x = 0$ , $y = 3$ 20. $x = 4 - y^{2}$ , $x = 0$ 
+19. $x = 2y^{2}$ , $x = 0$ , $y = 3$
+
+20. $x = 4 - y^{2}$ , $x = 0$
 
 21. $y^{2} = 4x, y = 4x - 2$ 
 
@@ -4039,7 +4012,7 @@ Find the areas of the regions enclosed by the curves and lines in Exercises 15�
 
 b. Show that the area between the curve y = 1/x and the x-axis from ka to kb is the same as the area between the curve and the x-axis from x = a to x = b (0 < a < b, k > 0). 
 
-## Initial Value Problems
+### Initial Value Problems
 
 35. Show that $y = x^2 + \int_{1}^{x} \frac{1}{t} dt$ solves the initial value problem 
 
@@ -4077,7 +4050,9 @@ For Exercises 43 and 44, find a function $f$ that satisfies each equation.
 
 84. $\int_0^1\frac{dr}{\sqrt[3]{(7 - 5r)^2}}$ 
 
-43. $f(x) = 1 + \int_{1}^{x}tf(t)dt$ 44. $f(x) = \int_{0}^{x}(1 + f(t)^{2})dt$ 
+43. $f(x) = 1 + \int_{1}^{x}tf(t)dt$
+
+44. $f(x) = \int_{0}^{x}(1 + f(t)^{2})dt$
 
 Evaluating Indefinite Integrals 
 
@@ -4093,7 +4068,9 @@ Evaluate the integrals in Exercises 45–76.
 
 87. $\int_0^\pi \sin^2 5rdr$ 
 
-45. $\int 2(\cos x)^{-1 / 2}\sin xdx$ 46. $\int (\tan x)^{-3 / 2}\sec^2 xdx$ 
+45. $\int 2(\cos x)^{-1 / 2}\sin xdx$
+
+46. $\int (\tan x)^{-3 / 2}\sec^2 xdx$
 
 88. $\int_0^{\pi /4}\cos^2\left(4t - \frac{\pi}{4}\right)dt$ 
 
@@ -4267,13 +4244,13 @@ $$
 
 Find the average value of $C_{v}$ for $20^{\circ}C \leq T \leq 675^{\circ}C$ and the temperature at which it is attained. 
 
-## Differentiating Integrals
+### Differentiating Integrals
 
 In Exercises 125–132, find dy/dx. 
 
-$$
-\mathbf {1 2 5 .} y = \int_ {2} ^ {x} \sqrt {2 + \cos^ {3} t} d t \quad \mathbf {1 2 6 .} y = \int_ {2} ^ {7 x ^ {2}} \sqrt {2 + \cos^ {3} t} d t
-$$
+125. $y = \int_ {2} ^ {x} \sqrt {2 + \cos^ {3} t} d t$
+
+126. $y = \int_ {2} ^ {7 x ^ {2}} \sqrt {2 + \cos^ {3} t} d t$
 
 127. $y = \int_{x}^{1}\frac{6}{3 + t^{4}} dt$ 
 
@@ -4285,13 +4262,11 @@ $$
 
 131. $y = \int_{0}^{\sin^{-1}x}\frac{dt}{\sqrt{1 - 2t^{2}}}$ 
 
-$$
-\mathbf {1 3 2 .} y = \int_ {\tan^ {- 1} x} ^ {\pi / 4} e ^ {\sqrt {t}} d t
-$$
+132. $y = \int_ {\tan^ {- 1} x} ^ {\pi / 4} e ^ {\sqrt {t}} d t$
 
-## Theory and Examples
+### Theory and Examples
 
-## Additional and Advanced Exercises
+### Additional and Advanced Exercises
 
 1. a. If $\int_0^1 7f(x)dx = 7$ , does $\int_0^1 f(x)dx = 1?$ 
 
@@ -4305,7 +4280,7 @@ Give reasons for your answers.
 
 ## CHAPTER 5
 
-## Theory and Examples
+### Theory and Examples
 
 133. Is it true that every function $y = f(x)$ that is differentiable on $[a, b]$ is itself the derivative of some function on $[a, b]$ ? Give reasons for your answer. 
 
@@ -4319,7 +4294,7 @@ Give reasons for your answers.
 
 137. A new parking lot To meet the demand for parking, your town has allocated the area shown here. As the town engineer, you have been asked by the town council to find out if the lot can be built for $10,000. The cost to clear the land will be $1.00 a square meter, and the lot will cost $2.00 a square meter to pave. Can the job be done for $10,000? Use a lower sum estimate to see. (Answers may vary slightly, depending on the estimate used.) 
 
-![[fde80b3438acac58c5b215209d3eff59d4ea3910714cdfb568883f13cc36c7f5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fde80b3438acac58c5b215209d3eff59d4ea3910714cdfb568883f13cc36c7f5.jpg)
 
 
 b. At what altitude does B's parachute open? 
@@ -4336,7 +4311,7 @@ a. $\int_{5}^{2}f(x)dx = -3$ b. $\int_{-2}^{5}(f(x) + g(x))dx = 9$
 
 c. $f(x) \leq g(x)$ on the interval $-2 \leq x \leq 5$ 
 
-## 3. Initial value problem Show that
+### 3. Initial value problem Show that
 
 $$
 y = \frac {1}{a} \int_ {0} ^ {x} f (t) \sin a (x - t) d t
@@ -4388,7 +4363,7 @@ $$
 
 10. Shoveling dirt You sling a shovelful of dirt up from the bottom of a hole with an initial velocity of 9.8 m/s. The dirt must rise 5.2 m above the release point to clear the edge of the hole. Is that enough speed to get the dirt out, or had you better duck? 
 
-## Piecewise Continuous Functions
+### Piecewise Continuous Functions
 
 Although we are mainly interested in continuous functions, many functions in applications are piecewise continuous. A function $f(x)$ is piecewise continuous on a closed interval I if f has only finitely many discontinuities in I, the limits 
 
@@ -4408,7 +4383,7 @@ $$
 \begin{array}{r l} \int_ {- 1} ^ {3} f (x) d x & = \int_ {- 1} ^ {0} (1 - x) d x + \int_ {0} ^ {2} x ^ {2} d x + \int_ {2} ^ {3} (- 1) d x \\ & = \left[ x - \frac {x ^ {2}}{2} \right] _ {- 1} ^ {0} + \left[ \frac {x ^ {3}}{3} \right] _ {0} ^ {2} + \left[ - x \right] _ {2} ^ {3} \\ & = \frac {3}{2} + \frac {8}{3} - 1 = \frac {1 9}{6}. \end{array}\tag{16.}
 $$
 
-![[0f833f2ead52841de34d632fe8fa53906a6bcb4b0c863e38da94f03585e6f5f7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0f833f2ead52841de34d632fe8fa53906a6bcb4b0c863e38da94f03585e6f5f7.jpg)
 
 
 
@@ -4455,12 +4430,12 @@ $$
 
 17. Find the average value of the function graphed in the accompanying figure. 
 
-![[f34c46c14c3e307c0c6081d305d663049259e1ece667baba6039a9c6a9922db6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f34c46c14c3e307c0c6081d305d663049259e1ece667baba6039a9c6a9922db6.jpg)
 
 
 18. Find the average value of the function graphed in the accompanying figure. 
 
-![[8555bd02e63653f70229469da8cc2485bc54703b1962b32cfbbc4bc09ac70f50.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8555bd02e63653f70229469da8cc2485bc54703b1962b32cfbbc4bc09ac70f50.jpg)
 
 
 Limits 
@@ -4477,7 +4452,7 @@ Defining Functions Using the Fundamental Theorem
 
 23. A function defined by an integral The graph of a function $f$ consists of a semicircle and two line segments as shown. Let $g(x) = \int_{1}^{x} f(t) dt$ . 
 
-![[d24dea760a1f5908430108abdf36b63c288e926f4b7128bb6151a31da84c7166.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d24dea760a1f5908430108abdf36b63c288e926f4b7128bb6151a31da84c7166.jpg)
 
 
 a. Find $g(1)$ . b. Find $g(3)$ . c. Find $g(-1)$ . 
@@ -4498,7 +4473,7 @@ ii) $y = 1$ and $y' = -2$ when $x = \pi$ .
 
 Leibniz's Rule In applications, we sometimes encounter functions defined by integrals that have variable upper limits of integration and variable lower limits of integration at the same time. We can find the derivative of such an integral by a formula called Leibniz's Rule. 
 
-## Leibniz's Rule
+### Leibniz's Rule
 
 If $f$ is continuous on $[a, b]$ and if $u(x)$ and $v(x)$ are differentiable functions of $x$ whose values lie in $[a, b]$ , then 
 
@@ -4566,7 +4541,7 @@ c. What can you conclude about the graph of $f$ ? Give reasons for your answer.
 
 38. Use the accompanying figure to show that 
 
-![[8b0b2665e203a53f8b12739ced787dfd509b5e1a1c71625b3fd719fea3495a7b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8b0b2665e203a53f8b12739ced787dfd509b5e1a1c71625b3fd719fea3495a7b.jpg)
 
 
 39. Napier's inequality Here are two pictorial proofs that 
@@ -4577,14 +4552,14 @@ $$
 
 Explain what is going on in each case. 
 
-![[ecdecd83431863deaaeebfaae54c157dd61a2a56d4a23c4c92dc602c2c0fd4b0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ecdecd83431863deaaeebfaae54c157dd61a2a56d4a23c4c92dc602c2c0fd4b0.jpg)
 
 
 
 b.
 
 
-![[4f95af508c7e4266c6505399cd3f1786c0a09d7727e926e9fd4bd0d4bb0a8386.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4f95af508c7e4266c6505399cd3f1786c0a09d7727e926e9fd4bd0d4bb0a8386.jpg)
 
 
 (Source: Roger B. Nelson, College Mathematics Journal, Vol. 24, No. 2, March 1993, p. 165.) 
@@ -4627,7 +4602,7 @@ $$
 \begin{array}{r l} S _ {n} & = \sqrt {\frac {1}{n}} \cdot \frac {1}{n} + \sqrt {\frac {2}{n}} \cdot \frac {1}{n} + \dots + \sqrt {\frac {n}{n}} \cdot \frac {1}{n} \\ & = \frac {\sqrt {1} + \sqrt {2} + \cdots + \sqrt {n}}{n ^ {3 / 2}}. \end{array}
 $$
 
-![[a815a4e624006a2ea2f19d45545b4734ad98aa1065f19ecd466a646e97b0f457.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a815a4e624006a2ea2f19d45545b4734ad98aa1065f19ecd466a646e97b0f457.jpg)
 
 
 Therefore, when n is large, $S_{n}$ will be close to 2/3 and we will have 
@@ -4716,7 +4691,7 @@ $$
 
 ## CHAPTER 5 Technology Application Projects
 
-## Mathematica/Maple Projects
+### Mathematica/Maple Projects
 
 Projects can be found within MyLab Math. 
 
@@ -4725,24 +4700,16 @@ Projects can be found within MyLab Math.
 - Riemann Sums, Definite Integrals, and the Fundamental Theorem of Calculus
 Parts I, II, and III develop Riemann sums and definite integrals. Part IV continues the development of the Riemann sum and definite integral using the Fundamental Theorem to solve problems previously investigated. 
 
-## • Rain Catchers, Elevators, and Rockets
+### • Rain Catchers, Elevators, and Rockets
 
 Part I illustrates that the area under a curve is the same as the area of an appropriate rectangle for examples taken from the chapter. You will compute the amount of water accumulating in basins of different shapes as the basin is filled and drained. 
 
-## • Motion Along a Straight Line, Part II
+### • Motion Along a Straight Line, Part II
 
 You will observe the shape of a graph through dramatic animated visualizations of the derivative relations among position, velocity, and acceleration. Figures in the text can be animated using this software. 
 
-## - Bending of Beams
+### - Bending of Beams
 
 Study bent shapes of beams, determine their maximum deflections, concavity, and inflection points, and interpret the results in terms of a beam's compression and tension. 
 
-![[fa04963133209e8f02728cf2253484d1fc8b2ef9dff544c805b247c98398b69c.jpg|image]]
-
-
-# Applications of Definite Integrals
-
-![[792f7d1d8f92580fe01bd553d56af3abfc4ae72a7f2e54ddf23224778e1d533c.jpg|image]]
-
-
-OVERVIEW In Chapter 5 we saw that a continuous function over a closed interval has a definite integral, which is the limit of Riemann sum approximations for the function. We found a way to evaluate definite integrals using the Fundamental Theorem of Calculus. We saw that the area under a curve and the area between two curves could be defined and computed as definite integrals. In this chapter we will see some of the many additional applications of definite integrals. We will use the definite integral to define and find volumes, lengths of plane curves, and areas of surfaces of revolution. We will see how integrals are used to solve physical problems involving the work done by a force, and how they give the location of an object's center of mass. The integral arises in these and other applications in which we can approximate a desired quantity by Riemann sums. The limit of those Riemann sums, which is the quantity we seek, is given by a definite integral.
+![教材插图](/books/thomas-calculus/assets/fa04963133209e8f02728cf2253484d1fc8b2ef9dff544c805b247c98398b69c.jpg)

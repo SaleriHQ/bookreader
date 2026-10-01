@@ -7,9 +7,16 @@ order: 12
 
 <!-- Extracted from Thomas-calculus Markdown source; chapters 1-17 only. -->
 
+![教材插图](/books/thomas-calculus/assets/0b745910ffc0610665a974d7b2b002796a50ed3d5b7916834562545c6ead8531.jpg)
+
+
+OVERVIEW In this chapter we introduce the calculus of vector-valued functions. The domains of these functions are sets of real numbers, as before, but their ranges consist of vectors instead of scalars. When a vector-valued function changes, the change can occur in both magnitude and direction, so the derivative is itself a vector. The integral of a vectorvalued function is also a vector. We use the calculus of these functions to describe the paths and motions of objects moving in a plane or in space, so their velocities and accelerations are given by vectors.
+
+
+
 ## 12.1 Curves in Space and Their Tangents
 
-![[d779208a660367656ed42a7cc2a2bf11826dec1d85d9b579f9b8f7fe11c365fc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d779208a660367656ed42a7cc2a2bf11826dec1d85d9b579f9b8f7fe11c365fc.jpg)
 
 
 
@@ -36,10 +43,10 @@ Equation (2) defines r as a vector function of the real variable t on the interv
 
 Real-valued functions are often called scalar functions to distinguish them from vector functions. The components of r in Equation (2) are scalar functions of t. The domain of a vector-valued function is the common domain of its components. 
 
-![[c58c2ea487ccd760ba1a5369ec4096f2b7422ea5d5e2a6b64dc4c36f62ec99df.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c58c2ea487ccd760ba1a5369ec4096f2b7422ea5d5e2a6b64dc4c36f62ec99df.jpg)
 
 
-![[e08172fe5f7378908fdf31ea550a89444dbbb0170670de012b8f98105a569190.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e08172fe5f7378908fdf31ea550a89444dbbb0170670de012b8f98105a569190.jpg)
 
 
 
@@ -70,14 +77,14 @@ $$
 
 parametrize the helix. The domain is the largest set of points t for which all three equations are defined, $\operatorname { o r } - \infty < t < \infty$ for this example. Figure 12.4 shows more helices. ■ 
 
-![[f16e8d7d84980482af45726f4a82dfb03e130d62a78d94e736144b0756279648.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f16e8d7d84980482af45726f4a82dfb03e130d62a78d94e736144b0756279648.jpg)
 
 
 
 FIGURE 12.4 Helices spiral upward around a cylinder, like coiled springs.
 
 
-## Limits and Continuity
+### Limits and Continuity
 
 The way we define limits of vector-valued functions is similar to the way we define limits of real-valued functions. 
 
@@ -125,7 +132,7 @@ We define continuity for vector functions the same way we define continuity for 
 
 From Equation (3), we see that $\mathbf { r } ( t )$ is continuous at $t ~ = ~ t _ { 0 }$ if and only if each component function is continuous there (Exercise 45). 
 
-## **EXAMPLE 3**
+**EXAMPLE 3**
 
 (a) All the space curves shown in Figures 12.2 and 12.4 are continuous because their component functions are continuous at every value of t in $( - \infty , \infty )$ 
 
@@ -137,7 +144,7 @@ $$
 
 is discontinuous at every integer, because the greatest integer function $\lfloor t \rfloor$ is discontinuous at every integer. ■ 
 
-## Derivatives and Motion
+### Derivatives and Motion
 
 Suppose that ${ \bf { r } } ( t ) = f ( t ) \mathbf { i } + g ( t ) \mathbf { j } + h ( t ) \mathbf { k }$ is the position vector of a particle moving along a curve in space and that $f , g .$ , and h are differentiable functions of t. Then the differ ence between the particle’s positions at time t and time $t + \Delta t$ is the vector 
 
@@ -145,17 +152,17 @@ $$
 \Delta \mathbf {r} = \mathbf {r} (t + \Delta t) - \mathbf {r} (t)
 $$
 
-![[27c5e3364c89030ae5b47aa0e63f791b3cb13248b1e6a8c80c8d4255dd5e7c38.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/27c5e3364c89030ae5b47aa0e63f791b3cb13248b1e6a8c80c8d4255dd5e7c38.jpg)
 
 
-![[10c855664934a3978ae0659ae17330ad91ac4cf2bea5973f8303c9338bfcda8e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/10c855664934a3978ae0659ae17330ad91ac4cf2bea5973f8303c9338bfcda8e.jpg)
 
 
 
 FIGURE 12.5 $\mathrm { A s } \Delta t \to 0 ,$ the point Q approaches the point P along the curve $C .$ In the limit, the vector $\overrightarrow { P Q } / \Delta t$ becomes the tangent vector $\mathbf { r } ^ { \prime } ( t )$
 
 
-![[13bf73434df5c6a19e4e1bbc16b522aa11328cc19a6eb335b7c85dedf3db75c4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/13bf73434df5c6a19e4e1bbc16b522aa11328cc19a6eb335b7c85dedf3db75c4.jpg)
 
 
 
@@ -212,7 +219,7 @@ Look once again at Figure 12.5. We drew the figure for $\Delta t$ positive, so $
 >
 > 4. The unit vector v v is the direction of motion at time t. 
 >
-![[af033617ebc5534df991d58397470bf39e8c387c4b7d15bb31ac78e13a6c2eea.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/af033617ebc5534df991d58397470bf39e8c387c4b7d15bb31ac78e13a6c2eea.jpg)
 
 
 
@@ -247,11 +254,11 @@ $$
 \text { Velocity } = | \mathbf {v} | \left(\frac {\mathbf {v}}{| \mathbf {v} |}\right) = (\text { speed }) (\text { direction }).
 $$
 
-## Differentiation Rules
+### Differentiation Rules
 
 Because the derivatives of vector functions may be computed component by component, the rules for differentiating vector functions have the same form as the rules for differentiating scalar functions. 
 
-## Differentiation Rules for Vector Functions
+### Differentiation Rules for Vector Functions
 
 Let u and v be differentiable vector functions of $t , \mathbf { C }$ a constant vector, c any scalar, and f any differentiable scalar function. 
 
@@ -343,7 +350,7 @@ $$
 
 where $s = f ( t )$ 
 
-![[0c1618ba869f7f4bbb2ad4ff96bca4c48aa332ec4ec6ab323d52b9fe5332e987.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0c1618ba869f7f4bbb2ad4ff96bca4c48aa332ec4ec6ab323d52b9fe5332e987.jpg)
 
 
 
@@ -362,7 +369,7 @@ $$
 \begin{array}{l} \frac {d}{d t} [ \mathbf {u} (s) ] = \frac {d a}{d t} \mathbf {i} + \frac {d b}{d t} \mathbf {j} + \frac {d c}{d t} \mathbf {k} \\ \qquad = \frac {d a}{d s} \frac {d s}{d t} \mathbf {i} + \frac {d b}{d s} \frac {d s}{d t} \mathbf {j} + \frac {d c}{d s} \frac {d s}{d t} \mathbf {k} \\ \qquad = \frac {d s}{d t} \left(\frac {d a}{d s} \mathbf {i} + \frac {d b}{d s} \mathbf {j} + \frac {d c}{d s} \mathbf {k}\right) \\ \qquad = \frac {d s}{d t} \frac {d \mathbf {u}}{d s} \\ \qquad = f ^ {\prime} (t) \mathbf {u} ^ {\prime} (f (t)). \end{array} \quad s = f (t)
 $$
 
-## Vector Functions of Constant Length
+### Vector Functions of Constant Length
 
 When we track a particle moving on a sphere centered at the origin (Figure 12.8), the position vector has a constant length equal to the radius of the sphere. The velocity vector $d \mathbf { r } / d t$ tangent to the path of motion, is tangent to the sphere and hence perpendicular to r. This is always the case for a differentiable vector function of constant length: The vector and its first derivative are orthogonal. By direct calculation, 
 
@@ -380,9 +387,8 @@ $$
 
 We will use this observation repeatedly in Section 12.4. The converse is also true (see Exercise 41). 
 
-## EXERCISES
+### Exercises 12.1
 
-## 12.1
 
 In Exercises 1–4, find the given limits. 
 
@@ -422,23 +428,11 @@ Exercises 9–12 give the position vectors of particles moving along various cur
 
 $$
 \mathbf {r} (t) = (\sin t) \mathbf {i} + (\cos t) \mathbf {j}; \quad t = \pi / 4 \text {   and   } \pi / 2
-$$
-
-10. Motion on the circle $x ^ { 2 } + y ^ { 2 } = 1 6$ 
-
-$$
+10. $Motion on the circle $x ^ { 2 } + y ^ { 2 } = 1 6$$
 \mathbf {r} (t) = \left(4 \cos \frac {t}{2}\right) \mathbf {i} + \left(4 \sin \frac {t}{2}\right) \mathbf {j}; t = \pi \text {   and   } 3 \pi / 2
-$$
-
-11. Motion on the cycloid $x = t - \sin t , y = 1 - \cos t$ 
-
-$$
+11. $Motion on the cycloid $x = t - \sin t , y = 1 - \cos t$$
 \mathbf {r} (t) = (t - \sin t) \mathbf {i} + (1 - \cos t) \mathbf {j}; \quad t = \pi \text {   and   } 3 \pi / 2
-$$
-
-12. Motion on the parabola $y = x ^ { 2 } + 1$ 
-
-$$
+12. $Motion on the parabola $y = x ^ { 2 } + 1$$
 \mathbf {r} (t) = t \mathbf {i} + (t ^ {2} + 1) \mathbf {j}; \quad t = - 1, 0, \text {   and   } 1
 $$
 
@@ -446,9 +440,7 @@ Motion in Space
 
 In Exercises $1 3 \mathrm { - } 1 8 , \mathbf { r } ( t )$ is the position of a particle in space at time t. Find the particle’s velocity and acceleration vectors. Then find the particle’s speed and direction of motion at the given value of t. Write the particle’s velocity at that time as the product of its speed and direction. 
 
-$$
-\mathbf {1 3 .} \mathbf {r} (t) = (t + 1) \mathbf {i} + (t ^ {2} - 1) \mathbf {j} + 2 t \mathbf {k}, t = 1
-$$
+13. $\mathbf {r} (t) = (t + 1) \mathbf {i} + (t ^ {2} - 1) \mathbf {j} + 2 t \mathbf {k}, t = 1$
 
 $$
 \mathbf {1 4 . r} (t) = (1 + t) \mathbf {i} + \frac {t ^ {2}}{\sqrt {2}} \mathbf {j} + \frac {t ^ {3}}{3} \mathbf {k}, t = 1
@@ -482,17 +474,13 @@ Tangents to Curves
 
 As mentioned in the text, the tangent line to a smooth curve $\mathbf { r } ( t ) = f ( t ) \mathbf { i } + g ( t ) \mathbf { j } + h ( t ) \mathbf { k } { \mathrm { ~ a t ~ } } t = t _ { 0 }$ is the line that passes through the point $( f ( t _ { 0 } ) , g ( t _ { 0 } ) , h ( t _ { 0 } ) )$ parallel to $\mathbf { v } ( t _ { 0 } )$ , the curve’s velocity vector a $t _ { 0 } .$ In Exercises 23–26, find parametric equations for the line that is tangent to the given curve at the given parameter value $t = t _ { 0 }$ 
 
-$$
-\mathbf {2 3 .} \mathbf {r} (t) = (\sin t) \mathbf {i} + (t ^ {2} - \cos t) \mathbf {j} + e ^ {t} \mathbf {k}, \quad t _ {0} = 0
-$$
+23. $\mathbf {r} (t) = (\sin t) \mathbf {i} + (t ^ {2} - \cos t) \mathbf {j} + e ^ {t} \mathbf {k}, \quad t _ {0} = 0$
 
 $$
 \mathbf {2 4 . r} (t) = t ^ {2} \mathbf {i} + (2 t - 1) \mathbf {j} + t ^ {3} \mathbf {k}, \quad t _ {0} = 2
 $$
 
-$$
-\mathbf {2 5 .} \mathbf {r} (t) = \ln t \mathbf {i} + \frac {t - 1}{t + 2} \mathbf {j} + t \ln t \mathbf {k}, \quad t _ {0} = 1
-$$
+25. $\mathbf {r} (t) = \ln t \mathbf {i} + \frac {t - 1}{t + 2} \mathbf {j} + t \ln t \mathbf {k}, \quad t _ {0} = 1$
 
 $$
 \mathbf {2 6 . r} (t) = (\cos t) \mathbf {i} + (\sin t) \mathbf {j} + (\sin 2 t) \mathbf {k}, t _ {0} = \frac {\pi}{2}
@@ -500,9 +488,7 @@ $$
 
 In Exercises 27–30, find the value(s) of t so that the tangent line to the given curve contains the given point. 
 
-$$
-\mathbf {2 7 .} \mathbf {r} (t) = t ^ {2} \mathbf {i} + (1 + t) \mathbf {j} + (2 t - 3) \mathbf {k}; (- 8, 2, - 1)
-$$
+27. $\mathbf {r} (t) = t ^ {2} \mathbf {i} + (1 + t) \mathbf {j} + (2 t - 3) \mathbf {k}; (- 8, 2, - 1)$
 
 $$
 \mathbf {2 8 . r} (t) = t \mathbf {i} + 3 \mathbf {j} + \left(\frac {2}{3} t ^ {3 / 2}\right) \mathbf {k}; (0, 3, - 8 / 3)
@@ -518,17 +504,11 @@ $$
 
 In Exercises 31– $\mathbf { \delta } _ { - 3 6 , \mathbf { r } ( t ) }$ is the position of a particle in space at time t. Match each position function with one of the graphs A–F. 
 
-$$
-\mathbf {3 1 .} \mathbf {r} (t) = (t \cos t) \mathbf {i} + (t \sin t) \mathbf {j} + t \mathbf {k}
-$$
+31. $\mathbf {r} (t) = (t \cos t) \mathbf {i} + (t \sin t) \mathbf {j} + t \mathbf {k}$
 
-$$
-\mathbf {3 2 .} \mathbf {r} (t) = (\cos t) \mathbf {i} + (\sin t) \mathbf {j} + (\sin 2 t) \mathbf {k}
-$$
+32. $\mathbf {r} (t) = (\cos t) \mathbf {i} + (\sin t) \mathbf {j} + (\sin 2 t) \mathbf {k}$
 
-$$
-\mathbf {3 3 .} \mathbf {r} (t) = t ^ {2} \mathbf {i} + (t ^ {2} + 1) \mathbf {j} + t ^ {4} \mathbf {k}
-$$
+33. $\mathbf {r} (t) = t ^ {2} \mathbf {i} + (t ^ {2} + 1) \mathbf {j} + t ^ {4} \mathbf {k}$
 
 34. $\mathbf { r } ( t ) = t \mathbf { i } + ( \ln t ) \mathbf { j } + ( \sin t ) \mathbf { k }$ 
 
@@ -540,22 +520,22 @@ D.
 
 t 36. = + + ( ) ( ) t t t t t r i j( ) sin cos )k +t 12 
 
-![[4f1a395ff209f3500b36be7de26d4b87e4467994a108fddcc15cb03b27d9dff3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4f1a395ff209f3500b36be7de26d4b87e4467994a108fddcc15cb03b27d9dff3.jpg)
 
 
-![[c1c589ba73aedeed73324a2c83387523a42c89b0d4a96ef2c106b92033e6e54f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c1c589ba73aedeed73324a2c83387523a42c89b0d4a96ef2c106b92033e6e54f.jpg)
 
 
-![[da692f2bf31fa08d736cb9023868dfa0ed51291fac13be94b9189aac41897012.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/da692f2bf31fa08d736cb9023868dfa0ed51291fac13be94b9189aac41897012.jpg)
 
 
-![[0af87a165e8d7f17c1d9c1d48d85c46ed792f49099cc2ad671885c03de6688bc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0af87a165e8d7f17c1d9c1d48d85c46ed792f49099cc2ad671885c03de6688bc.jpg)
 
 
-![[33d54d6164bb2c60f5ac01215c1876ee46f6c53108b219797730f14908171fde.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/33d54d6164bb2c60f5ac01215c1876ee46f6c53108b219797730f14908171fde.jpg)
 
 
-![[2b511c51ec8b5aa4db218c8d95eebd7b921dccf9dacea6b9502090738d88e4b7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2b511c51ec8b5aa4db218c8d95eebd7b921dccf9dacea6b9502090738d88e4b7.jpg)
 
 
 Theory and Examples 
@@ -588,11 +568,7 @@ $$
 
 $$
 \mathbf {e}. \mathbf {r} (t) = \cos \left(t ^ {2}\right) \mathbf {i} + \sin \left(t ^ {2}\right) \mathbf {j}, t \geq 0
-$$
-
-38. Motion along a circle Show that the vector-valued function 
-
-$$
+38. $Motion along a circle Show that the vector-valued function$
 \begin{array}{l} \mathbf {r} (t) = (2 \mathbf {i} + 2 \mathbf {j} + \mathbf {k}) \\ \quad + \cos t \left(\frac {1}{\sqrt {2}} \mathbf {i} - \frac {1}{\sqrt {2}} \mathbf {j}\right) + \sin t \left(\frac {1}{\sqrt {3}} \mathbf {i} + \frac {1}{\sqrt {3}} \mathbf {j} + \frac {1}{\sqrt {3}} \mathbf {k}\right) \end{array}
 $$
 
@@ -644,7 +620,7 @@ $$
 
 48. Constant Function Rule Prove that if u is the vector function with the constant value C, then du $/ d t = \mathbf { 0 }$ 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 Use a CAS to perform the following steps in Exercises 49–52. 
 
@@ -684,7 +660,7 @@ as you change the values of the constants a and b. Use a CAS to perform the step
 
 In this section we investigate integrals of vector functions and their application to motion along a path in space or in the plane. 
 
-## Integrals of Vector Functions
+### Integrals of Vector Functions
 
 A differentiable vector function R( ) is an t antiderivative of a vector function r( ) on ant interval I if $d { \bf R } / d t = { \bf r }$ at each point of I. If R is an antiderivative of r on $I ,$ it can be shown, working one component at a time, that every antiderivative of r on I has the form $\mathbf { R } + \mathbf { C }$ for some constant vector C (Exercise 45). The set of all antiderivatives of r on I is the indefinite integral of r on I. 
 
@@ -768,21 +744,21 @@ $$
 \frac {d \mathbf {r}}{d t} = \mathbf {v} (t) = - (3 \sin t) \mathbf {i} + (3 \cos t) \mathbf {j} + 2 t \mathbf {k}.
 $$
 
-![[c426c386d89c3bcfd8d19bf328120521779be396eb723b47c27f7ee72d621c61.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c426c386d89c3bcfd8d19bf328120521779be396eb723b47c27f7ee72d621c61.jpg)
 
 
 
 FIGURE 12.9 The path of the hang glider in Example 3. Although the path spirals around the z-axis, it is not a helix.
 
 
-![[8d7b7421f80a86e6dcf51d78eb9238923abcd9240d196800652edb8156bfad23.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8d7b7421f80a86e6dcf51d78eb9238923abcd9240d196800652edb8156bfad23.jpg)
 
 
 
 (a)
 
 
-![[99715822454c0b6512f8fa16a4ad8adc6b7e27612c2708e41e433eff53e6e539.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/99715822454c0b6512f8fa16a4ad8adc6b7e27612c2708e41e433eff53e6e539.jpg)
 
 
 
@@ -809,7 +785,7 @@ $$
 
 This is the path of the glider shown in Figure 12.9. Although the path resembles that of a helix due to its spiraling nature around the z-axis, it is not a helix because of the way it is rising. (We say more about this in Section 12.5.) 
 
-## The Vector and Parametric Equations for Ideal Projectile Motion
+### The Vector and Parametric Equations for Ideal Projectile Motion
 
 A classic example of integrating vector functions is the derivation of the equations for the motion of a projectile. In physics, projectile motion describes how an object fired at some angle from an initial position, and acted upon by only the force of gravity, moves in a vertical coordinate plane. In the classic example, we ignore the effects of any frictional drag on the object, which may vary with its speed and altitude, and also the fact that the force of gravity changes slightly with the projectile’s changing height. In addition, we ignore the long-distance effects of Earth turning beneath the projectile, such as in a rocket launch or the firing of a projectile from a cannon. Ignoring these effects gives us a reasonable approximation of the motion in most cases. 
 
@@ -903,7 +879,7 @@ $$
 
 This equation has the form $y = a x ^ { 2 } + b x$ , so its graph is a parabola. 
 
-![[3a1bd73d74db08b6fbdf6bd1e0652d97551a4a9176b2210c073d1ff1a2bc1fb2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3a1bd73d74db08b6fbdf6bd1e0652d97551a4a9176b2210c073d1ff1a2bc1fb2.jpg)
 
 
 
@@ -912,7 +888,7 @@ FIGURE 12.11 The path of a projectile fired from $\left( x _ { 0 } , y _ { 0 } \
 
 A projectile reaches its highest point when its vertical velocity component is zero. When fired over horizontal ground, the projectile lands when its vertical component equals zero in Equation (5), and the range R is the distance from the origin to the point of impact. We summarize the results here, which you are asked to verify in Exercise 31. 
 
-## Height, Flight Time, and Range for Ideal Projectile Motion
+### Height, Flight Time, and Range for Ideal Projectile Motion
 
 For ideal projectile motion when an object is launched from the origin over a horizontal surface with initial speed $v _ { 0 }$ and launch angle α: 
 
@@ -942,7 +918,7 @@ $$
 
 as you are asked to show in Exercise 33. 
 
-## Projectile Motion with Wind Gusts
+### Projectile Motion with Wind Gusts
 
 The next example shows how to account for another force acting on a projectile due to a gust of wind. We assume that the path of the baseball in Example 5 lies in a vertical plane. 
 
@@ -954,7 +930,7 @@ The next example shows how to account for another force acting on a projectile d
 
 (c) Assuming that the ball is not caught, find its range and flight time. 
 
-## **Solution**
+**Solution**
 
 (a) Using Equation (3) and accounting for the gust of wind, the initial velocity of the baseball is 
 
@@ -1016,9 +992,8 @@ Thus, the horizontal range is about 157.8 m, and the flight time is about 3.55 s
 
 In Exercises 41 and 42, we consider projectile motion when there is air resistance slowing down the flight. 
 
-## EXERCISES
+### Exercises 12.2
 
-## 12.2
 
 Integrating Vector-Valued Functions 
 
@@ -1038,9 +1013,7 @@ $$
 
 5. $\int _ { 1 } ^ { 4 } \Big [ \frac { 1 } { t } { \bf i } + \frac { 1 } { 5 - t } { \bf j } + \frac { 1 } { 2 t } { \bf k } \Big ] d t$ 
 
-$$
-\int_ {0} ^ {1} \left[ \frac {2}{\sqrt {1 - t ^ {2}}} \mathbf {i} + \frac {\sqrt {3}}{1 + t ^ {2}} \mathbf {k} \right] d t
-$$
+6. $\int_ {0} ^ {1} \left[ \frac {2}{\sqrt {1 - t ^ {2}}} \mathbf {i} + \frac {\sqrt {3}}{1 + t ^ {2}} \mathbf {k} \right] d t$
 
 7. $\int _ { 0 } ^ { 1 } \left[ t e ^ { t ^ { 2 } } \dot { \bf { i } } + e ^ { - t } \dot { \bf { j } } + { \bf { k } } \right] d t$ 
 
@@ -1050,7 +1023,7 @@ $$
 
 10. $\int _ { 0 } ^ { \pi / 4 } \left[ \sec t { \bf i } + \tan ^ { 2 } t { \bf j } - t \sin t { \bf k } \right] d t$ 
 
-## Initial Value Problems
+#### Initial Value Problems
 
 Solve the initial value problems in Exercises 11–20 for r as a vector function of t. 
 
@@ -1112,11 +1085,7 @@ $$
 
 $$
 \left. \frac {d \mathbf {r}}{d t} \right| _ {t = 0} = - \mathbf {i} + 4 \mathbf {j}
-$$
-
-20. Differential equation: 
-
-$$
+20. $Differential equation:$
 \frac {d ^ {2} \mathbf {r}}{d t ^ {2}} = (\sin t) \mathbf {i} - (\cos t) \mathbf {j} + (4 \sin t \cos t) \mathbf {k}
 $$
 
@@ -1126,13 +1095,13 @@ $$
 \left. \frac {d \mathbf {r}}{d t} \right| _ {t = 0} = \mathbf {i}
 $$
 
-## Motion Along a Straight Line
+#### Motion Along a Straight Line
 
 21. At time $t = 0 ,$ a particle is located at the point (1, 2, 3 . It travels) in a straight line to the point (4, 1, 4 , has speed 2 at ) (1, 2, 3 , and) has constant acceleration $3 \mathbf { i } - \mathbf { j } + \mathbf { k } .$ . Find an equation for the position vector r( ) of the particle at time t t. 
 
 22. A particle traveling in a straight line is located at the point (1, 1, 2 and has speed 2 at time− ) $t = 0$ . The particle moves toward the point (3, 0, 3 with constant acceleration) $2 \mathbf { i } + \mathbf { j } + \mathbf { k } .$ Find its position vector r( ) at time t t. 
 
-## Projectile Motion
+#### Projectile Motion
 
 Projectile flights in Exercises 23–40 are to be treated as ideal unless stated otherwise. All launch angles are assumed to be measured from the horizontal. All projectiles are assumed to be launched from the origin over a horizontal surface unless stated otherwise. For some exercises, a calculator may be helpful. 
 
@@ -1170,7 +1139,7 @@ b. For the same initial speed, find the two firing angles that make the range 6 
 
 32. Colliding marbles The accompanying figure shows an experiment with two marbles. Marble A was launched toward marble B with launch angle α and initial speed $\boldsymbol { v } _ { 0 } .$ At the same instant, marble B was released to fall from rest at R tan units directly aboveα a spot R units downrange from A. The marbles were found to collide regardless of the value of $\boldsymbol { v } _ { 0 } .$ . Was this mere coincidence, or must this happen? Give reasons for your answer. 
 
-![[b8a06f31dcb491dcf3bf23f73fe3147f743607ec47924455ed5c769146309ffc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b8a06f31dcb491dcf3bf23f73fe3147f743607ec47924455ed5c769146309ffc.jpg)
 
 
 33. Firing from $\left( x _ { 0 } , y _ { 0 } \right)$ Derive the equations 
@@ -1187,17 +1156,13 @@ Initial conditions:
 
 $$
 \begin{array}{l} \frac {d ^ {2} \mathbf {r}}{d t ^ {2}} = - g \mathbf {j} \\ \mathbf {r} (0) = x _ {0} \mathbf {i} + y _ {0} \mathbf {j} \\ \frac {d \mathbf {r}}{d t} (0) = (v _ {0} \cos \alpha) \mathbf {i} + (v _ {0} \sin \alpha) \mathbf {j} \end{array}
-$$
-
-34. Where trajectories crest For a projectile fired from the ground at launch angle α with initial speed $\boldsymbol { v } _ { 0 } ,$ , consider α as a variable and $v _ { 0 }$ as a fixed constant. For each $\alpha , 0 < \alpha < \pi / 2$ , we obtain a parabolic trajectory as shown in the accompanying figure. Show that the points in the plane that give the maximum heights of these parabolic trajectories all lie on the ellipse 
-
-$$
+34. $Where trajectories crest For a projectile fired from the ground at launch angle α with initial speed $\boldsymbol { v } _ { 0 } ,$ , consider α as a variable and $v _ { 0 }$ as a fixed constant. For each $\alpha , 0 < \alpha < \pi / 2$ , we obtain a parabolic trajectory as shown in the accompanying figure. Show that the points in the plane that give the maximum heights of these parabolic trajectories all lie on the ellipse$
 x ^ {2} + 4 \bigg (y - \frac {v _ {0} {} ^ {2}}{4 g} \bigg) ^ {2} = \frac {v _ {0} {} ^ {4}}{4 g ^ {2}},
 $$
 
 where $x \ge 0 .$ 
 
-![[fc4427a37fe9c987e91c757cddd577f489fd4f9e2fb9c34f1fcd6601937615c0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fc4427a37fe9c987e91c757cddd577f489fd4f9e2fb9c34f1fcd6601937615c0.jpg)
 
 
 35. Launching downhill An ideal projectile is launched straight down an inclined plane as shown in the accompanying figure. 
@@ -1206,12 +1171,12 @@ a. Show that the greatest downhill range is achieved when the initial velocity v
 
 b. If the projectile were fired uphill instead of down, what launch angle would maximize its range? Give reasons for your answer. 
 
-![[f19b995d76831ac5ccaa185bb90e03f784b75fd0c9b97caa28ec052b566c801a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f19b995d76831ac5ccaa185bb90e03f784b75fd0c9b97caa28ec052b566c801a.jpg)
 
 
 36. Elevated green A golf ball is hit with an initial speed of 35.5 m s at an angle of elevation of $4 5 ^ { \circ }$ from the tee to a green that is elevated 14 m above the tee as shown in the diagram. Assuming that the pin, 112 m downrange, does not get in the way, where will the ball land in relation to the pin? 
 
-![[b97e810603b711f93052f36ff3753d16c44384cfd660fd39d995979c577efe61.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b97e810603b711f93052f36ff3753d16c44384cfd660fd39d995979c577efe61.jpg)
 
 
 37. Volleyball A volleyball is hit when it is 1.3 m above the ground and 4 m from a 2-m-high net. It leaves the point of impact with an initial velocity of 12 m s at an angle o $2 7 ^ { \circ }$ and slips by the opposing team untouched. 
@@ -1242,11 +1207,11 @@ d. When is the baseball 6 m high? How far (ground distance) is the baseball from
 
 e. Has the batter hit a home run? Explain. 
 
-## Projectile Motion with Linear Drag
+#### Projectile Motion with Linear Drag
 
 The main force affecting the motion of a projectile, other than gravity, is air resistance. This slowing down force is drag force, and it acts in a direction opposite to the velocity of the projectile (see accompanying figure). For projectiles moving through the air at relatively low speeds, however, the drag force is (very nearly) proportional to the speed (to the first power) and so is called linear. 
 
-![[eaccc16648cceee9817b71d49b0726d3cc486ce2b9f314a70d0c644d3e2ce5ee.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/eaccc16648cceee9817b71d49b0726d3cc486ce2b9f314a70d0c644d3e2ce5ee.jpg)
 
 
 41. Linear drag Derive the equations 
@@ -1283,7 +1248,7 @@ d. When is the baseball 9 m high? How far (ground distance) is the baseball from
 
 e. A 3-m-high outfield fence is 115 m from home plate in the direction of the flight of the baseball. The outfielder can jump and catch any ball up to 3.3 m off the ground to stop it from going over the fence. Has the batter hit a home run? 
 
-## Theory and Examples
+#### Theory and Examples
 
 43. Establish the following properties of integrable vector functions. 
 
@@ -1361,7 +1326,7 @@ e. A 6-m-high outfield fence is 120 m from home plate in the direction of the fl
 
 48. Height versus time Show that a projectile attains three-quarters of its maximum height in half the time it takes to reach the maximum height. 
 
-![[71ceb1174715dad96cefedaf275a1c9f84777d5119921e988a89be70e802b1eb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/71ceb1174715dad96cefedaf275a1c9f84777d5119921e988a89be70e802b1eb.jpg)
 
 
 
@@ -1370,7 +1335,7 @@ FIGURE 12.12 Smooth curves can be scaled like number lines, the coordinate of ea
 
 In this and the next two sections, we study the mathematical features of a curve’s shape that describe the sharpness of its turning and its twisting. 
 
-## Arc Length Along a Space Curve
+#### Arc Length Along a Space Curve
 
 One of the features of smooth space and plane curves is that they have a measurable length. This enables us to locate points along these curves by giving their directed distance s along the curve from some base point, the way we locate points on coordinate axes by giving their directed distance from the origin (Figure 12.12). This is what we did for plane curves in Section 10.2. 
 
@@ -1382,7 +1347,7 @@ To measure distance along a smooth curve in space, we add a z-term to the formul
 
 > ***DEFINITION*** The length of a smooth curve ${ \bf { r } } ( t ) = x ( t ) \mathbf { i } + y ( t ) \mathbf { j } + z ( t ) \mathbf { k }$ $a \leq t \leq b _ { \mathrm { { : } } }$ , that is traced exactly once as t increases from $t = a \tan t = b$ is 
 
-![[580804795658effbac8434b0b51c81db9f5c5ded8c7a7c62082786414582a1a5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/580804795658effbac8434b0b51c81db9f5c5ded8c7a7c62082786414582a1a5.jpg)
 
 
 > $$
@@ -1421,7 +1386,7 @@ $$
 s (t) = \int_ {t _ {0}} ^ {t} | \mathbf {v} (\tau) | d \tau ,
 $$
 
-![[1175ea2d7ba7649e7c327361b52aa321478b9519d71ac76ebfa98da797fcdf27.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1175ea2d7ba7649e7c327361b52aa321478b9519d71ac76ebfa98da797fcdf27.jpg)
 
 
 
@@ -1460,7 +1425,7 @@ $$
 \mathbf {r} (t (s)) = \left(\cos \frac {s}{\sqrt {2}}\right) \mathbf {i} + \left(\sin \frac {s}{\sqrt {2}}\right) \mathbf {j} + \frac {s}{\sqrt {2}} \mathbf {k}.
 $$
 
-## HISTORICAL BIOGRAPHY Josiah Willard Gibbs (1839–1903)
+**HISTORICAL BIOGRAPHY Josiah Willard Gibbs (1839–1903)**
 
 Gibbs, born in Connecticut, USA, taught at Yale as a professor of mathematics. He made contributions to thermodynamics, electromagnetics, and statistical mechanics. For his foundational work, Gibbs is known as the father of vector analysis. 
 
@@ -1468,7 +1433,7 @@ To know more, visit the companion Website.
 
 Unlike the case that appears in Example 2, the arc length parametrization is generally difficult to find analytically for a curve already given in terms of some other parameter t. Fortunately, however, we rarely need an exact formula for s( ) or its inverse t t s( ). 
 
-## Speed on a Smooth Curve
+#### Speed on a Smooth Curve
 
 Since the derivatives beneath the radical in Equation (3) are continuous (the curve is smooth), the Fundamental Theorem of Calculus tells us that s is a differentiable function of t with derivative 
 
@@ -1476,14 +1441,14 @@ $$
 \frac {d s}{d t} = \big | \mathbf {v} (t) \big |.\tag{4}
 $$
 
-![[1fc5f9f2b15494847cbea0401ae5d71122d695f86ffe6790e02e4ca8f7cafe17.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1fc5f9f2b15494847cbea0401ae5d71122d695f86ffe6790e02e4ca8f7cafe17.jpg)
 
 
 
 FIGURE 12.15 We find the unit tangent vector T by dividing v by its length v .
 
 
-![[f01bffb0417c00cea9992757d13afde5ad5c3d9c45b21cae052aeb161b31e115.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f01bffb0417c00cea9992757d13afde5ad5c3d9c45b21cae052aeb161b31e115.jpg)
 
 
 
@@ -1494,7 +1459,7 @@ Although the base point $P ( t _ { 0 } )$ plays a role in defining s in Equation
 
 Notice that $d s / d t > 0$ since, by definition, v is never zero for a smooth curve. We see once again that s is an increasing function of t. 
 
-## Unit Tangent Vector
+#### Unit Tangent Vector
 
 On a smooth curve, we already know that the velocity vector $\mathbf { v } = d \mathbf { r } / d t$ is tangent to the curve $\mathbf { r } ( t )$ and that the vector 
 
@@ -1558,11 +1523,10 @@ $$
 
 This equation says that $d \mathbf { r } / d s$ is the unit tangent vector in the direction of the velocity vector v (Figure 12.15). 
 
-## EXERCISES
+### Exercises 12.3
 
-## 12.3
 
-## Finding Tangent Vectors and Lengths
+#### Finding Tangent Vectors and Lengths
 
 In Exercises 1–8, find the curve’s unit tangent vector. Also, find the length of the indicated portion of the curve. 
 
@@ -1600,7 +1564,7 @@ $$
 
 at a distance 13 units along the curve from the point π (0, 12, 0− ) in the direction corresponding to decreasing t values. 
 
-## Arc Length Parameter
+#### Arc Length Parameter
 
 In Exercises 11–14, find the arc length parameter along the curve from the point where $t = 0$ by evaluating the integral 
 
@@ -1610,9 +1574,7 @@ $$
 
 from Equation (3). Then use the formula for s( ) to find the length oft the indicated portion of the curve. 
 
-$$
-\mathbf {1 1 .} \mathbf {r} (t) = (4 \cos t) \mathbf {i} + (4 \sin t) \mathbf {j} + 3 t \mathbf {k}, 0 \leq t \leq \pi / 2
-$$
+11. $\mathbf {r} (t) = (4 \cos t) \mathbf {i} + (4 \sin t) \mathbf {j} + 3 t \mathbf {k}, 0 \leq t \leq \pi / 2$
 
 12. $\mathbf { r } ( t ) = { \big ( } \cos t + t \sin t { \big ) } \mathbf { i } + { \big ( } \sin t - t \cos t { \big ) } \mathbf { j } , \pi / 2 \leq t \leq \pi$ 
 
@@ -1662,7 +1624,7 @@ $$
 
 of the point $P ( x , y )$ for the involute. 
 
-![[9189f0249750a9eb6e3bfa2eb6627d57f83e4f905fe284deb6a34abad6a3b21b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9189f0249750a9eb6e3bfa2eb6627d57f83e4f905fe284deb6a34abad6a3b21b.jpg)
 
 
 20. (Continuation of Exercise 19.) Find the unit tangent vector to the involute of the circle at the point $P \left( x , y \right)$ 
@@ -1673,7 +1635,7 @@ of the point $P ( x , y )$ for the involute.
 
 ## 12.4 Curvature and Normal Vectors of a Curve
 
-![[d01ca3761289df3ab8c6f22a7727a80b8ac4f342625d0e016b3500b8c999cefd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d01ca3761289df3ab8c6f22a7727a80b8ac4f342625d0e016b3500b8c999cefd.jpg)
 
 
 
@@ -1682,14 +1644,14 @@ FIGURE 12.17 As P moves along the curve in the direction of increasing arc lengt
 
 κ is the Greek letter kappa. 
 
-![[d4871d2f198570520bdc9595308c3c5f91f54223a7bb5730d65f8526dcf4946c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d4871d2f198570520bdc9595308c3c5f91f54223a7bb5730d65f8526dcf4946c.jpg)
 
 
 FIGURE 12.18 Along a straight line, T always points in the same direction. The curvature, $| d \mathbf { T } / d s |$ , is zero (Example 1). 
 
 In this section we study how a curve turns or bends. To gain perspective, we look first at curves in the coordinate plane. Then we consider curves in space. 
 
-## Curvature of a Plane Curve
+### Curvature of a Plane Curve
 
 As a particle moves along a smooth curve in the plane, $\mathbf { T } = d \mathbf { r } / d s$ turns as the curve bends. Since T is a unit vector, its length remains constant and only its direction changes as the particle moves along the curve. The rate at which T turns per unit of length along the curve is called the curvature (Figure 12.17). The traditional symbol for the curvature function is the Greek letter κ (“kappa”). 
 
@@ -1715,7 +1677,7 @@ As a particle moves along a smooth curve in the plane, $\mathbf { T } = d \mathb
 > = \frac {1}{| \mathbf {v} |} \left| \frac {d \mathbf {T}}{d t} \right|. \quad \frac {d s}{d t} = | \mathbf {v} |
 > $$
 
-## Formula for Calculating Curvature
+### Formula for Calculating Curvature
 
 If $\mathbf { r } ( t )$ is a smooth curve in the plane, then the curvature is the scalar function 
 
@@ -1775,7 +1737,7 @@ Among the vectors orthogonal to the unit tangent vector T, there is one of parti
 
 FIGURE 12.19 The vector dT ds, normal to the curve, always points in the direction in which T is turning. The unit normal vector N is the direction of dT ds. 
 
-![[5b9f1bfbb67b34afdafdad6cafc8c6aa369f9751ee5d2848446946c9bc5295e7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5b9f1bfbb67b34afdafdad6cafc8c6aa369f9751ee5d2848446946c9bc5295e7.jpg)
 
 
 > $$
@@ -1802,7 +1764,7 @@ $$
 
 where $\mathbf { T } = \mathbf { v } / | \mathbf { v } |$ is the unit tangent vector. 
 
-## **EXAMPLE 3** Find T and N for the circular motion
+**EXAMPLE 3** Find T and N for the circular motion
 
 $$
 \mathbf {r} (t) = (\cos 2 t) \mathbf {i} + (\sin 2 t) \mathbf {j}.
@@ -1844,9 +1806,9 @@ $$
 
 Notice that $\mathbf { T } \cdot \mathbf { N } = 0 { \mathrm { . } }$ , verifying that N is orthogonal to T. Notice too, that for the circular motion here, N points from r( ) toward the circle’s center at the origin.t ■ 
 
-## Circle of Curvature for Plane Curves
+### Circle of Curvature for Plane Curves
 
-![[9321bbcf3e2d9989ed6e6d5e541703905ea518eb9ea36852d4ab070660b8d3d7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9321bbcf3e2d9989ed6e6d5e541703905ea518eb9ea36852d4ab070660b8d3d7.jpg)
 
 
 The circle of curvature or osculating circle at a point P on a plane curve where $\kappa \ne 0$ is the circle in the plane of the curve that 
@@ -1879,14 +1841,14 @@ $$
 \mathbf {v} = \frac {d \mathbf {r}}{d t} = \mathbf {i} + 2 t \mathbf {j}
 $$
 
-![[e0035ef23e447ffc2eddba0775e2ac3b659304150457d4273a24d771ec33255a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e0035ef23e447ffc2eddba0775e2ac3b659304150457d4273a24d771ec33255a.jpg)
 
 
 
 FIGURE 12.21 The osculating circle for the parabola $y = x ^ { 2 }$ at the origin (Example 4).
 
 
-![[0da2dddef3870205c3dbc68e2f0dfe6f19edc33682b587834c1689e21fcaf932.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0da2dddef3870205c3dbc68e2f0dfe6f19edc33682b587834c1689e21fcaf932.jpg)
 
 
 
@@ -1929,7 +1891,7 @@ $$
 
 You can see from Figure 12.21 that the osculating circle is a better approximation to the parabola at the origin than is the tangent line approximation $y = 0$ 
 
-## Curvature and Normal Vectors for Space Curves
+### Curvature and Normal Vectors for Space Curves
 
 If a smooth curve in space is specified by the position vector $\mathbf { r } ( t )$ as a function of some parameter t, and if s is the arc length parameter of the curve, then the unit tangent vector T is $d \mathbf { r } / d s = \mathbf { v } / | \mathbf { v } |$ . The curvature in space is then defined to be 
 
@@ -1973,7 +1935,7 @@ From this equation, we see that increasing b for a fixed a decreases the curvatu
 
 If $b = 0 ,$ , the helix reduces to a circle of radius a, and its curvature reduces to $1 / a ,$ asit should. $\mathrm { I f } a = 0$ , the helix becomes the $z { \mathrm { - a x i s . } }$ , and its curvature reduces to 0, again as itshould. 一
 
-## **EXAMPLE 6** Find N for the helix in Example 5 and describe how the vector is pointing.
+**EXAMPLE 6** Find N for the helix in Example 5 and describe how the vector is pointing.
 
 **Solution** We have 
 
@@ -1995,7 +1957,7 @@ Eq. (4)
 
 Thus, N is parallel to the xy-plane and always points toward the z-axis. 
 
-## EXERCISES 12.4
+### EXERCISES 12.4
 
 Plane Curves 
 
@@ -2021,7 +1983,7 @@ b. Use the formula for κ in part (a) to find the curvature of $y = \ln ( \cos x
 
 c. Show that the curvature is zero at a point of inflection. 
 
-## 6. A formula for the curvature of a parametrized plane curve
+6. A formula for the curvature of a parametrized plane curve
 
 a. Show that the curvature of a smooth curve 
 
@@ -2055,7 +2017,7 @@ a. Use the method of Exercise 7 to find N for the curve $\mathbf { r } ( t ) = t
 
 b. Calculate N for $t \neq 0$ directly from T using Equation (4) for the curve in part (a). Does N exist at t = 0? Graph the curve and explain what is happening to N as t passes from negative to positive values. 
 
-## Space Curves
+#### Space Curves
 
 Find T, N, and κ for the space curves in Exercises 9–16. 
 
@@ -2067,27 +2029,21 @@ $$
 \mathbf {1 0 . r} (t) = (\cos t + t \sin t) \mathbf {i} + (\sin t - t \cos t) \mathbf {j} + 3 \mathbf {k}
 $$
 
-$$
-\mathbf {1 1 .} \mathbf {r} (t) = \left(e ^ {t} \cos t\right) \mathbf {i} + \left(e ^ {t} \sin t\right) \mathbf {j} + 2 \mathbf {k}
-$$
+11. $\mathbf {r} (t) = \left(e ^ {t} \cos t\right) \mathbf {i} + \left(e ^ {t} \sin t\right) \mathbf {j} + 2 \mathbf {k}$
 
 12. r i j ( ) 6 sin 2 6 cos 2 5 t t t t = + + ( ) ( ) k 
 
 13. ${ \bf r } ( t ) = \big ( t ^ { 3 } / 3 \big ) { \bf i } + \big ( t ^ { 2 } / 2 \big ) { \bf j } + { \bf k } , t > 0$ 
 
-$$
-\mathbf {1 4 .} \mathbf {r} (t) = (\cos^ {3} t) \mathbf {j} + (\sin^ {3} t) \mathbf {k}, 0 <   t <   \pi / 2
-$$
+14. $\mathbf {r} (t) = (\cos^ {3} t) \mathbf {j} + (\sin^ {3} t) \mathbf {k}, 0 <   t <   \pi / 2$
 
 $$
 \mathbf {1 5 . r} (t) = t \mathbf {i} + (a \cosh (t / a)) \mathbf {k}, a > 0
 $$
 
-$$
-\mathbf {1 6 .} \mathbf {r} (t) = (\cosh t) \mathbf {i} - (\sinh t) \mathbf {j} + t \mathbf {k}
-$$
+16. $\mathbf {r} (t) = (\cosh t) \mathbf {i} - (\sinh t) \mathbf {j} + t \mathbf {k}$
 
-## More on Curvature
+#### More on Curvature
 
 17. Show that the parabola $y = a x ^ { 2 } , a \ne 0 .$ , has its largest curvature at its vertex and has no minimum curvature. (Note: Since the curvature of a curve remains the same if the curve is translated or rotated, this result is true for any parabola.) 
 
@@ -2117,29 +2073,23 @@ $$
 
 derived in Exercise 5, expresses the curvature $\kappa ( x )$ of a twicedifferentiable plane curve $y = f ( x )$ as a function of x. Find the curvature function of each of the curves in Exercises 23–26. Then graph f ( ) together with x κ( ) x over the given interval. You will find some surprises. 
 
-$$
-2 3. y = x ^ {2}, - 2 \leq x \leq 2 \quad 2 4. y = x ^ {4} / 4, - 2 \leq x \leq 2
-$$
+23. $y = x ^ {2}, - 2 \leq x \leq 2 \quad 2 4. y = x ^ {4} / 4, - 2 \leq x \leq 2$
 
-$$
-\mathbf {2 5 .} y = \sin x, 0 \leq x \leq 2 \pi \quad \mathbf {2 6 .} y = e ^ {x}, - 1 \leq x \leq 2
-$$
+25. $y = \sin x, 0 \leq x \leq 2 \pi$
+
+26. $y = e ^ {x}, - 1 \leq x \leq 2$
 
 In Exercises 27 and 28, determine the maximum curvature for the graph of each function. 
 
-$$
-2 7. f (x) = \ln x
-$$
+27. $f (x) = \ln x$
 
-$$
-f (x) = \frac {x}{x + 1} \quad \text { for } \quad x > - 1
-$$
+28. $f (x) = \frac {x}{x + 1} \quad \text { for } \quad x > - 1$
 
 29. Osculating circle Show that the center of the osculating circle for the parabola $y = x ^ { 2 }$ at the point $\left( a , a ^ { 2 } \right)$ is located at $\left( - 4 a ^ { 3 } , 3 a ^ { 2 } + \frac { 1 } { 2 } \right) .$ 
 
 30. Osculating circle Find a parametrization of the osculating circle for the parabola $y = x ^ { 2 } \mathrm { w h e n } x = 1$ 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 31–38 you will use $\mathrm { a } \mathrm { C A S }$ to explore the osculating circle at a point P on a plane curve where $\kappa \ne 0$ . Use a CAS to perform the following steps: 
 
@@ -2159,21 +2109,15 @@ The point $P ( x _ { 0 } , y _ { 0 } )$ on the curve is given by the position ve
 
 e. Plot implicitly the equation $( x - a ) ^ { 2 } + ( y - b ) ^ { 2 } = 1 / \kappa ^ { 2 }$ of the osculating circle. Then plot the curve and osculating circle together. You may need to experiment with the size of the viewing window, but be sure the axes are equally scaled. 
 
-$$
-\mathbf {3 1 .} \mathbf {r} (t) = (3 \cos t) \mathbf {i} + (5 \sin t) \mathbf {j}, \quad 0 \leq t \leq 2 \pi , \quad t _ {0} = \pi / 4
-$$
+31. $\mathbf {r} (t) = (3 \cos t) \mathbf {i} + (5 \sin t) \mathbf {j}, \quad 0 \leq t \leq 2 \pi , \quad t _ {0} = \pi / 4$
 
 $$
 \mathbf {3 2 . r} (t) = (\cos^ {3} t) \mathbf {i} + (\sin^ {3} t) \mathbf {j}, 0 \leq t \leq 2 \pi , t _ {0} = \pi / 4
 $$
 
-$$
-\mathbf {3 3 .} \mathbf {r} (t) = t ^ {2} \mathbf {i} + (t ^ {3} - 3 t) \mathbf {j}, - 4 \leq t \leq 4, t _ {0} = 3 / 5
-$$
+33. $\mathbf {r} (t) = t ^ {2} \mathbf {i} + (t ^ {3} - 3 t) \mathbf {j}, - 4 \leq t \leq 4, t _ {0} = 3 / 5$
 
-$$
-\mathbf {3 4 .} \mathbf {r} (t) = (t ^ {3} - 2 t ^ {2} - t) \mathbf {i} + \frac {3 t}{\sqrt {1 + t ^ {2}}} \mathbf {j}, - 2 \leq t \leq 5, t _ {0} = 1
-$$
+34. $\mathbf {r} (t) = (t ^ {3} - 2 t ^ {2} - t) \mathbf {i} + \frac {3 t}{\sqrt {1 + t ^ {2}}} \mathbf {j}, - 2 \leq t \leq 5, t _ {0} = 1$
 
 $$
 \begin{array}{l} \text { 35. } \mathbf {r} (t) = (2 t - \sin t) \mathbf {i} + (2 - 2 \cos t) \mathbf {j}, 0 \leq t \leq 3 \pi , \\ t _ {0} = 3 \pi / 2 \end{array}
@@ -2181,33 +2125,27 @@ $$
 
 $$
 \mathbf {3 6 .} \mathbf {r} (t) = (e ^ {- t} \cos t) \mathbf {i} + (e ^ {- t} \sin t) \mathbf {j}, 0 \leq t \leq 6 \pi , t _ {0} = \pi / 4
-$$
-
-$$
-3 7. y = x ^ {2} - x, - 2 \leq x \leq 5, x _ {0} = 1
-$$
-
-$$
+37. $$y = x ^ {2} - x, - 2 \leq x \leq 5, x _ {0} = 1$$
 \mathbf {3 8 .} y = x (1 - x) ^ {2 / 5}, - 1 \leq x \leq 2, x _ {0} = 1 / 2
 $$
 
 ## 12.5 Tangential and Normal Components of Acceleration
 
-![[e7a0da81f664bffec432f0037b6d5e48b7925689553809a9f44692dac7816aee.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e7a0da81f664bffec432f0037b6d5e48b7925689553809a9f44692dac7816aee.jpg)
 
 
 
 FIGURE 12.23 The TNB frame of mutually orthogonal unit vectors traveling along a curve in space.
 
 
-![[3b71721dbca72788c92b9a1346841f824030f5c2e3b0c1cbf2f42d0fd51a4573.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3b71721dbca72788c92b9a1346841f824030f5c2e3b0c1cbf2f42d0fd51a4573.jpg)
 
 
 
 FIGURE 12.24 The vectors T, N, and B (in that order) make a right-handed frame of mutually orthogonal unit vectors in space.
 
 
-![[e3fb9f594b96e793dce16dd589a684019d4f5561087afa9ef35450b78e081aa0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e3fb9f594b96e793dce16dd589a684019d4f5561087afa9ef35450b78e081aa0.jpg)
 
 
 
@@ -2216,11 +2154,11 @@ FIGURE 12.25 The tangential and normal components of acceleration. The accelerat
 
 If you are flying in an airplane that is traveling along a curve in space, the Cartesian i, j, and k coordinate system for representing the vectors describing your motion may not be very relevant to you. Vectors that are likely to be more important are those representing your forward direction (the unit tangent vector T) and the direction in which your path is turning (the unit normal vector N), along with a third unit vector perpendicular to the other two. Expressing the acceleration vector along the curve as a linear combination of these three mutually orthogonal unit vectors traveling with the motion (Figure 12.23) can reveal much about the nature of your path and your motion along it. 
 
-## The TNB Frame
+### The TNB Frame
 
 The binormal vector of a curve in space is $\mathbf { B } = \mathbf { T } \times \mathbf { N } ,$ which is a unit vector that is orthogonal to both T and N (Figure 12.24). Together T, N, and B define a moving righthanded vector frame that plays a significant role in analyzing the paths of particles moving through space. It is called the Frenet (“fre-nay”) frame (after Jean-Frédéric Frenet, 1816–1900), or the TNB frame. 
 
-## Tangential and Normal Components of Acceleration
+### Tangential and Normal Components of Acceleration
 
 When an object is accelerated by gravity, brakes, or rocket motors, we often need to know how much of the acceleration acts in the direction of motion, which is the direction of the tangent vector T. We can calculate this using the Chain Rule to rewrite v as 
 
@@ -2252,14 +2190,14 @@ Notice that the binormal vector B does not appear in Equation (1). No matter how
 
 What information can we discover from Equations (2)? By definition, acceleration a is the rate of change of velocity v, and in general, both the length and direction of v change as an object moves along its path. The tangential component of acceleration $a _ { \mathrm { T } }$ measures the rate of change of the length of v (that is, the change in the speed). The normal component of acceleration $a _ { \mathrm { N } }$ is proportional to the rate of change of the direction of v. 
 
-![[b6c712eb7167e4199ac58fea000ef4781769c2eb84406d94636a05714c2ea3aa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b6c712eb7167e4199ac58fea000ef4781769c2eb84406d94636a05714c2ea3aa.jpg)
 
 
 
 FIGURE 12.26 The tangential and normal components of the acceleration of an object that is speeding up as it moves counterclockwise around a circle of radius $\rho .$
 
 
-![[4df954b2c92c6c735ffd787ab0dec8909530aa8fe5e3c868ccc86d87f48ec16c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4df954b2c92c6c735ffd787ab0dec8909530aa8fe5e3c868ccc86d87f48ec16c.jpg)
 
 
 
@@ -2306,7 +2244,7 @@ $$
 \mathbf {a} = a _ {\mathrm{T}} \mathbf {T} + a _ {\mathrm{N}} \mathbf {N} = (1) \mathbf {T} + (t) \mathbf {N} = \mathbf {T} + t \mathbf {N}.
 $$
 
-## Torsion
+### Torsion
 
 How does $d \mathbf { B } / d s$ behave in relation to T, N, and B? From the rule for differentiating a cross product in Section 12.1, we have 
 
@@ -2342,7 +2280,7 @@ We use this equation for our next definition.
 > \boldsymbol {\tau} = - \frac {d \mathbf {B}}{d s} \cdot \mathbf {N}.\tag{4}
 > $$
 >
-![[bae88a856642734c2403e9b270e78a9a4a8d26577a3e4c2a75331f1091b42b2a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bae88a856642734c2403e9b270e78a9a4a8d26577a3e4c2a75331f1091b42b2a.jpg)
 
 
 
@@ -2355,14 +2293,14 @@ The three planes determined by T, N, and B are named and shown in Figure 12.28. 
 
 Look at Figure 12.29. If P is a train climbing up a curved track, the rate at which the headlight turns from side to side per unit distance is the curvature of the track. The rate at which the engine tends to twist out of the plane formed by T and N is the torsion. It can be shown that a space curve is a helix if and only if it has constant nonzero curvature and constant nonzero torsion. 
 
-![[d95ffe2dc2ec164fb8985eb180012a01577754bb229e9acbf000286775fdd777.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d95ffe2dc2ec164fb8985eb180012a01577754bb229e9acbf000286775fdd777.jpg)
 
 
 
 FIGURE 12.29 Every moving body travels with a TNB frame that characterizes the geometry of its path of motion.
 
 
-## Formulas for Computing Curvature and Torsion
+### Formulas for Computing Curvature and Torsion
 
 We now give easy-to-use formulas for computing the curvature and torsion of a smooth curve. From Equations (1) and (2), we have 
 
@@ -2476,11 +2414,10 @@ $$
 a _ {\mathrm{N}} = \kappa | \mathbf {v} | ^ {2} = \sqrt {| \mathbf {a} | ^ {2} - a _ {\mathrm{T}} ^ {2}}
 $$
 
-## EXERCISES
+### Exercises 12.5
 
-## 12.5
 
-## Finding Tangential and Normal Components
+#### Finding Tangential and Normal Components
 
 In Exercises 1–4, write a in the form $\mathbf { a } = a _ { \mathrm { T } } \mathbf { T } + a _ { \mathrm { N } } \mathbf { N }$ without finding T and N. 
 
@@ -2526,13 +2463,11 @@ $$
 \mathbf {1 0 . r} (t) = \left(e ^ {t} \cos t\right) \mathbf {i} + \left(e ^ {t} \sin t\right) \mathbf {j} + \sqrt {2} e ^ {t} \mathbf {k}, t = 0
 $$
 
-## Finding the TNB Frame
+#### Finding the TNB Frame
 
 In Exercises 11 and 12, find r, T, N, and B at the given value of t. Then find equations for the osculating, normal, and rectifying planes at that value of t. 
 
-$$
-\mathbf {1 1 .} \mathbf {r} (t) = (\cos t) \mathbf {i} + (\sin t) \mathbf {j} - \mathbf {k}, t = \pi / 4
-$$
+11. $\mathbf {r} (t) = (\cos t) \mathbf {i} + (\sin t) \mathbf {j} - \mathbf {k}, t = \pi / 4$
 
 $$
 \mathbf {1 2 . r} (t) = (\cos t) \mathbf {i} + (\sin t) \mathbf {j} + t \mathbf {k}, \quad t = 0
@@ -2540,13 +2475,9 @@ $$
 
 In Exercises 9–16 of Section 12.4, you found T, N, and κ. Now, in the following Exercises 13–20, find B and τ for these space curves. 
 
-$$
-\mathbf {1 3 .} \mathbf {r} (t) = (3 \sin t) \mathbf {i} + (3 \cos t) \mathbf {j} + 4 t \mathbf {k}
-$$
+13. $\mathbf {r} (t) = (3 \sin t) \mathbf {i} + (3 \cos t) \mathbf {j} + 4 t \mathbf {k}$
 
-$$
-\mathbf {1 4 .} \mathbf {r} (t) = (\cos t + t \sin t) \mathbf {i} + (\sin t - t \cos t) \mathbf {j} + 3 \mathbf {k}
-$$
+14. $\mathbf {r} (t) = (\cos t + t \sin t) \mathbf {i} + (\sin t - t \cos t) \mathbf {j} + 3 \mathbf {k}$
 
 $$
 \mathbf {1 5 . r} (t) = \left(e ^ {t} \cos t\right) \mathbf {i} + \left(e ^ {t} \sin t\right) \mathbf {j} + 2 \mathbf {k}
@@ -2560,9 +2491,7 @@ $$
 \mathbf {1 7 . r} (t) = \left(t ^ {3} / 3\right) \mathbf {i} + \left(t ^ {2} / 2\right) \mathbf {j} + \mathbf {k}, t > 0
 $$
 
-$$
-\mathbf {1 8 .} \mathbf {r} (t) = (\cos^ {3} t) \mathbf {j} + (\sin^ {3} t) \mathbf {k}, 0 <   t <   \pi / 2
-$$
+18. $\mathbf {r} (t) = (\cos^ {3} t) \mathbf {j} + (\sin^ {3} t) \mathbf {k}, 0 <   t <   \pi / 2$
 
 $$
 \mathbf {1 9 . r} (t) = t \mathbf {i} + (a \cosh (t / a)) \mathbf {k}, a > 0
@@ -2572,7 +2501,7 @@ $$
 \mathbf {2 0 . r} (t) = (\cosh t) \mathbf {i} - (\sinh t) \mathbf {j} + t \mathbf {k}
 $$
 
-## Physical Applications
+#### Physical Applications
 
 21. The speedometer on your car reads a steady 35 km/h. Could you be accelerating? Explain. 
 
@@ -2582,7 +2511,7 @@ $$
 
 24. An object of mass m travels along the parabola $y = x ^ { 2 }$ with a constant speed of 10 units s. What is the force on the object due to its acceleration at $( 0 , 0 ) \mho \dot { \mathrm { a t } } ( 2 \ d ^ { 1 / 2 } , 2 ) \updownarrow$ Write your answers in terms of i and j. (Remember Newton’s law, F = ma.) 
 
-## Theory and Examples
+#### Theory and Examples
 
 25. Show that κ and τ are both zero for the line 
 
@@ -2620,39 +2549,35 @@ $$
 
 Use the formula to find the torsion of the helix in Example 2. 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 Rounding the answers to four decimal places, use a CAS to find v, a, speed, T, N, B, κ τ,  , and the tangential and normal components of acceleration for the curves in Exercises 31–34 at the given values of t. 
 
-$$
-\mathbf {3 1 .} \mathbf {r} (t) = (t \cos t) \mathbf {i} + (t \sin t) \mathbf {j} + t \mathbf {k}, \quad t = \sqrt {3}
-$$
+31. $\mathbf {r} (t) = (t \cos t) \mathbf {i} + (t \sin t) \mathbf {j} + t \mathbf {k}, \quad t = \sqrt {3}$
 
-$$
-\mathbf {3 2 .} \mathbf {r} (t) = \left(e ^ {t} \cos t\right) \mathbf {i} + \left(e ^ {t} \sin t\right) \mathbf {j} + e ^ {t} \mathbf {k}, \quad t = \ln 2
-$$
+32. $\mathbf {r} (t) = \left(e ^ {t} \cos t\right) \mathbf {i} + \left(e ^ {t} \sin t\right) \mathbf {j} + e ^ {t} \mathbf {k}, \quad t = \ln 2$
 
 33. r i j k ( ) sin 1 cos , 3 t t t t t t = − + − + − = − ( ) ( ) π 
 
 34. $\mathbf { r } ( t ) = ( 3 t - t ^ { 2 } ) \mathbf { i } + ( 3 t ^ { 2 } ) \mathbf { j } + ( 3 t + t ^ { 3 } ) \mathbf { k } , t = 1$ 
 
-## Velocity and Acceleration in Polar Coordinates
+#### Velocity and Acceleration in Polar Coordinates
 
-![[446a43958eb9747798934e9c52ab9961e8e560556c1ce6ad8b8137d2953ed6a2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/446a43958eb9747798934e9c52ab9961e8e560556c1ce6ad8b8137d2953ed6a2.jpg)
 
 
 
 FIGURE 12.30 The length of r is the positive polar coordinate r of the point P. Thus ${ \bf u } _ { r } ,$ which is r r , is also $\mathbf { r } / r$ Equations (1) express u and $\mathbf { u } _ { \theta }$ in terms of i and j.
 
 
-![[85a6217517e84d8251471119ac389bfe3329cf3889a6852eedc63de924960e27.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/85a6217517e84d8251471119ac389bfe3329cf3889a6852eedc63de924960e27.jpg)
 
 
 
 FIGURE 12.31 In polar coordinates, the velocity vector is $\mathbf { v } = { \dot { r } } \mathbf { u } _ { r } + r { \dot { \theta } } \mathbf { u } _ { \theta }$
 
 
-![[facc2a3e0a864e623e8ece79e8909c92a6e3b48819bbf51281ff25be03e1e177.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/facc2a3e0a864e623e8ece79e8909c92a6e3b48819bbf51281ff25be03e1e177.jpg)
 
 
 
@@ -2661,7 +2586,7 @@ FIGURE 12.32 Position vector and basic unit vectors in cylindrical coordinates. 
 
 In this section we derive equations for velocity and acceleration in polar coordinates. These equations are useful for calculating the paths of planets and satellites in space, and we use them to examine Kepler’s three laws of planetary motion. 
 
-## Motion in Polar and Cylindrical Coordinates
+#### Motion in Polar and Cylindrical Coordinates
 
 When a particle at $P ( r , \theta )$ moves along a curve in the polar coordinate plane, we express its position, velocity, and acceleration in terms of the moving unit vectors 
 
@@ -2729,28 +2654,28 @@ $$
 \mathbf {u} _ {r} \times \mathbf {u} _ {\theta} = \mathbf {k}, \quad \mathbf {u} _ {\theta} \times \mathbf {k} = \mathbf {u} _ {r}, \quad \mathbf {k} \times \mathbf {u} _ {r} = \mathbf {u} _ {\theta}.
 $$
 
-![[c1ef0baf56ec25a68f10ce522efe23012f4765f8313c80f2bac711365a10a1db.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c1ef0baf56ec25a68f10ce522efe23012f4765f8313c80f2bac711365a10a1db.jpg)
 
 
 
 FIGURE 12.33 The force of gravity is directed along the line joining the centers of mass.
 
 
-![[f4525f68e7a340ce0c9d651e987398dfeb771deadc63c6d67e5bde48d8c7bcc2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f4525f68e7a340ce0c9d651e987398dfeb771deadc63c6d67e5bde48d8c7bcc2.jpg)
 
 
 
 FIGURE 12.34 A planet that obeys Newton’s laws of gravitation and motion travels in the plane through its sun’s center of mass perpendicular to $\mathbf { C } = \mathbf { r } \times { \dot { \mathbf { r } } }$
 
 
-![[4bf465d3faf782a34bb19f82d4d8275330aab1aa5c78e5bb4c734a82115cc6d9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4bf465d3faf782a34bb19f82d4d8275330aab1aa5c78e5bb4c734a82115cc6d9.jpg)
 
 
 
 FIGURE 12.35 The line joining a planet to its sun sweeps over equal areas in equal times.
 
 
-## Planets Move in Planes
+#### Planets Move in Planes
 
 Newton’s law of gravitation says that if r is the radius vector from the center of a sun of mass M to the center of a planet of mass m, then the force F of the gravitational attraction between the planet and sun is 
 
@@ -2790,7 +2715,7 @@ for some constant vector C.
 
 <sub>Equation</sub> <sub>(4)</sub> <sub>tells</sub> <sub>us</sub> <sub>that</sub> <sub>r</sub> <sub>and</sub> <sub>r</sub> <sub>always</sub> <sub>lie</sub> <sub>in</sub> <sub>a</sub> <sub>plane</sub> <sub>perpendicular</sub> <sub>to</sub> <sub>C.</sub> <sub>Hence,</sub> <sub>the</sub> planet moves in a fixed plane through the center of mass of its sun (Figure 12.34). We next see how Kepler’s laws describe the motion in a precise way. 
 
-## Kepler’s First Law (Ellipse Law)
+#### Kepler’s First Law (Ellipse Law)
 
 Kepler’s first law says that a planet’s path is an ellipse with its sun at one focus. The eccentricity of the ellipse is 
 
@@ -2806,7 +2731,7 @@ $$
 
 Here $\boldsymbol { v } _ { 0 }$ is the speed when the planet is positioned at its minimum distance $r _ { 0 }$ from the sun. We omit the lengthy proof. The sun’s mass M is $1 . 9 9 \times 1 0 ^ { 3 0 } \mathrm { k g } .$ 
 
-## Kepler’s Second Law (Equal Area Law)
+#### Kepler’s Second Law (Equal Area Law)
 
 Kepler’s second law says that the radius vector from the sun to a planet (the vector r in our model) sweeps out equal areas in equal times, as displayed in Figure 12.35. In that figure, we assume the plane of the planet is the xy-plane, so the unit vector in the direction of C is k. 
 
@@ -2848,13 +2773,13 @@ $$
 
 So dA dt is constant, giving Kepler’s second law. 
 
-## HISTORICAL BIOGRAPHY Johannes Kepler (1571–1630)
+**HISTORICAL BIOGRAPHY Johannes Kepler (1571–1630)**
 
 The German astronomer, mathematician, and physicist Johannes Kepler was the first scientist to demand physical explanations of celestial phenomena. His three laws of planetary motion, the results of a lifetime of work, changed astronomy and played a crucial role in the development of Newtonian physics and calculus. 
 
 To know more, visit the companion Website. 
 
-## Kepler’s Third Law (Time–Distance Law)
+#### Kepler’s Third Law (Time–Distance Law)
 
 The time T it takes a planet to go around its sun once is the planet’s orbital period. Kepler’s third law says that T and the orbit’s semimajor axis a are related by the equation 
 
@@ -2882,7 +2807,7 @@ $$
 r _ {\mathrm{max}} = r _ {0} \frac {1 + e}{1 - e}.
 $$
 
-![[006141c27463a2c49f8ec56aad939cf52745416429a71d55b60a01497221f22e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/006141c27463a2c49f8ec56aad939cf52745416429a71d55b60a01497221f22e.jpg)
 
 
 Hence, from Figure 12.36, 
@@ -2899,35 +2824,22 @@ FIGURE 12.36 The length of the major
 
 axis of the ellipse is $2 a = r _ { 0 } + r _ { \operatorname* { m a x } }$ 
 
-## EXERCISES
+### Exercises 12.6
 
-## 12.6
 
 In Exercises 1–7, find the velocity and acceleration vectors in terms of u and ${ \bf { u } } _ { \theta } .$ 
 
-$$
-\mathbf {1 .} r = \theta \quad \text { and } \quad \frac {d \theta}{d t} = 2
-$$
+1. $r = \theta \quad \text { and } \quad \frac {d \theta}{d t} = 2$
 
-$$
-2. r = \frac {1}{\theta} \quad \text { and } \quad \frac {d \theta}{d t} = t ^ {2}
-$$
+2. $r = \frac {1}{\theta} \quad \text { and } \quad \frac {d \theta}{d t} = t ^ {2}$
 
-$$
-3. r = a (1 - \cos \theta) \quad \text { and } \quad \frac {d \theta}{d t} = 3
-$$
+3. $r = a (1 - \cos \theta) \quad \text { and } \quad \frac {d \theta}{d t} = 3$
 
-$$
-4. r = a \sin 2 \theta \quad \text { and } \quad \frac {d \theta}{d t} = 2 t
-$$
+4. $r = a \sin 2 \theta \quad \text { and } \quad \frac {d \theta}{d t} = 2 t$
 
-$$
-\mathbf {5 .} r = e ^ {a \theta} \quad \text { and } \quad \frac {d \theta}{d t} = 2
-$$
+5. $r = e ^ {a \theta} \quad \text { and } \quad \frac {d \theta}{d t} = 2$
 
-$$
-6. r = a (1 + \sin t) \quad \text { and } \quad \theta = 1 - e ^ {- t}
-$$
+6. $r = a (1 + \sin t) \quad \text { and } \quad \theta = 1 - e ^ {- t}$
 
 7. r t= 2 cos 4 and θ = 2t 
 
@@ -2989,7 +2901,7 @@ $$
 
 ## CHAPTER 12 Practice Exercises
 
-## Motion in the Plane
+### Motion in the Plane
 
 In Exercises 1 and 2, graph the curves and sketch their velocity and acceleration vectors at the given values of t. Then write a in the form $\mathbf { a } = a _ { \mathrm { T } } \mathbf { T } + a _ { \mathrm { N } } \mathbf { N }$ without finding T and N, and find the value of κ at the given values of t. 
 
@@ -3029,7 +2941,7 @@ b. Find v and a at $t = 0 , 1 , 2 .$ , and 3 and add these vectors to your sketc
 
 c. At any given time, what is the forward speed of the topmost point of the wheel? Of C? 
 
-![[25d769aa20089f907bfb0f04e6dded24958470be1b15f73f7f61c8ff23f88b7b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/25d769aa20089f907bfb0f04e6dded24958470be1b15f73f7f61c8ff23f88b7b.jpg)
 
 
 Projectile Motion 
@@ -3062,13 +2974,9 @@ Motion in Space
 
 Find the lengths of the curves in Exercises 15 and 16. 
 
-$$
-\mathbf {1 5 .} \mathbf {r} (t) = (2 \cos t) \mathbf {i} + (2 \sin t) \mathbf {j} + t ^ {2} \mathbf {k}, 0 \leq t \leq \pi / 4
-$$
+15. $\mathbf {r} (t) = (2 \cos t) \mathbf {i} + (2 \sin t) \mathbf {j} + t ^ {2} \mathbf {k}, 0 \leq t \leq \pi / 4$
 
-$$
-\mathbf {1 6 .} \mathbf {r} (t) = (3 \cos t) \mathbf {i} + (3 \sin t) \mathbf {j} + 2 t ^ {3 / 2} \mathbf {k}, \quad 0 \leq t \leq 3
-$$
+16. $\mathbf {r} (t) = (3 \cos t) \mathbf {i} + (3 \sin t) \mathbf {j} + 2 t ^ {3 / 2} \mathbf {k}, \quad 0 \leq t \leq 3$
 
 In Exercises 17–20, find T, N, B, κ, and τ at the given value of t. 
 
@@ -3088,13 +2996,9 @@ $$
 
 In Exercises 21 and 22, write a in the form a ${ \bf \Pi } = a _ { \mathrm { T } } { \bf T } + a _ { \mathrm { N } } { \bf N a t } t = { \bf 0 }$ without finding T and N. 
 
-$$
-\mathbf {2 1 .} \mathbf {r} (t) = (2 + 3 t + 3 t ^ {2}) \mathbf {i} + (4 t + 4 t ^ {2}) \mathbf {j} - (6 \cos t) \mathbf {k}
-$$
+21. $\mathbf {r} (t) = (2 + 3 t + 3 t ^ {2}) \mathbf {i} + (4 t + 4 t ^ {2}) \mathbf {j} - (6 \cos t) \mathbf {k}$
 
-$$
-\mathbf {2 2 .} \mathbf {r} (t) = (2 + t) \mathbf {i} + (t + 2 t ^ {2}) \mathbf {j} + (1 + t ^ {2}) \mathbf {k}
-$$
+22. $\mathbf {r} (t) = (2 + t) \mathbf {i} + (t + 2 t ^ {2}) \mathbf {j} + (1 + t ^ {2}) \mathbf {k}$
 
 23. Find T, N, B, κ, and τ as functions of t if 
 
@@ -3118,7 +3022,7 @@ Find the first time r is orthogonal to the vector $\mathbf { i } - \mathbf { j }
 
 28. Find parametric equations for the line that is tangent to the helix $\mathbf { r } ( t ) \{ { \dot { = } } \left( { \sqrt { 2 } } \cos t \right) \mathbf { \hat { i } } + \left( { \sqrt { 2 } } \sin t \right) \mathbf { j } + t \mathbf { k }$ at the point where $t = \pi / 4$ 
 
-## Theory and Examples
+### Theory and Examples
 
 29. Synchronous curves By eliminating α from the ideal projectile equations 
 
@@ -3136,10 +3040,10 @@ $$
 
 31. An alternative definition of curvature in the plane An alternative definition gives the curvature of a sufficiently differentiable plane curve to be $| d \phi / d s |$ , where φ is the angle between T and i (Figure 12.37a). Figure 12.37b shows the distance s measured counterclockwise around the circle $x ^ { 2 } + y ^ { 2 } = a ^ { 2 }$ from the point $( a , 0 )$ to a point P, along with the angle φ at P. Calculate the circle’s curvature using the alternative definition. (Hint: $\phi = \theta + \pi / 2 . )$ 1 
 
-![[0b43032780296829e5cad8b7ad81f9382165c0c2330eb7937bf4f44fdeda0a87.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0b43032780296829e5cad8b7ad81f9382165c0c2330eb7937bf4f44fdeda0a87.jpg)
 
 
-![[1faa3293e8cabbd74ca9fb540c9595eac2a54a11281e418b1032714186ad4b21.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1faa3293e8cabbd74ca9fb540c9595eac2a54a11281e418b1032714186ad4b21.jpg)
 
 
 
@@ -3148,22 +3052,22 @@ FIGURE 12.37 Figures for Exercise 31.
 
 32. The view from Skylab 4 What percentage of Earth’s surface area could the astronauts see when Skylab 4 was at its apogee height, 437 km above the surface? To find out, model the visible surface as the surface generated by revolving the circular arc GT, shown here, about the y-axis. Then carry out these steps: 
 
-1. Use similar triangles in the figure to show that $y _ { 0 } / 6 3 8 0 = 6 3 8 0 / ( 6 3 8 0 + 4 3 7 )$ . Solve for $y _ { 0 }$ 
+**Step 1.** Use similar triangles in the figure to show that $y _ { 0 } / 6 3 8 0 = 6 3 8 0 / ( 6 3 8 0 + 4 3 7 )$ . Solve for $y _ { 0 }$ 
 
-2. To four significant digits, calculate the visible area as 
+**Step 2.** To four significant digits, calculate the visible area as 
 
 $$
 V A = \int_ {y _ {0}} ^ {6 3 8 0} 2 \pi x \sqrt {1 + \left(\frac {d x}{d y}\right) ^ {2}} d y.
 $$
 
-3. Express the result as a percentage of Earth’s surface area. 
+**Step 3.** Express the result as a percentage of Earth’s surface area. 
 
-![[3c4f812269569bbe10e9afa2e3722903ad54b693572ce05a8488adadb30fce42.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3c4f812269569bbe10e9afa2e3722903ad54b693572ce05a8488adadb30fce42.jpg)
 
 
 ## CHAPTER 12 Additional and Advanced Exercises
 
-## Applications
+### Applications
 
 1. A frictionless particle $P ,$ starting from rest at time $t = 0$ at the point $( a , 0 , 0 )$ , slides down the helix 
 
@@ -3179,7 +3083,7 @@ b. Express the particle’s θ- and z-coordinates as functions of t.
 
 c. Express the tangential and normal components of the velocity $d \mathbf { r } / d t$ and acceleration $d ^ { 2 } \mathbf { r } / d t ^ { 2 }$ as functions of t. Does the acceleration have any nonzero component in the direction of the binormal vector B? 
 
-![[f1ca1e64d2dce0ce6d05c2721e604169c32cdd0f8ea58571ede025b6dacddb60.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f1ca1e64d2dce0ce6d05c2721e604169c32cdd0f8ea58571ede025b6dacddb60.jpg)
 
 
 2. Suppose the curve in Exercise 1 is replaced by the conical helix $r = a \theta , z = b \theta$ shown in the accompanying figure. 
@@ -3188,7 +3092,7 @@ a. Express the angular velocity dθ dt as a function of θ.
 
 b. Express the distance the particle travels along the helix as a function of θ. 
 
-![[462cc2fc262a9bfe814e6f3ee7272eab683373340341b299cf08447f464b1168.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/462cc2fc262a9bfe814e6f3ee7272eab683373340341b299cf08447f464b1168.jpg)
 
 
 Motion in Polar and Cylindrical Coordinates 
@@ -3249,7 +3153,7 @@ $$
 
 and k (see accompanying figure). The particle’s position vector is then $\mathbf { r } = r \mathbf { u } _ { r } + z \mathbf { k }$ , where r is the positive polar distance coordinate of the particle’s position. 
 
-![[f6d5d83cbe57361343d9b825ad2ee1b198a72cc8e0e4bfe55f0992c5f22410a8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f6d5d83cbe57361343d9b825ad2ee1b198a72cc8e0e4bfe55f0992c5f22410a8.jpg)
 
 
 a. Show that $\mathbf { u } _ { r } , \mathbf { u } _ { \theta } ,$ and k, in this order, form a right-handed frame of unit vectors. 
@@ -3272,7 +3176,7 @@ where c is a constant. In physics the angular momentum of an object at time t is
 
 ## CHAPTER 12 Technology Application Projects
 
-## Mathematica/Maple Projects
+### Mathematica/Maple Projects
 
 Projects can be found within MyLab Math. 
 
@@ -3288,7 +3192,7 @@ Visualize position, velocity, and acceleration vectors to analyze motion.
 
 Compute distance traveled, speed, curvature, and torsion for motion along a space curve. Visualize and compute the tangential, normal, and binormal vectors associated with motion along a space curve. 
 
-![[39299f3c550d4a4a0493d00f6a163b11d9ee82825809755a5256e9c3fa5d8bfa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/39299f3c550d4a4a0493d00f6a163b11d9ee82825809755a5256e9c3fa5d8bfa.jpg)
 
 
 

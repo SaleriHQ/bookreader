@@ -16,7 +16,7 @@ To read this essay, visit the companion Website.
 
 Sequences are fundamental to the study of infinite series and to many aspects of mathematics. We saw one example of a sequence when we studied Newton's Method in Section 4.7. Newton's Method produces a sequence of approximations $x_{n}$ that become closer and closer to the root of a differentiable function. Now we will explore general sequences of numbers and the conditions under which they converge to a finite number. 
 
-## Representing Sequences
+### Representing Sequences
 
 A sequence is a list of numbers 
 
@@ -92,31 +92,31 @@ $$
 
 Figure 9.1 shows two ways to represent sequences graphically. The first marks the first few points from $a_1, a_2, a_3, \ldots, a_n, \ldots$ on the real axis. The second method shows the graph of the function defining the sequence. The function is defined only on integer inputs, and the graph consists of some points in the $xy$ -plane located at $(1, a_1), (2, a_2), \ldots, (n, a_n), \ldots$ 
 
-![[abdc7c2e8d756182ef04240ddef1d65997a0626d02ffa8a6f848cd97ef79f444.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/abdc7c2e8d756182ef04240ddef1d65997a0626d02ffa8a6f848cd97ef79f444.jpg)
 
 
 
 FIGURE 9.2 In the representation of a sequence as points in the plane, $a_{n} \to L$ if $y = L$ is a horizontal asymptote of the sequence of points $\{(n, a_{n})\}$ . In this figure, all the $a_{n}$ 's after $a_{N}$ lie within $\varepsilon$ of $L$ .
 
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
-## Nicole Oresme
+### Nicole Oresme
 
-## (ca. 1320–1382)
+### (ca. 1320–1382)
 
 Frenchman Oresme went to the University of Paris in the 1340s, studying theology and liberal arts. Later he was a faculty member and administrator at the same university. His work entitled De configurationibus (1350s) contained results in geometry and was the first to present graphs of velocities. The argument we use to show the divergence of the harmonic series was devised by Oresme in this publication. 
 
 To know more, visit the companion Website. 
 
-![[c8229549a06b4ac339349b192340b6e02262b31984ca51fa73b0ffaa89cd0620.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c8229549a06b4ac339349b192340b6e02262b31984ca51fa73b0ffaa89cd0620.jpg)
 
 
 
 FIGURE 9.1 Sequences can be represented as points on the real line or as points in the plane where the horizontal axis n is the index number of the term and the vertical axis $a_{n}$ is its value.
 
 
-## Convergence and Divergence
+### Convergence and Divergence
 
 Sometimes the numbers in a sequence approach a single value as the index $n$ increases. This happens in the sequence 
 
@@ -156,7 +156,7 @@ bounce back and forth between 1 and -1, never converging to a single value. The 
 >
 The definition is very similar to the definition of $\lim_{x\to\infty}f(x)$ , the limit of a function $f(x)$ as x tends to $\infty$ , discussed in Section 2.5. We will exploit this connection to calculate limits of sequences. 
 
-## **EXAMPLE 1** Show that
+**EXAMPLE 1** Show that
 
 $$
 \text {(a)} \lim _ {n \rightarrow \infty} \frac {1}{n} = 0 \quad \text {(b)} \lim _ {n \rightarrow \infty} k = k \quad \text {(where k is a constant)}
@@ -188,7 +188,7 @@ $$
 
 Since $k - k = 0$ , we can use any positive integer for $N$ and the inequality $|k - k| < \varepsilon$ will hold. This proves that $\lim k = k$ . 
 
-![[08871ae2e6d156969955a5106af42bb06b333ba62455dee4b520948d867d032c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/08871ae2e6d156969955a5106af42bb06b333ba62455dee4b520948d867d032c.jpg)
 
 
 **EXAMPLE 2** Show that the sequence $\{1,-1,1,-1,1,-1,\ldots,(-1)^{n+1},\ldots\}$ diverges. 
@@ -203,7 +203,7 @@ $$
 \frac {1}{2} <   L <   \frac {3}{2}.
 $$
 
-![[557343414dedd0369f8a92bd088f871e7f1534e9f2fe8c4c97aabb4a79ca915e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/557343414dedd0369f8a92bd088f871e7f1534e9f2fe8c4c97aabb4a79ca915e.jpg)
 
 
 On the other hand, if $n > N$ is even, then $a_{n} = -1$ , and so we have $|-1 - L| < 1/2$ , or 
@@ -240,7 +240,7 @@ A sequence may diverge without diverging to infinity or negative infinity, as we
 
 The convergence or divergence of a sequence is not affected by the values of any number of its initial terms (whether we omit or change the first 10, the first 1000, or even the first million terms does not matter). From Figure 9.2, we can see that only the part of the sequence that remains after discarding some initial number of terms determines whether the sequence has a limit and the value of that limit when it does exist. 
 
-## Calculating Limits of Sequences
+### Calculating Limits of Sequences
 
 Since sequences are functions with domain restricted to the positive integers, it is not surprising that the theorems on limits of functions given in Chapter 2 have versions for sequences. 
 
@@ -290,14 +290,14 @@ Product Rule
 
 (d) $\lim_{n\to \infty}\frac{4 - 7n^6}{n^6 + 3} = \lim_{n\to \infty}\frac{(4 / n^6) - 7}{1 + (3 / n^6)} = \frac{0 - 7}{1 + 0} = -7.$ Divide numerator and denominator by $n^6$ and use the Sum and Quotient Rules. 
 
-![[0b03750043ff052b620ccc62b72536d9a641b096ee0ee86ebe1d079f094c409e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0b03750043ff052b620ccc62b72536d9a641b096ee0ee86ebe1d079f094c409e.jpg)
 
 
 
 FIGURE 9.4 The terms of sequence $\{b_{n}\}$ are sandwiched between those of $\{a_{n}\}$ and $\{c_{n}\}$ , forcing them to the same common limit L.
 
 
-![[30dd2255ecc9f8ffc4e05f3d3e2d502f0e36b04975f840388dab54d6927476d5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/30dd2255ecc9f8ffc4e05f3d3e2d502f0e36b04975f840388dab54d6927476d5.jpg)
 
 
 
@@ -321,7 +321,7 @@ Let $\{a_n\}, \{b_n\}$ , and $\{c_n\}$ be sequences of real numbers. If $a_n \le
 
 An immediate consequence of Theorem 2 is that if $|b_n| \leq c_n$ and $c_n \to 0$ , then $b_n \to 0$ because $-c_n \leq b_n \leq c_n$ . We use this fact in the next example. 
 
-## **EXAMPLE 4** Since $1 / n \to 0$ , we know that
+**EXAMPLE 4** Since $1 / n \to 0$ , we know that
 
 (a) $\frac{\cos n}{n} \to 0$ 
 
@@ -360,13 +360,13 @@ The application of Theorems 1 and 2 is broadened by a theorem stating that apply
 THEOREM 3—The Continuous Function Theorem for Sequences
 Let $\{a_{n}\}$ be a sequence of real numbers. If $a_{n} \to L$ and if f is a function that is continuous at L and defined at all $a_{n}$ , then $f(a_{n}) \to f(L)$ . 
 
-## **EXAMPLE 5** Show that $\sqrt{(n+1)/n} \rightarrow 1$ .
+**EXAMPLE 5** Show that $\sqrt{(n+1)/n} \rightarrow 1$ .
 
 **Solution** We know that $(n+1)/n \rightarrow 1$ . Taking $f(x) = \sqrt{x}$ and L = 1 in Theorem 3 gives $\sqrt{(n+1)/n} \rightarrow \sqrt{1} = 1$ . 
 
 **EXAMPLE 6** The sequence $\{1/n\}$ converges to 0. By taking $a_{n} = 1/n, f(x) = 2^{x}$ , and $L = 0$ in Theorem 3, we see that $2^{1/n} = f(1/n) \to f(L) = 2^{0} = 1$ . The sequence $\{2^{1/n}\}$ converges to 1 (Figure 9.5). 
 
-## Using L'Hôpital's Rule
+### Using L'Hôpital's Rule
 
 The next theorem formalizes the connection between $\lim_{n\to \infty}a_n$ and $\lim_{x\to \infty}f(x)$ . It enables us to use l'Hôpital's Rule to find the limits of some sequences. 
 
@@ -426,11 +426,11 @@ $$
 
 Therefore, $\lim_{x\to\infty}\left(\frac{x+1}{x-1}\right)^{x}=\lim_{x\to\infty}f(x)=\lim_{x\to\infty}e^{\ln f(x)}=e^{2}$ . Applying Theorem 4, we conclude that the sequence $\{a_{n}\}$ also converges to $e^{2}$ . 
 
-## Commonly Occurring Limits
+### Commonly Occurring Limits
 
 The next theorem gives some limits that arise frequently. 
 
-## Factorial Notation
+### Factorial Notation
 
 The notation $n!$ (“n factorial”) means the product $1 \cdot 2 \cdot 3 \cdots n$ of the integers from 1 to n. Notice that $(n + 1)! = (n + 1) \cdot n!$ . Thus, $4! = 1 \cdot 2 \cdot 3 \cdot 4 = 24$ and $5! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 = 5 \cdot 4! = 120$ . 
 
@@ -482,7 +482,7 @@ Formula 5 with $x = -2$
 
 Formula 6 with $x = 100$ 
 
-## Recursive Definitions
+### Recursive Definitions
 
 So far, we have calculated each $a_{n}$ directly from the value of $n$ . But sequences are often defined recursively by giving 
 
@@ -490,7 +490,7 @@ So far, we have calculated each $a_{n}$ directly from the value of $n$ . But seq
 
 2. a rule called a recursion formula for calculating any later term from terms that precede it. 
 
-## **EXAMPLE 10**
+**EXAMPLE 10**
 
 (a) The statements $a_1 = 1$ and $a_n = a_{n-1} + 1$ for $n > 1$ define the sequence $1, 2, 3, \ldots, n, \ldots$ of positive integers. With $a_1 = 1$ , we have $a_2 = a_1 + 1 = 2$ , $a_3 = a_2 + 1 = 3$ , and so on. 
 
@@ -500,7 +500,7 @@ So far, we have calculated each $a_{n}$ directly from the value of $n$ . But seq
 
 (d) As we can see by applying Newton's method (see Exercise 145), the statements $x_0 = 1$ and $x_{n + 1} = x_n - [(\sin x_n - x_n^2) / (\cos x_n - 2x_n)]$ for $n > 0$ define a sequence that, when it converges, gives a solution to the equation $\sin x - x^2 = 0$ . 
 
-## Bounded Monotonic Sequences
+### Bounded Monotonic Sequences
 
 Two concepts that play a key role in determining the convergence of a sequence are those of a bounded sequence and a monotonic sequence. First we define bounded sequences. 
 
@@ -510,7 +510,7 @@ A sequence $\{a_{n}\}$ is bounded from below if there exists a number m such tha
 
 If $\{a_{n}\}$ is bounded from above and below, then $\{a_{n}\}$ is bounded. If $\{a_{n}\}$ is not bounded, then we say that $\{a_{n}\}$ is an unbounded sequence. 
 
-## **EXAMPLE 11**
+**EXAMPLE 11**
 
 (a) The sequence 1, 2, 3, ..., n, ... has no upper bound because it eventually surpasses every number M. However, it is bounded below by every real number less than or equal to 1. The number m = 1 is the greatest lower bound of the sequence. 
 
@@ -526,7 +526,7 @@ $$
 
 If M is a number larger than both $L + 1$ and all of the finitely many numbers $a_{1}, a_{2}, \ldots, a_{N}$ , then for every index n we have $a_{n} \leq M$ , and therefore $\{a_{n}\}$ is bounded from above. Similarly, if m is a number smaller than both L - 1 and all of the numbers $a_{1}, a_{2}, \ldots, a_{N}$ , then m is a lower bound for the sequence. Therefore, all convergent sequences are bounded. 
 
-![[e54a8278b2ae052c8aa822ca57256e934c8c536f36670c64fdf45150e4ec7e4e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e54a8278b2ae052c8aa822ca57256e934c8c536f36670c64fdf45150e4ec7e4e.jpg)
 
 
 Although it is true that every convergent sequence is bounded, there are bounded sequences that fail to converge. One example is the bounded sequence $\left\{(-1)^{n+1}\right\}$ discussed in Example 2. The problem here is that some bounded sequences bounce around in the band determined by any lower bound m and any upper bound M but do not converge (Figure 9.6). An important type of sequence that does not behave that way is one for which each term is at least as large, or at least as small, as its predecessor. 
@@ -537,7 +537,7 @@ FIGURE 9.6 Some bounded sequences bounce around between their bounds and fail to
 
 > ***DEFINITIONS*** A sequence $\{a_{n}\}$ is nondecreasing if $a_{n} \leq a_{n+1}$ for all $n$ . That is, $a_{1} \leq a_{2} \leq a_{3} \leq \ldots$ . The sequence is nonincreasing if $a_{n} \geq a_{n+1}$ for all $n$ . The sequence $\{a_{n}\}$ is monotonic if it is either nondecreasing or nonincreasing. 
 
-## **EXAMPLE 12**
+**EXAMPLE 12**
 
 (a) The sequence 1, 2, 3, ..., n, ... is nondecreasing. 
 
@@ -551,14 +551,14 @@ FIGURE 9.7 If the terms of a nondecreasing sequence have an upper bound M, then 
 
 (d) The constant sequence 3, 3, 3, ..., 3, ... is both nondecreasing and nonincreasing. 
 
-![[7f8e621b7fa97dd6ec5db6afc28c999a342019ccd9c9a6cafac335cfc7bdc6bf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7f8e621b7fa97dd6ec5db6afc28c999a342019ccd9c9a6cafac335cfc7bdc6bf.jpg)
 
 
 (e) The sequence 1, -1, 1, -1, 1, -1, ... is not monotonic. 
 
 A sequence that is bounded from above always has a least upper bound. Likewise, a sequence bounded from below always has a greatest lower bound. These results are based on the completeness property of the real numbers, discussed in Appendix A.9. We now prove that if L is the least upper bound of a nondecreasing sequence, then the sequence converges to L, and that if L is the greatest lower bound of a nonincreasing sequence, then the sequence converges to L. 
 
-## THEOREM 6—The Monotonic Sequence Theorem
+**THEOREM 6—The Monotonic Sequence Theorem**
 
 If a sequence $\{a_{n}\}$ is both bounded and monotonic, then the sequence converges. 
 
@@ -580,71 +580,42 @@ The proof for nonincreasing sequences bounded from below is similar.
 
 It is important to realize that Theorem 6 does not say that convergent sequences are monotonic. The sequence $\left\{(-1)^{n+1}/n\right\}$ converges and is bounded, but it is not monotonic since it alternates between positive and negative values as it tends toward zero. What the theorem does say is that a nondecreasing sequence converges when it is bounded from above, but it diverges to infinity otherwise. 
 
-## EXERCISES
+### Exercises 9.1
 
-## 9.1
 
-## Finding Terms of a Sequence
+#### Finding Terms of a Sequence
 
 Each of Exercises 1–6 gives a formula for the nth term $a_{n}$ of a sequence $\{a_{n}\}$ . Find the values of $a_{1}, a_{2}, a_{3}$ , and $a_{4}$ . 
 
 1. $a_{n} = \frac{1 - n}{n^{2}}$ 
 
-$$
-2. a _ {n} = \frac {1}{n !}
-$$
+2. $a _ {n} = \frac {1}{n !}$
 
 3. $a_{n} = \frac{(-1)^{n + 1}}{2n - 1}$ 
 
-$$
-a _ {n} = 2 + (- 1) ^ {n}
-$$
+4. $a _ {n} = 2 + (- 1) ^ {n}$
 
-$$
-5. a _ {n} = \frac {2 ^ {n}}{2 ^ {n + 1}}
-$$
+5. $a _ {n} = \frac {2 ^ {n}}{2 ^ {n + 1}}$
 
-$$
-6. a _ {n} = \frac {2 ^ {n} - 1}{2 ^ {n}}
-$$
+6. $a _ {n} = \frac {2 ^ {n} - 1}{2 ^ {n}}$
 
 Each of Exercises 7–12 gives the first term or two of a sequence along with a recursion formula for the remaining terms. Write out the first ten terms of the sequence. 
 
-$$
-7. a _ {1} = 1, \quad a _ {n + 1} = a _ {n} + (1 / 2 ^ {n})
-$$
+7. $a _ {1} = 1, \quad a _ {n + 1} = a _ {n} + (1 / 2 ^ {n})$
 
-$$
-\mathbf {8 .} a _ {1} = 1, \quad a _ {n + 1} = a _ {n} / (n + 1)
-$$
+8. $a _ {1} = 1, \quad a _ {n + 1} = a _ {n} / (n + 1)$
 
 9. $a_1 = 2, a_{n + 1} = (-1)^{n + 1}a_n / 2$ 
 
 10. $a_1 = -2, a_{n+1} = na_n / (n + 1)$ 
 
-41. $a_{n} = \left(\frac{n + 1}{2n}\right)\left(1 - \frac{1}{n}\right)$ 
-
-42. $a_{n} = \left(2 - \frac{1}{2^{n}}\right)\left(3 + \frac{1}{2^{n}}\right)$ 
-
 11. $a_1 = a_2 = 1, \quad a_{n+2} = a_{n+1} + a_n$ 
-
-43. $a_{n} = \frac{(-1)^{n + 1}}{2n - 1}$ 
-
-44. $a_{n} = \left(-\frac{1}{2}\right)^{n}$ 
 
 12. $a_{1} = 2,\quad a_{2} = -1,\quad a_{n+2} = a_{n+1}/a_{n}$ 
 
-45. $a_{n} = \sqrt{\frac{2n}{n + 1}}$ 
-
-46. $a_{n} = \frac{1}{(0.9)^{n}}$ 
-
-## Finding a Sequence's Formula
+#### Finding a Sequence's Formula
 
 In Exercises 13–30, find a formula for the nth term of the sequence. 
-
-47. $a_{n} = \sin \left(\frac{\pi}{2} +\frac{1}{n}\right)$ 
-
-48. $a_{n} = n\pi \cos (n\pi)$ 
 
 13. 1, -1, 1, -1, 1, ... 
 
@@ -654,33 +625,109 @@ In Exercises 13–30, find a formula for the nth term of the sequence.
 
 1's with alternating signs 
 
-49. $a_{n} = \frac{\sin n}{n}$ 
-
-50. $a_{n} = \frac{\sin^{2}n}{2^{n}}$ 
-
 15. 1, -4, 9, -16, 25, ... 
 
 Squares of the positive integers, with alternating signs 
 
-51. $a_{n} = \frac{n}{2^{n}}$ 
-
-52. $a_{n} = \frac{3^{n}}{n^{3}}$ 
-
 16. $1, -\frac{1}{4}, \frac{1}{9}, -\frac{1}{16}, \frac{1}{25}, \ldots$ 
-
-53. $a_{n} = \frac{\ln(n + 1)}{\sqrt{n}}$ 
-
-54. $a_{n} = \frac{\ln n}{\ln 2n}$ 
 
 17. $\frac{1}{9}, \frac{2}{12}, \frac{2^2}{15}, \frac{2^3}{18}, \frac{2^4}{21}, \ldots$ 
 
 Powers of 2 divided by multiples of 3 
 
+18. $-\frac{3}{2}, -\frac{1}{6}, \frac{1}{12}, \frac{3}{20}, \frac{5}{30}, \ldots$ 
+
+19. 0, 3, 8, 15, 24, ... 
+
+Squares of the positive integers diminished by 1 Integers, beginning with -3 
+
+20. -3, -2, -1, 0, 1, ... 
+
+21. 1, 5, 9, 13, 17, ... 
+
+Every other odd positive integer 
+
+22. 2, 6, 10, 14, 18, ... 
+
+Every other even positive integer 
+
+23. $\frac{5}{1},\frac{8}{2},\frac{11}{6},\frac{14}{24},\frac{17}{120},\ldots$ 
+
+Integers differing by 3 divided by factorials 
+
+24. $\frac{1}{25},\frac{8}{125},\frac{27}{625},\frac{64}{3125},\frac{125}{15,625},\ldots$ 
+
+Cubes of positive integers divided by powers of 5 
+
+25. 1, 0, 1, 0, 1, ... 
+
+Alternating 1's and 0's 
+
+26. 0, 1, 1, 2, 2, 3, 3, 4, ... 
+
+Each positive integer repeated 
+
+27. $\frac{1}{2} -\frac{1}{3},\frac{1}{3} -\frac{1}{4},\frac{1}{4} -\frac{1}{5},\frac{1}{5} -\frac{1}{6},\ldots$ 
+
+28. $\sqrt{5} -\sqrt{4},\sqrt{6} -\sqrt{5},\sqrt{7} -\sqrt{6},\sqrt{8} -\sqrt{7},\ldots$ 
+
+29. $\sin \left(\frac{\sqrt{2}}{1 + 4}\right),\sin \left(\frac{\sqrt{3}}{1 + 9}\right),\sin \left(\frac{\sqrt{4}}{1 + 16}\right),\sin \left(\frac{\sqrt{5}}{1 + 25}\right),\ldots$ 
+
+30. $\sqrt{\frac{5}{8}},\sqrt{\frac{7}{11}},\sqrt{\frac{9}{14}},\sqrt{\frac{11}{17}},\cdots$ 
+
+#### Convergence and Divergence
+
+31. $a_{n} = 2 + (0.1)^{n}$ 
+
+32. $a_{n} = \frac{n + (-1)^{n}}{n}$ 
+
+33. $a_{n} = \frac{1 - 2n}{1 + 2n}$ 
+
+34. $a_{n} = \frac{2n + 1}{1 - 3\sqrt{n}}$ 
+
+35. $a_{n} = \frac{1 - 5n^{4}}{n^{4} + 8n^{3}}$ 
+
+36. $a_{n} = \frac{n + 3}{n^{2} + 5n + 6}$ 
+
+37. $a_{n} = \frac{n^{2} - 2n + 1}{n - 1}, n \geq 2$ 
+
+38. $a_{n} = \frac{1 - n^{3}}{70 - 4n^{2}}$ 
+
+39. $a_{n} = 1 + (-1)^{n}$ 
+
+40. $a_{n} = (-1)^{n}\left(1 - \frac{1}{n}\right)$ 
+
+41. $a_{n} = \left(\frac{n + 1}{2n}\right)\left(1 - \frac{1}{n}\right)$ 
+
+42. $a_{n} = \left(2 - \frac{1}{2^{n}}\right)\left(3 + \frac{1}{2^{n}}\right)$ 
+
+43. $a_{n} = \frac{(-1)^{n + 1}}{2n - 1}$ 
+
+44. $a_{n} = \left(-\frac{1}{2}\right)^{n}$ 
+
+45. $a_{n} = \sqrt{\frac{2n}{n + 1}}$ 
+
+46. $a_{n} = \frac{1}{(0.9)^{n}}$ 
+
+47. $a_{n} = \sin \left(\frac{\pi}{2} +\frac{1}{n}\right)$ 
+
+48. $a_{n} = n\pi \cos (n\pi)$ 
+
+49. $a_{n} = \frac{\sin n}{n}$ 
+
+50. $a_{n} = \frac{\sin^{2}n}{2^{n}}$ 
+
+51. $a_{n} = \frac{n}{2^{n}}$ 
+
+52. $a_{n} = \frac{3^{n}}{n^{3}}$ 
+
+53. $a_{n} = \frac{\ln(n + 1)}{\sqrt{n}}$ 
+
+54. $a_{n} = \frac{\ln n}{\ln 2n}$ 
+
 55. $a_{n} = 8^{1 / n}$ 
 
 56. $a_{n} = (0.03)^{1 / n}$ 
-
-18. $-\frac{3}{2}, -\frac{1}{6}, \frac{1}{12}, \frac{3}{20}, \frac{5}{30}, \ldots$ 
 
 57. $a_{n} = \left(1 + \frac{7}{n}\right)^{n}$ 
 
@@ -692,77 +739,37 @@ Integers differing by 2 divided by products of consecutive integers
 
 60. $a_{n} = \sqrt[n]{n^{2}}$ 
 
-19. 0, 3, 8, 15, 24, ... 
-
-Squares of the positive integers diminished by 1 Integers, beginning with -3 
-
 61. $a_{n} = \left(\frac{3}{n}\right)^{1 / n}$ 
 
 62. $a_{n} = (n + 4)^{1 / (n + 4)}$ 
-
-20. -3, -2, -1, 0, 1, ... 
-
-21. 1, 5, 9, 13, 17, ... 
-
-Every other odd positive integer 
 
 63. $a_{n} = \frac{\ln n}{n^{1 / n}}$ 
 
 64. $a_{n} = \ln n - \ln (n + 1)$ 
 
-22. 2, 6, 10, 14, 18, ... 
-
-Every other even positive integer 
-
 65. $a_{n} = \sqrt[n]{4^{n}n}$ 
 
 66. $a_{n} = \sqrt[n]{3^{2n + 1}}$ 
 
-23. $\frac{5}{1},\frac{8}{2},\frac{11}{6},\frac{14}{24},\frac{17}{120},\ldots$ 
-
-Integers differing by 3 divided by factorials 
-
 67. $a_{n} = \frac{n!}{n^{n}}$ (Hint: Compare with $1 / n$ .) 
-
-24. $\frac{1}{25},\frac{8}{125},\frac{27}{625},\frac{64}{3125},\frac{125}{15,625},\ldots$ 
-
-Cubes of positive integers divided by powers of 5 
 
 68. $a_{n} = \frac{(-4)^{n}}{n!}$ 
 
 69. $a_{n} = \frac{n!}{10^{6n}}$ 
 
-25. 1, 0, 1, 0, 1, ... 
-
-Alternating 1's and 0's 
-
 70. $a_{n} = \frac{n!}{2^{n}\cdot 3^{n}}$ 
 
 71. $a_{n} = \left(\frac{1}{n}\right)^{1 / (\ln n)}$ 
-
-26. 0, 1, 1, 2, 2, 3, 3, 4, ... 
-
-Each positive integer repeated 
-
-27. $\frac{1}{2} -\frac{1}{3},\frac{1}{3} -\frac{1}{4},\frac{1}{4} -\frac{1}{5},\frac{1}{5} -\frac{1}{6},\ldots$ 
 
 72. $a_{n} = \frac{(n + 1)!}{(n + 3)!}$ 
 
 73. $a_{n} = \frac{(2n + 2)!}{(2n - 1)!}$ 
 
-28. $\sqrt{5} -\sqrt{4},\sqrt{6} -\sqrt{5},\sqrt{7} -\sqrt{6},\sqrt{8} -\sqrt{7},\ldots$ 
-
 74. $a_{n} = \frac{3e^{n} + e^{-n}}{e^{n} + 3e^{-n}}$ 
 
 75. $a_{n} = \frac{e^{-2n} - 2e^{-3n}}{e^{-2n} - e^{-n}}$ 
 
-29. $\sin \left(\frac{\sqrt{2}}{1 + 4}\right),\sin \left(\frac{\sqrt{3}}{1 + 9}\right),\sin \left(\frac{\sqrt{4}}{1 + 16}\right),\sin \left(\frac{\sqrt{5}}{1 + 25}\right),\ldots$ 
-
-30. $\sqrt{\frac{5}{8}},\sqrt{\frac{7}{11}},\sqrt{\frac{9}{14}},\sqrt{\frac{11}{17}},\cdots$ 
-
 76. $a_{n} = \left(1 - \frac{1}{2}\right) + \left(\frac{1}{2} - \frac{1}{3}\right) + \left(\frac{1}{3} - \frac{1}{4}\right) + \cdots$ $+\left(\frac{1}{n-2}-\frac{1}{n-1}\right)+\left(\frac{1}{n-1}-\frac{1}{n}\right)$ 
-
-## Convergence and Divergence
 
 77. $a_{n} = (\ln 3 - \ln 2) + (\ln 4 - \ln 3) + (\ln 5 - \ln 4) + \cdots + (\ln(n-1) - \ln(n-2)) + (\ln n - \ln(n-1))$ 
 
@@ -772,35 +779,17 @@ Which of the sequences $\{a_{n}\}$ in Exercises 31-100 converge, and which diver
 
 79. $a_{n} = \left(\frac{3n + 1}{3n - 1}\right)^{n}$ 
 
-31. $a_{n} = 2 + (0.1)^{n}$ 
-
-32. $a_{n} = \frac{n + (-1)^{n}}{n}$ 
-
 80. $a_{n} = \left(\frac{n}{n + 1}\right)^{n}$ 
 
 81. $a_{n} = \left(\frac{x^{n}}{2n + 1}\right)^{1 / n}, x > 0$ 
-
-33. $a_{n} = \frac{1 - 2n}{1 + 2n}$ 
-
-34. $a_{n} = \frac{2n + 1}{1 - 3\sqrt{n}}$ 
-
-35. $a_{n} = \frac{1 - 5n^{4}}{n^{4} + 8n^{3}}$ 
 
 82. $a_{n} = \left(1 - \frac{1}{n^{2}}\right)^{n}$ 
 
 83. $a_{n} = \frac{3^{n}\cdot 6^{n}}{2^{-n}\cdot n!}$ 
 
-36. $a_{n} = \frac{n + 3}{n^{2} + 5n + 6}$ 
+84. $a_{n} = \frac{(10 / 11)^{n}}{(9 / 10)^{n} + (11 / 12)^{n}}$
 
-37. $a_{n} = \frac{n^{2} - 2n + 1}{n - 1}, n \geq 2$ 
-
-84. $a_{n} = \frac{(10 / 11)^{n}}{(9 / 10)^{n} + (11 / 12)^{n}}$ 85. $a_{n} = \tanh n$ 
-
-38. $a_{n} = \frac{1 - n^{3}}{70 - 4n^{2}}$ 
-
-39. $a_{n} = 1 + (-1)^{n}$ 
-
-40. $a_{n} = (-1)^{n}\left(1 - \frac{1}{n}\right)$ 
+85. $a_{n} = \tanh n$
 
 86. $a_{n} = \sinh (\ln n)$ 
 
@@ -856,7 +845,7 @@ $$
 \sqrt {1 + \sqrt {1 + \sqrt {1 + \sqrt {1}}}}, \ldots
 $$
 
-## Theory and Examples
+#### Theory and Examples
 
 109. The first term of a sequence is $x_{1} = 1$ . Each succeeding term is the sum of all those that come before it: 
 
@@ -919,7 +908,7 @@ $$
 
 be, respectively, the integer floor and ceiling for $a^2 / 2$ . 
 
-![[d51785a8b88677e9bfbd6c314fb3d8549829285e3def2643bb4deb2079bf206d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d51785a8b88677e9bfbd6c314fb3d8549829285e3def2643bb4deb2079bf206d.jpg)
 
 
 a. Show that $a^{2} + b^{2} = c^{2}$ . (Hint: Let $a = 2n + 1$ and express b and c in terms of n.) 
@@ -930,7 +919,7 @@ $$
 \lim _ {a \to \infty} \frac {\left\lfloor \frac {a ^ {2}}{2} \right\rfloor}{\left\lceil \frac {a ^ {2}}{2} \right\rceil}.
 $$
 
-## 114. The $n$ th root of $n!$
+114. The $n$ th root of $n!$
 
 a. Show that $\lim_{n\to \infty}(2n\pi)^{1 / (2n)} = 1$ and hence, using Stirling's approximation (Chapter 8, Additional Exercise 44a), that 
 
@@ -962,7 +951,9 @@ converges to $L$ .
 
 118. Prove that $\lim_{n\to \infty}x^{1 / n} = 1,(x > 0)$ . 
 
-119. Prove Theorem 2. 120. Prove Theorem 3. 
+119. Prove Theorem 2.
+
+120. Prove Theorem 3.
 
 In Exercises 121–124, determine whether the sequence is monotonic and whether it is bounded. 
 
@@ -1002,7 +993,9 @@ $$
 
 In Exercises 135–136, use the definition of convergence to prove the given limit. 
 
-135. $\lim_{n\to \infty}\frac{\sin n}{n} = 0$ 136. $\lim_{n\to \infty}\left(1 - \frac{1}{n^2}\right) = 1$ 
+135. $\lim_{n\to \infty}\frac{\sin n}{n} = 0$
+
+136. $\lim_{n\to \infty}\left(1 - \frac{1}{n^2}\right) = 1$
 
 137. The sequence $\{n / (n + 1)\}$ has a least upper bound of 1. Show that if $M$ is a number less than 1, then the terms of $\{n / (n + 1)\}$ eventually exceed $M$ . That is, if $M < 1$ , there is an integer $N$ such that $n / (n + 1) > M$ whenever $n > N$ . Since $n / (n + 1) < 1$ for every $n$ , this proves that 1 is a least upper bound for $\{n / (n + 1)\}$ . 
 
@@ -1036,44 +1029,40 @@ T b. Starting with $x_{0} = 1$ and a = 3, calculate successive terms of the sequ
 
 146. A recursive definition of $\pi / 2$ If you start with $x_{1} = 1$ and if you define the subsequent terms of $\{x_{n}\}$ by the rule $x_{n} = x_{n-1} + \cos x_{n-1}$ , you generate a sequence that converges rapidly to $\pi / 2$ . (a) Try it. (b) Use the accompanying figure to explain why the convergence is so rapid. 
 
-![[f8d9475e6b4af1e0b0003db8887a87138fbe7f745b401eeaf72f68a894d33417.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f8d9475e6b4af1e0b0003db8887a87138fbe7f745b401eeaf72f68a894d33417.jpg)
 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 Use a CAS to perform the following steps for the sequences in Exercises 147–158. 
 
 a. Calculate and then plot the first 25 terms of the sequence. Does the sequence appear to be bounded from above or below? Does it appear to converge or diverge? If it does converge, what is the limit L? 
 
-$$
-\mathbf {1 4 9 .} a _ {1} = 1, \quad a _ {n + 1} = a _ {n} + \frac {1}{5 ^ {n}}
-$$
+147. $a _ {n} = \sqrt [ n ]{n}$
+
+148. $a _ {n} = \left(1 + \frac {0 . 5}{n}\right) ^ {n}$
+
+149. $a _ {1} = 1, \quad a _ {n + 1} = a _ {n} + \frac {1}{5 ^ {n}}$
 
 150. $a_1 = 1$ , $a_{n + 1} = a_n + (-2)^n$ 
 
 151. $a_{n} = \sin n$ 
 
-$$
-1 5 2. a _ {n} = n \sin \frac {1}{n}
-$$
+152. $a _ {n} = n \sin \frac {1}{n}$
 
 b. If the sequence converges, find an integer $N$ such that $|a_{n} - L| \leq 0.01$ for $n \geq N$ . How far in the sequence do you have to get for the terms to lie within 0.0001 of $L$ ? 
 
-$$
-\mathbf {1 5 3 .} a _ {n} = \frac {\sin n}{n} \quad \mathbf {1 5 4 .} a _ {n} = \frac {\ln n}{n}
-$$
+153. $a _ {n} = \frac {\sin n}{n}$
 
-$$
-\mathbf {1 5 5 .} a _ {n} = (0. 9 9 9 9) ^ {n} \quad \mathbf {1 5 6 .} a _ {n} = (1 2 3 4 5 6) ^ {1 / n}
-$$
+154. $a _ {n} = \frac {\ln n}{n}$
 
-$$
-\mathbf {1 4 7 .} a _ {n} = \sqrt [ n ]{n} \quad \mathbf {1 4 8 .} a _ {n} = \left(1 + \frac {0 . 5}{n}\right) ^ {n}
-$$
+155. $a _ {n} = (0. 9 9 9 9) ^ {n}$
 
-$$
-\mathbf {1 5 7 .} a _ {n} = \frac {8 ^ {n}}{n !} \quad \mathbf {1 5 8 .} a _ {n} = \frac {n ^ {4 1}}{1 9 ^ {n}}
-$$
+156. $a _ {n} = (1 2 3 4 5 6) ^ {1 / n}$
+
+157. $a _ {n} = \frac {8 ^ {n}}{n !}$
+
+158. $a _ {n} = \frac {n ^ {4 1}}{1 9 ^ {n}}$
 
 ## 9.2 Infinite Series
 
@@ -1107,20 +1096,20 @@ $$
 s _ {n} = 2 - \frac {1}{2 ^ {n - 1}}.
 $$
 
-## HISTORICAL BIOGRAPHY Blaise Pascal (1623–1662)
+**HISTORICAL BIOGRAPHY Blaise Pascal (1623–1662)**
 
 Pascal was born in France and was encouraged by his father to study science. He met Fermat and was inspired to work on applied science problems. As early as 1640, he wrote an essay on conic sections and earned praise for his work from Descartes. Despite his poor health, Pascal designed an “arithmetic machine” to perform computations for tax collecting. Pascal also contributed to the development of differential calculus. 
 
 To know more, visit the companion Website. 
 
-![[55539efea93aafb54f6ad4e839a0f089bff729f63e9a4d5b6df83fc66ae9aeeb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/55539efea93aafb54f6ad4e839a0f089bff729f63e9a4d5b6df83fc66ae9aeeb.jpg)
 
 
 
 (a)
 
 
-![[04725f4ab1d04357517d566fa4f509c6434a3454249d7f1906fb768308caa26f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/04725f4ab1d04357517d566fa4f509c6434a3454249d7f1906fb768308caa26f.jpg)
 
 
 
@@ -1133,7 +1122,7 @@ This sequence of partial sums converges to 2 because $\lim_{n\to \infty}\left(1 
 
 Is the sum of any finite number of terms in this series equal to 2? No. Can we actually add an infinite number of terms one by one? No. But we can still define their sum by defining it to be the limit of the sequence of partial sums as $n \rightarrow \infty$ , in this case 2 (Figure 9.8). Our knowledge of sequences and limits enables us to break away from the confines of finite sums. 
 
-![[b49cce8296ec7182a578bc5a7629c7d8225a18bc2f9be72e705a6febcd1bdc5f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b49cce8296ec7182a578bc5a7629c7d8225a18bc2f9be72e705a6febcd1bdc5f.jpg)
 
 
 
@@ -1168,7 +1157,7 @@ $$
 \sum_ {n = 1} ^ {\infty} a _ {n}, \quad \sum_ {k = 1} ^ {\infty} a _ {k}, \quad \text { or } \quad \sum a _ {n} \quad \begin{array}{l} \text { A   useful   shorthand } \\ \text { when   summation } \\ \text { from   1   to   } \infty \text {   is } \\ \text { understood } \end{array}
 $$
 
-## Geometric Series
+### Geometric Series
 
 Geometric series are series of the form 
 
@@ -1213,14 +1202,14 @@ $$
 \frac {1}{9} + \frac {1}{2 7} + \frac {1}{8 1} + \dots = \sum_ {n = 1} ^ {\infty} \frac {1}{9} \left(\frac {1}{3}\right) ^ {n - 1}.
 $$
 
-![[4689094528f5d91266ed4c25c45da218b4087b7a2b4c30cd59fc264081445d25.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4689094528f5d91266ed4c25c45da218b4087b7a2b4c30cd59fc264081445d25.jpg)
 
 
 
 (a)
 
 
-![[250884bd442ade1eecb0f265e8d4fa481816878768f047ea7c1a51faf83da3da.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/250884bd442ade1eecb0f265e8d4fa481816878768f047ea7c1a51faf83da3da.jpg)
 
 
 
@@ -1307,7 +1296,7 @@ $$
 \sum_ {n = 1} ^ {\infty} \frac {1}{n (n + 1)} = 1.
 $$
 
-## The nth-Term Test for a Divergent Series
+### The nth-Term Test for a Divergent Series
 
 One reason why a series may fail to converge is that its terms don't become small. 
 
@@ -1325,7 +1314,7 @@ $\lim_{n\to\infty}a_{n}=\lim_{n\to\infty}(s_{n}-s_{n-1})=\lim_{n\to\infty}s_{n}-
 
 This establishes the following theorem. 
 
-## Caution
+### Caution
 
 Theorem 7 does not say that $\sum_{n=1}^{\infty} a_n$ converges if $a_n \to 0$ . It is possible for a series to diverge when $a_n \to 0$ . (See Example 8.) 
 
@@ -1333,11 +1322,11 @@ THEOREM 7 If $\sum_{n=1}^{\infty} a_n$ converges, then $a_n \to 0$ .
 
 Theorem 7 leads to a test for detecting the kind of divergence that occurred in Example 6. 
 
-## The nth-Term Test for Divergence
+### The nth-Term Test for Divergence
 
 $\sum_{n=1}^{\infty} a_n$ diverges if $\lim_{n \to \infty} a_n$ fails to exist or is different from zero. 
 
-## **EXAMPLE 7** The following are all examples of divergent series.
+**EXAMPLE 7** The following are all examples of divergent series.
 
 (a) $\sum_{n=1}^{\infty} n^{2}$ diverges because $n^{2} \to \infty$ . $\lim_{n \to \infty} a_{n}$ fails to exist. 
 
@@ -1355,7 +1344,7 @@ $$
 
 diverges because the terms can be grouped into infinitely many clusters each of which adds to 1, so the partial sums increase without bound. However, the terms of the series form a sequence that converges to 0. Example 1 of Section 9.3 shows that the harmonic series $\sum 1/n$ also behaves in this manner. 
 
-## Combining Series
+### Combining Series
 
 Whenever we have two convergent series, we can add them term by term, subtract them term by term, or multiply them by constants to make new convergent series. 
 
@@ -1409,7 +1398,7 @@ As corollaries of Theorem 8, we have the following results. We omit the proofs.
 
 Caution Remember that $\sum(a_{n} + b_{n})$ can converge even if both $\sum a_{n}$ and $\sum b_{n}$ diverge. For example, both $\sum a_{n} = 1 + 1 + 1 + \cdots$ and $\sum b_{n} = (-1) + (-1) + (-1) + \cdots$ diverge, whereas $\sum(a_{n} + b_{n}) = 0 + 0 + 0 + \cdots$ converges to 0. 
 
-## **EXAMPLE 9** Find the sums of the following series.
+**EXAMPLE 9** Find the sums of the following series.
 
 $$
 \begin{array}{l l} \text {(a)} \sum_ {n = 1} ^ {\infty} \frac {3 ^ {n - 1} - 1}{6 ^ {n - 1}} = \sum_ {n = 1} ^ {\infty} \left(\frac {1}{2 ^ {n - 1}} - \frac {1}{6 ^ {n - 1}}\right) \\ = \sum_ {n = 1} ^ {\infty} \frac {1}{2 ^ {n - 1}} - \sum_ {n = 1} ^ {\infty} \frac {1}{6 ^ {n - 1}} & \text { Difference   Rule } \\ = \frac {1}{1 - (1 / 2)} - \frac {1}{1 - (1 / 6)} & \text { Geometric   series   with } a = 1 \text { and } r = 1 / 2, 1 / 6 \\ = 2 - \frac {6}{5} = \frac {4}{5} & \text { Both   series   converge   since } | 1 / 2 | <   1 \text { and } | 1 / 6 | <   1. \end{array}
@@ -1419,7 +1408,7 @@ $$
 \begin{array}{l l} \text {(b)} \sum_ {n = 0} ^ {\infty} \frac {4}{2 ^ {n}} = 4 \sum_ {n = 0} ^ {\infty} \frac {1}{2 ^ {n}} & \text { Constant   Multiple   Rule } \\ = 4 \left(\frac {1}{1 - (1 / 2)}\right) & \text { Geometric   series   with } a = 1 \text { and } r = 1 / 2 \\ = 8 & \text { Converges   since } | r | = 1 / 2 <   1. \end{array}
 $$
 
-## Adding or Deleting Terms
+### Adding or Deleting Terms
 
 We can add a finite number of terms to a series or delete a finite number of terms without altering the series' convergence or divergence, although in the case of convergence, this will usually change the sum. If $\sum_{n=1}^{\infty} a_n$ converges, then $\sum_{n=k}^{\infty} a_n$ converges for any $k > 1$ and 
 
@@ -1439,7 +1428,7 @@ $$
 \sum_ {n = 4} ^ {\infty} \frac {1}{5 ^ {n}} = \left(\sum_ {n = 1} ^ {\infty} \frac {1}{5 ^ {n}}\right) - \frac {1}{5} - \frac {1}{2 5} - \frac {1}{1 2 5}.
 $$
 
-## HISTORICAL BIOGRAPHY Richard Dedekind (1831–1916)
+**HISTORICAL BIOGRAPHY Richard Dedekind (1831–1916)**
 
 Dedekind grew up in Germany and in 1850 entered the University of Gottingen. There he studied with Bernhard Riemann and Carl Gauss. Like Gauss, Dedekind preferred to study the theoretical aspects of number theory. His work on irrational numbers gave the subject a logical foundation. 
 
@@ -1447,7 +1436,7 @@ To know more, visit the companion Website.
 
 The convergence or divergence of a series is not affected by its first few terms. Only the “tail” of the series, the part that remains when we sum beyond some finite number of initial terms, influences whether it converges or diverges. 
 
-## Reindexing
+### Reindexing
 
 As long as we preserve the order of its terms, we can reindex any series without altering its convergence. To raise the starting value of the index h units, replace the n in the formula for $a_{n}$ by n - h: 
 
@@ -1477,9 +1466,9 @@ $$
 
 The partial sums remain the same no matter what indexing we choose to use. 
 
-## EXERCISES 9.2
+### EXERCISES 9.2
 
-## Finding nth Partial Sums
+#### Finding nth Partial Sums
 
 In Exercises 1–6, find a formula for the nth partial sum of each series and use it to find the series' sum if the series converges. 
 
@@ -1491,306 +1480,9 @@ $$
 \frac {9}{1 0 0} + \frac {9}{1 0 0 ^ {2}} + \frac {9}{1 0 0 ^ {3}} + \dots + \frac {9}{1 0 0 ^ {n}} + \dots
 $$
 
-3. $1 - \frac{1}{2} + \frac{1}{4} - \frac{1}{8} + \cdots + (-1)^{n-1} \frac{1}{2^{n-1}} + \cdots$ 
+#### Theory and Examples
 
-4. $1 - 2 + 4 - 8 + \cdots + (-1)^{n-1} 2^{n-1} + \cdots$ 
-
-5. $\frac{1}{2\cdot3}+\frac{1}{3\cdot4}+\frac{1}{4\cdot5}+\cdots+\frac{1}{(n+1)(n+2)}+\cdots$ 
-
-$$
-\frac {5}{1 \cdot 2} + \frac {5}{2 \cdot 3} + \frac {5}{3 \cdot 4} + \dots + \frac {5}{n (n + 1)} + \dots
-$$
-
-## Series with Geometric Terms
-
-In Exercises 7–14, write out the first eight terms of each series to show how the series starts. Then find the sum of the series or show that it diverges. 
-
-$$
-\sum_ {n = 0} ^ {\infty} \frac {(- 1) ^ {n}}{4 ^ {n}}
-$$
-
-8. $\sum_{n=2}^{\infty} \frac{1}{4^n}$ 
-
-9. $\sum_{n=1}^{\infty}\left(1 - \frac{7}{4^n}\right)$ 
-
-10. $\sum_{n=0}^{\infty} (-1)^{n} \frac{5}{4^{n}}$ 
-
-11. $\sum_{n=0}^{\infty}\left(\frac{5}{2^n} + \frac{1}{3^n}\right)$ 
-
-12. $\sum_{n=0}^{\infty}\left(\frac{5}{2^n}-\frac{1}{3^n}\right)$ 
-
-13. $\sum_{n=0}^{\infty}\left(\frac{1}{2^n} + \frac{(-1)^n}{5^n}\right)$ 
-
-14. $\sum_{n = 0}^{\infty}\left(\frac{2^{n + 1}}{5^n}\right)$ 
-
-In Exercises 15–22, determine whether the geometric series converges or diverges. If a series converges, find its sum. 
-
-15. $1 + \left(\frac{2}{5}\right) + \left(\frac{2}{5}\right)^{2} + \left(\frac{2}{5}\right)^{3} + \left(\frac{2}{5}\right)^{4} + \cdots$ 
-
-16. $1 + (-3) + (-3)^{2} + (-3)^{3} + (-3)^{4} + \cdots$ 
-
-17. $\left(\frac{1}{8}\right) + \left(\frac{1}{8}\right)^2 + \left(\frac{1}{8}\right)^3 + \left(\frac{1}{8}\right)^4 + \left(\frac{1}{8}\right)^5 + \dots$ 
-
-18. $\left(\frac{-2}{3}\right)^2 +\left(\frac{-2}{3}\right)^3 +\left(\frac{-2}{3}\right)^4 +\left(\frac{-2}{3}\right)^5 +\left(\frac{-2}{3}\right)^6 +\dots$ 
-
-19. $1 - \left(\frac{2}{e}\right) + \left(\frac{2}{e}\right)^2 -\left(\frac{2}{e}\right)^3 +\left(\frac{2}{e}\right)^4 -\dots$ 
-
-20. $\left(\frac{1}{3}\right)^{-2}-\left(\frac{1}{3}\right)^{-1}+1-\left(\frac{1}{3}\right)+\left(\frac{1}{3}\right)^{2}-\cdots$ 
-
-21. $1 + \left(\frac{10}{9}\right)^2 +\left(\frac{10}{9}\right)^4 +\left(\frac{10}{9}\right)^6 +\left(\frac{10}{9}\right)^8 +\dots$ 
-
-22. $\frac{9}{4} -\frac{27}{8} +\frac{81}{16} -\frac{243}{32} +\frac{729}{64} -\dots$ 
-
-## Repeating Decimals
-
-Express each of the numbers in Exercises 23–30 as the ratio of two integers. 
-
-23. $0.\overline{23}=0.23\ 23\ 23\ldots$ 
-
-24. $0.\overline{234}=0.234\ 234\ 234\ldots$ 
-
-25. 0. $\overline{7}$ = 0.7777 ... 
-
-26. $0.\overline{d} = 0.\overline{ddd}\ldots$ , where $d$ is a digit 
-
-27. $0.0\overline{6} = 0.06666\dots$ 
-
-28. $1.\overline{414}=1.414\ 414\ 414\ldots$ 
-
-29. $1.24\overline{123} = 1.24\ 123\ 123\ 123\ldots$ 
-
-30. $3.\overline{142857} = 3.142857\ 142857$ ... 
-
-## Using the nth-Term Test
-
-In Exercises 31–38, use the nth-Term Test for divergence to show that the series is divergent, or state that the test is inconclusive. 
-
-31. $\sum_{n = 1}^{\infty}\frac{n}{n + 10}$ 
-
-32. $\sum_{n=1}^{\infty}\frac{n(n+1)}{(n+2)(n+3)}$ 
-
-33. $\sum_{n = 0}^{\infty}\frac{1}{n + 4}$ 
-
-34. $\sum_{n=1}^{\infty} \frac{n}{n^{2} + 3}$ 
-
-35. $\sum_{n = 1}^{\infty}\cos \frac{1}{n}$ 
-
-36. $\sum_{n = 0}^{\infty}\frac{e^{n}}{e^{n} + n}$ 
-
-37. $\sum_{n = 1}^{\infty}\ln \frac{1}{n}$ 
-
-$$
-\sum_ {n = 0} ^ {\infty} \cos n \pi
-$$
-
-Telescoping Series 
-
-In Exercises 39–44, find a formula for the nth partial sum of the series and use it to determine whether the series converges or diverges. If a series converges, find its sum. 
-
-39. $\sum_{n=1}^{\infty}\left(\frac{1}{n}-\frac{1}{n+1}\right)$ 
-
-40. $\sum_{n=1}^{\infty}\left(\frac{3}{n^2}-\frac{3}{(n+1)^2}\right)$ 
-
-41. $\sum_{n=1}^{\infty}\left(\ln\sqrt{n+1}-\ln\sqrt{n}\right)$ 42. $\sum_{n=1}^{\infty}\left(\tan(n)-\tan(n-1)\right)$ 
-
-43. $\sum_{n=1}^{\infty}\left(\arccos\left(\frac{1}{n+1}\right)-\arccos\left(\frac{1}{n+2}\right)\right)$ 
-
-44. $\sum_{n=1}^{\infty}\left(\sqrt{n+4}-\sqrt{n+3}\right)$ 
-
-Find the sum of each series in Exercises 45-52. 
-
-45. $\sum_{n=1}^{\infty} \frac{4}{(4n - 3)(4n + 1)}$ 
-
-$$
-\sum_ {n = 1} ^ {\infty} \frac {6}{(2 n - 1) (2 n + 1)}
-$$
-
-47. $\sum_{n=1}^{\infty} \frac{40n}{(2n - 1)^2 (2n + 1)^2}$ 
-
-48. $\sum_{n=1}^{\infty} \frac{2n + 1}{n^{2}(n + 1)^{2}}$ 
-
-49. $\sum_{n=1}^{\infty}\left(\frac{1}{\sqrt{n}} - \frac{1}{\sqrt{n+1}}\right)$ 
-
-50. $\sum_{n=1}^{\infty}\left(\frac{1}{2^{1/n}} - \frac{1}{2^{1/(n+1)}}\right)$ 
-
-51. $\sum_{n=1}^{\infty}\left(\frac{1}{\ln(n+2)} - \frac{1}{\ln(n+1)}\right)$ 
-
-52. $\sum_{n=1}^{\infty}\left(\tan^{-1}(n) - \tan^{-1}(n+1)\right)$ 
-
-## Convergence or Divergence
-
-Which series in Exercises 53–76 converge, and which diverge? Give reasons for your answers. If a series converges, find its sum. 
-
-53. $\sum_{n = 0}^{\infty}\left(\frac{1}{\sqrt{2}}\right)^n$ 
-
-54. $\sum_{n = 0}^{\infty}\left(\sqrt{2}\right)^n$ 
-
-55. $\sum_{n=1}^{\infty} (-1)^{n+1} \frac{3}{2^n}$ 
-
-56. $\sum_{n=1}^{\infty} (-1)^{n+1} n$ 
-
-57. $\sum_{n=0}^{\infty} \cos\left(\frac{n\pi}{2}\right)$ 
-
-58. $\sum_{n = 0}^{\infty}\frac{\cos n\pi}{5^n}$ 
-
-59. $\sum_{n = 0}^{\infty}e^{-2n}$ 
-
-60. $\sum_{n = 1}^{\infty}\ln \frac{1}{3^n}$ 
-
-61. $\sum_{n = 1}^{\infty}\frac{2}{10^{n}}$ 
-
-62. $\sum_{n=0}^{\infty} \frac{1}{x^n}, |x| > 1$ 
-
-63. $\sum_{n = 0}^{\infty}\frac{2^n - 1}{3^n}$ 
-
-64. $\sum_{n=1}^{\infty}\left(1 - \frac{1}{n}\right)^n$ 
-
-65. $\sum_{n=0}^{\infty} \frac{n!}{1000^n}$ 
-
-70. $\sum_{n=1}^{\infty} \ln \left( \frac{n}{2n+1} \right)$ 
-
-69. $\sum_{n=1}^{\infty} \ln \left( \frac{n}{n+1} \right)$ 
-
-66. $\sum_{n = 1}^{\infty}\frac{n^n}{n!}$ 
-
-67. $\sum_{n=1}^{\infty} \frac{2^n + 3^n}{4^n}$ 
-
-68. $\sum_{n=1}^{\infty} \frac{2^n + 4^n}{3^n + 4^n}$ 
-
-71. $\sum_{n = 0}^{\infty}\left(\frac{e}{\pi}\right)^n$ 
-
-$$
-\sum_ {n = 0} ^ {\infty} \frac {e ^ {n \pi}}{\pi^ {n e}}
-$$
-
-73. $\sum_{n=1}^{\infty}\left(\frac{n}{n+1}-\frac{n+2}{n+3}\right)$ 
-
-74. $\sum_{n=2}^{\infty}\left(\sin\left(\frac{\pi}{n}\right)-\sin\left(\frac{\pi}{n-1}\right)\right)$ 
-
-75. $\sum_{n=1}^{\infty}\left(\cos\left(\frac{\pi}{n}\right)+\sin\left(\frac{\pi}{n}\right)\right)$ 
-
-76. $\sum_{n=0}^{\infty}\left(\ln(4e^{n}-1)-\ln(2e^{n}+1)\right)$ 
-
-## Geometric Series with a Variable x
-
-In each of the geometric series in Exercises 77–80, write out the first few terms of the series to find a and r, and find the sum of the series. Then express the inequality $|r| < 1$ in terms of x and find the values of x for which the inequality holds and the series converges. 
-
-77. $\sum_{n=0}^{\infty} (-1)^n x^n$ 
-
-78. $\sum_{n=0}^{\infty} (-1)^n x^{2n}$ 
-
-79. $\sum_{n = 0}^{\infty}3\left(\frac{x - 1}{2}\right)^{n}$ 
-
-80. $\sum_{n=0}^{\infty} \frac{(-1)^n}{2} \left( \frac{1}{3 + \sin x} \right)^n$ 
-
-In Exercises 81–86, find the values of x for which the given geometric series converges. Also, find the sum of the series (as a function of x) for those values of x. 
-
-81. $\sum_{n = 0}^{\infty}2^{n}x^{n}$ 
-
-82. $\sum_{n=0}^{\infty} (-1)^{n} x^{-2n}$ 
-
-83. $\sum_{n=0}^{\infty} (-1)^{n} (x + 1)^{n}$ 
-
-84. $\sum_{n=0}^{\infty}\left(-\frac{1}{2}\right)^n (x - 3)^n$ 
-
-85. $\sum_{n = 0}^{\infty}\sin^n x$ 
-
-86. $\sum_{n=0}^{\infty} (\ln x)^n$ 
-
-## Theory and Examples
-
-87. The series in Exercise 5 can also be written as 
-
-$$
-\sum_ {n = 1} ^ {\infty} \frac {1}{(n + 1) (n + 2)}
-$$
-
-$$
-\sum_ {n = - 1} ^ {\infty} \frac {1}{(n + 3) (n + 4)}.
-$$
-
-Write this series as a sum beginning with (a) $n = -2$ , (b) $n = 0$ , (c) $n = 5$ . 
-
-88. The series in Exercise 6 can also be written as 
-
-$\sum_{n=1}^{\infty}\frac{5}{n(n+1)}$ and $\sum_{n=0}^{\infty}\frac{5}{(n+1)(n+2)}$ . 
-
-Write this series as a sum beginning with (a) $n = -1$ , (b) $n = 3$ , (c) $n = 20$ . 
-
-89. Make up an infinite series of nonzero terms whose sum is a. 1 b. -3 c. 0. 
-
-90. (Continuation of Exercise 89.) Can you make an infinite series of nonzero terms that converges to any number you want? Explain. 
-
-91. Show by example that $\sum (a_{n} / b_{n})$ may diverge even though $\sum a_{n}$ and $\sum b_{n}$ converge and no $b_{n}$ equals 0. 
-
-92. Find convergent geometric series $A = \sum a_{n}$ and $B = \sum b_{n}$ that illustrate the fact that $\sum a_{n}b_{n}$ may converge without being equal to $AB$ . 
-
-93. Show by example that $\sum(a_{n}/b_{n})$ may converge to something other than A/B even when $A = \sum a_{n}, B = \sum b_{n} \neq 0$ , and no $b_{n}$ equals 0. 
-
-94. If $\sum a_{n}$ converges and $a_{n} > 0$ for all $n$ , can anything be said about $\sum (1 / a_n)$ ? Give reasons for your answer. 
-
-95. What happens if you add a finite number of terms to a divergent series or delete a finite number of terms from a divergent series? Give reasons for your answer. 
-
-96. If $\sum a_{n}$ converges and $\sum b_{n}$ diverges, can anything be said about their term-by-term sum $\sum (a_{n} + b_{n})$ ? Give reasons for your answer. 
-
-97. Make up a geometric series $\sum ar^{n - 1}$ that converges to the number 5 if 
-
-a. $a = 2$ 
-
-$$
-\mathbf {b}. a = 1 3 / 2.
-$$
-
-98. Find the value of b for which 
-
-$$
-1 + e ^ {b} + e ^ {2 b} + e ^ {3 b} + \dots = 9.
-$$
-
-99. For what values of $r$ does the infinite series 
-
-$$
-1 + 2 r + r ^ {2} + 2 r ^ {3} + r ^ {4} + 2 r ^ {5} + r ^ {6} + \dots
-$$
-
-converge? Find the sum of the series when it converges. 
-
-100. The accompanying figure shows the first five of a sequence of squares. The outermost square has an area of $4 \, m^{2}$ . Each of the other squares is obtained by joining the midpoints of the sides of the squares before it. Find the sum of the areas of all the squares. 
-
-![[d7080b6a4274a478f2765446db1eb2441f364d48f269551ee7a004f783ff2eec.jpg|image]]
-
-
-101. Drug dosage A patient takes a 300 mg tablet for the control of high blood pressure every morning at the same time. The concentration of the drug in the patient's system decays exponentially at a constant hourly rate of k = 0.12. 
-
-a. How many milligrams of the drug are in the patient's system just before the second tablet is taken? Just before the third tablet is taken? 
-
-b. After the patient has taken the medication for at least six months, what quantity of drug is in the patient's body just before the next regularly scheduled morning tablet is taken? 
-
-102. Show that the error $(L - s_n)$ obtained by replacing a convergent geometric series with one of its partial sums $s_n$ is $ar^n / (1 - r)$ . 
-
-103. The Cantor set To construct this set, we begin with the closed interval $[0,1]$ . From that interval, we remove the middle open interval $(1/3,2/3)$ , leaving the two closed intervals $[0,1/3]$ and $[2/3,1]$ . At the second step we remove the open middle third interval from each of those remaining. From $[0,1/3]$ we remove the open interval $(1/9,2/9)$ , and from $[2/3,1]$ we remove $(7/9,8/9)$ , leaving behind the four closed intervals $[0,1/9]$ , $[2/9,1/3]$ , $[2/3,7/9]$ , and $[8/9,1]$ . At the next step, we remove the open middle third interval from each closed interval left behind, so $(1/27,2/27)$ is removed from $[0,1/9]$ , leaving the closed intervals $[0,1/27]$ and $[2/27,1/9]$ ; $(7/27,8/27)$ is removed from $[2/9,1/3]$ , leaving behind $[2/9,7/27]$ and $[8/27,1/3]$ , and so forth. We continue this process repeatedly without stopping, at each step removing the open third interval from every closed interval remaining behind from the preceding step. The numbers remaining in the interval $[0,1]$ , after all open middle third intervals have been removed, are the points in the Cantor set (named after Georg Cantor, 1845–1918). The set has some interesting properties. 
-
-a. The Cantor set contains infinitely many numbers in $[0,1]$ . List 12 numbers that belong to the Cantor set. 
-
-b. Show, by summing an appropriate geometric series, that the total length of all the open middle third intervals that have been removed from $[0,1]$ is equal to 1. 
-
-104. Helge von Koch's snowflake curve Helge von Koch's snowflake is a curve of infinite length that encloses a region of finite area. To see why this is so, suppose the curve is generated by starting with an equilateral triangle whose sides have length 1. 
-
-a. Find the length $L_{n}$ of the nth curve $C_{n}$ and show that $\lim_{n\to\infty}L_{n}=\infty$ . 
-
-b. Find the area $A_{n}$ of the region enclosed by $C_{n}$ and show that $\lim_{n\to \infty}A_n = (8 / 5)A_1$ . 
-
-![[2db579311816975267be145f929363aef902390d909836427701a6f72e625fa2.jpg|image]]
-
-
-105. The largest circle in the accompanying figure has radius 1. Consider the sequence of circles of maximum area inscribed in semicircles of diminishing size. What is the sum of the areas of all of the circles? 
-
-![[b2415f58d17c2a81444786e9d65ca587e06ee3bc646ae601ee9f2fee5499baba.jpg|image]]
-
-
-The most basic question we can ask about a series is whether it converges. In this section we begin to study this question, starting with series that have nonnegative terms. Such a series converges if its sequence of partial sums is bounded. If we establish that a given series does converge, we generally do not have a formula available for its sum. So to get an estimate for the sum of a convergent series, we investigate the error involved when using a partial sum to approximate the total sum. 
-
-## Nondecreasing Partial Sums
+#### Nondecreasing Partial Sums
 
 Suppose that $\sum_{n=1}^{\infty} a_n$ is an infinite series with $a_n \geq 0$ for all $n$ . Then each partial sum is greater than or equal to its predecessor because $s_{n+1} = s_n + a_n$ , so 
 
@@ -1802,7 +1494,7 @@ Since the partial sums form a nondecreasing sequence, the Monotonic Sequence The
 
 Corollary of Theorem 6 A series $\sum_{n=1}^{\infty} a_n$ of nonnegative terms converges if and only if its partial sums are bounded from above. 
 
-## **EXAMPLE 1** As an application of the above corollary, consider the harmonic series
+**EXAMPLE 1** As an application of the above corollary, consider the harmonic series
 
 $$
 \sum_ {n = 1} ^ {\infty} \frac {1}{n} = 1 + \frac {1}{2} + \frac {1}{3} + \dots + \frac {1}{n} + \dots .
@@ -1816,7 +1508,7 @@ $$
 
 The sum of the first two terms is 1.5. The sum of the next two terms is $1/3 + 1/4$ , which is greater than $1/4 + 1/4 = 1/2$ . The sum of the next four terms is $1/5 + 1/6 + 1/7 + 1/8$ , which is greater than $1/8 + 1/8 + 1/8 + 1/8 = 1/2$ . The sum of the next eight terms is $1/9 + 1/10 + 1/11 + 1/12 + 1/13 + 1/14 + 1/15 + 1/16$ , which is greater than $8/16 = 1/2$ . The sum of the next 16 terms is greater than $16/32 = 1/2$ , and so on. In general, the sum of $2^{m}$ terms ending with $1/2^{m+1}$ is greater than $2^{m}/2^{m+1} = 1/2$ . Therefore, if $n = 2^{k}$ , then the partial sum $s_{n}$ is greater than k/2, so the sequence of partial sums is not bounded from above. The harmonic series diverges. 
 
-## The Integral Test
+#### The Integral Test
 
 We introduce the Integral Test with a series that is related to the harmonic series, but whose nth term is $1/n^{2}$ instead of 1/n. 
 
@@ -1826,7 +1518,7 @@ $$
 \sum_ {n = 1} ^ {\infty} \frac {1}{n ^ {2}} = 1 + \frac {1}{4} + \frac {1}{9} + \frac {1}{1 6} + \dots + \frac {1}{n ^ {2}} + \dots
 $$
 
-## Caution
+#### Caution
 
 The series and integral need not have the same value in the convergent case. You will see in Example 6 that 
 
@@ -1834,21 +1526,21 @@ $$
 \sum_ {n = 1} ^ {\infty} \left(1 / n ^ {2}\right) \neq \int_ {1} ^ {\infty} \left(1 / x ^ {2}\right) d x = 1.
 $$
 
-![[5563820bf18e6d9828f928b784479d31e1463cc4b221570137162953e62e8d16.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5563820bf18e6d9828f928b784479d31e1463cc4b221570137162953e62e8d16.jpg)
 
 
 
 FIGURE 9.11 The sum of the areas of the rectangles under the graph of $f(x) = 1/x^{2}$ is less than the area under the graph (Example 2).
 
 
-![[8e3eccabbd66beb4f6387b03fcd460384850b3e7d44367c82a39ebf21e9f5dba.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8e3eccabbd66beb4f6387b03fcd460384850b3e7d44367c82a39ebf21e9f5dba.jpg)
 
 
 
 (a)
 
 
-![[7081be277f0759d18789dc615c92f5e1f8a7cecddfc2544b71d700f9790e0003.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7081be277f0759d18789dc615c92f5e1f8a7cecddfc2544b71d700f9790e0003.jpg)
 
 
 
@@ -1869,7 +1561,7 @@ $$
 
 Thus the partial sums of $\sum_{n=1}^{\infty}\left(1/n^{2}\right)$ are bounded from above (by 2), and the series converges. 
 
-## THEOREM 9—The Integral Test
+**THEOREM 9—The Integral Test**
 
 Let $\{a_{n}\}$ be a sequence of positive terms. Suppose that $a_{n} = f(n)$ , where $f$ is a continuous, positive, decreasing function of $x$ for all $x \geq N$ ( $N$ a positive integer). Then the series $\sum_{n=N}^{\infty} a_{n}$ and the integral $\int_{N}^{\infty} f(x) dx$ both converge or both diverge. 
 
@@ -1983,9 +1675,9 @@ $$
 
 The improper integral diverges, so the series diverges also. 
 
-## Error Estimation
+#### Error Estimation
 
-![[1c2092f26877439f2bb81b132c774bb61e1623feac4e1b7276212ae57ade974c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1c2092f26877439f2bb81b132c774bb61e1623feac4e1b7276212ae57ade974c.jpg)
 
 
 For some convergent series, such as the geometric series or the telescoping series in Example 5 of Section 9.2, we can actually find the total sum of the series. That is, we can find the limiting value S of the sequence of partial sums. For most convergent series, however, we cannot easily find the total sum. Nevertheless, we can estimate the sum by adding the first n terms to get $s_{n}$ , but we need to know how far off $s_{n}$ is from the total sum S. An approximation to a function or to a number is more useful when it is accompanied by a bound on the size of the worst possible error that could occur. With such an error bound we can try to make an estimate or approximation that is close enough for the problem at hand. Without a bound on the error size, we are just guessing and hoping that we are close to the actual answer. We now show a way to bound the error size using integrals. 
@@ -1994,7 +1686,7 @@ For some convergent series, such as the geometric series or the telescoping seri
 FIGURE 9.13 A geometric interpretation of Remainder Formula (1).
 
 
-![[59a836bc58b3ac2e61c9b5c41b277c266ef4bf269a268c6d477a6da8a999d385.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/59a836bc58b3ac2e61c9b5c41b277c266ef4bf269a268c6d477a6da8a999d385.jpg)
 
 
 Suppose that a series $\sum a_{n}$ with positive terms is shown to be convergent by the Integral Test, and we want to estimate the size of the remainder $R_{n}$ measuring the difference between the total sum S of the series and its nth partial sum $s_{n}$ . That is, we wish to estimate 
@@ -2049,9 +1741,7 @@ $$
 
 Since $s_{10} = 1 + (1/4) + (1/9) + (1/16) + \cdots + (1/100) \approx 1.54977$ , these last inequalities give 
 
-$$
-1. 6 4 0 6 8 \leq S \leq 1. 6 4 9 7 7.
-$$
+1. $6 4 0 6 8 \leq S \leq 1. 6 4 9 7 7.$
 
 If we approximate the sum $S$ by the midpoint of this interval, we find that 
 
@@ -2067,23 +1757,313 @@ $$
 
 The error in this approximation is then less than half the length of the interval, so the error is less than 0.005. Using a trigonometric Fourier series, we prove in Section 19.4 that $S$ is equal to $\pi^2 / 6 \approx 1.64493$ . 
 
-## EXERCISES
+3. $1 - \frac{1}{2} + \frac{1}{4} - \frac{1}{8} + \cdots + (-1)^{n-1} \frac{1}{2^{n-1}} + \cdots$ 
 
-## 9.3
+4. $1 - 2 + 4 - 8 + \cdots + (-1)^{n-1} 2^{n-1} + \cdots$ 
 
-## Applying the Integral Test
+5. $\frac{1}{2\cdot3}+\frac{1}{3\cdot4}+\frac{1}{4\cdot5}+\cdots+\frac{1}{(n+1)(n+2)}+\cdots$ 
+
+$$
+\frac {5}{1 \cdot 2} + \frac {5}{2 \cdot 3} + \frac {5}{3 \cdot 4} + \dots + \frac {5}{n (n + 1)} + \dots
+$$
+
+#### Series with Geometric Terms
+
+In Exercises 7–14, write out the first eight terms of each series to show how the series starts. Then find the sum of the series or show that it diverges. 
+
+$$
+\sum_ {n = 0} ^ {\infty} \frac {(- 1) ^ {n}}{4 ^ {n}}
+$$
+
+8. $\sum_{n=2}^{\infty} \frac{1}{4^n}$ 
+
+9. $\sum_{n=1}^{\infty}\left(1 - \frac{7}{4^n}\right)$ 
+
+10. $\sum_{n=0}^{\infty} (-1)^{n} \frac{5}{4^{n}}$ 
+
+11. $\sum_{n=0}^{\infty}\left(\frac{5}{2^n} + \frac{1}{3^n}\right)$ 
+
+12. $\sum_{n=0}^{\infty}\left(\frac{5}{2^n}-\frac{1}{3^n}\right)$ 
+
+13. $\sum_{n=0}^{\infty}\left(\frac{1}{2^n} + \frac{(-1)^n}{5^n}\right)$ 
+
+14. $\sum_{n = 0}^{\infty}\left(\frac{2^{n + 1}}{5^n}\right)$ 
+
+In Exercises 15–22, determine whether the geometric series converges or diverges. If a series converges, find its sum. 
+
+15. $1 + \left(\frac{2}{5}\right) + \left(\frac{2}{5}\right)^{2} + \left(\frac{2}{5}\right)^{3} + \left(\frac{2}{5}\right)^{4} + \cdots$ 
+
+16. $1 + (-3) + (-3)^{2} + (-3)^{3} + (-3)^{4} + \cdots$ 
+
+17. $\left(\frac{1}{8}\right) + \left(\frac{1}{8}\right)^2 + \left(\frac{1}{8}\right)^3 + \left(\frac{1}{8}\right)^4 + \left(\frac{1}{8}\right)^5 + \dots$ 
+
+18. $\left(\frac{-2}{3}\right)^2 +\left(\frac{-2}{3}\right)^3 +\left(\frac{-2}{3}\right)^4 +\left(\frac{-2}{3}\right)^5 +\left(\frac{-2}{3}\right)^6 +\dots$ 
+
+19. $1 - \left(\frac{2}{e}\right) + \left(\frac{2}{e}\right)^2 -\left(\frac{2}{e}\right)^3 +\left(\frac{2}{e}\right)^4 -\dots$ 
+
+20. $\left(\frac{1}{3}\right)^{-2}-\left(\frac{1}{3}\right)^{-1}+1-\left(\frac{1}{3}\right)+\left(\frac{1}{3}\right)^{2}-\cdots$ 
+
+21. $1 + \left(\frac{10}{9}\right)^2 +\left(\frac{10}{9}\right)^4 +\left(\frac{10}{9}\right)^6 +\left(\frac{10}{9}\right)^8 +\dots$ 
+
+22. $\frac{9}{4} -\frac{27}{8} +\frac{81}{16} -\frac{243}{32} +\frac{729}{64} -\dots$ 
+
+#### Repeating Decimals
+
+Express each of the numbers in Exercises 23–30 as the ratio of two integers. 
+
+23. $0.\overline{23}=0.23\ 23\ 23\ldots$ 
+
+24. $0.\overline{234}=0.234\ 234\ 234\ldots$ 
+
+25. 0. $\overline{7}$ = 0.7777 ... 
+
+26. $0.\overline{d} = 0.\overline{ddd}\ldots$ , where $d$ is a digit 
+
+27. $0.0\overline{6} = 0.06666\dots$ 
+
+28. $1.\overline{414}=1.414\ 414\ 414\ldots$ 
+
+29. $1.24\overline{123} = 1.24\ 123\ 123\ 123\ldots$ 
+
+30. $3.\overline{142857} = 3.142857\ 142857$ ... 
+
+#### Using the nth-Term Test
+
+In Exercises 31–38, use the nth-Term Test for divergence to show that the series is divergent, or state that the test is inconclusive. 
+
+31. $\sum_{n = 1}^{\infty}\frac{n}{n + 10}$ 
+
+32. $\sum_{n=1}^{\infty}\frac{n(n+1)}{(n+2)(n+3)}$ 
+
+33. $\sum_{n = 0}^{\infty}\frac{1}{n + 4}$ 
+
+34. $\sum_{n=1}^{\infty} \frac{n}{n^{2} + 3}$ 
+
+35. $\sum_{n = 1}^{\infty}\cos \frac{1}{n}$ 
+
+36. $\sum_{n = 0}^{\infty}\frac{e^{n}}{e^{n} + n}$ 
+
+37. $\sum_{n = 1}^{\infty}\ln \frac{1}{n}$ 
+
+$$
+\sum_ {n = 0} ^ {\infty} \cos n \pi
+$$
+
+Telescoping Series 
+
+In Exercises 39–44, find a formula for the nth partial sum of the series and use it to determine whether the series converges or diverges. If a series converges, find its sum. 
+
+39. $\sum_{n=1}^{\infty}\left(\frac{1}{n}-\frac{1}{n+1}\right)$ 
+
+40. $\sum_{n=1}^{\infty}\left(\frac{3}{n^2}-\frac{3}{(n+1)^2}\right)$ 
+
+41. $\sum_{n=1}^{\infty}\left(\ln\sqrt{n+1}-\ln\sqrt{n}\right)$
+
+42. $\sum_{n=1}^{\infty}\left(\tan(n)-\tan(n-1)\right)$
+
+43. $\sum_{n=1}^{\infty}\left(\arccos\left(\frac{1}{n+1}\right)-\arccos\left(\frac{1}{n+2}\right)\right)$ 
+
+44. $\sum_{n=1}^{\infty}\left(\sqrt{n+4}-\sqrt{n+3}\right)$ 
+
+Find the sum of each series in Exercises 45-52. 
+
+45. $\sum_{n=1}^{\infty} \frac{4}{(4n - 3)(4n + 1)}$ 
+
+46. $\sum_ {n = 1} ^ {\infty} \frac {6}{(2 n - 1) (2 n + 1)}$
+
+47. $\sum_{n=1}^{\infty} \frac{40n}{(2n - 1)^2 (2n + 1)^2}$ 
+
+48. $\sum_{n=1}^{\infty} \frac{2n + 1}{n^{2}(n + 1)^{2}}$ 
+
+49. $\sum_{n=1}^{\infty}\left(\frac{1}{\sqrt{n}} - \frac{1}{\sqrt{n+1}}\right)$ 
+
+50. $\sum_{n=1}^{\infty}\left(\frac{1}{2^{1/n}} - \frac{1}{2^{1/(n+1)}}\right)$ 
+
+51. $\sum_{n=1}^{\infty}\left(\frac{1}{\ln(n+2)} - \frac{1}{\ln(n+1)}\right)$ 
+
+52. $\sum_{n=1}^{\infty}\left(\tan^{-1}(n) - \tan^{-1}(n+1)\right)$ 
+
+#### Convergence or Divergence
+
+Which series in Exercises 53–76 converge, and which diverge? Give reasons for your answers. If a series converges, find its sum. 
+
+53. $\sum_{n = 0}^{\infty}\left(\frac{1}{\sqrt{2}}\right)^n$ 
+
+54. $\sum_{n = 0}^{\infty}\left(\sqrt{2}\right)^n$ 
+
+55. $\sum_{n=1}^{\infty} (-1)^{n+1} \frac{3}{2^n}$ 
+
+56. $\sum_{n=1}^{\infty} (-1)^{n+1} n$ 
+
+57. $\sum_{n=0}^{\infty} \cos\left(\frac{n\pi}{2}\right)$ 
+
+58. $\sum_{n = 0}^{\infty}\frac{\cos n\pi}{5^n}$ 
+
+59. $\sum_{n = 0}^{\infty}e^{-2n}$ 
+
+60. $\sum_{n = 1}^{\infty}\ln \frac{1}{3^n}$ 
+
+61. $\sum_{n = 1}^{\infty}\frac{2}{10^{n}}$ 
+
+62. $\sum_{n=0}^{\infty} \frac{1}{x^n}, |x| > 1$ 
+
+63. $\sum_{n = 0}^{\infty}\frac{2^n - 1}{3^n}$ 
+
+64. $\sum_{n=1}^{\infty}\left(1 - \frac{1}{n}\right)^n$ 
+
+65. $\sum_{n=0}^{\infty} \frac{n!}{1000^n}$ 
+
+66. $\sum_{n = 1}^{\infty}\frac{n^n}{n!}$ 
+
+67. $\sum_{n=1}^{\infty} \frac{2^n + 3^n}{4^n}$ 
+
+68. $\sum_{n=1}^{\infty} \frac{2^n + 4^n}{3^n + 4^n}$ 
+
+69. $\sum_{n=1}^{\infty} \ln \left( \frac{n}{n+1} \right)$ 
+
+70. $\sum_{n=1}^{\infty} \ln \left( \frac{n}{2n+1} \right)$ 
+
+71. $\sum_{n = 0}^{\infty}\left(\frac{e}{\pi}\right)^n$ 
+
+72. $\sum_ {n = 0} ^ {\infty} \frac {e ^ {n \pi}}{\pi^ {n e}}$
+
+73. $\sum_{n=1}^{\infty}\left(\frac{n}{n+1}-\frac{n+2}{n+3}\right)$ 
+
+74. $\sum_{n=2}^{\infty}\left(\sin\left(\frac{\pi}{n}\right)-\sin\left(\frac{\pi}{n-1}\right)\right)$ 
+
+75. $\sum_{n=1}^{\infty}\left(\cos\left(\frac{\pi}{n}\right)+\sin\left(\frac{\pi}{n}\right)\right)$ 
+
+76. $\sum_{n=0}^{\infty}\left(\ln(4e^{n}-1)-\ln(2e^{n}+1)\right)$ 
+
+#### Geometric Series with a Variable x
+
+In each of the geometric series in Exercises 77–80, write out the first few terms of the series to find a and r, and find the sum of the series. Then express the inequality $|r| < 1$ in terms of x and find the values of x for which the inequality holds and the series converges. 
+
+77. $\sum_{n=0}^{\infty} (-1)^n x^n$ 
+
+78. $\sum_{n=0}^{\infty} (-1)^n x^{2n}$ 
+
+79. $\sum_{n = 0}^{\infty}3\left(\frac{x - 1}{2}\right)^{n}$ 
+
+80. $\sum_{n=0}^{\infty} \frac{(-1)^n}{2} \left( \frac{1}{3 + \sin x} \right)^n$ 
+
+In Exercises 81–86, find the values of x for which the given geometric series converges. Also, find the sum of the series (as a function of x) for those values of x. 
+
+81. $\sum_{n = 0}^{\infty}2^{n}x^{n}$ 
+
+82. $\sum_{n=0}^{\infty} (-1)^{n} x^{-2n}$ 
+
+83. $\sum_{n=0}^{\infty} (-1)^{n} (x + 1)^{n}$ 
+
+84. $\sum_{n=0}^{\infty}\left(-\frac{1}{2}\right)^n (x - 3)^n$ 
+
+85. $\sum_{n = 0}^{\infty}\sin^n x$ 
+
+86. $\sum_{n=0}^{\infty} (\ln x)^n$ 
+
+87. The series in Exercise 5 can also be written as 
+
+$$
+\sum_ {n = 1} ^ {\infty} \frac {1}{(n + 1) (n + 2)}
+$$
+
+$$
+\sum_ {n = - 1} ^ {\infty} \frac {1}{(n + 3) (n + 4)}.
+$$
+
+Write this series as a sum beginning with (a) $n = -2$ , (b) $n = 0$ , (c) $n = 5$ . 
+
+88. The series in Exercise 6 can also be written as 
+
+$\sum_{n=1}^{\infty}\frac{5}{n(n+1)}$ and $\sum_{n=0}^{\infty}\frac{5}{(n+1)(n+2)}$ . 
+
+Write this series as a sum beginning with (a) $n = -1$ , (b) $n = 3$ , (c) $n = 20$ . 
+
+89. Make up an infinite series of nonzero terms whose sum is a. 1 b. -3 c. 0. 
+
+90. (Continuation of Exercise 89.) Can you make an infinite series of nonzero terms that converges to any number you want? Explain. 
+
+91. Show by example that $\sum (a_{n} / b_{n})$ may diverge even though $\sum a_{n}$ and $\sum b_{n}$ converge and no $b_{n}$ equals 0. 
+
+92. Find convergent geometric series $A = \sum a_{n}$ and $B = \sum b_{n}$ that illustrate the fact that $\sum a_{n}b_{n}$ may converge without being equal to $AB$ . 
+
+93. Show by example that $\sum(a_{n}/b_{n})$ may converge to something other than A/B even when $A = \sum a_{n}, B = \sum b_{n} \neq 0$ , and no $b_{n}$ equals 0. 
+
+94. If $\sum a_{n}$ converges and $a_{n} > 0$ for all $n$ , can anything be said about $\sum (1 / a_n)$ ? Give reasons for your answer. 
+
+95. What happens if you add a finite number of terms to a divergent series or delete a finite number of terms from a divergent series? Give reasons for your answer. 
+
+96. If $\sum a_{n}$ converges and $\sum b_{n}$ diverges, can anything be said about their term-by-term sum $\sum (a_{n} + b_{n})$ ? Give reasons for your answer. 
+
+97. Make up a geometric series $\sum ar^{n - 1}$ that converges to the number 5 if 
+
+a. $a = 2$ 
+
+$$
+\mathbf {b}. a = 1 3 / 2.
+98. $Find the value of b for which$
+1 + e ^ {b} + e ^ {2 b} + e ^ {3 b} + \dots = 9.
+99. $For what values of $r$ does the infinite series$
+1 + 2 r + r ^ {2} + 2 r ^ {3} + r ^ {4} + 2 r ^ {5} + r ^ {6} + \dots
+$$
+
+converge? Find the sum of the series when it converges. 
+
+100. The accompanying figure shows the first five of a sequence of squares. The outermost square has an area of $4 \, m^{2}$ . Each of the other squares is obtained by joining the midpoints of the sides of the squares before it. Find the sum of the areas of all the squares. 
+
+![教材插图](/books/thomas-calculus/assets/d7080b6a4274a478f2765446db1eb2441f364d48f269551ee7a004f783ff2eec.jpg)
+
+
+101. Drug dosage A patient takes a 300 mg tablet for the control of high blood pressure every morning at the same time. The concentration of the drug in the patient's system decays exponentially at a constant hourly rate of k = 0.12. 
+
+a. How many milligrams of the drug are in the patient's system just before the second tablet is taken? Just before the third tablet is taken? 
+
+b. After the patient has taken the medication for at least six months, what quantity of drug is in the patient's body just before the next regularly scheduled morning tablet is taken? 
+
+102. Show that the error $(L - s_n)$ obtained by replacing a convergent geometric series with one of its partial sums $s_n$ is $ar^n / (1 - r)$ . 
+
+103. The Cantor set To construct this set, we begin with the closed interval $[0,1]$ . From that interval, we remove the middle open interval $(1/3,2/3)$ , leaving the two closed intervals $[0,1/3]$ and $[2/3,1]$ . At the second step we remove the open middle third interval from each of those remaining. From $[0,1/3]$ we remove the open interval $(1/9,2/9)$ , and from $[2/3,1]$ we remove $(7/9,8/9)$ , leaving behind the four closed intervals $[0,1/9]$ , $[2/9,1/3]$ , $[2/3,7/9]$ , and $[8/9,1]$ . At the next step, we remove the open middle third interval from each closed interval left behind, so $(1/27,2/27)$ is removed from $[0,1/9]$ , leaving the closed intervals $[0,1/27]$ and $[2/27,1/9]$ ; $(7/27,8/27)$ is removed from $[2/9,1/3]$ , leaving behind $[2/9,7/27]$ and $[8/27,1/3]$ , and so forth. We continue this process repeatedly without stopping, at each step removing the open third interval from every closed interval remaining behind from the preceding step. The numbers remaining in the interval $[0,1]$ , after all open middle third intervals have been removed, are the points in the Cantor set (named after Georg Cantor, 1845–1918). The set has some interesting properties. 
+
+a. The Cantor set contains infinitely many numbers in $[0,1]$ . List 12 numbers that belong to the Cantor set. 
+
+b. Show, by summing an appropriate geometric series, that the total length of all the open middle third intervals that have been removed from $[0,1]$ is equal to 1. 
+
+104. Helge von Koch's snowflake curve Helge von Koch's snowflake is a curve of infinite length that encloses a region of finite area. To see why this is so, suppose the curve is generated by starting with an equilateral triangle whose sides have length 1. 
+
+a. Find the length $L_{n}$ of the nth curve $C_{n}$ and show that $\lim_{n\to\infty}L_{n}=\infty$ . 
+
+b. Find the area $A_{n}$ of the region enclosed by $C_{n}$ and show that $\lim_{n\to \infty}A_n = (8 / 5)A_1$ . 
+
+![教材插图](/books/thomas-calculus/assets/2db579311816975267be145f929363aef902390d909836427701a6f72e625fa2.jpg)
+
+
+105. The largest circle in the accompanying figure has radius 1. Consider the sequence of circles of maximum area inscribed in semicircles of diminishing size. What is the sum of the areas of all of the circles? 
+
+![教材插图](/books/thomas-calculus/assets/b2415f58d17c2a81444786e9d65ca587e06ee3bc646ae601ee9f2fee5499baba.jpg)
+
+
+The most basic question we can ask about a series is whether it converges. In this section we begin to study this question, starting with series that have nonnegative terms. Such a series converges if its sequence of partial sums is bounded. If we establish that a given series does converge, we generally do not have a formula available for its sum. So to get an estimate for the sum of a convergent series, we investigate the error involved when using a partial sum to approximate the total sum. 
+
+### Exercises 9.3
+
+
+#### Applying the Integral Test
 
 Use the Integral Test to determine whether the series in Exercises 1–12 converge or diverge. Be sure to check that the conditions of the Integral Test are satisfied. 
+
+1. $\sum_{n=1}^{\infty} \frac{1}{n^{2}}$ 
+
+2. $\sum_{n=1}^{\infty} \frac{1}{n^{0.2}}$ 
+
+4. $\sum_{n=1}^{\infty} \frac{1}{n+4}$ 
+
+5. $\sum_{n = 1}^{\infty}e^{-2n}$ 
+
+6. $\sum_ {n = 2} ^ {\infty} \frac {1}{n (\ln n) ^ {2}}$
 
 7. $\sum_{n=1}^{\infty} \frac{n}{n^{2} + 4}$ 
 
 8. $\sum_{n=2}^{\infty} \frac{\ln(n^{2})}{n}$ 
-
-1. $\sum_{n=1}^{\infty} \frac{1}{n^{2}}$ 
-
-10. $\sum_{n=2}^{\infty} \frac{n - 4}{n^2 - 2n + 1}$ 
-
-2. $\sum_{n=1}^{\infty} \frac{1}{n^{0.2}}$ 
 
 9. $\sum_{n = 1}^{\infty}\frac{n^{2}}{e^{n / 3}}$ 
 
@@ -2091,19 +2071,13 @@ $$
 \sum_ {n = 1} ^ {\infty} \frac {1}{n ^ {2} + 4}
 $$
 
-4. $\sum_{n=1}^{\infty} \frac{1}{n+4}$ 
-
-5. $\sum_{n = 1}^{\infty}e^{-2n}$ 
-
-$$
-\sum_ {n = 2} ^ {\infty} \frac {1}{n (\ln n) ^ {2}}
-$$
+10. $\sum_{n=2}^{\infty} \frac{n - 4}{n^2 - 2n + 1}$ 
 
 11. $\sum_{n=1}^{\infty} \frac{7}{\sqrt{n+4}}$ 
 
 12. $\sum_{n=2}^{\infty} \frac{1}{5n + 10\sqrt{n}}$ 
 
-## Determining Convergence or Divergence
+#### Determining Convergence or Divergence
 
 Which of the series in Exercises 13–46 converge, and which diverge? Give reasons for your answers. (When you check an answer, remember that there may be more than one way to determine the series' convergence or divergence.) 
 
@@ -2111,9 +2085,7 @@ Which of the series in Exercises 13–46 converge, and which diverge? Give reaso
 
 14. $\sum_{n = 1}^{\infty}e^{-n}$ 
 
-$$
-\sum_ {n = 1} ^ {\infty} \frac {n}{n + 1}
-$$
+15. $\sum_ {n = 1} ^ {\infty} \frac {n}{n + 1}$
 
 16. $\sum_{n = 1}^{\infty}\frac{5}{n + 1}$ 
 
@@ -2133,9 +2105,7 @@ $$
 
 24. $\sum_{n=1}^{\infty} \frac{5^n}{4^n + 3}$ 
 
-$$
-\sum_ {n = 0} ^ {\infty} \frac {- 2}{n + 1}
-$$
+25. $\sum_ {n = 0} ^ {\infty} \frac {- 2}{n + 1}$
 
 26. $\sum_{n=1}^{\infty} \frac{1}{2n - 1}$ 
 
@@ -2183,7 +2153,9 @@ Theory and Examples
 
 For what values of $a$ , if any, do the series in Exercises 47 and 48 converge? 
 
-47. $\sum_{n=1}^{\infty}\left(\frac{a}{n+2}-\frac{1}{n+4}\right)$ 48. $\sum_{n=3}^{\infty}\left(\frac{1}{n-1}-\frac{2a}{n+1}\right)$ 
+47. $\sum_{n=1}^{\infty}\left(\frac{a}{n+2}-\frac{1}{n+4}\right)$
+
+48. $\sum_{n=3}^{\infty}\left(\frac{1}{n-1}-\frac{2a}{n+1}\right)$
 
 49. a. Draw illustrations like those in Figures 9.12a and 9.12b to show that the partial sums of the harmonic series satisfy the inequalities 
 
@@ -2211,7 +2183,7 @@ $$
 
 Conclude that $11.5 < s_{50} < 12.3$ . 
 
-![[71e40651f4e8ed33d8631770b42734860315b2ab2e5b840d68f541977201720c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/71e40651f4e8ed33d8631770b42734860315b2ab2e5b840d68f541977201720c.jpg)
 
 
 b. What should $n$ be in order that the partial sum 
@@ -2224,7 +2196,7 @@ $$
 
 a. Use the accompanying graph to find an upper bound for the error if $s_{30} = \sum_{n=1}^{30}(1/n^4)$ is used to estimate the value of $\sum_{n=1}^{\infty}(1/n^4)$ . 
 
-![[c9c8cca2b45f7671a6aee06f7c2a66cbc59232eae14c0018bed9e6e8cf0fae67.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c9c8cca2b45f7671a6aee06f7c2a66cbc59232eae14c0018bed9e6e8cf0fae67.jpg)
 
 
 b. Find $n$ so that the partial sum $s_n = \sum_{i=1}^{\infty} (1/i^4)$ estimates the value of $\sum_{n=1}^{\infty} (1/n^4)$ with an error of at most 0.000001. (The exact value of this series is computed in Exercise 20 of Section 19.4.) 
@@ -2351,16 +2323,16 @@ b. As in Example 5, use the midpoint of the interval found in part (a) to approx
 
 We have seen how to determine the convergence of geometric series, p-series, and a few others. We can test the convergence of many more series by comparing their terms to those of a series whose convergence is already known. 
 
-![[f910417629dbe7c22eae7dbed253645a2a9321199a19093e0d84aa824660c09a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f910417629dbe7c22eae7dbed253645a2a9321199a19093e0d84aa824660c09a.jpg)
 
 
 
 FIGURE 9.14 If the total area $\sum b_{n}$ of the taller $b_{n}$ rectangles is finite, then so is the total area $\sum a_{n}$ of the shorter $a_{n}$ rectangles.
 
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
-## Albert of Saxony
+### Albert of Saxony
 
 (ca. 1316–1390) 
 
@@ -2391,7 +2363,7 @@ $$
 
 and this would mean that $\sum a_{n}$ converges. We conclude that if $\sum a_{n}$ diverges, then so does $\sum b_{n}$ . 
 
-## **EXAMPLE 1** We apply Theorem 10 to several series.
+**EXAMPLE 1** We apply Theorem 10 to several series.
 
 (a) The series 
 
@@ -2441,7 +2413,7 @@ $$
 
 So the truncated series and the original series converge by an application of the Direct Comparison Test. 
 
-## The Limit Comparison Test
+### The Limit Comparison Test
 
 We now introduce a comparison test that is particularly useful for series in which $a_{n}$ is a rational function of $n$ . 
 
@@ -2451,7 +2423,7 @@ Suppose that $a_{n}>0$ and $b_{n}>0$ for all $n\geq N$ ( $N$ an integer).
 2. If $\lim_{n\to\infty}\frac{a_n}{b_n}=0$ and $\sum b_{n}$ converges, then $\sum a_{n}$ converges.
 3. If $\lim_{n\to\infty}\frac{a_n}{b_n}=\infty$ and $\sum b_{n}$ diverges, then $\sum a_{n}$ diverges. 
 
-## Proof We will prove Part 1. Parts 2 and 3 are left as Exercises 57a and b.
+### Proof We will prove Part 1. Parts 2 and 3 are left as Exercises 57a and b.
 
 We assume that $\lim_{n\to \infty}\frac{a_n}{b_n} = c$ where $c > 0$ . Then $\varepsilon = c / 2$ is a positive number, so by the definition of convergence there exists an integer $N$ such that 
 
@@ -2549,16 +2521,36 @@ L'Hôpital's Rule
 
 Since $\sum b_{n} = \sum (1 / n^{5 / 4})$ is a $p$ -series with $p > 1$ , it converges. Therefore, $\sum a_{n}$ converges by Part 2 of the Limit Comparison Test. 
 
-## EXERCISES 9.4
+### EXERCISES 9.4
+#### Theory and Examples
 
-## Direct Comparison Test
+0. $d _ {1} d _ {2} d _ {3} d _ {4} \dots = \frac {d _ {1}}{1 0} + \frac {d _ {2}}{1 0 ^ {2}} + \frac {d _ {3}}{1 0 ^ {3}} + \frac {d _ {4}}{1 0 ^ {4}} + \dots ,$
+
+where $d_{i}$ is one of the integers 0, 1, 2, 3, ..., 9. Prove that the series on the right-hand side always converges. 
+
+
+#### Direct Comparison Test
 
 In Exercises 1–8, use the Direct Comparison Test to determine whether each series converges or diverges.
-1. $\sum_{n=1}^{\infty}\frac{1}{n^{2}+30}$ 2. $\sum_{n=1}^{\infty}\frac{n-1}{n^{4}+2}$ 3. $\sum_{n=2}^{\infty}\frac{1}{\sqrt{n}-1}$ 4. $\sum_{n=2}^{\infty}\frac{n+2}{n^{2}-n}$ 5. $\sum_{n=1}^{\infty}\frac{\cos^{2}n}{n^{3/2}}$ 6. $\sum_{n=1}^{\infty}\frac{1}{n3^{n}}$ 7. $\sum_{n=1}^{\infty}\sqrt{\frac{n+4}{n^{4}+4}}$ 8. $\sum_{n=1}^{\infty}\frac{\sqrt{n}+1}{\sqrt{n^{2}+3}}$ 
+1. $\sum_{n=1}^{\infty}\frac{1}{n^{2}+30}$
+
+2. $\sum_{n=1}^{\infty}\frac{n-1}{n^{4}+2}$
+
+3. $\sum_{n=2}^{\infty}\frac{1}{\sqrt{n}-1}$
+
+4. $\sum_{n=2}^{\infty}\frac{n+2}{n^{2}-n}$
+
+5. $\sum_{n=1}^{\infty}\frac{\cos^{2}n}{n^{3/2}}$
+
+6. $\sum_{n=1}^{\infty}\frac{1}{n3^{n}}$
+
+7. $\sum_{n=1}^{\infty}\sqrt{\frac{n+4}{n^{4}+4}}$
+
+8. $\sum_{n=1}^{\infty}\frac{\sqrt{n}+1}{\sqrt{n^{2}+3}}$
 
 In Exercises 9–16, use the Limit Comparison Test to determine whether each series converges or diverges. 
 
-## Limit Comparison Test
+#### Limit Comparison Test
 
 $$
 \sum_ {n = 1} ^ {\infty} \left(1 / n ^ {2}\right))
@@ -2568,7 +2560,9 @@ $$
 
 10. $\sum_{n=1}^{\infty} \sqrt{\frac{n+1}{n^2 + 2}}$ (Hint: Limit Comparison with $\sum_{n=1}^{\infty} \left(1/\sqrt{n}\right)$ ) 
 
-11. $\sum_{n=2}^{\infty} \frac{n(n+1)}{(n^2 + 1)(n-1)}$ 12. $\sum_{n=1}^{\infty} \frac{2^n}{3 + 4^n}$ 
+11. $\sum_{n=2}^{\infty} \frac{n(n+1)}{(n^2 + 1)(n-1)}$
+
+12. $\sum_{n=1}^{\infty} \frac{2^n}{3 + 4^n}$
 
 13. $\sum_{n=1}^{\infty} \frac{5^n}{\sqrt{n} 4^n}$ 
 
@@ -2578,28 +2572,36 @@ $$
 
 16. $\sum_{n=1}^{\infty} \ln \left(1 + \frac{1}{n^2}\right)$ (Hint: Limit Comparison with $\sum_{n=1}^{\infty} \left(1/n^2\right)$ ) 
 
-## Determining Convergence or Divergence
+#### Determining Convergence or Divergence
 
 Which of the series in Exercises 17–56 converge, and which diverge? Use any method, and give reasons for your answers.
-17. $\sum_{n=1}^{\infty}\frac{1}{2\sqrt{n}+\sqrt[3]{n}}$ 18. $\sum_{n=1}^{\infty}\frac{3}{n+\sqrt{n}}$ 19. $\sum_{n=1}^{\infty}\frac{\sin^{2}n}{2^{n}}$ 
+17. $\sum_{n=1}^{\infty}\frac{1}{2\sqrt{n}+\sqrt[3]{n}}$
 
-20. $\sum_{n=1}^{\infty} \frac{1 + \cos n}{n^2}$ 21. $\sum_{n=1}^{\infty} \frac{2n}{3n - 1}$ 22. $\sum_{n=1}^{\infty} \frac{n + 1}{n^2\sqrt{n}}$ 
+18. $\sum_{n=1}^{\infty}\frac{3}{n+\sqrt{n}}$
+
+19. $\sum_{n=1}^{\infty}\frac{\sin^{2}n}{2^{n}}$
+
+20. $\sum_{n=1}^{\infty} \frac{1 + \cos n}{n^2}$
+
+21. $\sum_{n=1}^{\infty} \frac{2n}{3n - 1}$
+
+22. $\sum_{n=1}^{\infty} \frac{n + 1}{n^2\sqrt{n}}$
 
 23. $\sum_{n=1}^{\infty} \frac{10n + 1}{n(n + 1)(n + 2)}$ 
 
 24. $\sum_{n=3}^{\infty} \frac{5n^{3}-3n}{n^{2}(n-2)(n^{2}+5)}$ 
 
-27. $\sum_{n=3}^{\infty} \frac{1}{\ln(\ln n)}$ 
-
 25. $\sum_{n=1}^{\infty}\left(\frac{n}{3n+1}\right)^{n}$ 
 
 26. $\sum_{n=1}^{\infty} \frac{1}{\sqrt{n^3 + 2}}$ 
 
-30. $\sum_{n = 1}^{\infty}\frac{(\ln n)^2}{n^{3 / 2}}$ 
+27. $\sum_{n=3}^{\infty} \frac{1}{\ln(\ln n)}$ 
 
 28. $\sum_{n=1}^{\infty} \frac{(\ln n)^2}{n^3}$ 
 
 29. $\sum_{n=2}^{\infty} \frac{1}{\sqrt{n} \ln n}$ 
+
+30. $\sum_{n = 1}^{\infty}\frac{(\ln n)^2}{n^{3 / 2}}$ 
 
 31. $\sum_{n=1}^{\infty} \frac{1}{1 + \ln n}$ 
 
@@ -2627,11 +2629,31 @@ Which of the series in Exercises 17–56 converge, and which diverge? Use any me
 
 43. $\sum_{n=2}^{\infty} \frac{1}{n!}$ (Hint: First show that $(1/n!) \leq (1/n(n-1))$ for $n \geq 2$ .)
 
-44. $\sum_{n=1}^{\infty} \frac{(n-1)!}{(n+2)!}$ 45. $\sum_{n=1}^{\infty} \sin \frac{1}{n}$ 46. $\sum_{n=1}^{\infty} \tan \frac{1}{n}$ 47. $\sum_{n=1}^{\infty} \frac{\tan^{-1} n}{n^{1.1}}$ 48. $\sum_{n=1}^{\infty} \frac{\operatorname{arcsec} n}{n^{1.3}}$ 49. $\sum_{n=1}^{\infty} \frac{\coth n}{n^2}$ 50. $\sum_{n=1}^{\infty} \frac{\tanh n}{n^2}$ 51. $\sum_{n=1}^{\infty} \frac{1}{n^{\sqrt[n]{n}}}$ 52. $\sum_{n=1}^{\infty} \frac{\sqrt[n]{n}}{n^2}$ 
+44. $\sum_{n=1}^{\infty} \frac{(n-1)!}{(n+2)!}$
 
-53. $\sum_{n=1}^{\infty} \frac{1}{1 + 2 + 3 + \cdots + n}$ 54. $\sum_{n=1}^{\infty} \frac{1}{1 + 2^2 + 3^2 + \cdots + n^2}$ 55. $\sum_{n=2}^{\infty} \frac{n}{(\ln n)^2}$ 56. $\sum_{n=2}^{\infty} \frac{(\ln n)^2}{n}$ 
+45. $\sum_{n=1}^{\infty} \sin \frac{1}{n}$
 
-## Theory and Examples
+46. $\sum_{n=1}^{\infty} \tan \frac{1}{n}$
+
+47. $\sum_{n=1}^{\infty} \frac{\tan^{-1} n}{n^{1.1}}$
+
+48. $\sum_{n=1}^{\infty} \frac{\operatorname{arcsec} n}{n^{1.3}}$
+
+49. $\sum_{n=1}^{\infty} \frac{\coth n}{n^2}$
+
+50. $\sum_{n=1}^{\infty} \frac{\tanh n}{n^2}$
+
+51. $\sum_{n=1}^{\infty} \frac{1}{n^{\sqrt[n]{n}}}$
+
+52. $\sum_{n=1}^{\infty} \frac{\sqrt[n]{n}}{n^2}$
+
+53. $\sum_{n=1}^{\infty} \frac{1}{1 + 2 + 3 + \cdots + n}$
+
+54. $\sum_{n=1}^{\infty} \frac{1}{1 + 2^2 + 3^2 + \cdots + n^2}$
+
+55. $\sum_{n=2}^{\infty} \frac{n}{(\ln n)^2}$
+
+56. $\sum_{n=2}^{\infty} \frac{(\ln n)^2}{n}$
 
 57. Prove (a) Part 2 and (b) Part 3 of the Limit Comparison Test. 
 
@@ -2653,12 +2675,6 @@ Which of the series in Exercises 17–56 converge, and which diverge? Use any me
 
 65. Decimal numbers Any real number in the interval $[0,1]$ can be represented by a decimal (not necessarily unique) as 
 
-$$
-0. d _ {1} d _ {2} d _ {3} d _ {4} \dots = \frac {d _ {1}}{1 0} + \frac {d _ {2}}{1 0 ^ {2}} + \frac {d _ {3}}{1 0 ^ {3}} + \frac {d _ {4}}{1 0 ^ {4}} + \dots ,
-$$
-
-where $d_{i}$ is one of the integers 0, 1, 2, 3, ..., 9. Prove that the series on the right-hand side always converges. 
-
 66. If $\sum a_{n}$ is a convergent series of positive terms, prove that $\sum \sin (a_n)$ converges. 
 
 In Exercises 67–72, use the results of Exercises 63 and 64 to determine whether each series converges or diverges. 
@@ -2675,7 +2691,7 @@ In Exercises 67–72, use the results of Exercises 63 and 64 to determine whethe
 
 72. $\sum_{n=2}^{\infty} \frac{1}{\sqrt{n \cdot \ln n}}$ 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 73. It is not yet known whether the series 
 
@@ -2747,11 +2763,11 @@ we see that it still converges. For a general series with both positive and nega
 
 So the geometric series (1) is absolutely convergent. We observed, too, that it is also convergent. This situation is always true: An absolutely convergent series is convergent as well, which we now prove. 
 
-## Caution
+### Caution
 
 Be careful when using Theorem 12. A convergent series need not converge absolutely, as you will see in the next section. 
 
-## THEOREM 12—The Absolute Convergence Test
+**THEOREM 12—The Absolute Convergence Test**
 
 If $\sum_{n=1}^{\infty}|a_n|$ converges, then $\sum_{n=1}^{\infty}a_n$ converges. 
 
@@ -2769,7 +2785,7 @@ $$
 
 Therefore, $\sum_{n=1}^{\infty} a_n$ converges. 
 
-## **EXAMPLE 1** This example gives two series that converge absolutely.
+**EXAMPLE 1** This example gives two series that converge absolutely.
 
 (a) For $\sum_{n=1}^{\infty}(-1)^{n+1}\frac{1}{n^{2}}=1-\frac{1}{4}+\frac{1}{9}-\frac{1}{16}+\cdots$ , the corresponding series of absolute values is the convergent series 
 
@@ -2789,11 +2805,11 @@ $$
 
 which converges by comparison with $\sum_{n=1}^{\infty}\left(1/n^{2}\right)$ because $|\sin n| \leq 1$ for every n. The original series converges absolutely; therefore, it converges. 
 
-## The Ratio Test
+### The Ratio Test
 
 The Ratio Test measures the rate of growth (or decline) of a series by examining the ratio $a_{n+1}/a_{n}$ . For a geometric series $\sum ar^{n}$ , this rate is a constant $((ar^{n+1})/(ar^{n}) = r)$ , and the series converges if and only if its ratio is less than 1 in absolute value. The Ratio Test is a powerful rule extending that result. 
 
-## THEOREM 13—The Ratio Test
+**THEOREM 13—The Ratio Test**
 
 Let $\sum a_{n}$ be any series and suppose that 
 
@@ -2803,7 +2819,7 @@ $$
 
 Then (a) the series converges absolutely if $\rho < 1$ , (b) the series diverges if $\rho > 1$ or $\rho$ is infinite, and (c) the test is inconclusive if $\rho = 1$ . 
 
-## Proof
+### Proof
 
 (a) $\rho < 1$ . Let $r$ be a number between $\rho$ and 1. Then the number $\varepsilon = r - \rho$ is positive. Since 
 
@@ -2905,7 +2921,7 @@ $$
 
 Because the limit is $\rho = 1$ , we cannot decide from the Ratio Test whether the series converges. However, when we notice that $a_{n+1} / a_n = (2n + 2) / (2n + 1)$ , we conclude that $a_{n+1}$ is always greater than $a_n$ because $(2n + 2) / (2n + 1)$ is always greater than 1. Therefore, all terms are greater than or equal to $a_1 = 2$ , and the $n$ th term does not approach zero as $n \to \infty$ . The series diverges. 
 
-## The Root Test
+### The Root Test
 
 The convergence tests for $\sum a_{n}$ that we have studied so far work best when the formula for $a_{n}$ is relatively simple. However, consider the series with the terms 
 
@@ -2931,7 +2947,7 @@ THEOREM 14—The Root Test
 Let $\sum a_{n}$ be any series and suppose that $\lim_{n\to \infty}\sqrt[n]{|a_n|} = \rho$ .
 Then (a) the series converges absolutely if $\rho < 1$ , (b) the series diverges if $\rho > 1$ or $\rho$ is infinite, and (c) the test is inconclusive if $\rho = 1$ . 
 
-## Proof
+### Proof
 
 (a) $\rho < 1$ . Choose an $\varepsilon > 0$ so small that $\rho + \varepsilon < 1$ . Since $\sqrt[n]{|a_n|} \to \rho$ , the terms $\sqrt[n]{|a_n|}$ eventually get to within $\varepsilon$ of $\rho$ . So there exists an index $M$ such that 
 
@@ -2984,141 +3000,14 @@ Since $\sqrt[n]{n} \rightarrow 1$ (Section 9.1, Theorem 5), we have $\lim_{n \to
 
 (c) $\sum_{n=1}^{\infty}\left(\frac{1}{1+n}\right)^{n}$ converges because $\sqrt[n]{\left(\frac{1}{1+n}\right)^{n}}=\frac{1}{1+n}\rightarrow0<1.$ 
 
-## EXERCISES 9.5
+### EXERCISES 9.5
 
-## Using the Ratio Test
+#### Using the Ratio Test
 
 In Exercises 1–8, use the Ratio Test to determine whether each series converges absolutely or diverges.
-1. $\sum_{n=1}^{\infty}\frac{2^{n}}{n!}$ 2. $\sum_{n=1}^{\infty}(-1)^{n}\frac{n+2}{3^{n}}$ 3. $\sum_{n=1}^{\infty}\frac{(n-1)!}{(n+1)^{2}}$ 4. $\sum_{n=1}^{\infty}\frac{2^{n+1}}{n3^{n-1}}$ 5. $\sum_{n=1}^{\infty}\frac{n^{4}}{(-4)^{n}}$ 6. $\sum_{n=2}^{\infty}\frac{3^{n+2}}{\ln n}$ 7. $\sum_{n=1}^{\infty}(-1)^{n}\frac{n^{2}(n+2)!}{n!3^{2n}}$ 8. $\sum_{n=1}^{\infty}\frac{n5^{n}}{(2n+3)\ln(n+1)}$ 
-
-## Using the Root Test
-
-In Exercises 9–16, use the Root Test to determine whether each series converges absolutely or diverges.
-9. $\sum_{n=1}^{\infty}\frac{7}{(2n+5)^{n}}$ 10. $\sum_{n=1}^{\infty}\frac{4^{n}}{(3n)^{n}}$ 11. $\sum_{n=1}^{\infty}\left(\frac{4n+3}{3n-5}\right)^{n}$ 12. $\sum_{n=1}^{\infty}\left(-\ln\left(e^{2}+\frac{1}{n}\right)\right)^{n+1}$ 
-
-13. $\sum_{n=1}^{\infty} \frac{-8}{(3 + (1/n))^{2n}}$ 
-
-14. $\sum_{n=1}^{\infty} \sin^n \left( \frac{1}{\sqrt{n}} \right)$ 
-
-15. $\sum_{n=1}^{\infty} (-1)^{n} \left(1 - \frac{1}{n}\right)^{n^{2}}$ (Hint: $\lim_{n \to \infty} (1 + x/n)^{n} = e^{x}$ ) 
-
-16. $\sum_{n=2}^{\infty} \frac{(-1)^n}{n^{1+n}}$ 
-
-## Determining Convergence or Divergence
-
-In Exercises 17–46, use any method to determine whether the series converges or diverges. Give reasons for your answer.
-
-17. $\sum_{n=1}^{\infty}\frac{n^{\sqrt{2}}}{2^{n}}$ 18. $\sum_{n=1}^{\infty}(-1)^{n}n^{2}e^{-n}$ 19. $\sum_{n=1}^{\infty}n!(-e)^{-n}$ 20. $\sum_{n=1}^{\infty}\frac{n!}{10^{n}}$ 21. $\sum_{n=1}^{\infty}\frac{n^{10}}{10^{n}}$ 22. $\sum_{n=1}^{\infty}\left(\frac{n-2}{n}\right)^{n}$ 
-
-23. $\sum_{n=1}^{\infty} \frac{2 + (-1)^n}{1.25^n}$ 
-
-24. $\sum_{n=1}^{\infty} \frac{(-2)^n}{3^n}$ 
-
-25. $\sum_{n=1}^{\infty} (-1)^{n} \left(1 - \frac{3}{n}\right)^{n}$ 
-
-26. $\sum_{n=1}^{\infty}\left(1 - \frac{1}{3n}\right)^n$ 
-
-27. $\sum_{n=1}^{\infty} \frac{\ln n}{n^3}$ 
-
-28. $\sum_{n=1}^{\infty} \frac{(-\ln n)^n}{n^n}$ 
-
-29. $\sum_{n=1}^{\infty}\left(\frac{1}{n}-\frac{1}{n^{2}}\right)$ 
-
-30. $\sum_{n=1}^{\infty}\left(\frac{1}{n}-\frac{1}{n^{2}}\right)^{n}$ 
-
-31. $\sum_{n=1}^{\infty} \frac{e^n}{n^e}$ 
-
-32. $\sum_{n=1}^{\infty} \frac{n \ln n}{(-2)^n}$ 
-
-33. $\sum_{n=1}^{\infty} \frac{(n+1)(n+2)}{n!}$ 
-
-34. $\sum_{n = 1}^{\infty}e^{-n}(n^{3})$ 
-
-35. $\sum_{n=1}^{\infty} \frac{(n+3)!}{3!n!3^n}$ 
-
-36. $\sum_{n=1}^{\infty} \frac{n2^n (n+1)!}{3^n n!}$ 
-
-37. $\sum_{n=1}^{\infty} \frac{n!}{(2n + 1)!}$ 
-
-38. $\sum_{n = 1}^{\infty}\frac{n!}{(-n)^{n}}$ 
-
-39. $\sum_{n=2}^{\infty} \frac{-n}{(\ln n)^n}$ 
-
-40. $\sum_{n=2}^{\infty} \frac{n}{(\ln n)^{(n/2)}}$ 
-
-41. $\sum_{n=1}^{\infty} \frac{n! \ln n}{n(n + 2)!}$ 
-
-42. $\sum_{n=1}^{\infty} \frac{(-3)^n}{n^3 2^n}$ 
-
-43. $\sum_{n = 1}^{\infty}\frac{(n!)^{2}}{(2n)!}$ 
-
-44. $\sum_{n=1}^{\infty} \frac{(2n + 3)(2^n + 3)}{3^n + 2}$ 
-
-45. $\sum_{n=3}^{\infty} \frac{2^n}{n^2}$ 46. $\sum_{n=3}^{\infty} \frac{2^{n^2}}{n^{2^n}}$ 
-
-## Recursively Defined Terms Which of the series $\sum_{n=1}^{\infty}a_{n}$ defined by the formulas in Exercises 47–56 converge, and which diverge? Give reasons for your answers.
-
-47. $a_1 = 2, a_{n + 1} = \frac{1 + \sin n}{n} a_n$ 
-
-48. $a_1 = 1, a_{n + 1} = \frac{1 + \tan^{-1}n}{n} a_n$ 
-
-49. $a_1 = \frac{1}{3}, a_{n + 1} = \frac{3n - 1}{2n + 5} a_n$ 
-
-50. $a_1 = 3, a_{n + 1} = \frac{n}{n + 1} a_n$ 
-
-51. $a_1 = 2, a_{n + 1} = \frac{2}{n} a_n$ 
-
-52. $a_1 = 5, a_{n + 1} = \frac{\sqrt[n]{n}}{2} a_n$ 
-
-53. $a_1 = 1, a_{n + 1} = \frac{1 + \ln n}{n} a_n$ 
-
-54. $a_1 = \frac{1}{2}, a_{n + 1} = \frac{n + \ln n}{n + 10} a_n$ 
-
-55. $a_1 = \frac{1}{3}, a_{n + 1} = \sqrt[n]{a_n}$ 56. $a_1 = \frac{1}{2}, a_{n + 1} = (a_n)^{n + 1}$ 
-
-## Convergence or Divergence
-
-Which of the series in Exercises 57–64 converge, and which diverge? Give reasons for your answers. 
-
-57. $\sum_{n=1}^{\infty} \frac{2^n n! n!}{(2n)!}$ 58. $\sum_{n=1}^{\infty} \frac{(-1)^n (3n)!}{n!(n+1)!(n+2)!}$ 
-
-59. $\sum_{n=1}^{\infty} \frac{(n!)^n}{(n^n)^2}$ 
-
-60. $\sum_{n=1}^{\infty} (-1)^{n} \frac{(n!)^{n}}{n^{(n^{2})}}$ 
-
-61. $\sum_{n = 1}^{\infty}\frac{n^n}{2^{(n^2)}}$ 
-
-62. $\sum_{n=1}^{\infty} \frac{n^n}{(2^n)^2}$ 
-
-63. $\sum_{n=1}^{\infty} \frac{1 \cdot 3 \cdot \cdots \cdot (2n - 1)}{4^n 2^n n!}$ 
-
-64. $\sum_{n=1}^{\infty} \frac{1 \cdot 3 \cdot \cdots \cdot (2n - 1)}{[2 \cdot 4 \cdot \cdots \cdot (2n)](3^n + 1)}$ 
-
-65. Assume that $b_{n}$ is a sequence of positive numbers converging to 4/5. Determine whether the following series converge or diverge.
-a. $\sum_{n=1}^{\infty}(b_n)^{1/n}$ b. $\sum_{n=1}^{\infty}\left(\frac{5}{4}\right)^n(b_n)$ c. $\sum_{n=1}^{\infty}(b_n)^n$ d. $\sum_{n=1}^{\infty}\frac{1000^n}{n! + b_n}$ 
-
-66. Assume that $b_{n}$ is a sequence of positive numbers converging to 1/3. Determine whether the following series converge or diverge.
-a. $\sum_{n=1}^{\infty}\frac{b_{n+1}b_{n}}{n4^{n}}$ b. $\sum_{n=1}^{\infty}\frac{n^{n}}{n!b_{1}^{2}b_{2}^{2}\cdots b_{n}^{2}}$ 
-
 Theory and Examples 
 
-67. Neither the Ratio Test nor the Root Test helps with $p$ -series. Try them on $\sum_{n=1}^{\infty} \frac{1}{n^p}$ 
-
-and show that both tests fail to provide information about convergence. 
-
-68. Show that neither the Ratio Test nor the Root Test provides information about the convergence of 
-
-$\sum_{n=2}^{\infty} \frac{1}{(\ln n)^p} \quad (p \text{ constant}).$ 
-
-69. Let $a_{n} = \begin{cases} n / 2^{n}, & \text{if } n \text{ is a prime number} \\ 1 / 2^{n}, & \text{otherwise}. \end{cases}$ Does $\sum a_{n}$ converge? Give reasons for your answer. 
-
-70. Show that $\sum_{n=1}^{\infty} 2^{(n^2)} / n!$ diverges. Recall from the Laws of Exponents that $2^{(n^2)} = (2^n)^n$ . 
-
-71. Determine whether the series $\sum_{n=1}^{\infty} c_n$ converges, where 
-
-$c_{n} = \left\{ \begin{array}{ll} - 1 / n, & \text{if } n \text{ is a perfect square},\\ 1 / n^{2}, & \text{if } n \text{ is not a perfect square}. \end{array} \right.$ 
-
-## Alternating Series and Conditional Convergence
+#### Alternating Series and Conditional Convergence
 
 A series in which the terms are alternately positive and negative is an alternating series. Here are three examples: 
 
@@ -3134,7 +3023,7 @@ $$
 1 - 2 + 3 - 4 + 5 - 6 + \dots + (- 1) ^ {n + 1} n + \dots\tag{3}
 $$
 
-![[3bd2d8821a75dd977445bba1d76234a0e5e2dbc538d16174d055caed1c2b58e6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3bd2d8821a75dd977445bba1d76234a0e5e2dbc538d16174d055caed1c2b58e6.jpg)
 
 
 
@@ -3157,9 +3046,95 @@ $$
 
 converges if the following conditions are satisfied: 
 
+#### Conditional Convergence
+
+If we replace all the negative terms in the alternating series in Example 3, changing them to positive terms instead, we obtain the geometric series $\sum 1/2^{n}$ . The original series and the new series of absolute values both converge (although to different sums). For an absolutely convergent series, changing infinitely many of the negative terms in the series to positive values does not change its property of still being a convergent series. Other convergent series may behave differently. The convergent alternating harmonic series has infinitely many negative terms, but if we change its negative terms to positive values, the resulting series is the divergent harmonic series. So the presence of infinitely many negative terms is essential to the convergence of this alternating harmonic series. The following terminology distinguishes these two types of convergent series. 
+
+> ***DEFINITION*** A series that is convergent but not absolutely convergent is called conditionally convergent. 
+
+The alternating harmonic series is conditionally convergent, or converges conditionally. The next example extends that result to the alternating $p$ -series. 
+
+**EXAMPLE 4** If p is a positive constant, the sequence $\{1/n^{p}\}$ is a decreasing sequence with limit zero. Therefore, the alternating p-series 
+
+$$
+\sum_ {n = 1} ^ {\infty} \frac {(- 1) ^ {n - 1}}{n ^ {p}} = 1 - \frac {1}{2 ^ {p}} + \frac {1}{3 ^ {p}} - \frac {1}{4 ^ {p}} + \dots , \quad p > 0
+$$
+
+converges. 
+
+If p > 1, the series converges absolutely as an ordinary p-series. If $0 < p \leq 1$ , the series converges conditionally: It converges by the alternating series test, but the corresponding series of absolute values is a divergent p-series. For instance, 
+
+Absolute convergence 
+
+$$
+(p = 3 / 2): \quad 1 - \frac {1}{2 ^ {3 / 2}} + \frac {1}{3 ^ {3 / 2}} - \frac {1}{4 ^ {3 / 2}} + \dots
+$$
+
+Conditional convergence 
+
+$$
+(p = 1 / 2): \quad 1 - \frac {1}{\sqrt {2}} + \frac {1}{\sqrt {3}} - \frac {1}{\sqrt {4}} + \dots
+$$
+
+We need to be careful when using a conditionally convergent series. We have seen with the alternating harmonic series that altering the signs of infinitely many terms of a conditionally convergent series can change its convergence status. Even more, simply changing the order of occurrence of infinitely many of its terms can also have a significant effect, as we now discuss. 
+
+#### Rearranging Series
+
+We can always rearrange the terms of a finite collection of numbers without changing their sum. The same result is true for an infinite series that is absolutely convergent (see Exercise 96 for an outline of the proof). 
+
+THEOREM 17—The Rearrangement Theorem for Absolutely Convergent Series 
+
+If $\sum_{n=1}^{\infty} a_n$ converges absolutely, and $b_1, b_2, \ldots, b_n, \ldots$ is any arrangement of the sequence $\{a_n\}$ , then $\sum_{n=1}^{\infty} b_n$ converges absolutely and 
+
+$$
+\sum_ {n = 1} ^ {\infty} b _ {n} = \sum_ {n = 1} ^ {\infty} a _ {n}.
+$$
+
+On the other hand, if we rearrange the terms of a conditionally convergent series, we can get different results. In fact, for any real number $r$ , a given conditionally convergent series can be rearranged so that its sum is equal to $r$ . (We omit the proof of this.) Here's an example where summing the terms of a conditionally convergent series with different orderings gives different values for the sum. 
+
+**EXAMPLE 5** We know that the alternating harmonic series $\sum_{n=1}^{\infty} (-1)^{n+1} / n$ converges to some number $L$ . Moreover, by Theorem 16, $L$ lies between the successive partial sums $s_2 = 1/2$ and $s_3 = 5/6$ , so $L \neq 0$ . If we multiply the series by 2, we obtain 
+
+$$
+\begin{array}{r l} 2 L & = 2 \sum_ {n = 1} ^ {\infty} \frac {(- 1) ^ {n + 1}}{n} = 2 \left(1 - \frac {1}{2} + \frac {1}{3} - \frac {1}{4} + \frac {1}{5} - \frac {1}{6} + \frac {1}{7} - \frac {1}{8} + \frac {1}{9} - \frac {1}{1 0} + \frac {1}{1 1} - \dots\right) \\ & = 2 - 1 + \frac {2}{3} - \frac {1}{2} + \frac {2}{5} - \frac {1}{3} + \frac {2}{7} - \frac {1}{4} + \frac {2}{9} - \frac {1}{5} + \frac {2}{1 1} - \dots . \end{array}
+$$
+
+Now we change the order of this last sum by grouping each pair of terms with the same odd denominator, but leaving the negative terms with the even denominators as they are placed (so that the denominators are the positive integers in their natural order). This rearrangement gives 
+
+$$
+\begin{array}{l} (2 - 1) - \frac {1}{2} + \left(\frac {2}{3} - \frac {1}{3}\right) - \frac {1}{4} + \left(\frac {2}{5} - \frac {1}{5}\right) - \frac {1}{6} + \left(\frac {2}{7} - \frac {1}{7}\right) - \frac {1}{8} + \dots \\ = \left(1 - \frac {1}{2} + \frac {1}{3} - \frac {1}{4} + \frac {1}{5} - \frac {1}{6} + \frac {1}{7} - \frac {1}{8} + \frac {1}{9} - \frac {1}{1 0} + \frac {1}{1 1} - \dots\right) \\ = \sum_ {n = 1} ^ {\infty} \frac {(- 1) ^ {n + 1}}{n} = L. \end{array}
+$$
+
+So when we rearrange the terms of the conditionally convergent series $\sum_{n=1}^{\infty}2(-1)^{n+1}/n$ , the series becomes $\sum_{n=1}^{\infty}(-1)^{n+1}/n$ , which is the alternating harmonic series itself. If the two series are the same, it would imply that 2L = L, which is clearly false since $L \neq 0$ . 
+
+Example 5 shows that we cannot rearrange the terms of a conditionally convergent series and expect the new series to be the same as the original one. When we use a conditionally convergent series, we must add the terms together in the order in which they are given to obtain a correct result. In contrast, Theorem 17 guarantees that the terms of an absolutely convergent series can be summed in any order without affecting the result. 
+
+#### Summary of Tests to Determine Convergence or Divergence
+
+We have developed a variety of tests to determine convergence or divergence for an infinite series of constants. Other tests that we have not presented are sometimes given in more advanced courses. Here is a summary of the tests we have considered. 
+
+1. $\sum_{n=1}^{\infty}\frac{2^{n}}{n!}$
+
+2. $\sum_{n=1}^{\infty}(-1)^{n}\frac{n+2}{3^{n}}$
+
+3. $\sum_{n=1}^{\infty}\frac{(n-1)!}{(n+1)^{2}}$
+
+4. $\sum_{n=1}^{\infty}\frac{2^{n+1}}{n3^{n-1}}$
+
+5. $\sum_{n=1}^{\infty}\frac{n^{4}}{(-4)^{n}}$
+
+6. $\sum_{n=2}^{\infty}\frac{3^{n+2}}{\ln n}$
+
+7. $\sum_{n=1}^{\infty}(-1)^{n}\frac{n^{2}(n+2)!}{n!3^{2n}}$
+
+8. $\sum_{n=1}^{\infty}\frac{n5^{n}}{(2n+3)\ln(n+1)}$
+
 1. The $u_{n}$ 's are all positive. 
 
+1. The $n$ th-Term Test for Divergence: Unless $a_{n} \to 0$ , the series diverges. 
+
 2. The $u_{n}$ 's are eventually nonincreasing: $u_{n} \geq u_{n + 1}$ for all $n \geq N$ , for some integer $N$ . 
+
+2. Geometric series: $\sum ar^n$ converges if $|r| < 1$ ; otherwise, it diverges. 
 
 3. $u_{n} \rightarrow 0.$ 
 
@@ -3203,10 +3178,10 @@ $$
 
 clearly satisfies the three requirements of Theorem 15 with N = 1; it therefore converges by the Alternating Series Test. Notice that the test gives no information about what the sum of the series might be. Figure 9.16 shows histograms of the partial sums of the divergent harmonic series and those of the convergent alternating harmonic series. It turns out that the alternating harmonic series converges to ln 2 (Exercise 61 in Section 9.7). 
 
-![[c88a288c551d2f2736aec1e15429a39dc36086119fd76e66a32b95a9344343d5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c88a288c551d2f2736aec1e15429a39dc36086119fd76e66a32b95a9344343d5.jpg)
 
 
-![[fc6092b8db7ebbbf41926df6c0b85b3a0c4219401cc0ac32997de20f3f58a362.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fc6092b8db7ebbbf41926df6c0b85b3a0c4219401cc0ac32997de20f3f58a362.jpg)
 
 
 
@@ -3260,76 +3235,6 @@ $$
 
 is positive and is less than (1/256) = 0.00390625. 
 
-## Conditional Convergence
-
-If we replace all the negative terms in the alternating series in Example 3, changing them to positive terms instead, we obtain the geometric series $\sum 1/2^{n}$ . The original series and the new series of absolute values both converge (although to different sums). For an absolutely convergent series, changing infinitely many of the negative terms in the series to positive values does not change its property of still being a convergent series. Other convergent series may behave differently. The convergent alternating harmonic series has infinitely many negative terms, but if we change its negative terms to positive values, the resulting series is the divergent harmonic series. So the presence of infinitely many negative terms is essential to the convergence of this alternating harmonic series. The following terminology distinguishes these two types of convergent series. 
-
-> ***DEFINITION*** A series that is convergent but not absolutely convergent is called conditionally convergent. 
-
-The alternating harmonic series is conditionally convergent, or converges conditionally. The next example extends that result to the alternating $p$ -series. 
-
-**EXAMPLE 4** If p is a positive constant, the sequence $\{1/n^{p}\}$ is a decreasing sequence with limit zero. Therefore, the alternating p-series 
-
-$$
-\sum_ {n = 1} ^ {\infty} \frac {(- 1) ^ {n - 1}}{n ^ {p}} = 1 - \frac {1}{2 ^ {p}} + \frac {1}{3 ^ {p}} - \frac {1}{4 ^ {p}} + \dots , \quad p > 0
-$$
-
-converges. 
-
-If p > 1, the series converges absolutely as an ordinary p-series. If $0 < p \leq 1$ , the series converges conditionally: It converges by the alternating series test, but the corresponding series of absolute values is a divergent p-series. For instance, 
-
-Absolute convergence 
-
-$$
-(p = 3 / 2): \quad 1 - \frac {1}{2 ^ {3 / 2}} + \frac {1}{3 ^ {3 / 2}} - \frac {1}{4 ^ {3 / 2}} + \dots
-$$
-
-Conditional convergence 
-
-$$
-(p = 1 / 2): \quad 1 - \frac {1}{\sqrt {2}} + \frac {1}{\sqrt {3}} - \frac {1}{\sqrt {4}} + \dots
-$$
-
-We need to be careful when using a conditionally convergent series. We have seen with the alternating harmonic series that altering the signs of infinitely many terms of a conditionally convergent series can change its convergence status. Even more, simply changing the order of occurrence of infinitely many of its terms can also have a significant effect, as we now discuss. 
-
-## Rearranging Series
-
-We can always rearrange the terms of a finite collection of numbers without changing their sum. The same result is true for an infinite series that is absolutely convergent (see Exercise 96 for an outline of the proof). 
-
-THEOREM 17—The Rearrangement Theorem for Absolutely Convergent Series 
-
-If $\sum_{n=1}^{\infty} a_n$ converges absolutely, and $b_1, b_2, \ldots, b_n, \ldots$ is any arrangement of the sequence $\{a_n\}$ , then $\sum_{n=1}^{\infty} b_n$ converges absolutely and 
-
-$$
-\sum_ {n = 1} ^ {\infty} b _ {n} = \sum_ {n = 1} ^ {\infty} a _ {n}.
-$$
-
-On the other hand, if we rearrange the terms of a conditionally convergent series, we can get different results. In fact, for any real number $r$ , a given conditionally convergent series can be rearranged so that its sum is equal to $r$ . (We omit the proof of this.) Here's an example where summing the terms of a conditionally convergent series with different orderings gives different values for the sum. 
-
-**EXAMPLE 5** We know that the alternating harmonic series $\sum_{n=1}^{\infty} (-1)^{n+1} / n$ converges to some number $L$ . Moreover, by Theorem 16, $L$ lies between the successive partial sums $s_2 = 1/2$ and $s_3 = 5/6$ , so $L \neq 0$ . If we multiply the series by 2, we obtain 
-
-$$
-\begin{array}{r l} 2 L & = 2 \sum_ {n = 1} ^ {\infty} \frac {(- 1) ^ {n + 1}}{n} = 2 \left(1 - \frac {1}{2} + \frac {1}{3} - \frac {1}{4} + \frac {1}{5} - \frac {1}{6} + \frac {1}{7} - \frac {1}{8} + \frac {1}{9} - \frac {1}{1 0} + \frac {1}{1 1} - \dots\right) \\ & = 2 - 1 + \frac {2}{3} - \frac {1}{2} + \frac {2}{5} - \frac {1}{3} + \frac {2}{7} - \frac {1}{4} + \frac {2}{9} - \frac {1}{5} + \frac {2}{1 1} - \dots . \end{array}
-$$
-
-Now we change the order of this last sum by grouping each pair of terms with the same odd denominator, but leaving the negative terms with the even denominators as they are placed (so that the denominators are the positive integers in their natural order). This rearrangement gives 
-
-$$
-\begin{array}{l} (2 - 1) - \frac {1}{2} + \left(\frac {2}{3} - \frac {1}{3}\right) - \frac {1}{4} + \left(\frac {2}{5} - \frac {1}{5}\right) - \frac {1}{6} + \left(\frac {2}{7} - \frac {1}{7}\right) - \frac {1}{8} + \dots \\ = \left(1 - \frac {1}{2} + \frac {1}{3} - \frac {1}{4} + \frac {1}{5} - \frac {1}{6} + \frac {1}{7} - \frac {1}{8} + \frac {1}{9} - \frac {1}{1 0} + \frac {1}{1 1} - \dots\right) \\ = \sum_ {n = 1} ^ {\infty} \frac {(- 1) ^ {n + 1}}{n} = L. \end{array}
-$$
-
-So when we rearrange the terms of the conditionally convergent series $\sum_{n=1}^{\infty}2(-1)^{n+1}/n$ , the series becomes $\sum_{n=1}^{\infty}(-1)^{n+1}/n$ , which is the alternating harmonic series itself. If the two series are the same, it would imply that 2L = L, which is clearly false since $L \neq 0$ . 
-
-Example 5 shows that we cannot rearrange the terms of a conditionally convergent series and expect the new series to be the same as the original one. When we use a conditionally convergent series, we must add the terms together in the order in which they are given to obtain a correct result. In contrast, Theorem 17 guarantees that the terms of an absolutely convergent series can be summed in any order without affecting the result. 
-
-## Summary of Tests to Determine Convergence or Divergence
-
-We have developed a variety of tests to determine convergence or divergence for an infinite series of constants. Other tests that we have not presented are sometimes given in more advanced courses. Here is a summary of the tests we have considered. 
-
-1. The $n$ th-Term Test for Divergence: Unless $a_{n} \to 0$ , the series diverges. 
-
-2. Geometric series: $\sum ar^n$ converges if $|r| < 1$ ; otherwise, it diverges. 
-
 3. $p$ -series: $\sum 1/n^p$ converges if $p > 1$ ; otherwise, it diverges. 
 
 4. Series with nonnegative terms: Try the Integral Test or try comparing to a known series with the Direct Comparison Test or the Limit Comparison Test. Try the Ratio or Root Test. 
@@ -3338,31 +3243,395 @@ We have developed a variety of tests to determine convergence or divergence for 
 
 6. Alternating series: $\sum a_{n}$ converges if the series satisfies the conditions of the Alternating Series Test. 
 
-## EXERCISES
+#### Using the Root Test
 
-## Convergence of Alternating Series
+In Exercises 9–16, use the Root Test to determine whether each series converges absolutely or diverges.
+9. $\sum_{n=1}^{\infty}\frac{7}{(2n+5)^{n}}$
+
+10. $\sum_{n=1}^{\infty}\frac{4^{n}}{(3n)^{n}}$
+
+11. $\sum_{n=1}^{\infty}\left(\frac{4n+3}{3n-5}\right)^{n}$
+
+12. $\sum_{n=1}^{\infty}\left(-\ln\left(e^{2}+\frac{1}{n}\right)\right)^{n+1}$
+
+13. $\sum_{n=1}^{\infty} \frac{-8}{(3 + (1/n))^{2n}}$ 
+
+14. $\sum_{n=1}^{\infty} \sin^n \left( \frac{1}{\sqrt{n}} \right)$ 
+
+15. $\sum_{n=1}^{\infty} (-1)^{n} \left(1 - \frac{1}{n}\right)^{n^{2}}$ (Hint: $\lim_{n \to \infty} (1 + x/n)^{n} = e^{x}$ ) 
+
+16. $\sum_{n=2}^{\infty} \frac{(-1)^n}{n^{1+n}}$ 
+
+#### Determining Convergence or Divergence
+
+In Exercises 17–46, use any method to determine whether the series converges or diverges. Give reasons for your answer.
+
+17. $\sum_{n=1}^{\infty}\frac{n^{\sqrt{2}}}{2^{n}}$
+
+18. $\sum_{n=1}^{\infty}(-1)^{n}n^{2}e^{-n}$
+
+19. $\sum_{n=1}^{\infty}n!(-e)^{-n}$
+
+20. $\sum_{n=1}^{\infty}\frac{n!}{10^{n}}$
+
+21. $\sum_{n=1}^{\infty}\frac{n^{10}}{10^{n}}$
+
+22. $\sum_{n=1}^{\infty}\left(\frac{n-2}{n}\right)^{n}$
+
+23. $\sum_{n=1}^{\infty} \frac{2 + (-1)^n}{1.25^n}$ 
+
+24. $\sum_{n=1}^{\infty} \frac{(-2)^n}{3^n}$ 
+
+25. $\sum_{n=1}^{\infty} (-1)^{n} \left(1 - \frac{3}{n}\right)^{n}$ 
+
+26. $\sum_{n=1}^{\infty}\left(1 - \frac{1}{3n}\right)^n$ 
+
+27. $\sum_{n=1}^{\infty} \frac{\ln n}{n^3}$ 
+
+28. $\sum_{n=1}^{\infty} \frac{(-\ln n)^n}{n^n}$ 
+
+29. $\sum_{n=1}^{\infty}\left(\frac{1}{n}-\frac{1}{n^{2}}\right)$ 
+
+30. $\sum_{n=1}^{\infty}\left(\frac{1}{n}-\frac{1}{n^{2}}\right)^{n}$ 
+
+31. $\sum_{n=1}^{\infty} \frac{e^n}{n^e}$ 
+
+32. $\sum_{n=1}^{\infty} \frac{n \ln n}{(-2)^n}$ 
+
+33. $\sum_{n=1}^{\infty} \frac{(n+1)(n+2)}{n!}$ 
+
+34. $\sum_{n = 1}^{\infty}e^{-n}(n^{3})$ 
+
+35. $\sum_{n=1}^{\infty} \frac{(n+3)!}{3!n!3^n}$ 
+
+36. $\sum_{n=1}^{\infty} \frac{n2^n (n+1)!}{3^n n!}$ 
+
+37. $\sum_{n=1}^{\infty} \frac{n!}{(2n + 1)!}$ 
+
+38. $\sum_{n = 1}^{\infty}\frac{n!}{(-n)^{n}}$ 
+
+39. $\sum_{n=2}^{\infty} \frac{-n}{(\ln n)^n}$ 
+
+40. $\sum_{n=2}^{\infty} \frac{n}{(\ln n)^{(n/2)}}$ 
+
+41. $\sum_{n=1}^{\infty} \frac{n! \ln n}{n(n + 2)!}$ 
+
+42. $\sum_{n=1}^{\infty} \frac{(-3)^n}{n^3 2^n}$ 
+
+43. $\sum_{n = 1}^{\infty}\frac{(n!)^{2}}{(2n)!}$ 
+
+44. $\sum_{n=1}^{\infty} \frac{(2n + 3)(2^n + 3)}{3^n + 2}$ 
+
+45. $\sum_{n=3}^{\infty} \frac{2^n}{n^2}$
+
+46. $\sum_{n=3}^{\infty} \frac{2^{n^2}}{n^{2^n}}$
+
+#### Recursively Defined Terms Which of the series $\sum_{n=1}^{\infty}a_{n}$ defined by the formulas in Exercises 47–56 converge, and which diverge? Give reasons for your answers.
+
+47. $a_1 = 2, a_{n + 1} = \frac{1 + \sin n}{n} a_n$ 
+
+48. $a_1 = 1, a_{n + 1} = \frac{1 + \tan^{-1}n}{n} a_n$ 
+
+49. $a_1 = \frac{1}{3}, a_{n + 1} = \frac{3n - 1}{2n + 5} a_n$ 
+
+50. $a_1 = 3, a_{n + 1} = \frac{n}{n + 1} a_n$ 
+
+51. $a_1 = 2, a_{n + 1} = \frac{2}{n} a_n$ 
+
+52. $a_1 = 5, a_{n + 1} = \frac{\sqrt[n]{n}}{2} a_n$ 
+
+53. $a_1 = 1, a_{n + 1} = \frac{1 + \ln n}{n} a_n$ 
+
+54. $a_1 = \frac{1}{2}, a_{n + 1} = \frac{n + \ln n}{n + 10} a_n$ 
+
+55. $a_1 = \frac{1}{3}, a_{n + 1} = \sqrt[n]{a_n}$
+
+56. $a_1 = \frac{1}{2}, a_{n + 1} = (a_n)^{n + 1}$
+
+#### Convergence or Divergence
+
+Which of the series in Exercises 57–64 converge, and which diverge? Give reasons for your answers. 
+
+57. $\sum_{n=1}^{\infty} \frac{2^n n! n!}{(2n)!}$
+
+58. $\sum_{n=1}^{\infty} \frac{(-1)^n (3n)!}{n!(n+1)!(n+2)!}$
+
+59. $\sum_{n=1}^{\infty} \frac{(n!)^n}{(n^n)^2}$ 
+
+60. $\sum_{n=1}^{\infty} (-1)^{n} \frac{(n!)^{n}}{n^{(n^{2})}}$ 
+
+61. $\sum_{n = 1}^{\infty}\frac{n^n}{2^{(n^2)}}$ 
+
+62. $\sum_{n=1}^{\infty} \frac{n^n}{(2^n)^2}$ 
+
+63. $\sum_{n=1}^{\infty} \frac{1 \cdot 3 \cdot \cdots \cdot (2n - 1)}{4^n 2^n n!}$ 
+
+64. $\sum_{n=1}^{\infty} \frac{1 \cdot 3 \cdot \cdots \cdot (2n - 1)}{[2 \cdot 4 \cdot \cdots \cdot (2n)](3^n + 1)}$ 
+
+65. Assume that $b_{n}$ is a sequence of positive numbers converging to 4/5. Determine whether the following series converge or diverge.
+a. $\sum_{n=1}^{\infty}(b_n)^{1/n}$ b. $\sum_{n=1}^{\infty}\left(\frac{5}{4}\right)^n(b_n)$ c. $\sum_{n=1}^{\infty}(b_n)^n$ d. $\sum_{n=1}^{\infty}\frac{1000^n}{n! + b_n}$ 
+
+66. Assume that $b_{n}$ is a sequence of positive numbers converging to 1/3. Determine whether the following series converge or diverge.
+a. $\sum_{n=1}^{\infty}\frac{b_{n+1}b_{n}}{n4^{n}}$ b. $\sum_{n=1}^{\infty}\frac{n^{n}}{n!b_{1}^{2}b_{2}^{2}\cdots b_{n}^{2}}$ 
+
+67. Neither the Ratio Test nor the Root Test helps with $p$ -series. Try them on $\sum_{n=1}^{\infty} \frac{1}{n^p}$ 
+
+and show that both tests fail to provide information about convergence. 
+
+68. Show that neither the Ratio Test nor the Root Test provides information about the convergence of 
+
+$\sum_{n=2}^{\infty} \frac{1}{(\ln n)^p} \quad (p \text{ constant}).$ 
+
+69. Let $a_{n} = \begin{cases} n / 2^{n}, & \text{if } n \text{ is a prime number} \\ 1 / 2^{n}, & \text{otherwise}. \end{cases}$ Does $\sum a_{n}$ converge? Give reasons for your answer. 
+
+70. Show that $\sum_{n=1}^{\infty} 2^{(n^2)} / n!$ diverges. Recall from the Laws of Exponents that $2^{(n^2)} = (2^n)^n$ . 
+
+71. Determine whether the series $\sum_{n=1}^{\infty} c_n$ converges, where 
+
+$c_{n} = \left\{ \begin{array}{ll} - 1 / n, & \text{if } n \text{ is a perfect square},\\ 1 / n^{2}, & \text{if } n \text{ is not a perfect square}. \end{array} \right.$ 
+
+### EXERCISES
+
+#### Convergence of Alternating Series
 
 In Exercises 1–14, determine whether the alternating series converges or diverges. Some of the series do not satisfy the conditions of the Alternating Series Test. 
 
-5. $\sum_{n=1}^{\infty} (-1)^{n} \frac{n}{n^{2} + 1}$ 
+Theory and Examples 
 
-6. $\sum_{n=1}^{\infty} (-1)^{n+1} \frac{n^2 + 5}{n^2 + 4}$ 
+#### Power Series
+
+Now that we can test many infinite series of numbers for convergence, we can study sums that look like “infinite polynomials.” We call these sums power series because they are defined as infinite series of powers of some variable, in our case x. Like polynomials, power series can be added, subtracted, multiplied, differentiated, and integrated to give new power series. With power series we can extend the methods of calculus to a vast array of functions, making the techniques of calculus applicable in an even wider setting. 
+
+#### Power Series and Convergence
+
+We begin with the formal definition, which specifies the notation and terminology used for power series. 
+
+> ***DEFINITIONS*** A power series about x = 0 is a series of the form 
+>
+> $$
+> \sum_ {n = 0} ^ {\infty} c _ {n} x ^ {n} = c _ {0} + c _ {1} x + c _ {2} x ^ {2} + \dots + c _ {n} x ^ {n} + \dots .\tag{1}
+> $$
+>
+A power series about x = a is a series of the form 
 
 $$
-\mathbf {1 .} \sum_ {n = 1} ^ {\infty} (- 1) ^ {n + 1} \frac {1}{\sqrt {n}}
+\sum_ {n = 0} ^ {\infty} c _ {n} (x - a) ^ {n} = c _ {0} + c _ {1} (x - a) + c _ {2} (x - a) ^ {2} + \dots + c _ {n} (x - a) ^ {n} + \dots\tag{2}
 $$
+
+in which the center a and the coefficients $c_{0}, c_{1}, c_{2}, \ldots, c_{n}, \ldots$ are constants. 
+
+Equation (1) is the special case obtained by taking a = 0 in Equation (2). We will see that a power series defines a function $f(x)$ on a certain interval where it converges. Moreover, this function will be shown to be continuous and differentiable over the interior of that interval. 
+
+Power Series for $\frac{1}{1 - x}$ 
+
+**EXAMPLE 1** Taking all the coefficients to be 1 in Equation (1) gives the geometric power series 
+
+$$
+\sum_ {n = 0} ^ {\infty} x ^ {n} = 1 + x + x ^ {2} + \dots + x ^ {n} + \dots .
+$$
+
+$$
+\frac {1}{1 - x} = \sum_ {n = 0} ^ {\infty} x ^ {n}, | x | <   1
+$$
+
+This is the geometric series with first term 1 and ratio $x$ . It converges to $1 / (1 - x)$ for $|x| < 1$ . We express this fact by writing 
+
+$$
+\frac {1}{1 - x} = 1 + x + x ^ {2} + \dots + x ^ {n} + \dots , \quad - 1 <   x <   1.\tag{3}
+$$
+
+Up to now, we have used Equation (3) as a formula for the sum of the series on the right. We now change the focus: We think of the partial sums of the series on the right as polynomials $P_{n}(x)$ that approximate the function on the left. For values of x near zero, we need take only a few terms of the series to get a good approximation. As we move toward x = 1, or -1, we must take more terms. Figure 9.17 shows the graphs of $f(x) = 1/(1 - x)$ and the approximating polynomials $y_{n} = P_{n}(x)$ for n = 0, 1, 2, and 8. The function $f(x) = 1/(1 - x)$ is not continuous on intervals containing x = 1, where it has a vertical asymptote. The approximations do not apply when $x \geq 1$ . 
+
+![教材插图](/books/thomas-calculus/assets/16721a80c0115b9dcbdff05cc87c6786d24a3db31e82f6a73f94f2aaf1ec7467.jpg)
+
+
+
+FIGURE 9.17 The graphs of $f(x) = 1/(1 - x)$ in Example 1 and four of its polynomial approximations.
+
+
+**EXAMPLE 2** The power series
+
+$$
+1 - \frac {1}{2} (x - 2) + \frac {1}{4} (x - 2) ^ {2} + \dots + \left(- \frac {1}{2}\right) ^ {n} (x - 2) ^ {n} + \dots\tag{4}
+$$
+
+matches Equation (2) with $a = 2, c_0 = 1, c_1 = -1/2, c_2 = 1/4, \ldots, c_n = (-1/2)^n$ . This is a geometric series with first term 1 and ratio $r = -\frac{x - 2}{2}$ . The series converges for $\left|\frac{x - 2}{2}\right| < 1$ , which simplifies to $0 < x < 4$ . The sum is 
+
+![教材插图](/books/thomas-calculus/assets/cbba4f8eeb4b3ea01aa0ad68d6d59b702f6f09b00444c5cb4c11f690af5bd03f.jpg)
+
+
+
+FIGURE 9.18 The graphs of $f(x) = 2 / x$ and its first three polynomial approximations (Example 2).
+
+
+$$
+{\frac {1}{1 - r}} = {\frac {1}{1 + {\frac {x - 2}{2}}}} = {\frac {2}{x}},
+$$
+
+SO 
+
+$$
+\frac {2}{x} = 1 - \frac {(x - 2)}{2} + \frac {(x - 2) ^ {2}}{4} - \dots + \left(- \frac {1}{2}\right) ^ {n} (x - 2) ^ {n} + \dots , \quad 0 <   x <   4.
+$$
+
+Series (4) generates useful polynomial approximations of $f(x) = 2 / x$ for values of $x$ near 2: 
+
+$$
+\begin{array}{l} P _ {0} (x) = 1 \\ P _ {1} (x) = 1 - \frac {1}{2} (x - 2) = 2 - \frac {x}{2} \\ P _ {2} (x) = 1 - \frac {1}{2} (x - 2) + \frac {1}{4} (x - 2) ^ {2} = 3 - \frac {3 x}{2} + \frac {x ^ {2}}{4}, \end{array}
+$$
+
+and so on (Figure 9.18). 
+
+The following example illustrates how we test a power series for convergence by using the Ratio Test to see where it converges and where it diverges. 
+
+**EXAMPLE 3** For what values of x do the following power series converge?
+
+$$
+\sum_ {n = 1} ^ {\infty} (- 1) ^ {n - 1} \frac {x ^ {n}}{n} = x - \frac {x ^ {2}}{2} + \frac {x ^ {3}}{3} - \dots\tag{a}
+$$
+
+$$
+\text { (b) } \sum_ {n = 1} ^ {\infty} (- 1) ^ {n - 1} \frac {x ^ {2 n - 1}}{2 n - 1} = x - \frac {x ^ {3}}{3} + \frac {x ^ {5}}{5} - \dots
+$$
+
+(c) 
+
+$$
+\sum_ {n = 0} ^ {\infty} \frac {x ^ {n}}{n !} = 1 + x + \frac {x ^ {2}}{2 !} + \frac {x ^ {3}}{3 !} + \dots
+$$
+
+$$
+\text { (d) } \sum_ {n = 0} ^ {\infty} n! x ^ {n} = 1 + x + 2! x ^ {2} + 3! x ^ {3} + \dots
+$$
+
+**Solution** Apply the Ratio Test to the series $\sum u_{n}$ , where $u_{n}$ is the $n$ th term of the power series in question. 
+
+$$
+\text { (a) } \left| \frac {u _ {n + 1}}{u _ {n}} \right| = \left| \frac {x ^ {n + 1}}{n + 1} \cdot \frac {n}{x} \right| = \frac {n}{n + 1} | x | \rightarrow | x |.
+$$
+
+By the Ratio Test, this series converges absolutely for $|x| < 1$ , and it diverges for $|x| > 1$ . At x = 1, we obtain the alternating harmonic series $1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \cdots$ , which converges (though it does not converge absolutely). At x = -1, we get $-1 - \frac{1}{2} - \frac{1}{3} - \frac{1}{4} - \cdots$ , the negative of the harmonic series, which diverges. Series (a) converges for $-1 < x \leq 1$ and diverges elsewhere. The convergence is absolute for -1 < x < 1, but conditional at the point x = 1. 
+
+$$
+\xleftarrow {- 1} \begin{array}{c c} 1 & \\ 0 & 1 \end{array} \xrightarrow {} x
+$$
+
+We will see in Example 6 that this series converges to the function $\ln (1 + x)$ on the interval $(-1,1]$ (see Figure 9.19). 
+
+![教材插图](/books/thomas-calculus/assets/ece1a8c9795f346f314af046c6d2c4460898dd9782988d0736f9e6592dd04086.jpg)
+
+
+FIGURE 9.19 The power series $x - \frac{x^{2}}{2} + \frac{x^{3}}{3} - \frac{x^{4}}{4} + \cdots$ converges on the interval $(-1, 1]$ . 
+
+$$
+\left| \frac {u _ {n + 1}}{u _ {n}} \right| = \left| \frac {x ^ {2 n + 1}}{2 n + 1} \cdot \frac {2 n - 1}{x ^ {2 n - 1}} \right| = \frac {2 n - 1}{2 n + 1} x ^ {2} \rightarrow x ^ {2}. \quad 2 (n + 1) - 1 = 2 n + 1 \tag {b}
+$$
+
+By the Ratio Test, the series converges absolutely for $x^{2} < 1$ and diverges for $x^{2} > 1$ . At x = 1 the series becomes $1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \cdots$ , which converges by the Alternating Series Theorem. It also converges at x = -1 because it is again an alternating series that satisfies the conditions for convergence. The value at x = -1 is the negative of the value at x = 1. Series (b) converges for $-1 \leq x \leq 1$ and diverges elsewhere. The convergence is absolute for -1 < x < 1, but conditional at the points x = -1 and x = 1. 
+
+![教材插图](/books/thomas-calculus/assets/4c8250e24cb4871833a528a5728949036e5c67280cbd6609b5cd4e0a8a695b6b.jpg)
+
+
+$$
+\left(\mathbf {c}\right)\left| \frac {u _ {n + 1}}{u _ {n}} \right| = \left| \frac {x ^ {n + 1}}{(n + 1) !} \cdot \frac {n !}{x ^ {n}} \right| = \frac {| x |}{n + 1} \rightarrow 0 \text {   for   every   } x. \quad \frac {n !}{(n + 1) !} = \frac {1 \cdot 2 \cdot 3 \cdots n}{1 \cdot 2 \cdot 3 \cdots n \cdot (n + 1)}
+$$
+
+The series converges absolutely for all x. 
+
+$$
+\text {(d)} \left| \frac {u _ {n + 1}}{u _ {n}} \right| = \left| \frac {(n + 1) !   x ^ {n + 1}}{n !   x ^ {n}} \right| = (n + 1) | x | \to \left\{ \begin{array}{l l} 0 & \text { if } x = 0 \\ \infty & \text { if } x \neq 0. \end{array} \right.
+$$
+
+The previous example illustrated how a power series might converge. The next result shows that if a power series converges at a nonzero value, then it converges over an entire interval of values. The interval might be finite or infinite and might contain one, both, or none of its endpoints. We will see that each endpoint of a finite interval must be tested independently for convergence or divergence. 
+
+THEOREM 18—The Convergence Theorem for Power Series
+If the power series $\sum_{n=0}^{\infty}a_{n}x^{n}=a_{0}+a_{1}x+a_{2}x^{2}+\cdots$ converges at $x=c\neq0$ , then it converges absolutely for all x with $|x|<|c|$ . If the series diverges at x=d, then it diverges for all x with $|x|>|d|$ . 
+
+Proof The proof uses the Direct Comparison Test, with the given series compared to a converging geometric series. 
+
+Suppose the series $\sum_{n=0}^{\infty}a_{n}c^{n}$ converges. Then $\lim_{n\to\infty}a_{n}c^{n}=0$ by the nth-Term Test. Hence, there is an integer N such that $|a_{n}c^{n}|<1$ for all n>N, so 
+
+![教材插图](/books/thomas-calculus/assets/0aecf1577e4071d62b2a415484954833b362a66ea84feec1cbffac96e28f952c.jpg)
+
+
+FIGURE 9.20 Convergence of $\sum a_{n}x^{n}$ at $x = c$ implies absolute convergence on the interval $-|c| < x < |c|$ ; divergence at $x = d$ implies divergence for $|x| > |d|$ . The corollary to Theorem 18 asserts the existence of a radius of convergence $R \geq 0$ . For $|x| < R$ the series converges absolutely, and for $|x| > R$ it diverges. 
+
+$$
+\left| a _ {n} \right| <   \frac {1}{\left| c \right| ^ {n}} \quad \text { for } n > N.\tag{5}
+$$
+
+Now take any $x$ such that $|x| < |c|$ , so that $|x| / |c| < 1$ . Multiplying both sides of Equation (5) by $|x|^n$ gives 
+
+$$
+\left| a _ {n} \right| | x | ^ {n} <   \frac {| x | ^ {n}}{| c | ^ {n}} \quad \text {   for   } n > N.
+$$
+
+Since $|x / c| < 1$ , it follows that the geometric series $\sum_{n=0}^{\infty}|x / c|^n$ converges. By the Direct Comparison Test (Theorem 10), the series $\sum_{n=0}^{\infty}|a_n||x^n|$ converges, so the original power series $\sum_{n=0}^{\infty}a_n x^n$ converges absolutely for $-|c| < x < |c|$ , as claimed by the theorem. (See Figure 9.20.) 
+
+Now suppose that the series $\sum_{n=0}^{\infty} a_n x^n$ diverges at $x = d$ . If $x$ is a number with $|x| > |d|$ and the series converges at $x$ , then the first half of the theorem shows that the series also converges at $d$ , contrary to our assumption. So the series diverges for all $x$ with $|x| > |d|$ . 
+
+To simplify the notation, Theorem 18 deals with the convergence of series of the form $\sum a_{n}x^{n}$ . For series of the form $\sum a_{n}(x - a)^{n}$ , we can replace $x - a$ by $t$ and apply the results to the series $\sum a_{n}t^{n}$ . 
+
+#### The Radius of Convergence of a Power Series
+
+The theorem we have just proved and the examples we have studied lead to the conclusion that a power series $\sum c_{n}(x-a)^{n}$ behaves in one of three possible ways. It might converge only at x = a, or converge everywhere, or converge on some interval of radius R centered at x = a. We prove this as a corollary to Theorem 18. When we also consider the convergence at the endpoints of an interval, we see that there are six different possibilities, shown in Figure 9.21. 
+
+![教材插图](/books/thomas-calculus/assets/17ab0d0d04c52c829f6b6a663f24753ba06dd4ba146957aeaddd4bf1260e8f13.jpg)
+
+
+
+FIGURE 9.21 The six possibilities for an interval of convergence.
+
+
+#### Corollary to Theorem 18
+
+The convergence of the series $\sum c_{n}(x - a)^{n}$ is described by one of the following three cases: 
+
+#### How to Test a Power Series for Convergence
+
+1. $\sum_ {n = 1} ^ {\infty} (- 1) ^ {n + 1} \frac {1}{\sqrt {n}}$
 
 $$
 \sum_ {n = 1} ^ {\infty} (- 1) ^ {n + 1} \frac {1}{n ^ {3 / 2}}
 $$
 
-7. $\sum_{n=1}^{\infty} (-1)^{n+1} \frac{2^n}{n^2}$ 
+1. There is a positive number $R$ such that the series diverges for $x$ with $|x - a| > R$ but converges absolutely for $x$ with $|x - a| < R$ . The series may or may not converge at either of the endpoints $x = a - R$ and $x = a + R$ . 
 
-8. $\sum_{n=1}^{\infty} (-1)^{n} \frac{10^{n}}{(n+1)!}$ 
+1. Use the Ratio Test or the Root Test to find the largest open interval where the series converges absolutely, 
+
+$$
+| x - a | <   R \quad \text {or} \quad a - R <   x <   a + R.
+$$
+
+2. The series converges absolutely for every $x(R = \infty)$ . 
+
+2. If $R$ is finite, test for convergence or divergence at each endpoint, as in Examples 3a and b. 
 
 3. $\sum_{n=1}^{\infty} (-1)^{n+1} \frac{1}{n3^n}$ 
 
+3. The series converges at x = a and diverges elsewhere (R = 0). 
+
+Proof We first consider the case where a = 0, so that we have a power series $\sum_{n=0}^{\infty} c_{n} x^{n}$ centered at 0. If the series converges everywhere we are in Case 2. If it converges only at x = 0 then we are in Case 3. Otherwise there is a nonzero number d such that $\sum_{n=0}^{\infty} c_{n} d^{n}$ diverges. Let S be the set of values of x for which $\sum_{n=0}^{\infty} c_{n} x^{n}$ converges. The set S does not include any x with $|x| > |d|$ , since Theorem 18 implies the series diverges at all such values. So the set S is bounded. By the Completeness Property of the Real Numbers (Appendix A.9) S has a least upper bound R. (This is the smallest number with the property that all elements of S are less than or equal to R.) Since we are not in Case 3, the series converges at some number $b \neq 0$ and, by Theorem 18, also on the open interval $(-|b|, |b|)$ . Therefore, R > 0. 
+
+If $|x| < R$ then there is a number c in S with $|x| < c < R$ , since otherwise R would not be the least upper bound for S. The series converges at c since $c \in S$ , so by Theorem 18 the series converges absolutely at x. 
+
+Now suppose $|x| > R$ . If the series converges at x, then Theorem 18 implies it converges absolutely on the open interval $(-|x|, |x|)$ , so that S contains this interval. Since R is an upper bound for S, it follows that $|x| \leq R$ , which is a contradiction. So if $|x| > R$ , then the series diverges. This proves the theorem for power series centered at a = 0. 
+
+For a power series centered at an arbitrary point $x = a$ , set $t = x - a$ and repeat the argument above, replacing $x$ with $t$ . Since $t = 0$ when $x = a$ , convergence of the series $\sum_{n=0}^{\infty} |c_n t^n|$ on a radius $R$ open interval centered at $t = 0$ corresponds to convergence of the series $\sum_{n=0}^{\infty} |c_n (x - a)^n|$ on a radius $R$ open interval centered at $x = a$ . 
+
+R is called the radius of convergence of the power series, and the interval of radius R centered at x = a is called the interval of convergence. The interval of convergence may be open, closed, or half-open, depending on the particular series. At points x with $|x - a| < R$ , the series converges absolutely. If the series converges for all values of x, we say its radius of convergence is infinite. If it converges only at x = a, we say its radius of convergence is zero. 
+
+3. If $R$ is finite, the series diverges for $|x - a| > R$ . 
+
 4. $\sum_{n=2}^{\infty} (-1)^{n} \frac{4}{(\ln n)^{2}}$ 
+
+5. $\sum_{n=1}^{\infty} (-1)^{n} \frac{n}{n^{2} + 1}$ 
+
+6. $\sum_{n=1}^{\infty} (-1)^{n+1} \frac{n^2 + 5}{n^2 + 4}$ 
+
+7. $\sum_{n=1}^{\infty} (-1)^{n+1} \frac{2^n}{n^2}$ 
+
+8. $\sum_{n=1}^{\infty} (-1)^{n} \frac{10^{n}}{(n+1)!}$ 
 
 9. $\sum_{n=1}^{\infty} (-1)^{n+1} \left( \frac{n}{10} \right)^n$ 
 
@@ -3440,13 +3709,15 @@ Which of the series in Exercises 15–48 converge absolutely, which converge con
 
 44. $\sum_{n=1}^{\infty} \frac{(-1)^n}{\sqrt{n} + \sqrt{n+1}}$ 
 
-45. $\sum_{n=1}^{\infty} (-1)^n \operatorname{sech} n$ 46. $\sum_{n=1}^{\infty} (-1)^n \operatorname{csch} n$ 
+45. $\sum_{n=1}^{\infty} (-1)^n \operatorname{sech} n$
+
+46. $\sum_{n=1}^{\infty} (-1)^n \operatorname{csch} n$
 
 47. $\frac{1}{4} -\frac{1}{6} +\frac{1}{8} -\frac{1}{10} +\frac{1}{12} -\frac{1}{14} +\dots$ 
 
 48. $1 + \frac{1}{4} -\frac{1}{9} -\frac{1}{16} +\frac{1}{25} +\frac{1}{36} -\frac{1}{49} -\frac{1}{64} +\dots$ 
 
-## Error Estimation
+#### Error Estimation
 
 In Exercises 49–52, estimate the magnitude of the error involved in using the sum of the first four terms to approximate the sum of the entire series. 
 
@@ -3462,15 +3733,13 @@ In Exercises 53–56, determine how many terms should be used to estimate the su
 
 53. $\sum_{n=1}^{\infty} (-1)^{n} \frac{1}{n^{2} + 3}$ 
 
-$$
-\sum_ {n = 1} ^ {\infty} (- 1) ^ {n + 1} \frac {n}{n ^ {2} + 1}
-$$
+54. $\sum_ {n = 1} ^ {\infty} (- 1) ^ {n + 1} \frac {n}{n ^ {2} + 1}$
 
 55. $\sum_{n=1}^{\infty} (-1)^{n+1} \frac{1}{(n + 3\sqrt{n})^3}$ 
 
 56. $\sum_{n=1}^{\infty} (-1)^{n} \frac{1}{\ln (\ln (n + 2))}$ 
 
-## Determining Convergence or Divergence
+#### Determining Convergence or Divergence
 
 In Exercises 57–82, use any method to determine whether the series converges or diverges. Give reasons for your answer. 
 
@@ -3502,9 +3771,7 @@ In Exercises 57–82, use any method to determine whether the series converges o
 
 70. $1 - \frac{1}{8} +\frac{1}{64} -\frac{1}{512} +\frac{1}{4096} -\dots$ 
 
-$$
-\sum_ {n = 3} ^ {\infty} \sin \left(\frac {1}{\sqrt {n}}\right)
-$$
+71. $\sum_ {n = 3} ^ {\infty} \sin \left(\frac {1}{\sqrt {n}}\right)$
 
 72. $\sum_{n=1}^{\infty} \tan(n^{1/n})$ 
 
@@ -3524,7 +3791,9 @@ $$
 
 80. $\sum_{n=0}^{\infty} \frac{(2n+3)(2^n+3)}{3^n+2}$ 
 
-81. $\sum_{n=1}^{\infty} \frac{n^{2}3^{n}}{3 \cdot 5 \cdot 7 \cdots (2n + 1)}$ 82. $\sum_{n=1}^{\infty} \frac{4 \cdot 6 \cdot 8 \cdots (2n)}{5^{n+1}(n + 2)!}$ 
+81. $\sum_{n=1}^{\infty} \frac{n^{2}3^{n}}{3 \cdot 5 \cdot 7 \cdots (2n + 1)}$
+
+82. $\sum_{n=1}^{\infty} \frac{4 \cdot 6 \cdot 8 \cdots (2n)}{5^{n+1}(n + 2)!}$
 
 T Approximate the sums in Exercises 83 and 84 with an error of magnitude less than $5 \times 10^{-6}$ . 
 
@@ -3533,8 +3802,6 @@ T Approximate the sums in Exercises 83 and 84 with an error of magnitude less th
 84. $\sum_{n=0}^{\infty} (-1)^{n} \frac{1}{n!}$ 
 
 As you will see in Section 9.9 the sum is $e^{-1}$ . 
-
-Theory and Examples 
 
 85. a. The series 
 
@@ -3580,11 +3847,7 @@ Do these series converge? What is the sum of the first $2n + 1$ terms of the fir
 
 $$
 \left| \sum_ {n = 1} ^ {\infty} a _ {n} \right| \leq \sum_ {n = 1} ^ {\infty} | a _ {n} |.
-$$
-
-91. Show that if $\sum_{n=1}^{\infty} a_n$ and $\sum_{n=1}^{\infty} b_n$ both converge absolutely, then so do the following. 
-
-$$
+91. $Show that if $\sum_{n=1}^{\infty} a_n$ and $\sum_{n=1}^{\infty} b_n$ both converge absolutely, then so do the following.$
 \mathbf {a}. \sum_ {n = 1} ^ {\infty} (a _ {n} + b _ {n}) \quad \mathbf {b}. \sum_ {n = 1} ^ {\infty} (a _ {n} - b _ {n})
 $$
 
@@ -3604,7 +3867,7 @@ converge or diverge? Justify your answer.
 
 95. In the alternating harmonic series, suppose the goal is to arrange the terms to get a new series that converges to $-1/2$ . Start the new arrangement with the first negative term, which is $-1/2$ . Whenever you have a sum that is less than or equal to $-1/2$ , start introducing positive terms, taken in order, until the new total is greater than $-1/2$ . Then add negative terms until the total is less than or equal to $-1/2$ again. Continue this process until your partial sums have been above the target at least three times and finish at or below it. If $s_n$ is the sum of the first $n$ terms of your new series, plot the points $(n, s_n)$ to illustrate how the sums are behaving. 
 
-## 96. Outline of the proof of the Rearrangement Theorem (Theorem 17)
+96. Outline of the proof of the Rearrangement Theorem (Theorem 17)
 
 a. Let $\varepsilon$ be a positive real number, let $L = \sum_{n=1}^{\infty} a_n$ , and let $s_k = \sum_{n=1}^{k} a_n$ . Show that for some index $N_1$ and for some index $N_2 \geq N_1$ , 
 
@@ -3620,228 +3883,11 @@ $$
 
 b. The argument in part (a) shows that if $\sum_{n=1}^{\infty} a_n$ converges absolutely, then $\sum_{n=1}^{\infty} b_n$ converges and $\sum_{n=1}^{\infty} b_n = \sum_{n=1}^{\infty} a_n$ . Now show that because $\sum_{n=1}^{\infty} a_n$ converges, $\sum_{n=1}^{\infty} b_n$ converges to $\sum_{n=1}^{\infty} a_n$ . 
 
-## Power Series
-
-Now that we can test many infinite series of numbers for convergence, we can study sums that look like “infinite polynomials.” We call these sums power series because they are defined as infinite series of powers of some variable, in our case x. Like polynomials, power series can be added, subtracted, multiplied, differentiated, and integrated to give new power series. With power series we can extend the methods of calculus to a vast array of functions, making the techniques of calculus applicable in an even wider setting. 
-
-## Power Series and Convergence
-
-We begin with the formal definition, which specifies the notation and terminology used for power series. 
-
-> ***DEFINITIONS*** A power series about x = 0 is a series of the form 
->
-> $$
-> \sum_ {n = 0} ^ {\infty} c _ {n} x ^ {n} = c _ {0} + c _ {1} x + c _ {2} x ^ {2} + \dots + c _ {n} x ^ {n} + \dots .\tag{1}
-> $$
->
-A power series about x = a is a series of the form 
-
-$$
-\sum_ {n = 0} ^ {\infty} c _ {n} (x - a) ^ {n} = c _ {0} + c _ {1} (x - a) + c _ {2} (x - a) ^ {2} + \dots + c _ {n} (x - a) ^ {n} + \dots\tag{2}
-$$
-
-in which the center a and the coefficients $c_{0}, c_{1}, c_{2}, \ldots, c_{n}, \ldots$ are constants. 
-
-Equation (1) is the special case obtained by taking a = 0 in Equation (2). We will see that a power series defines a function $f(x)$ on a certain interval where it converges. Moreover, this function will be shown to be continuous and differentiable over the interior of that interval. 
-
-Power Series for $\frac{1}{1 - x}$ 
-
-**EXAMPLE 1** Taking all the coefficients to be 1 in Equation (1) gives the geometric power series 
-
-$$
-\sum_ {n = 0} ^ {\infty} x ^ {n} = 1 + x + x ^ {2} + \dots + x ^ {n} + \dots .
-$$
-
-$$
-\frac {1}{1 - x} = \sum_ {n = 0} ^ {\infty} x ^ {n}, | x | <   1
-$$
-
-This is the geometric series with first term 1 and ratio $x$ . It converges to $1 / (1 - x)$ for $|x| < 1$ . We express this fact by writing 
-
-$$
-\frac {1}{1 - x} = 1 + x + x ^ {2} + \dots + x ^ {n} + \dots , \quad - 1 <   x <   1.\tag{3}
-$$
-
-Up to now, we have used Equation (3) as a formula for the sum of the series on the right. We now change the focus: We think of the partial sums of the series on the right as polynomials $P_{n}(x)$ that approximate the function on the left. For values of x near zero, we need take only a few terms of the series to get a good approximation. As we move toward x = 1, or -1, we must take more terms. Figure 9.17 shows the graphs of $f(x) = 1/(1 - x)$ and the approximating polynomials $y_{n} = P_{n}(x)$ for n = 0, 1, 2, and 8. The function $f(x) = 1/(1 - x)$ is not continuous on intervals containing x = 1, where it has a vertical asymptote. The approximations do not apply when $x \geq 1$ . 
-
-![[16721a80c0115b9dcbdff05cc87c6786d24a3db31e82f6a73f94f2aaf1ec7467.jpg|image]]
-
-
-
-FIGURE 9.17 The graphs of $f(x) = 1/(1 - x)$ in Example 1 and four of its polynomial approximations.
-
-
-## **EXAMPLE 2** The power series
-
-$$
-1 - \frac {1}{2} (x - 2) + \frac {1}{4} (x - 2) ^ {2} + \dots + \left(- \frac {1}{2}\right) ^ {n} (x - 2) ^ {n} + \dots\tag{4}
-$$
-
-matches Equation (2) with $a = 2, c_0 = 1, c_1 = -1/2, c_2 = 1/4, \ldots, c_n = (-1/2)^n$ . This is a geometric series with first term 1 and ratio $r = -\frac{x - 2}{2}$ . The series converges for $\left|\frac{x - 2}{2}\right| < 1$ , which simplifies to $0 < x < 4$ . The sum is 
-
-![[cbba4f8eeb4b3ea01aa0ad68d6d59b702f6f09b00444c5cb4c11f690af5bd03f.jpg|image]]
-
-
-
-FIGURE 9.18 The graphs of $f(x) = 2 / x$ and its first three polynomial approximations (Example 2).
-
-
-$$
-{\frac {1}{1 - r}} = {\frac {1}{1 + {\frac {x - 2}{2}}}} = {\frac {2}{x}},
-$$
-
-SO 
-
-$$
-\frac {2}{x} = 1 - \frac {(x - 2)}{2} + \frac {(x - 2) ^ {2}}{4} - \dots + \left(- \frac {1}{2}\right) ^ {n} (x - 2) ^ {n} + \dots , \quad 0 <   x <   4.
-$$
-
-Series (4) generates useful polynomial approximations of $f(x) = 2 / x$ for values of $x$ near 2: 
-
-$$
-\begin{array}{l} P _ {0} (x) = 1 \\ P _ {1} (x) = 1 - \frac {1}{2} (x - 2) = 2 - \frac {x}{2} \\ P _ {2} (x) = 1 - \frac {1}{2} (x - 2) + \frac {1}{4} (x - 2) ^ {2} = 3 - \frac {3 x}{2} + \frac {x ^ {2}}{4}, \end{array}
-$$
-
-and so on (Figure 9.18). 
-
-The following example illustrates how we test a power series for convergence by using the Ratio Test to see where it converges and where it diverges. 
-
-## **EXAMPLE 3** For what values of x do the following power series converge?
-
-$$
-\sum_ {n = 1} ^ {\infty} (- 1) ^ {n - 1} \frac {x ^ {n}}{n} = x - \frac {x ^ {2}}{2} + \frac {x ^ {3}}{3} - \dots\tag{a}
-$$
-
-$$
-\text { (b) } \sum_ {n = 1} ^ {\infty} (- 1) ^ {n - 1} \frac {x ^ {2 n - 1}}{2 n - 1} = x - \frac {x ^ {3}}{3} + \frac {x ^ {5}}{5} - \dots
-$$
-
-(c) 
-
-$$
-\sum_ {n = 0} ^ {\infty} \frac {x ^ {n}}{n !} = 1 + x + \frac {x ^ {2}}{2 !} + \frac {x ^ {3}}{3 !} + \dots
-$$
-
-$$
-\text { (d) } \sum_ {n = 0} ^ {\infty} n! x ^ {n} = 1 + x + 2! x ^ {2} + 3! x ^ {3} + \dots
-$$
-
-**Solution** Apply the Ratio Test to the series $\sum u_{n}$ , where $u_{n}$ is the $n$ th term of the power series in question. 
-
-$$
-\text { (a) } \left| \frac {u _ {n + 1}}{u _ {n}} \right| = \left| \frac {x ^ {n + 1}}{n + 1} \cdot \frac {n}{x} \right| = \frac {n}{n + 1} | x | \rightarrow | x |.
-$$
-
-By the Ratio Test, this series converges absolutely for $|x| < 1$ , and it diverges for $|x| > 1$ . At x = 1, we obtain the alternating harmonic series $1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \cdots$ , which converges (though it does not converge absolutely). At x = -1, we get $-1 - \frac{1}{2} - \frac{1}{3} - \frac{1}{4} - \cdots$ , the negative of the harmonic series, which diverges. Series (a) converges for $-1 < x \leq 1$ and diverges elsewhere. The convergence is absolute for -1 < x < 1, but conditional at the point x = 1. 
-
-$$
-\xleftarrow {- 1} \begin{array}{c c} 1 & \\ 0 & 1 \end{array} \xrightarrow {} x
-$$
-
-We will see in Example 6 that this series converges to the function $\ln (1 + x)$ on the interval $(-1,1]$ (see Figure 9.19). 
-
-![[ece1a8c9795f346f314af046c6d2c4460898dd9782988d0736f9e6592dd04086.jpg|image]]
-
-
-FIGURE 9.19 The power series $x - \frac{x^{2}}{2} + \frac{x^{3}}{3} - \frac{x^{4}}{4} + \cdots$ converges on the interval $(-1, 1]$ . 
-
-$$
-\left| \frac {u _ {n + 1}}{u _ {n}} \right| = \left| \frac {x ^ {2 n + 1}}{2 n + 1} \cdot \frac {2 n - 1}{x ^ {2 n - 1}} \right| = \frac {2 n - 1}{2 n + 1} x ^ {2} \rightarrow x ^ {2}. \quad 2 (n + 1) - 1 = 2 n + 1 \tag {b}
-$$
-
-By the Ratio Test, the series converges absolutely for $x^{2} < 1$ and diverges for $x^{2} > 1$ . At x = 1 the series becomes $1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \cdots$ , which converges by the Alternating Series Theorem. It also converges at x = -1 because it is again an alternating series that satisfies the conditions for convergence. The value at x = -1 is the negative of the value at x = 1. Series (b) converges for $-1 \leq x \leq 1$ and diverges elsewhere. The convergence is absolute for -1 < x < 1, but conditional at the points x = -1 and x = 1. 
-
-![[4c8250e24cb4871833a528a5728949036e5c67280cbd6609b5cd4e0a8a695b6b.jpg|image]]
-
-
-$$
-\left(\mathbf {c}\right)\left| \frac {u _ {n + 1}}{u _ {n}} \right| = \left| \frac {x ^ {n + 1}}{(n + 1) !} \cdot \frac {n !}{x ^ {n}} \right| = \frac {| x |}{n + 1} \rightarrow 0 \text {   for   every   } x. \quad \frac {n !}{(n + 1) !} = \frac {1 \cdot 2 \cdot 3 \cdots n}{1 \cdot 2 \cdot 3 \cdots n \cdot (n + 1)}
-$$
-
-The series converges absolutely for all x. 
-
-$$
-\text {(d)} \left| \frac {u _ {n + 1}}{u _ {n}} \right| = \left| \frac {(n + 1) !   x ^ {n + 1}}{n !   x ^ {n}} \right| = (n + 1) | x | \to \left\{ \begin{array}{l l} 0 & \text { if } x = 0 \\ \infty & \text { if } x \neq 0. \end{array} \right.
-$$
-
-The previous example illustrated how a power series might converge. The next result shows that if a power series converges at a nonzero value, then it converges over an entire interval of values. The interval might be finite or infinite and might contain one, both, or none of its endpoints. We will see that each endpoint of a finite interval must be tested independently for convergence or divergence. 
-
-THEOREM 18—The Convergence Theorem for Power Series
-If the power series $\sum_{n=0}^{\infty}a_{n}x^{n}=a_{0}+a_{1}x+a_{2}x^{2}+\cdots$ converges at $x=c\neq0$ , then it converges absolutely for all x with $|x|<|c|$ . If the series diverges at x=d, then it diverges for all x with $|x|>|d|$ . 
-
-Proof The proof uses the Direct Comparison Test, with the given series compared to a converging geometric series. 
-
-Suppose the series $\sum_{n=0}^{\infty}a_{n}c^{n}$ converges. Then $\lim_{n\to\infty}a_{n}c^{n}=0$ by the nth-Term Test. Hence, there is an integer N such that $|a_{n}c^{n}|<1$ for all n>N, so 
-
-![[0aecf1577e4071d62b2a415484954833b362a66ea84feec1cbffac96e28f952c.jpg|image]]
-
-
-FIGURE 9.20 Convergence of $\sum a_{n}x^{n}$ at $x = c$ implies absolute convergence on the interval $-|c| < x < |c|$ ; divergence at $x = d$ implies divergence for $|x| > |d|$ . The corollary to Theorem 18 asserts the existence of a radius of convergence $R \geq 0$ . For $|x| < R$ the series converges absolutely, and for $|x| > R$ it diverges. 
-
-$$
-\left| a _ {n} \right| <   \frac {1}{\left| c \right| ^ {n}} \quad \text { for } n > N.\tag{5}
-$$
-
-Now take any $x$ such that $|x| < |c|$ , so that $|x| / |c| < 1$ . Multiplying both sides of Equation (5) by $|x|^n$ gives 
-
-$$
-\left| a _ {n} \right| | x | ^ {n} <   \frac {| x | ^ {n}}{| c | ^ {n}} \quad \text {   for   } n > N.
-$$
-
-Since $|x / c| < 1$ , it follows that the geometric series $\sum_{n=0}^{\infty}|x / c|^n$ converges. By the Direct Comparison Test (Theorem 10), the series $\sum_{n=0}^{\infty}|a_n||x^n|$ converges, so the original power series $\sum_{n=0}^{\infty}a_n x^n$ converges absolutely for $-|c| < x < |c|$ , as claimed by the theorem. (See Figure 9.20.) 
-
-Now suppose that the series $\sum_{n=0}^{\infty} a_n x^n$ diverges at $x = d$ . If $x$ is a number with $|x| > |d|$ and the series converges at $x$ , then the first half of the theorem shows that the series also converges at $d$ , contrary to our assumption. So the series diverges for all $x$ with $|x| > |d|$ . 
-
-To simplify the notation, Theorem 18 deals with the convergence of series of the form $\sum a_{n}x^{n}$ . For series of the form $\sum a_{n}(x - a)^{n}$ , we can replace $x - a$ by $t$ and apply the results to the series $\sum a_{n}t^{n}$ . 
-
-## The Radius of Convergence of a Power Series
-
-The theorem we have just proved and the examples we have studied lead to the conclusion that a power series $\sum c_{n}(x-a)^{n}$ behaves in one of three possible ways. It might converge only at x = a, or converge everywhere, or converge on some interval of radius R centered at x = a. We prove this as a corollary to Theorem 18. When we also consider the convergence at the endpoints of an interval, we see that there are six different possibilities, shown in Figure 9.21. 
-
-![[17ab0d0d04c52c829f6b6a663f24753ba06dd4ba146957aeaddd4bf1260e8f13.jpg|image]]
-
-
-
-FIGURE 9.21 The six possibilities for an interval of convergence.
-
-
-## Corollary to Theorem 18
-
-The convergence of the series $\sum c_{n}(x - a)^{n}$ is described by one of the following three cases: 
-
-1. There is a positive number $R$ such that the series diverges for $x$ with $|x - a| > R$ but converges absolutely for $x$ with $|x - a| < R$ . The series may or may not converge at either of the endpoints $x = a - R$ and $x = a + R$ . 
-
-2. The series converges absolutely for every $x(R = \infty)$ . 
-
-3. The series converges at x = a and diverges elsewhere (R = 0). 
-
-Proof We first consider the case where a = 0, so that we have a power series $\sum_{n=0}^{\infty} c_{n} x^{n}$ centered at 0. If the series converges everywhere we are in Case 2. If it converges only at x = 0 then we are in Case 3. Otherwise there is a nonzero number d such that $\sum_{n=0}^{\infty} c_{n} d^{n}$ diverges. Let S be the set of values of x for which $\sum_{n=0}^{\infty} c_{n} x^{n}$ converges. The set S does not include any x with $|x| > |d|$ , since Theorem 18 implies the series diverges at all such values. So the set S is bounded. By the Completeness Property of the Real Numbers (Appendix A.9) S has a least upper bound R. (This is the smallest number with the property that all elements of S are less than or equal to R.) Since we are not in Case 3, the series converges at some number $b \neq 0$ and, by Theorem 18, also on the open interval $(-|b|, |b|)$ . Therefore, R > 0. 
-
-If $|x| < R$ then there is a number c in S with $|x| < c < R$ , since otherwise R would not be the least upper bound for S. The series converges at c since $c \in S$ , so by Theorem 18 the series converges absolutely at x. 
-
-Now suppose $|x| > R$ . If the series converges at x, then Theorem 18 implies it converges absolutely on the open interval $(-|x|, |x|)$ , so that S contains this interval. Since R is an upper bound for S, it follows that $|x| \leq R$ , which is a contradiction. So if $|x| > R$ , then the series diverges. This proves the theorem for power series centered at a = 0. 
-
-For a power series centered at an arbitrary point $x = a$ , set $t = x - a$ and repeat the argument above, replacing $x$ with $t$ . Since $t = 0$ when $x = a$ , convergence of the series $\sum_{n=0}^{\infty} |c_n t^n|$ on a radius $R$ open interval centered at $t = 0$ corresponds to convergence of the series $\sum_{n=0}^{\infty} |c_n (x - a)^n|$ on a radius $R$ open interval centered at $x = a$ . 
-
-R is called the radius of convergence of the power series, and the interval of radius R centered at x = a is called the interval of convergence. The interval of convergence may be open, closed, or half-open, depending on the particular series. At points x with $|x - a| < R$ , the series converges absolutely. If the series converges for all values of x, we say its radius of convergence is infinite. If it converges only at x = a, we say its radius of convergence is zero. 
-
-## How to Test a Power Series for Convergence
-
-1. Use the Ratio Test or the Root Test to find the largest open interval where the series converges absolutely, 
-
-$$
-| x - a | <   R \quad \text {or} \quad a - R <   x <   a + R.
-$$
-
-2. If $R$ is finite, test for convergence or divergence at each endpoint, as in Examples 3a and b. 
-
-3. If $R$ is finite, the series diverges for $|x - a| > R$ . 
-
-## Operations on Power Series
+#### Operations on Power Series
 
 On the intersection of their intervals of convergence, two power series can be added and subtracted term by term just like series of constants (Theorem 8). They can be multiplied just as we multiply polynomials, but we often limit the computation of the product to the first few terms, which are the most important. The following result gives a formula for the coefficients in the product, but we omit the proof. (Power series can also be divided in a way similar to division of polynomials, but we do not give a formula for the general coefficient here.) 
 
-## THEOREM 19—Series Multiplication for Power Series
+**THEOREM 19—Series Multiplication for Power Series**
 
 If $A(x) = \sum_{n=0}^{\infty} a_n x^n$ and $B(x) = \sum_{n=0}^{\infty} b_n x^n$ converge absolutely for $|x| < R$ , and 
 
@@ -3869,7 +3915,7 @@ For example, since $1/(1-x)=\sum_{n=0}^{\infty}x^{n}$ converges absolutely for $
 
 Theorem 21 says that a power series can be differentiated term by term at each interior point of its interval of convergence. A proof of a restricted case of the theorem is outlined in Exercise 66. 
 
-## THEOREM 21 — Term-by-Term Differentiation
+**THEOREM 21 — Term-by-Term Differentiation**
 
 If $\sum c_{n}(x - a)^{n}$ has radius of convergence $R > 0$ , it defines a function 
 
@@ -3889,7 +3935,7 @@ $$
 
 and so on. Each of these derived series converges at every point of the interval $a - R < x < a + R$ . 
 
-## **EXAMPLE 4** Find series for $f'(x)$ and $f''(x)$ if
+**EXAMPLE 4** Find series for $f'(x)$ and $f''(x)$ if
 
 $$
 \begin{array}{l} f (x) = \frac {1}{1 - x} = 1 + x + x ^ {2} + x ^ {3} + x ^ {4} + \dots + x ^ {n} + \dots \\ = \sum_ {n = 0} ^ {\infty} x ^ {n}, \quad - 1 <   x <   1. \end{array}
@@ -3920,7 +3966,7 @@ It is also true that a power series can be integrated term by term throughout it
 THEOREM 22—Term-by-Term Integration
 Suppose that $f(x) = \sum_{n=0}^{\infty} c_n (x - a)^n$ converges for $a - R < x < a + R$ (where R > 0). Then $\sum_{n=0}^{\infty} c_n \frac{(x - a)^{n+1}}{n + 1}$ converges for $a - R < x < a + R$ and $\int f(x) dx = \sum_{n=0}^{\infty} c_n \frac{(x - a)^{n+1}}{n + 1} + C$ for $a - R < x < a + R$ . 
 
-## **EXAMPLE 5** Identify the function
+**EXAMPLE 5** Identify the function
 
 $$
 f (x) = \sum_ {n = 0} ^ {\infty} \frac {(- 1) ^ {n} x ^ {2 n + 1}}{2 n + 1} = x - \frac {x ^ {3}}{3} + \frac {x ^ {5}}{5} - \dots , \quad - 1 \leq x \leq 1.
@@ -3984,39 +4030,39 @@ $\ln 2 = \sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n}$
 
 It can also be shown that the series converges at x = 1 to the number ln 2, but that was not guaranteed by the theorem. A proof of this is outlined in Exercise 63. 
 
-## EXERCISES 9.7
+### EXERCISES 9.7
 
-## Intervals of Convergence
+#### Intervals of Convergence
 
 In Exercises 1–36, (a) find the series' radius and interval of convergence. For what values of x does the series converge (b) absolutely, (c) conditionally? 
-
-7. $\sum_{n=0}^{\infty} \frac{nx^n}{n+2}$ 
-
-8. $\sum_{n=1}^{\infty} \frac{(-1)^n (x + 2)^n}{n}$ 
 
 1. $\sum_{n = 0}^{\infty}x^{n}$ 
 
 2. $\sum_{n=0}^{\infty}(x + 5)^{n}$ 
 
-10. $\sum_{n=1}^{\infty} \frac{(x - 1)^n}{\sqrt{n}}$ 
-
-9. $\sum_{n=1}^{\infty} \frac{x^n}{n\sqrt{n} 3^n}$ 
-
 3. $\sum_{n=0}^{\infty} (-1)^{n}(4x + 1)^{n}$ 
-
-12. $\sum_{n=0}^{\infty} \frac{3^n x^n}{n!}$ 
 
 4. $\sum_{n=1}^{\infty} \frac{(3x - 2)^n}{n}$ 
 
-11. $\sum_{n=0}^{\infty} \frac{(-1)^n x^n}{n!}$ 
-
 5. $\sum_{n=0}^{\infty} \frac{(x - 2)^n}{10^n}$ 
 
-14. $\sum_{n=1}^{\infty} \frac{(x-1)^n}{n^3 3^n}$ 
+6. $\sum_{n = 0}^{\infty}(2x)^{n}$ 
+
+7. $\sum_{n=0}^{\infty} \frac{nx^n}{n+2}$ 
+
+8. $\sum_{n=1}^{\infty} \frac{(-1)^n (x + 2)^n}{n}$ 
+
+9. $\sum_{n=1}^{\infty} \frac{x^n}{n\sqrt{n} 3^n}$ 
+
+10. $\sum_{n=1}^{\infty} \frac{(x - 1)^n}{\sqrt{n}}$ 
+
+11. $\sum_{n=0}^{\infty} \frac{(-1)^n x^n}{n!}$ 
+
+12. $\sum_{n=0}^{\infty} \frac{3^n x^n}{n!}$ 
 
 13. $\sum_{n=1}^{\infty} \frac{4^n x^{2n}}{n}$ 
 
-6. $\sum_{n = 0}^{\infty}(2x)^{n}$ 
+14. $\sum_{n=1}^{\infty} \frac{(x-1)^n}{n^3 3^n}$ 
 
 15. $\sum_{n=0}^{\infty} \frac{x^n}{\sqrt{n^2 + 3}}$ 
 
@@ -4050,9 +4096,13 @@ In Exercises 1–36, (a) find the series' radius and interval of convergence. Fo
 
 30. $\sum_{n=2}^{\infty} \frac{x^n}{n \ln n}$ Get the information you need about $\sum 1/(n \ln n)$ from Section 9.3, Exercise 60. 
 
-31. $\sum_{n=1}^{\infty} \frac{(4x - 5)^{2n+1}}{n^{3/2}}$ 32. $\sum_{n=1}^{\infty} \frac{(3x + 1)^{n+1}}{2n + 2}$ 
+31. $\sum_{n=1}^{\infty} \frac{(4x - 5)^{2n+1}}{n^{3/2}}$
 
-33. $\sum_{n=1}^{\infty} \frac{1}{2 \cdot 4 \cdot 6 \cdots (2n)} x^n$ 34. $\sum_{n=1}^{\infty} \frac{3 \cdot 5 \cdot 7 \cdots (2n + 1)}{n^2 \cdot 2^n} x^{n+1}$ 
+32. $\sum_{n=1}^{\infty} \frac{(3x + 1)^{n+1}}{2n + 2}$
+
+33. $\sum_{n=1}^{\infty} \frac{1}{2 \cdot 4 \cdot 6 \cdots (2n)} x^n$
+
+34. $\sum_{n=1}^{\infty} \frac{3 \cdot 5 \cdot 7 \cdots (2n + 1)}{n^2 \cdot 2^n} x^{n+1}$
 
 35. $\sum_{n=1}^{\infty}\frac{1+2+3+\cdots+n}{1^{2}+2^{2}+3^{2}+\cdots+n^{2}}x^{n}$ 
 
@@ -4062,9 +4112,7 @@ In Exercises 37–42, find the series' radius of convergence.
 
 37. $\sum_{n=1}^{\infty} \frac{n!}{3 \cdot 6 \cdot 9 \cdots 3n} x^n$ 
 
-$$
-\sum_ {n = 1} ^ {\infty} \left(\frac {2 \cdot 4 \cdot 6 \cdots (2 n)}{2 \cdot 5 \cdot 8 \cdots (3 n - 1)}\right) ^ {2} x ^ {n}
-$$
+38. $\sum_ {n = 1} ^ {\infty} \left(\frac {2 \cdot 4 \cdot 6 \cdots (2 n)}{2 \cdot 5 \cdot 8 \cdots (3 n - 1)}\right) ^ {2} x ^ {n}$
 
 39. $\sum_{n=1}^{\infty} \frac{(n!)^{2}}{2^{n}(2n)!} x^{n}$ 
 
@@ -4318,7 +4366,7 @@ $$
 
 We have seen how geometric series can be used to generate a power series for functions such as $f(x) = 1/(1 - x)$ or $g(x) = 3/(x - 2)$ . Now we expand our capability to represent a function with a power series. This section shows how functions that are infinitely differentiable generate power series called Taylor series. In many cases, these series provide useful polynomial approximations of the original functions. Because approximation by polynomials is extremely useful to both mathematicians and scientists, Taylor series are an important application of the theory of infinite series. 
 
-## Series Representations
+### Series Representations
 
 We know from Theorem 21 that within its interval of convergence I, the sum of a power series is a continuous function with derivatives of all orders. But what about the other way around? If a function $f(x)$ has derivatives of all orders on an interval, can it be expressed as a power series on at least part of that interval? And if it can, what are its coefficients? 
 
@@ -4350,15 +4398,15 @@ $$
 f ^ {(n)} (a) = n! a _ {n}.
 $$
 
-## HISTORICAL BIOGRAPHIES
+### HISTORICAL BIOGRAPHIES
 
 Brook Taylor (1685–1731) 
 
 Taylor was an ingenious and productive British mathematician. Taylor published his book on calculus Methodus incrementorum directa et inversa in 1715 and his book on geometry Linear Perspective in the same year. To know more, visit the companion Website. 
 
-## Colin Maclaurin
+### Colin Maclaurin
 
-## (1698-1746)
+### (1698-1746)
 
 Maclaurin was elected a fellow of the Royal Society of London when he was only 21 years old. His Treatise of Fluxions (1742) has been described as the earliest logical and systematic publication of Newton's methods. 
 
@@ -4378,7 +4426,7 @@ $$
 
 But if we start with an arbitrary function f that is infinitely differentiable on an interval containing x = a and use it to generate the series in Equation (1), does the series converge to $f(x)$ at each x in the interval of convergence? The answer is maybe—for some functions it will, but for other functions it will not (as we will see in Example 4). 
 
-## Taylor and Maclaurin Series
+### Taylor and Maclaurin Series
 
 The series on the right-hand side of Equation (1) is the most important and useful series we will study in this chapter. 
 
@@ -4416,7 +4464,7 @@ $$
 \begin{array}{l} f (2) + f ^ {\prime} (2) (x - 2) - \frac {f ^ {\prime \prime} (2)}{2 !} (x - 2) ^ {2} + \dots + \frac {f ^ {(n)} (2)}{n !} (x - 2) ^ {n} + \dots \\ = \frac {1}{2} - \frac {(x - 2)}{2 ^ {2}} + \frac {(x - 2) ^ {2}}{2 ^ {3}} - \dots + (- 1) ^ {n} \frac {(x - 2) ^ {n}}{2 ^ {n + 1}} + \dots . \end{array}
 $$
 
-![[eee4b960b5657c28d9843d352bd4958fa05cf81dddfcb965a4598ad9b41205e2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/eee4b960b5657c28d9843d352bd4958fa05cf81dddfcb965a4598ad9b41205e2.jpg)
 
 
 
@@ -4437,7 +4485,7 @@ $$
 
 In this example the Taylor series generated by $f ( x ) = 1 / x$ at $a = 2$ converges to $1 / x$ for $| x - 2 | < 2 , \mathrm { o r } 0 < x < 4$ ■ 
 
-## Taylor Polynomials
+### Taylor Polynomials
 
 The linearization of a differentiable function $f$ at a point a is the polynomial of degree at most 1 given by 
 
@@ -4507,7 +4555,7 @@ $$
 
 Figure 9.23 shows how well these polynomials approximate $f ( x ) = \cos x$ near $x = 0$ Only the right-hand portions of the graphs are given because the graphs are symmetricabout the y-axis. 一
 
-![[5fea6f57fdbccb11af4e8d25233d94acc0b0a59df54282ae9c0a702726c08224.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5fea6f57fdbccb11af4e8d25233d94acc0b0a59df54282ae9c0a702726c08224.jpg)
 
 
 
@@ -4526,7 +4574,7 @@ $$
 f (x) = \left\{ \begin{array}{l l} 0, & x = 0 \\ e ^ {- 1 / x ^ {2}}, & x \neq 0 \end{array} \right.
 $$
 
-![[ed697e451debf1105a50dd846696fe15b07be05575b33a7b6d68825b02d845b1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ed697e451debf1105a50dd846696fe15b07be05575b33a7b6d68825b02d845b1.jpg)
 
 
 (Figure 9.24) has derivatives of all orders at $x = 0$ and that $f ^ { ( n ) } ( 0 ) = 0$ for all n. This means that the Taylor series generated b $f \operatorname { a t } x = 0$ is 
@@ -4547,9 +4595,9 @@ Two questions still remain.
 
 The answers are provided by a theorem of Taylor in the next section. 
 
-## EXERCISES 9.8
+### EXERCISES 9.8
 
-## Finding Taylor Polynomials
+#### Finding Taylor Polynomials
 
 In Exercises 1–10, find the Taylor polynomials of orders 0, 1, 2, and 3 generated by f at a. 
 
@@ -4573,19 +4621,19 @@ In Exercises 1–10, find the Taylor polynomials of orders 0, 1, 2, and 3 genera
 
 10. $f ( x ) = { \sqrt { 1 - x } } , a = 0$ 
 
-## Finding Taylor Series at $x = 0$ (Maclaurin Series)
-
-12. $x e ^ { x }$ 
+#### Finding Taylor Series at $x = 0$ (Maclaurin Series)
 
 Find the Maclaurin series for the functions in Exercises 11–24. 
 
 11. $e ^ { - x }$ 
 
+12. $x e ^ { x }$ 
+
+13. $\frac { 1 } { 1 + x }$ 
+
 14. $\frac { 2 + x } { 1 - x }$ 
 
 15. $\sin 3 x$ 
-
-13. $\frac { 1 } { 1 + x }$ 
 
 16. $\mathrm { s i n } { \frac { x } { 2 } }$ 
 
@@ -4605,7 +4653,7 @@ Find the Maclaurin series for the functions in Exercises 11–24.
 
 24. $( x + 1 ) \ln ( x + 1 )$ 
 
-## Finding Taylor and Maclaurin Series
+#### Finding Taylor and Maclaurin Series
 
 In Exercises 25–34, find the Taylor series generated by $f \operatorname { a t } x = a .$ 
 
@@ -4627,15 +4675,15 @@ In Exercises 25–34, find the Taylor series generated by $f \operatorname { a t
 
 33. $f ( x ) = \cos ( 2 x + ( \pi / 2 ) ) , a = \pi / 4$ 
 
-36. $f ( x ) = ( 1 - x + x ^ { 2 } ) e ^ { x }$ 
-
 34. $f ( x ) = { \sqrt { x + 1 } } , a = 0$ 
-
-37. $f ( x ) = \left( \sin x \right) \ln ( 1 + x )$ 
 
 In Exercises 35–40, find the first three nonzero terms of the Maclaurin series for each function. 
 
 35. $f ( x ) = \cos x - { \big ( } 2 / ( 1 - x ) { \big ) }$ 
+
+36. $f ( x ) = ( 1 - x + x ^ { 2 } ) e ^ { x }$ 
+
+37. $f ( x ) = \left( \sin x \right) \ln ( 1 + x )$ 
 
 38. $f ( x ) = x \sin ^ { 2 } x $ 
 
@@ -4719,7 +4767,7 @@ c. For $n \geq 2$ , recursively define polynomials $p _ { n }$ by $p _ { n + 1 }
 
 In the last section we asked when a Taylor series for a function can be expected to converge to the function that generates it. The finite-order Taylor polynomials that approximate the Taylor series provide estimates for the generating function. In order for these estimates to be useful, we need a way to control the possible errors we may encounter when approximating a function with its finite-order Taylor polynomials. How do we bound such possible errors? We answer the question in this section with the following theorem. 
 
-## THEOREM 23—Taylor’s Theorem
+**THEOREM 23—Taylor’s Theorem**
 
 If f and its first n derivatives $f ^ { \prime } , f ^ { \prime \prime } , \ldots , f ^ { ( n ) }$ are continuous on the closed interval between a and b, and $f ^ { ( n ) }$ is differentiable on the open interval between a and b, then there exists a number c between a and b such that 
 
@@ -4731,7 +4779,7 @@ Taylor’s Theorem is a generalization of the Mean Value Theorem (Exercise 49), 
 
 When we apply Taylor’s Theorem, we usually want to hold a fixed and treat b as an independent variable. Taylor’s formula is easier to use in circumstances like these if we change b to x. Here is a version of the theorem with this change. 
 
-## Taylor’s Formula
+### Taylor’s Formula
 
 If f has derivatives of all orders in an open interval I containing a, then for each positive integer n and for each x in I, 
 
@@ -4815,11 +4863,11 @@ $$
 R _ {n} (1) = e ^ {c} \frac {1}{(n + 1) !} <   \frac {3}{(n + 1) !}. \quad e ^ {c} <   e ^ {1} <   3
 $$
 
-## Estimating the Remainder
+### Estimating the Remainder
 
 It is often possible to estimate $R _ { n } ( x )$ as we did in Example 1. This method of estimation is so convenient that we state it as a theorem for future reference. 
 
-## THEOREM 24—The Remainder Estimation Theorem
+**THEOREM 24—The Remainder Estimation Theorem**
 
 If there is a positive constant M such that $| f ^ { ( n + 1 ) } ( t ) | \leq M$ for all t between x and a, inclusive, then the remainder term $R _ { n } ( x )$ in Taylor’s Theorem satisfies the inequality 
 
@@ -4831,7 +4879,7 @@ If this inequality holds for every n, and the other conditions of Taylor’s The
 
 The next two examples use Theorem 24 to show that the Taylor series generated by the sine and cosine functions do in fact converge to the functions themselves. 
 
-## **EXAMPLE 2** Show that the Taylor series for sin x at $x = 0$ converges for all x.
+**EXAMPLE 2** Show that the Taylor series for sin x at $x = 0$ converges for all x.
 
 **Solution** The function and its derivatives are 
 
@@ -4891,7 +4939,7 @@ $$
 \cos x = \sum_ {k = 0} ^ {\infty} \frac {(- 1) ^ {k} x ^ {2 k}}{(2 k) !} = 1 - \frac {x ^ {2}}{2 !} + \frac {x ^ {4}}{4 !} - \frac {x ^ {6}}{6 !} + \dots .\tag{5}
 $$
 
-## Using Taylor Series
+### Using Taylor Series
 
 Since every Taylor series is a power series, the operations of adding, subtracting, and multiplying Taylor series are all valid on the intersection of their intervals of convergence. 
 
@@ -4963,7 +5011,7 @@ The Alternating Series Estimation Theorem tells us something that the Remainder 
 
 Figure 9.25 shows the graph of sin x, along with the graphs of a number of its approximating Taylor polynomials. The graph of $P _ { 3 } ( x ) = x - \left( x ^ { 3 } / 3 ! \right)$ is almost indistinguishable from the sine curve when $0 \leq x \leq 1$ 
 
-![[5e561b57d8761677092e83f13bccfb79a2083936a4770ada9f41a8d34e042534.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5e561b57d8761677092e83f13bccfb79a2083936a4770ada9f41a8d34e042534.jpg)
 
 
 FIGURE 9.25 The polynomials 
@@ -4974,7 +5022,7 @@ $$
 
 converge to sin x as $n  \infty .$ Notice how closely $P _ { 3 } ( x )$ approximates the sine curve for $x \leq 1$ (Example 5). 
 
-## A Proof of Taylor’s Theorem
+### A Proof of Taylor’s Theorem
 
 We prove Taylor’s theorem assuming $a \ < \ b$ . The proof for $a > b$ is nearly the same. The Taylor polynomial 
 
@@ -5048,23 +5096,51 @@ $$
 
 This concludes the proof. 
 
-## EXERCISES 9.9
+### EXERCISES 9.9
 
-## Finding Taylor Series
+#### Finding Taylor Series
 
 Use substitution (as in Formula (7)) to find the Taylor series at $x = 0$ of the functions in Exercises 1–12. 1. $e ^ { - 5 x }$ 2. $e ^ { - x / 2 }$ 3. $5 \sin \left( - x \right)$ 4. $\sin \left( { \frac { \pi x } { 2 } } \right)$ 5. $\cos 5 x ^ { 2 }$ 6. $\cos ( x / \sqrt 2 )$ 7. $\ln ( 1 + x ^ { 2 } )$ 8. $\arctan { ( 3 x ^ { 4 } ) }$ 9. $\frac { 1 } { 1 + { \frac { 3 } { 4 } } x ^ { 3 } }$ 10. $\frac { 1 } { 2 - x }$ 11. $\ln ( 3 + 6 x )$ 12. $e ^ { - x ^ { 2 } + \ln 5 }$ 
 
 Use power series operations to find the Taylor series at x = 0 for the functions in Exercises 13–30. 13. $x e ^ { x }$ 14. $x ^ { 2 } \sin x$ 15. $\frac { x ^ { 2 } } { 2 } - 1 + \cos x$ 
 
-16. sin $x - x + { \frac { x ^ { 3 } } { 3 ! } }$ 17. x cos πx 18. $x ^ { 2 } \cos \left( x ^ { 2 } \right)$ 
+16. sin $x - x + { \frac { x ^ { 3 } } { 3 ! } }$
 
-19. $\cos ^ { 2 } x ( H i n t { \mathrm { : } } \cos ^ { 2 } x = ( 1 + \cos 2 x ) / 2 . )$ 20. $\sin ^ { 2 } x$ 21. $\frac { x ^ { 2 } } { 1 - 2 x }$ 22. $x \ln ( 1 + 2 x )$ 23. $\frac { 1 } { \left( 1 - x \right) ^ { 2 } }$ 24. $\frac { 2 } { \left( 1 - x \right) ^ { 3 } }$ 25. $x \arctan x ^ { 2 }$ 26. sin $x \cdot \cos x$ 27. $e ^ { x } + { \frac { 1 } { 1 + x } }$ 28. $\cos x - \sin x$ 29. ${ \frac { x } { 3 } } \ln ( 1 + x ^ { 2 } )$ 30. $\ln ( 1 + x ) - \ln ( 1 - x )$ 
+17. x cos πx
+
+18. $x ^ { 2 } \cos \left( x ^ { 2 } \right)$
+
+19. $\cos ^ { 2 } x ( H i n t { \mathrm { : } } \cos ^ { 2 } x = ( 1 + \cos 2 x ) / 2 . )$
+
+20. $\sin ^ { 2 } x$
+
+21. $\frac { x ^ { 2 } } { 1 - 2 x }$
+
+22. $x \ln ( 1 + 2 x )$
+
+23. $\frac { 1 } { \left( 1 - x \right) ^ { 2 } }$
+
+24. $\frac { 2 } { \left( 1 - x \right) ^ { 3 } }$
+
+25. $x \arctan x ^ { 2 }$
+
+26. sin $x \cdot \cos x$
+
+27. $e ^ { x } + { \frac { 1 } { 1 + x } }$
+
+28. $\cos x - \sin x$
+
+29. ${ \frac { x } { 3 } } \ln ( 1 + x ^ { 2 } )$
+
+30. $\ln ( 1 + x ) - \ln ( 1 - x )$
 
 Find the first four nonzero terms in the Maclaurin series for the functions in Exercises 31–38. 31. $e ^ { x } \sin x$ 32. $\frac { \ln ( 1 + x ) } { 1 - x }$ 33. $( \arctan x ) ^ { 2 }$ 34. $\cos ^ { 2 } x \cdot \sin x$ 35. $e ^ { \sin x }$ 36. $\sin \left( { \tan ^ { - 1 } x } \right)$ 
 
-37. $\cos ( e ^ { x } - 1 )$ 38. $\cos { \sqrt { x } } + \ln ( \cos x )$ 
+37. $\cos ( e ^ { x } - 1 )$
 
-## Error Estimates
+38. $\cos { \sqrt { x } } + \ln ( \cos x )$
+
+#### Error Estimates
 
 39. Estimate the error if $P _ { 3 } ( x ) = x - ( x ^ { 3 } / 6 )$ is used to estimate the value of sin x at $x = 0 . 1$ 
 
@@ -5082,7 +5158,7 @@ Find the first four nonzero terms in the Maclaurin series for the functions in E
 
 46. (Continuation of Exercise 45.) When $x < 0 .$ , the series for $e ^ { x }$ is an alternating series. Use the Alternating Series Estimation Theorem to estimate the error that results from replacing $e ^ { x }$ by $1 + x + ( x ^ { 2 } / 2 )$ when $- 0 . 1 < x < 0$ . Compare your estimate with the one you obtained in Exercise 45. 
 
-## Theory and Examples
+#### Theory and Examples
 
 47. Use the identity sin $^ 2 x = ( 1 - \cos 2 x ) / 2$ to obtain the Maclaurin series for sin .x<sup>2</sup> Then differentiate this series to obtain the Maclaurin series for 2 sin x cos x. Check that this is the series for sin 2x. 
 
@@ -5138,7 +5214,7 @@ a. If f is even, then $a _ { 1 } = a _ { 3 } = a _ { 5 } = \cdots = 0 , \mathrm 
 
 b. If f is odd, then $a _ { 0 } = a _ { 2 } = a _ { 4 } = \cdots = 0 \quad$ ,  i.e., the Taylor series for f at $x = 0$ contains only odd powers of x. 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 Taylor’s formula with $n = 1$ and $a = 0$ gives the linearization of a function at $x = 0$ . With $n = 2$ and $n = 3 ,$ we obtain the standard quadratic and cubic approximations. In these exercises we explore the errors associated with these approximations. We seek answers to two questions: 
 
@@ -5168,13 +5244,9 @@ $$
 f (x) = (1 + x) ^ {3 / 2}, - \frac {1}{2} \leq x \leq 2
 $$
 
-$$
-\textbf {5 9 .} f (x) = \frac {x}{x ^ {2} + 1}, | x | \leq 2
-$$
+59. $f (x) = \frac {x}{x ^ {2} + 1}, | x | \leq 2$
 
-$$
-\mathbf {6 0 .} f (x) = (\cos x) (\sin 2 x), | x | \leq 2
-$$
+60. $f (x) = (\cos x) (\sin 2 x), | x | \leq 2$
 
 $$
 f (x) = e ^ {- x} \cos 2 x, | x | \leq 1
@@ -5188,7 +5260,7 @@ $$
 
 We can use Taylor series to solve problems that would otherwise be intractable. For example, many functions have antiderivatives that cannot be expressed using familiar functions. In this section we show how to evaluate integrals of such functions by giving them as Taylor series. We also show how to use Taylor series to evaluate limits that lead to indeterminate forms and how Taylor series can be used to extend the exponential function from real to complex numbers. We begin with a discussion of the binomial series, which comes from the Taylor series of the function $f ( x ) = ( 1 + x ) ^ { m }$ , and we conclude the section with Table 9.1, which lists some commonly used Taylor series. 
 
-## The Binomial Series for Powers and Roots
+### The Binomial Series for Powers and Roots
 
 The Taylor series generated by $f ( x ) = ( 1 + x ) ^ { m }$ , when m is constant, is 
 
@@ -5217,7 +5289,7 @@ Our derivation of the binomial series shows only that it is generated by $( 1 + 
 The Binomial Series
 For -1 < x < 1, $(1 + x)^{m} = 1 + \sum_{k=1}^{\infty}\binom{m}{k}x^{k},$ where we define $\binom{m}{1} = m, \quad \binom{m}{2} = \frac{m(m-1)}{2!},$ and $\binom{m}{k} = \frac{m(m-1)(m-2)\cdots(m-k+1)}{k!}$ for $k \geq 3$ . 
 
-## **EXAMPLE 1** $\mathrm { I f } m = - 1 $ then
+**EXAMPLE 1** $\mathrm { I f } m = - 1 $ then
 
 $$
 \binom {- 1} {1} = - 1, \binom {- 1} {2} = \frac {- 1 (- 2)}{2 !} = 1,
@@ -5247,7 +5319,7 @@ $$
 \begin{array}{c} \sqrt {1 - x ^ {2}} \approx 1 - \frac {x ^ {2}}{2} - \frac {x ^ {4}}{8} \quad \text { for } | x ^ {2} | \text { small } \\ \sqrt {1 - \frac {1}{x}} \approx 1 - \frac {1}{2 x} - \frac {1}{8 x ^ {2}} \quad \text { for } \left| \frac {1}{x} \right| \text { small,   that   is, } | x | \text { large. } \end{array}
 $$
 
-## Evaluating Nonelementary Integrals
+### Evaluating Nonelementary Integrals
 
 Sometimes we can use a familiar Taylor series to find the sum of a given power series in terms of a known function. For example, 
 
@@ -5307,7 +5379,7 @@ $$
 
 with an error of about $1 . 0 8 \times 1 0 ^ { - 9 } .$ . Guaranteeing this accuracy with the error formula for the Trapezoidal Rule would require using about 8000 subintervals. 
 
-## Arctangents
+### Arctangents
 
 In Section 9.7, Example 5, we found a series for arctan by differentiating to get x 
 
@@ -5383,7 +5455,7 @@ $$
 
 Now Equation (3) may be used with $x = 1 / 2$ to evaluate arctan $\left( 1 / 2 \right)$ and with $x = 1 / 3$ to give arctan $\left( 1 / 3 \right)$ . The sum of these results, multiplied by 4, gives π. 
 
-## Evaluating Indeterminate Forms
+### Evaluating Indeterminate Forms
 
 We can sometimes evaluate indeterminate forms by expressing the functions involved as Taylor series. 
 
@@ -5407,7 +5479,7 @@ $$
 
 Of course, this particular limit can be evaluated just as well using l’Hôpital’s Rule. 一
 
-## **EXAMPLE 6** Evaluate
+**EXAMPLE 6** Evaluate
 
 $$
 \lim _ {x \to 0} \frac {\sin x - \tan x}{x ^ {3}}.
@@ -5453,7 +5525,7 @@ $$
 \frac {1}{\sin x} - \frac {1}{x} \approx x \cdot \frac {1}{3 !} = \frac {x}{6} \quad \text { or } \quad \csc x \approx \frac {1}{x} + \frac {x}{6}.
 $$
 
-## Euler’s Identity
+### Euler’s Identity
 
 A complex number is a number of the form $a + b i ,$ , where a and b are real numbers and $i = \sqrt { - 1 }$ (see Chapter 18). If we substitute $x = i \theta$ (with θ real) in the Taylor series for $e ^ { x }$ and use the relations 
 
@@ -5519,15 +5591,15 @@ $$
 \arctan x = x - \frac {x ^ {3}}{3} + \frac {x ^ {5}}{5} - \dots + (- 1) ^ {n} \frac {x ^ {2 n + 1}}{2 n + 1} + \dots = \sum_ {n = 0} ^ {\infty} \frac {(- 1) ^ {n} x ^ {2 n + 1}}{2 n + 1}, \quad | x | \leq 1
 $$
 
-## EXERCISES 9.10
+### EXERCISES 9.10
 
-## Taylor Series
+#### Taylor Series
 
 Find the first four nonzero terms of the Taylor series for the functions in Exercises 1–10. 1. $( 1 + x ) ^ { 1 / 2 }$ 2. $( 1 + x ) ^ { 1 / 3 }$ 3. $\left( 1 - x \right) ^ { - 3 }$ 4. $( 1 - 2 x ) ^ { 1 / 2 }$ 5. $\left( 1 + { \frac { x } { 2 } } \right) ^ { - 2 }$ 6. $\left( 1 - { \frac { x } { 3 } } \right) ^ { 4 }$ 7. $\left( 1 + x ^ { 3 } \right) ^ { - 1 / 2 }$ 8. $( 1 + x ^ { 2 } ) ^ { - 1 / 3 }$ 9. $\left( 1 + { \frac { x ^ { 2 } } { 2 } } \right) ^ { 3 / 2 }$ 10. $\frac { x } { \sqrt [ 3 ] { 1 + x } }$ 
 
 Find the binomial series for the functions in Exercises 11–14. 11. $( 1 + x ) ^ { 4 }$ 12. $\left( 1 + x ^ { 2 } \right) ^ { 3 }$ 13. $( 1 - 2 x ) ^ { 3 }$ 14. $\left( 1 - { \frac { x } { 2 } } \right) ^ { 4 }$ 
 
-## Approximations and Nonelementary Integrals
+#### Approximations and Nonelementary Integrals
 
 In Exercises 15–18, use series to estimate the integrals’ values withT an error of magnitude less than $1 0 ^ { - 5 }$ . (The answer section gives the integrals’ values rounded to seven decimal places.) 15. $\int _ { 0 } ^ { 0 . 6 } \sin x ^ { 2 } d x$ 16. $\int _ { 0 } ^ { 0 . 4 } { \frac { e ^ { - x } - 1 } { x } } d x$ 17. $\int _ { 0 } ^ { 0 . 5 } { \frac { 1 } { \sqrt { 1 + x ^ { 4 } } } } d x$ 18. $\int _ { 0 } ^ { 0 . 3 5 } { \sqrt [ { 3 } ] { 1 + x ^ { 2 } } } d x$ 
 
@@ -5547,23 +5619,23 @@ In Exercises 25–28, find a polynomial that will approximate F x( ) throughout 
 
 28. $F ( x ) = \int _ { 0 } ^ { x } \frac { \ln ( 1 + t ) } { t } d t ,$ (a) [ 0, 0.5 ] (b) [ 0, 1] 
 
-## Indeterminate Forms
+#### Indeterminate Forms
 
 Use series to evaluate the limits in Exercises 29–40. 
 
 29. $\operatorname* { l i m } _ { x \to 0 } { \frac { e ^ { x } - ( 1 + x ) } { x ^ { 2 } } }$ 
 
-31. $\operatorname* { l i m } _ { t \to 0 } { \frac { 1 - \cos t - \left( t ^ { 2 } / 2 \right) } { t ^ { 4 } } }$ 
-
 30. $\operatorname* { l i m } _ { x \to 0 } { \frac { e ^ { x } - e ^ { - x } } { x } }$ 
 
-33. $\operatorname* { l i m } _ { y \to 0 } { \frac { y - \arctan y } { y ^ { 3 } } }$ 
+31. $\operatorname* { l i m } _ { t \to 0 } { \frac { 1 - \cos t - \left( t ^ { 2 } / 2 \right) } { t ^ { 4 } } }$ 
 
 32. $\operatorname* { l i m } _ { \theta \to 0 } { \frac { \sin \theta - \theta + ( \theta ^ { 3 } / 6 ) } { \theta ^ { 5 } } }$ 
 
-35. $\operatorname* { l i m } _ { x \to \infty } x ^ { 2 } { \left( e ^ { - 1 / x ^ { 2 } } - 1 \right) }$ 
+33. $\operatorname* { l i m } _ { y \to 0 } { \frac { y - \arctan y } { y ^ { 3 } } }$ 
 
 34. $\operatorname* { l i m } _ { y \to 0 } { \frac { \tan ^ { - 1 } y - \sin y } { y ^ { 3 } \cos y } }$ 
+
+35. $\operatorname* { l i m } _ { x \to \infty } x ^ { 2 } { \left( e ^ { - 1 / x ^ { 2 } } - 1 \right) }$ 
 
 36. $\operatorname* { l i m } _ { x \to \infty } \left( x + 1 \right) \sin \frac { 1 } { x + 1 }$ 
 
@@ -5575,7 +5647,7 @@ Use series to evaluate the limits in Exercises 29–40.
 
 40. $\operatorname* { l i m } _ { x \to 0 } { \frac { \ln ( 1 + x ^ { 3 } ) } { x \cdot \sin x ^ { 2 } } }$ 
 
-## Using Table 9.1
+#### Using Table 9.1
 
 In Exercises 41–52, use Table 9.1 to find the sum of each series. 
 
@@ -5603,7 +5675,7 @@ In Exercises 41–52, use Table 9.1 to find the sum of each series.
 
 52. $1 + { \frac { x } { 2 } } + { \frac { x ^ { 2 } } { 3 } } + { \frac { x ^ { 3 } } { 4 } } + { \frac { x ^ { 4 } } { 5 } } + \cdots$ 
 
-## Theory and Examples
+#### Theory and Examples
 
 53. Replace x by −x in the Taylor series for ln 1 to obtain a( ) + x series for ln 1 . Then subtract this from the Taylor series for( ) − x $\ln ( 1 + x )$ to show that for x < 1, 
 
@@ -5645,11 +5717,7 @@ c. From part (b), show that
 
 $$
 f (x) = (1 + x) ^ {m}.
-$$
-
-59. a. Use the binomial series and the fact that 
-
-$$
+59. $a. Use the binomial series and the fact that$
 \frac {d}{d x} \arcsin x = (1 - x ^ {2}) ^ {- 1 / 2}
 $$
 
@@ -5695,17 +5763,9 @@ b. From part (a) and the reduction integral Formula $^ { 6 7 }$ at the back of t
 
 $$
 K = \frac {\pi}{2} \left[ 1 + \left(\frac {1}{2}\right) ^ {2} k ^ {2} + \left(\frac {1 \cdot 3}{2 \cdot 4}\right) ^ {2} k ^ {4} + \left(\frac {1 \cdot 3 \cdot 5}{2 \cdot 4 \cdot 6}\right) ^ {2} k ^ {6} + \dots \right].
-$$
-
-65. Series for arcsin x Integrate the binomial series for $\left( 1 - x ^ { 2 } \right) ^ { - 1 / 2 }$ to show that for $| x | < 1$ 
-
-$$
+65. $Series for arcsin x Integrate the binomial series for $\left( 1 - x ^ { 2 } \right) ^ { - 1 / 2 }$ to show that for $| x | < 1$$
 \arcsin x = x + \sum_ {n = 1} ^ {\infty} \frac {1 \cdot 3 \cdot 5 \cdot \cdots \cdot (2 n - 1)}{2 \cdot 4 \cdot 6 \cdot \cdots \cdot (2 n)} \frac {x ^ {2 n + 1}}{2 n + 1}.
-$$
-
-66. Series for arctan forx $| x | > 1$ Derive the series 
-
-$$
+66. $Series for arctan forx $| x | > 1$ Derive the series$
 \arctan x = \frac {\pi}{2} - \frac {1}{x} + \frac {1}{3 x ^ {3}} - \frac {1}{5 x ^ {5}} + \dots , \quad x > 1
 $$
 
@@ -5727,11 +5787,7 @@ Euler’s Identity
 
 $$
 \mathbf {a}. e ^ {- i \pi} \qquad \mathbf {b}. e ^ {i \pi / 4} \qquad \mathbf {c}. e ^ {- i \pi / 2}
-$$
-
-68. Use Equation (4) to show that 
-
-$$
+68. $Use Equation (4) to show that$
 \cos \theta = \frac {e ^ {i \theta} + e ^ {- i \theta}}{2} \quad \text { and } \quad \sin \theta = \frac {e ^ {i \theta} - e ^ {- i \theta}}{2 i}.
 $$
 
@@ -5741,11 +5797,7 @@ $$
 
 $$
 \mathbf {a}. \cosh i \theta = \cos \theta , \quad \mathbf {b}. \sinh i \theta = i \sin \theta .
-$$
-
-71. By multiplying the Taylor series for $e ^ { x }$ and sin $x ,$ find the terms through $x ^ { 5 }$ of the Taylor series for $e ^ { x }$ sin . x  This series is the imaginary part of the series for 
-
-$$
+71. $By multiplying the Taylor series for $e ^ { x }$ and sin $x ,$ find the terms through $x ^ { 5 }$ of the Taylor series for $e ^ { x }$ sin . x  This series is the imaginary part of the series for$
 e ^ {x} \cdot e ^ {i x} = e ^ {(1 + i) x}.
 $$
 
@@ -5861,7 +5913,7 @@ e. Give examples.
 
 ## CHAPTER 9 Practice Exercises
 
-## Determining Convergence of Sequences
+### Determining Convergence of Sequences
 
 Which of the sequences whose nth terms appear in Exercises 1–18 converge, and which diverge? Find the limit of each convergent sequence. 
 
@@ -5901,7 +5953,7 @@ Which of the sequences whose nth terms appear in Exercises 1–18 converge, and 
 
 18. $a _ { n } = { \frac { ( - 4 ) ^ { n } } { n ! } }$ 
 
-## Convergent Series
+### Convergent Series
 
 Find the sums of the series in Exercises 19–24. 
 
@@ -5919,7 +5971,7 @@ $$
 
 24. $\sum _ { n = 1 } ^ { \infty } ( - 1 ) ^ { n } { \frac { 3 } { 4 ^ { n } } }$ 
 
-## Determining Convergence of Series
+### Determining Convergence of Series
 
 Which of the series in Exercises 25–44 converge absolutely, which converge conditionally, and which diverge? Give reasons for your answers. 
 
@@ -5967,7 +6019,7 @@ Which of the series in Exercises 25–44 converge absolutely, which converge con
 
 46. Prove that $\sum _ { n = 1 } ^ { \infty } { \frac { \ln n } { n ^ { p } } }$ converges if and only i $p > 1$ 
 
-## Power Series
+### Power Series
 
 In Exercises 47–56, (a) find the series’ radius and interval of convergence. Then identify the values of x for which the series converges (b) absolutely and (c) conditionally. 
 
@@ -5991,7 +6043,7 @@ In Exercises 47–56, (a) find the series’ radius and interval of convergence.
 
 56. $\sum _ { n = 1 } ^ { \infty } { \bigl ( } \operatorname { c o t h } n { \bigr ) } x ^ { n }$ 
 
-## Maclaurin Series
+### Maclaurin Series
 
 Each of the series in Exercises 57–62 is the value of the Taylor series at x = 0 of a function f ( ) at a particular point. What function andx what point? What is the sum of the series? 
 
@@ -6025,7 +6077,7 @@ Find Taylor series at $x = 0$ for the functions in Exercises 63–70.
 
 70. $e ^ { - x ^ { 2 } }$ 
 
-## Taylor Series
+### Taylor Series
 
 In Exercises 71–74, find the first four nonzero terms of the Taylor series generated by $f \operatorname { a t } x = a .$ 
 
@@ -6037,7 +6089,7 @@ In Exercises 71–74, find the first four nonzero terms of the Taylor series gen
 
 74. $f ( x ) = 1 / x \quad { \mathrm { a t } } \quad x = a > 0$ 
 
-## Nonelementary Integrals
+### Nonelementary Integrals
 
 Use series to approximate the values of the integrals in Exercises 75–78 with an error of magnitude less than $1 0 ^ { - 8 } .$ (The answer section gives the integrals’ values rounded to ten decimal places.) 
 
@@ -6181,12 +6233,12 @@ $$
 
 104. Consider the infinite sequence of shaded right triangles in the accompanying diagram. Compute the total area of the triangles. 
 
-![[a7b3708ce2b1a747d60f5449d7f8ca95bf70cab2dd4d7585ab26edea562e97f8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a7b3708ce2b1a747d60f5449d7f8ca95bf70cab2dd4d7585ab26edea562e97f8.jpg)
 
 
 ## CHAPTER 9 Additional and Advanced Exercises
 
-## Determining Convergence of Series
+### Determining Convergence of Series
 
 Which of the series $\textstyle \sum _ { n = 1 } ^ { \infty } a _ { n }$ defined by the formulas in Exercises 1–4 converge, and which diverge? Give reasons for your answers. 
 
@@ -6206,15 +6258,11 @@ $$
 
 Which of the series $\sum { \infty } a _ { n }$ defined by the formulas in Exercises 5–8 converge, and which diverge? Give reasons for your answers. 
 
-$$
-\mathbf {5 .} a _ {1} = 1, \quad a _ {n + 1} = \frac {n (n + 1)}{(n + 2) (n + 3)} a _ {n}
-$$
+5. $a _ {1} = 1, \quad a _ {n + 1} = \frac {n (n + 1)}{(n + 2) (n + 3)} a _ {n}$
 
 (Hint: Write out several terms, see which factors cancel, and then generalize.) 
 
-$$
-\mathbf {6 .} a _ {1} = a _ {2} = 7, \quad a _ {n + 1} = \frac {n}{(n - 1) (n + 1)} a _ {n} \quad \text { if } n \geq 2
-$$
+6. $a _ {1} = a _ {2} = 7, \quad a _ {n + 1} = \frac {n}{(n - 1) (n + 1)} a _ {n} \quad \text { if } n \geq 2$
 
 7. = = = a a a <sub>+</sub> 1, <sub>n</sub> <sub>1 2</sub> <sub>1</sub> + a 1 1 ≥ n if 2 
 
@@ -6240,9 +6288,11 @@ In Exercises 9–14, what Taylor series would you choose to represent the functi
 
 13. cos nearx $x = 6 9$ 
 
-## Theory and Examples
+### Theory and Examples
 
-15. Let a and b be constants with $0 < a < b .$ . Does the sequence $\left\{ ( a ^ { n } + b ^ { n } ) ^ { 1 / n } \right\}$ converge? If it does converge, what is the limit? 16. Find the sum of the infinite series 
+15. Let a and b be constants with $0 < a < b .$ . Does the sequence $\left\{ ( a ^ { n } + b ^ { n } ) ^ { 1 / n } \right\}$ converge? If it does converge, what is the limit?
+
+16. Find the sum of the infinite series
 
 $$
 \begin{array}{l} 1 + \frac {2}{1 0} + \frac {3}{1 0 ^ {2}} + \frac {7}{1 0 ^ {3}} + \frac {2}{1 0 ^ {4}} + \frac {3}{1 0 ^ {5}} + \frac {7}{1 0 ^ {6}} + \frac {2}{1 0 ^ {7}} \\ + \frac {3}{1 0 ^ {8}} + \frac {7}{1 0 ^ {9}} + \dots . \end{array}
@@ -6262,7 +6312,7 @@ $$
 
 converges absolutely. 
 
-![[f681366b583940f448d2ced2a909b3f40e6ee22698986133f3f2e75bd55c813c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f681366b583940f448d2ced2a909b3f40e6ee22698986133f3f2e75bd55c813c.jpg)
 
 
 19. a. Does the value of 
@@ -6375,7 +6425,7 @@ $$
 x = \sum_ {n = 1} ^ {\infty} \frac {n (n + 1)}{x ^ {n}}.
 $$
 
-## 33. Quality control
+### 33. Quality control
 
 a. Differentiate the series 
 
@@ -6399,7 +6449,7 @@ $$
 \mathbf {c}. p _ {k} = \frac {1}{k (k + 1)} = \frac {1}{k} - \frac {1}{k + 1}
 $$
 
-![[d6429d1a5cd4df9b808d2439991a0ffe53451adad7eaeb5078e04d9fd8fb69b0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d6429d1a5cd4df9b808d2439991a0ffe53451adad7eaeb5078e04d9fd8fb69b0.jpg)
 
 
 35. Safe and effective dosage The concentration in the bloodT resulting from a single dose of a drug normally decreases with time as the drug is eliminated from the body. Doses may therefore need to be repeated periodically to keep the concentration from dropping below some particular level. One model for the effect of repeated doses gives the residual concentration just before the $( n + 1$ st dose as) 
@@ -6410,7 +6460,7 @@ $$
 
 where $C _ { 0 } =$ the change in concentration achievable by a single dose $( \mathrm { m g / m L } ) , k =$ the elimination constant $( \mathbf { h } ^ { - 1 } )$ , and $t _ { 0 } =$ time between doses (h). See the accompanying figure. 
 
-![[2157f0484a036cb3d0fa91947be0796a6150f89f01d20ead0d061a3a05058f2f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2157f0484a036cb3d0fa91947be0796a6150f89f01d20ead0d061a3a05058f2f.jpg)
 
 
 a. Write $R _ { n }$ in closed from as a single fraction, and find 
@@ -6431,7 +6481,7 @@ $$
 R = C _ {L} \text { and } C _ {0} + R = C _ {H}.
 $$
 
-![[373e47f2994b08395076ffdcde0aa005a844692d670a833f2143e41c905b9902.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/373e47f2994b08395076ffdcde0aa005a844692d670a833f2143e41c905b9902.jpg)
 
 
 Thus ${ \cal C } _ { 0 } = { \cal C } _ { H } - { \cal C } _ { L }$ . When these values are substituted in the equation for R obtained in part (a) of Exercise 35, the resulting equation simplifies to 
@@ -6461,10 +6511,3 @@ Projects can be found within MyLab Math.
 The model predicts the height of a bouncing ball, and the time until it stops bouncing. 
 
 • Taylor Polynomial Approximations of a Function A graphical animation shows the convergence of the Taylor polynomials to functions having derivatives of all orders over an interval in their domains. 
-
-# 10 Parametric Equations and Polar Coordinates
-
-![[5fad0daf862709a202036d4738423cc47d60e5588b27c2cab4f046be7e4d14a5.jpg|image]]
-
-
-OVERVIEW In this chapter we study new ways to describe curves in the plane. Instead of considering a curve as the graph of a function or equation, we think of it as the path of a moving particle whose position is changing over time. Then each of the x- and y-coordinates of the particle’s position becomes a function of a third variable t. We can also change the way in which points in the plane themselves are described by using polar coordinates rather than the rectangular or Cartesian system. Both of these new tools are useful for describing motion, like that of planets and satellites, or projectiles moving in the plane or in space.

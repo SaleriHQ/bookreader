@@ -7,9 +7,18 @@ order: 14
 
 <!-- Extracted from Thomas-calculus Markdown source; chapters 1-17 only. -->
 
+![教材插图](/books/thomas-calculus/assets/8b1797366df7b9ab72ebe30a9f09e6ff8d3aaecc1fd1ccb746c7d92156a30088.jpg)
+
+
+OVERVIEW In this chapter we define the double integral of a function of two variables $f(x, y)$ over a region in the plane as the limit of approximating Riemann sums. Just as a single integral can represent signed area, so can a double integral represent signed volume. Double integrals can be evaluated using the Fundamental Theorem of Calculus studied in Section 5.4, but now the evaluations are done twice by integrating with respect to each of the variables x and y in turn. Double integrals can be used to find areas of more general regions in the plane than those encountered in Chapter 5. Moreover, just as the Substitution Rule could simplify finding single integrals, we can sometimes use polar coordinates to simplify computing a double integral. We study more general substitutions for evaluating double integrals as well. 
+
+We also define the triple integral of a function of three variables $f(x, y, z)$ over a region in space. Triple integrals can be used to find volumes of still more general regions in space, and their evaluation is like that of double integrals with yet a third evaluation. Cylindrical or spherical coordinates can sometimes be used to simplify the calculation of a triple integral, and we investigate those techniques. Double and triple integrals have a number of applications, such as calculating the average value of a multivariable function, and finding moments and centers of mass.
+
+
+
 ## 14.1 Double and Iterated Integrals over Rectangles
 
-![[b26e7549f577f834098e13a5d2a64c21ebdd1f1df28ed4d5c0f468823af56654.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b26e7549f577f834098e13a5d2a64c21ebdd1f1df28ed4d5c0f468823af56654.jpg)
 
 
 
@@ -18,7 +27,7 @@ FIGURE 14.1 Rectangular grid partitioning the region R into small rectangles of 
 
 In Chapter 5 we defined the definite integral of a function $f(x)$ over an interval $[a, b]$ as a limit of Riemann sums. In this section we extend this idea to define the double integral of a function of two variables $f(x, y)$ over a bounded rectangle $R$ in the plane. The Riemann sums for the integral of a single-variable function $f(x)$ are obtained by partitioning a finite interval into thin subintervals, multiplying the width of each subinterval by the value of $f$ at a point $c_k$ inside that subinterval, and then adding together all the products. A similar method of partitioning, multiplying, and summing is used to construct double integrals as limits of approximating Riemann sums. 
 
-## Double Integrals
+### Double Integrals
 
 We begin our investigation of double integrals by considering the simplest type of planar region, a rectangle. We consider a function $f(x, y)$ defined on a rectangular region R, 
 
@@ -32,7 +41,7 @@ We subdivide R into small rectangles using a network of lines parallel to the x-
 FIGURE 14.2 Approximating solids with rectangular boxes leads us to define the volumes of more general solids as double integrals. The volume of the solid shown here is the double integral of $f(x, y)$ over the base region R.
 
 
-![[06a6a4fb9429f0ac2bed053090146112f8f5b1bafd4c709331b11bb005cbe300.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/06a6a4fb9429f0ac2bed053090146112f8f5b1bafd4c709331b11bb005cbe300.jpg)
 
 
 To form a Riemann sum over R, we choose a point $(x_{k}, y_{k})$ in the kth small rectangle, multiply the value of f at that point by the area $\Delta A_{k}$ , and add together the products: 
@@ -67,7 +76,7 @@ $$
 
 It can be shown that if $f(x, y)$ is a continuous function throughout R, then f is integrable, as in the single-variable case discussed in Chapter 5. Many discontinuous functions are also integrable, including functions that are discontinuous only on a finite number of points or smooth curves. We leave the proof of these facts to a more advanced text. 
 
-## Double Integrals as Volumes
+### Double Integrals as Volumes
 
 When $f(x, y)$ is a positive function over a rectangular region R in the xy-plane, we may interpret the double integral of f over R as the volume of the three-dimensional solid region over the xy-plane bounded below by R and above by the surface $z = f(x, y)$ (Figure 14.2). Each term $f(x_k, y_k) \Delta A_k$ in the sum $S_n = \sum f(x_k, y_k) \Delta A_k$ is the volume of a vertical rectangular box that approximates the volume of the portion of the solid that stands directly above the base $\Delta A_k$ . The sum $S_n$ thus approximates what we want to call the total volume of the solid. We define this volume to be 
 
@@ -77,7 +86,7 @@ $$
 
 where $\Delta A_{k} \rightarrow 0$ as $n \rightarrow \infty$ . 
 
-![[57fbf007574dc656659cc5e0f3777a5e2c67645e89478c83a373020f258f892c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/57fbf007574dc656659cc5e0f3777a5e2c67645e89478c83a373020f258f892c.jpg)
 
 
 
@@ -86,21 +95,21 @@ FIGURE 14.4 To obtain the cross-sectional area $A(x)$ , we hold $x$ fixed and in
 
 As you might expect, this more general method of calculating volume agrees with the methods in Chapter 6, but we do not prove this here. Figure 14.3 shows Riemann sum approximations to the volume becoming more accurate as the number n of boxes increases. 
 
-![[c14fd2661ae280dede8484707319b8ef9661a53c80c619f12d82a6dbf00f45dd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c14fd2661ae280dede8484707319b8ef9661a53c80c619f12d82a6dbf00f45dd.jpg)
 
 
 
 (a) n = 16
 
 
-![[89b150efeab6a6fb1ae9bf5e906f28ba15ca5143c00aab921432662c90c8b675.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/89b150efeab6a6fb1ae9bf5e906f28ba15ca5143c00aab921432662c90c8b675.jpg)
 
 
 
 (b) n = 64
 
 
-![[7a97cd599aa1410bf9709a11c8d2874944d714ebef8f673ef57f670e1523ae6f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7a97cd599aa1410bf9709a11c8d2874944d714ebef8f673ef57f670e1523ae6f.jpg)
 
 
 
@@ -111,7 +120,7 @@ As you might expect, this more general method of calculating volume agrees with 
 FIGURE 14.3 As n increases, the Riemann sum approximations approach the total volume of the solid shown in Figure 14.2.
 
 
-## Fubini's Theorem for Calculating Double Integrals
+### Fubini's Theorem for Calculating Double Integrals
 
 Suppose that we wish to calculate the volume under the plane z = 4 - x - y over the rectangular region R: $0 \leq x \leq 2$ , $0 \leq y \leq 1$ in the xy-plane. If we apply the method of slicing from Section 6.1, with slices perpendicular to the x-axis (Figure 14.4), then the volume is 
 
@@ -139,14 +148,14 @@ $$
 
 The expression on the right, called an iterated or repeated integral, says that the volume is obtained by integrating 4 - x - y with respect to y from y = 0 to y = 1 while holding x fixed, and then integrating the resulting expression in x from x = 0 to x = 2. The limits of integration 0 and 1 are associated with y, so they are placed on the integral closest to dy. The other limits of integration, 0 and 2, are associated with the variable x, so they are placed on the outside integral symbol that is paired with dx. 
 
-![[af5f5a49140a8635b93c00109a3d5f6456bc98ab9c91ddaa244538f0457f87a0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/af5f5a49140a8635b93c00109a3d5f6456bc98ab9c91ddaa244538f0457f87a0.jpg)
 
 
 
 FIGURE 14.5 To obtain the cross-sectional area $A(y)$ , we hold y fixed and integrate with respect to x.
 
 
-## HISTORICAL BIOGRAPHY Guido Fubini
+**HISTORICAL BIOGRAPHY Guido Fubini**
 
 (1879–1943) 
 
@@ -184,7 +193,7 @@ $$
 
 over the rectangle $R: 0 \leq x \leq 2, 0 \leq y \leq 1$ ? The answer is that both iterated integrals give the value of the double integral. This is what we would reasonably expect, since the double integral measures the volume of the same region as the two iterated integrals. A theorem published in 1907 by Guido Fubini says that the double integral of any continuous function over a rectangle can be calculated as an iterated integral in either order of integration. (Fubini proved his theorem in greater generality, but this is what it says in our setting.) 
 
-## THEOREM 1 – Fubini's Theorem (First Form)
+**THEOREM 1 – Fubini's Theorem (First Form)**
 
 If $f(x, y)$ is continuous throughout the rectangular region $R: a \leq x \leq b$ , $c \leq y \leq d$ , then 
 
@@ -202,7 +211,7 @@ $$
 f (x, y) = 1 0 0 - 6 x ^ {2} y \quad \text { and } \quad R: 0 \leq x \leq 2, - 1 \leq y \leq 1.
 $$
 
-![[d51139d8ddfc25e2cd3a059dc58d7c6f34af5725ef7b899629a52664bb9aaba9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d51139d8ddfc25e2cd3a059dc58d7c6f34af5725ef7b899629a52664bb9aaba9.jpg)
 
 
 $$
@@ -219,7 +228,7 @@ $$
 \begin{array}{r l} \int_ {0} ^ {2} \int_ {- 1} ^ {1} (1 0 0 - 6 x ^ {2} y) d y d x & = \int_ {0} ^ {2} \left[ 1 0 0 y - 3 x ^ {2} y ^ {2} \right] _ {y = - 1} ^ {y = 1} d x \\ & = \int_ {0} ^ {2} [ (1 0 0 - 3 x ^ {2}) - (- 1 0 0 - 3 x ^ {2}) ] d x \\ & = \int_ {0} ^ {2} 2 0 0 d x = 4 0 0. \end{array}
 $$
 
-![[bbae5a97c55cfc04c98cf20a536b6809e7c70ce7fb4542481c49dd0c25cbd2df.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bbae5a97c55cfc04c98cf20a536b6809e7c70ce7fb4542481c49dd0c25cbd2df.jpg)
 
 
 **EXAMPLE 2** Find the volume of the region bounded above by the elliptical paraboloid $z = 10 + x^{2} + 3y^{2}$ and below by the rectangle $R: 0 \leq x \leq 1, 0 \leq y \leq 2$ . 
@@ -232,9 +241,9 @@ $$
 \begin{array}{l} V = \iint_ {R} (1 0 + x ^ {2} + 3 y ^ {2}) d A = \int_ {0} ^ {1} \int_ {0} ^ {2} (1 0 + x ^ {2} + 3 y ^ {2}) d y d x \\ = \int_ {0} ^ {1} \left[ 1 0 y + x ^ {2} y + y ^ {3} \right] _ {y = 0} ^ {y = 2} d x \\ = \int_ {0} ^ {1} (2 8 + 2 x ^ {2}) d x = \left[ 2 8 x + \frac {2}{3} x ^ {3} \right] _ {0} ^ {1} = \frac {8 6}{3}. \end{array}
 $$
 
-## EXERCISES 14.1
+### EXERCISES 14.1
 
-## Evaluating Iterated Integrals
+#### Evaluating Iterated Integrals
 
 In Exercises 1–14, evaluate the iterated integral. 
 
@@ -244,21 +253,9 @@ In Exercises 1–14, evaluate the iterated integral.
 
 3. $\int_{-1}^{0}\int_{-1}^{1}(x + y + 1)dx dy$ 
 
-13. $\int_{1}^{4}\int_{1}^{e}\frac{\ln x}{xy} dx dy$ 14. $\int_{-1}^{2}\int_{1}^{2}x\ln ydy dx$ 
-
-15. Find all values of the constant $c$ so that $\int_0^1\int_0^c (2x + y)dx dy = 3$ . 
-
 4. $\int_0^1\int_0^1\left(1 - \frac{x^2 + y^2}{2}\right)dx dy$ 
 
-9. $\int_0^{\ln 2}\int_1^{\ln 5}e^{2x + y}dydx$ 
-
-16. Find all values of the constant $c$ so that 
-
 5. $\int_0^3\int_0^2 (4 - y^2)dydx$ 
-
-11. $\int_{-1}^{2}\int_{0}^{\pi /2}y\sin x  dx  dy$ 
-
-7. $\int_0^1\int_0^1\frac{y}{1 + xy} dx dy$ 
 
 6. $\int_0^3\int_{-2}^0 (x^2 y - 2xy)dydx$ 
 
@@ -266,11 +263,25 @@ $$
 \int_ {- 1} ^ {c} \int_ {0} ^ {2} (x y + 1) d y d x = 4 + 4 c.
 $$
 
+7. $\int_0^1\int_0^1\frac{y}{1 + xy} dx dy$ 
+
 8. $\int_1^4\int_0^4\left(\frac{x}{2} +\sqrt{y}\right)dx dy$ 
+
+9. $\int_0^{\ln 2}\int_1^{\ln 5}e^{2x + y}dydx$ 
 
 10. $\int_0^1\int_1^2 xye^xdydx$ 
 
+11. $\int_{-1}^{2}\int_{0}^{\pi /2}y\sin x  dx  dy$ 
+
 12. $\int_{\pi}^{2\pi}\int_{0}^{\pi}(\sin x + \cos y)dx dy$ 
+
+13. $\int_{1}^{4}\int_{1}^{e}\frac{\ln x}{xy} dx dy$
+
+14. $\int_{-1}^{2}\int_{1}^{2}x\ln ydy dx$
+
+15. Find all values of the constant $c$ so that $\int_0^1\int_0^c (2x + y)dx dy = 3$ . 
+
+16. Find all values of the constant $c$ so that 
 
 Evaluating Double Integrals over Rectangles 
 
@@ -280,9 +291,7 @@ In Exercises 17–24, evaluate the double integral over the given region R.
 
 18. $\iint_{R}\left(\frac{\sqrt{x}}{y^2}\right)dA,$ $R:0\leq x\leq 4,1\leq y\leq 2$ 
 
-$$
-\iint_ {R} x y \cos y d A, \quad R: - 1 \leq x \leq 1, 0 \leq y \leq \pi
-$$
+19. $\iint_ {R} x y \cos y d A, \quad R: - 1 \leq x \leq 1, 0 \leq y \leq \pi$
 
 20. $\iint_{R} y \sin(x + y) dA, \quad R: -\pi \leq x \leq 0, \quad 0 \leq y \leq \pi$ 
 
@@ -302,7 +311,9 @@ In Exercises 25 and 26, integrate f over the given region.
 
 In Exercises 27 and 28, sketch the solid whose volume is given by the specified integral. 
 
-27. $\int_0^1\int_0^2 (9 - x^2 -y^2)dydx$ 28. $\int_0^3\int_1^4 (7 - x - y)dx dy$ 
+27. $\int_0^1\int_0^2 (9 - x^2 -y^2)dydx$
+
+28. $\int_0^3\int_1^4 (7 - x - y)dx dy$
 
 29. Find the volume of the region bounded above by the paraboloid $z = x^2 + y^2$ and below by the square $R$ : $-1 \leq x \leq 1$ , $-1 \leq y \leq 1$ . 
 
@@ -324,11 +335,7 @@ In Exercises 27 and 28, sketch the solid whose volume is given by the specified 
 
 $$
 \int_ {0} ^ {2} \int_ {0} ^ {1} \frac {x}{1 + x y} d x d y.
-$$
-
-38. Use Fubini's Theorem to evaluate 
-
-$$
+38. $Use Fubini's Theorem to evaluate$
 \int_ {0} ^ {1} \int_ {0} ^ {3} x e ^ {x y} d x d y.
 $$
 
@@ -358,11 +365,11 @@ FIGURE 14.8 A rectangular grid partitioning a bounded, nonrectangular region int
 
 In this section we define and evaluate double integrals over bounded regions in the plane that are more general than rectangles. These double integrals are also evaluated as iterated integrals, with the main practical problem being that of determining the limits of integration. Since the region of integration may have boundaries other than line segments parallel to the coordinate axes, the limits of integration often involve variables, not just constants. 
 
-## Double Integrals over Bounded, Nonrectangular Regions
+### Double Integrals over Bounded, Nonrectangular Regions
 
 To define the double integral of a function $f(x, y)$ over a bounded, nonrectangular region R, such as the one in Figure 14.8, we again begin by covering R with a grid of small rectangular cells whose union contains all points of R. This time, however, we cannot exactly fill R with a finite number of rectangles lying inside R since its boundary is curved, and some of the small rectangles in the grid lie partly outside R. A partition of R is formed by taking the rectangles that lie completely inside it, not using any that are either partly or completely outside. For commonly arising regions, more and more of R is included as the norm of a partition (the largest width or height of any rectangle used) approaches zero. 
 
-![[a56dd01b47517e878bf26c093852887d560fdea84b5a33bc43b5ebb265a8c604.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a56dd01b47517e878bf26c093852887d560fdea84b5a33bc43b5ebb265a8c604.jpg)
 
 
 
@@ -373,7 +380,7 @@ Volume = $\lim \sum f(x_{k}, y_{k}) \Delta A_{k} = \iint_{R} f(x, y) \, dA$
 FIGURE 14.9 We define the volume of a solid with a curved base as a limit of the sums of volumes of approximating rectangular boxes.
 
 
-![[c2b2c3571fa16d97ebe77bd13e6346a09f66ed3dcbfb1cb8ed53f8cda0610535.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c2b2c3571fa16d97ebe77bd13e6346a09f66ed3dcbfb1cb8ed53f8cda0610535.jpg)
 
 
 
@@ -398,7 +405,7 @@ $$
 
 The nature of the boundary of R introduces issues not found in integrals over an interval. When R has a curved boundary, the n rectangles of a partition lie inside R but do not cover all of R. In order for a partition to approximate R well, the parts of R covered by small rectangles lying partly outside R must become negligible as the norm of the partition approaches zero. This property of being nearly filled in by a partition of small norm is satisfied by all the regions that we will encounter. There is no problem with boundaries made from polygons, circles, and ellipses or from continuous graphs over an interval, joined end to end. A curve with a “fractal” type of shape would be problematic, but such curves arise rarely in most applications. A careful discussion of which types of regions R can be used for computing double integrals is left to a more advanced text. 
 
-## Volumes
+### Volumes
 
 If $f(x,y)$ is positive and continuous over R, we define the volume of the solid region between R and the surface $z = f(x,y)$ to be $\iint_{R} f(x,y) \, dA$ , as before (Figure 14.9). 
 
@@ -422,7 +429,7 @@ $$
 
 That the iterated integrals in Equations (1) and (2) both give the volume that we defined to be the double integral of $f$ over $R$ is a consequence of the following stronger form of Fubini's Theorem. 
 
-![[ff89f0878b36b9b779fee5085e81bc86b8674458d6588045c90a46e606a18b1d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ff89f0878b36b9b779fee5085e81bc86b8674458d6588045c90a46e606a18b1d.jpg)
 
 
 
@@ -435,7 +442,7 @@ $$
 
 For a given solid, Theorem 2 says we can calculate the volume as in Figure 14.10 or in the way shown here. Both calculations have the same result. 
 
-## THEOREM 2—Fubini's Theorem (Stronger Form)
+**THEOREM 2—Fubini's Theorem (Stronger Form)**
 
 Let $f(x, y)$ be continuous on a region R. 
 
@@ -485,21 +492,21 @@ The two integrals are equal, as they should be.
 
 Although Fubini's Theorem assures us that a double integral may be calculated as an iterated integral in either order of integration, the value of one integral may be easier to find than the value of the other. The next example shows how this can happen. 
 
-![[9daa002dfc13ddbf2fa810b80e48af53be709b6b34c77e4f8533237ca74dea34.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9daa002dfc13ddbf2fa810b80e48af53be709b6b34c77e4f8533237ca74dea34.jpg)
 
 
 
 (a)
 
 
-![[8601b3487848b634d90719df41477cccd8f44b0667174991a0f7660287104d3a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8601b3487848b634d90719df41477cccd8f44b0667174991a0f7660287104d3a.jpg)
 
 
 
 (b)
 
 
-![[9fe499be65efc41868f90506af46eafd212acc12f92aaf2f18b438eccb2a320e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9fe499be65efc41868f90506af46eafd212acc12f92aaf2f18b438eccb2a320e.jpg)
 
 
 
@@ -522,10 +529,10 @@ $$
 
 If we integrate first with respect to x, we integrate along a horizontal line through R and then integrate from bottom to top to include all the horizontal lines in R. 
 
-![[3554d6b0abeb752898c2296378dc543d553d32fdad61ba3d7ab463b9c26835a6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3554d6b0abeb752898c2296378dc543d553d32fdad61ba3d7ab463b9c26835a6.jpg)
 
 
-## **EXAMPLE 2** Calculate
+**EXAMPLE 2** Calculate
 
 
 FIGURE 14.13 The region of integration in Example 2.
@@ -543,21 +550,21 @@ $$
 \int_ {0} ^ {1} \left(\int_ {0} ^ {x} \frac {\sin x}{x} d y\right) d x = \int_ {0} ^ {1} \left[ y \frac {\sin x}{x} \right] _ {y = 0} ^ {y = x} d x = \int_ {0} ^ {1} \sin x d x = - \cos (1) + 1 \approx 0. 4 6.
 $$
 
-![[02c5f5bedd6a77521000a3ea55464de62099a7c10e3bd1a4919127e4274a35cc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/02c5f5bedd6a77521000a3ea55464de62099a7c10e3bd1a4919127e4274a35cc.jpg)
 
 
 
 (a)
 
 
-![[0e1beb1a58eff674e00fd7276babfb80a9332b1438a3194cf3ca8e5ad5d57978.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0e1beb1a58eff674e00fd7276babfb80a9332b1438a3194cf3ca8e5ad5d57978.jpg)
 
 
 
 (b)
 
 
-![[86128b2ff1d06e58b5e196f8341f64fddb4d672f713d9d9f09d66d265582044c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/86128b2ff1d06e58b5e196f8341f64fddb4d672f713d9d9f09d66d265582044c.jpg)
 
 
 
@@ -568,7 +575,7 @@ $$
 FIGURE 14.14 Finding the limits of integration when integrating first with respect to y and then with respect to x.
 
 
-![[f1fa1bded7f619a27503401d8184b8be421010a165a9fff7cfe38fb274994a0d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f1fa1bded7f619a27503401d8184b8be421010a165a9fff7cfe38fb274994a0d.jpg)
 
 
 FIGURE 14.15 Finding the limits of integration when integrating first with respect to x and then with respect to y. 
@@ -583,7 +590,7 @@ we run into a problem because $\int ((\sin x) / x) dx$ cannot be expressed in te
 
 There is no general rule for predicting which order of integration will be the good one in circumstances like these. If the order you first choose doesn't work, try the other. Sometimes neither order will work, and then we may need to use numerical approximations. 
 
-## Finding Limits of Integration
+### Finding Limits of Integration
 
 We now give a procedure for finding limits of integration that applies for many regions in the plane. Regions that are more complicated, and for which this procedure fails, can often be split up into pieces on which the procedure works. 
 
@@ -623,24 +630,24 @@ $$
 
 The common value of these integrals is 8. 
 
-![[827898174013c5a89c18a6f82dfdfd83915145163cb47485a80133b78d365083.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/827898174013c5a89c18a6f82dfdfd83915145163cb47485a80133b78d365083.jpg)
 
 
-![[a5e81a9354c66335bfdf292964371929c566b42bf95065dba7519b291d10f4e9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a5e81a9354c66335bfdf292964371929c566b42bf95065dba7519b291d10f4e9.jpg)
 
 
 
 FIGURE 14.16 Region of integration for Example 3.
 
 
-![[f9b54fee4dde7433c7193df3f08b2a882b168ed8f10effb708131251108ad00e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f9b54fee4dde7433c7193df3f08b2a882b168ed8f10effb708131251108ad00e.jpg)
 
 
 
 FIGURE 14.17 The Additivity Property for rectangular regions holds for regions bounded by smooth curves.
 
 
-## Properties of Double Integrals
+### Properties of Double Integrals
 
 Like single integrals, double integrals of continuous functions have algebraic properties that are useful in computations and applications. 
 
@@ -692,14 +699,14 @@ The other properties are also easy to verify for Riemann sums, and carry over to
 
 **Solution** Figure 14.18a shows the surface and the “wedgelike” solid whose volume we want to calculate. Figure 14.18b shows the region of integration in the xy-plane. If we integrate in the order dy dx (first with respect to y and then with respect to x), two integrations will be required because y varies from y = 0 to $y = 2\sqrt{x}$ for $0 \leq x \leq 0.5$ , and then varies from y = 4x - 2 to $y = 2\sqrt{x}$ for $0.5 \leq x \leq 1$ . So we choose to integrate in the order dx dy, which requires only one double integral whose limits of integration are indicated in Figure 14.18b. The volume is then calculated as the iterated integral: 
 
-![[581ac691b8e0615410d4924ac6ccf79667eac945083ed797b89b4e1ff70c65ba.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/581ac691b8e0615410d4924ac6ccf79667eac945083ed797b89b4e1ff70c65ba.jpg)
 
 
 
 (a)
 
 
-![[af2e0bd52476a062cec6c1e2bda24b2df85f75dee6f2639c0a75e373d03e108b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/af2e0bd52476a062cec6c1e2bda24b2df85f75dee6f2639c0a75e373d03e108b.jpg)
 
 
 
@@ -716,9 +723,9 @@ $$
 
 Our development of the double integral has focused on its representation of the volume of the solid region between R and the surface $z = f(x, y)$ of a positive continuous function. Just as we saw with signed area in the case of single integrals, when $f(x_k, y_k)$ is negative, the product $f(x_k, y_k) \Delta A_k$ is the negative of the volume of the rectangular box shown in Figure 14.9 that was used to form the approximating Riemann sum. So for an arbitrary continuous function f defined over R, the limit of any Riemann sum represents the signed volume (not the total volume) of the solid region between R and the surface. The double integral has other interpretations as well, and in the next section we will see how it is used to calculate the area of a general region in the plane. 
 
-## EXERCISES 14.2
+### EXERCISES 14.2
 
-## Sketching Regions of Integration
+#### Sketching Regions of Integration
 
 In Exercises 1–8, sketch the regions of integration associated with the given double integrals. 
 
@@ -738,7 +745,7 @@ In Exercises 1–8, sketch the regions of integration associated with the given 
 
 8. $\int_0^8\int_{y / 4}^{y^{1 / 3}}f(x,y)dx dy$ 
 
-## Finding Limits of Integration
+#### Finding Limits of Integration
 
 In Exercises 9–18, write an iterated integral for $\iint_{R} dA$ over the described region R using (a) vertical cross-sections, (b) horizontal cross-sections. 
 
@@ -746,7 +753,7 @@ In Exercises 9–18, write an iterated integral for $\iint_{R} dA$ over the desc
 9.
 
 
-![[b204ec7a139dd304bf5501979ade8c4b0662b19cc9d9cfb51d19fb810b6b94ee.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b204ec7a139dd304bf5501979ade8c4b0662b19cc9d9cfb51d19fb810b6b94ee.jpg)
 
 
 
@@ -755,48 +762,32 @@ In Exercises 9–18, write an iterated integral for $\iint_{R} dA$ over the desc
 
 11. 
 
-![[74cb7e4a74442541b39e232ced5df6683b2faf7febf9f8412f315fe55434277c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/74cb7e4a74442541b39e232ced5df6683b2faf7febf9f8412f315fe55434277c.jpg)
 
 
 
 12.
 
 
-![[90b45faaf20983d567a1851df3f3e4522e7cb2b1382dff2167cc6eceb4bc2934.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/90b45faaf20983d567a1851df3f3e4522e7cb2b1382dff2167cc6eceb4bc2934.jpg)
 
 
-![[ff3e609d46064f5c7cd18f82d08c8c91a62e1bb974f4cae5398ddd4e5860d372.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ff3e609d46064f5c7cd18f82d08c8c91a62e1bb974f4cae5398ddd4e5860d372.jpg)
 
 
 13. Bounded by $y = \sqrt{x}$ , $y = 0$ , and $x = 9$ 
 
 14. Bounded by $y = \tan x$ , x = 0, and y = 1 
 
-45. $\int_0^1\int_1^{e^x}dy dx$ 
-
-46. $\int_0^{\ln 2}\int_{ey}^2 dx dy$ 
-
 15. Bounded by $y = e^{-x}$ , $y = 1$ , and $x = \ln 3$ 
-
-47. $\int_0^{3 / 2}\int_0^{9 - 4x^2}16xdydx$ 
 
 16. Bounded by $y = 0$ , $x = 0$ , $y = 1$ , and $y = \ln x$ 
 
-48. $\int_0^2\int_0^{4 - y^2}ydxdy$ 
-
 17. Bounded by $y = 3 - 2x$ , $y = x$ , and $x = 0$ 
-
-49. $\int_0^1\int_{-\sqrt{1 - y^2}}^{\sqrt{1 - y^2}}3ydx dy$ 
-
-50. $\int_0^2\int_{-\sqrt{4 - x^2}}^{\sqrt{4 - x^2}}6xdydx$ 
 
 18. Bounded by $y = x^{2}$ and $y = x + 2$ 
 
-## Evaluating Iterated Integrals
-
-51. $\int_{1}^{e}\int_{0}^{\ln x}xydydx$ 
-
-52. $\int_0^{\pi /6}\int_{\sin x}^{1 / 2}xy^2 dy dx$ 
+#### Evaluating Iterated Integrals
 
 In Exercises 19–26, evaluate the integral. 
 
@@ -804,37 +795,21 @@ In Exercises 19–26, evaluate the integral.
 
 20. $\int_1^3\int_y^{2y}ydx dy$ 
 
-53. $\int_0^3\int_1^{ey}(x + y)dx dy$ 
-
-54. $\int_0^{\sqrt{3}}\int_0^{\tan^{-1}y}\sqrt{xy} dx dy$ 
-
 21. $\int_0^1\int_y^1 (\sqrt{x} +xy)dx dy$ 
 
 22. $\int_0^2\int_0^{x^3}(y^2 -x)dydx$ 
-
-In Exercises 55–64, sketch the region of integration, reverse the order of integration, and evaluate the integral. 
 
 23. $\int_0^{\sqrt{\pi}}\int_0^{x^2}x\sin ydydx$ 
 
 24. $\int_0^1\int_0^{\arctan y}\frac{1}{1 + y^2} dx dy$ 
 
-55. $\int_0^\pi \int_x^\pi \frac{\sin y}{y} dy dx$ 
-
-56. $\int_0^2\int_x^2 2y^2\sin xydydx$ 
-
 25. $\int_{1}^{4}\int_{y}^{y^{2}}\sqrt{\frac{y}{x}} dx dy$ 
 
 26. $\int_{3}^{5}\int_{1}^{e^{x}}\frac{1}{xy} dy dx$ 
 
-57. $\int_0^1\int_y^1 x^2 e^{xy}dx dy$ 
-
-58. $\int_0^2\int_0^{4 - x^2}\frac{xe^{2y}}{4 - y} dy dx$ 
-
 Finding Regions of Integration and Double Integrals 
 
 In Exercises 27–32, sketch the region of integration and evaluate the integral. 
-
-59. $\int_0^{2\sqrt{\ln 3}}\int_{y / 2}^{\sqrt{\ln 3}}e^{x^2}dx dy$ 
 
 27. $\int_0^\pi \int_0^x x\sin ydydx$ 
 
@@ -842,15 +817,11 @@ In Exercises 27–32, sketch the region of integration and evaluate the integral
 
 29. $\int_{1}^{\ln 8}\int_{1}^{\ln y}e^{x + y}dx dy$ 
 
-60. $\int_0^3\int_{\sqrt{x / 3}}^1 e^{y^3}dydx$ 
-
 30. $\int_1^2\int_y^{y^2}dx dy$ 
 
 31. $\int_0^1\int_0^{y^2}3y^3 e^{xy}dx dy$ 
 
 32. $\int_{1}^{4}\int_{0}^{\sqrt{x}}\frac{3}{2} e^{y / \sqrt{x}}dydx$ 
-
-61. $\int_0^{1 / 16}\int_{y^{1 / 4}}^{1 / 2}\cos (16\pi x^5)dxdy$ 
 
 In Exercises 33–36, integrate f over the given region. 
 
@@ -859,8 +830,6 @@ In Exercises 33–36, integrate f over the given region.
 34. Triangle $f(x,y) = x^{2} + y^{2}$ over the triangular region with vertices $(0,0),(1,0)$ , and $(0,1)$ 
 
 35. Triangle $f(u,v)=v-\sqrt{u}$ over the triangular region cut from the first quadrant of the uv-plane by the line $u+v=1$ 
-
-62. $\int_0^8\int_{\sqrt[3]{x}}^2\frac{dydx}{y^4 + 1}$ 
 
 36. Curved region $f(s, t) = e^{s} \ln t$ over the region in the first quadrant of the st-plane that lies above the curve $s = \ln t$ from t = 1 to t = 2 
 
@@ -874,17 +843,55 @@ Each of Exercises 37–40 gives an integral over a region in a Cartesian coordin
 
 40. $\int_0^{3/2}\int_1^{4 - 2u}\frac{4 - 2u}{v^2} dvdu$ (the uv-plane) 
 
-42. $\int_0^2\int_{y - 2}^0 dxdy$ 
-
-41. $\int_0^1\int_2^{4 - 2x}dydx$ 
-
 Reversing the Order of Integration 
 
 In Exercises 41–54, sketch the region of integration, and write an equivalent double integral with the order of integration reversed. 
 
-44. $\int_0^1\int_{1 - x}^{1 - x^2}dydx$ 
+41. $\int_0^1\int_2^{4 - 2x}dydx$ 
+
+42. $\int_0^2\int_{y - 2}^0 dxdy$ 
 
 43. $\int_0^1\int_y^{\sqrt{y}}dx dy$ 
+
+44. $\int_0^1\int_{1 - x}^{1 - x^2}dydx$ 
+
+45. $\int_0^1\int_1^{e^x}dy dx$ 
+
+46. $\int_0^{\ln 2}\int_{ey}^2 dx dy$ 
+
+47. $\int_0^{3 / 2}\int_0^{9 - 4x^2}16xdydx$ 
+
+48. $\int_0^2\int_0^{4 - y^2}ydxdy$ 
+
+49. $\int_0^1\int_{-\sqrt{1 - y^2}}^{\sqrt{1 - y^2}}3ydx dy$ 
+
+50. $\int_0^2\int_{-\sqrt{4 - x^2}}^{\sqrt{4 - x^2}}6xdydx$ 
+
+51. $\int_{1}^{e}\int_{0}^{\ln x}xydydx$ 
+
+52. $\int_0^{\pi /6}\int_{\sin x}^{1 / 2}xy^2 dy dx$ 
+
+53. $\int_0^3\int_1^{ey}(x + y)dx dy$ 
+
+54. $\int_0^{\sqrt{3}}\int_0^{\tan^{-1}y}\sqrt{xy} dx dy$ 
+
+In Exercises 55–64, sketch the region of integration, reverse the order of integration, and evaluate the integral. 
+
+55. $\int_0^\pi \int_x^\pi \frac{\sin y}{y} dy dx$ 
+
+56. $\int_0^2\int_x^2 2y^2\sin xydydx$ 
+
+57. $\int_0^1\int_y^1 x^2 e^{xy}dx dy$ 
+
+58. $\int_0^2\int_0^{4 - x^2}\frac{xe^{2y}}{4 - y} dy dx$ 
+
+59. $\int_0^{2\sqrt{\ln 3}}\int_{y / 2}^{\sqrt{\ln 3}}e^{x^2}dx dy$ 
+
+60. $\int_0^3\int_{\sqrt{x / 3}}^1 e^{y^3}dydx$ 
+
+61. $\int_0^{1 / 16}\int_{y^{1 / 4}}^{1 / 2}\cos (16\pi x^5)dxdy$ 
+
+62. $\int_0^8\int_{\sqrt[3]{x}}^2\frac{dydx}{y^4 + 1}$ 
 
 63. Square region $\iint_{R}(y - 2x^{2})dA$ where $R$ is the region bounded by the square $|x| + |y| = 1$ 
 
@@ -988,11 +995,7 @@ Give reasons for your answer.
 
 $$
 \begin{array}{c}\int_ {- \infty} ^ {\infty} \int_ {- \infty} ^ {\infty} e ^ {- x ^ {2} - y ^ {2}} d x d y = \lim _ {b \rightarrow \infty} \int_ {- b} ^ {b} \int_ {- b} ^ {b} e ^ {- x ^ {2} - y ^ {2}} d x d y\\= 4 \left(\int_ {0} ^ {\infty} e ^ {- x ^ {2}} d x\right) ^ {2}.\end{array}
-$$
-
-92. Improper double integral Evaluate the improper integral 
-
-$$
+92. $Improper double integral Evaluate the improper integral$
 \int_ {0} ^ {1} \int_ {0} ^ {3} \frac {x ^ {2}}{(y - 1) ^ {2 / 3}} d y d x.
 $$
 
@@ -1010,15 +1013,15 @@ $$
 
 Use a CAS double-integral evaluator to find the integrals in Exercises 97–102. Then reverse the order of integration and evaluate, again with a CAS. 
 
-100. $\int_0^2\int_0^{4 - y^2}e^{xy}dxdy$ 
-
 97. $\int_0^1\int_{2y}^4 e^{x^2}dx dy$ 
-
-101. $\int_1^2\int_0^{x^2}\frac{1}{x + y} dy dx$ 
 
 98. $\int_0^3\int_{x^2}^9 x\cos (y^2)dydx$ 
 
 99. $\int_0^2\int_{y^3}^{4\sqrt{2y}}(x^2 y - xy^2)dx dy$ 
+
+100. $\int_0^2\int_0^{4 - y^2}e^{xy}dxdy$ 
+
+101. $\int_1^2\int_0^{x^2}\frac{1}{x + y} dy dx$ 
 
 102. $\int_{1}^{2}\int_{y^3}^{8}\frac{1}{\sqrt{x^2 + y^2}} dx dy$ 
 
@@ -1026,7 +1029,7 @@ Use a CAS double-integral evaluator to find the integrals in Exercises 97–102.
 
 In this section we show how to use double integrals to calculate the areas of bounded regions in the plane, and to find the average value of a function of two variables. 
 
-## Areas of Bounded Regions in the Plane
+### Areas of Bounded Regions in the Plane
 
 If we take $f(x, y) = 1$ in the definition of the double integral over a region R in the preceding section, the Riemann sums reduce to 
 
@@ -1048,7 +1051,7 @@ $$
 >
 As with the other definitions in this chapter, the definition here applies to a greater variety of regions than does the earlier single-variable definition of area, but it agrees with the earlier definition on regions to which they both apply. To evaluate the integral in the definition of area, we integrate the constant function $f(x, y) = 1$ over R. 
 
-![[ff8838b8bf1ca500af5e38320e9a466e6dccbd298263b085556bb51203a0efd0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ff8838b8bf1ca500af5e38320e9a466e6dccbd298263b085556bb51203a0efd0.jpg)
 
 
 FIGURE 14.19 The region in Example 1. 
@@ -1063,10 +1066,10 @@ $$
 
 Notice that the single-variable integral $\int_{0}^{1}(x-x^{2})dx$ , obtained from evaluating the inside iterated integral, is the integral for the area between these two curves using the method of Section 5.6. 
 
-![[45f8f9a9fcbafdea8bc89481f8ef1c0b72cda5a495bd3938885bba1a956f9034.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/45f8f9a9fcbafdea8bc89481f8ef1c0b72cda5a495bd3938885bba1a956f9034.jpg)
 
 
-![[a498bc91c16fee564b4dd73fcdebbf1d211619880a66eafc6b2d25ab4198d892.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a498bc91c16fee564b4dd73fcdebbf1d211619880a66eafc6b2d25ab4198d892.jpg)
 
 
 
@@ -1115,18 +1118,18 @@ $$
 A = 8 + \pi 2 ^ {2} = 8 + 4 \pi .
 $$
 
-## Average Value
+### Average Value
 
 The average value of an integrable function of one variable on a closed interval is the integral of the function over the interval divided by the length of the interval. For an integrable function of two variables defined on a bounded region in the plane, the average value is the integral over the region divided by the area of the region. This can be visualized by thinking of the region as being the base of a tank with vertical walls around the boundary of the region, and imagining that the tank is filled with water that is sloshing around. The value $f(x, y)$ is then the height of the water that is directly above the point $(x, y)$ . The average height of the water in the tank can be found by letting the water settle down to a constant height. This height is equal to the volume of water in the tank divided by the area of R. We therefore define the average value of an integrable function f over a region R as follows: 
 
-![[1c8ef190053dc7f402a1c6817aed7f846a869a063c016178b6deaf15394432bf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1c8ef190053dc7f402a1c6817aed7f846a869a063c016178b6deaf15394432bf.jpg)
 
 
 
 (a)
 
 
-![[f4be44436072dd2808571f3596cc8e177b25e2dc87c289c821cf004eec290f26.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f4be44436072dd2808571f3596cc8e177b25e2dc87c289c821cf004eec290f26.jpg)
 
 
 
@@ -1153,7 +1156,7 @@ FIGURE 14.21 (a) The playing field described by the region R in Example 3.
 
 The area of R is $\pi$ . The average value of f over R is $2/\pi$ . 
 
-## EXERCISES 14.3
+### EXERCISES 14.3
 
 Area by Double Integrals 
 
@@ -1173,9 +1176,7 @@ In Exercises 1–12, sketch the region bounded by the given lines and curves. Th
 
 7. The parabolas $x = y^{2}$ and $x = 2y - y^{2}$ 
 
-$$
-x = y ^ {2} - 1 \text {   and   } x = 2 y ^ {2} - 2
-$$
+8. $x = y ^ {2} - 1 \text {   and   } x = 2 y ^ {2} - 2$
 
 9. The lines y = x, y = x/3, and y = 2 
 
@@ -1247,7 +1248,7 @@ $$
 
 Double integrals are sometimes easier to evaluate if we change to polar coordinates. This section shows how to accomplish the change and how to evaluate double integrals over regions whose boundaries are given by polar equations. 
 
-## Integrals in Polar Coordinates
+### Integrals in Polar Coordinates
 
 When we defined the double integral of a function over a region R in the xy-plane, we began by cutting R into rectangles whose sides were parallel to the coordinate axes. These were the natural shapes to use because their sides have either constant x-values or constant y-values. In polar coordinates, the natural shape is a “polar rectangle” whose sides have constant r- and $\theta$ -values. To avoid ambiguities when describing the region of integration with polar coordinates, we use polar coordinate points $(r, \theta)$ where $r \geq 0$ . 
 
@@ -1267,10 +1268,10 @@ $$
 S _ {n} = \sum_ {k = 1} ^ {n} f (r _ {k}, \theta_ {k}) \Delta A _ {k}.
 $$
 
-![[dc757d53f7d57751ff24974c043b473b0788a30f13398fd0a38195c4d8928c2f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dc757d53f7d57751ff24974c043b473b0788a30f13398fd0a38195c4d8928c2f.jpg)
 
 
-![[475a0a106b1ea77866b9d00b8e909502a7abd12a34450f47bd885f6b7eb250fd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/475a0a106b1ea77866b9d00b8e909502a7abd12a34450f47bd885f6b7eb250fd.jpg)
 
 
 
@@ -1335,21 +1336,21 @@ $$
 \lim _ {n \rightarrow \infty} S _ {n} = \iint_ {R} f (r, \theta) r d r d \theta .
 $$
 
-![[a5d2d894eb2d3aa91334b8df294ae28ad31f5fac8f2615bae255a9729ec95a53.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a5d2d894eb2d3aa91334b8df294ae28ad31f5fac8f2615bae255a9729ec95a53.jpg)
 
 
 
 (a)
 
 
-![[28faa40194faa9127ab998c6e62f091095aeb25e226e77ce6c24d7298ad022ae.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/28faa40194faa9127ab998c6e62f091095aeb25e226e77ce6c24d7298ad022ae.jpg)
 
 
 
 (b)
 
 
-![[26a9850adf297f92734c78928d39b1217e9e78f79f2fe095bf8e52c10f062722.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/26a9850adf297f92734c78928d39b1217e9e78f79f2fe095bf8e52c10f062722.jpg)
 
 
 
@@ -1360,7 +1361,7 @@ $$
 FIGURE 14.24 Finding the limits of integration in polar coordinates.
 
 
-![[93966b66b0469efca6b432a92725ca81c80a1a31a2b539d13871f80454f32662.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/93966b66b0469efca6b432a92725ca81c80a1a31a2b539d13871f80454f32662.jpg)
 
 
 
@@ -1379,7 +1380,7 @@ $$
 \iint_ {R} f (r, \theta) d A = \int_ {\theta = \alpha} ^ {\theta = \beta} \int_ {r = g _ {1} (\theta)} ^ {r = g _ {2} (\theta)} f (r, \theta) r d r d \theta .
 $$
 
-## Finding Limits of Integration
+### Finding Limits of Integration
 
 The procedure for finding limits of integration in rectangular coordinates also works for polar coordinates. We illustrate this using the region R shown in Figure 14.24. To evaluate $\iint_{R} f(r, \theta) \, dA$ in polar coordinates, integrating first with respect to r and then with respect to $\theta$ , take the following steps. 
 
@@ -1395,7 +1396,7 @@ $$
 
 **EXAMPLE 1** Find the limits of integration for integrating $f(r, \theta)$ over the region R that lies inside the cardioid $r = 1 + \cos \theta$ and outside the circle r = 1. 
 
-## **Solution**
+**Solution**
 
 1. We first sketch the region and label the bounding curves (Figure 14.25). 
 
@@ -1419,14 +1420,14 @@ $$
 
 This formula for area is consistent with all earlier formulas. 
 
-![[4e112df1b36869022d9bde0ce6cdc8d63883b124b3734112f2cd92630a963a9e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4e112df1b36869022d9bde0ce6cdc8d63883b124b3734112f2cd92630a963a9e.jpg)
 
 
 
 FIGURE 14.26 To integrate over the shaded region, we run r from 0 to $\sqrt{4\cos2\theta}$ and $\theta$ from 0 to $\pi/4$ (Example 2).
 
 
-![[7d991f3fdee54e1db2486500f4b46cbfd7c0b08dc107e9bb7ece4a442457c289.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7d991f3fdee54e1db2486500f4b46cbfd7c0b08dc107e9bb7ece4a442457c289.jpg)
 
 
 
@@ -1437,7 +1438,7 @@ $$
 0 \leq r \leq 1, \quad 0 \leq \theta \leq \pi .
 $$
 
-## **EXAMPLE 2** Find the area enclosed by the lemniscate $r^{2} = 4 \cos 2\theta$ .
+**EXAMPLE 2** Find the area enclosed by the lemniscate $r^{2} = 4 \cos 2\theta$ .
 
 **Solution** We graph the lemniscate to determine the limits of integration (Figure 14.26) and see from the symmetry of the region that the total area is 4 times the first-quadrant portion. 
 
@@ -1445,7 +1446,7 @@ $$
 \begin{array}{l} A = 4 \int_ {0} ^ {\pi / 4} \int_ {0} ^ {\sqrt {4 \cos 2 \theta}} r d r d \theta = 4 \int_ {0} ^ {\pi / 4} \left[ \frac {r ^ {2}}{2} \right] _ {r = 0} ^ {r = \sqrt {4 \cos 2 \theta}} d \theta \\ = 4 \int_ {0} ^ {\pi / 4} 2 \cos 2 \theta d \theta = 4 \sin 2 \theta \bigg ] _ {0} ^ {\pi / 4} = 4. \end{array}
 $$
 
-## Changing Cartesian Integrals into Polar Integrals
+### Changing Cartesian Integrals into Polar Integrals
 
 The procedure for changing a Cartesian integral $\iint_{R} f(x, y) \, dx \, dy$ into a polar integral has two steps. First substitute $x = r \cos \theta$ and $y = r \sin \theta$ , and replace dx dy by $r \, dr \, d\theta$ in the Cartesian integral. Then supply polar limits of integration for the boundary of R. The Cartesian integral then becomes 
 
@@ -1455,7 +1456,7 @@ $$
 
 where G denotes the same region of integration, but now described in polar coordinates. This is like the substitution method in Chapter 5 except that there are now two variables to substitute for instead of one. Notice that the area differential dx dy is replaced not by dr dθ but by r dr dθ. A more general discussion of changes of variables (substitutions) in multiple integrals is given in Section 14.8. 
 
-## **EXAMPLE 3** Evaluate
+**EXAMPLE 3** Evaluate
 
 $$
 \iint_ {R} e ^ {x ^ {2} + y ^ {2}} d y d x,
@@ -1471,20 +1472,20 @@ $$
 
 The r in the $r \, dr \, d\theta$ is what allowed us to integrate $e^{r^{2}}$ . Without it, we would have been unable to find an antiderivative for the first (innermost) iterated integral. 
 
-## **EXAMPLE 4** Evaluate the integral
+**EXAMPLE 4** Evaluate the integral
 
 $$
 \int_ {0} ^ {1} \int_ {0} ^ {\sqrt {1 - x ^ {2}}} (x ^ {2} + y ^ {2}) d y d x.
 $$
 
-![[1dd6b41c4736e4fe18887a1a56207903de7710ae8d60ffec8f7e55efa7bfd1ec.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1dd6b41c4736e4fe18887a1a56207903de7710ae8d60ffec8f7e55efa7bfd1ec.jpg)
 
 
 
 FIGURE 14.28 The solid region in Example 5.
 
 
-![[9874eb12c5168b1a23e5faab1bba66096e83113ecbf1ab48445d860e59d79e22.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9874eb12c5168b1a23e5faab1bba66096e83113ecbf1ab48445d860e59d79e22.jpg)
 
 
 
@@ -1523,7 +1524,7 @@ $$
 \begin{array}{l} \iint_ {R} d A = \int_ {\pi / 6} ^ {\pi / 3} \int_ {\csc \theta} ^ {2} r d r d \theta \\ \qquad = \int_ {\pi / 6} ^ {\pi / 3} \left[ \frac {1}{2} r ^ {2} \right] _ {r = \csc \theta} ^ {r = 2} d \theta \\ \qquad = \int_ {\pi / 6} ^ {\pi / 3} \frac {1}{2} [ 4 - \csc^ {2} \theta ] d \theta \\ \qquad = \frac {1}{2} \left[ 4 \theta + \cot \theta \right] _ {\pi / 6} ^ {\pi / 3} \\ \qquad = \frac {1}{2} \left(\frac {4 \pi}{3} + \frac {1}{\sqrt {3}}\right) - \frac {1}{2} \left(\frac {4 \pi}{6} + \sqrt {3}\right) = \frac {\pi - \sqrt {3}}{3}. \end{array}
 $$
 
-## EXERCISES 14.4
+### EXERCISES 14.4
 
 Regions in Polar Coordinates 
 
@@ -1531,32 +1532,32 @@ In Exercises 1–8, describe the given region in polar coordinates.
 
 1. 
 
-![[414c617c6f0dc954d1305bd6b01781a7f0d5a700435ac63ad6fc5644c9d9407d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/414c617c6f0dc954d1305bd6b01781a7f0d5a700435ac63ad6fc5644c9d9407d.jpg)
 
 
 2. 
 
-![[8639b62137ec621fa5bb736026752bb753baff39eff4a217bca34839dfedea79.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8639b62137ec621fa5bb736026752bb753baff39eff4a217bca34839dfedea79.jpg)
 
 
 3. 
 
-![[ae1acc7796254cba34b5c5e6c713dc80a8135ac13e27eaa128cb2465fe73143a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ae1acc7796254cba34b5c5e6c713dc80a8135ac13e27eaa128cb2465fe73143a.jpg)
 
 
 4. 
 
-![[c1bb5d3ffd89082deb13b1b1954a550a21da3b981f5d13e91e06e8fface55fc4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c1bb5d3ffd89082deb13b1b1954a550a21da3b981f5d13e91e06e8fface55fc4.jpg)
 
 
 5. 
 
-![[034032f6fb7c927634771e54a45955a5b41c93edb3e62e9cc797e3506e900c70.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/034032f6fb7c927634771e54a45955a5b41c93edb3e62e9cc797e3506e900c70.jpg)
 
 
 6. 
 
-![[9526ff3b664fdb47c2204bec298e2f18d2ede02279079cad35e14273b9616579.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9526ff3b664fdb47c2204bec298e2f18d2ede02279079cad35e14273b9616579.jpg)
 
 
 7. The region enclosed by the circle $x^{2} + y^{2} = 2x$ 
@@ -1593,9 +1594,7 @@ In Exercises 9–22, change the Cartesian integral into an equivalent polar inte
 
 21. $\int_0^1\int_x^{\sqrt{2 - x^2}}(x + 2y)dydx$ 
 
-$$
-2 2. \int_ {1} ^ {2} \int_ {0} ^ {\sqrt {2 x - x ^ {2}}} \frac {1}{\left(x ^ {2} + y ^ {2}\right) ^ {2}} d y d x
-$$
+22. $\int_ {1} ^ {2} \int_ {0} ^ {\sqrt {2 x - x ^ {2}}} \frac {1}{\left(x ^ {2} + y ^ {2}\right) ^ {2}} d y d x$
 
 In Exercises 23–26, sketch the region of integration, and convert each polar integral or sum of integrals into a Cartesian integral or sum of integrals. Do not evaluate the integrals. 
 
@@ -1605,9 +1604,7 @@ In Exercises 23–26, sketch the region of integration, and convert each polar i
 
 25. $\int_0^{\pi /4}\int_0^{2\sec \theta}r^5\sin^2\theta dr d\theta$ 
 
-$$
-2 6. \int_ {0} ^ {\arctan \frac {4}{3}} \int_ {0} ^ {3 \sec \theta} r ^ {7} d r d \theta + \int_ {\arctan \frac {4}{3}} ^ {\pi / 2} \int_ {0} ^ {4 \csc \theta} r ^ {7} d r d \theta
-$$
+26. $\int_ {0} ^ {\arctan \frac {4}{3}} \int_ {0} ^ {3 \sec \theta} r ^ {7} d r d \theta + \int_ {\arctan \frac {4}{3}} ^ {\pi / 2} \int_ {0} ^ {4 \csc \theta} r ^ {7} d r d \theta$
 
 Area in Polar Coordinates 
 
@@ -1623,7 +1620,7 @@ Area in Polar Coordinates
 
 32. Overlapping cardioids Find the area of the region common to the interiors of the cardioids $r = 1 + \cos \theta$ and $r = 1 - \cos \theta$ . 
 
-## Average Values
+#### Average Values
 
 In polar coordinates, the average value of a function over a region R (Section 14.3) is given by 
 
@@ -1639,7 +1636,7 @@ $$
 
 36. Average distance squared from a point in a disk to a point in its boundary Find the average value of the square of the distance from the point $P(x, y)$ in the disk $x^{2} + y^{2} \leq 1$ to the boundary point $A(1, 0)$ . 
 
-## Theory and Examples
+#### Theory and Examples
 
 37. Converting to a polar integral Integrate $f(x,y) = [\ln (x^2 +y^2)] / \sqrt{x^2 + y^2}$ over the region $1\leq x^{2} + y^{2}\leq e$ . 
 
@@ -1649,7 +1646,7 @@ $$
 
 40. Volume of noncircular right cylinder The region enclosed by the lemniscate $r^2 = 2\cos 2\theta$ is the base of a solid right cylinder whose top is bounded by the sphere $z = \sqrt{2 - r^2}$ . Find the cylinder's volume. 
 
-## 41. Converting to polar integrals
+41. Converting to polar integrals
 
 a. The usual way to evaluate the improper integral $I = \int_0^\infty e^{-x^2} dx$ is first to calculate its square: 
 
@@ -1663,11 +1660,7 @@ b. Evaluate
 
 $$
 \lim _ {x \rightarrow \infty} \operatorname{erf} (x) = \lim _ {x \rightarrow \infty} \int_ {0} ^ {x} \frac {2 e ^ {- t ^ {2}}}{\sqrt {\pi}} d t.
-$$
-
-42. Converting to a polar integral Evaluate the integral 
-
-$$
+42. $Converting to a polar integral Evaluate the integral$
 \int_ {0} ^ {\infty} \int_ {0} ^ {\infty} \frac {1}{(1 + x ^ {2} + y ^ {2}) ^ {2}} d x d y.
 $$
 
@@ -1695,7 +1688,7 @@ Sketch the region and find its area.
 
 48. Evaluate the integral $\iint_{R}(x^{2} + y^{2})^{-2}dA$ , where $R$ is the region inside the circle $x^{2} + y^{2} = 2$ for $x\leq -1$ . 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 49–52, use a CAS to change the Cartesian integrals into an equivalent polar integral and evaluate the polar integral. Perform the following steps in each exercise. 
 
@@ -1707,17 +1700,15 @@ c. Using the results in part (b), plot the polar region of integration in the $r
 
 d. Change the integrand from Cartesian to polar coordinates. Determine the limits of integration from your plot in part (c) and evaluate the polar integral using the CAS integration utility. 
 
-$$
-4 9. \int_ {0} ^ {1} \int_ {x} ^ {1} \frac {y}{x ^ {2} + y ^ {2}} d y d x \quad 5 0. \int_ {0} ^ {1} \int_ {0} ^ {x / 2} \frac {x}{x ^ {2} + y ^ {2}} d y d x
-$$
+49. $\int_ {0} ^ {1} \int_ {x} ^ {1} \frac {y}{x ^ {2} + y ^ {2}} d y d x \quad 5 0. \int_ {0} ^ {1} \int_ {0} ^ {x / 2} \frac {x}{x ^ {2} + y ^ {2}} d y d x$
 
-$$
-\mathbf {5 1 .} \int_ {0} ^ {1} \int_ {- y / 3} ^ {y / 3} \frac {y}{\sqrt {x ^ {2} + y ^ {2}}} d x d y \quad \mathbf {5 2 .} \int_ {0} ^ {1} \int_ {y} ^ {2 - y} \sqrt {x + y} d x d y
-$$
+51. $\int_ {0} ^ {1} \int_ {- y / 3} ^ {y / 3} \frac {y}{\sqrt {x ^ {2} + y ^ {2}}} d x d y$
+
+52. $\int_ {0} ^ {1} \int_ {y} ^ {2 - y} \sqrt {x + y} d x d y$
 
 ## 14.5 Triple Integrals in Rectangular Coordinates
 
-![[7cbfb759cbb9195e7e9255b0dd2ab9d9dbd13072b9b072fc789332ed6231abe9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7cbfb759cbb9195e7e9255b0dd2ab9d9dbd13072b9b072fc789332ed6231abe9.jpg)
 
 
 
@@ -1726,7 +1717,7 @@ FIGURE 14.30 Partitioning a solid with rectangular cells of volume $\Delta V_{k}
 
 Just as double integrals allow us to deal with more general situations than could be handled by single integrals, triple integrals enable us to solve still more general problems. We use triple integrals to calculate the volumes of three-dimensional shapes and the average value of a function over a three-dimensional region. Triple integrals also arise in the study of vector fields and fluid flow in three dimensions, as we will see in Chapter 15. 
 
-## Triple Integrals
+### Triple Integrals
 
 If $F(x, y, z)$ is a function defined on a closed bounded solid region D in space, such as the region occupied by a solid ball or a lump of clay, then the integral of F over D may be defined in the following way. We partition a rectangular boxlike region containing D into rectangular cells by planes parallel to the coordinate axes (Figure 14.30). We number the cells that lie completely inside D from 1 to n in some order, the kth cell having dimensions $\Delta x_{k}$ by $\Delta y_{k}$ by $\Delta z_{k}$ and volume $\Delta V_{k} = \Delta x_{k} \Delta y_{k} \Delta z_{k}$ . We choose a point $(x_{k}, y_{k}, z_{k})$ in each cell and form the sum 
 
@@ -1742,7 +1733,7 @@ $$
 
 The regions D over which continuous functions are integrable are those having “reasonably smooth” boundaries. 
 
-## Volume of a Solid Region in Space
+### Volume of a Solid Region in Space
 
 If $F$ is the constant function whose value is 1, then the sums in Equation (1) reduce to 
 
@@ -1764,7 +1755,7 @@ $$
 >
 This definition is in agreement with our previous definitions of volume, although we omit the verification of this fact. As we will see in a moment, this integral enables us to calculate the volumes of solids enclosed by curved surfaces. These are more general solids than the ones encountered before (Chapter 6 and Section 14.2). 
 
-## Iterated Integrals
+### Iterated Integrals
 
 We evaluate a triple integral by applying a three-dimensional version of Fubini's Theorem (Section 14.2) to evaluate it by three repeated single integrations. As with double integrals, there is a geometric procedure for finding the limits of integration for these iterated integrals. 
 
@@ -1778,17 +1769,17 @@ over a solid region D, integrate first with respect to z, then with respect to y
 
 1. Sketch. Sketch the solid region D along with its “shadow” R (vertical projection) in the xy-plane. Label the upper and lower bounding surfaces of D and the upper and lower bounding curves of R. 
 
-![[1d4f91d99f8e484a1693799bc79b99d20146a2011ee721c40d7dccba503348de.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1d4f91d99f8e484a1693799bc79b99d20146a2011ee721c40d7dccba503348de.jpg)
 
 
 2. Find the z-limits of integration. Draw a line M passing through a typical point $(x, y)$ in R parallel to the z-axis. As z increases, M enters D at $z = f_{1}(x, y)$ and leaves at $z = f_{2}(x, y)$ . These are the z-limits of integration. 
 
-![[9be289f78159ed0f8ece3f91b01ebf1048674b8c4a3be260300fa542de505a48.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9be289f78159ed0f8ece3f91b01ebf1048674b8c4a3be260300fa542de505a48.jpg)
 
 
 3. Find the y-limits of integration. Draw a line L through $(x, y)$ parallel to the y-axis. As y increases, L enters R at $y = g_{1}(x)$ and leaves at $y = g_{2}(x)$ . These are the y-limits of integration. 
 
-![[7ac7a8a0c6ae35bbec05d3f417179bd35ef39fc9c1b00af8222ef77fad1f437c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7ac7a8a0c6ae35bbec05d3f417179bd35ef39fc9c1b00af8222ef77fad1f437c.jpg)
 
 
 4. Find the x-limits of integration. Choose x-limits that include all lines through R parallel to the y-axis (x = a and x = b in the preceding figure). These are the x-limits of integration. The integral is 
@@ -1825,7 +1816,7 @@ $$
 \iiint_ {D} F (x, y, z) d z d y d x = \int_ {- 4} ^ {4} \int_ {- \sqrt {1 6 - x ^ {2}}} ^ {\sqrt {1 6 - x ^ {2}}} \int_ {3} ^ {\sqrt {2 5 - x ^ {2} - y ^ {2}}} F (x, y, z) d z d y d x. \quad \blacksquare
 $$
 
-![[8533429c2eb77052b62c72d0fcb6346e8c32e38fac7a75ff950469b91286b6c0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8533429c2eb77052b62c72d0fcb6346e8c32e38fac7a75ff950469b91286b6c0.jpg)
 
 
 
@@ -1836,13 +1827,13 @@ FIGURE 14.31 Finding the limits of integration for evaluating the triple integra
 (b)
 
 
-![[e177c174c0707de398d928beb8e36dd8169e17dea038444575c2ca066c776d72.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e177c174c0707de398d928beb8e36dd8169e17dea038444575c2ca066c776d72.jpg)
 
 
-![[7ec123f9aefc2f01fffc020d7c238e2536043db038858cacb603a29f953d7d19.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7ec123f9aefc2f01fffc020d7c238e2536043db038858cacb603a29f953d7d19.jpg)
 
 
-![[1179a3bb3e6aad059702676e4a4f6a8485f69cac2aad2c11962f10da9a75e4a7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1179a3bb3e6aad059702676e4a4f6a8485f69cac2aad2c11962f10da9a75e4a7.jpg)
 
 
 
@@ -1881,7 +1872,7 @@ $$
 \iiint_ {D} F (x, y, z) d z d y d x = \int_ {0} ^ {1} \int_ {x} ^ {1} \int_ {0} ^ {y - x} F (x, y, z) d z d y d x.
 $$
 
-![[1ceebe42fd78698c464457d7f11c3a9d0143e6e2b811e5b3bd6f1cbc9b911398.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1ceebe42fd78698c464457d7f11c3a9d0143e6e2b811e5b3bd6f1cbc9b911398.jpg)
 
 
 
@@ -1922,7 +1913,7 @@ $$
 
 the integral of $F(x, y, z) = 1$ over D. To find the limits of integration for evaluating the integral, we first sketch the region. The surfaces (Figure 14.35) intersect on the elliptical cylinder $x^{2} + 3y^{2} = 8 - x^{2} - y^{2}$ or $x^{2} + 2y^{2} = 4$ , z > 0. The boundary of the region R, the projection of D onto the xy-plane, is an ellipse with the same equation: $x^{2} + 2y^{2} = 4$ . The “upper” boundary of R is the curve $y = \sqrt{(4 - x^{2})/2}$ . The lower boundary is the curve $y = -\sqrt{(4 - x^{2})/2}$ . 
 
-![[b4105f2cdabbd47b115bcac2daba995642c416f085959e7826789650edb8ce99.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b4105f2cdabbd47b115bcac2daba995642c416f085959e7826789650edb8ce99.jpg)
 
 
 
@@ -1943,7 +1934,7 @@ $$
 \begin{array}{l l} = \int_ {- 2} ^ {2} \int_ {- \sqrt {(4 - x ^ {2}) / 2}} ^ {\sqrt {(4 - x ^ {2}) / 2}} (8 - 2 x ^ {2} - 4 y ^ {2}) d y d x & \text { Integrate   over } z \text { and   evaluate. } \\ = \int_ {- 2} ^ {2} \left[ (8 - 2 x ^ {2}) y - \frac {4}{3} y ^ {3} \right] _ {y = - \sqrt {(4 - x ^ {2}) / 2}} ^ {y = \sqrt {(4 - x ^ {2}) / 2}} d x & \text { Integrate   over } y. \\ = \int_ {- 2} ^ {2} \left(2 (8 - 2 x ^ {2}) \sqrt {\frac {4 - x ^ {2}}{2}} - \frac {8}{3} \left(\frac {4 - x ^ {2}}{2}\right) ^ {3 / 2}\right) d x & \text { Evaluate. } \\ = \int_ {- 2} ^ {2} \left[ 8 \left(\frac {4 - x ^ {2}}{2}\right) ^ {3 / 2} - \frac {8}{3} \left(\frac {4 - x ^ {2}}{2}\right) ^ {3 / 2} \right] d x \\ = \frac {4 \sqrt {2}}{3} \int_ {- 2} ^ {2} (4 - x ^ {2}) ^ {3 / 2} d x \\ = 8 \pi \sqrt {2}. & \text { After   integration   with   the   substitution } x = 2 \sin \theta \end{array}
 $$
 
-## Average Value of a Function in Space
+### Average Value of a Function in Space
 
 The average value of a function F over a solid region D in space is defined by the formula 
 
@@ -1957,7 +1948,7 @@ For example, if $F(x,y,z)=\sqrt{x^{2}+y^{2}+z^{2}}$ , then the average value of 
 
 **EXAMPLE 5** Find the average value of $F(x, y, z) = xyz$ throughout the cubical region D bounded by the coordinate planes and the planes x = 2, y = 2, and z = 2 in the first octant. 
 
-![[894940118728a14b2bc3bf361aaacacedf3a5ead7859502e4b53c20c8b36bf9b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/894940118728a14b2bc3bf361aaacacedf3a5ead7859502e4b53c20c8b36bf9b.jpg)
 
 
 **Solution** We sketch the cube with enough detail to show the limits of integration (Figure 14.36). We then use Equation (2) to calculate the average value of F over the cube. 
@@ -1980,17 +1971,17 @@ $$
 
 In evaluating the integral, we chose the order dx dy dz, but any of the other five possible orders would have done as well. 
 
-## Properties of Triple Integrals
+### Properties of Triple Integrals
 
 Triple integrals have the same algebraic properties as double and single integrals. Simply replace the double integrals in the four properties given in Section 14.2, page 864, with triple integrals. 
 
-## EXERCISES 14.5
+### EXERCISES 14.5
 
 Triple Integrals in Different Iteration Orders 
 
 1. Evaluate the integral in Example 3, taking $F(x, y, z) = 1$ to find the volume of the tetrahedron in the order $dz \, dx \, dy$ . 
 
-2. Volume of rectangular solid Write six different iterated triple integrals for the volume of the rectangular solid in the first octant bounded by the coordinate planes and the planes x = 1, y = 2, and z = 3. Evaluate one of the integrals. 
+2. Volume of rectangular solid Write six different iterated triple integrals for the volume of the rectangular solid in the first octant bounded by the coordinate planes and the planes x = 1, y = 2, and z = 3. Evaluate one of the integrals.
 
 3. Volume of tetrahedron Write six different iterated triple integrals for the volume of the tetrahedron cut from the first octant by the plane $6x + 3y + 2z = 6$ . Evaluate one of the integrals. 
 
@@ -2006,15 +1997,23 @@ Evaluate the integrals in Exercises 7–20.
 
 7. $\int_0^1\int_0^1\int_0^1 (x^2 +y^2 +z^2)dzdydx$ 
 
-8. $\int_0^{\sqrt{2}}\int_0^{3y}\int_{x^2 +3y^2}^{8 - x^2 -y^2}dz  dx  dy$ 9. $\int_1^e\int_1^{e^2}\int_1^{e^3}\frac{1}{xyz} dx  dy  dz$ 
+8. $\int_0^{\sqrt{2}}\int_0^{3y}\int_{x^2 +3y^2}^{8 - x^2 -y^2}dz  dx  dy$
 
-10. $\int_0^1\int_0^{3 - 3x}\int_0^{3 - 3x - y}dzdydx$ 11. $\int_0^{\pi /6}\int_0^1\int_{-2}^3 y\sin zdx dy dz$ 
+9. $\int_1^e\int_1^{e^2}\int_1^{e^3}\frac{1}{xyz} dx  dy  dz$
+
+10. $\int_0^1\int_0^{3 - 3x}\int_0^{3 - 3x - y}dzdydx$
+
+11. $\int_0^{\pi /6}\int_0^1\int_{-2}^3 y\sin zdx dy dz$
 
 12. $\int_{-1}^{1}\int_{0}^{1}\int_{0}^{2}(x + y + z)dydxdz$ 
 
-13. $\int_0^3\int_0^{\sqrt{9 - x^2}}\int_0^{\sqrt{9 - x^2}}dzdydx$ 14. $\int_0^2\int_{-\sqrt{4 - y^2}}^{\sqrt{4 - y^2}}\int_0^{2x + y}dzdx dy$ 
+13. $\int_0^3\int_0^{\sqrt{9 - x^2}}\int_0^{\sqrt{9 - x^2}}dzdydx$
 
-15. $\int_0^1\int_0^{2 - x}\int_0^{2 - x - y}dzdydx$ 16. $\int_0^1\int_0^{1 - x^2}\int_3^{4 - x^2 -y}xdzdydx$ 
+14. $\int_0^2\int_{-\sqrt{4 - y^2}}^{\sqrt{4 - y^2}}\int_0^{2x + y}dzdx dy$
+
+15. $\int_0^1\int_0^{2 - x}\int_0^{2 - x - y}dzdydx$
+
+16. $\int_0^1\int_0^{1 - x^2}\int_3^{4 - x^2 -y}xdzdydx$
 
 17. $\int_0^\pi \int_0^\pi \int_0^\pi \cos (u + v + w)du dv dw$ (uvw-space) 
 
@@ -2028,10 +2027,10 @@ Finding Equivalent Iterated Integrals
 
 21. Here is the region of integration of the integral 
 
-![[d9774225541d944504ebfadbef653be831040c57467978b16c37c386cb4628c4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d9774225541d944504ebfadbef653be831040c57467978b16c37c386cb4628c4.jpg)
 
 
-![[2cd2ff3affeb1f89705744b7d42e265ac5b50d7057cbf52a4d6d952ddf3b89b0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2cd2ff3affeb1f89705744b7d42e265ac5b50d7057cbf52a4d6d952ddf3b89b0.jpg)
 
 
 Rewrite the integral as an equivalent iterated integral in the order 
@@ -2044,10 +2043,10 @@ e. dz dx dy.
 
 22. Here is the region of integration of the integral 
 
-![[68d958235fcf8907c5df5c5dc9e306254fd70d74c1dee39bb256aa0cd99da2ac.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/68d958235fcf8907c5df5c5dc9e306254fd70d74c1dee39bb256aa0cd99da2ac.jpg)
 
 
-![[652bd1b4b99b7afd0dd74eefc1bc4d97ebec597963f347ee6499b18f2d7b2e69.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/652bd1b4b99b7afd0dd74eefc1bc4d97ebec597963f347ee6499b18f2d7b2e69.jpg)
 
 
 Rewrite the integral as an equivalent iterated integral in the order 
@@ -2064,52 +2063,52 @@ Find the volumes of the solid regions in Exercises 23–36.
 
 23. The region between the cylinder $z = y^2$ and the $xy$ -plane that is bounded by the planes $x = 0, x = 1, y = -1, y = 1$ 
 
-![[4c3be5c511b5009fcba31197ecec6cddc9b96375e0a36bc4ba0a42dd27d8fc09.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4c3be5c511b5009fcba31197ecec6cddc9b96375e0a36bc4ba0a42dd27d8fc09.jpg)
 
 
 24. The region in the first octant bounded by the coordinate planes and the planes $x + z = 1$ , $y + 2z = 2$ 
 
-![[48acd1d3a698aa0b9750a12fd2305f8f9c7258114d30ce5aadba9639bc04a6e5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/48acd1d3a698aa0b9750a12fd2305f8f9c7258114d30ce5aadba9639bc04a6e5.jpg)
 
 
 25. The region in the first octant bounded by the coordinate planes, the plane $y + z = 2$ , and the cylinder $x = 4 - y^{2}$ 
 
-![[9ec55881a9ec6b1e500828af59abe54de35fad925019cd255d21758a8ddf2b74.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9ec55881a9ec6b1e500828af59abe54de35fad925019cd255d21758a8ddf2b74.jpg)
 
 
 26. The wedge cut from the cylinder $x^{2} + y^{2} = 1$ with $z \geq 0$ by the planes z = -y and z = 0 
 
-![[90240ff6a905b5bd6712a710197838ab179c5514c5fbd2021488b31618a064cd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/90240ff6a905b5bd6712a710197838ab179c5514c5fbd2021488b31618a064cd.jpg)
 
 
 27. The tetrahedron in the first octant bounded by the coordinate planes and the plane passing through $(1,0,0)$ , $(0,2,0)$ , and $(0,0,3)$ 
 
-![[9723a6bc862a019115546014bc16a7528e6fcf5ab7aa27c3a36ee7a611cbba61.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9723a6bc862a019115546014bc16a7528e6fcf5ab7aa27c3a36ee7a611cbba61.jpg)
 
 
 28. The region in the first octant bounded by the coordinate planes, the plane $y = 1 - x$ , and the surface $z = \cos (\pi x / 2)$ , $0 \leq x \leq 1$ 
 
-![[90e2c119249d88d6abe8551516db52b099b4929539717c03e23f7a0a486bfafa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/90e2c119249d88d6abe8551516db52b099b4929539717c03e23f7a0a486bfafa.jpg)
 
 
 29. The region common to the interiors of the cylinders $x^{2} + y^{2} = 1$ and $x^{2} + z^{2} = 1$ , one-eighth of which is shown in the accompanying figure 
 
-![[5b763b57901120cc2fd30367db64661be25353eb265916fd64ae00a283f1618d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5b763b57901120cc2fd30367db64661be25353eb265916fd64ae00a283f1618d.jpg)
 
 
 30. The region in the first octant bounded by the coordinate planes and the surface $z = 4 - x^2 - y$ 
 
-![[eef92eb78f231c3d077b1fb9e4d533e722eb03bba5bb5b1e8c01af75878c5aaa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/eef92eb78f231c3d077b1fb9e4d533e722eb03bba5bb5b1e8c01af75878c5aaa.jpg)
 
 
 31. The region in the first octant bounded by the coordinate planes, the plane $x + y = 4$ , and the cylinder $y^{2} + 4z^{2} = 16$ 
 
-![[a3a8e362ef18d6c3a056724a62e610e3081b5035ed7dd0249559025be04ca58b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a3a8e362ef18d6c3a056724a62e610e3081b5035ed7dd0249559025be04ca58b.jpg)
 
 
 32. The region cut from the cylinder $x^{2} + y^{2} = 4$ by the plane z = 0 and the plane $x + z = 3$ 
 
-![[8dd7ebde7dc53abf2406b8c88ee098b5f88e924b9b265cc714e3c07b823cbc33.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8dd7ebde7dc53abf2406b8c88ee098b5f88e924b9b265cc714e3c07b823cbc33.jpg)
 
 
 33. The region between the planes $x + y + 2z = 2$ and $2x + 2y + z = 4$ in the first octant 
@@ -2120,7 +2119,7 @@ Find the volumes of the solid regions in Exercises 23–36.
 
 36. The region bounded in back by the plane x = 0, on the front and sides by the parabolic cylinder $x = 1 - y^{2}$ , on the top by the paraboloid $z = x^{2} + y^{2}$ , and on the bottom by the xy-plane 
 
-## Average Values
+#### Average Values
 
 In Exercises 37–40, find the average value of $F(x, y, z)$ over the given region. 
 
@@ -2132,7 +2131,7 @@ In Exercises 37–40, find the average value of $F(x, y, z)$ over the given regi
 
 40. $F(x, y, z) = xyz$ over the cube in the first octant bounded by the coordinate planes and the planes x = 2, y = 2, and z = 2 
 
-## Changing the Order of Integration
+#### Changing the Order of Integration
 
 Evaluate the integrals in Exercises 41–44 by changing the order of integration in an appropriate way. 
 
@@ -2170,7 +2169,7 @@ $$
 
 Give reasons for your answer. 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 49–52, use a CAS integration utility to evaluate the triple integral of the given function over the specified solid region. 
 
@@ -2186,7 +2185,7 @@ by the cone $z = \sqrt{x^{2} + y^{2}}$ and above by the plane z = 1
 
 ## 14.6 Applications
 
-![[a110a51152908740cabba421b92c4fc23e37694c6a0613efd7cc6ca12f25e6e0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a110a51152908740cabba421b92c4fc23e37694c6a0613efd7cc6ca12f25e6e0.jpg)
 
 
 
@@ -2195,7 +2194,7 @@ FIGURE 14.37 To define an object's mass, we first imagine it to be partitioned i
 
 This section shows how to calculate the masses and moments of two- and three-dimensional objects in Cartesian coordinates. The definitions and ideas are similar to the single-variable case we studied in Section 6.6, but now we can consider more general situations. 
 
-## Masses and First Moments
+### Masses and First Moments
 
 If $\delta(x, y, z)$ is the density (mass per unit volume) of an object occupying a solid region $D$ in space, the integral of $\delta$ over $D$ gives the mass of the object. To see why, imagine partitioning the object into $n$ mass elements like the one in Figure 14.37. The object's mass is the limit 
 
@@ -2219,7 +2218,7 @@ $$
 
 Table 14.1 summarizes the formulas. 
 
-## TABLE 14.1 Mass and first moment formulas
+**TABLE 14.1 Mass and first moment formulas**
 
 THREE-DIMENSIONAL SOLID 
 
@@ -2241,7 +2240,7 @@ First moments: $M_y = \iint_R x \delta dA, \quad M_x = \iint_R y \delta dA$
 
 Center of mass: $\overline{x} = \frac{M_y}{M},\quad \overline{y} = \frac{M_x}{M}$ 
 
-![[b861137da74d00808e449fc8c12658cb4338399c55fcfe24464b856c5ff0afae.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b861137da74d00808e449fc8c12658cb4338399c55fcfe24464b856c5ff0afae.jpg)
 
 
 
@@ -2268,12 +2267,12 @@ $$
 M = \iint_ {R} \int_ {0} ^ {4 - x ^ {2} - y ^ {2}} \delta d z d y d x = 8 \pi \delta .
 $$
 
-![[2fdd0eed17c68cab1e77bd3ec829a49147978d5599fa09d8eedec66359f8677b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2fdd0eed17c68cab1e77bd3ec829a49147978d5599fa09d8eedec66359f8677b.jpg)
 
 
 Therefore, $\overline{z} = (M_{xy} / M) = 4 / 3$ and the center of mass is $(\overline{x},\overline{y},\overline{z}) = (0,0,4 / 3)$ . 
 
-![[0192fa3386ca72f18f8537a7733e41fa3de6f0171942d11243d38517c119e1b0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0192fa3386ca72f18f8537a7733e41fa3de6f0171942d11243d38517c119e1b0.jpg)
 
 
 
@@ -2300,7 +2299,7 @@ The centroid is the point $(1/2, 2/5)$ .
 
 Note that each coordinate of the centroid of a region is equal to the average value of the corresponding variable over the region. 
 
-## Moments of Inertia
+### Moments of Inertia
 
 An object's first moments (Table 14.1) give us information related to balance and to the torque the object experiences about different axes in a gravitational field. If the object is a rotating shaft, we are interested in how much energy is stored in the shaft and how much energy is generated by a shaft rotating at a particular angular velocity. This is captured by the second moment or moment of inertia. 
 
@@ -2342,7 +2341,7 @@ $$
 
 The moment of inertia of a shaft resembles in some ways the inertial mass of a locomotive. To start a locomotive with mass m moving at a linear velocity v, we need to provide a kinetic energy of $\mathrm{KE} = (1/2)mv^{2}$ . To stop the locomotive we have to remove this amount of energy. To start a shaft with moment of inertia I rotating at an angular velocity $\omega$ , we need to provide a kinetic energy of $\mathrm{KE} = (1/2)I\omega^{2}$ . To stop the shaft we have to take this amount of energy back out. The shaft's moment of inertia is analogous to the locomotive's mass. What makes the locomotive hard to start or stop is its mass. What makes the shaft hard to start or stop is its moment of inertia. The moment of inertia depends not only on the mass of the shaft but also on its distribution. Mass that is farther away from the axis of rotation contributes more to the moment of inertia. 
 
-![[67fa490cafed65700d5636ed28f08e9baefb502a8ad7ab47978dc8b7f838a191.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/67fa490cafed65700d5636ed28f08e9baefb502a8ad7ab47978dc8b7f838a191.jpg)
 
 
 FIGURE 14.41 Distances from dV to the axes. 
@@ -2367,12 +2366,12 @@ $$
 
 Table 14.2 summarizes the formulas for these moments of inertia (second moments because they invoke the squares of the distances). It shows the definition of the polar moment about the origin as well. 
 
-![[9c79805cb1b787f0788fdf874d513d153a3c3e4de6327aa2770a1727e80d59b3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9c79805cb1b787f0788fdf874d513d153a3c3e4de6327aa2770a1727e80d59b3.jpg)
 
 
 FIGURE 14.42 Finding $I_{x}$ , $I_{y}$ , and $I_{z}$ for the block shown here. The origin lies at the center of the block (Example 3). 
 
-## TABLE 14.2 Moments of inertia (second moments) formulas
+**TABLE 14.2 Moments of inertia (second moments) formulas**
 
 THREE-DIMENSIONAL SOLID
 About the x-axis: $I_{x} = \iiint_{D}(y^{2} + z^{2})\delta dV$ $\delta = \delta(x, y, z)$ About the y-axis: $I_{y} = \iiint_{D}(x^{2} + z^{2})\delta dV$ About the z-axis: $I_{z} = \iiint_{D}(x^{2} + y^{2})\delta dV$ About a line L: $I_{L} = \iiint_{D} r^{2}(x, y, z)\delta dV$ $r(x, y, z) = \text{distance from the point}(x, y, z) \text{ to line } L$ TWO-DIMENSIONAL PLATE
@@ -2392,17 +2391,17 @@ $$
 \begin{array}{l} I _ {x} = 8 \int_ {0} ^ {c / 2} \int_ {0} ^ {b / 2} \int_ {0} ^ {a / 2} (y ^ {2} + z ^ {2}) \delta d x d y d z = 4 a \delta \int_ {0} ^ {c / 2} \int_ {0} ^ {b / 2} (y ^ {2} + z ^ {2}) d y d z \\ = 4 a \delta \int_ {0} ^ {c / 2} \left[ \frac {y ^ {3}}{3} + z ^ {2} y \right] _ {y = 0} ^ {y = b / 2} d z \\ = 4 a \delta \int_ {0} ^ {c / 2} \left(\frac {b ^ {3}}{2 4} + \frac {z ^ {2} b}{2}\right) d z \end{array}
 $$
 
-![[72964e1d4f6add312c729a211470d0bd6500750ec9e5ecf6fe05a7f959c40e3d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/72964e1d4f6add312c729a211470d0bd6500750ec9e5ecf6fe05a7f959c40e3d.jpg)
 
 
 
 FIGURE 14.43 The triangular region covered by the plate in Example 4.
 
 
-![[5866a75c1426962dd8800363246a8fbd7745acda468c4ed25113669767d35e75.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5866a75c1426962dd8800363246a8fbd7745acda468c4ed25113669767d35e75.jpg)
 
 
-![[9fe0563a788d2a093cb08b4903b942a5db4e264522fea59fabde8c489d800555.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9fe0563a788d2a093cb08b4903b942a5db4e264522fea59fabde8c489d800555.jpg)
 
 
 
@@ -2441,7 +2440,7 @@ $$
 
 The moment of inertia also plays a role in determining how much a horizontal metal beam will bend under a load. The stiffness of the beam is a constant times $I$ , the moment of inertia of a typical cross-section of the beam about the beam's longitudinal axis. The greater the value of $I$ , the stiffer the beam and the less it will bend under a given load. That is why we use I-beams instead of beams whose cross-sections are square. The flanges at the top and bottom of the beam hold most of the beam's mass away from the longitudinal axis to increase the value of $I$ (Figure 14.44). 
 
-## Probability
+### Probability
 
 The probability that a continuous random variable X takes values between a and b is found by integrating a probability density function f (Appendix A.8), 
 
@@ -2481,7 +2480,7 @@ A pair of random variables has a uniform distribution on a region $R$ with finit
 
 **Solution** The joint probability density function f is constant on the rectangle $0 \leq x \leq 10$ , $0 \leq y \leq 5$ , because $(X, Y)$ is uniformly distributed. The area of the rectangle is 50, so f takes the value 1/50 inside this rectangle: 
 
-![[2e62671be279645550596385b9754810c3d41e279884e6e6cbf385c16bb01c16.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2e62671be279645550596385b9754810c3d41e279884e6e6cbf385c16bb01c16.jpg)
 
 
 
@@ -2500,7 +2499,7 @@ $$
 
 There is a 75% probability that the first number is larger than the second. 
 
-## **EXAMPLE 6** Using the joint probability density function
+**EXAMPLE 6** Using the joint probability density function
 
 $$
 f (x, y) = \left\{ \begin{array}{l l} e ^ {- (x + y)}, & \text { if } 0 <   x \text { and } 0 <   y \\ 0, & \text { otherwise } \end{array} \right.
@@ -2516,7 +2515,7 @@ $$
 
 There is slightly less than a 2% probability that X and Y fall within these bounds. 
 
-## Means and Expected Values
+### Means and Expected Values
 
 The mean, or expected value, of a random variable is (Appendix A.8) 
 
@@ -2548,9 +2547,9 @@ $$
 
 The expected value of X is 5 and that of Y is 2.5. 
 
-## EXERCISES 14.6
+### EXERCISES 14.6
 
-## Plates of Constant Density
+#### Plates of Constant Density
 
 1. Finding a center of mass Find the center of mass of a thin plate of density $\delta = 3$ bounded by the lines x = 0, y = x, and the parabola $y = 2 - x^{2}$ in the first quadrant. 
 
@@ -2572,7 +2571,7 @@ The expected value of X is 5 and that of Y is 2.5.
 
 10. The first moment of an infinite plate Find the first moment about the y-axis of a thin plate of density $\delta(x,y)=1$ covering the infinite region under the curve $y=e^{-x^{2/2}}$ in the first quadrant. 
 
-## Plates with Varying Density
+#### Plates with Varying Density
 
 11. Finding a moment of inertia Find the moment of inertia about the x-axis of a thin plate bounded by the parabola $x = y - y^{2}$ and the line $x + y = 0$ if $\delta(x, y) = x + y$ . 
 
@@ -2594,16 +2593,16 @@ The expected value of X is 5 and that of Y is 2.5.
 
 20. Center of mass, moments of inertia Repeat Exercise 19 for $\delta(x,y)=3x^{2}+1\ kg/m^{2}$ . 
 
-## Solids with Constant Density
+#### Solids with Constant Density
 
 21. Moments of inertia Find the moments of inertia of the rectangular box of constant density $\delta(x,y,z)=1$ shown here with respect to its edges by calculating $I_{x}$ , $I_{y}$ , and $I_{z}$ . 
 
-![[b6bc65fe91f1faa46c0f41552d018671b0d0980d90f037109ea773603507b442.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b6bc65fe91f1faa46c0f41552d018671b0d0980d90f037109ea773603507b442.jpg)
 
 
 22. Moments of inertia The coordinate axes in the figure run through the centroid of a solid wedge parallel to the labeled edges. Find $I_{x}$ , $I_{y}$ , and $I_{z}$ if a = b = 6, c = 4, and the density is $\delta(x, y, z) = 1$ . 
 
-![[cb42d4f876c48d02f5125ba2ee3947f2661cec7f224d224553eb3c6746061f19.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cb42d4f876c48d02f5125ba2ee3947f2661cec7f224d224553eb3c6746061f19.jpg)
 
 
 23. Center of mass and moments of inertia A solid “trough” of constant density $\delta(x,y,z)=1$ is bounded below by the surface $z=4y^{2}$ , above by the plane z=4, and on the ends by the planes x=1 and x=-1. Find the center of mass and the moments of inertia with respect to the three axes. 
@@ -2620,7 +2619,7 @@ $$
 
 using integral tables to carry out the final integration with respect to $x$ . Then divide $M_{xy}$ by $M$ to verify that $\overline{z} = 5 / 4$ . 
 
-![[52d4c87bb7c2f92b3528eddc13e3be5936358323edc2e8b8871f7a2b6fb58f91.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/52d4c87bb7c2f92b3528eddc13e3be5936358323edc2e8b8871f7a2b6fb58f91.jpg)
 
 
 25. a. Center of mass Find the center of mass of a solid of constant density bounded below by the paraboloid $z = x^{2} + y^{2}$ and above by the plane z = 4. 
@@ -2633,7 +2632,7 @@ b. Find the plane z = c that divides the solid into two parts of equal volume. T
 
 28. Moment of inertia about a line A wedge like the one in Exercise 22 has $a = 4$ , $b = 6$ , $c = 3$ , and a constant density $\delta(x, y, z) = 1$ . Make a quick sketch to check for yourself that the square of the distance from a typical point $(x, y, z)$ of the wedge to the line $L$ : $x = 4$ , $y = 0$ is $r^2 = (x - 4)^2 + y^2$ . Then calculate the moment of inertia of the wedge about $L$ . 
 
-## Solids with Varying Density
+#### Solids with Varying Density
 
 In Exercises 29 and 30, find 
 
@@ -2644,7 +2643,7 @@ b. the center of mass.
 
 30. A solid in the first octant is bounded by the planes y = 0 and z = 0 and by the surfaces $z = 4 - x^{2}$ and $x = y^{2}$ (see the accompanying figure). Its density function is $\delta(x, y, z) = kxy$ , k a constant. 
 
-![[0883adb27746a6136adbbb9137aefd8c933285e59d962af3ca94c88e06b5f18e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0883adb27746a6136adbbb9137aefd8c933285e59d962af3ca94c88e06b5f18e.jpg)
 
 
 In Exercises 31 and 32, find 
@@ -2663,7 +2662,7 @@ c. the moments of inertia about the coordinate axes.
 
 34. Mass Find the mass of the solid region bounded by the parabolic surfaces $z = 16 - 2x^{2} - 2y^{2}$ and $z = 2x^{2} + 2y^{2}$ if the density of the solid is $\delta(x, y, z) = \sqrt{x^{2} + y^{2}}$ . 
 
-## Theory and Examples
+#### Theory and Examples
 
 The Parallel Axis Theorem Let $L_{c.m.}$ be a line through the center of mass of a body of mass m and let L be a parallel line h units away from $L_{c.m.}$ . The Parallel Axis Theorem says that the moments of inertia $I_{c.m.}$ and $I_{L}$ of the body about $L_{c.m.}$ and L satisfy the equation 
 
@@ -2673,11 +2672,11 @@ $$
 
 As in the two-dimensional case, the theorem gives a quick way to calculate one moment when the other moment and the mass are known. 
 
-## 35. Proof of the Parallel Axis Theorem
+35. Proof of the Parallel Axis Theorem
 
 a. Show that the first moment of a body in space about any plane through the body's center of mass is zero. (Hint: Place the body's center of mass at the origin and let the plane be the yz-plane. What does the formula $\overline{x} = M_{yz}/M$ then tell you?) 
 
-![[f7097116393665753e625c46267002bfcdf19ffc9ddba43e06ac1a04e9e2b95a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f7097116393665753e625c46267002bfcdf19ffc9ddba43e06ac1a04e9e2b95a.jpg)
 
 
 b. To prove the Parallel Axis Theorem, place the body with its center of mass at the origin, with the line $L_{c.m.}$ along the z-axis and the line L perpendicular to the xy-plane at the point $(h, 0, 0)$ . Let D be the region of space occupied by the body. Then, in the notation of the figure, 
@@ -2694,8 +2693,6 @@ Expand the integrand in this integral and complete the proof.
 
 a. Use Equation (2) to find the moment of inertia of the solid about the line parallel to the $z$ -axis through the solid's center of mass. 
 
-41. 
-
 b. Use Equation (2) and the result in part (a) to find the moment of inertia of the solid about the line x = 0, y = 2b. 
 
 38. If $a = b = 6$ and $c = 4$ , the moment of inertia of the solid wedge in Exercise 22 about the $x$ -axis is $I_x = 208$ . Find the moment of inertia of the wedge about the line $y = 4$ , $z = -4/3$ (the edge of the wedge's narrow end). 
@@ -2704,21 +2701,13 @@ Joint Probability Density Functions
 
 For Exercises 39–42, verify that f gives a joint probability density function. Then find the expected values $\mu_{X}$ and $\mu_{Y}$ . 
 
-$$
-f (x, y) = \left\{ \begin{array}{l l} x + y, & \text { if } 0 \leq x \leq 1 \text { and } 0 \leq y \leq 1, \\ 0, & \text { otherwise }. \end{array} \right.
-$$
+39. $f (x, y) = \left\{ \begin{array}{l l} x + y, & \text { if } 0 \leq x \leq 1 \text { and } 0 \leq y \leq 1, \\ 0, & \text { otherwise }. \end{array} \right.$
 
-$$
-\mathbf {4 0 .} f (x, y) = \left\{ \begin{array}{l l} 4 x y, & \text { if } 0 \leq x \leq 1 \text { and } 0 \leq y \leq 1, \\ 0, & \text { otherwise. } \end{array} \right.
-$$
+40. $f (x, y) = \left\{ \begin{array}{l l} 4 x y, & \text { if } 0 \leq x \leq 1 \text { and } 0 \leq y \leq 1, \\ 0, & \text { otherwise. } \end{array} \right.$
 
-$$
-f (x, y) = \left\{ \begin{array}{l l} 6 x ^ {2} y, & \text { if } 0 \leq x \leq 1 \text { and } 0 \leq y \leq 1, \\ 0, & \text { otherwise. } \end{array} \right.
-$$
+41. $f (x, y) = \left\{ \begin{array}{l l} 6 x ^ {2} y, & \text { if } 0 \leq x \leq 1 \text { and } 0 \leq y \leq 1, \\ 0, & \text { otherwise. } \end{array} \right.$
 
-$$
-\text { 42.   } f (x, y) = \left\{ \begin{array}{l l} \frac {3}{2} (x ^ {2} + y ^ {2}), & \text { if   } 0 \leq x \leq 1 \text {   and   } 0 \leq y \leq 1, \\ 0, & \text { otherwise. } \end{array} \right.
-$$
+42. $f (x, y) = \left\{ \begin{array}{l l} \frac {3}{2} (x ^ {2} + y ^ {2}), & \text { if } 0 \leq x \leq 1 \text { and } 0 \leq y \leq 1, \\ 0, & \text { otherwise. } \end{array} \right.$
 
 43. Suppose that $f$ is a uniform joint probability density function on $0 \leq x < 2$ , $0 \leq y < 3$ . What is the formula for $f$ ? What is the probability that $X < Y$ ? 
 
@@ -2730,7 +2719,7 @@ $$
 
 ## 14.7 Triple Integrals in Cylindrical and Spherical Coordinates
 
-![[7c1a66db463bddb631075e607586c3569175e3a123616fc164d1145965cfc707.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7c1a66db463bddb631075e607586c3569175e3a123616fc164d1145965cfc707.jpg)
 
 
 
@@ -2739,14 +2728,14 @@ FIGURE 14.46 The cylindrical coordinates of a point in space are r, $\theta$ , a
 
 When a calculation in physics, engineering, or geometry involves a cylinder, cone, or sphere, we can often simplify our work by using cylindrical or spherical coordinates, which are introduced in this section. The procedure for transforming to these coordinates and evaluating the resulting triple integrals is similar to the transformation to polar coordinates in the plane discussed in Section 14.4. 
 
-![[175129e544450143656dfb80f95cfa315f07f358f9fceb6fb6dd4063eaee1c46.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/175129e544450143656dfb80f95cfa315f07f358f9fceb6fb6dd4063eaee1c46.jpg)
 
 
 
 FIGURE 14.47 Constant-coordinate equations in cylindrical coordinates yield cylinders and planes.
 
 
-## Integration in Cylindrical Coordinates
+### Integration in Cylindrical Coordinates
 
 We obtain cylindrical coordinates for space by combining polar coordinates in the xy-plane with the usual z-axis. This assigns to every point in space coordinate triples of the form $(r, \theta, z)$ , as shown in Figure 14.46. Here we require $r \geq 0$ . 
 
@@ -2766,7 +2755,7 @@ $$
 
 In cylindrical coordinates, the equation r = a describes not just a circle in the xy-plane but an entire cylinder about the z-axis (Figure 14.47). The z-axis is given by r = 0. The equation $\theta = \theta_{0}$ describes the half-plane that contains the z-axis and makes an angle $\theta_{0}$ with the positive x-axis. And, just as in rectangular coordinates, the equation $z = z_{0}$ describes a plane perpendicular to the z-axis. 
 
-![[e34be4d0a1ae4405413875134a5a1ed699f75f73820ddc74b7d06297728477ae.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e34be4d0a1ae4405413875134a5a1ed699f75f73820ddc74b7d06297728477ae.jpg)
 
 
 
@@ -2779,7 +2768,7 @@ $$
 d V = r d z d r d \theta
 $$
 
-![[d8eaccfca794c3dd84304da04b2b3208f9850613735eda1c3f6db4406bd0586d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d8eaccfca794c3dd84304da04b2b3208f9850613735eda1c3f6db4406bd0586d.jpg)
 
 
 
@@ -2830,7 +2819,7 @@ $$
 
 Example 1 illustrates a good procedure for finding limits of integration in cylindrical coordinates. The procedure is summarized as follows. 
 
-## How to Integrate in Cylindrical Coordinates
+### How to Integrate in Cylindrical Coordinates
 
 To evaluate 
 
@@ -2842,15 +2831,15 @@ over a solid region D in space in cylindrical coordinates, integrating first wit
 
 1. Sketch. Sketch the solid region D along with its projection R on the xy-plane. Label the surfaces and curves that bound D and R. 
 
-![[71921c9e63ace3e05e20d5e5e1dea875b45dac2303ede2023c7a8d7808c9d0fd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/71921c9e63ace3e05e20d5e5e1dea875b45dac2303ede2023c7a8d7808c9d0fd.jpg)
 
 
 2. Find the $z$ -limits of integration. Draw a line $M$ through a typical point $(r, \theta)$ of $R$ parallel to the $z$ -axis. As $z$ increases, $M$ enters $D$ at $z = g_1(r, \theta)$ and leaves at $z = g_2(r, \theta)$ . These are the $z$ -limits of integration. 
 
-![[a931abb45012f9924a68674e1a4a4bd51cdbb1d411aa5f6d0ad49658359ecadb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a931abb45012f9924a68674e1a4a4bd51cdbb1d411aa5f6d0ad49658359ecadb.jpg)
 
 
-![[d8b197e64b9f2525a6cbf9b14c2ef88a8f546a72db27dc5264c0fcccd797f0c6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d8b197e64b9f2525a6cbf9b14c2ef88a8f546a72db27dc5264c0fcccd797f0c6.jpg)
 
 
 
@@ -2859,7 +2848,7 @@ FIGURE 14.50 Example 2 shows how to find the centroid of this solid.
 
 3. Find the r-limits of integration. Draw a ray L through $(r, \theta)$ from the origin. The ray enters R at $r = h_{1}(\theta)$ and leaves at $r = h_{2}(\theta)$ . These are the r-limits of integration. 
 
-![[f5af8a2cd8da6b3d4728ab06896579227ff680afa03734612c2f24e974edf47c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f5af8a2cd8da6b3d4728ab06896579227ff680afa03734612c2f24e974edf47c.jpg)
 
 
 4. Find the $\theta$ -limits of integration. As L sweeps across R, the angle $\theta$ it makes with the positive x-axis runs from $\theta = \alpha$ to $\theta = \beta$ . These are the $\theta$ -limits of integration. The integral is 
@@ -2894,14 +2883,14 @@ $$
 
 $\phi$ is the Greek letter phi, pronounced “fee.” 
 
-![[d4fa59d8c4048a1866e339de690b6af32cccd4ddae7d3190d4bb619702511c13.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d4fa59d8c4048a1866e339de690b6af32cccd4ddae7d3190d4bb619702511c13.jpg)
 
 
 
 FIGURE 14.51 The spherical coordinates $\rho$ , $\phi$ , and $\theta$ and their relation to x, y, z, and r.
 
 
-![[59feb49820fea084b66a12bc5eddccbb452390889b821a4ee39573e77e7cab95.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/59feb49820fea084b66a12bc5eddccbb452390889b821a4ee39573e77e7cab95.jpg)
 
 
 
@@ -2916,7 +2905,7 @@ $$
 
 and the centroid is $(0,0,4/3)$ . Notice that the centroid lies on the z-axis, outside the solid. 
 
-## Spherical Coordinates and Integration
+### Spherical Coordinates and Integration
 
 Spherical coordinates locate points in space with two angles and one distance, as shown in Figure 14.51. The first coordinate, $\rho = |\overrightarrow{OP}|$ , is the point's distance from the origin and is never negative. The second coordinate, $\phi$ , is the angle $\overrightarrow{OP}$ makes with the positive $z$ -axis. It is required to lie in the interval $[0, \pi]$ . The third coordinate is the angle $\theta$ as measured in cylindrical coordinates. 
 
@@ -2954,21 +2943,21 @@ $$
 \rho^ {2} = 2 \rho \cos \phi
 $$
 
-![[8a15f03b57f888561779d0aebfc0b0016e28d2f5ccc9e135b523c5326286eadf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8a15f03b57f888561779d0aebfc0b0016e28d2f5ccc9e135b523c5326286eadf.jpg)
 
 
 
 FIGURE 14.53 The sphere in Example 3.
 
 
-![[c7dc8663de06aad1f21ec86cbba347fb886c3419c4c7be6e5d336f887e160e65.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c7dc8663de06aad1f21ec86cbba347fb886c3419c4c7be6e5d336f887e160e65.jpg)
 
 
 
 FIGURE 14.54 The cone in Example 4.
 
 
-![[84830a3be4711ad27f90da773fa0ee943426ac8a9fb6c78a268c9b05d0efbf03.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/84830a3be4711ad27f90da773fa0ee943426ac8a9fb6c78a268c9b05d0efbf03.jpg)
 
 
 
@@ -2983,7 +2972,7 @@ $$
 
 The angle $\phi$ varies from 0 at the north pole of the sphere to $\pi/2$ at the south pole; the angle $\theta$ does not appear in the expression for $\rho$ , reflecting the symmetry about the z-axis (see Figure 14.53). 
 
-## **EXAMPLE 4** Find a spherical coordinate equation for the cone $z = \sqrt{x^{2} + y^{2}}$ .
+**EXAMPLE 4** Find a spherical coordinate equation for the cone $z = \sqrt{x^{2} + y^{2}}$ .
 
 **Solution** 1 Use geometry. The cone is symmetric with respect to the z-axis and cuts the first quadrant of the yz-plane along the line z = y. The angle between the cone and the positive z-axis is therefore $\pi/4$ radians. The cone consists of the points whose spherical coordinates have $\phi$ equal to $\pi/4$ , so its equation is $\phi = \pi/4$ . (See Figure 14.54.) 
 
@@ -3013,7 +3002,7 @@ $$
 \lim _ {n \rightarrow \infty} S _ {n} = \iiint_ {D} f (\rho , \phi , \theta) d V = \iiint_ {D} f (\rho , \phi , \theta) \rho^ {2} \sin \phi d \rho d \phi d \theta .
 $$
 
-![[647f0f74bc401bdf19df271eea4e4b3798d001d07fcb7a1771b8ce3f7aba368c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/647f0f74bc401bdf19df271eea4e4b3798d001d07fcb7a1771b8ce3f7aba368c.jpg)
 
 
 
@@ -3034,7 +3023,7 @@ over a solid region D in space in spherical coordinates, integrating first with 
 
 1. Sketch. Sketch the solid region D along with its projection R on the xy-plane. Label the surfaces that bound D. 
 
-![[35abf96653876d793e62604cedec513eb43c1f5cb7155065e3b5c93dcf404de5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/35abf96653876d793e62604cedec513eb43c1f5cb7155065e3b5c93dcf404de5.jpg)
 
 
 2. Find the $\rho$ -limits of integration. Draw a ray M from the origin through D, making an angle $\phi$ with the positive z-axis. Also draw the projection of M on the xy-plane (call the projection L). The ray L makes an angle $\theta$ with the positive x-axis. As $\rho$ increases, M enters D at $\rho = g_{1}(\phi, \theta)$ and leaves at $\rho = g_{2}(\phi, \theta)$ . These are the $\rho$ -limits of integration shown in the above figure. 
@@ -3083,7 +3072,7 @@ $$
 \begin{array}{l} I _ {z} = \int_ {0} ^ {2 \pi} \int_ {0} ^ {\pi / 3} \int_ {0} ^ {1} \rho^ {4} \sin^ {3} \phi d \rho d \phi d \theta = \int_ {0} ^ {2 \pi} \int_ {0} ^ {\pi / 3} \left[ \frac {\rho^ {5}}{5} \right] _ {\rho = 0} ^ {\rho = 1} \sin^ {3} \phi d \phi d \theta \\ = \frac {1}{5} \int_ {0} ^ {2 \pi} \int_ {0} ^ {\pi / 3} (1 - \cos^ {2} \phi) \sin \phi d \phi d \theta = \frac {1}{5} \int_ {0} ^ {2 \pi} \left[ - \cos \phi + \frac {\cos^ {3} \phi}{3} \right] _ {\phi = 0} ^ {\phi = \pi / 3} d \theta \\ = \frac {1}{5} \int_ {0} ^ {2 \pi} \left(- \frac {1}{2} + \frac {1}{2 4} + 1 - \frac {1}{3}\right) d \theta = \frac {1}{5} \int_ {0} ^ {2 \pi} \frac {5}{2 4} d \theta = \frac {1}{2 4} (2 \pi) = \frac {\pi}{1 2}. \end{array}
 $$
 
-## Coordinate Conversion Formulas
+### Coordinate Conversion Formulas
 
 CYLINDRICAL TO 
 
@@ -3141,7 +3130,7 @@ $$
 
 In the next section we offer a more general procedure for determining dV in cylindrical and spherical coordinates. The results, of course, will be the same. 
 
-## EXERCISES 14.7
+### EXERCISES 14.7
 
 In Exercises 1–12, sketch the region described by the following cylindrical coordinates in three-dimensional space. 
 
@@ -3177,9 +3166,7 @@ In Exercises 13–22, sketch the region described by the following spherical coo
 
 15. $\theta = \frac{2}{3}\pi$ 
 
-$$
-\rho = \csc \phi
-$$
+16. $\rho = \csc \phi$
 
 17. $\rho \cos \phi = 4$ 
 
@@ -3193,13 +3180,17 @@ $$
 
 22. $4 \sec \phi \leq \rho \leq 5, 0 \leq \phi \leq \frac{\pi}{2}$ 
 
-## Evaluating Integrals in Cylindrical Coordinates
+#### Evaluating Integrals in Cylindrical Coordinates
 
 Evaluate the cylindrical coordinate integrals in Exercises 23-28. 
 
-23. $\int_0^{2\pi}\int_0^1\int_r^{\sqrt{2 - r^2}}r  dz  dr  d\theta$ 24. $\int_0^{2\pi}\int_0^3\int_{r^2 /3}^{\sqrt{18 - r^2}}r  dz  dr  d\theta$ 
+23. $\int_0^{2\pi}\int_0^1\int_r^{\sqrt{2 - r^2}}r  dz  dr  d\theta$
 
-25. $\int_0^{2\pi}\int_0^{\theta /2\pi}\int_0^{3 + 24r^2}r  dz  dr  d\theta$ 26. $\int_0^\pi \int_0^{\theta /\pi}\int_{-\sqrt{4 - r^2}}^{3\sqrt{4 - r^2}}z r dz dr d\theta$ 
+24. $\int_0^{2\pi}\int_0^3\int_{r^2 /3}^{\sqrt{18 - r^2}}r  dz  dr  d\theta$
+
+25. $\int_0^{2\pi}\int_0^{\theta /2\pi}\int_0^{3 + 24r^2}r  dz  dr  d\theta$
+
+26. $\int_0^\pi \int_0^{\theta /\pi}\int_{-\sqrt{4 - r^2}}^{3\sqrt{4 - r^2}}z r dz dr d\theta$
 
 27. $\int_0^{2\pi}\int_0^1\int_r^{1 / \sqrt{2 - r^2}}3rdzdrd\theta$ 
 
@@ -3207,7 +3198,9 @@ Evaluate the cylindrical coordinate integrals in Exercises 23-28.
 
 The integrals we have seen so far suggest that there are preferred orders of integration for cylindrical coordinates, but other orders usually work well and are occasionally easier to evaluate. Evaluate the integrals in Exercises 29–32. 
 
-29. $\int_0^{2\pi}\int_0^3\int_0^{z / 3}r^3 drdz d\theta$ 30. $\int_{-1}^{1}\int_{0}^{2\pi}\int_{0}^{1 + \cos \theta}4rdrd\theta dz$ 
+29. $\int_0^{2\pi}\int_0^3\int_0^{z / 3}r^3 drdz d\theta$
+
+30. $\int_{-1}^{1}\int_{0}^{2\pi}\int_{0}^{1 + \cos \theta}4rdrd\theta dz$
 
 31. $\int_0^1\int_0^{\sqrt{z}}\int_0^{2\pi}(r^2\cos^2\theta +z^2)r d\theta dr dz$ 
 
@@ -3241,7 +3234,7 @@ In Exercises 37–42, set up the iterated integral for evaluating $\iiint_{D} f(
 
 37. D is the right circular cylinder whose base is the circle $r = 2 \sin \theta$ in the xy-plane and whose top lies in the plane z = 4 - y. 
 
-![[457f4ebf4aa75e7e8314d9ab630b44325f3e2e8da325e3b75db7098e431bfc4d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/457f4ebf4aa75e7e8314d9ab630b44325f3e2e8da325e3b75db7098e431bfc4d.jpg)
 
 
 
@@ -3250,27 +3243,27 @@ $r = 2\cos \theta$
 
 38. D is the right circular cylinder whose base is the circle $r = 3 \cos \theta$ and whose top lies in the plane z = 5 - x. 
 
-![[3c2dd4d241a92368aedbe6fcf46676f6bee7b93675a45dfbc503acface1b4ac5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3c2dd4d241a92368aedbe6fcf46676f6bee7b93675a45dfbc503acface1b4ac5.jpg)
 
 
 39. D is the solid right cylinder whose base is the region in the xy-plane that lies inside the cardioid $r = 1 + \cos \theta$ and outside the circle r = 1 and whose top lies in the plane z = 4. 
 
-![[5699b73f274a21d254d8330f90626a11432d916f846331e21e136b91bf92b6da.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5699b73f274a21d254d8330f90626a11432d916f846331e21e136b91bf92b6da.jpg)
 
 
 40. D is the solid right cylinder whose base is the region between the circles $r = \cos \theta$ and $r = 2 \cos \theta$ and whose top lies in the plane z = 3 - y. 
 
-![[ce651ecea5327d24acc670d910fce503617a68cf0a910d5eb52d41211cc7d981.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ce651ecea5327d24acc670d910fce503617a68cf0a910d5eb52d41211cc7d981.jpg)
 
 
 41. D is the right prism whose base is the triangle in the xy-plane bounded by the x-axis and the lines y = x and x = 1 and whose top lies in the plane z = 2 - y. 
 
-![[0c0579fd01fd6cb9b1ceead658f8da46b3e00b30991acc97f4c1b1b7bec7ddc9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0c0579fd01fd6cb9b1ceead658f8da46b3e00b30991acc97f4c1b1b7bec7ddc9.jpg)
 
 
 42. D is the right prism whose base is the triangle in the xy-plane bounded by the y-axis and the lines y = x and y = 1 and whose top lies in the plane z = 2 - x. 
 
-![[c260a233dcc455e97f1847570f5e869b5d05843fc9f33cea95a8cc8bca9d80cf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c260a233dcc455e97f1847570f5e869b5d05843fc9f33cea95a8cc8bca9d80cf.jpg)
 
 
 Evaluating Integrals in Spherical Coordinates 
@@ -3318,12 +3311,12 @@ In Exercises 55–60, (a) find the spherical coordinate limits for the integral 
 
 55. The solid between the sphere $\rho = \cos\phi$ and the hemisphere $\rho = 2, z \geq 0$ 
 
-![[92f43d156641bdac4ed38f201895ef59bb587a4e61effc10c30baee1aa4ce877.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/92f43d156641bdac4ed38f201895ef59bb587a4e61effc10c30baee1aa4ce877.jpg)
 
 
 56. The solid bounded below by the hemisphere $\rho = 1, z \geq 0$ , and above by the surface $\rho = 1 + \cos \phi$ 
 
-![[d2a2fe6a74a907a578032105376ff658a0d19d30129368013b1c3fc53ce2b3ba.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d2a2fe6a74a907a578032105376ff658a0d19d30129368013b1c3fc53ce2b3ba.jpg)
 
 
 57. The solid enclosed by the surface $\rho = 1 - \cos \phi$ 
@@ -3332,15 +3325,15 @@ In Exercises 55–60, (a) find the spherical coordinate limits for the integral 
 
 59. The solid bounded below by the sphere $\rho = 2 \cos \phi$ and above by the cone $z = \sqrt{x^{2} + y^{2}}$ 
 
-![[ec1c713881f996a0ce5708b30d16f2884a2a6b649419b5842206ace3c498a749.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ec1c713881f996a0ce5708b30d16f2884a2a6b649419b5842206ace3c498a749.jpg)
 
 
 60. The solid bounded below by the xy-plane, on the sides by the sphere $\rho = 2$ , and above by the cone $\phi = \pi/3$ 
 
-![[b54ab7bbe896b1ce5cc9ae4e36346aa703a177bdd52f630d1d7d94bbf644ea10.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b54ab7bbe896b1ce5cc9ae4e36346aa703a177bdd52f630d1d7d94bbf644ea10.jpg)
 
 
-## Finding Triple Integrals
+#### Finding Triple Integrals
 
 61. Set up triple integrals for the volume of the sphere $\rho = 2$ in (a) spherical, (b) cylindrical, and (c) rectangular coordinates. 
 
@@ -3350,7 +3343,7 @@ In Exercises 55–60, (a) find the spherical coordinate limits for the integral 
 
 64. Let $D$ be the solid hemisphere $x^{2} + y^{2} + z^{2} \leq 1$ , $z \geq 0$ . If the density is $\delta(x, y, z) = 1$ , express the moment of intertia $I_{z}$ as an iterated integral in (a) cylindrical and (b) spherical coordinates. Then (c) find $I_{z}$ . 
 
-## Volumes
+#### Volumes
 
 Find the volumes of the solids in Exercises 65–70. 
 
@@ -3362,38 +3355,38 @@ Find the volumes of the solids in Exercises 65–70.
 66.
 
 
-![[87abd7f9e7065f6aeeea62ec2459c15b1cd543107ee80774f9e10c3334772d05.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/87abd7f9e7065f6aeeea62ec2459c15b1cd543107ee80774f9e10c3334772d05.jpg)
 
 
-![[496284541484fe332debadc49f3c14dba30c968adac7d795cb9f2a34c3a9feae.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/496284541484fe332debadc49f3c14dba30c968adac7d795cb9f2a34c3a9feae.jpg)
 
 
 
 67.
 
 
-![[31f189f256d4d41835d2e6a2a4cfa991a851f557e50045dab5991993e2f0f98a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/31f189f256d4d41835d2e6a2a4cfa991a851f557e50045dab5991993e2f0f98a.jpg)
 
 
 
 68.
 
 
-![[0fae402ce125c221b657a2a2f505ee8449aed19725c17a3a0ac2e21fa7c16c64.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0fae402ce125c221b657a2a2f505ee8449aed19725c17a3a0ac2e21fa7c16c64.jpg)
 
 
 
 69.
 
 
-![[38cff4d722769e887abc813f195d91abb423056b04e0897bb8aaa8bfbb6cbff9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/38cff4d722769e887abc813f195d91abb423056b04e0897bb8aaa8bfbb6cbff9.jpg)
 
 
 
 70.
 
 
-![[cab8d1347066ae61de99ce1c5713e472470b81ba10503c6f0d1b8804f82adb87.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cab8d1347066ae61de99ce1c5713e472470b81ba10503c6f0d1b8804f82adb87.jpg)
 
 
 71. Ball and cones Find the volume of the portion of the ball $\rho \leq a$ that lies between the cones $\phi = \pi /3$ and $\phi = 2\pi /3$ . 
@@ -3424,7 +3417,7 @@ Find the volumes of the solids in Exercises 65–70.
 
 84. Sphere and paraboloid Find the volume of the solid region bounded above by the sphere $x^{2} + y^{2} + z^{2} = 2$ and below by the paraboloid $z = x^{2} + y^{2}$ . 
 
-## Average Values
+#### Average Values
 
 85. Find the average value of the function $f(r, \theta, z) = r$ over the solid region bounded by the cylinder $r = 1$ between the planes $z = -1$ and $z = 1$ . 
 
@@ -3434,7 +3427,7 @@ Find the volumes of the solids in Exercises 65–70.
 
 88. Find the average value of the function $f(\rho,\phi,\theta)=\rho\cos\phi$ over the upper half of the solid ball $\rho\leq1,0\leq\phi\leq\pi/2$ . 
 
-## Masses, Moments, and Centroids
+#### Masses, Moments, and Centroids
 
 89. Center of mass A solid of constant density is bounded below by the plane z = 0, above by the cone z = r, $r \geq 0$ , and on the sides by the cylinder r = 1. Find the center of mass. 
 
@@ -3478,30 +3471,30 @@ a. $\delta(\rho, \phi, \theta) = \rho^2$ b. $\delta(\rho, \phi, \theta) = r = \r
 
 104. Mass of planet's atmosphere A spherical planet of radius $R$ has an atmosphere whose density is $\mu = \mu_0 e^{-ch}$ , where $h$ is the altitude above the surface of the planet, $\mu_0$ is the density at sea level, and $c$ is a positive constant. Find the mass of the planet's atmosphere. 
 
-## Theory and Examples
+#### Theory and Examples
 
-## 105. Vertical planes in cylindrical coordinates
+105. Vertical planes in cylindrical coordinates
 
 a. Show that planes perpendicular to the x-axis have equations of the form $r = a \sec \theta$ in cylindrical coordinates. 
 
 b. Show that planes perpendicular to the y-axis have equations of the form $r = b \csc \theta$ . 
 
-107. Symmetry What symmetry will you find in a surface that has an equation of the form $r = f(z)$ in cylindrical coordinates? Give reasons for your answer. 
-
 106. (Continuation of Exercise 105.) Find an equation of the form $r = f(\theta)$ in cylindrical coordinates for the plane $ax + by = c$ , $c \neq 0$ . 
+
+107. Symmetry What symmetry will you find in a surface that has an equation of the form $r = f(z)$ in cylindrical coordinates? Give reasons for your answer. 
 
 108. Symmetry What symmetry will you find in a surface that has an equation of the form $\rho = f(\phi)$ in spherical coordinates? Give reasons for your answer. 
 
 ## 14.8 Substitutions in Multiple Integrals
 
-![[753d40cdf9145f71c0e4ecd8ae26f4335ec79617b7441be918f557ed82b6eb18.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/753d40cdf9145f71c0e4ecd8ae26f4335ec79617b7441be918f557ed82b6eb18.jpg)
 
 
 
 Cartesian uv-plane
 
 
-![[a410b24b5b2decdacd75732f439e6f8a93d6592a640ad9d176b3745f1af6a6bd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a410b24b5b2decdacd75732f439e6f8a93d6592a640ad9d176b3745f1af6a6bd.jpg)
 
 
 
@@ -3514,7 +3507,7 @@ FIGURE 14.57 The equations
 
 $x = g(u, v)$ and $y = h(u, v)$ allow us to change an integral over a region R in the xy-plane into an integral over a region G in the uv-plane. 
 
-## HISTORICAL BIOGRAPHY Carl Gustav Jacob Jacobi (1804–1851)
+**HISTORICAL BIOGRAPHY Carl Gustav Jacob Jacobi (1804–1851)**
 
 Jacobi, one of nineteenth-century Germany's most accomplished scientists, developed the theory of determinants and transformations into a powerful tool for evaluating multiple integrals and solving differential equations. He also applied transformation methods to study integrals like the ones that arise in the calculation of arc length. 
 
@@ -3522,7 +3515,7 @@ This section introduces the ideas involved in coordinate transformations to eval
 
 To know more, visit the companion Website. 
 
-## Substitutions in Double Integrals
+### Substitutions in Double Integrals
 
 The polar coordinate substitution of Section 14.4 is a special case of a more general substitution method for double integrals, a method that pictures changes in variables as transformations of regions. 
 
@@ -3548,14 +3541,14 @@ $$
 d x d y = \left| \frac {\partial (x , y)}{\partial (u , v)} \right| d u d v
 $$
 
-![[d3a0d68b278233e10f5f9c619c007b4333c9114cbd66125068014fbe693ce102.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d3a0d68b278233e10f5f9c619c007b4333c9114cbd66125068014fbe693ce102.jpg)
 
 
 $$
 \begin{array}{l} \Big \downarrow x = r \cos \theta \\ \Big \downarrow y = r \sin \theta \end{array}
 $$
 
-![[80946a34288b0a89f34c4d988f4860a4fb29b7d1d727680c0e20ee7192f506c9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/80946a34288b0a89f34c4d988f4860a4fb29b7d1d727680c0e20ee7192f506c9.jpg)
 
 
 $x = r \cos \theta, y = r \sin \theta$ transform G into R. The Jacobian factor r, calculated in Example 1, scales the differential rectangle dr dθ in G to match the differential area element dx dy in R. 
@@ -3576,7 +3569,7 @@ to help us remember how the determinant in Equation (1) is constructed from the 
 
 Now we can answer our original question concerning the relationship of the integral of $f(x, y)$ over the region R to the integral of $f(g(u, v), h(u, v))$ over G. 
 
-## THEOREM 3—Substitution for Double Integrals
+**THEOREM 3—Substitution for Double Integrals**
 
 Suppose that $f(x, y)$ is continuous over the region R. Let G be the preimage of R under the transformation $x = g(u, v)$ , $y = h(u, v)$ , which is assumed to be one-to-one on the interior of G. If the functions g and h have continuous first partial derivatives within the interior of G, then 
 
@@ -3606,7 +3599,7 @@ This is the same formula we derived independently using a geometric argument for
 
 Here is an example of a substitution in which the image of a rectangle under the coordinate transformation is a trapezoid. Transformations like this one are called linear transformations, and their Jacobians are constant throughout G. 
 
-## **EXAMPLE 2** Evaluate
+**EXAMPLE 2** Evaluate
 
 $$
 \int_ {0} ^ {4} \int_ {x = y / 2} ^ {x = (y / 2) + 1} \frac {2 x - y}{2} d x d y
@@ -3622,7 +3615,7 @@ and integrating over an appropriate region in the uv-plane.
 
 **Solution** We sketch the region R of integration in the xy-plane and identify its boundaries (Figure 14.59). 
 
-![[c8d15f7d0434531be0fd7e4836a4a2a1676c72b5e86978761d7e8bfbf8f5b38f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c8d15f7d0434531be0fd7e4836a4a2a1676c72b5e86978761d7e8bfbf8f5b38f.jpg)
 
 
 
@@ -3643,7 +3636,7 @@ We then find the boundaries of G by substituting these expressions into the equa
 
 <table><tr><td>xy-equations for the boundary of R</td><td>Corresponding uv-equations for the boundary of G</td><td>Simplified uv-equations</td></tr><tr><td>x = y/2</td><td>u + v = 2v/2 = v</td><td>u = 0</td></tr><tr><td>x = (y/2) + 1</td><td>u + v = (2v/2) + 1 = v + 1</td><td>u = 1</td></tr><tr><td>y = 0</td><td>2v = 0</td><td>v = 0</td></tr><tr><td>y = 4</td><td>2v = 4</td><td>v = 2</td></tr></table>
 
-![[55dbcb2ac26b4b70c00491fab19d4790dfc9398965c39942a9e77d5e0c0f7ac4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/55dbcb2ac26b4b70c00491fab19d4790dfc9398965c39942a9e77d5e0c0f7ac4.jpg)
 
 
 FIGURE 14.60 The equations $x = (u/3) - (v/3)$ and $y = (2u/3) + (v/3)$ transform G into R.
@@ -3692,14 +3685,14 @@ $$
 
 In the next example we illustrate a nonlinear transformation of coordinates resulting from simplifying the form of the integrand. Like the polar coordinates' transformation, nonlinear transformations can map a straight-line boundary of a region into a curved boundary (or vice versa with the inverse transformation). In general, nonlinear transformations are more complex to analyze than linear ones, and a complete treatment is left to a more advanced course. 
 
-![[f45878cef5a1b633618e55eddcc6e161a27a78694f4018ce686e51de5aa90250.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f45878cef5a1b633618e55eddcc6e161a27a78694f4018ce686e51de5aa90250.jpg)
 
 
 
 FIGURE 14.61 The region of integration R in Example 4.
 
 
-![[db6450329bf406c9e6ae5b37f1f6951248bba6e50ed43ae0548a5c9fcc9d59d1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/db6450329bf406c9e6ae5b37f1f6951248bba6e50ed43ae0548a5c9fcc9d59d1.jpg)
 
 
 
@@ -3748,7 +3741,7 @@ $$
 
 Integrate by parts. 
 
-## Determinants
+### Determinants
 
 $2 \times 2$ and $3 \times 3$ determinants are evaluated as follows: 
 
@@ -3756,7 +3749,7 @@ $$
 \begin{array}{c} \left| \begin{array}{c c} a & b \\ c & d \end{array} \right| = a d - b c \\ \left| \begin{array}{c c c} a _ {1} & a _ {2} & a _ {3} \\ b _ {1} & b _ {2} & b _ {3} \\ c _ {1} & c _ {2} & c _ {3} \end{array} \right| = a _ {1} \left| \begin{array}{c c} b _ {2} & b _ {3} \\ c _ {2} & c _ {3} \end{array} \right| \\ - a _ {2} \left| \begin{array}{c c} b _ {1} & b _ {3} \\ c _ {1} & c _ {3} \end{array} \right| + a _ {3} \left| \begin{array}{c c} b _ {1} & b _ {2} \\ c _ {1} & c _ {2} \end{array} \right| \end{array}
 $$
 
-## Substitutions in Triple Integrals
+### Substitutions in Triple Integrals
 
 The cylindrical and spherical coordinate substitutions in Section 14.7 are special cases of a substitution method that pictures changes of variables in triple integrals as transformations of solid regions. The method is like the method for double integrals given by Equation (2) except that now we work in three dimensions instead of two. 
 
@@ -3778,7 +3771,7 @@ $$
 \iiint_ {D} F (x, y, z) d x d y d z = \iiint_ {G} H (u, v, w) | J (u, v, w) | d u d v d w.\tag{7}
 $$
 
-![[807fcef71bd202a8319a19da91e9ea4bcb286bca0582a40838eb009bf766a32c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/807fcef71bd202a8319a19da91e9ea4bcb286bca0582a40838eb009bf766a32c.jpg)
 
 
 
@@ -3799,7 +3792,7 @@ $$
 x = r \cos \theta , \quad y = r \sin \theta , \quad z = z
 $$
 
-![[f29e37e912782620c55dad6abb17d40c604535a0aadb29a412c51988bf94eb9f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f29e37e912782620c55dad6abb17d40c604535a0aadb29a412c51988bf94eb9f.jpg)
 
 
 FIGURE 14.64 The equations $x = r \cos \theta$ , $y = r \sin \theta$ , and z = z transform the rectangular box G into a cylindrical wedge D. 
@@ -3836,7 +3829,7 @@ $$
 \iiint_ {D} F (x, y, z) d x d y d z = \iiint_ {G} H (\rho , \phi , \theta) | \rho^ {2} \sin \phi | d \rho d \phi d \theta .
 $$
 
-![[79db7c15d04ce924beaf5c936c474b1e1787459c7e9b0abfe1b63918f86801a0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/79db7c15d04ce924beaf5c936c474b1e1787459c7e9b0abfe1b63918f86801a0.jpg)
 
 
 
@@ -3847,15 +3840,15 @@ We can drop the absolute value signs because $\sin\phi$ is never negative for $0
 
 Here is an example of another substitution. Although we could evaluate the integral in this example directly, we have chosen it to illustrate the substitution method in a simple (and fairly intuitive) setting. 
 
-![[420a99272e1aa39a2154ee5f76514574d14528523fc80318098240eacc30ae5b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/420a99272e1aa39a2154ee5f76514574d14528523fc80318098240eacc30ae5b.jpg)
 
 
-![[b99e19cce89863843a9aebe3966295ed9462fe1c89f2498d5289b32fb7f32cf9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b99e19cce89863843a9aebe3966295ed9462fe1c89f2498d5289b32fb7f32cf9.jpg)
 
 
 FIGURE 14.66 The equations $x = u + v, y = 2v$ , and $z = 3w$ transform $G$ into $D$ . Reversing the transformation by the equations $u = (2x - y)/2, v = y/2$ , and $w = z/3$ transforms $D$ into $G$ (Example 5). 
 
-## **EXAMPLE 5** Evaluate
+**EXAMPLE 5** Evaluate
 
 $$
 \int_ {0} ^ {3} \int_ {0} ^ {4} \int_ {x = y / 2} ^ {x = (y / 2) + 1} \left(\frac {2 x - y}{2} + \frac {z}{3}\right) d x d y d z
@@ -4019,7 +4012,7 @@ $$
 
 (Hint: Show that the image of the triangular region G with vertices $(0,0)$ , $(1,0)$ , $(1,1)$ in the uv-plane is the region of integration R in the xy-plane defined by the limits of integration.) 
 
-## Substitutions in Triple Integrals
+### Substitutions in Triple Integrals
 
 17. Evaluate the integral in Example 5 by integrating with respect to x, y, and z. 
 
@@ -4065,7 +4058,7 @@ $$
 
 and integrating over an appropriate region G in uvw-space. 
 
-## Theory and Examples
+### Theory and Examples
 
 21. Find the Jacobian $\partial(x, y)/\partial(u, v)$ of the transformation 
 
@@ -4125,17 +4118,35 @@ Equation (10) is proved in advanced calculus. Use it to find the area of the reg
 
 ## CHAPTER 14 Practice Exercises
 
-## Evaluating Double Iterated Integrals
+### Evaluating Double Iterated Integrals
 
 In Exercises 1–4, sketch the region of integration and evaluate the double integral.
-1. $\int_{1}^{10}\int_{0}^{1/y}ye^{xy}dx dy$ 2. $\int_{0}^{1}\int_{0}^{x^{3}}e^{y/x}dy dx$ 3. $\int_{0}^{3/2}\int_{-\sqrt{9-4t^{2}}}^{\sqrt{9-4t^{2}}}t ds dt$ 4. $\int_{0}^{1}\int_{\sqrt{y}}^{2-\sqrt{y}}xy dx dy$ 
+1. $\int_{1}^{10}\int_{0}^{1/y}ye^{xy}dx dy$
+
+2. $\int_{0}^{1}\int_{0}^{x^{3}}e^{y/x}dy dx$
+
+3. $\int_{0}^{3/2}\int_{-\sqrt{9-4t^{2}}}^{\sqrt{9-4t^{2}}}t ds dt$
+
+4. $\int_{0}^{1}\int_{\sqrt{y}}^{2-\sqrt{y}}xy dx dy$
 
 In Exercises 5–8, sketch the region of integration and write an equivalent integral with the order of integration reversed. Then evaluate both integrals.
-5. $\int_{0}^{4}\int_{-\sqrt{4-y}}^{(y-4)/2}dx dy$ 6. $\int_{0}^{1}\int_{x^{2}}^{x}\sqrt{x}dy dx$ 7. $\int_{0}^{3/2}\int_{-\sqrt{9-4y^{2}}}^{\sqrt{9-4y^{2}}}y dx dy$ 8. $\int_{0}^{2}\int_{0}^{4-x^{2}}2x dy dx$ 
+5. $\int_{0}^{4}\int_{-\sqrt{4-y}}^{(y-4)/2}dx dy$
+
+6. $\int_{0}^{1}\int_{x^{2}}^{x}\sqrt{x}dy dx$
+
+7. $\int_{0}^{3/2}\int_{-\sqrt{9-4y^{2}}}^{\sqrt{9-4y^{2}}}y dx dy$
+
+8. $\int_{0}^{2}\int_{0}^{4-x^{2}}2x dy dx$
 
 Evaluate the integrals in Exercises 9–12.
 
-9. $\int_{0}^{1}\int_{2y}^{2}4\cos(x^{2})dx dy$ 10. $\int_{0}^{2}\int_{y/2}^{1}e^{x^{2}}dx dy$ 11. $\int_{0}^{8}\int_{\sqrt[3]{x}}^{2}\frac{dy dx}{y^{4}+1}$ 12. $\int_{0}^{1}\int_{\sqrt[3]{y}}^{1}\frac{2\pi\sin\pi x^{2}}{x^{2}}dx dy$ 
+9. $\int_{0}^{1}\int_{2y}^{2}4\cos(x^{2})dx dy$
+
+10. $\int_{0}^{2}\int_{y/2}^{1}e^{x^{2}}dx dy$
+
+11. $\int_{0}^{8}\int_{\sqrt[3]{x}}^{2}\frac{dy dx}{y^{4}+1}$
+
+12. $\int_{0}^{1}\int_{\sqrt[3]{y}}^{1}\frac{2\pi\sin\pi x^{2}}{x^{2}}dx dy$
 
 Areas and Volumes Using Double Integrals 
 
@@ -4173,18 +4184,24 @@ b. First quadrant The first quadrant of the xy-plane.
 
 Evaluating Triple Iterated Integrals
 Evaluate the integrals in Exercises 23–26.
-23. $\int_{0}^{\pi}\int_{0}^{\pi}\int_{0}^{\pi}\cos(x+y+z)dx dy dz$ 24. $\int_{\ln6}^{\ln7}\int_{0}^{\ln2}\int_{\ln4}^{\ln5}e^{(x+y+z)}dz dy dx$ 25. $\int_{0}^{1}\int_{0}^{x^{2}}\int_{0}^{x+y}(2x-y-z)dz dy dx$ 26. $\int_{1}^{e}\int_{1}^{x}\int_{0}^{z}\frac{2y}{z^{3}}dy dz dx$ 
+23. $\int_{0}^{\pi}\int_{0}^{\pi}\int_{0}^{\pi}\cos(x+y+z)dx dy dz$
+
+24. $\int_{\ln6}^{\ln7}\int_{0}^{\ln2}\int_{\ln4}^{\ln5}e^{(x+y+z)}dz dy dx$
+
+25. $\int_{0}^{1}\int_{0}^{x^{2}}\int_{0}^{x+y}(2x-y-z)dz dy dx$
+
+26. $\int_{1}^{e}\int_{1}^{x}\int_{0}^{z}\frac{2y}{z^{3}}dy dz dx$
 
 Volumes and Average Values Using Triple Integrals 
 
 27. Volume Find the volume of the wedge-shaped solid region enclosed on the side by the cylinder $x = -\cos y$ , $-\pi / 2 \leq y \leq \pi / 2$ , on the top by the plane $z = -2x$ , and below by the $xy$ -plane. 
 
-![[dc8e7bac2ae63c798921bdbe6e7e7fc8cc897c36bb7646ee7f5407e02d97acc3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dc8e7bac2ae63c798921bdbe6e7e7fc8cc897c36bb7646ee7f5407e02d97acc3.jpg)
 
 
 28. Volume Find the volume of the solid that is bounded above by the cylinder $z = 4 - x^2$ , on the sides by the cylinder $x^2 + y^2 = 4$ , and below by the xy-plane. 
 
-![[496af58dc12701684497d5ad27e8c32928d5523b8c29f086f347644ebb1a2b76.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/496af58dc12701684497d5ad27e8c32928d5523b8c29f086f347644ebb1a2b76.jpg)
 
 
 29. Average value Find the average value of $f(x,y,z)=30xz\sqrt{x^{2}+y}$ over the rectangular solid in the first octant bounded by the coordinate planes and the planes x=1, y=3, z=1. 
@@ -4235,7 +4252,7 @@ b. Convert the integral to cylindrical coordinates, but do not evaluate the inte
 
 37. Spherical versus cylindrical coordinates Triple integrals involving spherical shapes do not always require spherical coordinates for convenient evaluation. Some calculations may be accomplished more easily with cylindrical coordinates. As a case in point, find the volume of the solid region bounded above by the sphere $x^{2} + y^{2} + z^{2} = 8$ and below by the plane z = 2 by using (a) cylindrical coordinates and (b) spherical coordinates. 
 
-## Masses and Moments
+### Masses and Moments
 
 38. Finding $I_{z}$ in spherical coordinates Find the moment of inertia about the z-axis of a solid of constant density $\delta = 1$ that is bounded above by the sphere $\rho = 2$ and below by the cone $\phi = \pi/3$ (spherical coordinates). 
 
@@ -4243,7 +4260,7 @@ b. Convert the integral to cylindrical coordinates, but do not evaluate the inte
 
 40. Moment of inertia of an apple Find the moment of inertia about the z-axis of a solid of density $\delta = 1$ enclosed by the spherical coordinate surface $\rho = 1 - \cos \phi$ . The solid is the red curve rotated about the z-axis in the accompanying figure. 
 
-![[cf003b48c65f89db21cc9d0335607e24dbc28437fa72e16e6fa76101d6e67068.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cf003b48c65f89db21cc9d0335607e24dbc28437fa72e16e6fa76101d6e67068.jpg)
 
 
 41. Centroid Find the centroid of the “triangular” region bounded by the lines x = 2, y = 2 and the hyperbola xy = 2 in the xy-plane. 
@@ -4280,7 +4297,7 @@ b. Sketch the region and show the centroid in your sketch.
 
 b. Sketch the region for $\alpha = 5\pi /6$ and show the centroid in your sketch. 
 
-## Substitutions
+### Substitutions
 
 53. Show that if u = x - y and v = y, then for any continuous f, 
 
@@ -4298,7 +4315,7 @@ $$
 
 ## CHAPTER 14 Additional and Advanced Exercises
 
-## Volumes
+### Volumes
 
 1. Sand pile: double and triple integrals The base of a sand pile covers the region in the xy-plane that is bounded by the parabola $x^{2} + y = 6$ and the line y = x. The height of the sand above the point $(x, y)$ is $x^{2}$ . Express the volume of sand as (a) a double integral and (b) a triple integral. Then (c) find the volume. 
 
@@ -4312,7 +4329,7 @@ $$
 
 6. Spherical coordinates Find the volume of the solid region enclosed by the spherical coordinate surface $\rho = 2 \sin \phi$ (see accompanying figure). 
 
-![[06f5e142dd9fb8b1c173f3d82b232f0ec3328943d9f45c000a1a92f32da6d3b0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/06f5e142dd9fb8b1c173f3d82b232f0ec3328943d9f45c000a1a92f32da6d3b0.jpg)
 
 
 7. Hole in solid ball A circular cylindrical hole is bored through a ball, the axis of the hole being a diameter of the sphere. The volume of the remaining solid is 
@@ -4385,7 +4402,7 @@ Masses and Moments
 
 18. Centroid of a boomerang Find the centroid of the boomerang-shaped region between the parabolas $y^{2} = -4(x - 1)$ and $y^{2} = -2(x - 2)$ in the xy-plane. 
 
-## Theory and Examples
+### Theory and Examples
 
 19. Evaluate 
 
@@ -4489,7 +4506,7 @@ $$
 
 ## CHAPTER 14 Technology Application Projects
 
-## Mathematica/Maple Projects
+### Mathematica/Maple Projects
 
 Projects can be found within MyLab Math. 
 
@@ -4497,10 +4514,3 @@ Projects can be found within MyLab Math.
 
 - Means and Moments and Exploring New Plotting Techniques, Part II
 Use the method of moments in a form that makes use of geometric symmetry as well as multiple integration. 
-
-# Integrals and Vector Fields
-
-![[20225632bcd2f4f25fe3e0218bb4767555e8ade3846304a4567e12308e8053be.jpg|image]]
-
-
-OVERVIEW In this chapter we extend the theory of integration to functions whose domains are curves and surfaces in space. The resulting line and surface integrals give powerful mathematical tools for science and engineering. Line integrals are used to find the work done by a force in moving an object along a path and to find the mass of a curved wire with variable density. Surface integrals are used to find the rate of flow of a fluid across a surface and to describe the interactions of electric and magnetic forces. We present the fundamental theorems of vector integral calculus and discuss their mathematical consequences and physical applications. The theorems of vector calculus are then shown to be generalized versions of the Fundamental Theorem of Calculus.

@@ -7,11 +7,20 @@ order: 4
 
 <!-- Extracted from Thomas-calculus Markdown source; chapters 1-17 only. -->
 
+![教材插图](/books/thomas-calculus/assets/9f766a3dea929e00d2367a160f537cfc1523fadd60bd9d45c92022bd845f4366.jpg)
+
+
+OVERVIEW One of the most important applications of the derivative is its use as a tool for finding the optimal (best) solutions to problems. For example, what are the height and diameter of the cylinder of largest volume that can be inscribed in a given sphere? What are the dimensions of the strongest rectangular wooden beam that can be cut from a cylindrical log of given diameter? How many items should a manufacturer produce to maximize profit? 
+
+In this chapter we apply derivatives to find extreme values of functions, to determine and analyze the shapes of graphs, and to solve equations numerically. We also investigate how to recover a function from its derivative. The key to many of these applications is the Mean Value Theorem, which connects the derivative and the average change of a function.
+
+
+
 ## 4.1 Extreme Values of Functions on Closed Intervals
 
 This section shows how to locate and identify extreme (maximum or minimum) values of a function from its derivative. Once we can do this, we can solve a variety of optimization problems (see Section 4.6). The domains of the functions we consider are intervals or unions of separate intervals. 
 
-![[85f3445fea5853105af20d5c16edd67339edb0ba2e2458f0ac621c1f8e19c7cd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/85f3445fea5853105af20d5c16edd67339edb0ba2e2458f0ac621c1f8e19c7cd.jpg)
 
 
 
@@ -42,24 +51,24 @@ Functions defined by the same equation or formula can have different extrema (ma
 
 <table><tr><td>Function rule</td><td>Domain D</td><td>Absolute extrema on D</td></tr><tr><td>(a) <eq>y = x^{2}</eq></td><td><eq>(-\infty, \infty)</eq></td><td>No absolute maximumAbsolute minimum of 0 at <eq>x = 0</eq></td></tr><tr><td>(b) <eq>y = x^{2}</eq></td><td><eq>[0, 2]</eq></td><td>Absolute maximum of 4 at <eq>x = 2</eq>Absolute minimum of 0 at <eq>x = 0</eq></td></tr><tr><td>(c) <eq>y = x^{2}</eq></td><td><eq>(0, 2]</eq></td><td>Absolute maximum of 4 at <eq>x = 2</eq>No absolute minimum</td></tr><tr><td>(d) <eq>y = x^{2}</eq></td><td><eq>(0, 2)</eq></td><td>No absolute extrema</td></tr></table>
 
-![[e30d63eca69a2490c5c987369ba5cd20a346f4fab09e26cad4542396bdb80107.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e30d63eca69a2490c5c987369ba5cd20a346f4fab09e26cad4542396bdb80107.jpg)
 
 
-![[c6b2bb10692cdc7c8ff5229a15acc8f94ae85c38f8884ca5af7573ea57694acc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c6b2bb10692cdc7c8ff5229a15acc8f94ae85c38f8884ca5af7573ea57694acc.jpg)
 
 
 
 (b) abs max and min
 
 
-![[c74d7d5228c3bce66d68740a27a8a747256561f48c5d003ecaf093ff12b8bdfc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c74d7d5228c3bce66d68740a27a8a747256561f48c5d003ecaf093ff12b8bdfc.jpg)
 
 
 
 (c) abs max only
 
 
-![[66a0297ce1cc471b5732bb2f282f81f01d3e49b52c2a4b5e72f642ed09214815.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/66a0297ce1cc471b5732bb2f282f81f01d3e49b52c2a4b5e72f642ed09214815.jpg)
 
 
 
@@ -70,7 +79,7 @@ Functions defined by the same equation or formula can have different extrema (ma
 FIGURE 4.2 Graphs for Example 1.
 
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
 Daniel Bernoulli (1700–1789) 
 
@@ -80,7 +89,7 @@ To know more, visit the companion Website.
 
 Some of the functions in Example 1 do not have a maximum or a minimum value. The following theorem asserts that a function which is continuous over (or on) a finite closed interval $[a, b]$ has an absolute maximum and an absolute minimum value on the interval. We look for these extreme values when we graph a function. 
 
-## THEOREM 1 – The Extreme Value Theorem
+**THEOREM 1 – The Extreme Value Theorem**
 
 If f is continuous on a closed interval $[a,b]$ , then f attains both an absolute maximum value M and an absolute minimum value m in $[a,b]$ . That is, there are numbers $x_{1}$ and $x_{2}$ in $[a,b]$ with $f(x_{1}) = m$ , $f(x_{2}) = M$ , and $m \leq f(x) \leq M$ for all x in $[a,b]$ . 
 
@@ -88,7 +97,7 @@ The proof of the Extreme Value Theorem requires a detailed knowledge of the real
 
 The requirements in Theorem 1 that the interval be closed and finite, and that the function be continuous, are essential. Without them, the conclusion of the theorem need not hold. Example 1 shows that an absolute extreme value may not exist if the interval fails to be both closed and finite. The exponential function $y = e^{x}$ over $(-\infty, \infty)$ shows that 
 
-![[28770bea173b1062db15e2ddba83961122b3995342a7cc05ba988c59d4ae0a79.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/28770bea173b1062db15e2ddba83961122b3995342a7cc05ba988c59d4ae0a79.jpg)
 
 
 
@@ -101,7 +110,7 @@ $$
 
 is continuous at every point of $[0,1]$ except $x = 1$ , yet its graph over $[0,1]$ does not have a highest point. 
 
-![[5587fc4bc2a7c5a85c7a1a1c5b46d68d6514f95d8bbd5ceb8dbfaa8c4c5b8afb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5587fc4bc2a7c5a85c7a1a1c5b46d68d6514f95d8bbd5ceb8dbfaa8c4c5b8afb.jpg)
 
 
 
@@ -110,7 +119,7 @@ FIGURE 4.3 Some possibilities for a continuous function's maximum and minimum on
 
 neither extreme value need exist on an infinite interval. Figure 4.4 shows that the continuity requirement cannot be omitted. 
 
-## Local (Relative) Extreme Values
+### Local (Relative) Extreme Values
 
 Figure 4.5 shows a graph with five points where a function has extreme values on its domain $[a, b]$ . The function's absolute minimum occurs at $a$ even though at $e$ the function's value is smaller than at any other point nearby. The curve rises as $x$ approaches $c$ from the left, then falls to the right of $c$ , making $f(c)$ a maximum locally. The function attains its absolute maximum at $d$ . We now define what we mean by local extrema. 
 
@@ -122,21 +131,21 @@ Figure 4.5 shows a graph with five points where a function has extreme values on
 >
 An absolute maximum is also a local maximum. Being the largest value overall, it is also the largest value in its immediate neighborhood. Hence, a list of all local maxima will automatically include the absolute maximum if there is one. Similarly, a list of all local minima will include the absolute minimum if there is one. 
 
-![[fa7b0925034899892c17d98f9481a2891ad772c2e380d5522c5365c0874802db.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fa7b0925034899892c17d98f9481a2891ad772c2e380d5522c5365c0874802db.jpg)
 
 
 
 FIGURE 4.6 A curve with a local maximum value. The slope at c, simultaneously the limit of nonpositive numbers and nonnegative numbers, is zero.
 
 
-![[7e2879880a60c6b3f64d4e08eecda24d38113ee688ac4b24944a298f9545ec1a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7e2879880a60c6b3f64d4e08eecda24d38113ee688ac4b24944a298f9545ec1a.jpg)
 
 
 
 FIGURE 4.5 How to identify types of maxima and minima for a function with domain $a \leq x \leq b$ .
 
 
-## Finding Extrema
+### Finding Extrema
 
 The next theorem explains why we usually need to investigate only a few values to find a function's extrema. 
 
@@ -171,14 +180,14 @@ Together, Equations (1) and (2) imply $f'(c) = 0$ .
 
 This proves the theorem for local maximum values. To prove it for local minimum values, we simply use $f(x) \geq f(c)$ , which reverses the inequalities in Formulas (1) and (2). 
 
-![[b5f98f9ff783a552e5842a8b682f0ff360b8be8bac6ea7e6561744c2e0df2b2c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b5f98f9ff783a552e5842a8b682f0ff360b8be8bac6ea7e6561744c2e0df2b2c.jpg)
 
 
 
 (a)
 
 
-![[614e76dccb4c277a497a31b3fb70bd47a13907d856d497e6a34105b5001ff14e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/614e76dccb4c277a497a31b3fb70bd47a13907d856d497e6a34105b5001ff14e.jpg)
 
 
 
@@ -216,7 +225,7 @@ Finding the Absolute Extrema of a Continuous Function f on a Finite Closed Inter
 
 3. Take the largest and smallest of these values. 
 
-## **EXAMPLE 2** Find the absolute maximum and minimum values of $f(x) = x^{2}$ on [-2,1].
+**EXAMPLE 2** Find the absolute maximum and minimum values of $f(x) = x^{2}$ on [-2,1].
 
 **Solution** The function is differentiable over its entire domain, so the only critical point occurs where $f'(x) = 2x = 0$ , namely $x = 0$ . We need to check the function's values at $x = 0$ and at the endpoints $x = -2$ and $x = 1$ : 
 
@@ -236,14 +245,14 @@ The function has an absolute maximum value of 4 at x = -2 and an absolute minimu
 
 **EXAMPLE 3** Find the absolute maximum and minimum values of $f(x) = 10x(2 - \ln x)$ on the interval $[1, e^2]$ . 
 
-![[a9b81b44ef2fe9b368598a63adece932502ab9bbf2cb31d098f52a8641f9da69.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a9b81b44ef2fe9b368598a63adece932502ab9bbf2cb31d098f52a8641f9da69.jpg)
 
 
 
 FIGURE 4.8 The extreme values of $f(x) = 10x(2 - \ln x)$ on $[1, e^2]$ occur at $x = e$ and $x = e^2$ (Example 3).
 
 
-![[e79a559015f36698d4e7533dcbd0e5d9e71a7f90819cab93a0832e910c3acbd2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e79a559015f36698d4e7533dcbd0e5d9e71a7f90819cab93a0832e910c3acbd2.jpg)
 
 
 
@@ -296,9 +305,9 @@ We can see from this list that the function's absolute maximum value is $\sqrt[3
 
 Theorem 1 leads to a method for finding the absolute maxima and absolute minima of a differentiable function on a finite closed interval. On more general domains, such as $(0,1)$ , $[2,5)$ , $[1,\infty)$ , and $(-\infty,\infty)$ , absolute maxima and minima may or may not exist. To determine if they exist, and to locate them when they do, we will develop methods to sketch the graph of a differentiable function. With knowledge of the asymptotes of the function, as well as the local maxima and minima, we can deduce the locations of the absolute maxima and minima, if any. For now we can find the absolute maxima and the absolute minima of a function on a finite closed interval by comparing the values of the function at its critical points and at the endpoints of the interval. For a differentiable function on a closed and finite interval $[a,b]$ , these are the only points where the extrema have the potential to occur. 
 
-## EXERCISES 4.1
+### EXERCISES 4.1
 
-## Finding Extrema from Graphs
+#### Finding Extrema from Graphs
 
 In Exercises 1–6, determine from the graph whether the function has any absolute extreme values on $[a, b]$ . Then explain how your answer is consistent with Theorem 1. 
 
@@ -306,34 +315,34 @@ In Exercises 1–6, determine from the graph whether the function has any absolu
 1.
 
 
-![[c9812cc8584b6d0ca8052b8ee1da6c7fe84f54ac98a3af8d0ece6c3e5244eb72.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c9812cc8584b6d0ca8052b8ee1da6c7fe84f54ac98a3af8d0ece6c3e5244eb72.jpg)
 
 
-![[0939c3a4a1f84362bd3f70e81b69b7b4d1d8c9f6475fcec7a1fc96f233e7fd54.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0939c3a4a1f84362bd3f70e81b69b7b4d1d8c9f6475fcec7a1fc96f233e7fd54.jpg)
 
 
 
 3.
 
 
-![[85f1af3c763ab554c8b60796b2bc08eccd25b7c762826cc59f4e14651554aa8d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/85f1af3c763ab554c8b60796b2bc08eccd25b7c762826cc59f4e14651554aa8d.jpg)
 
 
-![[f99b14eaad1401246573ced970955467b7edd2f00645062fa51695b624521646.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f99b14eaad1401246573ced970955467b7edd2f00645062fa51695b624521646.jpg)
 
 
 
 5.
 
 
-![[c8441e006c310682150d2db27a7ba88dcf3d7e69564d71412dad2ea16c97b730.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c8441e006c310682150d2db27a7ba88dcf3d7e69564d71412dad2ea16c97b730.jpg)
 
 
 
 6.
 
 
-![[ee1845edd896b9119404c42a9bb908b26bb15d2a9e0a790eb37b26fd336c862f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ee1845edd896b9119404c42a9bb908b26bb15d2a9e0a790eb37b26fd336c862f.jpg)
 
 
 In Exercises 7–10, find the absolute extreme values and where they occur. 
@@ -342,28 +351,28 @@ In Exercises 7–10, find the absolute extreme values and where they occur.
 7.
 
 
-![[02ea452fa58a4241ac7cc4af69029b1a5e453847b0e7999c06269979fb4c263c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/02ea452fa58a4241ac7cc4af69029b1a5e453847b0e7999c06269979fb4c263c.jpg)
 
 
 
 8.
 
 
-![[c10e8d06c9d98ea45d90c06aaa9688d317e18c0163e5c42603572cb773ab76f0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c10e8d06c9d98ea45d90c06aaa9688d317e18c0163e5c42603572cb773ab76f0.jpg)
 
 
 
 9.
 
 
-![[31217a87a48d30cc1a618d2ad683338c79147a0cf2cbd7b0ed21517091389c05.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/31217a87a48d30cc1a618d2ad683338c79147a0cf2cbd7b0ed21517091389c05.jpg)
 
 
 
 10.
 
 
-![[3f0f5cd10d3a078dce2368df11ac9f6d338c35ea39b003f79ec6151a4b9f73f6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3f0f5cd10d3a078dce2368df11ac9f6d338c35ea39b003f79ec6151a4b9f73f6.jpg)
 
 
 
@@ -380,17 +389,17 @@ $$
 
 <table><tr><td>a</td><td>does not exist</td></tr><tr><td>b</td><td>0</td></tr><tr><td>c</td><td>-2</td></tr></table>
 
-![[dd7545cfbbf4a0506db945351b6da5ed643296c75524ea450073c8a0869c6963.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dd7545cfbbf4a0506db945351b6da5ed643296c75524ea450073c8a0869c6963.jpg)
 
 
 
 (a)
 
 
-![[edbceb438938d2a1f5b067a61ee1b60b8f2a4d93c108d9ad38e4daf0d7fe34c9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/edbceb438938d2a1f5b067a61ee1b60b8f2a4d93c108d9ad38e4daf0d7fe34c9.jpg)
 
 
-![[74bdd297f2da73a8c016d18b5edb4398e764a2d8e1050f07f99771c9e6d4cfd7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/74bdd297f2da73a8c016d18b5edb4398e764a2d8e1050f07f99771c9e6d4cfd7.jpg)
 
 
 
@@ -401,7 +410,7 @@ $$
 (b)
 
 
-![[3a3f555ed8fc2724e60c2eb4add2af563b5f9058de10730f9ada63f18e8fd288.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3a3f555ed8fc2724e60c2eb4add2af563b5f9058de10730f9ada63f18e8fd288.jpg)
 
 
 
@@ -434,7 +443,7 @@ $$
 f (x) = \left\{ \begin{array}{l l} x + 1, & - 1 \leq x <   0 \\ \cos x, & 0 <   x \leq \frac {\pi}{2} \end{array} \right.
 $$
 
-## Absolute Extrema on Finite Closed Intervals
+#### Absolute Extrema on Finite Closed Intervals
 
 In Exercises 21–36, find the absolute maximum and minimum values of each function on the given interval. Then graph the function. Identify the points on the graph where the absolute extrema occur, and include their coordinates. 
 
@@ -500,13 +509,9 @@ In Exercises 45–56, determine all critical points and all domain endpoints for
 
 45. $y = x^{2} - 6x + 7$ 
 
-$$
-f (x) = 6 x ^ {2} - x ^ {3}
-$$
+46. $f (x) = 6 x ^ {2} - x ^ {3}$
 
-$$
-4 7. f (x) = x (4 - x) ^ {3} \quad 4 8. g (x) = (x - 1) ^ {2} (x - 3) ^ {2}
-$$
+47. $f (x) = x (4 - x) ^ {3} \quad 4 8. g (x) = (x - 1) ^ {2} (x - 3) ^ {2}$
 
 49. $y = x^{2} + \frac{2}{x}$ 
 
@@ -520,9 +525,11 @@ $$
 
 54. $y = 2\sqrt{1 - x^2} + \arcsin x$ 
 
-55. $y = x^{3} + 3x^{2} - 24x + 7$ 56. $y = x - 3x^{2 / 3}$ 
+55. $y = x^{3} + 3x^{2} - 24x + 7$
 
-## Theory and Examples
+56. $y = x - 3x^{2 / 3}$
+
+#### Theory and Examples
 
 In Exercises 57 and 58, give reasons for your answers. 
 
@@ -598,19 +605,15 @@ with $s$ in meters and $t$ in seconds. Find the body's maximum height.
 
 T Graph the functions in Exercises 71–74. Then find the extreme values of the function on the interval and say where they occur. 
 
-$$
-f (x) = | x - 2 | + | x + 3 |, - 5 \leq x \leq 5
-$$
+71. $f (x) = | x - 2 | + | x + 3 |, - 5 \leq x \leq 5$
 
-$$
-7 2. g (x) = | x - 1 | - | x - 5 |, - 2 \leq x \leq 7
-$$
+72. $g (x) = | x - 1 | - | x - 5 |, - 2 \leq x \leq 7$
 
 73. $h(x) = |x + 2| - |x - 3|$ , $-\infty < x < \infty$ 
 
 74. $k(x) = |x + 1| + |x - 3|$ , $-\infty < x < \infty$ 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 75–82, you will use a CAS to help find the absolute extrema of the given function over the specified closed interval. Perform the following steps. 
 
@@ -624,41 +627,25 @@ d. Evaluate the function at all points found in parts (b) and (c) and at the end
 
 e. Find the function's absolute extreme values on the interval and identify where they occur. 
 
-$$
-f (x) = x ^ {4} - 8 x ^ {2} + 4 x + 2, [ - 2 0 / 2 5, 6 4 / 2 5 ] \tag {75.}
-$$
+75. $f (x) = x ^ {4} - 8 x ^ {2} + 4 x + 2, [ - 2 0 / 2 5, 6 4 / 2 5 ]$
 
-$$
-f (x) = - x ^ {4} + 4 x ^ {3} - 4 x + 1, [ - 3 / 4, 3 ] \tag {76.}
-$$
+76. $f (x) = - x ^ {4} + 4 x ^ {3} - 4 x + 1, [ - 3 / 4, 3 ]$
 
-$$
-7 7. f (x) = x ^ {2 / 3} (3 - x), [ - 2, 2 ]
-$$
+77. $f (x) = x ^ {2 / 3} (3 - x), [ - 2, 2 ]$
 
-$$
-f (x) = 2 + 2 x - 3 x ^ {2 / 3}, [ - 1, 1 0 / 3 ] \tag {78.}
-$$
+78. $f (x) = 2 + 2 x - 3 x ^ {2 / 3}, [ - 1, 1 0 / 3 ]$
 
-$$
-f (x) = \sqrt {x} + \cos x, [ 0, 2 \pi ]
-$$
+79. $f (x) = \sqrt {x} + \cos x, [ 0, 2 \pi ]$
 
-$$
-\mathbf {8 0 .} f (x) = x ^ {3 / 4} - \sin x + \frac {1}{2}, [ 0, 2 \pi ]
-$$
+80. $f (x) = x ^ {3 / 4} - \sin x + \frac {1}{2}, [ 0, 2 \pi ]$
 
-$$
-\mathbf {8 1 .} f (x) = \pi x ^ {2} e ^ {- 3 x / 2}, [ 0, 5 ]
-$$
+81. $f (x) = \pi x ^ {2} e ^ {- 3 x / 2}, [ 0, 5 ]$
 
-$$
-f (x) = \ln (2 x + x \sin x), [ 1, 1 5 ]
-$$
+82. $f (x) = \ln (2 x + x \sin x), [ 1, 1 5 ]$
 
 ## 4.2 The Mean Value Theorem
 
-![[6e78053ed0a38666169e6590a3cc4ee9bcce769702fb0041ba1a29e8d3649d1c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6e78053ed0a38666169e6590a3cc4ee9bcce769702fb0041ba1a29e8d3649d1c.jpg)
 
 
 
@@ -667,7 +654,7 @@ $$
 
 We know that constant functions have zero derivatives, but could there be a more complicated function whose derivative is always zero? If two functions have identical derivatives over an interval, how are the functions related? We answer these and other questions in this chapter by applying the Mean Value Theorem. First we introduce a special case, known as Rolle's Theorem, which is used to prove the Mean Value Theorem. 
 
-![[9f76e13f3877168cfefdeb215ed005396362d7c1d4c8f9b73dafc10a825e2a1e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9f76e13f3877168cfefdeb215ed005396362d7c1d4c8f9b73dafc10a825e2a1e.jpg)
 
 
 
@@ -678,11 +665,11 @@ We know that constant functions have zero derivatives, but could there be a more
 FIGURE 4.10 Rolle's Theorem says that a differentiable curve has at least one horizontal tangent between any two points where it crosses a horizontal line. It may have just one (a), or it may have more (b).
 
 
-## Rolle's Theorem
+### Rolle's Theorem
 
 As suggested by its graph, if a differentiable function crosses a horizontal line at two different points, there is at least one point between them where the tangent to the graph is horizontal and the derivative is zero (Figure 4.10). We now state and prove this result. 
 
-## THEOREM 3—Rolle's Theorem
+**THEOREM 3—Rolle's Theorem**
 
 Suppose that $y = f(x)$ is continuous over the closed interval $[a, b]$ and differentiable at every point of its interior $(a, b)$ . If $f(a) = f(b)$ , then there is at least one number c in $(a, b)$ at which $f'(c) = 0$ . 
 
@@ -694,7 +681,7 @@ Proof Being continuous, $f$ assumes absolute maximum and minimum values on $[a, 
 
 3. at endpoints of the interval, in this case a and b. 
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
 (1652-1719) 
 
@@ -702,7 +689,7 @@ French mathematician Michel Rolle was largely self-educated in mathematics. He w
 
 To know more, visit the companion Website. 
 
-![[ee354ce9bb1ec60dbf18815ecb60ad74b2253292c3fa12ad4ca5a874c96eb2ba.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ee354ce9bb1ec60dbf18815ecb60ad74b2253292c3fa12ad4ca5a874c96eb2ba.jpg)
 
 
 
@@ -717,21 +704,21 @@ If both the absolute maximum and the absolute minimum occur at the endpoints, th
 
 The hypotheses of Theorem 3 are essential. If they fail at even one point, the graph may not have a horizontal tangent (Figure 4.11). 
 
-![[1c8956504380534f55cebaf18d9c602892c4f891781bd7e02bf73f86a688eb86.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1c8956504380534f55cebaf18d9c602892c4f891781bd7e02bf73f86a688eb86.jpg)
 
 
 
 (a) Discontinuous at an endpoint of $[a, b]$
 
 
-![[8c70ebabb349bed40cc0a62ae8a0bd53001ae05db50ddcd50303255467e71c16.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8c70ebabb349bed40cc0a62ae8a0bd53001ae05db50ddcd50303255467e71c16.jpg)
 
 
 
 (b) Discontinuous at an interior point of $[a, b]$
 
 
-![[ee8d4e39b3a3e53a9354048892bf851cd6a1c3e35304ac80b5315b16a641198e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ee8d4e39b3a3e53a9354048892bf851cd6a1c3e35304ac80b5315b16a641198e.jpg)
 
 
 
@@ -744,7 +731,7 @@ FIGURE 4.11 There may be no horizontal tangent line if the hypotheses of Rolle's
 
 Rolle's Theorem may be combined with the Intermediate Value Theorem to show when there is only one real solution of an equation $f(x) = 0$ , as we illustrate in the next example. 
 
-## **EXAMPLE 1** Show that the equation
+**EXAMPLE 1** Show that the equation
 
 $$
 x ^ {3} + 3 x + 1 = 0
@@ -768,38 +755,38 @@ is never zero (because it is always positive). Therefore, $f$ has no more than o
 
 Tangent line parallel to secant line 
 
-![[7b785779fbb3f5b1b6b34b83a3d5da9bab42e597e00d0f26143190a91fb63be1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7b785779fbb3f5b1b6b34b83a3d5da9bab42e597e00d0f26143190a91fb63be1.jpg)
 
 
 
 FIGURE 4.13 Geometrically, the Mean Value Theorem says that somewhere between a and b the curve has at least one tangent line parallel to the secant line that joins A and B.
 
 
-## HISTORICAL BIOGRAPHY Joseph-Louis Lagrange (1736–1813)
+**HISTORICAL BIOGRAPHY Joseph-Louis Lagrange (1736–1813)**
 
 Lagrange was born in Turin, Italy. He enjoyed studying mathematics, despite his father's wish that he study law. Lagrange's mathematical contributions began as early as 1754 with the discovery of the calculus of variations and continued with applications to mechanics in 1756. 
 
 To know more, visit the companion Website. 
 
-![[4520c68371c45ea592a10aee4613a2de6300343b2fcdc2ce1ef3bce94f966c14.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4520c68371c45ea592a10aee4613a2de6300343b2fcdc2ce1ef3bce94f966c14.jpg)
 
 
 
 FIGURE 4.14 The graph of f and the secant line AB over the interval [a, b].
 
 
-![[aea657a7063bd401569b931ccd1db70f99fd883bf6517ef5a74d205494cde383.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/aea657a7063bd401569b931ccd1db70f99fd883bf6517ef5a74d205494cde383.jpg)
 
 
 
 FIGURE 4.15 The secant line AB is the graph of the function $g(x)$ . The function $h(x) = f(x) - g(x)$ gives the vertical distance between the graphs of f and g at x.
 
 
-## The Mean Value Theorem
+### The Mean Value Theorem
 
 The Mean Value Theorem, which was first stated by Joseph-Louis Lagrange, is a slanted version of Rolle's Theorem (Figure 4.13). The Mean Value Theorem guarantees that there is a point where the tangent line is parallel to the secant line that joins $A$ and $B$ . 
 
-## THEOREM 4—The Mean Value Theorem
+**THEOREM 4—The Mean Value Theorem**
 
 Suppose $y = f(x)$ is continuous over a closed interval $[a, b]$ and differentiable on the interval's interior $(a, b)$ . Then there is at least one point $c$ in $(a, b)$ at which 
 
@@ -843,21 +830,21 @@ $$
 
 which is what we set out to prove. 
 
-![[77807415a3dbcf5870d23de64cf50b48e938037383106779f077b51df2c82715.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/77807415a3dbcf5870d23de64cf50b48e938037383106779f077b51df2c82715.jpg)
 
 
 
 FIGURE 4.16 The function $f(x) = \sqrt{1 - x^2}$ satisfies the hypotheses (and conclusion) of the Mean Value Theorem on $[-1, 1]$ even though $f$ is not differentiable at $-1$ and $1$ .
 
 
-![[0d1e7bb7b09fc1d40db8d77472b7b9908cde144dad3988c745b9fa1f23da6ecb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0d1e7bb7b09fc1d40db8d77472b7b9908cde144dad3988c745b9fa1f23da6ecb.jpg)
 
 
 
 FIGURE 4.17 As we find in Example 1, c = 1 is where the tangent line is parallel to the secant line.
 
 
-![[bf3bc894139c08c17c22579f69c68ed1e19cbcbc335b724386d44d0b371d1ec1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bf3bc894139c08c17c22579f69c68ed1e19cbcbc335b724386d44d0b371d1ec1.jpg)
 
 
 
@@ -868,13 +855,13 @@ The hypotheses of the Mean Value Theorem do not require f to be differentiable a
 
 **EXAMPLE 2** The function $f(x) = x^2$ (Figure 4.17) is continuous for $0 \leq x \leq 2$ and differentiable for $0 < x < 2$ . Since $f(0) = 0$ and $f(2) = 4$ , the Mean Value Theorem says that at some point $c$ in the interval, the derivative $f'(x) = 2x$ must have the value $(4 - 0) / (2 - 0) = 2$ . In this case we can identify $c$ by solving the equation $2c = 2$ to get $c = 1$ . However, it is not always easy to find $c$ algebraically, even though we know it always exists. 
 
-## A Physical Interpretation
+### A Physical Interpretation
 
 We can think of the number $(f(b) - f(a))/(b - a)$ as the average change in f over $[a, b]$ and can view $f'(c)$ as an instantaneous change. Then the Mean Value Theorem says that the instantaneous change at some interior point is equal to the average change over the entire interval. 
 
 **EXAMPLE 3** If a car accelerating from zero takes 8 s to go 176 m, its average velocity for the 8-s interval is $176/8 = 22 \, m/s$ . The Mean Value Theorem says that at some point during the acceleration, the speedometer must read exactly $79.2 \, km/h \, (22 \, m/s)$ (Figure 4.18). 
 
-## Mathematical Consequences
+### Mathematical Consequences
 
 At the beginning of the section, we asked what kind of function has a zero derivative over an interval. The first corollary of the Mean Value Theorem provides the answer that only constant functions have zero derivatives. 
 
@@ -896,7 +883,7 @@ At the beginning of this section, we also asked about the relationship between t
 
 COROLLARY 2 If $f'(x) = g'(x)$ at each point $x$ in an open interval $(a, b)$ , then there exists a constant $C$ such that $f(x) = g(x) + C$ for all $x \in (a, b)$ . That is, $f - g$ is a constant function on $(a, b)$ . 
 
-![[22e1c01e2d59bdbd4815cec0a26fa4d14c5308ae474078837af4f4a7abcd779a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/22e1c01e2d59bdbd4815cec0a26fa4d14c5308ae474078837af4f4a7abcd779a.jpg)
 
 
 
@@ -925,7 +912,7 @@ $$
 
 The function is $f(x) = -\cos x + 3$ . 
 
-## Finding Velocity and Position from Acceleration
+### Finding Velocity and Position from Acceleration
 
 We can use Corollary 2 to find the velocity and position functions of an object moving along a vertical line. Assume the object or body is falling freely from rest with acceleration $9.8 \, m/sec^{2}$ . We assume the position $s(t)$ of the body is measured positive downward from the rest position (so the vertical coordinate line points downward, in the direction of the motion, with the rest position at 0). 
 
@@ -959,9 +946,9 @@ The position function is $s(t) = 4.9t^{2}$ until the body hits the ground.
 
 The ability to find functions from their rates of change is one of the very powerful tools of calculus. As we will see, it lies at the heart of the mathematical developments in Chapter 5. 
 
-## EXERCISES 4.2
+### EXERCISES 4.2
 
-## Checking the Mean Value Theorem
+#### Checking the Mean Value Theorem
 
 Find the value or values of c that satisfy the equation 
 
@@ -971,15 +958,13 @@ $$
 
 in the conclusion of the Mean Value Theorem for the functions and intervals in Exercises 1–8. 
 
-$$
-\mathbf {1 .} f (x) = x ^ {2} + 2 x - 1, [ 0, 1 ] \quad \mathbf {2 .} f (x) = x ^ {2 / 3}, [ 0, 1 ]
-$$
+1. $f (x) = x ^ {2} + 2 x - 1, [ 0, 1 ] \quad \mathbf {2 .} f (x) = x ^ {2 / 3}, [ 0, 1 ]$
 
-$$
-\mathbf {3 .} f (x) = x + \frac {1}{x}, \left[ \frac {1}{2}, 2 \right] \quad \mathbf {4 .} f (x) = \sqrt {x - 1}, [ 1, 3 ]
-$$
+3. $f (x) = x + \frac {1}{x}, \left[ \frac {1}{2}, 2 \right] \quad \mathbf {4 .} f (x) = \sqrt {x - 1}, [ 1, 3 ]$
 
-5. $f(x) = \arcsin x, [-1, 1]$ 6. $f(x) = \ln (x - 1), [2, 4]$ 
+5. $f(x) = \arcsin x, [-1, 1]$
+
+6. $f(x) = \ln (x - 1), [2, 4]$
 
 7. $f(x) = x^{3} - x^{2},[-1,2]$ 
 
@@ -1053,17 +1038,13 @@ Show that the functions in Exercises 21–28 have exactly one zero in the given 
 
 25. $r(\theta) = \theta +\sin^2\left(\frac{\theta}{3}\right) - 8,\quad (-\infty ,\infty)$ 
 
-$$
-\mathbf {2 6 .} r (\theta) = 2 \theta - \cos^ {2} \theta + \sqrt {2}, (- \infty , \infty)
-$$
+26. $r (\theta) = 2 \theta - \cos^ {2} \theta + \sqrt {2}, (- \infty , \infty)$
 
-$$
-2 7. r (\theta) = \sec^ {2} \theta - \cos (2 \theta) - 1, (0, \pi / 2)
-$$
+27. $r (\theta) = \sec^ {2} \theta - \cos (2 \theta) - 1, (0, \pi / 2)$
 
 28. $r(\theta) = 3\tan \theta -\cot \theta -\theta ,(0,\pi /2)$ 
 
-## Finding Functions from Derivatives
+#### Finding Functions from Derivatives
 
 29. Suppose that $f(-1) = 3$ and that $f'(x) = 0$ for all $x$ . Must $f(x) = 3$ for all $x$ ? Give reasons for your answer. 
 
@@ -1097,21 +1078,19 @@ In Exercises 39–42, find the function with the given derivative whose graph pa
 
 41. $f^{\prime}(x) = e^{2x}, P\left(0,\frac{3}{2}\right)$ 
 
-$$
-4 2. r ^ {\prime} (t) = \sec t \tan t - 1, P (0, 0)
-$$
+42. $r ^ {\prime} (t) = \sec t \tan t - 1, P (0, 0)$
 
-## Finding Position from Velocity or Acceleration
+#### Finding Position from Velocity or Acceleration
 
 Exercises 43–46 give the velocity v = ds/dt and initial position of an object moving along a coordinate line. Find the object's position at time t. 
 
-$$
-\mathbf {4 3 .} v = 9. 8 t + 5, \quad s (0) = 1 0 \quad \mathbf {4 4 .} v = 3 2 t - 2, \quad s (0. 5) = 4
-$$
+43. $v = 9. 8 t + 5, \quad s (0) = 1 0$
 
-$$
-\mathbf {4 5 .} v = \sin \pi t, s (0) = 0 \quad \mathbf {4 6 .} v = \frac {2}{\pi} \cos \frac {2 t}{\pi}, s (\pi^ {2}) = 1
-$$
+44. $v = 3 2 t - 2, \quad s (0. 5) = 4$
+
+45. $v = \sin \pi t, s (0) = 0$
+
+46. $v = \frac {2}{\pi} \cos \frac {2 t}{\pi}, s (\pi^ {2}) = 1$
 
 Exercises 47–50 give the acceleration $a = d^{2}s/dt^{2}$ , initial velocity, and initial position of an object moving on a coordinate line. Find the object's position at time t. 
 
@@ -1123,7 +1102,7 @@ Exercises 47–50 give the acceleration $a = d^{2}s/dt^{2}$ , initial velocity, 
 
 50. $a = \frac{9}{\pi^{2}} \cos \frac{3t}{\pi}$ , $v(0) = 0$ , $s(0) = -1$ 
 
-## Applications
+#### Applications
 
 51. Temperature change It took 14 s for a mercury thermometer to rise from $-19^{\circ}C$ to $100^{\circ}C$ when it was taken from a freezer and placed in boiling water. Show that somewhere along the way, the mercury was rising at the rate of $8.5^{\circ}C/s$ . 
 
@@ -1137,7 +1116,7 @@ Exercises 47–50 give the acceleration $a = d^{2}s/dt^{2}$ , initial velocity, 
 
 56. Free fall on the moon On our moon, the acceleration of gravity is $1.6 \, m/s^{2}$ . If a rock is dropped into a crevasse, how fast will it be going just before it hits bottom 30 s later? 
 
-## Theory and Examples
+#### Theory and Examples
 
 57. The geometric mean of a and b The geometric mean of two positive numbers a and b is the number $\sqrt{ab}$ . Show that the value of c in the conclusion of the Mean Value Theorem for $f(x) = 1/x$ on an interval of positive numbers $[a, b]$ is $c = \sqrt{ab}$ . 
 
@@ -1151,7 +1130,7 @@ $$
 
 What does the graph do? Why does the function behave this way? Give reasons for your answers. 
 
-## 60. Rolle's Theorem
+60. Rolle's Theorem
 
 a. Construct a polynomial $f(x)$ that has zeros at $x = -2, -1, 0, 1$ , and 2. 
 
@@ -1200,7 +1179,7 @@ b. Must $f'(1) = 0$ ? Explain.
 
 In sketching the graph of a differentiable function, it is useful to know where it increases (rises from left to right) and where it decreases (falls from left to right) over an interval. This section gives a test to determine where it increases and where it decreases. We also show how to test the critical points of a function to identify whether local extreme values are present. 
 
-## Increasing Functions and Decreasing Functions
+### Increasing Functions and Decreasing Functions
 
 As another corollary to the Mean Value Theorem, we show that functions with positive derivatives are increasing functions and functions with negative derivatives are decreasing functions. A function that is either increasing on an interval or decreasing on an interval is said to be monotonic on the interval. 
 
@@ -1226,14 +1205,14 @@ $$
 \begin{array}{r l} f ^ {\prime} (x) & = 3 x ^ {2} - 1 2 = 3 (x ^ {2} - 4) \\ & = 3 (x + 2) (x - 2) \end{array}
 $$
 
-![[158d9962e5f429c97e6feda452e071407ec9e23f046027511a7d41cb82f80102.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/158d9962e5f429c97e6feda452e071407ec9e23f046027511a7d41cb82f80102.jpg)
 
 
 
 FIGURE 4.20 The function $f(x) = x^3 - 12x - 5$ is monotonic on three separate intervals (Example 1).
 
 
-## HISTORICAL BIOGRAPHY Edmund Halley (1656–1742)
+**HISTORICAL BIOGRAPHY Edmund Halley (1656–1742)**
 
 Halley, a British biologist, geologist, sea captain, astronomer, and mathematician, encouraged Newton to write the Principia. Despite all of Halley's accomplishments, he is known today as the man who calculated the orbit of the comet of 1682. 
 
@@ -1245,11 +1224,11 @@ is zero at x = -2 and x = 2. These critical points subdivide the domain of f to 
 
 We used “strict” less-than inequalities to identify the intervals in the summary table for Example 1, since open intervals were specified. Corollary 3 says that we could use $\leq$ inequalities as well. That is, the function f in the example is increasing on $-\infty < x \leq -2$ , decreasing on $-2 \leq x \leq 2$ , and increasing on $2 \leq x < \infty$ . We do not talk about whether a function is increasing or decreasing at a single point. 
 
-## First Derivative Test for Local Extrema
+### First Derivative Test for Local Extrema
 
 In Figure 4.21, at the points where f has a minimum value, $f' < 0$ immediately to the left and $f' > 0$ immediately to the right. (If the point is an endpoint, there is only one side to consider.) Thus, the function is decreasing on the left of the minimum value and it is increasing on its right. Similarly, at the points where f has a maximum value, $f' > 0$ immediately to the left and $f' < 0$ immediately to the right. Thus, the function is increasing on the left of the maximum value and decreasing on its right. In summary, at a local extreme point, the sign of $f'(x)$ changes. 
 
-![[1eb2dccb3888e161a97647e3514bf9ad7177d95ae5ee97cb5c886e31f081a99f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1eb2dccb3888e161a97647e3514bf9ad7177d95ae5ee97cb5c886e31f081a99f.jpg)
 
 
 
@@ -1258,7 +1237,7 @@ FIGURE 4.21 The critical points of a function locate where it is increasing and 
 
 These observations lead to a test for the presence and nature of local extreme values of differentiable functions. 
 
-## First Derivative Test for Local Extrema
+### First Derivative Test for Local Extrema
 
 Suppose that c is a critical point of a continuous function f, and that f is differentiable at every point in some interval containing c except possibly at c itself. Moving across this interval from left to right, 
 
@@ -1296,7 +1275,7 @@ The critical points partition the x-axis into open intervals on which $f'$ is ei
 
 Corollary 3 to the Mean Value Theorem implies that f decreases on $(-\infty,0)$ , decreases on $(0,1)$ , and increases on $(1,\infty)$ . The First Derivative Test for Local Extrema tells us that f does not have an extreme value at x = 0 ( $f'$ does not change sign) and that f has a local minimum at x = 1 ( $f'$ changes from negative to positive). 
 
-![[992b91cd41096ac20906352aa667ee53a1dca1d1cd4ad40e95e6da1469820cf2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/992b91cd41096ac20906352aa667ee53a1dca1d1cd4ad40e95e6da1469820cf2.jpg)
 
 
 
@@ -1327,7 +1306,7 @@ $$
 
 Since $e^{x}$ is never zero, the first derivative is zero if and only if 
 
-![[0e7c5dc959a2870daa89dffbb2086393aef4410db0e49d2ef81a62d089cc6f4b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0e7c5dc959a2870daa89dffbb2086393aef4410db0e49d2ef81a62d089cc6f4b.jpg)
 
 
 $$
@@ -1344,7 +1323,7 @@ The zeros x = -3 and x = 1 partition the x-axis into open intervals as follows.
 
 We can see from the table that there is a local maximum (about 0.299) at $x = -3$ and a local minimum (about -5.437) at $x = 1$ . The local minimum value is also an absolute minimum because $f(x) > 0$ for $|x| > \sqrt{3}$ . There is no absolute maximum. The function increases on $(-\infty, -3)$ and $(1, \infty)$ and decreases on $(-3, 1)$ . Figure 4.23 shows the graph. 
 
-## EXERCISES 4.3
+### EXERCISES 4.3
 
 Analyzing Functions from Derivatives 
 
@@ -1356,9 +1335,13 @@ b. On what open intervals is f increasing or decreasing?
 
 c. At what points, if any, does f assume local maximum or minimum values? 
 
-1. $f^{\prime}(x) = x(x - 1)$ 2. $f^{\prime}(x) = (x - 1)(x + 2)$ 
+1. $f^{\prime}(x) = x(x - 1)$
 
-3. $f'(x) = (x - 1)^{2}(x + 2)$ 4. $f'(x) = (x - 1)^{2}(x + 2)^{2}$ 
+2. $f^{\prime}(x) = (x - 1)(x + 2)$
+
+3. $f'(x) = (x - 1)^{2}(x + 2)$
+
+4. $f'(x) = (x - 1)^{2}(x + 2)^{2}$
 
 5. $f'(x) = (x - 1)e^{-x}$ 
 
@@ -1366,11 +1349,11 @@ c. At what points, if any, does f assume local maximum or minimum values?
 
 7. $f'(x) = \frac{x^{2}(x - 1)}{x + 2}, \quad x \neq -2$ 
 
-$$
-f ^ {\prime} (x) = \frac {(x - 2) (x + 4)}{(x + 1) (x - 3)}, x \neq - 1, 3
-$$
+8. $f ^ {\prime} (x) = \frac {(x - 2) (x + 4)}{(x + 1) (x - 3)}, x \neq - 1, 3$
 
-9. $f'(x) = 1 - \frac{4}{x^{2}}, \quad x \neq 0$ 10. $f'(x) = 3 - \frac{6}{\sqrt{x}}, \quad x \neq 0$ 
+9. $f'(x) = 1 - \frac{4}{x^{2}}, \quad x \neq 0$
+
+10. $f'(x) = 3 - \frac{6}{\sqrt{x}}, \quad x \neq 0$
 
 11. $f'(x) = x^{-1/3}(x + 2)$ 
 
@@ -1388,30 +1371,29 @@ a. Find the open intervals on which the function is increasing and those on whic
 
 b. Identify the function's local and absolute extreme values, if any, saying where they occur. 
 
-16. 
-
-
 15.
 
 
-![[edebc67ce1f5d96f148d3d9a879438e26ece795f17d80d5aa3c59246240f3580.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/edebc67ce1f5d96f148d3d9a879438e26ece795f17d80d5aa3c59246240f3580.jpg)
 
 
-![[a795877adc17edc42f10e1fdba5f7cde2ab285c2d3f7d481aef42560ab2c257e.jpg|image]]
+16.
+
+![教材插图](/books/thomas-calculus/assets/a795877adc17edc42f10e1fdba5f7cde2ab285c2d3f7d481aef42560ab2c257e.jpg)
 
 
 
 17.
 
 
-![[935e75910e3d42af3a03f74bfcfebe1dc20b083e067b5c23788b4bf7c6b2867b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/935e75910e3d42af3a03f74bfcfebe1dc20b083e067b5c23788b4bf7c6b2867b.jpg)
 
 
 
 18.
 
 
-![[f7d97c930e6a8ed846c5337e168b7bddea282f67c2b5250f2268514334d9f1a9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f7d97c930e6a8ed846c5337e168b7bddea282f67c2b5250f2268514334d9f1a9.jpg)
 
 
 In Exercises 19–46: 
@@ -1434,9 +1416,9 @@ b. Identify the function's local extreme values, if any, saying where they occur
 
 25. $f(r) = 3r^3 +16r$ 
 
-27. $f(x) = x^{4} - 8x^{2} + 16$ 
-
 26. $h(r) = (r + 7)^{3}$ 
+
+27. $f(x) = x^{4} - 8x^{2} + 16$ 
 
 29. $H(t) = \frac{3}{2} t^4 - t^6$ 
 
@@ -1452,29 +1434,29 @@ $$
 
 33. $g(x) = x\sqrt{8 - x^2}$ 
 
-35. $f(x) = \frac{x^2 - 3}{x - 2}, x \neq 2$ 
-
 34. $g(x) = x^{2}\sqrt{5 - x}$ 
 
-37. $f(x) = x^{1 / 3}(x + 8)$ 
-
-39. $h(x) = x^{1 / 3}(x^2 -4)$ 
+35. $f(x) = \frac{x^2 - 3}{x - 2}, x \neq 2$ 
 
 36. $f(x) = \frac{x^3}{3x^2 + 1}$ 
 
+37. $f(x) = x^{1 / 3}(x + 8)$ 
+
 38. $g(x) = x^{2 / 3}(x + 5)$ 
 
-41. $f(x) = e^{2x} + e^{-x}$ 
+39. $h(x) = x^{1 / 3}(x^2 -4)$ 
 
 40. $k(x) = x^{2 / 3}(x^2 -4)$ 
 
-43. $f(x) = x\ln x$ 
+41. $f(x) = e^{2x} + e^{-x}$ 
 
 42. $f(x) = e^{\sqrt{x}}$ 
 
-45. $g(x) = x(\ln x)^{2}$ 
+43. $f(x) = x\ln x$ 
 
 44. $f(x) = x^{2}\ln x$ 
+
+45. $g(x) = x(\ln x)^{2}$ 
 
 46. $g(x) = x^{2} - 2x - 4 \ln x$ 
 
@@ -1516,9 +1498,7 @@ T b. Graph the function and its derivative together. Comment on the behavior of 
 
 59. $f(x) = \sin 2x, 0 \leq x \leq \pi$ 
 
-$$
-\mathbf {6 0 .} f (x) = \sin x - \cos x, 0 \leq x \leq 2 \pi
-$$
+60. $f (x) = \sin x - \cos x, 0 \leq x \leq 2 \pi$
 
 61. $f(x) = \sqrt{3} \cos x + \sin x, \quad 0 \leq x \leq 2\pi$ 
 
@@ -1540,7 +1520,7 @@ $$
 
 In Exercises 67 and 68, the graph of $f'$ is given. Assume that f is continuous, and determine the x-values corresponding to local minima and local maxima. 
 
-![[c2161a6ec3e99ca7abb99f9a1a6c8c91d340d9861a36118909142a0c79d53442.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c2161a6ec3e99ca7abb99f9a1a6c8c91d340d9861a36118909142a0c79d53442.jpg)
 
 
 In Exercises 69 and 70, the graph of $f'$ is given. Assume that $f$ has domain $(-2, 2)$ . 
@@ -1549,10 +1529,10 @@ a. Either use the graph to determine which intervals f is increasing on and whic
 
 b. Either use the graph to determine which intervals f is positive on and which intervals f is negative on, or explain why this information cannot be determined from the graph. 
 
-![[b8d764f116cfa48456283e1d86b0282087df22882de015d31696408c0d3c600a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b8d764f116cfa48456283e1d86b0282087df22882de015d31696408c0d3c600a.jpg)
 
 
-## Theory and Examples
+#### Theory and Examples
 
 Show that the functions in Exercises 71 and 72 have local extreme values at the given values of $\theta$ , and say which kind of local extreme the function has. 
 
@@ -1600,7 +1580,7 @@ b. Using part (a), show that $\ln x < x$ if x > 1.
 
 84. Where does the periodic function $f(x) = 2e^{\sin(x/2)}$ take on its extreme values and what are these values? 
 
-![[2d93aab12bfab61f6bb543fd500d98de0680be174532836a67b5dd7ff26d9df0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2d93aab12bfab61f6bb543fd500d98de0680be174532836a67b5dd7ff26d9df0.jpg)
 
 
 85. Find the absolute maximum value of $f(x) = x^{2} \ln(1/x)$ and say where it occurs. 
@@ -1625,28 +1605,28 @@ $$
 
 We have seen how the first derivative tells us where a function is increasing, where it is decreasing, and whether a local maximum or local minimum occurs at a critical point. In this section we see that the second derivative gives us information about how the graph of a differentiable function bends or turns. With this knowledge about the first and second derivatives, coupled with our previous understanding of symmetry and asymptotic behavior studied in Sections 1.1 and 2.5, we can now draw an accurate graph of a function. By organizing all of these ideas into a coherent procedure, we give a method for sketching graphs and revealing visually the key features of functions. Identifying and knowing the locations of these features is of major importance in mathematics and its applications to science and engineering, especially in the graphical analysis and interpretation of data. When the domain of a function is not a finite closed interval, sketching a graph helps to determine whether absolute maxima or absolute minima exist and, if they do exist, where they are located. 
 
-![[bad7cc2306b560f7c00954cd11c536393fa22a1f0a47dee8ad9f47ff4739a11f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bad7cc2306b560f7c00954cd11c536393fa22a1f0a47dee8ad9f47ff4739a11f.jpg)
 
 
 
 FIGURE 4.24 The graph of $f(x) = x^{3}$ is concave down on $(-\infty, 0)$ and concave up on $(0, \infty)$ (Example 1a).
 
 
-![[d1b89fc95f0f1cfef3fa27d01aa97d7f99a6f539d60e3ccdecabb01c7c36dc2f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d1b89fc95f0f1cfef3fa27d01aa97d7f99a6f539d60e3ccdecabb01c7c36dc2f.jpg)
 
 
 
 FIGURE 4.25 The graph of $f(x) = x^{2}$ is concave up on every interval (Example 1b).
 
 
-![[41ea2c1fbf3b35b274d15536191ed4363e62b22ea9dda68d2576b92177fbd49a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/41ea2c1fbf3b35b274d15536191ed4363e62b22ea9dda68d2576b92177fbd49a.jpg)
 
 
 
 FIGURE 4.26 Using the sign of $y''$ to determine the concavity of $y$ (Example 2).
 
 
-## Concavity
+### Concavity
 
 As you can see in Figure 4.24, the curve $y = x^{3}$ rises as x increases, but the portions defined on the intervals $(-\infty, 0)$ and $(0, \infty)$ turn in different ways. As we approach the origin from the left along the curve, the curve turns to our right and falls below its tangent lines. The slopes of the tangent lines are decreasing on the interval $(-\infty, 0)$ . As we move away from the origin along the curve to the right, the curve turns to our left and rises above its tangent lines. The slopes of the tangent lines are increasing on the interval $(0, \infty)$ . This turning or bending behavior defines the concavity of the curve. 
 
@@ -1670,7 +1650,7 @@ Let $y = f(x)$ be twice-differentiable on an interval $I$ .
 
 If $y = f(x)$ is twice-differentiable, we will use the notations $f''$ and $y''$ interchangeably when denoting the second derivative. 
 
-## **EXAMPLE 1**
+**EXAMPLE 1**
 
 (a) The curve $y = x^{3}$ (Figure 4.24) is concave down on $(-\infty, 0)$ , where $y'' = 6x < 0$ , and concave up on $(0, \infty)$ , where $y'' = 6x > 0$ . 
 
@@ -1680,25 +1660,25 @@ If $y = f(x)$ is twice-differentiable, we will use the notations $f''$ and $y''$
 
 **Solution** The first derivative of $y = 3 + \sin x$ is $y' = \cos x$ , and the second derivative is $y'' = -\sin x$ . The graph of $y = 3 + \sin x$ is concave down on $(0, \pi)$ , where $y'' = -\sin x$ is negative. It is concave up on $(\pi, 2\pi)$ , where $y'' = -\sin x$ is positive (Figure 4.26). 
 
-## Points of Inflection
+### Points of Inflection
 
 The curve $y = 3 + \sin x$ in Example 2 changes concavity at the point $(\pi, 3)$ . Since the first derivative $y' = \cos x$ exists for all x, we see that the curve has a tangent line of slope -1 at the point $(\pi, 3)$ . This point is called a point of inflection of the curve. Notice from Figure 4.26 that the graph crosses its tangent line at this point and that the second derivative $y'' = -\sin x$ has value 0 when $x = \pi$ . In general, we have the following definition. 
 
-![[694ab8c1195b73e3321e00f47134648d0505181c613a5c0dc0d5e4f90872fb65.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/694ab8c1195b73e3321e00f47134648d0505181c613a5c0dc0d5e4f90872fb65.jpg)
 
 
 
 FIGURE 4.27 The concavity of the graph of f changes from concave down to concave up at the inflection point (Example 3).
 
 
-![[7f52602b35e395e741875fdfce808febdfdf5abdc2976f020590b884033aa10e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7f52602b35e395e741875fdfce808febdfdf5abdc2976f020590b884033aa10e.jpg)
 
 
 
 FIGURE 4.28 The graph of $f(x) = x^{5/3}$ has a horizontal tangent at the origin where the concavity changes, although $f''$ does not exist at x = 0 (Example 4).
 
 
-![[80a0ff3e6b9a1d30e7b694b7496b5bdf2a81e2229462e4d2769862f73f6f46fc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/80a0ff3e6b9a1d30e7b694b7496b5bdf2a81e2229462e4d2769862f73f6f46fc.jpg)
 
 
 
@@ -1743,7 +1723,7 @@ The following example shows that an inflection point need not occur even though 
 
 In the next example, a point of inflection occurs at a vertical tangent to the curve where neither the first nor the second derivative exists. 
 
-![[8eaea6718431847b9852e05b6a0970a6b1dc11f77cf724c2e8f06745f3043c04.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8eaea6718431847b9852e05b6a0970a6b1dc11f77cf724c2e8f06745f3043c04.jpg)
 
 
 
@@ -1796,10 +1776,10 @@ The acceleration $a(t) = s''(t) = 4(3t - 7)$ is zero when t = 7/3.
 
 Under the influence of the leftward acceleration over the time interval $[0, 7/3)$ , the particle starts out moving to the right while slowing down, and then at t = 1 it reverses and begins moving to the left while speeding up. The acceleration then changes direction at t = 7/3, but the particle continues moving leftward, while slowing down under the rightward acceleration. At t = 11/3 the particle reverses direction again: moving to the right in the same direction as the acceleration, so it is speeding up. 
 
-![[090bb0d8a3e32a279868798802d3ebe24e9f1d7cad59edf4fac4a61fb5fd73c6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/090bb0d8a3e32a279868798802d3ebe24e9f1d7cad59edf4fac4a61fb5fd73c6.jpg)
 
 
-## Second Derivative Test for Local Extrema
+### Second Derivative Test for Local Extrema
 
 Instead of looking for sign changes in $f'$ at critical points, we can sometimes use the following test to determine the presence and nature of local extrema. 
 
@@ -1819,7 +1799,7 @@ This test requires us to know $f''$ only at c itself and not in an interval abou
 
 Together $f'$ and $f''$ tell us the shape of the function's graph—that is, where the critical points are located and what happens at a critical point, where the function is increasing and where it is decreasing, and how the curve is turning or bending as indicated by its concavity. We use this information to sketch a graph of the function that captures its key features. 
 
-## **EXAMPLE 8** Sketch a graph of the function
+**EXAMPLE 8** Sketch a graph of the function
 
 $$
 f (x) = x ^ {4} - 4 x ^ {3} + 1 0
@@ -1859,7 +1839,7 @@ We see that the graph of $f$ is concave up on the intervals $(-\infty, 0)$ and $
 
 (d) Summarizing the information in the last two tables, we obtain the following. 
 
-![[5ecdd94c496152dd2687509f92c8b51d63771b484b88e43d18a1964cdb534247.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5ecdd94c496152dd2687509f92c8b51d63771b484b88e43d18a1964cdb534247.jpg)
 
 
 
@@ -1874,10 +1854,10 @@ $f(x) = x^{4} - 4x^{3} + 10$ (Example 8).
 
 The general shape of the curve is shown in the accompanying figure. 
 
-![[3acfc8f40a002a43d3cd82d5383e5161418eb56d28a9812944071b0cc0362d1f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3acfc8f40a002a43d3cd82d5383e5161418eb56d28a9812944071b0cc0362d1f.jpg)
 
 
-![[3862bbdfcfe109ab7988f5deda756f3ed2d8b66a4fa85b72c2dcbc6caf105f82.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3862bbdfcfe109ab7988f5deda756f3ed2d8b66a4fa85b72c2dcbc6caf105f82.jpg)
 
 
 (e) Plot the curve's intercepts (if possible) and the points where $y'$ and $y''$ are zero. Indicate any local extreme values and inflection points. Use the general shape as a guide to sketch the curve. (Plot additional points as needed.) Figure 4.31 shows the graph of $f$ . 
@@ -1900,9 +1880,9 @@ Procedure for Graphing $y = f(x)$
 
 7. Plot key points, such as the intercepts and the points found in Steps 3–5, and sketch the curve together with any asymptotes that exist. 
 
-## **EXAMPLE 9** Sketch the graph of $f(x) = \frac{(x + 1)^{2}}{1 + x^{2}}$ .
+**EXAMPLE 9** Sketch the graph of $f(x) = \frac{(x + 1)^{2}}{1 + x^{2}}$ .
 
-## **Solution**
+**Solution**
 
 1. The domain of $f$ is $(-\infty, \infty)$ and there are no symmetries about either axis or the origin (Section 1.1). 
 
@@ -1918,12 +1898,12 @@ $$
 
 5. Inflection points. Notice that the denominator of the second derivative (Step 2) is always positive. The second derivative $f''$ is zero when $x = -\sqrt{3}, 0$ , and $\sqrt{3}$ . The second derivative changes sign at each of these points: negative on $(-\infty, -\sqrt{3})$ , positive on $(-\sqrt{3}, 0)$ , negative on $(0, \sqrt{3})$ , and positive again on $(\sqrt{3}, \infty)$ . Thus each point is a point of inflection. The curve is concave down on the interval $(-\infty, -\sqrt{3})$ , concave up on $(-\sqrt{3}, 0)$ , concave down on $(0, \sqrt{3})$ , and concave up again on $(\sqrt{3}, \infty)$ . 
 
-![[7710a9d61286a083adf5548ea7f32d89a4dffac9f8be592078d0490b1a4b7cf0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7710a9d61286a083adf5548ea7f32d89a4dffac9f8be592078d0490b1a4b7cf0.jpg)
 
 
 FIGURE 4.32 The graph of $y = \frac{(x + 1)^2}{1 + x^2}$ (Example 9). 
 
-![[155629682dc0e5fbb58f1e83ac1f2e84dad67f44a36651addeea11576bf2c1c7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/155629682dc0e5fbb58f1e83ac1f2e84dad67f44a36651addeea11576bf2c1c7.jpg)
 
 
 FIGURE 4.33 The graph of $y = \frac{x^2 + 4}{2x}$ (Example 10). 
@@ -1940,7 +1920,7 @@ We see that $f(x) \to 1$ as $x \to \infty$ and that $f(x) \to 1$ as $x \to -\inf
 
 **EXAMPLE 10** Sketch the graph of $f(x) = \frac{x^{2} + 4}{2x}$ . 
 
-## **Solution**
+**Solution**
 
 1. The domain of $f$ is all nonzero real numbers. There are no intercepts because neither $x$ nor $f(x)$ can be zero. Since $f(-x) = -f(x)$ , we note that $f$ is an odd function, so the graph of $f$ is symmetric about the origin. 
 
@@ -1980,7 +1960,7 @@ so the $y$ -axis is a vertical asymptote. Also, as $x \to \infty$ or as $x \to -
 
 7. The graph of $f$ is sketched in Figure 4.33. 
 
-![[4b4050d77374388c65dcb352a5044ee8fb07890901655a87ae7524168b4dcfb1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4b4050d77374388c65dcb352a5044ee8fb07890901655a87ae7524168b4dcfb1.jpg)
 
 
 **Solution** The domain of $f$ is $(-\infty, 0) \cup (0, \infty)$ and there are no symmetries about either axis or the origin. The derivatives of $f$ are 
@@ -1993,9 +1973,9 @@ FIGURE 4.34 The graph of $y = e^{2/x}$ has a point of inflection at $(-1, e^{-2}
 FIGURE 4.35 The graph of the function in Example 12.
 
 
-## **EXAMPLE 11** Sketch the graph of $f(x) = e^{2/x}$ .
+**EXAMPLE 11** Sketch the graph of $f(x) = e^{2/x}$ .
 
-![[eb0d53bb77082446fd4ffd1a10918944f71dd362e8a319fdffb9a0993f6d100b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/eb0d53bb77082446fd4ffd1a10918944f71dd362e8a319fdffb9a0993f6d100b.jpg)
 
 
 $$
@@ -2026,69 +2006,69 @@ Examining the second derivative, we find that $f'' = 0$ when $x = \pi/2$ or $x =
 
 Finally, we evaluate $f$ at the endpoints of the interval to find $f(0) = 1$ and $f(2\pi) \approx -3.44$ . Therefore, the values $f(0) = 1$ and $f(5\pi / 4) \approx -3.48$ are the absolute maximum and absolute minimum values of $f$ over the closed interval $[0, 2\pi]$ . The graph of $f$ is sketched in Figure 4.35. 
 
-## Graphical Behavior of Functions from Derivatives
+### Graphical Behavior of Functions from Derivatives
 
 As we saw in Examples 8–12, we can learn much about a twice-differentiable function $y = f(x)$ by examining its first derivative. We can find where the function's graph rises and falls and where any local extrema are located. We can differentiate $y'$ to learn how the graph bends as it passes over the intervals of rise and fall. Together with information about the function's asymptotes and its value at some key points, such as intercepts, this information about the derivatives helps us determine the shape of the function's graph. The following figure summarizes how the first derivative and second derivative affect the shape of a graph. 
 
-<table><tr><td><img src="https://cdn-mineru.openxlab.org.cn/result/2026-09-30/95a1710b-f9aa-4556-8a76-51f7cc43851f/792101960757af7d4251a1e6a40bbb6638926d2f664aa1b4511fe8f802559fa6.jpg"/>Differentiable ⇒ smooth, connected; graph may rise and fall</td><td><img src="https://cdn-mineru.openxlab.org.cn/result/2026-09-30/95a1710b-f9aa-4556-8a76-51f7cc43851f/8f3f15932c7b9065fb132594280e50cb6708c2413f6f8a092911c9bf2211c306.jpg"/><eq>y&#x27; &gt; 0 \Rightarrow</eq> rises from left to right; may be wavy</td><td><img src="https://cdn-mineru.openxlab.org.cn/result/2026-09-30/95a1710b-f9aa-4556-8a76-51f7cc43851f/68ff534ca2f3a065e29965f6fcb1176ef1cda1462bc995d7e1695a849e3fd2a9.jpg"/><eq>y&#x27; &lt; 0 \Rightarrow</eq> falls from left to right; may be wavy</td></tr><tr><td><img src="https://cdn-mineru.openxlab.org.cn/result/2026-09-30/95a1710b-f9aa-4556-8a76-51f7cc43851f/9b770dfc0ce600ba2db10a6fbd035c57370a9d3784c18c39eb09c68b204ec2f6.jpg"/><eq>y&#x27;&#x27; &gt; 0 \Rightarrow</eq> concave up throughout; no waves; graph may rise or fall or both</td><td><img src="https://cdn-mineru.openxlab.org.cn/result/2026-09-30/95a1710b-f9aa-4556-8a76-51f7cc43851f/ceb071034e691691fe3ccddc9b07992c0230b84b44ef7ef1ba30cc6f90178a7d.jpg"/><eq>y&#x27;&#x27; &lt; 0 \Rightarrow</eq> concave down throughout; no waves; graph may rise or fall or both</td><td><img src="https://cdn-mineru.openxlab.org.cn/result/2026-09-30/95a1710b-f9aa-4556-8a76-51f7cc43851f/7206780376991756380e7ce6d01c05b9fbb88a79d399caa7a3cc93d8becd617c.jpg"/><eq>y&#x27;&#x27;</eq> changes sign at an inflection point</td></tr><tr><td><img src="https://cdn-mineru.openxlab.org.cn/result/2026-09-30/95a1710b-f9aa-4556-8a76-51f7cc43851f/bd957e9ae77c835c54b966d891c5662ab96f84f6c9e82a2baf63c96564b97853.jpg"/><eq>y&#x27;</eq> changes sign ⇒ graph has local maximum or local minimum</td><td><img src="https://cdn-mineru.openxlab.org.cn/result/2026-09-30/95a1710b-f9aa-4556-8a76-51f7cc43851f/54850210afb0366eaabae64142a2619dd42a3addb09902e92520a58adf0282fc.jpg"/><eq>y&#x27; = 0</eq> and <eq>y&#x27;&#x27; &lt; 0</eq> at a point; graph has local maximum</td><td><img src="https://cdn-mineru.openxlab.org.cn/result/2026-09-30/95a1710b-f9aa-4556-8a76-51f7cc43851f/2ff431bbcb2349a05b631e5971a10cb7cdb556008fea4713f6f992712cd460b1.jpg"/><eq>y&#x27; = 0</eq> and <eq>y&#x27;&#x27; &gt; 0</eq> at a point; graph has local minimum</td></tr></table>
+<table><tr><td><img src="/books/thomas-calculus/assets/792101960757af7d4251a1e6a40bbb6638926d2f664aa1b4511fe8f802559fa6.jpg"/>Differentiable ⇒ smooth, connected; graph may rise and fall</td><td><img src="/books/thomas-calculus/assets/8f3f15932c7b9065fb132594280e50cb6708c2413f6f8a092911c9bf2211c306.jpg"/><eq>y&#x27; &gt; 0 \Rightarrow</eq> rises from left to right; may be wavy</td><td><img src="/books/thomas-calculus/assets/68ff534ca2f3a065e29965f6fcb1176ef1cda1462bc995d7e1695a849e3fd2a9.jpg"/><eq>y&#x27; &lt; 0 \Rightarrow</eq> falls from left to right; may be wavy</td></tr><tr><td><img src="/books/thomas-calculus/assets/9b770dfc0ce600ba2db10a6fbd035c57370a9d3784c18c39eb09c68b204ec2f6.jpg"/><eq>y&#x27;&#x27; &gt; 0 \Rightarrow</eq> concave up throughout; no waves; graph may rise or fall or both</td><td><img src="/books/thomas-calculus/assets/ceb071034e691691fe3ccddc9b07992c0230b84b44ef7ef1ba30cc6f90178a7d.jpg"/><eq>y&#x27;&#x27; &lt; 0 \Rightarrow</eq> concave down throughout; no waves; graph may rise or fall or both</td><td><img src="/books/thomas-calculus/assets/7206780376991756380e7ce6d01c05b9fbb88a79d399caa7a3cc93d8becd617c.jpg"/><eq>y&#x27;&#x27;</eq> changes sign at an inflection point</td></tr><tr><td><img src="/books/thomas-calculus/assets/bd957e9ae77c835c54b966d891c5662ab96f84f6c9e82a2baf63c96564b97853.jpg"/><eq>y&#x27;</eq> changes sign ⇒ graph has local maximum or local minimum</td><td><img src="/books/thomas-calculus/assets/54850210afb0366eaabae64142a2619dd42a3addb09902e92520a58adf0282fc.jpg"/><eq>y&#x27; = 0</eq> and <eq>y&#x27;&#x27; &lt; 0</eq> at a point; graph has local maximum</td><td><img src="/books/thomas-calculus/assets/2ff431bbcb2349a05b631e5971a10cb7cdb556008fea4713f6f992712cd460b1.jpg"/><eq>y&#x27; = 0</eq> and <eq>y&#x27;&#x27; &gt; 0</eq> at a point; graph has local minimum</td></tr></table>
 
-## EXERCISES 4.4
+### EXERCISES 4.4
 
-## Analyzing Functions from Graphs
+#### Analyzing Functions from Graphs
 
 Identify the inflection points and local maxima and minima of the functions graphed in Exercises 1–8. Identify the open intervals on which the functions are differentiable and the graphs are concave up and concave down. 
 
-![[07f1a0bfb95a9f3854922f51ff1cf45739ffdd6a3143802eed3fee6e64ab9d8d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/07f1a0bfb95a9f3854922f51ff1cf45739ffdd6a3143802eed3fee6e64ab9d8d.jpg)
 
 
-![[153fe8032403c2af3ad58e4b8ee9abcc883c06438f1d7160128e7162577b43d3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/153fe8032403c2af3ad58e4b8ee9abcc883c06438f1d7160128e7162577b43d3.jpg)
 
 
-![[56c1b97b6dbb5e94f6e3ea30d8283e5de397ac945364732478b9345c5ecd4438.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/56c1b97b6dbb5e94f6e3ea30d8283e5de397ac945364732478b9345c5ecd4438.jpg)
 
 
-![[455a35adbd631762a244b1f621639ebb2667fb569cb7359e22ce31e411e5de84.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/455a35adbd631762a244b1f621639ebb2667fb569cb7359e22ce31e411e5de84.jpg)
 
 
-![[3c293b5e9c6099ae8e7403ae4f0ca3cc4de07feda93b28640da311b4a1717e23.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3c293b5e9c6099ae8e7403ae4f0ca3cc4de07feda93b28640da311b4a1717e23.jpg)
 
 
-![[ca14e7d066262a934e4328c685c76e2d70c9b7fb998494940554b63ab09efd45.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ca14e7d066262a934e4328c685c76e2d70c9b7fb998494940554b63ab09efd45.jpg)
 
 
-![[3e0b52405b6d7c9859ffe2ceb6c53f746743c5d4cf4d932a381e1b58f395e8ac.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3e0b52405b6d7c9859ffe2ceb6c53f746743c5d4cf4d932a381e1b58f395e8ac.jpg)
 
 
-![[744db88ac4dfeda4a1a30f80130d62aad18da5958e571da6e9b79d4fb33ec1ce.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/744db88ac4dfeda4a1a30f80130d62aad18da5958e571da6e9b79d4fb33ec1ce.jpg)
 
 
-![[ca52b26a88f77140b61b8425dbb47d2bea4a97e7cce55493c111c8f7c7edaa4e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ca52b26a88f77140b61b8425dbb47d2bea4a97e7cce55493c111c8f7c7edaa4e.jpg)
 
 
-![[faf5749c0b2b5754b6ca955efa6930fcb70a6590c253ef69d0a8f95965202d10.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/faf5749c0b2b5754b6ca955efa6930fcb70a6590c253ef69d0a8f95965202d10.jpg)
 
 
-![[9afa86373d92e58aea2735055088957fc1f78670eb6e16cb413765f761d4f802.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9afa86373d92e58aea2735055088957fc1f78670eb6e16cb413765f761d4f802.jpg)
 
 
-![[121abf38bc3584649d64206e614344fc015bb917049953672ba5e0ff1e15ef72.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/121abf38bc3584649d64206e614344fc015bb917049953672ba5e0ff1e15ef72.jpg)
 
 
 $$
 y = \sin | x |, - 2 \pi \leq x \leq 2 \pi
 $$
 
-![[064a14499f5d2c2fe21888d77a85fa5fcbffc9eb0b05ba09fc264874d2e36842.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/064a14499f5d2c2fe21888d77a85fa5fcbffc9eb0b05ba09fc264874d2e36842.jpg)
 
 
-![[49f55e4134d6c70b8a94c239b53b1f81871742cfec685d16a8e32225725c3810.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/49f55e4134d6c70b8a94c239b53b1f81871742cfec685d16a8e32225725c3810.jpg)
 
 
 
 NOT TO SCALE
 
 
-![[409782c27132ceee862d30844dfd511fb935bfa35a622d5345512c90215683b1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/409782c27132ceee862d30844dfd511fb935bfa35a622d5345512c90215683b1.jpg)
 
 
 Graphing Functions 
@@ -2097,13 +2077,9 @@ In Exercises 9–70, graph the function using appropriate methods from the graph
 
 10. $y = 6 - 2x - x^2$ 
 
-$$
-\mathbf {1 1 .} y = x ^ {3} - 3 x + 3
-$$
+11. $y = x ^ {3} - 3 x + 3$
 
-$$
-1 2. y = x (6 - 2 x) ^ {2}
-$$
+12. $y = x (6 - 2 x) ^ {2}$
 
 13. $y = -2x^{3} + 6x^{2} - 3$ 
 
@@ -2111,13 +2087,9 @@ $$
 y = 1 - 9 x - 6 x ^ {2} - x ^ {3}
 $$
 
-$$
-\mathbf {1 5 .} y = (x - 2) ^ {3} + 1
-$$
+15. $y = (x - 2) ^ {3} + 1$
 
-$$
-\mathbf {1 6 .} y = 1 - (x + 1) ^ {3}
-$$
+16. $y = 1 - (x + 1) ^ {3}$
 
 17. $y = x^4 - 2x^2 = x^2(x^2 - 2)$ 
 
@@ -2205,9 +2177,9 @@ $$
 
 59. $y = \frac{8x}{x^2 + 4}$ 
 
-61. $y = |x^{2} - 1|$ 
-
 60. $y = \frac{5}{x^4 + 5}$ 
+
+61. $y = |x^{2} - 1|$ 
 
 62. $y = |x^{2} - 2x|$ 
 
@@ -2217,17 +2189,17 @@ $$
 
 65. $y = \frac{x}{9 - x^{2}}$ 
 
-67. $y = \ln (3 - x^2)$ 
-
 66. $y = \frac{x^2}{1 - x}$ 
 
-69. $y = \ln (\cos x)$ 
+67. $y = \ln (3 - x^2)$ 
 
 68. $y = (\ln x)^{2}$ 
 
+69. $y = \ln (\cos x)$ 
+
 70. $y = \frac{1}{1 + e^{-x}} = \frac{e^x}{1 + e^x}$ 
 
-## Sketching the General Shape, Knowing $y'$
+#### Sketching the General Shape, Knowing $y'$
 
 Each of Exercises 71–92 gives the first derivative of a continuous function $y = f(x)$ . Find $y''$ and then use Steps 2–4 of the graphing procedure described in this section to sketch the general shape of the graph of f. 
 
@@ -2251,7 +2223,9 @@ Each of Exercises 71–92 gives the first derivative of a continuous function $y
 
 80. $y' = \tan x, -\frac{\pi}{2} < x < \frac{\pi}{2}$ 
 
-81. $y' = \cot\frac{\theta}{2}, \quad 0 < \theta < 2\pi$ 82. $y' = \csc^{2}\frac{\theta}{2}, \quad 0 < \theta < 2\pi$ 
+81. $y' = \cot\frac{\theta}{2}, \quad 0 < \theta < 2\pi$
+
+82. $y' = \csc^{2}\frac{\theta}{2}, \quad 0 < \theta < 2\pi$
 
 83. $y' = \tan^2\theta - 1, -\frac{\pi}{2} < \theta < \frac{\pi}{2}$ 
 
@@ -2281,31 +2255,28 @@ Each of Exercises 93–96 shows the graphs of the first and second derivatives o
 
 94. 
 
-![[3182420bdf2b980b7d5b2f4395364a71cb924e0ca61db538140e06f64a469e5d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3182420bdf2b980b7d5b2f4395364a71cb924e0ca61db538140e06f64a469e5d.jpg)
 
 
-![[79af2a9f4ac9c570b19dc3121b4c0bebbb88aec770e0960bbbe13757f8d59d4a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/79af2a9f4ac9c570b19dc3121b4c0bebbb88aec770e0960bbbe13757f8d59d4a.jpg)
 
 
 95. y 
 
-![[b83bc34b4699580cf0bca907c4c93a5ad07c1f40a8954b7f3c7261bcc6c943c2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b83bc34b4699580cf0bca907c4c93a5ad07c1f40a8954b7f3c7261bcc6c943c2.jpg)
 
 
 96. y 
 
-![[7104c6ce83a1f564646a45c3fa30e96531c86188ae4fe94c1d8d29c0627d8e2b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7104c6ce83a1f564646a45c3fa30e96531c86188ae4fe94c1d8d29c0627d8e2b.jpg)
 
 
 
-106.
-
-
-## Theory and Examples
+#### Theory and Examples
 
 97. The accompanying figure shows a portion of the graph of a twice-differentiable function $y = f(x)$ . At each of the five labeled points, classify $y'$ and $y''$ as positive, negative, or zero. 
 
-![[1fe11c1ee9aeedf12f545a756500220e7792672394d19daeccd51543669171b0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1fe11c1ee9aeedf12f545a756500220e7792672394d19daeccd51543669171b0.jpg)
 
 
 98. Sketch a smooth connected curve $y = f(x)$ with 
@@ -2320,7 +2291,7 @@ $$
 
 100. Sketch the graph of a twice-differentiable function $y = f(x)$ that passes through the points $(-2, 2), (-1, 1), (0, 0), (1, 1)$ , and $(2, 2)$ and whose first two derivatives have the following sign patterns. 
 
-![[305531edae9ee4e6e1113b31ba9393db3d5cb707e2814138701b9e3cf557b118.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/305531edae9ee4e6e1113b31ba9393db3d5cb707e2814138701b9e3cf557b118.jpg)
 
 
 101. Sketch the graph of a twice-differentiable function $y = f(x)$ with the following properties. Label coordinates where possible. 
@@ -2329,30 +2300,30 @@ $$
 
 102. Sketch the graph of a twice-differentiable function $y = f(x)$ that passes through the points $(-3, -2)$ , $(-2, 0)$ , $(0, 1)$ , $(1, 2)$ , and $(2, 3)$ and whose first two derivatives have the following sign patterns. 
 
-![[4d481a754dd92a497346c5cf0fdeea1ca25906e4f304809810111dad61ea027a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4d481a754dd92a497346c5cf0fdeea1ca25906e4f304809810111dad61ea027a.jpg)
 
 
 In Exercises 103 and 104, the graph of $f'$ is given. Determine $x$ -values corresponding to inflection points for the graph of $f$ . 
 
-![[1c4e02cfd0c3bf3a5b6b3cdffd76d59a2e129b7e84a3e5a653fe4b27fcdc2ea8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1c4e02cfd0c3bf3a5b6b3cdffd76d59a2e129b7e84a3e5a653fe4b27fcdc2ea8.jpg)
 
 
 In Exercises 105 and 106, the graph of $f'$ is given. Determine x-values corresponding to local minima, local maxima, and inflection points for the graph of f. 
 
-![[7e0758919b5e19f4caa84d5f2fe8f22df0851f2401279eeb5af309fa0a9fc170.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7e0758919b5e19f4caa84d5f2fe8f22df0851f2401279eeb5af309fa0a9fc170.jpg)
 
 
-![[a5244371a656f0aacdb67c6798cf873a61a55dabee05ab19d013b887470c1b89.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a5244371a656f0aacdb67c6798cf873a61a55dabee05ab19d013b887470c1b89.jpg)
 
 
 107. A function $f(x)$ has domain $(-2,2)$ . The graph below is a plot of the derivative of f, not a plot of f itself. In other words, this is a graph of $y = f'(x)$ . Either use this graph to determine on which intervals the graph of f is concave up and on which intervals the graph of f is concave down, or explain why this information cannot be determined from the graph. 
 
-![[9887e4b64058ee6ecbbbfbc2cda9e090247aba54707b96855325487b809111cf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9887e4b64058ee6ecbbbfbc2cda9e090247aba54707b96855325487b809111cf.jpg)
 
 
 108. A function $f(x)$ has domain $(-2,2)$ . The graph below is a plot of the second derivative of f, not a plot of f itself. In other words, this is a graph of $y = f''(x)$ . 
 
-![[813e16d75d8d6a10f1072dcd73458af12836a440549f81fb789bee2d422be092.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/813e16d75d8d6a10f1072dcd73458af12836a440549f81fb789bee2d422be092.jpg)
 
 
 a. Either use the graph above to determine on which intervals the graph of f is concave up and on which intervals the graph of f is concave down and the inflection points of f, or explain why this information cannot be determined from the graph. 
@@ -2365,19 +2336,19 @@ Motion Along a Line The graphs in Exercises 109 and 110 show the position $s = f
 109.
 
 
-![[359946c9c4271d14dbde88b13785190ae3a284ee675f619784a1df30b5ede5bc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/359946c9c4271d14dbde88b13785190ae3a284ee675f619784a1df30b5ede5bc.jpg)
 
 
 
 110.
 
 
-![[ead007bfcf13d21e6dc0d5c1c761eca9e56fc4f289e94b74897a4a434ab6bc98.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ead007bfcf13d21e6dc0d5c1c761eca9e56fc4f289e94b74897a4a434ab6bc98.jpg)
 
 
 111. Marginal cost The accompanying graph shows the hypothetical cost $c = f(x)$ of manufacturing $x$ items. At approximately what production level does the marginal cost change from decreasing to increasing? 
 
-![[4ee343c2df60112dac19c63312299f21f1c460301c847b7aa0df4fa85f457257.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4ee343c2df60112dac19c63312299f21f1c460301c847b7aa0df4fa85f457257.jpg)
 
 
 
@@ -2386,7 +2357,7 @@ Thousands of units produced
 
 112. The accompanying graph shows the monthly revenue of the Widget Corporation for the past 12 years. During approximately what time intervals was the marginal revenue increasing? Decreasing? 
 
-![[2a0a454ad4a74585fb12276fe4610be809ecd03cf671f99c738d9e46f387def4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2a0a454ad4a74585fb12276fe4610be809ecd03cf671f99c738d9e46f387def4.jpg)
 
 
 113. Suppose the derivative of the function $y = f(x)$ is 
@@ -2441,13 +2412,13 @@ For what x-values does the graph of f have an inflection point?
 
 124. Find the values of constants $a, b$ , and $c$ such that the graph of $y = (x^2 + a) / (bx + c)$ has a local minimum at $x = 3$ and a local maximum at $(-1, -2)$ . 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 125–128, find the inflection points (if any) on the graph of the function and the coordinates of the points on the graph where the function has a local maximum or local minimum value. Then graph the function in a region large enough to show all these points simultaneously. Add to your picture the graphs of the function's first and second derivatives. How are the values at which these graphs intersect the x-axis related to the graph of the function? In what other ways are the graphs of the derivatives related to the graph of the function? 
 
-$$
-\mathbf {1 2 5 .} y = x ^ {5} - 5 x ^ {4} - 2 4 0 \quad \mathbf {1 2 6 .} y = x ^ {3} - 1 2 x ^ {2}
-$$
+125. $y = x ^ {5} - 5 x ^ {4} - 2 4 0$
+
+126. $y = x ^ {3} - 1 2 x ^ {2}$
 
 127. $y = \frac{4}{5} x^5 + 16x^2 - 25$ 
 
@@ -2485,13 +2456,13 @@ $$
 
 involves an indeterminate form 0/0. The expression “0/0” has the form of a number, but it is not a meaningful quantity. Stating that both the numerator and the denominator approach zero does not provide sufficient information to obtain the limit of the ratio. We have to examine the behavior of the expression in more detail by performing algebraic manipulation or by applying methods that we will introduce in this section. 
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
-## (1667-1748)
+### (1667-1748)
 
 Johann Bernoulli was born in Switzerland and attended the University of Basel. His doctoral dissertation was in mathematics despite its medical title, which was used to hide his mathematical work from his father who wanted Johann to become a doctor. 
 
-## Johann Bernoulli
+### Johann Bernoulli
 
 In the late 1600s, John Fernoulle discovered a rule for calculating limits of fractions whose numerators and denominators both approach zero. Today the rule is known as l'Hôpital's rule. 
 
@@ -2505,7 +2476,7 @@ Other forms exhibit behavior similar to Equation (1). For instance, if both the 
 
 John (Johann) Bernoulli discovered a rule for using derivatives to calculate limits of fractions whose numerators and denominators both approach zero or $\pm\infty$ . The rule is known today as l'Hôpital's Rule, after Guillaume de l'Hôpital. He was a French nobleman who wrote the first introductory differential calculus text, where the rule first appeared in print. Limits involving transcendental functions often require some use of this rule. 
 
-## Indeterminate Form 0/0
+### Indeterminate Form 0/0
 
 It is important to understand that the notation “0/0” is not intended to imply numerically dividing 0 by 0. Instead, the indeterminate form 0/0 refers to a limit of a ratio of two functions, each of which approaches zero. L’Hôpital’s rule can help us evaluate such limits. 
 
@@ -2519,7 +2490,7 @@ assuming that the limit on the right side of this equation exists.
 
 We give a proof of Theorem 6 at the end of this section. Theorem 6 also applies if $x \to \pm \infty$ or when $f'(x) / g'(x) \to \pm \infty$ , but we will not prove this. 
 
-## Caution
+### Caution
 
 **EXAMPLE 1** The following limits involve 0/0 indeterminate forms, so we apply l'Hôpital's Rule. In some cases, it must be applied repeatedly. 
 
@@ -2545,7 +2516,7 @@ $$
 
 by l'Hôpital's Rule, we continue to differentiate $f$ and $g$ , so long as we still get the form $0/0$ as $x \to a$ . But as soon as one or the other of these derivatives no longer approaches zero, we stop differentiating. L'Hôpital's Rule does not apply when either the numerator or the denominator has a finite nonzero limit. 
 
-## **EXAMPLE 2** Be careful to apply l'Hôpital's Rule correctly:
+**EXAMPLE 2** Be careful to apply l'Hôpital's Rule correctly:
 
 $$
 \begin{array}{l l} \lim _ {x \to 0} \frac {1 - \cos x}{x + x ^ {2}} & \frac {0}{0} \\ = \lim _ {x \to 0} \frac {\sin x}{1 + 2 x} & \text { Not } \frac {0}{0} \end{array}
@@ -2561,7 +2532,7 @@ but this is not the correct limit. l'Hôpital's Rule can be applied only to limi
 
 L'Hôpital's Rule applies to one-sided limits as well. 
 
-## **EXAMPLE 3** In this example the one-sided limits are different.
+**EXAMPLE 3** In this example the one-sided limits are different.
 
 $$
 \begin{array}{l l}\text {(a)} \lim _ {x \rightarrow 0 ^ {+}} \frac {\sin x}{x ^ {2}}&\frac {0}{0}\\= \lim _ {x \rightarrow 0 ^ {+}} \frac {\cos x}{2 x} = \infty&\text { Positive   for } x > 0\end{array}
@@ -2571,7 +2542,7 @@ $$
 \begin{array}{l l}\text {(b)} \lim _ {x \rightarrow 0 ^ {-}} \frac {\sin x}{x ^ {2}}&\frac {0}{0}\\= \lim _ {x \rightarrow 0 ^ {-}} \frac {\cos x}{2 x} = - \infty&\text { Negative   for } x <   0\end{array}
 $$
 
-## Indeterminate Forms $\infty/\infty, \infty \cdot 0, \infty - \infty$
+### Indeterminate Forms $\infty/\infty, \infty \cdot 0, \infty - \infty$
 
 Recall that $\infty$ and $+\infty$ mean the same thing. 
 
@@ -2585,11 +2556,11 @@ $$
 
 provided the limit on the right exists or approaches $\infty$ or $-\infty$ . In the notation $x \rightarrow a$ , a may be either finite or infinite. Moreover, $x \rightarrow a$ may be replaced by the one-sided limits $x \rightarrow a^{+}$ or $x \rightarrow a^{-}$ . 
 
-## **EXAMPLE 4** Find the limits of these $\infty/\infty$ forms:
+**EXAMPLE 4** Find the limits of these $\infty/\infty$ forms:
 
 (a) $\lim_{x\to\pi/2}\frac{\sec x}{1+\tan x}$ (b) $\lim_{x\to\infty}\frac{\ln x}{2\sqrt{x}}$ (c) $\lim_{x\to\infty}\frac{e^{x}}{x^{2}}$ . 
 
-## **Solution**
+**Solution**
 
 (a) The numerator and denominator are discontinuous at $x = \pi / 2$ , so we investigate the one-sided limits there. To apply l'Hôpital's Rule, we can choose $I$ to be any open interval with $x = \pi / 2$ as an endpoint. 
 
@@ -2609,7 +2580,7 @@ $$
 
 Next we turn our attention to the indeterminate forms $\infty \cdot 0$ and $\infty - \infty$ . Sometimes these forms can be handled by using algebra to convert them to a 0/0 or $\infty/\infty$ form. Here again, we do not mean to suggest that $\infty \cdot 0$ or $\infty - \infty$ is a number. They are only notations for functional behaviors when considering limits. Here are examples of how we might work with these indeterminate forms. 
 
-## **EXAMPLE 5** Find the limits of these $\infty \cdot 0$ forms:
+**EXAMPLE 5** Find the limits of these $\infty \cdot 0$ forms:
 
 (a) $\lim_{x\to\infty}\left(x\sin\frac{1}{x}\right)$ 
 
@@ -2657,7 +2628,7 @@ $$
 \begin{array}{r l r} \lim _ {x \to 0} \left(\frac {1}{\sin x} - \frac {1}{x}\right) & = \lim _ {x \to 0} \frac {x - \sin x}{x \sin x} & \frac {0}{0} \\ & = \lim _ {x \to 0} \frac {1 - \cos x}{\sin x + x \cos x} & \text { Still } \frac {0}{0} \\ & = \lim _ {x \to 0} \frac {\sin x}{2 \cos x - x \sin x} = \frac {0}{2} = 0. \end{array}
 $$
 
-## Indeterminate Powers
+### Indeterminate Powers
 
 Limits that lead to the indeterminate forms $1^{\infty}, 0^{0}$ , and $\infty^{0}$ can sometimes be handled by first taking the logarithm of the function. We use l'Hôpital's Rule to find the limit of the logarithm expression and then exponentiate the result to find the original function limit. This procedure is justified by the continuity of the exponential function and Theorem 9 in Section 2.6, and it is formulated as follows. (The formula is also valid for one-sided limits.) 
 
@@ -2669,7 +2640,7 @@ $$
 
 Here a may be either finite or infinite. 
 
-## **EXAMPLE 7** Apply l'Hôpital's Rule to show that $\lim_{x\to 0^{+}}(1 + x)^{1 / x} = e$
+**EXAMPLE 7** Apply l'Hôpital's Rule to show that $\lim_{x\to 0^{+}}(1 + x)^{1 / x} = e$
 
 **Solution** The limit leads to the indeterminate form $1^{\infty}$ . We let $f(x) = (1 + x)^{1 / x}$ and find $\lim_{x\to 0^{+}}\ln f(x)$ . Since 
 
@@ -2685,7 +2656,7 @@ $$
 
 Therefore, $\lim_{x\to0^{+}}(1+x)^{1/x}=\lim_{x\to0^{+}}f(x)=\lim_{x\to0^{+}}e^{\ln f(x)}=e^{1}=e.$ 
 
-## **EXAMPLE 8** Find $\lim_{x\to\infty}x^{1/x}$ .
+**EXAMPLE 8** Find $\lim_{x\to\infty}x^{1/x}$ .
 
 **Solution** The limit leads to the indeterminate form $\infty^0$ . We let $f(x) = x^{1 / x}$ and find $\lim_{x\to \infty}\ln f(x)$ . Since 
 
@@ -2693,14 +2664,14 @@ $$
 \ln f (x) = \ln x ^ {1 / x} = \frac {\ln x}{x},
 $$
 
-![[05f952b3c3538bf820deff3aa5027b3b13cbc75b29555d8eb491a62663771f53.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/05f952b3c3538bf820deff3aa5027b3b13cbc75b29555d8eb491a62663771f53.jpg)
 
 
 
 FIGURE 4.36 The two functions in l'Hôpital's Rule, graphed with their linear approximations at $x = a$ .
 
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
 Cauchy was born in Paris the year the French revolution began. He was the first to define fully the ideas of convergence and absolute convergence of infinite series. His classic works Cours d'analyse (Course on Analysis, 1821) and Résumé des leçons ... sur le calcul infinitésimal (1823) were his greatest contributions to calculus. 
 
@@ -2716,7 +2687,7 @@ $$
 
 Therefore, $\lim_{x\to\infty}x^{1/x}=\lim_{x\to\infty}f(x)=\lim_{x\to\infty}e^{\ln f(x)}=e^{0}=1.$ 
 
-## Proof of L'Hôpital's Rule
+### Proof of L'Hôpital's Rule
 
 Before we prove l'Hôpital's Rule, we consider a special case to provide some geometric insight for its reasonableness. Consider the two functions $f(x)$ and $g(x)$ having continuous derivatives and satisfying $f(a) = g(a) = 0$ , $g'(a) \neq 0$ . The graphs of $f(x)$ and $g(x)$ , together with their linearizations $y = f'(a)(x - a)$ and $y = g'(a)(x - a)$ , are shown in Figure 4.36. We know that near $x = a$ , the linearizations provide good approximations to the functions. In fact, 
 
@@ -2734,7 +2705,7 @@ as asserted by l'Hôpital's Rule. We now proceed to a proof of the rule based on
 
 The proof of l'Hôpital's Rule is based on Cauchy's Mean Value Theorem, an extension of the Mean Value Theorem that involves two functions instead of one. We prove Cauchy's Theorem first and then show how it leads to l'Hôpital's Rule. 
 
-## THEOREM 7—Cauchy's Mean Value Theorem
+**THEOREM 7—Cauchy's Mean Value Theorem**
 
 Suppose functions $f$ and $g$ are continuous on $[a, b]$ and differentiable throughout $(a, b)$ and also suppose $g'(x) \neq 0$ throughout $(a, b)$ . Then there exists a number $c$ in $(a, b)$ at which 
 
@@ -2750,7 +2721,7 @@ $$
 
 for some c between a and b, which cannot happen because $g'(x) \neq 0$ in $(a, b)$ . 
 
-![[51ed2499cd8a5234d55517c21318cbd05f1abdf7fab1bc4b1f81cb596f4ed338.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/51ed2499cd8a5234d55517c21318cbd05f1abdf7fab1bc4b1f81cb596f4ed338.jpg)
 
 
 
@@ -2807,21 +2778,19 @@ $$
 
 which establishes l'Hôpital's Rule for the case where $x$ approaches $a$ from above. The case where $x$ approaches $a$ from below is proved by applying Cauchy's Mean Value Theorem to the closed interval $[x, a]$ , $x < a$ . 
 
-## EXERCISES 4.5
+### EXERCISES 4.5
 
-## Finding Limits in Two Ways
+#### Finding Limits in Two Ways
 
 In Exercises 1–6, use l'Hôpital's Rule to evaluate the limit. Then evaluate the limit using a method studied in Chapter 2. 
 
-1. $\lim_{x\to-2}\frac{x+2}{x^{2}-4}$ 
+1. $\lim_{x\to-2}\frac{x+2}{x^{2}-4}$
 
-$$
-\lim _ {x \to 0} \frac {\sin 5 x}{x}
-$$
+2. $\lim_{x \to 0} \frac {\sin 5 x}{x}$
 
-3. $\lim_{x\to\infty}\frac{5x^{2}-3x}{7x^{2}+1}$ 
+3. $\lim_{x\to\infty}\frac{5x^{2}-3x}{7x^{2}+1}$
 
-4. $\lim_{x\to1}\frac{x^{3}-1}{4x^{3}-x-3}$ 
+4. $\lim_{x\to1}\frac{x^{3}-1}{4x^{3}-x-3}$
 
 5. $\lim_{x\to 0}\frac{1 - \cos x}{x^2}$ 
 
@@ -2897,21 +2866,21 @@ Use l'Hôpital's rule to find the limits in Exercises 7–52.
 
 39. $\lim_{x\to\infty}\left(\ln2x-\ln(x+1)\right)$ 
 
-41. $\lim_{x\to 0^{+}}\frac{(\ln x)^{2}}{\ln(\sin x)}$ 
-
-43. $\lim_{x\to 1^{+}}\left(\frac{1}{x - 1} -\frac{1}{\ln x}\right)$ 
-
 40. $\lim_{x\to 0^{+}}(\ln x - \ln \sin x)$ 
 
+41. $\lim_{x\to 0^{+}}\frac{(\ln x)^{2}}{\ln(\sin x)}$ 
+
 42. $\lim_{x\to 0^{+}}\left(\frac{3x + 1}{x} -\frac{1}{\sin x}\right)$ 
+
+43. $\lim_{x\to 1^{+}}\left(\frac{1}{x - 1} -\frac{1}{\ln x}\right)$ 
 
 44. $\lim_{x\to 0^{+}}(\csc x - \cot x + \cos x)$ 
 
 45. $\lim_{\theta \to 0}\frac{\cos\theta - 1}{e^{\theta} - \theta - 1}$ 
 
-47. $\lim_{t\to \infty}\frac{e^t + t^2}{e^t - t}$ 
-
 46. $\lim_{h\to 0}\frac{e^h - (1 + h)}{h^2}$ 
+
+47. $\lim_{t\to \infty}\frac{e^t + t^2}{e^t - t}$ 
 
 48. $\lim_{x\to \infty}x^2 e^{-x}$ 
 
@@ -2923,7 +2892,7 @@ Use l'Hôpital's rule to find the limits in Exercises 7–52.
 
 52. $\lim_{x\to 0}\frac{\sin{3x} - 3x + x^2}{\sin{x}\sin{2x}}$ 
 
-## Indeterminate Powers and Products
+#### Indeterminate Powers and Products
 
 Find the limits in Exercises 53–68. 
 
@@ -2953,13 +2922,13 @@ Find the limits in Exercises 53–68.
 
 65. $\lim_{x\to 0^{+}}x^{2}\ln x$ 
 
-67. $\lim_{x\to0^{+}}x\tan\left(\frac{\pi}{2}-x\right)$ 
-
 66. $\lim_{x\to 0^{+}}x(\ln x)^{2}$ 
+
+67. $\lim_{x\to0^{+}}x\tan\left(\frac{\pi}{2}-x\right)$ 
 
 68. $\lim_{x\to 0^{+}}\sin x\cdot \ln x$ 
 
-## Theory and Applications
+#### Theory and Applications
 
 L'Hôpital's Rule does not help with the limits in Exercises 69–76. Try it—you just keep on cycling. Find the limits some other way. 
 
@@ -3010,11 +2979,7 @@ b. $f(x) = x, \quad g(x) = x^2, \quad (a,b)$ arbitrary
 
 $$
 \mathbf {c}. f (x) = x ^ {3} / 3 - 4 x, \quad g (x) = x ^ {2}, \quad (a, b) = (0, 3)
-$$
-
-81. Continuous extension Find a value of c that makes the function 
-
-$$
+81. $Continuous extension Find a value of c that makes the function$
 f (x) = \left\{ \begin{array}{l l} \frac {9 x - 3 \sin 3 x}{5 x ^ {3}}, & x \neq 0 \\ c, & x = 0 \end{array} \right.
 $$
 
@@ -3026,7 +2991,7 @@ $$
 \lim _ {x \rightarrow 0} \left(\frac {\tan 2 x}{x ^ {3}} + \frac {a}{x ^ {2}} + \frac {\sin b x}{x}\right) = 0?
 $$
 
-![[d30afe8e5e82001956bacd2770539a86db7b4d5785af3cea9e0cf864f4b7096b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d30afe8e5e82001956bacd2770539a86db7b4d5785af3cea9e0cf864f4b7096b.jpg)
 
 
 83. $\infty -\infty$ Form 
@@ -3043,7 +3008,7 @@ b. Now confirm your estimate by finding the limit with l'Hôpital's Rule. As the
 
 84. Find $\lim_{x\to\infty}\left(\sqrt{x^{2}+1}-\sqrt{x}\right)$ . 
 
-![[acbb1c98ee581373fa64afbc65f8d09464cbbfefb33f05c7fe86d2fc9d72e6ce.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/acbb1c98ee581373fa64afbc65f8d09464cbbfefb33f05c7fe86d2fc9d72e6ce.jpg)
 
 
 85. 0/0 Form Estimate the value of 
@@ -3105,10 +3070,10 @@ b. $y = \frac{3x + e^{2x}}{2x + e^{3x}}$
 
 90. Find $f'(0)$ for $f(x) = \begin{cases} e^{-1/x^2}, & x \neq 0 \\ 0, & x = 0. \end{cases}$ 
 
-![[d9c5293d7018456b50845054c7c66006e7518536aebd1c5676f8fac931b2126b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d9c5293d7018456b50845054c7c66006e7518536aebd1c5676f8fac931b2126b.jpg)
 
 
-T 91. The continuous extension of $(\sin x)^x$ to $[0, \pi]$ 
+91. T The continuous extension of $(\sin x)^x$ to $[0, \pi]$ 
 
 a. Graph $f(x) = (\sin x)^x$ on the interval $0 \leq x \leq \pi$ . What value would you assign to $f$ to make it continuous at $x = 0$ ? 
 
@@ -3118,24 +3083,24 @@ c. Returning to the graph, estimate the maximum value of $f$ on $[0, \pi]$ . Abo
 
 d. Sharpen your estimate in part (c) by graphing $f'$ in the same window to see where its graph crosses the $x$ -axis. To simplify your work, you might want to delete the exponential factor from the expression for $f'$ and graph just the factor that has a zero. 
 
-T 92. The function $(\sin x)^{\tan x}$ (Continuation of Exercise 91) 
+92. T The function $(\sin x)^{\tan x}$ (Continuation of Exercise 91) 
 
 a. Graph $f(x) = (\sin x)^{\tan x}$ on the interval $-7 \leq x \leq 7$ . How do you account for the gaps in the graph? How wide are the gaps? 
 
 b. Now graph $f$ on the interval $0 \leq x \leq \pi$ . The function is not defined at $x = \pi / 2$ , but the graph has no break at this point. What is going on? What value does the graph appear to give for $f$ at $x = \pi / 2$ ? (Hint: Use l'Hôpital's Rule to find lim $f$ as $x \to (\pi / 2)^{-}$ and $x \to (\pi / 2)^{+}$ .) 
 
-c. Continuing with the graphs in part (b), find $\max f$ and $\min f$ as accurately as you can and estimate the values of $x$ at which they are taken on. 
+c. Continuing with the graphs in part (b), find $\max f$ and $\min f$ as accurately as you can and estimate the values of $x$ at which they are taken on.
 
-## Applied Optimization
+## 4.6 Applied Optimization
 
-![[08a6d8a275e0d75a4f4e15218a9fc424ac9286b356042778cb0af5ba8be64421.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/08a6d8a275e0d75a4f4e15218a9fc424ac9286b356042778cb0af5ba8be64421.jpg)
 
 
 
 (a)
 
 
-![[e030f13664cb9f3a862ccfa43b4339d40dc0191ce522d46ef68865fc3fc668da.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e030f13664cb9f3a862ccfa43b4339d40dc0191ce522d46ef68865fc3fc668da.jpg)
 
 
 
@@ -3146,7 +3111,7 @@ c. Continuing with the graphs in part (b), find $\max f$ and $\min f$ as accurat
 FIGURE 4.38 An open box made by cutting the corners from a square sheet of tin. What size corners maximize the box's volume (Example 1)?
 
 
-![[5da21f227339768a3cfc4d76ea9498afe9447d06dc832ff94cb182dfe73549c6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5da21f227339768a3cfc4d76ea9498afe9447d06dc832ff94cb182dfe73549c6.jpg)
 
 
 
@@ -3155,7 +3120,7 @@ FIGURE 4.39 The volume of the box in Figure 4.38 graphed as a function of x.
 
 What are the dimensions of a rectangle with fixed perimeter having maximum area? What are the dimensions for the least expensive cylindrical can of a given volume? How many items should be produced for the most profitable production run? Each of these questions asks for the best, or optimal, value of a given function. In this section we use derivatives to solve a variety of optimization problems in mathematics, physics, economics, and business. 
 
-## Solving Applied Optimization Problems
+#### Solving Applied Optimization Problems
 
 1. Read the problem. Read the problem until you understand it. What is given? What is the unknown quantity to be optimized (maximized or minimized)? 
 
@@ -3193,7 +3158,7 @@ $$
 
 The maximum volume is $128 \, cm^{3}$ . The cutout squares should be 2 cm on a side. 
 
-![[c6712cea0386bc03f23c347d2328b15b14151f21d999af36cb84f2bb9a9ade97.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c6712cea0386bc03f23c347d2328b15b14151f21d999af36cb84f2bb9a9ade97.jpg)
 
 
 
@@ -3228,10 +3193,10 @@ Our goal is to find a value of $r > 0$ that minimizes the value of $A$ .
 
 Since A is differentiable on r > 0, an interval with no endpoints, it can have a minimum value only where its first derivative is zero. 
 
-![[27bacdf8436f38462544a761c374c477f8d96b4b60ed67694a7ab99adebc81fe.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/27bacdf8436f38462544a761c374c477f8d96b4b60ed67694a7ab99adebc81fe.jpg)
 
 
-![[c5221a828ac8c5ee8c4ee32f0982345eadd03bd3b09c7202473a3479442b5f69.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c5221a828ac8c5ee8c4ee32f0982345eadd03bd3b09c7202473a3479442b5f69.jpg)
 
 
 
@@ -3260,14 +3225,13 @@ $$
 
 The one-liter can that uses the least material has height equal to twice the radius, here with $r \approx 5.42 \, \mathrm{cm}$ and $h \approx 10.84 \, \mathrm{cm}$ . 
 
-![[0f542345b805845adb4196f7014e60eaf917a261f683395cf7308031d26b74f6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0f542345b805845adb4196f7014e60eaf917a261f683395cf7308031d26b74f6.jpg)
 
 
 
 FIGURE 4.42 The rectangle inscribed in the semicircle in Example 3.
 
-
-## Examples from Mathematics and Physics
+#### Examples from Mathematics and Physics
 
 **EXAMPLE 3** A rectangle is to be inscribed in a semicircle of radius 2. What is the largest area the rectangle can have, and what are its dimensions? 
 
@@ -3323,7 +3287,7 @@ Fermat's principle in optics states that light travels from one point to another
 
 In a uniform medium, where the speed of light remains constant, “shortest time” means “shortest path,” and the ray of light will follow a straight line. Thus the path from A to B will consist of a line segment from A to a boundary point P, followed by another line segment from P to B. Distance traveled equals rate times time, so 
 
-![[63c4f1ef021ae8196bd96a108c695af91205f0fcae3ce69c6a39c1465e4b3aa8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/63c4f1ef021ae8196bd96a108c695af91205f0fcae3ce69c6a39c1465e4b3aa8.jpg)
 
 
 
@@ -3358,7 +3322,7 @@ $$
 
 This equation expresses t as a differentiable function of x whose domain is $[0, d]$ . We want to find the absolute minimum value of t on this closed interval. We find the derivative 
 
-![[f12416603f2374a104a89d3ba3fa6fd3cfb24b936bc6d8462b99adfdb43447be.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f12416603f2374a104a89d3ba3fa6fd3cfb24b936bc6d8462b99adfdb43447be.jpg)
 
 
 $$
@@ -3379,7 +3343,7 @@ $$
 
 This equation is Snell's Law or the Law of Refraction, and it is an important principle in the theory of optics. It describes the path the ray of light follows. 
 
-## Examples from Economics
+#### Examples from Economics
 
 Suppose that 
 
@@ -3393,7 +3357,7 @@ Although $x$ is usually an integer in many applications, we can learn about the 
 
 If $r(x)$ and $c(x)$ are differentiable for x in some interval of production possibilities, and if $p(x) = r(x) - c(x)$ has a maximum value there, it occurs at a critical point of $p(x)$ or at an endpoint of the interval. If it occurs at a critical point, then $p'(x) = r'(x) - c'(x) = 0$ and we see that $r'(x) = c'(x)$ . In economic terms, this last equation means that 
 
-![[d76fcf7b7525ac64beab4f64859b150b500950c42f6133980c4198bafbd10b73.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d76fcf7b7525ac64beab4f64859b150b500950c42f6133980c4198bafbd10b73.jpg)
 
 
 
@@ -3402,7 +3366,7 @@ FIGURE 4.46 The cost and revenue curves for Example 5.
 
 At a production level yielding maximum profit, marginal revenue equals marginal cost (Figure 4.45). 
 
-![[f6248dfa7fde1b8b0e33577e85aef7a72db4ac0d7e9acc3d2a0a89cb4856ac9c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f6248dfa7fde1b8b0e33577e85aef7a72db4ac0d7e9acc3d2a0a89cb4856ac9c.jpg)
 
 
 
@@ -3429,7 +3393,7 @@ The possible production levels for maximum profit are $x \approx 0.586$ million 
 
 **Solution** If she asks for a delivery every x days, then she must order 5x units to have enough material for that delivery cycle. The average amount in storage is approximately one-half of the delivery amount, or 5x/2. Thus, the cost of delivery and storage for each cycle is approximately 
 
-![[14553a1296627e18d377f638914af059094c303759e336561ae2ac8d2e229e35.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/14553a1296627e18d377f638914af059094c303759e336561ae2ac8d2e229e35.jpg)
 
 
 
@@ -3464,9 +3428,9 @@ We note that $c(x)$ is defined over the open interval $(0, \infty)$ with $c''(x)
 
 The cabinetmaker should schedule a delivery of $5(14) = 70$ units of wood every 14 days. 
 
-## EXERCISES 4.6
+### EXERCISES 4.6
 
-## Mathematical Applications
+#### Mathematical Applications
 
 Whenever you are maximizing or minimizing a function of a single variable, we urge you to graph it over the domain that is appropriate to the problem you are solving. The graph will provide insight before you calculate and will furnish a visual context for understanding your answer. 
 
@@ -3476,7 +3440,7 @@ Whenever you are maximizing or minimizing a function of a single variable, we ur
 
 3. The figure shows a rectangle inscribed in an isosceles right triangle whose hypotenuse is 2 units long. 
 
-![[646156b8a10d9807f0ccf76675673cea04aebed40066154277f5c01938dfe9dd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/646156b8a10d9807f0ccf76675673cea04aebed40066154277f5c01938dfe9dd.jpg)
 
 
 a. Express the y-coordinate of P in terms of x. (Hint: Write an equation for the line AB.) 
@@ -3495,7 +3459,7 @@ c. What is the largest area the rectangle can have, and what are its dimensions?
 
 8. The shortest fence A $216 \, m^{2}$ rectangular pea patch is to be enclosed by a fence and divided into two equal parts by another fence parallel to one of the sides. What dimensions for the outer rectangle will require the smallest total length of fence? How much fence will be needed? 
 
-![[5692cc6ae73dd30c42289deb83d9d1cfc3b5e7877717f5008bc27307d38c28b2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5692cc6ae73dd30c42289deb83d9d1cfc3b5e7877717f5008bc27307d38c28b2.jpg)
 
 
 9. Designing a tank Your iron works has contracted to design and build a $4 \, m^{3}$ , square-based, open-top, rectangular steel holding tank for a paper company. The tank is to be made by welding thin stainless steel plates together along their edges. As the production engineer, your job is to find dimensions for the base and height that will make the tank weigh as little as possible. 
@@ -3520,7 +3484,7 @@ b. Give a possible scenario for the cost function in part (a).
 
 12. Find the volume of the largest right circular cone that can be inscribed in a sphere of radius 3. 
 
-![[2276905299b43168208e9ec100cafc7cb139fdbe2ee701c7bd209cab631b1503.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2276905299b43168208e9ec100cafc7cb139fdbe2ee701c7bd209cab631b1503.jpg)
 
 
 13. Two sides of a triangle have lengths $a$ and $b$ , and the angle between them is $\theta$ . What value of $\theta$ will maximize the triangle's area? (Hint: $A = (1/2)ab\sin\theta$ .) 
@@ -3537,7 +3501,7 @@ rather than the $A = 2\pi r^{2} + 2\pi rh$ in Example 2. In Example 2, the ratio
 
 16. Designing a box with a lid A piece of cardboard measures 30 cm by 45 cm. Two equal squares are removed from the corners of a 30-cm side as shown in the figure. Two equal rectangles are removed from the other corners so that the tabs can be folded to form a rectangular box with lid. 
 
-![[2824d5f61e6ed3ed3b7b700c310fc005f006c3001e24ba83e218d1c617fe8863.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2824d5f61e6ed3ed3b7b700c310fc005f006c3001e24ba83e218d1c617fe8863.jpg)
 
 
 a. Write a formula $V(x)$ for the volume of the box. 
@@ -3562,26 +3526,26 @@ e. Find a value of x that yields a volume of $17,500 \, cm^{3}$ .
 
 f. Write a paragraph describing the issues that arise in part (b). 
 
-![[3877bfd8f4248645ad8d1fdb0a4ebb875358a11d7d247debfcda4bfc98a38776.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3877bfd8f4248645ad8d1fdb0a4ebb875358a11d7d247debfcda4bfc98a38776.jpg)
 
 
 
 The sheet is then unfolded.
 
 
-![[d01ba9b44276e026e9ac8f4f401a76fd80cae0027fc98453d326982df6d09ed2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d01ba9b44276e026e9ac8f4f401a76fd80cae0027fc98453d326982df6d09ed2.jpg)
 
 
 T 18. A rectangle is to be inscribed under the arch of the curve $y = 4\cos (0.5x)$ from $x = -\pi$ to $x = \pi$ . What are the dimensions of the rectangle with largest area, and what is the largest area? 
 
-![[5846565c29d989a5656c039f8dcc9126ae8bd7c54251ebb71c78b47d32bb0004.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5846565c29d989a5656c039f8dcc9126ae8bd7c54251ebb71c78b47d32bb0004.jpg)
 
 
 19. Find the dimensions of a right circular cylinder of maximum volume that can be inscribed in a sphere of radius 10 cm. What is the maximum volume? 
 
 20. a. A certain Postal Service will accept a box for domestic shipment only if the sum of its length and girth (distance around) does not exceed 276 cm. What dimensions will give a box with a square end the largest possible volume? 
 
-![[b5e6ea8481a0f9b367c3f7117f7328f85592470fec7760890e494e04f9c24ba7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b5e6ea8481a0f9b367c3f7117f7328f85592470fec7760890e494e04f9c24ba7.jpg)
 
 
 T b. Graph the volume of a 276-cm box (length plus girth equals 276 cm) as a function of its length, and compare what you see with your answer in part (a). 
@@ -3590,21 +3554,21 @@ T b. Graph the volume of a 276-cm box (length plus girth equals 276 cm) as a fun
 
 a. Suppose that instead of having a box with square ends, you have a box with square sides so that its dimensions are $h$ by $h$ by $w$ and the girth is $2h + 2w$ . What dimensions will give the box its largest volume now? 
 
-![[769df7530fe105a29def5a90ef8bb87f66638b0bdfd650e8bc3f8dc348d73155.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/769df7530fe105a29def5a90ef8bb87f66638b0bdfd650e8bc3f8dc348d73155.jpg)
 
 
 T b. Graph the volume as a function of h and compare what you see with your answer in part (a). 
 
 22. A window is in the form of a rectangle surmounted by a semicircle. The rectangle is of clear glass, whereas the semicircle is of tinted glass that transmits only half as much light per unit area as clear glass does. The total perimeter is fixed. Find the proportions of the window that will admit the most light. Neglect the thickness of the frame. 
 
-![[efc6b7fb9adcb49a3e2fd95daced721da37795cd3b6eb27763c324208b973e80.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/efc6b7fb9adcb49a3e2fd95daced721da37795cd3b6eb27763c324208b973e80.jpg)
 
 
 23. A silo (base not included) is to be constructed in the form of a cylinder surmounted by a hemisphere. The cost of construction per square unit of surface area is twice as great for the hemisphere as it is for the cylindrical sidewall. Determine the dimensions to be used if the volume is fixed and the cost of construction is to be kept to a minimum. Neglect the thickness of the silo and waste in construction. 
 
 24. The trough in the figure is to be made to the dimensions shown. Only the angle $\theta$ can be varied. What value of $\theta$ will maximize the trough's volume? 
 
-![[2196e4c6b21c610d02fdf1d81d47f6ce56ff7a62d4657ba6bb93c4d71186049d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2196e4c6b21c610d02fdf1d81d47f6ce56ff7a62d4657ba6bb93c4d71186049d.jpg)
 
 
 25. Paper folding A rectangular sheet of 21.6-cm-by-28-cm paper is placed on a flat surface. One of the corners is placed on the opposite longer edge, as shown in the figure, and held there as the paper is smoothed flat. The problem is to make the length of the crease as small as possible. Call the length L. Try it with paper. 
@@ -3615,7 +3579,7 @@ b. What value of $x$ minimizes $L^2$ ?
 
 c. What is the minimum value of L? 
 
-![[43f5f71f97a2da41af1f1efb837d9068ce0d6848f5f1eef6cdaac953444224a4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/43f5f71f97a2da41af1f1efb837d9068ce0d6848f5f1eef6cdaac953444224a4.jpg)
 
 
 26. Constructing cylinders Compare the answers to the following two construction problems. 
@@ -3624,17 +3588,17 @@ a. A rectangular sheet of perimeter 36 cm and dimensions x cm by y cm is to be r
 
 b. The same sheet is to be revolved about one of the sides of length $y$ to sweep out the cylinder as shown in part (b) of the figure. What values of $x$ and $y$ give the largest volume? 
 
-![[ec10f6e35b54e02fb94adfad7011e5fbb7ee080566c2d7a933d0a3f53fd04b82.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ec10f6e35b54e02fb94adfad7011e5fbb7ee080566c2d7a933d0a3f53fd04b82.jpg)
 
 
-![[85a63e86659e77b44d070ac588ecd3c914a79fe10c8aa215e7a3b001c1f8e70a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/85a63e86659e77b44d070ac588ecd3c914a79fe10c8aa215e7a3b001c1f8e70a.jpg)
 
 
 
 (a)
 
 
-![[85e561e48f2641206b88311166553c931dd9ab4632c2abad327036f853030bef.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/85e561e48f2641206b88311166553c931dd9ab4632c2abad327036f853030bef.jpg)
 
 
 
@@ -3643,7 +3607,7 @@ b. The same sheet is to be revolved about one of the sides of length $y$ to swee
 
 27. Constructing cones A right triangle whose hypotenuse is $\sqrt{3}$ m long is revolved about one of its legs to generate a right circular cone. Find the radius, height, and volume of the cone of greatest volume that can be made this way. 
 
-![[e256fac663e0ffeb3750b0ed577368e7b6fafbd59cdfff77be108c5c2f0ee21a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e256fac663e0ffeb3750b0ed577368e7b6fafbd59cdfff77be108c5c2f0ee21a.jpg)
 
 
 28. Find the point on the line $\frac{x}{a} + \frac{y}{b} = 1$ that is closest to the origin. 
@@ -3658,19 +3622,19 @@ b. The same sheet is to be revolved about one of the sides of length $y$ to swee
 
 33. Suppose a weight D is to be held 5 m below a horizontal line AB by a wire in the shape of a Y. If the points A and B are 4 m apart, what is the minimum total length of wire that can be used? 
 
-![[0a7fe386c0142d8c2a434d6703e267b37e0df492c8341173a58d9841884c9873.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0a7fe386c0142d8c2a434d6703e267b37e0df492c8341173a58d9841884c9873.jpg)
 
 
 34. Suppose two different gauges of wire must be used to support the weight in Exercise 33: the vertical portion of the wire (the segment CD) costs $1 per meter, while the remaining wire (the segments AC and CB) must be sturdier and cost $2 per meter. What is the minimum total cost of the wire that can be used? 
 
 35. Determine the dimensions of the rectangle of largest area that can be inscribed in the right triangle shown in the accompanying figure. 
 
-![[f0a26fc7784d5a6ffda418039cc2ef106fb4dc098f5cc3d4519892827bfa3267.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f0a26fc7784d5a6ffda418039cc2ef106fb4dc098f5cc3d4519892827bfa3267.jpg)
 
 
 36. Determine the dimensions of the rectangle of largest area that can be inscribed in a semicircle of radius 3. (See the accompanying figure.) 
 
-![[29f3b90e94bb8a31105f1c1d8ead74dd968db360a4931f8f4559005eba09c142.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/29f3b90e94bb8a31105f1c1d8ead74dd968db360a4931f8f4559005eba09c142.jpg)
 
 
 37. What value of $a$ makes $f(x) = x^2 + (a / x)$ have 
@@ -3687,7 +3651,7 @@ b. a local minimum at $x = 4$ and a point of inflection at $x = 1$ ?
 
 40. Determine the dimensions of the inscribed rectangle of maximum area. 
 
-![[20a62c7e558cd979d8d97b7727fd4597b89bdd7799fb6c9a76a32ed167e9ae8a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/20a62c7e558cd979d8d97b7727fd4597b89bdd7799fb6c9a76a32ed167e9ae8a.jpg)
 
 
 41. Consider the accompanying graphs of $y = 2x + 3$ and $y = \ln x$ . Determine the 
@@ -3696,19 +3660,19 @@ a. minimum vertical distance;
 
 b. minimum horizontal distance between these graphs. 
 
-![[0df5b3e569f2ce2cf0900abf183cf66ac7b3294a67c11d8932ed154c33670e81.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0df5b3e569f2ce2cf0900abf183cf66ac7b3294a67c11d8932ed154c33670e81.jpg)
 
 
 42. Find the point on the graph of $y = 20x^{3} + 60x - 3x^{5} - 5x^{4}$ with the largest slope. 
 
 43. Among all triangles in the first quadrant formed by the $x$ -axis, the $y$ -axis, and tangent lines to the graph of $y = 3x - x^2$ , what is the smallest possible area? 
 
-![[7c84fd3d26a826d676942894ab4d09577fb3b93ed6de3a62dbd0368aaa199f25.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7c84fd3d26a826d676942894ab4d09577fb3b93ed6de3a62dbd0368aaa199f25.jpg)
 
 
 44. A cone is formed from a circular piece of material of radius 1 meter by removing a section of angle $\theta$ and then joining the two straight edges. Determine the largest possible volume for the cone. 
 
-![[3475500035e9872760605ff448d27f713b9f27fc70e3b3d126429b923de15e70.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3475500035e9872760605ff448d27f713b9f27fc70e3b3d126429b923de15e70.jpg)
 
 
 Physical Applications 
@@ -3731,7 +3695,7 @@ c. its velocity when s = 0.
 
 47. Shortest beam The 2-m wall shown here stands 5 m from the building. Find the length of the shortest straight beam that will reach to the side of the building from the ground outside the wall. 
 
-![[4778c829bca9953eae638041400f718f279f7355645d023dee7f3918e9b407bb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4778c829bca9953eae638041400f718f279f7355645d023dee7f3918e9b407bb.jpg)
 
 
 48. Motion on a line The positions of two particles on the $s$ -axis are $s_1 = \sin t$ and $s_2 = \sin (t + \pi /3)$ , with $s_1$ and $s_2$ in meters and $t$ in seconds. 
@@ -3760,7 +3724,7 @@ b. Graph $S$ as a function of the beam's width $w$ , assuming the proportionalit
 
 c. On the same screen, graph $S$ as a function of the beam's depth $d$ , again taking $k = 1$ . Compare the graphs with one another and with your answer in part (a). What would be the effect of changing to some other value of $k$ ? Try it. 
 
-![[e8eea10ffd50bd74d2b7ac038df473e9ba10a6c3225e23ea1a78cc2d88425587.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e8eea10ffd50bd74d2b7ac038df473e9ba10a6c3225e23ea1a78cc2d88425587.jpg)
 
 
 52. Stiffness of a beam The stiffness S of a rectangular beam is proportional to its width times the cube of its depth. 
@@ -3777,7 +3741,7 @@ a. What is the cart's maximum speed? When is the cart moving that fast? Where is
 
 b. Where is the cart when the magnitude of the acceleration is greatest? What is the cart's speed then? 
 
-![[8c0a959df9aac2ae738f9d80c6236a7288387d1f16730a6873a15078ffc3c99f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8c0a959df9aac2ae738f9d80c6236a7288387d1f16730a6873a15078ffc3c99f.jpg)
 
 
 54. Two masses hanging side by side from springs have positions $s_{1} = 2 \sin t$ and $s_{2} = \sin 2t$ , respectively. 
@@ -3787,7 +3751,7 @@ a. At what times in the interval 0 < t do the masses pass each other? (Hint: $\s
 b. When in the interval $0 \leq t \leq 2\pi$ is the vertical distance between the masses the greatest? What is this distance?
 (Hint: $\cos 2t = 2\cos^{2}t - 1$ .) 
 
-![[5525f92f2439dcd231f6f9897bfaf4e0d5f90bca4abcb1159cc13e7418c32436.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5525f92f2439dcd231f6f9897bfaf4e0d5f90bca4abcb1159cc13e7418c32436.jpg)
 
 
 55. Distance between two ships At noon, ship A was 12 nautical miles due north of ship B. Ship A was sailing south at 12 knots (nautical miles per hour; a nautical mile is 1852 m) and continued to do so all day. Ship B was sailing east at 8 knots and continued to do so all day. 
@@ -3804,7 +3768,7 @@ e. The graph of $ds / dt$ looks as if it might have a horizontal asymptote in th
 
 56. Fermat's principle in optics Light from a source $A$ is reflected by a plane mirror to a receiver at point $B$ , as shown in the accompanying figure. Show that for the light to obey Fermat's principle, the angle of incidence must equal the angle of reflection, both measured from the line normal to the reflecting surface. (This result can also be derived without calculus. There is a purely geometric argument, which you may prefer.) 
 
-![[4a13880b5ebdaff87b23c0c8492d7563c077434750a007f5ba74df4d8b6854d2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4a13880b5ebdaff87b23c0c8492d7563c077434750a007f5ba74df4d8b6854d2.jpg)
 
 
 57. Tin pest When metallic tin is kept below $13.2^{\circ}$ C, it slowly becomes brittle and crumbles to a gray powder. Tin objects eventually crumble to this gray powder spontaneously if kept in a cold climate for years. The Europeans who saw tin organ pipes in their churches crumble away years ago called the change tin pest because it seemed to be contagious, and indeed it was, for the gray powder is a catalyst for its own formation. 
@@ -3839,7 +3803,7 @@ $$
 y (x) = H \left[ 2 \left(\frac {x}{L}\right) ^ {3} + 3 \left(\frac {x}{L}\right) ^ {2} \right].
 $$
 
-![[606c5b66c0afa854cdacf41c02d7587b3789b8e541b1eb962a8a41fb976af898.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/606c5b66c0afa854cdacf41c02d7587b3789b8e541b1eb962a8a41fb976af898.jpg)
 
 
 Business and Economics 
@@ -3882,7 +3846,7 @@ b. Shipping costs sometimes depend on order size. When they do, it is more reali
 
 66. The 800-room Mega Motel chain is filled to capacity when the room charge is $50 per night. For each $10 increase in room charge, 40 fewer rooms are filled each night. What charge per room will result in the maximum revenue per night? 
 
-## Biology
+#### Biology
 
 67. Sensitivity to medicine (Continuation of Exercise 74, Section 3.3) Find the amount of medicine to which the body is most sensitive by finding the value of M that maximizes the derivative dR/dM, where 
 
@@ -3892,7 +3856,7 @@ $$
 
 and $C$ is a constant. 
 
-## 68. How we cough
+68. How we cough
 
 a. When we cough, the trachea (windpipe) contracts to increase the velocity of the air going out. This raises the questions of how much it should contract to maximize the velocity and whether it really contracts that much when we cough. 
 
@@ -3908,7 +3872,7 @@ Show that v is greatest when $r = (2/3)r_{0}$ , that is, when the trachea is abo
 
 T b. Take $r_{0}$ to be 0.5 and c to be 1, and graph v over the interval $0 \leq r \leq 0.5$ . Compare what you see with the claim that v is at a maximum when $r = (2/3)r_{0}$ . 
 
-## Theory and Examples
+#### Theory and Examples
 
 69. An inequality for positive integers Show that if $a, b, c$ , and $d$ are positive integers, then 
 
@@ -3916,7 +3880,7 @@ $$
 \frac {(a ^ {2} + 1) (b ^ {2} + 1) (c ^ {2} + 1) (d ^ {2} + 1)}{a b c d} \geq 1 6.
 $$
 
-## 70. The derivative dt/dx in Example 4
+70. The derivative dt/dx in Example 4
 
 a. Show that 
 
@@ -3944,7 +3908,7 @@ is an increasing function of x.
 
 71. Let $f(x)$ and $g(x)$ be the differentiable functions graphed here. Point c is the point where the vertical distance between the curves is the greatest. Is there anything special about the tangent lines to the two curves at c? Give reasons for your answer. 
 
-![[3a9cf34b450bbb6d3d4e34519cc4650cbc03b5675e0316a2b3be6574036310bd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3a9cf34b450bbb6d3d4e34519cc4650cbc03b5675e0316a2b3be6574036310bd.jpg)
 
 
 72. You have been asked to determine whether the function $f(x) = 3 + 4 \cos x + \cos 2x$ is ever negative. 
@@ -3965,7 +3929,7 @@ T b. Graph the function and compare what you see with your answer in part (a).
 
 T b. Graph the distance function $D(x)$ and $y = \sqrt{x}$ together and reconcile what you see with your answer in part (a). 
 
-![[b31a1f8ed0928501ea0d582fdc9a42501f17e3c158f3d0b3ed0527f1cca88863.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b31a1f8ed0928501ea0d582fdc9a42501f17e3c158f3d0b3ed0527f1cca88863.jpg)
 
 
 76. a. How close does the semicircle $y = \sqrt{16 - x^2}$ come to the point $(1, \sqrt{3})$ ? 
@@ -3974,7 +3938,7 @@ T b. Graph the distance function and $y = \sqrt{16 - x^{2}}$ together and reconc
 
 ## 4.7 Newton's Method
 
-![[cafb5c2d2e8d80e2d16e0017db22d3868f58116c9c62fb9e970cf60bf5a72a0c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cafb5c2d2e8d80e2d16e0017db22d3868f58116c9c62fb9e970cf60bf5a72a0c.jpg)
 
 
 For thousands of years, one of the main goals of mathematics has been to find solutions to equations. For linear equations $ax + b = 0$ , and for quadratic equations $ax^{2} + bx + c = 0$ , we can explicitly solve for a solution. However, for most equations there is no simple formula that gives the solutions. 
@@ -3985,7 +3949,7 @@ FIGURE 4.48 Newton's method starts with an initial guess $x_0$ and (under favora
 
 In this section we study a numerical method called Newton's method or the Newton-Raphson method, which is a technique to approximate the solutions to an equation $f(x) = 0$ . Newton's method estimates the solutions using tangent lines of the graph of $y = f(x)$ near the points where $f$ is zero. A value of $x$ where $f$ is zero is called a root of the function $f$ and a solution of the equation $f(x) = 0$ . Newton's method is both powerful and efficient, and it has numerous applications in engineering and other fields where solutions to complicated equations are needed. 
 
-## Procedure for Newton's Method
+### Procedure for Newton's Method
 
 The goal of Newton's method for estimating a solution of an equation $f(x) = 0$ is to produce a sequence of approximations that approach the solution. We pick the first number $x_0$ of the sequence. Then, under favorable circumstances, the method moves step by step toward a point where the graph of $f$ crosses the $x$ -axis (Figure 4.48). At each step the method approximates a zero of $f$ with a zero of one of its linearizations. Here is how it works. 
 
@@ -3997,7 +3961,7 @@ $$
 y = f (x _ {n}) + f ^ {\prime} (x _ {n}) (x - x _ {n}).
 $$
 
-![[b1bd1e80676c0d9a318b90f6002daa6d1d396f03cc30e322be9522489e908917.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b1bd1e80676c0d9a318b90f6002daa6d1d396f03cc30e322be9522489e908917.jpg)
 
 
 
@@ -4012,7 +3976,7 @@ $$
 
 This value of $x$ is the next approximation $x_{n + 1}$ . Here is a summary of Newton's method. 
 
-## Newton's Method
+### Newton's Method
 
 1. Guess a first approximation to a solution of the equation $f(x) = 0$ . A graph of $y = f(x)$ may help. 
 
@@ -4022,7 +3986,7 @@ $$
 x _ {n + 1} = x _ {n} - \frac {f (x _ {n})}{f ^ {\prime} (x _ {n})}, \quad \text { if } f ^ {\prime} (x _ {n}) \neq 0.\tag{1}
 $$
 
-## Applying Newton's Method
+### Applying Newton's Method
 
 Applications of Newton's method generally involve many numerical computations, making them well suited for computers or calculators. Nevertheless, even when the calculations are done by hand (which may be very tedious), they give a powerful way to find solutions of equations. 
 
@@ -4048,14 +4012,14 @@ $$
 
 enables us to go from each approximation to the next with just a few keystrokes. With the starting value $x_{0} = 1$ , we get the results in the first column of the following table. (To five decimal places, or, equivalently, to six digits, $\sqrt{2} = 1.41421$ .) 
 
-![[99675d1a4a56d77562e097bcabcad343b64becbe62f9667620c31dd98fa64b4a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/99675d1a4a56d77562e097bcabcad343b64becbe62f9667620c31dd98fa64b4a.jpg)
 
 
 
 FIGURE 4.50 The graph of $f(x) = x^3 - x - 1$ crosses the $x$ -axis once; this is the root we want to find (Example 2).
 
 
-![[e271f1128efb1bc9f55a1aa39897a0d43dd23b2e6ba77bd4a1efadf170b4474e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e271f1128efb1bc9f55a1aa39897a0d43dd23b2e6ba77bd4a1efadf170b4474e.jpg)
 
 
 
@@ -4084,18 +4048,18 @@ TABLE 4.1 The Result of Applying Newton's Method to $f(x) = x^3 - x - 1$ with $x
 
 In Figure 4.52 we have indicated that the process in Example 2 might have started at the point $B_0(3,23)$ on the curve, with $x_0 = 3$ . Point $B_0$ is quite far from the $x$ -axis, but the tangent at $B_0$ crosses the $x$ -axis at about (2.12, 0), so $x_1$ is still an improvement over $x_0$ . If we use Equation (1) repeatedly as before, with $f(x) = x^3 - x - 1$ and $f'(x) = 3x^2 - 1$ , we obtain the nine-place solution $x_7 = x_6 = 1.324717957$ in seven steps. 
 
-## Convergence of the Approximations
+### Convergence of the Approximations
 
 In Chapter 9 we define precisely the idea of convergence for the approximations $x_{n}$ in Newton's method. Intuitively, we mean that as the number $n$ of approximations increases without bound, the values $x_{n}$ get arbitrarily close to the desired root r. (This notion is similar to the idea of the limit of a function $g(t)$ as t approaches infinity, as defined in Section 2.5.) 
 
-![[d1daf32ca0781dab0064499a69444c3ecd150a4eb8dce61f69dbd1d2c4747836.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d1daf32ca0781dab0064499a69444c3ecd150a4eb8dce61f69dbd1d2c4747836.jpg)
 
 
 
 FIGURE 4.52 Any starting value $x_{0}$ to the right of $x = 1/\sqrt{3}$ will lead to the root in Example 2.
 
 
-![[41f3860d18a3590811b44134f309df9e78b044ce523b6f77b25cb2ac8df2fd06.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/41f3860d18a3590811b44134f309df9e78b044ce523b6f77b25cb2ac8df2fd06.jpg)
 
 
 
@@ -4116,16 +4080,16 @@ If Newton's method does converge, it converges to a root. Be careful, however. T
 
 When Newton's method converges to a root, it may not be the root you have in mind. Figure 4.54 shows two ways this can happen. 
 
-![[10f2beff3e37b4cf6d27cd379c923d5e6620e892114a2a998da5cbe2dcb304cc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/10f2beff3e37b4cf6d27cd379c923d5e6620e892114a2a998da5cbe2dcb304cc.jpg)
 
 
 
 FIGURE 4.54 If you start too far away, Newton's method may miss the root you want.
 
 
-## EXERCISES 4.7
+### EXERCISES 4.7
 
-## Root Finding
+#### Root Finding
 
 1. Use Newton's method to estimate the solutions of the equation $x^{2} + x - 1 = 0$ . Start with $x_{0} = -1$ for the left-hand solution and with $x_{0} = 1$ for the solution on the right. Then, in each case, find $x_{2}$ . 
 
@@ -4139,11 +4103,11 @@ FIGURE 4.54 If you start too far away, Newton's method may miss the root you wan
 
 6. Use Newton's method to find the negative fourth root of 2 by solving the equation $x^4 - 2 = 0$ . Start with $x_0 = -1$ and find $x_2$ . 
 
-T7. Use Newton's method to find an approximate solution of $3 - x = \ln x$ . Start with $x_0 = 2$ and find $x_2$ . 
+7. T Use Newton's method to find an approximate solution of $3 - x = \ln x$ . Start with $x_0 = 2$ and find $x_2$ . 
 
-T8. Use Newton's method to find an approximate solution of $x - 1 = \arctan x$ . Start with $x_0 = 1$ and find $x_2$ . 
+8. T Use Newton's method to find an approximate solution of $x - 1 = \arctan x$ . Start with $x_0 = 1$ and find $x_2$ . 
 
-T 9. Use Newton's method to find an approximate solution of $xe^x = 1$ . Start with $x_0 = 0$ and find $x_2$ . 
+9. T Use Newton's method to find an approximate solution of $xe^x = 1$ . Start with $x_0 = 0$ and find $x_2$ . 
 
 Dependence on Initial Point 
 
@@ -4169,7 +4133,7 @@ $$
 \mathbf {d}. x _ {0} = 4
 $$
 
-![[40e85439892b5947dba9563cba83080815a24a81f267e4cfcf13b74c5aa514ad.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/40e85439892b5947dba9563cba83080815a24a81f267e4cfcf13b74c5aa514ad.jpg)
 
 
 11. Guessing a root Suppose that your first guess is lucky, in the sense that $x_0$ is a root of $f(x) = 0$ . Assuming that $f'(x_0)$ is defined and is not 0, what happens to $x_1$ and later approximations? 
@@ -4228,7 +4192,7 @@ b. Use Newton's method to find where.
 
 25. The graphs of $y = x^{2}(x + 1)$ and $y = 1 / x (x > 0)$ intersect at one point $x = r$ . Use Newton's method to estimate the value of $r$ to four decimal places. 
 
-![[3151d17c34c5209f7eac81b15bc498a4132761c9a6736de99895f8e25e7350ef.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3151d17c34c5209f7eac81b15bc498a4132761c9a6736de99895f8e25e7350ef.jpg)
 
 
 26. The graphs of $y = \sqrt{x}$ and $y = 3 - x^2$ intersect at one point $x = r$ . Use Newton's method to estimate the value of $r$ to four decimal places. 
@@ -4245,7 +4209,7 @@ $$
 \begin{array}{r l} 8 x ^ {4} - 1 4 x ^ {3} - 9 x ^ {2} + 1 1 x - 1 & \\ = 8 (x - r _ {1}) (x - r _ {2}) (x - r _ {3}) (x - r _ {4}). \end{array}
 $$
 
-![[3d46b429f406d88f28d85c443adc12320f2aa68234142b37fd90e043f833ff0e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3d46b429f406d88f28d85c443adc12320f2aa68234142b37fd90e043f833ff0e.jpg)
 
 
 31. Converging to different zeros Use Newton's method to find the zeros of $f(x) = 4x^4 - 4x^2$ using the given starting values. 
@@ -4264,24 +4228,24 @@ a. Show that the value of x that minimizes the distance between the submarine an
 
 b. Solve the equation $x = 1 / (x^2 + 1)$ with Newton's method. 
 
-![[1e72364329b913e82e6d882cbcb4604f2339e01ef30549a952c01ade103f46dd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1e72364329b913e82e6d882cbcb4604f2339e01ef30549a952c01ade103f46dd.jpg)
 
 
 33. Curves that are nearly flat at the root Some curves are so flat that, in practice, Newton's method stops too far from the root to give a useful estimate. Try Newton's method on $f(x) = (x - 1)^{40}$ with a starting value of $x_{0} = 2$ to see how close your machine comes to the root x = 1. See the accompanying graph. 
 
-![[b977f358f44f38d9e5210dcd3a702ab3d67bf9f33d4df33bb3a548425e00b641.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b977f358f44f38d9e5210dcd3a702ab3d67bf9f33d4df33bb3a548425e00b641.jpg)
 
 
 34. The accompanying figure shows a circle of radius $r$ with a chord of length 2 and an arc $s$ of length 3. Use Newton's method to solve for $r$ and $\theta$ (radians) to four decimal places. Assume $0 < \theta < \pi$ . 
 
-![[b49b68bcf7b9ff8fbf8d705fb7dbcc265ab2c62f38dc201acf1e2f3e3df88581.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b49b68bcf7b9ff8fbf8d705fb7dbcc265ab2c62f38dc201acf1e2f3e3df88581.jpg)
 
 
 ## 4.8 Antiderivatives
 
 Many problems require that we recover a function from its derivative, or from its rate of change. For instance, the laws of physics tell us the acceleration of an object falling from an initial height, and we can use this to compute its velocity and its height at any time. More generally, starting with a function f, we want to find a function F whose derivative is f. If such a function F exists, it is called an antiderivative of f. Antiderivatives are the link connecting the two major elements of calculus: derivatives and definite integrals. Antiderivatives have an important connection to the theory of integrals that is developed in Chapter 5. For this reason the process of taking an antiderivative is also called “integration.” 
 
-## Finding Antiderivatives
+### Finding Antiderivatives
 
 > ***DEFINITION*** A function $F$ is an antiderivative of $f$ on an interval $I$ if $F'(x) = f(x)$ for all $x$ in $I$ . 
 
@@ -4299,7 +4263,7 @@ $$
 (\mathbf {c}) h (x) = \frac {1}{x} + 2 e ^ {2 x}
 $$
 
-![[9e141edcac049c0c7c55fda349380bd96a9ae2922f66685d8753684da6836c13.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9e141edcac049c0c7c55fda349380bd96a9ae2922f66685d8753684da6836c13.jpg)
 
 
 
@@ -4432,7 +4396,7 @@ $$
 
 is the general antiderivative formula for $f(x)$ , where C is an arbitrary constant. 
 
-## Initial Value Problems and Differential Equations
+### Initial Value Problems and Differential Equations
 
 Antiderivatives play several important roles in mathematics and its applications. Methods and techniques for finding them are a major part of calculus, and we take up that study in Chapter 8. Finding an antiderivative for a function $f(x)$ is the same problem as finding a function $y(x)$ that satisfies the equation 
 
@@ -4450,13 +4414,13 @@ This condition means the function $y(x)$ has the value $y_{0}$ when $x = x_{0}$ 
 
 The most general antiderivative $F(x) + C$ of the function $f(x)$ (such as $x^{3} + C$ for the function $3x^{2}$ in Example 2) gives the general solution $y = F(x) + C$ of the differential equation $dy/dx = f(x)$ . The general solution gives all the solutions of the equation (there are infinitely many, one for each value of C). We solve the differential equation by finding its general solution. We then solve the initial value problem by finding the particular solution that satisfies the initial condition $y(x_{0}) = y_{0}$ . In Example 2, the function $y = x^{3} - 2$ is the particular solution of the differential equation $dy/dx = 3x^{2}$ satisfying the initial condition $y(1) = -1$ . 
 
-## Antiderivatives and Motion
+### Antiderivatives and Motion
 
 We have seen that the derivative of the position function of an object gives its velocity, and the derivative of its velocity function gives its acceleration. If we know an object's acceleration, then by finding an antiderivative we can recover the velocity, and from an antiderivative of the velocity we can recover its position function. This procedure was used as an application of Corollary 2 in Section 4.2. Now that we have a terminology and conceptual framework in terms of antiderivatives, we revisit the problem from the point of view of differential equations. 
 
 **EXAMPLE 5** A hot-air balloon ascending at the rate of 3.6 m/s is at a height 24.5 m above the ground when a package is dropped. How long does it take the package to reach the ground? 
 
-![[baa1d8a3fa428ad07425f9fb584c11236abc4ef2500e290416ff875c5ecd7f46.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/baa1d8a3fa428ad07425f9fb584c11236abc4ef2500e290416ff875c5ecd7f46.jpg)
 
 
 
@@ -4485,7 +4449,7 @@ $$
 
 Having found the general solution of the differential equation, we use the initial condition to find the particular solution that solves our problem. 
 
-## 2. Evaluate C:
+### 2. Evaluate C:
 
 $$
 \begin{array}{l} 3. 6 = - 9. 8 (0) + C \quad \text { Initial   condition } v (0) = 3. 6 \\ C = 3. 6. \end{array}
@@ -4529,7 +4493,7 @@ $$
 
 The package hits the ground about 2.63 s after it is dropped from the balloon. (The negative root has no physical meaning.) 
 
-## Indefinite Integrals
+### Indefinite Integrals
 
 A special symbol is used to denote the collection of all antiderivatives of a function f. 
 
@@ -4583,7 +4547,7 @@ Find the simplest antiderivative you can for each part, and add the arbitrary co
 
 We conclude this section with a list of basic antidifferentiation formulas in Table 4.4, using the integral sign to indicate an antiderivative. 
 
-## TABLE 4.4 Integration formulas
+**TABLE 4.4 Integration formulas**
 
 1. $\int x^n dx = \frac{x^{n + 1}}{n + 1} + C (n\neq -1)$ 
 
@@ -4611,17 +4575,11 @@ We conclude this section with a list of basic antidifferentiation formulas in Ta
 
 13. $\int a^{x}dx = \frac{a^{x}}{\ln a} +C (a > 0,a\neq 1)$ 
 
-## EXERCISES 4.8
+### EXERCISES 4.8
 
-## Finding Antiderivatives
+#### Finding Antiderivatives
 
 In Exercises 1–24, find an antiderivative for each function. Do as many as you can mentally. Check your answers by differentiation. 
-
-7. a. $\frac{3}{2}\sqrt{x}$ 
-
-b. $\frac{1}{2\sqrt{x}}$ 
-
-c. $\sqrt{x} + \frac{1}{\sqrt{x}}$ 
 
 1. a. 2x 
 
@@ -4629,23 +4587,11 @@ b. $x^{2}$
 
 c. $x^{2}-2x+1$ 
 
-8. a. $\frac{4}{3}\sqrt[3]{x}$ 
-
-b. $\frac{1}{3\sqrt[3]{x}}$ 
-
-c. $\sqrt[3]{x} + \frac{1}{\sqrt[3]{x}}$ 
-
 2. a. 6x 
 
 b. $x^{7}$ 
 
 c. $x^{7} - 6x + 8$ 
-
-9. a. $\frac{2}{3}x^{-1/3}$ 
-
-b. $\frac{1}{3} x^{-2 / 3}$ 
-
-c. $-\frac{1}{3}x^{-4/3}$ 
 
 3. a. $-3x^{-4}$ 
 
@@ -4659,14 +4605,6 @@ b. $\frac{x^{-3}}{2} + x^2$
 
 c. $-x^{-3} + x - 1$ 
 
-10. a. $\frac{1}{2} x^{-1/2}$ 
-
-$$
-- \frac {1}{2} x ^ {- 3 / 2}
-$$
-
-c. $-\frac{3}{2}x^{-5/2}$ 
-
 5. a. $\frac{1}{x^2}$ 
 
 b. $\frac{5}{x^{2}}$ 
@@ -4674,6 +4612,32 @@ b. $\frac{5}{x^{2}}$
 6. a. $-\frac{2}{x^{3}}$ 
 
 c. $2 - \frac{5}{x^2}$ 
+
+7. a. $\frac{3}{2}\sqrt{x}$ 
+
+b. $\frac{1}{2\sqrt{x}}$ 
+
+c. $\sqrt{x} + \frac{1}{\sqrt{x}}$ 
+
+8. a. $\frac{4}{3}\sqrt[3]{x}$ 
+
+b. $\frac{1}{3\sqrt[3]{x}}$ 
+
+c. $\sqrt[3]{x} + \frac{1}{\sqrt[3]{x}}$ 
+
+9. a. $\frac{2}{3}x^{-1/3}$ 
+
+b. $\frac{1}{3} x^{-2 / 3}$ 
+
+c. $-\frac{1}{3}x^{-4/3}$ 
+
+10. a. $\frac{1}{2} x^{-1/2}$ 
+
+$$
+- \frac {1}{2} x ^ {- 3 / 2}
+$$
+
+c. $-\frac{3}{2}x^{-5/2}$ 
 
 11. a. $\frac{1}{x}$ 
 
@@ -4767,7 +4731,7 @@ $$
 
 c. $\pi^x - x^{-1}$ 
 
-## Finding Indefinite Integrals
+#### Finding Indefinite Integrals
 
 In Exercises 25–70, find the most general antiderivative or indefinite integral. You may need to try a solution and then adjust your guess. Check your answers by differentiation. 
 
@@ -4855,11 +4819,15 @@ In Exercises 25–70, find the most general antiderivative or indefinite integra
 
 66. $\int (2 + \tan^2\theta)d\theta$ 
 
-67. $\int \cot^2 x dx$ 68. $\int (1 - \cot^2 x)dx$ (Hint: $1 + \cot^2 x = \csc^2 x$ ) 
+67. $\int \cot^2 x dx$
 
-69. $\int \cos \theta (\tan \theta +\sec \theta)d\theta$ 70. $\int \frac{\csc\theta}{\csc\theta - \sin\theta} d\theta$ 
+68. $\int (1 - \cot^2 x)dx$ (Hint: $1 + \cot^2 x = \csc^2 x$ )
 
-## Checking Antiderivative Formulas
+69. $\int \cos \theta (\tan \theta +\sec \theta)d\theta$
+
+70. $\int \frac{\csc\theta}{\csc\theta - \sin\theta} d\theta$
+
+#### Checking Antiderivative Formulas
 
 Verify the formulas in Exercises 71–82 by differentiation. 
 
@@ -4867,11 +4835,7 @@ Verify the formulas in Exercises 71–82 by differentiation.
 
 $$
 \int (3 x + 5) ^ {- 2} d x = - \frac {(3 x + 5) ^ {- 1}}{3} + C
-$$
-
-73. $\int \sec^2 (5x - 1)dx = \frac{1}{5}\tan (5x - 1) + C$ 
-
-$$
+73. $$\int \sec^2 (5x - 1)dx = \frac{1}{5}\tan (5x - 1) + C$$
 \int \csc^ {2} \left(\frac {x - 1}{3}\right) d x = - 3 \cot \left(\frac {x - 1}{3}\right) + C
 $$
 
@@ -4933,11 +4897,7 @@ c. $\int \sqrt{2x + 1} dx = \frac{1}{3}\left(\sqrt{2x + 1}\right)^3 + C$
 
 $$
 \int \frac {- 1 5 (x + 3) ^ {2}}{(x - 2) ^ {4}} d x = \left(\frac {x + 3}{x - 2}\right) ^ {3} + C
-$$
-
-88. Right, or wrong? Give a brief reason why. 
-
-$$
+88. $Right, or wrong? Give a brief reason why.$
 \int \frac {x \cos (x ^ {2}) - \sin (x ^ {2})}{x ^ {2}} d x = \frac {\sin (x ^ {2})}{x} + C
 $$
 
@@ -4949,15 +4909,15 @@ $$
 \frac {d y}{d x} = 2 x, \quad y = 4 \text {   when   } x = 1?
 $$
 
-![[d5aca41e355c81017aca73a07e5d64a4633b217adca658ade8b9cb1d3686eb7f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d5aca41e355c81017aca73a07e5d64a4633b217adca658ade8b9cb1d3686eb7f.jpg)
 
 
 (a) 
 
-![[7eaf7df9e32cc8e38e5ab6d2e53eb870c83732600e57f1b5b52c60ea968205e3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7eaf7df9e32cc8e38e5ab6d2e53eb870c83732600e57f1b5b52c60ea968205e3.jpg)
 
 
-![[0e2e965bfcfb87d49f4a93bf8942a822c615951e3a879cef2338ccdc3610ab16.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0e2e965bfcfb87d49f4a93bf8942a822c615951e3a879cef2338ccdc3610ab16.jpg)
 
 
 (b) 
@@ -4972,15 +4932,15 @@ $$
 \frac {d y}{d x} = - x, \quad y = 1 \text {   when   } x = - 1?
 $$
 
-![[05120553488e6324a7f4fb85d9fb535b6e1aea42701d939ebc0a819a19108304.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/05120553488e6324a7f4fb85d9fb535b6e1aea42701d939ebc0a819a19108304.jpg)
 
 
 (a) 
 
-![[7c3d5a47f1d48d6f84940e550de3393b700f3097b8536067094bf3ba418b74cb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7c3d5a47f1d48d6f84940e550de3393b700f3097b8536067094bf3ba418b74cb.jpg)
 
 
-![[9e4e9ea14020ba95eb756ad983aa160701f6d7776eb9cc3fbdbf3d10b3f511cd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9e4e9ea14020ba95eb756ad983aa160701f6d7776eb9cc3fbdbf3d10b3f511cd.jpg)
 
 
 (b) 
@@ -5049,24 +5009,24 @@ b. How many curves like this are there? How do you know?
 
 In Exercises 115–118, the graph of $f'$ is given. Assume that $f(0) = 1$ and sketch a possible continuous graph of $f$ . 
 
-![[9f6cb2a0fb7eef4aaba5ac3a654c856ae21fbcf9ffbc797038d88fbdc50a7983.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9f6cb2a0fb7eef4aaba5ac3a654c856ae21fbcf9ffbc797038d88fbdc50a7983.jpg)
 
 
-![[6240d5a22510d4c7ec9b4791fe43bc8f5ebc697fc6c868b111c32ceeaea24e56.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6240d5a22510d4c7ec9b4791fe43bc8f5ebc697fc6c868b111c32ceeaea24e56.jpg)
 
 
 
 117.
 
 
-![[9857003087071fe2e3ec4e2290f9446f9a3bab10f361d64ba1c2a7ac0cc71771.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9857003087071fe2e3ec4e2290f9446f9a3bab10f361d64ba1c2a7ac0cc71771.jpg)
 
 
 
 118.
 
 
-![[9e8a0de531aafe62ff80148c3dbd3e3dd0f9a88e0723965b91a187360f18b5c6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9e8a0de531aafe62ff80148c3dbd3e3dd0f9a88e0723965b91a187360f18b5c6.jpg)
 
 
 
@@ -5083,10 +5043,10 @@ Exercises 119–122 show solution curves of differential equations. In each exer
 120.
 
 
-![[b3416c18e040086164b217ced9f091403822d900c80f8516804512ccd7150da9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b3416c18e040086164b217ced9f091403822d900c80f8516804512ccd7150da9.jpg)
 
 
-![[f76dc223c44c41f2f449e72de281e87253b740f97eeeab144971b907d55b03b6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f76dc223c44c41f2f449e72de281e87253b740f97eeeab144971b907d55b03b6.jpg)
 
 
 
@@ -5097,10 +5057,10 @@ Exercises 119–122 show solution curves of differential equations. In each exer
 122.
 
 
-![[7d0cc47d16048390b89d6e1fa2eea2007055be63be8dbe60839722518847ef63.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7d0cc47d16048390b89d6e1fa2eea2007055be63be8dbe60839722518847ef63.jpg)
 
 
-![[5fc96498fed007602acd34796d746910d856329799dd9a07243988b1621c4e21.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5fc96498fed007602acd34796d746910d856329799dd9a07243988b1621c4e21.jpg)
 
 
 Applications 
@@ -5125,15 +5085,15 @@ b. Suppose that the position $s$ of a body moving along a coordinate line is a d
 
 125. Stopping a car in time You are driving along a highway at a steady 108 km/h (30 m/s) when you see an accident ahead and slam on the brakes. What constant deceleration is required to stop your car in 75 m? To find out, carry out the following steps. 
 
-1. Solve the initial value problem 
+**Step 1.** Solve the initial value problem 
 
 $$
 \begin{array}{l} \text { Differential   equation: } \frac {d ^ {2} s}{d t ^ {2}} = - k \quad (k \text { constant }) \\ \text { Initial   conditions: } \quad \frac {d s}{d t} = 3 0 \text { and } s = 0 \text { when } t = 0. \\ \text { Measuring   time   and   distance } \\ \text { from   when   the   brakes   are   applied } \end{array}
 $$
 
-2. Find the value of $t$ that makes $ds / dt = 0$ . (The answer will involve $k$ .) 
+**Step 2.** Find the value of $t$ that makes $ds / dt = 0$ . (The answer will involve $k$ .) 
 
-3. Find the value of k that makes s = 75 for the value of t you found in Step 2. 
+**Step 3.** Find the value of k that makes s = 75 for the value of t you found in Step 2. 
 
 126. Stopping a motorcycle The State of Illinois Cycle Rider Safety Program requires motorcycle riders to be able to brake from 48 km/h (13.3 m/s) to 0 in 13.7 m. What constant deceleration does it take to do that? 
 
@@ -5151,11 +5111,7 @@ Initial conditions:
 
 $$
 \frac {d s}{d t} = 0 \text {   and   } s = 1. 2 \text {   when   } t = 0
-$$
-
-129. Motion with constant acceleration The standard equation for the position s of a body moving with a constant acceleration a along a coordinate line is 
-
-$$
+129. $Motion with constant acceleration The standard equation for the position s of a body moving with a constant acceleration a along a coordinate line is$
 s = \frac {a}{2} t ^ {2} + v _ {0} t + s _ {0},\tag{1}
 $$
 
@@ -5167,11 +5123,7 @@ Initial conditions:
 
 $$
 \frac {d s}{d t} = v _ {0} \text {   and   } s = s _ {0} \text {   when   } t = 0.
-$$
-
-130. Free fall near the surface of a planet For free fall near the surface of a planet where the acceleration due to gravity has a constant magnitude of g length-units/s $^{2}$ , Equation (1) in Exercise 129 takes the form 
-
-$$
+130. $Free fall near the surface of a planet For free fall near the surface of a planet where the acceleration due to gravity has a constant magnitude of g length-units/s $^{2}$ , Equation (1) in Exercise 129 takes the form$
 s = - \frac {1}{2} g t ^ {2} + v _ {0} t + s _ {0},\tag{2}
 $$
 
@@ -5273,7 +5225,7 @@ Use a CAS to solve the initial value problems in Exercises 133–136. Plot the s
 
 ## CHAPTER 4 Practice Exercises
 
-## Finding Extreme Values
+### Finding Extreme Values
 
 In Exercises 1–16, find the extreme values (absolute and local) of the function over its natural domain, and where they occur. 
 
@@ -5313,7 +5265,7 @@ $$
 1 6. y = \sin^ {- 1} (e ^ {x})
 $$
 
-## Extreme Values
+### Extreme Values
 
 17. Does $f(x) = x^{3} + 2x + \tan x$ have any local maximum or minimum values? Give reasons for your answer. 
 
@@ -5361,7 +5313,7 @@ The moral here is that without calculus, the existence of two of the three extre
 
 (Source: Uses of Technology in the Mathematics Curriculum, by Benny Evans and Jerry Johnson, Oklahoma State University, published in 1990 under a grant from the National Science Foundation, USE-8950044.) 
 
-## T 30. (Continuation of Exercise 29)
+### T 30. (Continuation of Exercise 29)
 
 a. Graph $f(x) = (x^8 / 8) - (2/5)x^5 - 5x - (5/x^2) + 11$ over the interval $-2 \leq x \leq 2$ . Where does the graph appear to have local extreme values or points of inflection? 
 
@@ -5369,7 +5321,7 @@ b. Show that $f$ has a local maximum value at $x = \sqrt[7]{5} \approx 1.2585$ a
 
 c. Zoom in to find a viewing window that shows the presence of the extreme values at $x = \sqrt[7]{5}$ and $x = \sqrt[3]{2}$ . 
 
-## The Mean Value Theorem
+### The Mean Value Theorem
 
 31. a. Show that $g(t) = \sin^{2} t - 3t$ decreases on every interval in its domain. 
 
@@ -5413,7 +5365,7 @@ In Exercises 39 and 40, use the graph to answer the questions.
 
 39. Identify any global extreme values of $f$ and the values of $x$ at which they occur. 
 
-![[2d4499e7bd8e04bf5767d3a055e03f3fa7907b58ad5e7312c3a3286be120d3fb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2d4499e7bd8e04bf5767d3a055e03f3fa7907b58ad5e7312c3a3286be120d3fb.jpg)
 
 
 40. Estimate the open intervals on which the function $y = f(x)$ is 
@@ -5424,20 +5376,20 @@ b. decreasing.
 
 c. Use the given graph of $f'$ to indicate where any local extreme values of the function occur, and whether each extreme is a relative maximum or minimum. 
 
-![[9506c32a3477e2edaac45ab3dd2b9e4a700ef88f2a4dbe9efd4032de4eaeb341.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9506c32a3477e2edaac45ab3dd2b9e4a700ef88f2a4dbe9efd4032de4eaeb341.jpg)
 
 
 Each of the graphs in Exercises 41 and 42 is the graph of the position function $s = f(t)$ of an object moving on a coordinate line ( $t$ represents time). At approximately what times (if any) is each object's (a) velocity equal to zero? (b) Acceleration equal to zero? During approximately what time intervals does the object move (c) forward? (d) Backward? 
 
 41. 
 
-![[3491c9e9b4efb510c7731f2eafe4b4ab2c3c2741934db69e79369436c581868c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3491c9e9b4efb510c7731f2eafe4b4ab2c3c2741934db69e79369436c581868c.jpg)
 
 
-![[c2978a064c3fb166772b56458e559954885f6814284b4f605d7d792e6173c3ab.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c2978a064c3fb166772b56458e559954885f6814284b4f605d7d792e6173c3ab.jpg)
 
 
-## Graphs and Graphing
+### Graphs and Graphing
 
 Graph the curves in Exercises 43–58. 
 
@@ -5505,9 +5457,9 @@ Sketch the graphs of the rational functions in Exercises 69–76.
 
 69. $y = \frac{x + 1}{x - 3}$ 
 
-71. $y = \frac{x^{2} + 1}{x}$ 
-
 70. $y = \frac{2x}{x + 5}$ 
+
+71. $y = \frac{x^{2} + 1}{x}$ 
 
 72. $y = \frac{x^2 - x + 1}{x}$ 
 
@@ -5551,13 +5503,13 @@ Find the limits in Exercises 89–102.
 
 89. $\lim_{x\to 0}\frac{10^x - 1}{x}$ 
 
-91. $\lim_{x\to0}\frac{2^{\sin x}-1}{e^{x}-1}$ 
-
 90. $\lim_{\theta \to 0}\frac{3^{\theta} - 1}{\theta}$ 
 
-93. $\lim_{x\to0}\frac{5-5\cos x}{e^{x}-x-1}$ 
+91. $\lim_{x\to0}\frac{2^{\sin x}-1}{e^{x}-1}$ 
 
 92. $\lim_{x\to 0}\frac{2^{-\sin x} - 1}{e^x - 1}$ 
+
+93. $\lim_{x\to0}\frac{5-5\cos x}{e^{x}-x-1}$ 
 
 94. $\lim_{x\to 0}\frac{4 - 4e^x}{xe^x}$ 
 
@@ -5595,7 +5547,7 @@ b. if one number plus the square root of the other is to be as large as possible
 
 108. The figure here shows two right circular cones, one upside down inside the other. The two bases are parallel, and the vertex of the smaller cone lies at the center of the larger cone's base. What values of $r$ and $h$ will give the smaller cone the largest possible volume? 
 
-![[700d2a60caf180e54b6cb6b372a3ffb6c6aa7e67ef84700f73ef5acc0337ca57.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/700d2a60caf180e54b6cb6b372a3ffb6c6aa7e67ef84700f73ef5acc0337ca57.jpg)
 
 
 109. Manufacturing tires Your company can manufacture x hundred grade A tires and y hundred grade B tires a day, where $0 \leq x \leq 4$ and 
@@ -5616,7 +5568,7 @@ b. When do the particles collide?
 
 112. The ladder problem What is the approximate length (in meters) of the longest ladder you can carry horizontally around the corner of the corridor shown here? Round your answer down to the nearest meter. 
 
-![[0abfc48556d84b9f64935792f1a2e8b45c94e8fdaf46bd368023e0eeed393ced.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0abfc48556d84b9f64935792f1a2e8b45c94e8fdaf46bd368023e0eeed393ced.jpg)
 
 
 Newton's Method 
@@ -5625,7 +5577,7 @@ Newton's Method
 
 114. Let $f(x) = x^4 - x^3$ . Show that the equation $f(x) = 75$ has a solution in the interval [3, 4] and use Newton's method to find it. 
 
-## Finding Indefinite Integrals
+### Finding Indefinite Integrals
 
 Find the indefinite integrals (most general antiderivatives) in Exercises 115–138. You may need to try a solution and then adjust your guess. Check your answers by differentiation. 
 
@@ -5663,9 +5615,9 @@ Find the indefinite integrals (most general antiderivatives) in Exercises 115–
 
 131. $\int \left(\frac{3}{x} - x\right) dx$ 
 
-133. $\int \left(\frac{1}{2} e^t - e^{-t}\right)dt$ 
-
 132. $\int \left(\frac{5}{x^2} +\frac{2}{x^2 + 1}\right)dx$ 
+
+133. $\int \left(\frac{1}{2} e^t - e^{-t}\right)dt$ 
 
 134. $\int (5^s + s^5) ds$ 
 
@@ -5713,19 +5665,17 @@ $$
 
 145. The rectangle shown here has one side on the positive y-axis, one side on the positive x-axis, and its upper right-hand vertex on the curve $y = e^{-x^{2}}$ . What dimensions give the rectangle its largest area, and what is that area? 
 
-![[766fc13baf2fe8005b8290fe056c2436f733546945a588447ccd90a43f65c237.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/766fc13baf2fe8005b8290fe056c2436f733546945a588447ccd90a43f65c237.jpg)
 
 
 146. The rectangle shown here has one side on the positive y-axis, one side on the positive x-axis, and its upper right-hand vertex on the curve $y = (\ln x)/x^{2}$ . What dimensions give the rectangle its largest area, and what is that area? 
 
-![[ce95e0f4cd23ebe1c34d8aca948d250c47517c4e58bf1e6d8d93b7840d93f391.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ce95e0f4cd23ebe1c34d8aca948d250c47517c4e58bf1e6d8d93b7840d93f391.jpg)
 
 
 In Exercises 147 and 148, find the absolute maximum and minimum values of each function on the given interval. 
 
-$$
-\mathbf {1 4 7 .} y = x \ln 2 x - x, \left[ \frac {1}{2 e}, \frac {e}{2} \right]
-$$
+147. $y = x \ln 2 x - x, \left[ \frac {1}{2 e}, \frac {e}{2} \right]$
 
 148. $y = 10x(2 - \ln x)$ , $(0, e^{2}]$ 
 
@@ -5753,12 +5703,12 @@ T 153. Graph $f(x) = (\sin x)^{\sin x}$ over $[0, 3\pi]$ . Explain what you see.
 
 154. A round underwater transmission cable consists of a core of copper wires surrounded by nonconducting insulation. If x denotes the ratio of the radius of the core to the thickness of the insulation, it is known that the speed of the transmission signal is given by the equation $v = x^{2} \ln(1/x)$ . If the radius of the core is 1 cm, what insulation thickness h will allow the greatest transmission speed? 
 
-![[743348f274ba4e806722fc2346760eef3432383337dd732aa79483fd73efbe6f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/743348f274ba4e806722fc2346760eef3432383337dd732aa79483fd73efbe6f.jpg)
 
 
 ## CHAPTER 4 Additional and Advanced Exercises
 
-## Functions and Derivatives
+### Functions and Derivatives
 
 1. What can you say about a function whose maximum and minimum values on an interval are equal? Give reasons for your answer. 
 
@@ -5774,7 +5724,7 @@ $$
 
 to identify the points where f has local maximum and minimum values. 
 
-## 5. Local extrema
+### 5. Local extrema
 
 a. Suppose that the first derivative of $y = f(x)$ is 
 
@@ -5796,7 +5746,7 @@ At what points, if any, does the graph of f have a local maximum, local minimum,
 
 7. Bounding a function Suppose that $f$ is continuous on $[a, b]$ and that $c$ is an interior point of the interval. Show that if $f'(x) \leq 0$ on $[a, c)$ and $f'(x) \geq 0$ on $(c, b]$ , then $f(x)$ is never less than $f(c)$ on $[a, b]$ . 
 
-## 8. An inequality
+### 8. An inequality
 
 a. Show that $-1/2 \leq x/(1 + x^2) \leq 1/2$ for every value of $x$ . 
 
@@ -5828,7 +5778,7 @@ c. The line $y = 1$ is an asymptote of the graph of $f$ .
 
 12. Horizontal tangent For what value or values of the constant k will the curve $y = x^{3} + kx^{2} + 3x - 4$ have exactly one horizontal tangent? 
 
-## Optimization
+### Optimization
 
 13. Largest inscribed triangle Points A and B lie at the ends of a diameter of a unit circle and point C lies on the circumference. Is it true that the area of triangle ABC is largest when the triangle is isosceles? How do you know? 
 
@@ -5854,29 +5804,29 @@ Thus, $f'(c + h)$ is positive for $-\delta < h < 0$ and negative for $0 < h < \d
 
 15. Hole in a water tank You want to bore a hole in the side of the tank shown here at a height that will make the stream of water coming out hit the ground as far from the tank as possible. If you drill the hole near the top, where the pressure is low, the water will exit slowly but spend a relatively long time in the air. If you drill the hole near the bottom, the water will exit at a higher velocity but have only a short time to fall. Where is the best place, if any, for the hole? (Hint: How long will it take an exiting droplet of water to fall from height y to the ground?) 
 
-![[9f6d149006a3f3f7e3c8d86abc33e9afa285f81bc3cae5154407cd59c1639c64.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9f6d149006a3f3f7e3c8d86abc33e9afa285f81bc3cae5154407cd59c1639c64.jpg)
 
 
 16. Kicking a field goal An American football player wants to kick a field goal with the ball being on a right hash mark. Assume that the goal posts are b meters apart and that the hash mark line is a distance a > 0 meters from the right goal post. (See the accompanying figure.) Find the distance h from the goal post line that gives the kicker his largest angle $\beta$ . Assume that the football field is flat. 
 
-![[33e3eb4c0a9af0b390ba0ddf426a2b38d26c36ab01f8e02a8a284dc697602428.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/33e3eb4c0a9af0b390ba0ddf426a2b38d26c36ab01f8e02a8a284dc697602428.jpg)
 
 
 17. A max-min problem with a variable answer Sometimes the solution of a max-min problem depends on the proportions of the shapes involved. As a case in point, suppose that a right circular cylinder of radius $r$ and height $h$ is inscribed in a right circular cone of radius $R$ and height $H$ , as shown here. Find the value of $r$ (in terms of $R$ and $H$ ) that maximizes the total surface area of the cylinder (including top and bottom). As you will see, the solution depends on whether $H \leq 2R$ or $H > 2R$ . 
 
-![[79f67e6d6d2ff7e545b8d63ff37cfa5fd075a7434d674c684a19b501974bd679.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/79f67e6d6d2ff7e545b8d63ff37cfa5fd075a7434d674c684a19b501974bd679.jpg)
 
 
 18. Minimizing a parameter Find the smallest value of the positive constant m that will make $mx - 1 + (1/x)$ greater than or equal to zero for all positive values of x. 
 
 19. Determine the dimensions of the rectangle of largest area that can be inscribed in the right triangle in the accompanying figure. 
 
-![[16ae9b4a3e9dd3a1ef513ace81fc486c7fad95ea20129f0f44481a079aee78dd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/16ae9b4a3e9dd3a1ef513ace81fc486c7fad95ea20129f0f44481a079aee78dd.jpg)
 
 
 20. A rectangular box with a square base is inscribed in a right circular cone of height 4 and base radius 3. If the base of the box sits on the base of the cone, what is the largest possible volume of the box? 
 
-## Limits
+### Limits
 
 21. Evaluate the following limits.
 a. $\lim_{x\to0}\frac{2\sin5x}{3x}$ b. $\lim_{x\to0}\sin5x\cot3x$ c. $\lim_{x\to0}x\csc^{2}\sqrt{2x}$ d. $\lim_{x\to\pi/2}(\sec x-\tan x)$ e. $\lim_{x\to0}\frac{x-\sin x}{x-\tan x}$ f. $\lim_{x\to0}\frac{\sin x^{2}}{x\sin x}$ g. $\lim_{x\to0}\frac{\sec x-1}{x^{2}}$ h. $\lim_{x\to2}\frac{x^{3}-8}{x^{2}-4}$ 
@@ -5884,7 +5834,7 @@ a. $\lim_{x\to0}\frac{2\sin5x}{3x}$ b. $\lim_{x\to0}\sin5x\cot3x$ c. $\lim_{x\to
 22. L'Hôpital's Rule does not help with the following limits. Find them some other way.
 a. $\lim_{x\to\infty}\frac{\sqrt{x+5}}{\sqrt{x}+5}$ b. $\lim_{x\to\infty}\frac{2x}{x+7\sqrt{x}}$ 
 
-## Theory and Examples
+### Theory and Examples
 
 23. Suppose that it costs a company $y = a + bx$ dollars to produce x units per week. It can sell x units per week at a price of P = c - ex dollars per unit. Each of a, b, c, and e represents a positive constant. (a) What production level maximizes the profit? (b) What is the corresponding price? (c) What is the weekly profit at this level of production? (d) At what price should each item be sold to maximize profits if the government imposes a tax of t dollars per item sold? Comment on the difference between this price and the price before the tax. 
 
@@ -5964,7 +5914,7 @@ $$
 L = k \frac {d _ {1}}{R ^ {4}} + k \frac {d _ {2}}{r ^ {4}}.
 $$
 
-![[07a4d8c37be087982f9aa6f5b453c8e0d18eea461aec882ad6def38b03146173.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/07a4d8c37be087982f9aa6f5b453c8e0d18eea461aec882ad6def38b03146173.jpg)
 
 
 In our model, we assume that $AC = a$ and $BC = b$ are fixed. Thus we have the relations 
@@ -5997,14 +5947,14 @@ b. If the ratio of the pipe radii is r/R = 5/6 estimate to the nearest degree th
 
 Mathematica/Maple Projects 
 
-![[7f222ad5e0f89ae18fe30b595cf1dd858fd3552eb719b2f7e8eabca0a143176b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7f222ad5e0f89ae18fe30b595cf1dd858fd3552eb719b2f7e8eabca0a143176b.jpg)
 
 
 39. Consider the unit circle centered at the origin and with a vertical tangent line passing through point $A$ in the accompanying figure. Assume that the lengths of segments $AB$ and $AC$ are equal, and let point $D$ be the intersection of the $x$ -axis with the line passing through points $B$ and $C$ . Find the limit of $t$ as $B$ approaches $A$ . 
 
 Projects can be found within MyLab Math. 
 
-![[415dda6224b4270b60b0dbc100410673e2ae1538e6b6f846e35a2e4ce36a09ab.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/415dda6224b4270b60b0dbc100410673e2ae1538e6b6f846e35a2e4ce36a09ab.jpg)
 
 
 ## CHAPTER 4 Technology Application Projects
@@ -6016,14 +5966,3 @@ You will observe the shape of a graph through dramatic animated visualizations o
 - Newton's Method: Estimate $\pi$ to How Many Places? 
 
 Plot a function, observe a root, pick a starting point near the root, and use Newton's Iteration Procedure to approximate the root to a desired accuracy. The numbers $\pi, e$ , and $\sqrt{2}$ are approximated. 
-
-# Integrals
-
-![[d933596094bbe2a27155d0772194f318bfed0d3a2bde2cb202e3cc4a3f21a06b.jpg|image]]
-
-
-OVERVIEW A great achievement of classical geometry was obtaining formulas for the areas and volumes of triangles, spheres, and cones. In this chapter we develop a method, called integration, to calculate the areas and volumes of more general shapes. The definite integral is the key tool in calculus for defining and calculating areas and volumes. We also use it to compute quantities such as the lengths of curved paths, probabilities, averages, energy consumption, the mass of an object, and the force against a dam's floodgates. 
-
-Like the derivative, the definite integral is defined as a limit. The definite integral is a limit of increasingly fine approximations. The idea is to approximate a quantity (such as the area of a curvy region) by dividing it into many small pieces, each of which we can approximate by something simple (such as a rectangle). Summing the contributions of each of the simple pieces gives us an approximation to the original quantity. As we divide the region into more and more pieces, the approximation given by the sum of the pieces will generally improve, converging to the quantity we are measuring. We take a limit as the number of terms increases to infinity, and when the limit exists, the result is a definite integral. We develop this idea in Section 5.3. 
-
-We also show that the process of computing these definite integrals is closely connected to finding antiderivatives. This is one of the most important relationships in calculus; it gives us an efficient way to compute definite integrals, providing a simple and powerful method that eliminates the difficulty of directly computing limits of approximations. This connection is captured in the Fundamental Theorem of Calculus.

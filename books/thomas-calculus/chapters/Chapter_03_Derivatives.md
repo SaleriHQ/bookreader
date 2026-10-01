@@ -11,11 +11,11 @@ order: 3
 
 In this section we define the slope and tangent line to a curve at a point, and the derivative of a function at a point. The derivative gives a way to find both the slope of a graph and the instantaneous rate of change of a function. 
 
-## Finding a Tangent Line to the Graph of a Function
+### Finding a Tangent Line to the Graph of a Function
 
 To find a tangent line to an arbitrary curve $y = f(x)$ at a point $P(x_{0}, f(x_{0}))$ , we use the procedure introduced in Section 2.1. We calculate the slope of the secant line through P and a nearby point $Q(x_{0} + h, f(x_{0} + h))$ . We then investigate the limit of the slope as $h \to 0$ (Figure 3.1). If the limit exists, we call it the slope of the curve at P and define the tangent line at P to be the line through P having this slope. 
 
-![[fa5e246322d9f626c4981a65b19ff57b227ebde9d5080958ae802a2062ee5fd8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fa5e246322d9f626c4981a65b19ff57b227ebde9d5080958ae802a2062ee5fd8.jpg)
 
 
 
@@ -34,14 +34,14 @@ FIGURE 3.1 The slope of the tangent line at $P$ is $\lim_{h\to 0}\frac{f(x_0 + h
 >
 In Section 2.1, Example 3, we applied these definitions to find the slope of the parabola $f(x) = x^2$ at the point $P(2,4)$ and the tangent line to the parabola at $P$ . Let's look at another example. 
 
-![[3da49486e521a797488ccad27dc49a74a227a734f7abf7c81845e1902b9f1efb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3da49486e521a797488ccad27dc49a74a227a734f7abf7c81845e1902b9f1efb.jpg)
 
 
 
 FIGURE 3.2 The tangent lines are steep when x is close to 0, and they become less steep as the point of tangency moves away (Example 1).
 
 
-![[15cd1d28598ad7fee48315151a39946cd824fc5ef2525f045271d59234507e06.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/15cd1d28598ad7fee48315151a39946cd824fc5ef2525f045271d59234507e06.jpg)
 
 
 
@@ -50,7 +50,7 @@ FIGURE 3.3 The two tangent lines to $y = 1 / x$ having slope $-1 / 4$ (Example 1
 
 The notation $f'(x_{0})$ is read “fprime of $x_{0}$ .” 
 
-## **EXAMPLE 1**
+**EXAMPLE 1**
 
 (a) Find the slope of the curve $y = 1 / x$ at any point $x = a \neq 0$ . What is the slope at the point $x = -1$ ? 
 
@@ -58,7 +58,7 @@ The notation $f'(x_{0})$ is read “fprime of $x_{0}$ .”
 
 (c) What happens to the tangent line to the curve at the point $(a, 1/a)$ as $a$ changes? 
 
-## **Solution**
+**Solution**
 
 (a) Here $f(x) = 1 / x$ . The slope at $(a, 1 / a)$ is 
 
@@ -78,7 +78,7 @@ This equation is equivalent to $a^2 = 4$ , so $a = 2$ or $a = -2$ . The curve ha
 
 (c) The slope $-1/a^{2}$ is always negative if $a \neq 0$ . As $a \rightarrow 0^{+}$ , the slope approaches $-\infty$ and the tangent line becomes increasingly steep (Figure 3.2). We see this situation again as $a \rightarrow 0^{-}$ . As a moves away from x = 0 in either direction, the slope approaches 0 and the tangent line levels off, becoming closer and closer to a horizontal line. 
 
-## Rates of Change: Derivative at a Point
+### Rates of Change: Derivative at a Point
 
 The expression 
 
@@ -98,7 +98,7 @@ is called the difference quotient of f at $x_{0}$ with increment h. If the diffe
 >
 The derivative has more than one meaning, depending on what problem we are considering. The formula for the derivative is the same as the formula for the slope of the curve $y = f(x)$ at a point. If we interpret the difference quotient as the slope of a secant line, then the derivative gives the slope of the curve $y = f(x)$ at the point $P(x_{0}, f(x_{0}))$ . If we interpret the difference quotient as an average rate of change (Section 2.1), then the derivative gives the function's instantaneous rate of change with respect to $x$ at the point $x = x_0$ . We study this interpretation in Section 3.4. 
 
-![[dbca60669f32b870fc1298a8355ec9946741c5e808575cc840adc4c996b8c638.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dbca60669f32b870fc1298a8355ec9946741c5e808575cc840adc4c996b8c638.jpg)
 
 
 **EXAMPLE 2** In Examples 1 and 2 in Section 2.1, we studied the speed of a rock falling freely from rest near the surface of the earth. We knew that the rock fell $y = 4.9t^2$ meters during the first $t$ seconds, and we used a sequence of average rates over increasingly short intervals to estimate the rock's speed at the instant $t = 1$ . What was the rock's exact speed at this time? 
@@ -117,7 +117,7 @@ $$
 
 Our original estimate of 9.8 m/s in Section 2.1 was right. 
 
-## Summary
+### Summary
 
 We have been discussing slopes of curves, lines tangent to a curve, the rate of change of a function, and the derivative of a function at a point. All of these ideas are based on the same limit. 
 
@@ -137,9 +137,9 @@ $$
 
 In the next sections, we allow the point $x_0$ to vary across the domain of the function $f$ . 
 
-## EXERCISES 3.1
+### EXERCISES 3.1
 
-## Slopes and Tangent Lines
+#### Slopes and Tangent Lines
 
 In Exercises 1–4, use the grid and a straight edge to make a rough estimate of the slope of the curve (in y-units per x-unit) at the points $P_{1}$ and $P_{2}$ . 
 
@@ -147,14 +147,14 @@ In Exercises 1–4, use the grid and a straight edge to make a rough estimate of
 1.
 
 
-![[049e54e8e27da98f926726d19a2572964ecca28f72f3c4f5c469ae41b3767e78.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/049e54e8e27da98f926726d19a2572964ecca28f72f3c4f5c469ae41b3767e78.jpg)
 
 
 
 2.
 
 
-![[83e22a217ec1896f1eb1e4df5da925c16a2d0bb76183162066ae73455ce21ca1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/83e22a217ec1896f1eb1e4df5da925c16a2d0bb76183162066ae73455ce21ca1.jpg)
 
 
 
@@ -183,9 +183,7 @@ In Exercises 11–18, find the slope of the function's graph at the given point.
 
 11. $f(x) = x^{2} + 1,\quad (2,5)$ 
 
-$$
-f (x) = x - 2 x ^ {2}, \quad (1, - 1)
-$$
+12. $f (x) = x - 2 x ^ {2}, \quad (1, - 1)$
 
 13. $g(x) = \frac{x}{x - 2}, (3,3)$ 
 
@@ -201,17 +199,19 @@ $$
 
 In Exercises 19–22, find the slope of the curve at the point indicated. 
 
-19. $y = 5x - 3x^{2}, x = 1$ 20. $y = x^{3} - 2x + 7, x = -2$ 
+19. $y = 5x - 3x^{2}, x = 1$
+
+20. $y = x^{3} - 2x + 7, x = -2$
 
 21. $y = \frac{1}{x - 1}, \quad x = 3$ 
 
 22. $y = \frac{x - 1}{x + 1}, \quad x = 0$ 
 
-## Interpreting Derivative Values
+#### Interpreting Derivative Values
 
 23. Growth of yeast cells In a controlled laboratory experiment, yeast cells are grown in an automated cell culture system that counts the number P of cells present at hourly intervals. The number after t hours is shown in the accompanying figure. 
 
-![[ebc1d745543148e02cf6898109617e0e73c7a2e2b7efa179454d137cab201196.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ebc1d745543148e02cf6898109617e0e73c7a2e2b7efa179454d137cab201196.jpg)
 
 
 a. Explain what is meant by the derivative $P'(5)$ . What are its units? 
@@ -222,7 +222,7 @@ c. The quadratic curve capturing the trend of the data points (see Appendix A.2)
 
 24. Effectiveness of a drug On a scale from 0 to 1, the effectiveness E of a pain-killing drug t hours after entering the bloodstream is displayed in the accompanying figure. 
 
-![[d721d29f3465cde12c69a158e3d991083ea2b4d1d458ea1acaf04ab5f402d4eb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d721d29f3465cde12c69a158e3d991083ea2b4d1d458ea1acaf04ab5f402d4eb.jpg)
 
 
 a. At what times does the effectiveness appear to be increasing? What is true about the derivative at those times? 
@@ -231,15 +231,13 @@ b. At what time would you estimate that the drug reaches its maximum effectivene
 
 At what points do the graphs of the functions in Exercises 25 and 26 have horizontal tangent lines? 
 
-$$
-2 5. f (x) = x ^ {2} + 4 x - 1 \quad 2 6. g (x) = x ^ {3} - 3 x
-$$
+25. $f (x) = x ^ {2} + 4 x - 1 \quad 2 6. g (x) = x ^ {3} - 3 x$
 
 27. Find equations of all lines having slope -1 that are tangent to the curve $y = 1/(x - 1)$ . 
 
 28. Find an equation of the straight line having slope 1/4 that is tangent to the curve $y = \sqrt{x}$ . 
 
-## Rates of Change
+#### Rates of Change
 
 29. Object dropped from a tower An object is dropped from the top of a 100-m-high tower. Its height above ground after $t$ s is $100 - 4.9t^2$ m. How fast is it falling 2 s after it is dropped? 
 
@@ -253,7 +251,7 @@ $$
 
 34. Find the slope of the tangent line to the curve $y = 1/\sqrt{x}$ at the point where x = 4. 
 
-## Testing for Tangent Lines
+#### Testing for Tangent Lines
 
 35. Does the graph of 
 
@@ -271,7 +269,7 @@ $$
 
 have a tangent line at the origin? Give reasons for your answer. 
 
-## Vertical Tangent Lines
+#### Vertical Tangent Lines
 
 We say that a continuous curve $y = f(x)$ has a vertical tangent line at the point where $x = x_{0}$ if the limit of the difference quotient is $\infty$ or $-\infty$ . For example, $y = x^{1/3}$ has a vertical tangent line at x = 0 (see accompanying figure): 
 
@@ -279,7 +277,7 @@ $$
 \begin{array}{c} \lim _ {h \to 0} \frac {f (0 + h) - f (0)}{h} = \lim _ {h \to 0} \frac {h ^ {1 / 3} - 0}{h} \\ = \lim _ {h \to 0} \frac {1}{h ^ {2 / 3}} = \infty . \end{array}
 $$
 
-![[7b241f1c8cd5b33cfba2c7e70500476e9f6d8c2c3c9dd97cc741445d926fbfdc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7b241f1c8cd5b33cfba2c7e70500476e9f6d8c2c3c9dd97cc741445d926fbfdc.jpg)
 
 
 
@@ -294,7 +292,7 @@ $$
 
 does not exist, because the limit is $\infty$ from the right and $-\infty$ from the left. 
 
-![[2be575517f85aacddc7ef26c699dcd566e82a9c2b2bfa9dfc87cc256780768f4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2be575517f85aacddc7ef26c699dcd566e82a9c2b2bfa9dfc87cc256780768f4.jpg)
 
 
 
@@ -341,11 +339,9 @@ b. Confirm your findings in part (a) with limit calculations. But before you do,
 
 47. $y = \left\{ \begin{array}{ll} - \sqrt{|x|}, & x\leq 0\\ \sqrt{x}, & x > 0 \end{array} \right.$ 
 
-$$
-4 8. y = \sqrt {| 4 - x |}
-$$
+48. $y = \sqrt {| 4 - x |}$
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 Use a CAS to perform the following steps for the functions in Exercises 49–52: 
 
@@ -367,9 +363,7 @@ $$
 f (x) = x ^ {3} + 2 x, \quad x _ {0} = 0
 $$
 
-$$
-\mathbf {5 0 .} f (x) = x + \frac {5}{x}, x _ {0} = 1
-$$
+50. $f (x) = x + \frac {5}{x}, x _ {0} = 1$
 
 51. $f(x) = x + \sin(2x)$ , $x_{0} = \pi/2$ 
 
@@ -401,7 +395,7 @@ We now investigate the derivative as a function derived from f by considering th
 >
 We use the notation $f'(x)$ in the definition, rather than $f'(x_{0})$ as before, to emphasize that $f'$ is a function of the independent variable x with respect to which the derivative function $f'(x)$ is being defined. The domain of $f'$ is the set of points in the domain of f for 
 
-![[2a8fac97ccb4649e1e462b56d2a7b73fcf60ed8c3c6494c285357230109846b4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2a8fac97ccb4649e1e462b56d2a7b73fcf60ed8c3c6494c285357230109846b4.jpg)
 
 
 $$
@@ -426,7 +420,7 @@ $$
 f ^ {\prime} (x) = \lim _ {z \rightarrow x} \frac {f (z) - f (x)}{z - x}
 $$
 
-## Calculating Derivatives from the Definition
+### Calculating Derivatives from the Definition
 
 The process of calculating a derivative is called differentiation. To emphasize the idea that differentiation is an operation performed on a function $y = f(x)$ , we use the notation 
 
@@ -450,7 +444,7 @@ $$
 \begin{array}{r l r} f (x) & = \frac {x}{x - 1} \text {   and   } f (x + h) = \frac {(x + h)}{(x + h) - 1}, \text { so } \\ f ^ {\prime} (x) & = \lim _ {h \to 0} \frac {f (x + h) - f (x)}{h} & \text { Definition } \\ & = \lim _ {h \to 0} \frac {\frac {x + h}{x + h - 1} - \frac {x}{x - 1}}{h} & \text { Substitute. } \\ & = \lim _ {h \to 0} \frac {1}{h} \cdot \frac {(x + h) (x - 1) - x (x + h - 1)}{(x + h - 1) (x - 1)} & \frac {a}{b} - \frac {c}{d} = \frac {a d - c b}{b d} \\ & = \lim _ {h \to 0} \frac {1}{h} \cdot \frac {- h}{(x + h - 1) (x - 1)} & \text { Simplify. } \\ & = \lim _ {h \to 0} \frac {- 1}{(x + h - 1) (x - 1)} = \frac {- 1}{(x - 1) ^ {2}}. & \text { Cancel   } h \neq 0 \text {   and   evaluate. } \end{array}
 $$
 
-## **EXAMPLE 2**
+**EXAMPLE 2**
 
 (a) Find the derivative of $f(x) = \sqrt{x}$ for x > 0. 
 
@@ -462,21 +456,21 @@ $$
 {\frac {d}{d x}} {\sqrt {x}} = {\frac {1}{2 {\sqrt {x}}}}, x > 0
 $$
 
-![[ca420bd00d10054af291490c12bff66032855f0333b06d66147a34640f35d7bb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ca420bd00d10054af291490c12bff66032855f0333b06d66147a34640f35d7bb.jpg)
 
 
 
 FIGURE 3.5 The curve $y = \sqrt{x}$ and its tangent line at (4, 2). The tangent line's slope is found by evaluating the derivative at $x = 4$ (Example 2).
 
 
-![[d18f41dbe6596d769d0e2e35e7788a4dff7b719c76dcb8974d9d115b6b4a616c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d18f41dbe6596d769d0e2e35e7788a4dff7b719c76dcb8974d9d115b6b4a616c.jpg)
 
 
 
 (a)
 
 
-![[0289e1585e4f8a9b9c2286baff426bb903bca6597abc26a3e484b7e4610901c7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0289e1585e4f8a9b9c2286baff426bb903bca6597abc26a3e484b7e4610901c7.jpg)
 
 
 
@@ -487,7 +481,7 @@ FIGURE 3.5 The curve $y = \sqrt{x}$ and its tangent line at (4, 2). The tangent 
 FIGURE 3.6 We made the graph of $y = f'(x)$ in (b) by plotting slopes from the graph of $y = f(x)$ in (a). The vertical coordinate of $B'$ is the slope at $B$ , and so on. The slope at $E$ is approximately $8/4 = 2$ . In (b) we see that the rate of change of $f$ is negative for $x$ between $A'$ and $D'$ ; the rate of change is positive for $x$ to the right of $D'$ .
 
 
-## **Solution**
+**Solution**
 
 (a) We use the alternative formula to calculate $f'$ : 
 
@@ -507,7 +501,7 @@ $$
 \begin{array}{l} y = 2 + \frac {1}{4} (x - 4) \\ y = \frac {1}{4} x + 1. \end{array}
 $$
 
-## Notation
+### Notation
 
 There are many ways to denote the derivative of a function $y = f(x)$ , where the independent variable is x and the dependent variable is y. Some common alternative notations for the derivative are 
 
@@ -529,7 +523,7 @@ $$
 f ^ {\prime} (4) = \left. \frac {d}{d x} \sqrt {x} \right| _ {x = 4} = \left. \frac {1}{2 \sqrt {x}} \right| _ {x = 4} = \frac {1}{2 \sqrt {4}} = \frac {1}{4}.
 $$
 
-## Graphing the Derivative
+### Graphing the Derivative
 
 We can often make an approximate plot of the derivative of $y = f(x)$ by estimating the slopes on the graph of f. That is, we plot the points $(x, f'(x))$ in the xy-plane and connect them with a curve that represents $y = f'(x)$ . 
 
@@ -537,14 +531,14 @@ We can often make an approximate plot of the derivative of $y = f(x)$ by estimat
 
 **Solution** We sketch the tangent lines to the graph of f at frequent intervals and use their slopes to estimate the values of $f'(x)$ at these points. We plot the corresponding $(x, f'(x))$ pairs and connect them with a curve as sketched in Figure 3.6b. 
 
-![[8206922ba7176718d6adba87090ca3fc019f7c80ea7a24200bc2d7574e9a680e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8206922ba7176718d6adba87090ca3fc019f7c80ea7a24200bc2d7574e9a680e.jpg)
 
 
 
 FIGURE 3.7 Derivatives at endpoints of a closed interval are one-sided limits.
 
 
-![[8d2c8c3ef794f40d0202ff7495981ad67a23ba4c45c08ad31dc162b0c954e6a3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8d2c8c3ef794f40d0202ff7495981ad67a23ba4c45c08ad31dc162b0c954e6a3.jpg)
 
 
 What can we learn from the graph of $y = f'(x)$ ? At a glance we can see 
@@ -559,7 +553,7 @@ FIGURE 3.8 The function $y = |x|$ is not differentiable at the origin where the 
 
 3. where the rate of change itself is increasing or decreasing. 
 
-## Differentiability on an Interval; One-Sided Derivatives
+### Differentiability on an Interval; One-Sided Derivatives
 
 A function $y = f(x)$ is differentiable on an open interval (finite or infinite) if it has a derivative at each point of the interval. It is differentiable on a closed interval $[a, b]$ if it is differentiable on the interior $(a, b)$ and if the limits 
 
@@ -595,7 +589,7 @@ $$
 \begin{array}{l l} \text { Left - hand   derivative   of } | x | \text { at   zero } & = \lim _ {h \to 0 ^ {-}} \frac {| 0 + h | - | 0 |}{h} = \lim _ {h \to 0 ^ {-}} \frac {| h |}{h} \\ & = \lim _ {h \to 0 ^ {-}} \frac {- h}{h} \quad | h | = - h \text { when } h <   0 \\ & = \lim _ {h \to 0 ^ {-}} - 1 = - 1. \end{array}
 $$
 
-![[312415d8e30a60464654423a7c999f3a51ad81ca4ebf70b657257fba39c7af7e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/312415d8e30a60464654423a7c999f3a51ad81ca4ebf70b657257fba39c7af7e.jpg)
 
 
 
@@ -616,36 +610,36 @@ $$
 
 Since the (right-hand) limit is not finite, there is no derivative at x = 0. Since the slopes of the secant lines joining the origin to the points $(h, \sqrt{h})$ on a graph of $y = \sqrt{x}$ approach $\infty$ , the graph has a vertical tangent line at the origin. (See Figure 3.9 and Exercises 37 and 38 in Section 3.1.) 
 
-## When Does a Function Not Have a Derivative at a Point?
+### When Does a Function Not Have a Derivative at a Point?
 
 A function has a derivative at a point $x_{0}$ if the slopes of the secant lines through $P(x_{0}, f(x_{0}))$ and a nearby point Q on the graph approach a finite limit as Q approaches P. Thus differentiability is a “smoothness” condition on the graph of f. A function can fail to have a derivative at a point for many reasons, including the existence of points where the graph has 
 
-![[336c9aa82de4a9ce6b7584352527ff8e828c189173a07ac0b63bf24c7a932599.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/336c9aa82de4a9ce6b7584352527ff8e828c189173a07ac0b63bf24c7a932599.jpg)
 
 
 1. a corner, where the one-sided derivatives differ 
 
-![[76ee78acbb8a5f1482e3ea7d5c12425141d637f87f37b1c9806d1cf1a90c4570.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/76ee78acbb8a5f1482e3ea7d5c12425141d637f87f37b1c9806d1cf1a90c4570.jpg)
 
 
-![[02536ce454ef8f9dd20c6d8650c9a6940110c3848ca6e49e2037bc674d89da65.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/02536ce454ef8f9dd20c6d8650c9a6940110c3848ca6e49e2037bc674d89da65.jpg)
 
 
 2. a cusp, where the slope of PQ approaches $\infty$ from one side and $-\infty$ from the other 
 
 3. a vertical tangent line, where the slope of PQ approaches $\infty$ from both sides or approaches $-\infty$ from both sides (here, it approaches $-\infty$ ) 
 
-![[04f70d3f846c397d78672701f3de8e534a970a1610f09851275cf81347057841.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/04f70d3f846c397d78672701f3de8e534a970a1610f09851275cf81347057841.jpg)
 
 
-![[41c1e737150cb3225ebf210d8af4597e51df8d70c28ff043fcbd8b7de4c8c3b6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/41c1e737150cb3225ebf210d8af4597e51df8d70c28ff043fcbd8b7de4c8c3b6.jpg)
 
 
 
 4. a discontinuity (two examples shown)
 
 
-![[3a6a4a1322234e48f055135f4708346f002225b84f7f7137f69466daea119bff.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3a6a4a1322234e48f055135f4708346f002225b84f7f7137f69466daea119bff.jpg)
 
 
 
@@ -654,7 +648,7 @@ A function has a derivative at a point $x_{0}$ if the slopes of the secant lines
 
 The last example shows a function that is continuous at x = 0, but whose graph oscillates wildly up and down as it approaches x = 0. The slopes of the secant lines through 0 oscillate between -1 and 1 as x approaches 0, and do not have a limit at x = 0. 
 
-## Differentiable Functions Are Continuous
+### Differentiable Functions Are Continuous
 
 A function is continuous at every point where it has a derivative. 
 
@@ -678,29 +672,21 @@ Theorem 1 says that if a function has a discontinuity at a point (for instance, 
 
 Caution The converse of Theorem 1 is false. A function need not have a derivative at a point where it is continuous, as we saw with the absolute value function in Example 4. 
 
-## EXERCISES 3.2
+### EXERCISES 3.2
 
-## Finding Derivative Functions and Values
+#### Finding Derivative Functions and Values
 
 Using the definition, calculate the derivatives of the functions in Exercises 1–6. Then find the values of the derivatives as specified. 
 
 $$
 \mathbf {1}. f (x) = 4 - x ^ {2}; \quad f ^ {\prime} (- 3), f ^ {\prime} (0), f ^ {\prime} (1)
-$$
-
-2. $F(x) = (x - 1)^{2} + 1;$ $F'(-1), F'(0), F'(2)$ 
-
-$$
+2. $$F(x) = (x - 1)^{2} + 1;$ $F'(-1), F'(0), F'(2)$$
 g (t) = \frac {1}{t ^ {2}}; \quad g ^ {\prime} (- 1), g ^ {\prime} (2), g ^ {\prime} (\sqrt {3})
 $$
 
 $$
 k (z) = \frac {1 - z}{2 z}; k ^ {\prime} (- 1), k ^ {\prime} (1), k ^ {\prime} (\sqrt {2})
-$$
-
-5. $p(\theta) = \sqrt{3\theta}; \quad p'(1), p'(3), p'(2/3)$ 
-
-$$
+5. $$p(\theta) = \sqrt{3\theta}; \quad p'(1), p'(3), p'(2/3)$$
 r (s) = \sqrt {2 s + 1}; r ^ {\prime} (0), r ^ {\prime} (1), r ^ {\prime} (1 / 2)
 $$
 
@@ -708,9 +694,7 @@ In Exercises 7–12, find the indicated derivatives.
 
 7. $\frac{dy}{dx}$ if $y = 2x^{3}$ 
 
-$$
-\frac {d r}{d s} \quad \text { if } \quad r = s ^ {3} - 2 s ^ {2} + 3
-$$
+8. $\frac {d r}{d s} \quad \text { if } \quad r = s ^ {3} - 2 s ^ {2} + 3$
 
 9. $\frac{ds}{dt}$ if $s = \frac{t}{2t + 1}$ 
 
@@ -720,35 +704,33 @@ $$
 
 12. $\frac{dz}{dw}$ if $z = \frac{1}{\sqrt{w^2 - 1}}$ 
 
-## Slopes and Tangent Lines
+#### Slopes and Tangent Lines
 
 In Exercises 13–16, differentiate the functions and find the slope of the tangent line at the given value of the independent variable. 
 
-$$
-\mathbf {1 3 .} f (x) = x + \frac {9}{x}, x = - 3 \quad \mathbf {1 4 .} k (x) = \frac {1}{2 + x}, x = 2
-$$
+13. $f (x) = x + \frac {9}{x}, x = - 3$
 
-$$
-\mathbf {1 5 .} s = t ^ {3} - t ^ {2}, \quad t = - 1 \quad \mathbf {1 6 .} y = \frac {x + 3}{1 - x}, \quad x = - 2
-$$
+14. $k (x) = \frac {1}{2 + x}, x = 2$
+
+15. $s = t ^ {3} - t ^ {2}, \quad t = - 1$
+
+16. $y = \frac {x + 3}{1 - x}, \quad x = - 2$
 
 In Exercises 17–18, differentiate the functions. Then find an equation of the tangent line at the indicated point on the graph of the function. 
 
-$$
-1 7. y = f (x) = \frac {8}{\sqrt {x - 2}}, (x, y) = (6, 4)
-$$
+17. $y = f (x) = \frac {8}{\sqrt {x - 2}}, (x, y) = (6, 4)$
 
-$$
-\mathbf {1 8 .} w = g (z) = 1 + \sqrt {4 - z}, (z, w) = (3, 2)
-$$
+18. $w = g (z) = 1 + \sqrt {4 - z}, (z, w) = (3, 2)$
 
 In Exercises 19–22, find the values of the derivatives. 
 
-$$
-\mathbf {1 9 .} \left. \frac {d s}{d t} \right| _ {t = - 1} \quad \text { if } \quad s = 1 - 3 t ^ {2} \quad \mathbf {2 0 .} \left. \frac {d y}{d x} \right| _ {x = \sqrt {3}} \quad \text { if } \quad y = 1 - \frac {1}{x}
-$$
+19. $\left. \frac {d s}{d t} \right| _ {t = - 1} \quad \text { if } \quad s = 1 - 3 t ^ {2}$
 
-21. $\frac{dr}{d\theta}\bigg|_{\theta = 0}$ if $r = \frac{2}{\sqrt{4 - \theta}}$ 22. $\frac{dw}{dz}\bigg|_{z = 4}$ if $w = z + \sqrt{z}$ 
+20. $\left. \frac {d y}{d x} \right| _ {x = \sqrt {3}} \quad \text { if } \quad y = 1 - \frac {1}{x}$
+
+21. $\frac{dr}{d\theta}\bigg|_{\theta = 0}$ if $r = \frac{2}{\sqrt{4 - \theta}}$
+
+22. $\frac{dw}{dz}\bigg|_{z = 4}$ if $w = z + \sqrt{z}$
 
 Using the Alternative Formula for Derivatives Use the formula 
 
@@ -760,22 +742,20 @@ to find the derivative of the functions in Exercises 23-26.
 
 23. $f(x) = \frac{1}{x + 2}$ 
 
-$$
-2 4. f (x) = x ^ {2} - 3 x + 4
-$$
+24. $f (x) = x ^ {2} - 3 x + 4$
 
 25. $g(x) = \frac{x}{x - 1}$ 
 
 26. $g(x) = 1 + \sqrt{x}$ 
 
-## Graphs
+#### Graphs
 
 Match the functions graphed in Exercises 27–30 with the derivatives graphed in the accompanying figures (a)–(d). 
 
-![[f3507e592470390657f96917ad2caea303a6d295205a4106a6cdebc38a43675c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f3507e592470390657f96917ad2caea303a6d295205a4106a6cdebc38a43675c.jpg)
 
 
-![[22686fd13b30d1421f71fe946501263c6067caa3dea65cdfa6741f60b979f47c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/22686fd13b30d1421f71fe946501263c6067caa3dea65cdfa6741f60b979f47c.jpg)
 
 
 
@@ -786,14 +766,14 @@ Match the functions graphed in Exercises 27–30 with the derivatives graphed in
 (b)
 
 
-![[289401cf0e4f8681e751657101776a955683f5c447259735c7bf5711677167f3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/289401cf0e4f8681e751657101776a955683f5c447259735c7bf5711677167f3.jpg)
 
 
 
 (c)
 
 
-![[41b380082a914498357882070afa98f159888a4b24bd8ac06ecb60b720aa8b29.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/41b380082a914498357882070afa98f159888a4b24bd8ac06ecb60b720aa8b29.jpg)
 
 
 
@@ -804,33 +784,33 @@ Match the functions graphed in Exercises 27–30 with the derivatives graphed in
 27.
 
 
-![[e127ad7138492ea27cf3dff9cdd71f97e8ebf23ea27c90bc9dbdb9a881f0330f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e127ad7138492ea27cf3dff9cdd71f97e8ebf23ea27c90bc9dbdb9a881f0330f.jpg)
 
 
 
 28.
 
 
-![[f1a918cf3a2c973b1ac3c0a7949e5695d46325f2a7dc4cb7b2fca99492a0da47.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f1a918cf3a2c973b1ac3c0a7949e5695d46325f2a7dc4cb7b2fca99492a0da47.jpg)
 
 
 
 29.
 
 
-![[4a1f47ab60cad98e43cdee3d8e7593b8e82971d6069e541c2c942e80918fd999.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4a1f47ab60cad98e43cdee3d8e7593b8e82971d6069e541c2c942e80918fd999.jpg)
 
 
 
 30.
 
 
-![[19143bebfa94bdbc1f35bf0632019b918e57579655c092b37c7bdb754856c928.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/19143bebfa94bdbc1f35bf0632019b918e57579655c092b37c7bdb754856c928.jpg)
 
 
 31. Consider the function $f$ graphed here. The domain of $f$ is the interval $[-4, 6]$ and its graph is made of line segments joined end to end. 
 
-![[b93e31fedd7715bdded38217a51d1ae48889824f016f5ef2d92fe0c36ead2393.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b93e31fedd7715bdded38217a51d1ae48889824f016f5ef2d92fe0c36ead2393.jpg)
 
 
 a. At which points of the domain interval is $f'$ not defined? Give reasons for your answer. 
@@ -847,30 +827,28 @@ ii) The graph starts at the point $(-2,3)$ .
 
 iii) The derivative of $f$ is the step function in the figure shown here. 
 
-![[ff9d1de24997be367f7c1725230c6c69a9ddb2be99e55910c37ac97e32611b77.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ff9d1de24997be367f7c1725230c6c69a9ddb2be99e55910c37ac97e32611b77.jpg)
 
 
 b. Repeat part (a), assuming that the graph starts at $(-2,0)$ instead of $(-2,3)$ . 
 
 33. Growth in the economy The graph in the accompanying figure shows the average annual percentage change $y = f(t)$ in the U.S. gross national product (GNP) for the years 2005–2011. Graph dy/dt (where defined). 
 
-![[b1faf4e0f89e61d476c12c74e2d547ed1b9d123a0fb3c70e54b397a1b7c45fe5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b1faf4e0f89e61d476c12c74e2d547ed1b9d123a0fb3c70e54b397a1b7c45fe5.jpg)
 
 
 34. Fruit flies (Continuation of Example 4, Section 2.1.) Populations starting out in closed environments grow slowly at first, when there are relatively few members, then more rapidly as the number of reproducing individuals increases and resources are still abundant, then slowly again as the population reaches the carrying capacity of the environment. 
 
-43. 
-
 a. Use the graphical technique of Example 3 to graph the derivative of the fruit fly population as a function of time (in days). The graph of the population is reproduced here. 
 
-![[165180b0b18afdfdf7d4c7dd7715939547afab23b9002b1e478dcec655ea921d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/165180b0b18afdfdf7d4c7dd7715939547afab23b9002b1e478dcec655ea921d.jpg)
 
 
 b. During what days does the population seem to be increasing fastest? Slowest? 
 
 35. Temperature The given graph shows the temperature $T$ in $^{\circ}\mathrm{C}$ between 6 A.M. and 6 P.M. 
 
-![[dbc85582fab935f83014fcc805a000a472b79fc4146d0d6909003a3a1851bdfd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dbc85582fab935f83014fcc805a000a472b79fc4146d0d6909003a3a1851bdfd.jpg)
 
 
 a. Estimate the rate of temperature change at the times
@@ -882,7 +860,7 @@ c. Use the graphical technique of Example 3 to graph the derivative of temperatu
 
 36. Average single-family home prices P (in thousands of dollars) in Sacramento, California, are shown in the accompanying figure from the beginning of 2006 through the end of 2015. 
 
-![[96e4a68969e768715d7128c1b82eb83cda144ceeaef8bc21b50623f684aefb59.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/96e4a68969e768715d7128c1b82eb83cda144ceeaef8bc21b50623f684aefb59.jpg)
 
 
 a. During what years did home prices decrease? increase?
@@ -898,15 +876,15 @@ e. During what year did home prices rise most rapidly and what is an estimate of
 
 f. Use the graphical technique of Example 3 to graph the derivative of home price P versus time t. 
 
-## One-Sided Derivatives
+#### One-Sided Derivatives
 
 Compute the right-hand and left-hand derivatives as limits to show that the functions in Exercises 37–40 are not differentiable at the point P.
 37. 38. 
 
-![[3da11a219708d2b4fab596281123a441db779bee29ead8535736b54fc6c15dbf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3da11a219708d2b4fab596281123a441db779bee29ead8535736b54fc6c15dbf.jpg)
 
 
-![[5955f994a26802c8a83d6c3245a344ed74d5b1108f63904c3b867425a68767bc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5955f994a26802c8a83d6c3245a344ed74d5b1108f63904c3b867425a68767bc.jpg)
 
 
 39. 
@@ -915,10 +893,10 @@ Compute the right-hand and left-hand derivatives as limits to show that the func
 40.
 
 
-![[70c802a2c0a8066da3232c62c3effcc8aabc377436ae6dbdd54b5335cf26bd9d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/70c802a2c0a8066da3232c62c3effcc8aabc377436ae6dbdd54b5335cf26bd9d.jpg)
 
 
-![[e57dd7a8dc4f10c9eb5fee10952110485be90e98cc1ccea479e4a84a11cd8e9d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e57dd7a8dc4f10c9eb5fee10952110485be90e98cc1ccea479e4a84a11cd8e9d.jpg)
 
 
 In Exercises 41–44, determine whether the piecewise-defined function is differentiable at x = 0. 
@@ -927,13 +905,11 @@ In Exercises 41–44, determine whether the piecewise-defined function is differ
 
 42. $g(x) = \begin{cases} x^{2/3}, & x \geq 0 \\ x^{1/3}, & x < 0 \end{cases}$ 
 
-$$
-f (x) = \left\{ \begin{array}{l l} 2 x + \tan x, & x \geq 0 \\ x ^ {2}, & x <   0 \end{array} \right.
-$$
+43. $f (x) = \left\{ \begin{array}{l l} 2 x + \tan x, & x \geq 0 \\ x ^ {2}, & x <   0 \end{array} \right.$
 
 44. $g(x) = \left\{ \begin{array}{ll}2x - x^3 -1, & x\geq 0\\ x - \frac{1}{x + 1}, & x <   0 \end{array} \right.$ 
 
-## Differentiability and Continuity on an Interval
+#### Differentiability and Continuity on an Interval
 
 Each figure in Exercises 45–50 shows the graph of a function over a closed interval D. At what domain points does the function appear to be 
 
@@ -953,38 +929,38 @@ Give reasons for your answers.
 46.
 
 
-![[48cb8bd76dc42282238bdd7f29db27a241b2be65a6b14519b41ff7fff88aa504.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/48cb8bd76dc42282238bdd7f29db27a241b2be65a6b14519b41ff7fff88aa504.jpg)
 
 
-![[da2e90fc395cc142b875765077013065545ef588290ad41bd2edb6db67ede9b6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/da2e90fc395cc142b875765077013065545ef588290ad41bd2edb6db67ede9b6.jpg)
 
 
 
 47.
 
 
-![[26b71d06d8d7342f35764aee2077a52ef987c349c76f90082d1c81a74e5ee22f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/26b71d06d8d7342f35764aee2077a52ef987c349c76f90082d1c81a74e5ee22f.jpg)
 
 
 
 48.
 
 
-![[914e1c33ec48ee81e9e67b0a908058456385bd28442c15292a12ab1bef58ef3b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/914e1c33ec48ee81e9e67b0a908058456385bd28442c15292a12ab1bef58ef3b.jpg)
 
 
 
 49.
 
 
-![[c05a01a8f62e47721325fc6a6db5a9e9e842398a9c38362619191be9cedfcf91.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c05a01a8f62e47721325fc6a6db5a9e9e842398a9c38362619191be9cedfcf91.jpg)
 
 
 
 50.
 
 
-![[99561b72a4d2acb470b4773edd149032c8cf49f26c04111e007b208fcc6b3cde.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/99561b72a4d2acb470b4773edd149032c8cf49f26c04111e007b208fcc6b3cde.jpg)
 
 
 Theory and Examples 
@@ -1053,7 +1029,7 @@ $$
 
 Graph this sum. Zoom in several times. How wiggly and bumpy is this graph? Specify a viewing window in which the displayed portion of the graph is smooth. 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 Use a CAS to perform the following steps for the functions in Exercises 65–70. 
 
@@ -1071,17 +1047,13 @@ f. Graph the formula obtained in part (c). What does it mean when its values are
 
 65. $f(x) = x^{3} + x^{2} - x, x_{0} = 1$ 
 
-$$
-\mathbf {6 6 .} f (x) = x ^ {1 / 3} + x ^ {2 / 3}, \quad x _ {0} = 1
-$$
+66. $f (x) = x ^ {1 / 3} + x ^ {2 / 3}, \quad x _ {0} = 1$
 
 $$
 f (x) = \frac {x - 1}{3 x ^ {2} + 1}, \quad x _ {0} = - 1
 $$
 
-$$
-\textbf {6 7 .} f (x) = \frac {4 x}{x ^ {2} + 1}, x _ {0} = 2
-$$
+67. $f (x) = \frac {4 x}{x ^ {2} + 1}, x _ {0} = 2$
 
 $$
 \text { 69.   } f (x) = \sin 2 x, \quad x _ {0} = \pi / 2
@@ -1095,12 +1067,12 @@ $$
 
 This section introduces several rules that allow us to differentiate constant functions, power functions, polynomials, exponential functions, rational functions, and certain combinations of them, simply and directly, without having to take limits each time. 
 
-![[6c9ae8d03fefe1ed7d9e51a9171d1478b332233a2e78853f45a38bc11122f366.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6c9ae8d03fefe1ed7d9e51a9171d1478b332233a2e78853f45a38bc11122f366.jpg)
 
 
 A basic rule of differentiation is that the derivative of every constant function is zero. 
 
-## Powers, Multiples, Sums, and Differences
+### Powers, Multiples, Sums, and Differences
 
 
 FIGURE 3.10 The rule $(d/dx)(c) = 0$ is another way to say that the values of constant functions never change and that the slope of a horizontal line is zero at every point.
@@ -1144,7 +1116,7 @@ $$
 {\frac {d}{d x}} x ^ {n} = n x ^ {n - 1}.
 $$
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
 Courant obtained a PhD from Göttingen in 1910. He founded Göttingen's Mathematics Institute and was its director from 1920 until 1933. His research work focused on mathematical physics. 
 
@@ -1174,7 +1146,7 @@ $$
 
 for all $x$ where the powers $x^n$ and $x^{n-1}$ are defined. 
 
-## **EXAMPLE 1** Differentiate the following powers of x.
+**EXAMPLE 1** Differentiate the following powers of x.
 
 (a) $x^3$ (b) $x^{2 / 3}$ (c) $x^{\sqrt{2}}$ (d) $\frac{1}{x^4}$ (e) $x^{-4 / 3}$ (f) $\sqrt{x^{2 + \pi}}$ 
 
@@ -1222,18 +1194,18 @@ $$
 \begin{array}{l l} \frac {d}{d x} c u = \lim _ {h \to 0} \frac {c u (x + h) - c u (x)}{h} & \text { Derivative   definition } \\ & \text { with } f (x) = c u (x) \\ = c \lim _ {h \to 0} \frac {u (x + h) - u (x)}{h} & \text { Constant   Multiple   Rule   for   Limits } \\ = c \frac {d u}{d x} & u \text { is   differentiable. } \end{array}
 $$
 
-![[edc70cddbbbeccce1cbebf5cb278df96a095fff863d6df262f4f716a266af0c5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/edc70cddbbbeccce1cbebf5cb278df96a095fff863d6df262f4f716a266af0c5.jpg)
 
 
 
 FIGURE 3.11 The graphs of $y = x^2$ and $y = 3x^2$ . Tripling the $y$ -coordinate triples the slope (Example 2).
 
 
-## Denoting Functions by $u$ and $\upsilon$
+### Denoting Functions by $u$ and $\upsilon$
 
 The functions we are working with when we need a differentiation formula are likely to be denoted by letters like f and g. We do not want to use these same letters when stating general differentiation rules, so instead we use letters like u and v that are not likely to be already in use. 
 
-## **EXAMPLE 2**
+**EXAMPLE 2**
 
 (a) The derivative formula 
 
@@ -1243,7 +1215,7 @@ $$
 
 says that if we rescale the graph of $y = x^{2}$ by multiplying each y-coordinate by 3, then we multiply the slope at each point by 3 (Figure 3.11). 
 
-## (b) Negative of a function
+### (b) Negative of a function
 
 The derivative of the negative of a differentiable function $u$ is the negative of the function's derivative. The Constant Multiple Rule with $c = -1$ gives 
 
@@ -1253,7 +1225,7 @@ $$
 
 The next rule says that the derivative of the sum of two differentiable functions is the sum of their derivatives. 
 
-## Derivative Sum Rule
+### Derivative Sum Rule
 
 If u and v are differentiable functions of x, then their sum $u + v$ is differentiable at every point where u and v are both differentiable. At such points, 
 
@@ -1281,7 +1253,7 @@ $$
 
 A proof by mathematical induction for any finite number of terms is given in Appendix A.3. 
 
-![[24d081503e17762d3992bbf2ddc88f0d31ab68a185a7f848dc5942fa5017698b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/24d081503e17762d3992bbf2ddc88f0d31ab68a185a7f848dc5942fa5017698b.jpg)
 
 
 
@@ -1314,7 +1286,7 @@ $$
 
 The curve $y = x^{4} - 2x^{2} + 2$ has horizontal tangent lines at x = 0, 1, and -1. The corresponding points on the curve are $(0, 2)$ , $(1, 1)$ , and $(-1, 1)$ . See Figure 3.12. 
 
-## Derivatives of Exponential Functions
+### Derivatives of Exponential Functions
 
 We briefly reviewed exponential functions in Section 1.4. When we apply the definition of the derivative to $f(x) = a^{x}$ , we get 
 
@@ -1328,14 +1300,14 @@ $$
 f ^ {\prime} (0) = \lim _ {h \rightarrow 0} \frac {a ^ {h} - a ^ {0}}{h} = \lim _ {h \rightarrow 0} \frac {a ^ {h} - 1}{h} = L.
 $$
 
-![[fb2b7fc04cf021dcbfc59d7654b2165d0ab27be7d363d19d47374a4f97a2c6aa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fb2b7fc04cf021dcbfc59d7654b2165d0ab27be7d363d19d47374a4f97a2c6aa.jpg)
 
 
 
 FIGURE 3.13 The position of the curve $y = (a^{h} - 1)/h, a > 0$ , varies continuously with a. The limit L of y as $h \to 0$ changes with different values of a. The number for which L = 1 as $h \to 0$ is the number e between a = 2 and a = 3.
 
 
-![[faabffc60a5f279ec7d15a447ad3ed76adb231831f29487494c0f005322476a3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/faabffc60a5f279ec7d15a447ad3ed76adb231831f29487494c0f005322476a3.jpg)
 
 
 
@@ -1374,7 +1346,7 @@ $$
 \frac {d}{d x} (c \cdot e ^ {x}) = c \cdot \frac {d}{d x} (e ^ {x}) = c \cdot e ^ {x}.
 $$
 
-## Products and Quotients
+### Products and Quotients
 
 While the derivative of the sum of two functions is the sum of their derivatives, the derivative of the product of two functions is not the product of their derivatives. For instance, 
 
@@ -1384,7 +1356,7 @@ $$
 
 The derivative of a product of two functions is the sum of two products, as we now explain. 
 
-## Derivative Product Rule
+### Derivative Product Rule
 
 If u and v are differentiable at x, then so is their product uv, and 
 
@@ -1400,17 +1372,17 @@ $$
 
 **EXAMPLE 6** Find the derivative of (a) $y = \frac{1}{x}(x^{2} + e^{x})$ , (b) $y = e^{2x}$ . 
 
-## **Solution**
+**Solution**
 
 (a) We apply the Product Rule with $u = 1 / x$ and $v = x^2 + e^x$ : 
 
-## Picturing the Product Rule
+### Picturing the Product Rule
 
 Suppose $u(x)$ and $v(x)$ are positive and increase when x increases, and h > 0. 
 
 Division by $h$ gives 
 
-![[4782799da2a0c21981a60ece4dc47b1cd5279f10e158148d9dd8ce3dc0288ca4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4782799da2a0c21981a60ece4dc47b1cd5279f10e158148d9dd8ce3dc0288ca4.jpg)
 
 
 Then the change in the product uv is the difference in areas of the larger and smaller “boxes,” which is the sum of the areas of the upper and right-hand reddish-shaded rectangles. That is, 
@@ -1497,9 +1469,9 @@ Taking the limits in the numerator and denominator now gives the Quotient Rule. 
 
 The choice of which rules to use in solving a differentiation problem can make a difference in how much work you have to do. Here is an example. 
 
-## **EXAMPLE 8** Find the derivative of
+**EXAMPLE 8** Find the derivative of
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
 Maria Gaetana Agnesi (1718–1799) 
 
@@ -1539,7 +1511,7 @@ $$
 \begin{array}{r l} \frac {d y}{d x} & = - x ^ {- 2} - 3 (- 2) x ^ {- 3} + 2 (- 3) x ^ {- 4} \\ & = - \frac {1}{x ^ {2}} + \frac {6}{x ^ {3}} - \frac {6}{x ^ {4}}. \end{array}
 $$
 
-## Second- and Higher-Order Derivatives
+### Second- and Higher-Order Derivatives
 
 If $y = f(x)$ is a differentiable function, then its derivative $f'(x)$ is also a function. If $f'$ is also differentiable, then we can differentiate $f'$ to get a new function of x denoted by $f''$ . So $f'' = (f')'$ . The function $f''$ is called the second derivative of f because it is the derivative of the first derivative. It is written in several ways: 
 
@@ -1595,11 +1567,10 @@ $$
 
 All polynomial functions have derivatives of all orders. In this example, the fifth and later derivatives are all zero. 
 
-## EXERCISES
+### Exercises 3.3
 
-## 3.3
 
-## Derivative Calculations
+#### Derivative Calculations
 
 In Exercises 1–12, find the first and second derivatives. 
 
@@ -1629,9 +1600,13 @@ In Exercises 1–12, find the first and second derivatives.
 
 In Exercises 13–16, find $y'$ (a) by applying the Product Rule and (b) by multiplying the factors to produce a sum of simpler terms to differentiate. 
 
-13. $y = (3 - x^2)(x^3 - x + 1)$ 14. $y = (2x + 3)(5x^2 - 4x)$ 
+13. $y = (3 - x^2)(x^3 - x + 1)$
 
-15. $y = (x^2 + 1) \left( x + 5 + \frac{1}{x} \right)$ 16. $y = (1 + x^2)(x^{3/4} - x^{-3})$ 
+14. $y = (2x + 3)(5x^2 - 4x)$
+
+15. $y = (x^2 + 1) \left( x + 5 + \frac{1}{x} \right)$
+
+16. $y = (1 + x^2)(x^{3/4} - x^{-3})$
 
 Find the derivatives of the functions in Exercises 17–40. 
 
@@ -1685,9 +1660,13 @@ Find the derivatives of the functions in Exercises 17–40.
 
 Find the derivatives of all orders of the functions in Exercises 41-44. 
 
-41. $y = \frac{x^4}{2} -\frac{3}{2} x^2 -x$ 42. $y = \frac{x^5}{120}$ 
+41. $y = \frac{x^4}{2} -\frac{3}{2} x^2 -x$
 
-43. $y = (x - 1)(x + 2)(x + 3)$ 44. $y = (4x^{2} + 3)(2 - x)x$ 
+42. $y = \frac{x^5}{120}$
+
+43. $y = (x - 1)(x + 2)(x + 3)$
+
+44. $y = (4x^{2} + 3)(2 - x)x$
 
 Find the first and second derivatives of the functions in Exercises 45–52. 
 
@@ -1695,7 +1674,9 @@ Find the first and second derivatives of the functions in Exercises 45–52.
 
 46. $s = \frac{t^2 + 5t - 1}{t^2}$ 
 
-47. $r = \frac{(\theta - 1)(\theta^2 + \theta + 1)}{\theta^3}$ 48. $u = \frac{(x^2 + x)(x^2 - x + 1)}{x^4}$ 
+47. $r = \frac{(\theta - 1)(\theta^2 + \theta + 1)}{\theta^3}$
+
+48. $u = \frac{(x^2 + x)(x^2 - x + 1)}{x^4}$
 
 49. $w = \left(\frac{1 + 3z}{3z}\right)(3 - z)$ 
 
@@ -1737,12 +1718,12 @@ b. Smallest slope What is the smallest slope on the curve? At what point on the 
 
 57. Find the tangent lines to Newton's serpentine (graphed here) at the origin and the point $(1,2)$ . 
 
-![[0d75eb6326293714d517dea7c5070b45c315305673f46f9dc25a52f89eb53420.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0d75eb6326293714d517dea7c5070b45c315305673f46f9dc25a52f89eb53420.jpg)
 
 
 58. Find the tangent line to the Witch of Agnesi (graphed here) at the point $(2,1)$ . 
 
-![[27a1f3a94e0c1cb60b60a77a455865f5467d488a4c48edb072ef0719ee35f898.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/27a1f3a94e0c1cb60b60a77a455865f5467d488a4c48edb072ef0719ee35f898.jpg)
 
 
 59. Quadratic tangent to identity function The curve $y = ax^{2} + bx + c$ passes through the point (1, 2) and is tangent to the line y = x at the origin. Find a, b, and c. 
@@ -1757,7 +1738,7 @@ b. Smallest slope What is the smallest slope on the curve? At what point on the 
 
 64. Find all points $(x, y)$ on the graph of $f(x) = x^{2}$ with tangent lines passing through the point $(3, 8)$ . 
 
-![[3acaccfb0c446a0441f4ac1744ed7a22bf7d1de2d0a127683970336f39626b68.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3acaccfb0c446a0441f4ac1744ed7a22bf7d1de2d0a127683970336f39626b68.jpg)
 
 
 65. Assume that functions f and g are differentiable with $f(1) = 2$ , $f'(1) = -3$ , $g(1) = 4$ , and $g'(1) = -2$ . Find the equation of the line tangent to the graph of $F(x) = f(x)g(x)$ at x = 1. 
@@ -1776,27 +1757,21 @@ T b. Graph the curve and tangent line together. The tangent line intersects the 
 
 T c. Confirm your estimates of the coordinates of the second intersection point by solving the equations for the curve and tangent line simultaneously. 
 
-## Theory and Examples
+#### Theory and Examples
 
 For Exercises 69 and 70, evaluate each limit by first converting each to a derivative at a particular x-value. 
 
-69. $\lim_{x\to 1}\frac{x^{50} - 1}{x - 1}$ 70. $\lim_{x\to -1}\frac{x^{2 / 9} - 1}{x + 1}$ 
+69. $\lim_{x\to 1}\frac{x^{50} - 1}{x - 1}$
+
+70. $\lim_{x\to -1}\frac{x^{2 / 9} - 1}{x + 1}$
 
 71. Find the value of a that makes the following function differentiable for all x-values. 
 
 $$
 g (x) = \left\{ \begin{array}{l l} a x, & \text { if } x <   0 \\ x ^ {2} - 3 x, & \text { if } x \geq 0 \end{array} \right.
-$$
-
-72. Find the values of a and b that make the following function differentiable for all x-values. 
-
-$$
+72. $Find the values of a and b that make the following function differentiable for all x-values.$
 f (x) = \left\{ \begin{array}{l l} a x + b, & x > - 1 \\ b x ^ {2} - 3, & x \leq - 1 \end{array} \right.
-$$
-
-73. The general polynomial of degree $n$ has the form 
-
-$$
+73. $The general polynomial of degree $n$ has the form$
 P (x) = a _ {n} x ^ {n} + a _ {n - 1} x ^ {n - 1} + \dots + a _ {2} x ^ {2} + a _ {1} x + a _ {0},
 $$
 
@@ -1814,7 +1789,7 @@ Find $dR / dM$ . This derivative, as a function of $M$ , is called the sensitivi
 
 75. Suppose that the function v in the Derivative Product Rule has a constant value c. What does the Derivative Product Rule then say? What does this say about the Derivative Constant Multiple Rule? 
 
-## 76. The Reciprocal Rule
+76. The Reciprocal Rule
 
 a. The Reciprocal Rule says that at any point where the function $v(x)$ is differentiable and different from zero, 
 
@@ -1856,7 +1831,7 @@ $$
 
 in which a, b, n, and R are constants. Find dP/dV. (See accompanying figure.) 
 
-![[70ce9a837e9e54f9d66422eebe8cf97f02339e844f7e802fd6b91b26312111d5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/70ce9a837e9e54f9d66422eebe8cf97f02339e844f7e802fd6b91b26312111d5.jpg)
 
 
 80. The best quantity to order One of the formulas for inventory management says that the average weekly cost of ordering, paying for, and holding merchandise is 
@@ -1871,7 +1846,7 @@ where q is the quantity you order when things run low (shoes, TVs, brooms, or wh
 
 In this section we study applications where derivatives model the rates at which things change. It is natural to think of a quantity changing with respect to time, but other variables can be treated in the same way. For example, an economist may want to study how the cost of producing steel varies with the number of tons produced, or an engineer may want to know how the power output of a generator varies with its temperature. 
 
-## Instantaneous Rates of Change
+### Instantaneous Rates of Change
 
 If we interpret the difference quotient $(f(x + h) - f(x))/h$ as the average rate of change in f over the interval from x to $x + h$ , we can interpret its limit as $h \to 0$ as the instantaneous rate at which f is changing at the point x. This gives an important interpretation of the derivative. 
 
@@ -1901,14 +1876,14 @@ $$
 {\frac {d A}{d D}} = {\frac {\pi}{4}} \cdot 2 D = {\frac {\pi D}{2}}.
 $$
 
-![[f0513561acec1f1cfb483d962e0bd301bb1e3bc2d0df4d684b304bd6af918fc5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f0513561acec1f1cfb483d962e0bd301bb1e3bc2d0df4d684b304bd6af918fc5.jpg)
 
 
 
 FIGURE 3.15 The positions of a body moving along a coordinate line at time t and shortly later at time $t + \Delta t$ . Here the coordinate line is horizontal.
 
 
-![[1ff9b0b7009440b1c34337fb28d5bd12cb1bfa8642878721f51ec7d19a928116.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1ff9b0b7009440b1c34337fb28d5bd12cb1bfa8642878721f51ec7d19a928116.jpg)
 
 
 
@@ -1917,7 +1892,7 @@ positive slope so
 moving upward
 
 
-![[f44292717d7ef2ec286185114a36a23f9e416932ff40dfc63c30b7026d649fa7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f44292717d7ef2ec286185114a36a23f9e416932ff40dfc63c30b7026d649fa7.jpg)
 
 
 
@@ -1926,7 +1901,7 @@ FIGURE 3.16 For motion $s = f(t)$ along a straight line (the vertical axis), $v 
 
 When D = 10 m, the area is changing with respect to the diameter at the rate of $(\pi/2)10 = 5\pi \mathrm{m}^{2}/\mathrm{m} \approx 15.71 \mathrm{~m}^{2}/\mathrm{m}$ . 
 
-## Motion Along a Line: Displacement, Velocity, Speed, Acceleration, and Jerk
+### Motion Along a Line: Displacement, Velocity, Speed, Acceleration, and Jerk
 
 Suppose that an object (or body, considered as a whole mass) is moving along a coordinate line (an s-axis), usually horizontal or vertical, so that we know its position s on that line as a function of time t: 
 
@@ -1966,7 +1941,7 @@ If we drive to a friend's house and back at $50\mathrm{km / h}$ , say, the speed
 
 **EXAMPLE 2** Figure 3.17 shows the graph of the velocity $v = f'(t)$ of a particle moving along a horizontal line as in Figure 3.15 (as opposed to the graph of a position function $s = f(t)$ , such as in Figure 3.16). In the graph of the velocity function, it's not the 
 
-![[47b462cb0cca01c7541e4da846ef74ea73b9589470565883da95b92ec45af5d2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/47b462cb0cca01c7541e4da846ef74ea73b9589470565883da95b92ec45af5d2.jpg)
 
 
 
@@ -2001,7 +1976,7 @@ A sudden change in acceleration is called a jerk. When a ride in a car or a bus 
 > j (t) = \frac {d a}{d t} = \frac {d ^ {3} s}{d t ^ {3}}.
 > $$
 >
-![[a9dfc8f9c7fd003aa452192cb635e237f0b2829a25d45311fb9e16fa0907f536.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a9dfc8f9c7fd003aa452192cb635e237f0b2829a25d45311fb9e16fa0907f536.jpg)
 
 
 
@@ -2076,14 +2051,14 @@ At t = 3, the acceleration is $9.8 \, m/s^{2}$ .
 
 (d) When does the rock hit the ground again? 
 
-![[6c6e4b605106e779441bf0d02bdea93fa97ba32d922468d70bf2f8e8d7c80d4f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6c6e4b605106e779441bf0d02bdea93fa97ba32d922468d70bf2f8e8d7c80d4f.jpg)
 
 
 
 (a)
 
 
-![[34666898c3387a5a8aa4b3c952e1cc532a977d50df76899064643c8d61f3183d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/34666898c3387a5a8aa4b3c952e1cc532a977d50df76899064643c8d61f3183d.jpg)
 
 
 
@@ -2094,7 +2069,7 @@ At t = 3, the acceleration is $9.8 \, m/s^{2}$ .
 FIGURE 3.19 (a) The rock in Example 4. (b) The graphs of $s$ and $v$ as functions of time; $s$ is largest when $v = ds / dt = 0$ . The graph of $s$ is not the path of the rock: It is a plot of height versus time. The slope of the plot is the rock's velocity, graphed here as a straight line.
 
 
-## **Solution**
+**Solution**
 
 (a) In the coordinate system we have chosen, s measures height from the ground up, so the velocity is positive on the way up and negative on the way down. The instant the rock is at its highest point is the one instant during the flight when the velocity is 0. To find the maximum height, all we need to do is to find when v = 0 and evaluate s at this time. 
 
@@ -2148,18 +2123,18 @@ The acceleration is always downward and is the effect of gravity on the rock. As
 
 (d) The rock hits the ground at the positive time t for which s = 0. The equation $49t - 4.9t^{2} = 0$ factors to give $4.9t (10 - t) = 0$ , so it has solutions t = 0 and t = 10. At t = 0, the blast occurred and the rock was thrown upward. It returns to the ground 10 s later. 
 
-## Derivatives in Economics and Biology
+### Derivatives in Economics and Biology
 
 Economists have a specialized vocabulary for rates of change and derivatives. They call them marginals. In a manufacturing operation, the cost of production $c(x)$ is a function of x, the number of units produced. The marginal cost of production is the rate of change of cost with respect to level of production, so it is dc/dx. 
 
-![[15d46a6f2480a3f1052fb5fcd1fab67ebd830a72fc6a8bd2ec6f4a9bfe3a10df.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/15d46a6f2480a3f1052fb5fcd1fab67ebd830a72fc6a8bd2ec6f4a9bfe3a10df.jpg)
 
 
 
 FIGURE 3.20 Weekly steel production: $c(x)$ is the cost of producing x tons per week. The cost of producing an additional h tons is $c(x + h) - c(x)$ .
 
 
-![[cf7ff036091869bba41e7a6bcfc2d473782aaf9fd831e65a684c73846a264839.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cf7ff036091869bba41e7a6bcfc2d473782aaf9fd831e65a684c73846a264839.jpg)
 
 
 
@@ -2232,19 +2207,19 @@ if you increase sales to 11 radiators a day. The estimated increase in profit is
 (a)
 
 
-![[e85d2168990f3e277d23a96c7e14de1f1807f7fdd6d239daf7b33cbaf5a74466.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e85d2168990f3e277d23a96c7e14de1f1807f7fdd6d239daf7b33cbaf5a74466.jpg)
 
 
-![[055693231a1f951ddf2d4aaa8b610f49740dc2162d53d977538fe33da1bc484d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/055693231a1f951ddf2d4aaa8b610f49740dc2162d53d977538fe33da1bc484d.jpg)
 
 
 **EXAMPLE 6** Marginal rates frequently arise in discussions of tax rates. If your marginal income tax rate is 28% and your income increases by $1000, you can expect to pay an extra $280 in taxes. This does not mean that you pay 28% of your entire income in taxes. It just means that at your current income level I, the rate of increase of taxes T with respect to income is $dT/dI = 0.28$ . You will pay $0.28 in taxes out of every extra dollar you earn. As your income increases, you may land in a higher tax bracket, and your marginal rate will increase. 
 
-## Sensitivity to Change
+### Sensitivity to Change
 
 When a small change in x produces a large change in the value of a function $f(x)$ , we say that the function is sensitive to changes in x. The derivative $f'(x)$ is a measure of this sensitivity. The function is more sensitive when $|f'(x)|$ is larger (when the slope of the graph of f is steeper). 
 
-## **EXAMPLE 7** Genetic Data and Sensitivity to Change
+**EXAMPLE 7** Genetic Data and Sensitivity to Change
 
 The Austrian monk Gregor Johann Mendel (1822–1884), working with garden peas and other plants, provided the first scientific explanation of hybridization. 
 
@@ -2260,9 +2235,9 @@ FIGURE 3.22 (a) The graph of $y = 2p - p^2$ , describing the proportion of smoot
 
 The implication for genetics is that introducing a few more smooth skin genes into a population where the frequency of wrinkled-skin peas is large will have a more dramatic effect on later generations than will a similar increase when the population has a large proportion of smooth-skin peas. 
 
-## EXERCISES 3.4
+### EXERCISES 3.4
 
-## Motion Along a Coordinate Line
+#### Motion Along a Coordinate Line
 
 Exercises 1–6 give the positions $s = f(t)$ of a body moving on a coordinate line, with s in meters and t in seconds. 
 
@@ -2280,9 +2255,7 @@ c. When, if ever, during the interval does the body change direction?
 
 4. $s = (t^4 / 4) - t^3 + t^2, 0 \leq t \leq 3$ 
 
-$$
-\mathbf {5 .} s = \frac {2 5}{t ^ {2}} - \frac {5}{t}, 1 \leq t \leq 5 \quad \mathbf {6 .} s = \frac {2 5}{t + 5}, - 4 \leq t \leq 0
-$$
+5. $s = \frac {2 5}{t ^ {2}} - \frac {5}{t}, 1 \leq t \leq 5 \quad \mathbf {6 .} s = \frac {2 5}{t + 5}, - 4 \leq t \leq 0$
 
 7. Particle motion At time t, the position of a body moving along the s-axis is $s = t^{3} - 6t^{2} + 9t$ m. 
 
@@ -2300,7 +2273,7 @@ b. When is the body moving forward? Backward?
 
 c. When is the body's velocity increasing? Decreasing? 
 
-## Free-Fall Applications
+#### Free-Fall Applications
 
 9. Free fall on Mars and Jupiter The equations for free fall at the surfaces of Mars and Jupiter (s in meters, t in seconds) are $s = 1.86t^{2}$ on Mars and $s = 11.44t^{2}$ on Jupiter. How long does it take a rock falling from rest to reach a velocity of 27.8 m/s (about 100 km/h) on each planet? 
 
@@ -2332,14 +2305,14 @@ c. What would have been the ball's velocity at the moment of impact?
 
 In modern notation—part (b) of the figure—with distance in meters and time in seconds, what Galileo determined by experiment was that, for any given angle $\theta$ , the ball's velocity t s into the roll was $v = 9.8(\sin\theta)t$ m/s. 
 
-![[c1e8e1b940630dff4c1800796096aa729ed9f0aa1cbb28e9f87f94e9dfd0e3dc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c1e8e1b940630dff4c1800796096aa729ed9f0aa1cbb28e9f87f94e9dfd0e3dc.jpg)
 
 
 
 (a)
 
 
-![[5629e62c4c162cf2daa2f949a9d6b6c012d6971d0874a16503db92e56f96b712.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5629e62c4c162cf2daa2f949a9d6b6c012d6971d0874a16503db92e56f96b712.jpg)
 
 
 
@@ -2354,7 +2327,7 @@ Understanding Motion from Graphs
 
 15. The accompanying figure shows the velocity $v = ds / dt = f(t)$ (m/s) of a body moving along a coordinate line. 
 
-![[2953b151403f39ac3442022d9ca121921b6c5075061fb81f471c5d2e68259576.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2953b151403f39ac3442022d9ca121921b6c5075061fb81f471c5d2e68259576.jpg)
 
 
 a. When does the body reverse direction? 
@@ -2367,10 +2340,10 @@ d. Graph the acceleration, where defined.
 
 16. A particle $P$ moves on the number line shown in part (a) of the accompanying figure. Part (b) shows the position of $P$ as a function of time $t$ . 
 
-![[98e13bf762a73c093dd474d61e737dbb0aacb4f9e2385b5d935029cf13192b58.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/98e13bf762a73c093dd474d61e737dbb0aacb4f9e2385b5d935029cf13192b58.jpg)
 
 
-![[5c7a52e838ec8171bfcec69b93c200b08439442a3e162335601e3274a5223ab2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5c7a52e838ec8171bfcec69b93c200b08439442a3e162335601e3274a5223ab2.jpg)
 
 
 
@@ -2389,7 +2362,7 @@ a. How fast was the rocket climbing when the engine stopped?
 
 b. For how many seconds did the engine burn? 
 
-![[5c97d9585d6420ebd4b697f6ddd40bc1b5c403523292d3127b770abf1bafce23.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5c97d9585d6420ebd4b697f6ddd40bc1b5c403523292d3127b770abf1bafce23.jpg)
 
 
 c. When did the rocket reach its highest point? What was its velocity then? 
@@ -2404,7 +2377,7 @@ g. When was the acceleration constant? What was its value then (to the nearest i
 
 18. The accompanying figure shows the velocity $v = f(t)$ of a particle moving on a horizontal coordinate line. 
 
-![[c7fee03929d4b544279ee5f61f0f14fb61f645abc49dd2da653ffaa81e36e8d5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c7fee03929d4b544279ee5f61f0f14fb61f645abc49dd2da653ffaa81e36e8d5.jpg)
 
 
 a. When does the particle move forward? Move backward? Speed up? Slow down? 
@@ -2417,15 +2390,15 @@ d. When does the particle stand still for more than an instant?
 
 19. The graphs in the accompanying figure show the position s, velocity $v = ds/dt$ , and acceleration $a = d^{2}s/dt^{2}$ of a body moving along a coordinate line as functions of time t. Which graph is which? Give reasons for your answers. 
 
-![[05374d0bd1947e7b89bb9e44535fa063309d22e25a4f773b03cb4dfefad80518.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/05374d0bd1947e7b89bb9e44535fa063309d22e25a4f773b03cb4dfefad80518.jpg)
 
 
 20. The graphs in the accompanying figure show the position $s$ , the velocity $v = ds / dt$ , and the acceleration $a = d^2 s / dt^2$ of a body moving along a coordinate line as functions of time $t$ . Which graph is which? Give reasons for your answers. 
 
-![[3dcac67a1ff1c92363e15f6f02e1697d87ca64ccc66717fee60c8bf021b21d82.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3dcac67a1ff1c92363e15f6f02e1697d87ca64ccc66717fee60c8bf021b21d82.jpg)
 
 
-## Economics
+#### Economics
 
 21. Marginal cost Suppose that the dollar cost of producing $x$ washing machines is $c(x) = 2000 + 100x - 0.1x^2$ . 
 
@@ -2449,7 +2422,7 @@ b. Use the function $r'(x)$ to estimate the increase in revenue that will result
 
 c. Find the limit of $r'(x)$ as $x \to \infty$ . How would you interpret this number? 
 
-## Additional Applications
+#### Additional Applications
 
 23. Bacterium population When a bactericide was added to a nutrient broth in which bacteria were growing, the bacterium population continued to grow for a while, but then stopped growing and began to decline. The size of the population at time t (hours) was $b = 10^{6} + 10^{4}t - 10^{3}t^{2}$ . Find the growth rates at 
 
@@ -2493,7 +2466,7 @@ b. By approximately how much does the volume increase when the radius changes fr
 
 30. Volcanic lava fountains Although the November 1959 Kilauea Iki eruption on the island of Hawaii began with a line of fountains along the wall of the crater, activity was later confined to a single vent in the crater's floor, which at one point shot lava $580\mathrm{m}$ straight into the air (a Hawaiian record). What was the lava's exit velocity in meters per second? In kilometers per hour? (Hint: If $\upsilon_0$ is the exit velocity of a particle of lava, its height t seconds later will be $s = v_{0}t - 4.9t^{2}$ m. Begin by finding the time at which ds/dt = 0. Neglect air resistance.) 
 
-## Analyzing Motion Using Graphs
+#### Analyzing Motion Using Graphs
 
 T Exercises 31–34 give the position function $s = f(t)$ of an object moving along the $s$ -axis as a function of time $t$ . Graph $f$ together with the velocity function $v(t) = ds/dt = f'(t)$ and the acceleration function $a(t) = d^2 s/dt^2 = f''(t)$ . Comment on the object's behavior in relation to the signs and values of $y$ and $a$ . Include in your commentary such topics as the following: 
 
@@ -2513,19 +2486,15 @@ f. When is it farthest from the axis origin?
 
 32. $s = t^2 - 3t + 2, 0 \leq t \leq 5$ 
 
-$$
-\mathbf {3 3 .} s = t ^ {3} - 6 t ^ {2} + 7 t, \quad 0 \leq t \leq 4
-$$
+33. $s = t ^ {3} - 6 t ^ {2} + 7 t, \quad 0 \leq t \leq 4$
 
-$$
-\mathbf {3 4 .} s = 4 - 7 t + 6 t ^ {2} - t ^ {3}, \quad 0 \leq t \leq 4
-$$
+34. $s = 4 - 7 t + 6 t ^ {2} - t ^ {3}, \quad 0 \leq t \leq 4$
 
 ## 3.5 Derivatives of Trigonometric Functions
 
 Many phenomena of nature are approximately periodic (electromagnetic fields, heart rhythms, tides, weather). The derivatives of sines and cosines play a key role in describing periodic changes. This section shows how to differentiate the six basic trigonometric functions. 
 
-## Derivative of the Sine Function
+### Derivative of the Sine Function
 
 To calculate the derivative of $f(x) = \sin x$ , for x measured in radians, we combine the limits in Example 5a and Theorem 6 in Section 2.4 with the angle sum identity for the sine function (see Figure 1.46): 
 
@@ -2573,7 +2542,7 @@ $$
 \begin{array}{l l}\frac {d}{d x} (\cos x) = \lim _ {h \rightarrow 0} \frac {\cos (x + h) - \cos x}{h}&\text { Derivative   definition }\\= \lim _ {h \rightarrow 0} \frac {(\cos x \cos h - \sin x \sin h) - \cos x}{h}&\text { Cosine   angle   sum }\\= \lim _ {h \rightarrow 0} \frac {\cos x (\cos h - 1) - \sin x \sin h}{h}&\text { identity }\\= \lim _ {h \rightarrow 0} \left(\cos x \cdot \frac {\cos h - 1}{h}\right) - \lim _ {h \rightarrow 0} \left(\sin x \cdot \frac {\sin h}{h}\right)\\= \cos x \cdot \lim _ {h \rightarrow 0} \frac {\cos h - 1}{h} - \sin x \cdot \lim _ {h \rightarrow 0} \frac {\sin h}{h}\\= \cos x \cdot 0 - \sin x \cdot 1&\text { Example   5a   and }\\= - \sin x.&\text { Theorem   6, }\\&\text { Section   2.4 }\end{array}
 $$
 
-![[b14c2b61d8b02da7976b77495ff6b66ed41f634fe77761f889fe919dbee74a24.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b14c2b61d8b02da7976b77495ff6b66ed41f634fe77761f889fe919dbee74a24.jpg)
 
 
 The derivative of the cosine function is the negative of the sine function: 
@@ -2596,14 +2565,14 @@ $$
 \begin{array}{r l} \frac {d y}{d x} & = \frac {d}{d x} (5 e ^ {x}) + \frac {d}{d x} (\cos x) \\ & = 5 e ^ {x} - \sin x \end{array} \quad \text {   Sum   Rule   }
 $$
 
-![[ae0e2d73d4f0b434accd440542366845752559238760f390c11916dc636c7f02.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ae0e2d73d4f0b434accd440542366845752559238760f390c11916dc636c7f02.jpg)
 
 
 
 FIGURE 3.24 A weight hanging from a vertical spring and then displaced oscillates above and below its rest position (Example 3).
 
 
-![[6c411e9d25284a6dd5249848b28cd65269d4fa745e9d9231b0650bbdec1e0994.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6c411e9d25284a6dd5249848b28cd65269d4fa745e9d9231b0650bbdec1e0994.jpg)
 
 
 
@@ -2624,7 +2593,7 @@ $$
 \begin{array}{l l} \frac {d y}{d x} = \frac {(1 - \sin x) \frac {d}{d x} (\cos x) - \cos x \frac {d}{d x} (1 - \sin x)}{(1 - \sin x) ^ {2}} & \text { Quotient   Rule } \\ = \frac {(1 - \sin x) (- \sin x) - (\cos x) (0 - \cos x)}{(1 - \sin x) ^ {2}} \\ = \frac {1 - \sin x}{(1 - \sin x) ^ {2}} & \sin^ {2} x + \cos^ {2} x = 1 \\ = \frac {1}{1 - \sin x} \end{array}
 $$
 
-## Simple Harmonic Motion
+### Simple Harmonic Motion
 
 Simple harmonic motion models the motion of an object or weight bobbing freely up and down on the end of a spring, with no resistance. The motion is periodic and repeats indefinitely, so we represent it using trigonometric functions. The next example models motion with no opposing forces (such as friction). 
 
@@ -2636,7 +2605,7 @@ $$
 
 What are its velocity and acceleration at time t? 
 
-## **Solution** We have
+**Solution** We have
 
 Position: 
 
@@ -2674,7 +2643,7 @@ $$
 
 It has its greatest magnitude when $\sin t = \pm1$ , not at the extremes of the displacement but at the rest position, where the acceleration changes direction and sign. 
 
-## Derivatives of the Other Basic Trigonometric Functions
+### Derivatives of the Other Basic Trigonometric Functions
 
 Because $\sin x$ and $\cos x$ are differentiable functions of x, it follows from the Quotient Rule that the related functions 
 
@@ -2718,37 +2687,37 @@ $$
 \begin{array}{r l} y ^ {\prime \prime} & = \frac {d}{d x} (\sec x \tan x) \\ & = \sec x \frac {d}{d x} (\tan x) + \tan x \frac {d}{d x} (\sec x) \\ & = (\sec x) (\sec^ {2} x) + (\tan x) (\sec x \tan x) \\ & = \sec^ {3} x + \sec x \tan^ {2} x \end{array}
 $$
 
-## EXERCISES 3.5
+### EXERCISES 3.5
 
-## Derivatives
+#### Derivatives
 
 In Exercises 1–18, find dy/dx. 
 
 1. $y = -10x + 3\cos x$ 
 
-3. $y = x^{2}\cos x$ 
-
-5. $y = \csc x - 4\sqrt{x} + \frac{7}{e^x}$ 
-
-7. $f(x) = \sin x\tan x$ 
-
-9. $y = xe^{-x}\sec x$ 
-
-11. $y = \frac{\cot x}{1 + \cot x}$ 
-
 2. $y = \frac{3}{x} + 5\sin x$ 
 
-8. $g(x) = \frac{\cos x}{\sin^2 x}$ 
-
-13. $y = \frac{4}{\cos x} +\frac{1}{\tan x}$ 
+3. $y = x^{2}\cos x$ 
 
 4. $y = \sqrt{x}\sec x + 3$ 
 
+5. $y = \csc x - 4\sqrt{x} + \frac{7}{e^x}$ 
+
 6. $y = x^{2}\cot x - \frac{1}{x^{2}}$ 
+
+7. $f(x) = \sin x\tan x$ 
+
+8. $g(x) = \frac{\cos x}{\sin^2 x}$ 
+
+9. $y = xe^{-x}\sec x$ 
 
 10. $y = (\sin x + \cos x)\sec x$ 
 
+11. $y = \frac{\cot x}{1 + \cot x}$ 
+
 12. $y = \frac{\cos x}{1 + \sin x}$ 
+
+13. $y = \frac{4}{\cos x} +\frac{1}{\tan x}$ 
 
 14. $y = \frac{\cos x}{x} +\frac{x}{\cos x}$ 
 
@@ -2756,7 +2725,9 @@ In Exercises 1–18, find dy/dx.
 
 16. $y = x^{2}\cos x - 2x\sin x - 2\cos x$ 
 
-17. $f(x) = x^{3}\sin x\cos x$ 18. $g(x) = (2 - x)\tan^2 x$ 
+17. $f(x) = x^{3}\sin x\cos x$
+
+18. $g(x) = (2 - x)\tan^2 x$
 
 In Exercises 19–22, find ds/dt. 
 
@@ -2788,7 +2759,9 @@ In Exercises 27–32, find dp/dq.
 
 30. $p = \frac{\tan q}{1 + \tan q}$ 
 
-31. $p = \frac{q\sin q}{q^2 - 1}$ 32. $p = \frac{3q + \tan q}{q\sec q}$ 
+31. $p = \frac{q\sin q}{q^2 - 1}$
+
+32. $p = \frac{3q + \tan q}{q\sec q}$
 
 33. Find $y''$ if
 a. $y = \csc x$ .
@@ -2798,7 +2771,7 @@ b. $y = \sec x$ .
 a. $y = -2\sin x$ .
 b. $y = 9\cos x$ . 
 
-## Tangent Lines
+#### Tangent Lines
 
 In Exercises 35–38, graph the curves over the given intervals, together with their tangent lines at the given values of x. Label each curve and tangent line with its equation. 
 
@@ -2834,14 +2807,14 @@ In Exercises 47 and 48, find an equation for (a) the tangent line to the curve a
 47.
 
 
-![[a3dd0ad523c93e0df9bd56fe11a11e2b4ca6c5d08de70d2a810d525bb541e660.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a3dd0ad523c93e0df9bd56fe11a11e2b4ca6c5d08de70d2a810d525bb541e660.jpg)
 
 
 
 48.
 
 
-![[03bfb1ba9e83ac3fe80464b0c2b23c4df33782a84d6eb899b1a3e47194fb6835.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/03bfb1ba9e83ac3fe80464b0c2b23c4df33782a84d6eb899b1a3e47194fb6835.jpg)
 
 
 Theory and Examples 
@@ -2886,7 +2859,7 @@ $$
 
 where x is measured in centimeters and t is measured in seconds. See the accompanying figure. 
 
-![[d79e73778cddf4fc643c552742da9db5bc4ec8bc72cad528efe63fb34a9b943a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d79e73778cddf4fc643c552742da9db5bc4ec8bc72cad528efe63fb34a9b943a.jpg)
 
 
 a. Find the spring's displacement when $t = 0$ , $t = \pi / 3$ , and $t = 3\pi / 4$ . 
@@ -2934,7 +2907,7 @@ $$
 
 See the accompanying figure. 
 
-![[f5c95abcac4beb63c87b6ea4797dd4941574df079ff32769f03d8322d4b2b1ce.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f5c95abcac4beb63c87b6ea4797dd4941574df079ff32769f03d8322d4b2b1ce.jpg)
 
 
 a. To see how rapidly the centered difference quotient for $f(x) = \sin x$ converges to $f'(x) = \cos x$ , graph $y = \cos x$ together with 
@@ -2973,7 +2946,7 @@ As you will see, the limit exists even though $f(x) = |x|$ has no derivative at 
 
 ## 3.6 The Chain Rule
 
-![[5be235cfee0498c850d27d711c11410ec9fa897d2120dd1eab38195f3236aa9a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5be235cfee0498c850d27d711c11410ec9fa897d2120dd1eab38195f3236aa9a.jpg)
 
 
 
@@ -2984,7 +2957,7 @@ FIGURE 3.26 When gear A makes $x$ turns, gear B makes $u$ turns and gear C makes
 
 How do we differentiate $F(x) = \sin(x^{2} - 4)$ ? This function is the composition $f \circ g$ of two functions $y = f(u) = \sin u$ and $u = g(x) = x^{2} - 4$ that we know how to differentiate. The answer, given by the Chain Rule, says that the derivative is the product of the derivatives of f and g. We develop the rule in this section. 
 
-## Derivative of a Composite Function
+### Derivative of a Composite Function
 
 The function $y = \frac{3}{2} x = \frac{1}{2}(3x)$ is the composition of the functions $y = \frac{1}{2} u$ and $u = 3x$ . We have 
 
@@ -3000,7 +2973,7 @@ $$
 
 If we think of the derivative as a rate of change, this relationship is intuitively reasonable. If $y = f(u)$ changes half as fast as u, and $u = g(x)$ changes three times as fast as x, then we expect y to change 3/2 times as fast as x. This effect is much like that of a multiple gear train (Figure 3.26). Let's look at another example. 
 
-## **EXAMPLE 1** The function
+**EXAMPLE 1** The function
 
 $$
 y = (3 x ^ {2} + 1) ^ {2}
@@ -3020,7 +2993,7 @@ $$
 
 The derivative of the composite function $f(g(x))$ at x is the derivative of f at $g(x)$ times the derivative of g at x. This is known as the Chain Rule (Figure 3.27). 
 
-![[edd9a756171b6ed91f0dc5635ad2e658d8c4021a24aa78c6ed27faf72f7cdac3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/edd9a756171b6ed91f0dc5635ad2e658d8c4021a24aa78c6ed27faf72f7cdac3.jpg)
 
 
 
@@ -3117,7 +3090,7 @@ $$
 \frac {d}{d x} \sin (\underbrace {x ^ {2} + e ^ {x}} _ {\text { inside }}) = \cos (\underbrace {x ^ {2} + e ^ {x}} _ {\text { inside   left   alone }}) \cdot (\underbrace {2 x + e ^ {x}} _ {\text { derivative   of   the   inside }}).
 $$
 
-## **EXAMPLE 4** Differentiate $y = e^{\cos x}$ .
+**EXAMPLE 4** Differentiate $y = e^{\cos x}$ .
 
 **Solution** Here the inside function is $u = g(x) = \cos x$ and the outside function is the exponential function $f(x) = e^{x}$ . Applying the Chain Rule, we get 
 
@@ -3143,11 +3116,11 @@ $$
 \frac {d}{d x} \left(e ^ {x ^ {2}}\right) = e ^ {x ^ {2}} \cdot \frac {d}{d x} \left(x ^ {2}\right) = 2 x e ^ {x ^ {2}}.
 $$
 
-## Repeated Use of the Chain Rule
+### Repeated Use of the Chain Rule
 
 We sometimes have to use the Chain Rule two or more times to find a derivative. 
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
 Johann Bernoulli (1667–1748) 
 
@@ -3155,7 +3128,7 @@ Johann Bernoulli was born in Switzerland and attended the University of Basel. H
 
 To know more, visit the companion Website. 
 
-## **EXAMPLE 5** Find the derivative of $g(t) = \tan(5 - \sin 2t)$ .
+**EXAMPLE 5** Find the derivative of $g(t) = \tan(5 - \sin 2t)$ .
 
 **Solution** Notice here that the tangent is a function of $5 - \sin 2t$ , whereas the sine is a function of 2t, which is itself a function of t. Therefore, by the Chain Rule, 
 
@@ -3235,50 +3208,36 @@ See Figure 3.28. Similarly, the derivative of $\cos (x^{\circ})$ is $-\left(\pi 
 
 The factor $\pi/180$ would propagate with repeated differentiation, showing an advantage for the use of radian measure in computations. 
 
-![[c854b2a3004fbe4128bfb92954d0bc8f823156756a1656a724cd8201814afd09.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c854b2a3004fbe4128bfb92954d0bc8f823156756a1656a724cd8201814afd09.jpg)
 
 
 
 FIGURE 3.28 The function $\sin (x^{\circ})$ oscillates only $\pi /180$ times as often as $\sin x$ oscillates. Its maximum slope is $\pi /180$ at $x = 0$ (Example 9).
 
 
-## EXERCISES 3.6
+### EXERCISES 3.6
 
-## Derivative Calculations
+#### Derivative Calculations
 
 In Exercises 1–8, given $y = f(u)$ and $u = g(x)$ , find $dy/dx = f'(g(x))g'(x)$ . 
 
-1. $y = 6u - 9, u = (1 / 2)x^4$ 2. $y = 2u^{3}, u = 8x - 1$ 
+1. $y = 6u - 9, u = (1 / 2)x^4$
 
-32. $y = (5 - 2x)^{-3} + \frac{1}{8}\left(\frac{2}{x} + 1\right)^{4}$ 
-
-33. $y = (4x + 3)^{4}(x + 1)^{-3}$ 
+2. $y = 2u^{3}, u = 8x - 1$
 
 3. $y = \sin u,\quad u = 3x + 1$ 
 
 4. $y = \cos u, u = e^{-x}$ 
 
-34. $y = (2x - 5)^{-1}(x^2 - 5x)^6$ 
-
-35. $y = xe^{-x} + e^{x^3}$ 
-
 5. $y = \sqrt{u}, u = \sin x$ 
 
 6. $y = \sin u,\quad u = x - \cos x$ 
 
-36. $y = (1 + 2x)e^{-2x}$ 
-
-37. $y = (x^{2} - 2x + 2)e^{5x / 2}$ 
-
 7. $y = \tan u, u = \pi x^2$ 
-
-38. $y = (9x^{2} - 6x + 2)e^{x^{3}}$ 
 
 8. $y = -\sec u, u = \frac{1}{x} + 7x$ 
 
 In Exercises 9–22, write the function in the form $y = f(u)$ and $u = g(x)$ . Then find dy/dx as a function of x. 
-
-40. $k(x) = x^{2}\sec \left(\frac{1}{x}\right)$ 
 
 9. $y = (2x + 1)^{5}$ 
 
@@ -3288,11 +3247,9 @@ In Exercises 9–22, write the function in the form $y = f(u)$ and $u = g(x)$ . 
 
 12. $y = \left(\frac{\sqrt{x}}{2} - 1\right)^{-10}$ 
 
-39. $h(x) = x\tan (2\sqrt{x}) + 7$ 
+13. $y = \left(\frac{x^2}{8} + x - \frac{1}{x}\right)^4$ 
 
 14. $y = \sqrt{3x^2 - 4x + 6}$ 
-
-13. $y = \left(\frac{x^2}{8} + x - \frac{1}{x}\right)^4$ 
 
 15. $y = \sec(\tan x)$ 
 
@@ -3306,85 +3263,101 @@ In Exercises 9–22, write the function in the form $y = f(u)$ and $u = g(x)$ . 
 
 20. $y = e^{2x / 3}$ 
 
+22. $y = e^{(4\sqrt{x} + x^2)}$ 
+
 Find the derivatives of the functions in Exercises 23–50. 
 
 $$
 y = e ^ {5 - 7 x}
-$$
-
-22. $y = e^{(4\sqrt{x} + x^2)}$ 
-
-42. $g(x) = \frac{\tan 3x}{(x + 7)^{4}}$ 
-
-23. $p = \sqrt{3 - t}$ 
-
-$$
+23. $$p = \sqrt{3 - t}$$
 q = \sqrt [ 3 ]{2 r - r ^ {2}}
 $$
 
-25. $s = \frac{4}{3\pi}\sin 3t + \frac{4}{5\pi}\cos 5t$ 26. $s = \sin \left(\frac{3\pi t}{2}\right) + \cos \left(\frac{3\pi t}{2}\right)$ 
+25. $s = \frac{4}{3\pi}\sin 3t + \frac{4}{5\pi}\cos 5t$
+
+26. $s = \sin \left(\frac{3\pi t}{2}\right) + \cos \left(\frac{3\pi t}{2}\right)$
 
 27. $r = (\csc \theta +\cot \theta)^{-1}$ 
 
 28. $r = 6(\sec \theta -\tan \theta)^{3 / 2}$ 
 
-29. $y = x^{2}\sin^{4}x + x\cos^{-2}x$ 30. $y = \frac{1}{x}\sin^{-5}x - \frac{x}{3}\cos^{3}x$ 
+29. $y = x^{2}\sin^{4}x + x\cos^{-2}x$
 
-41. $f(x) = \sqrt{7 + x\sec{x}}$ 
+30. $y = \frac{1}{x}\sin^{-5}x - \frac{x}{3}\cos^{3}x$
 
 31. $y = \frac{1}{18}(3x - 2)^6 + \left(4 - \frac{1}{2x^2}\right)^{-1}$ 
 
+32. $y = (5 - 2x)^{-3} + \frac{1}{8}\left(\frac{2}{x} + 1\right)^{4}$ 
+
+33. $y = (4x + 3)^{4}(x + 1)^{-3}$ 
+
+34. $y = (2x - 5)^{-1}(x^2 - 5x)^6$ 
+
+35. $y = xe^{-x} + e^{x^3}$ 
+
+36. $y = (1 + 2x)e^{-2x}$ 
+
+37. $y = (x^{2} - 2x + 2)e^{5x / 2}$ 
+
+38. $y = (9x^{2} - 6x + 2)e^{x^{3}}$ 
+
+39. $h(x) = x\tan (2\sqrt{x}) + 7$ 
+
+40. $k(x) = x^{2}\sec \left(\frac{1}{x}\right)$ 
+
+41. $f(x) = \sqrt{7 + x\sec{x}}$ 
+
+42. $g(x) = \frac{\tan 3x}{(x + 7)^{4}}$ 
+
 43. $f(\theta) = \left(\frac{\sin\theta}{1 + \cos\theta}\right)^2$ 
+
+44. $g(t) = \left(\frac{1 + \sin 3t}{3 - 2t}\right)^{-1}$ 
 
 45. $r = \sin (\theta^2)\cos (2\theta)$ 
 
+46. $r = \sec \sqrt{\theta}\tan \left(\frac{1}{\theta}\right)$ 
+
 47. $q = \sin \left(\frac{t}{\sqrt{t + 1}}\right)$ 
 
+48. $q = \cot\left(\frac{\sin t}{t}\right)$ 
+
 49. $y = \cos (e^{-\theta^2})$ 
+
+50. $y = \theta^3 e^{-2\theta}\cos 5\theta$ 
 
 In Exercises 51–70, find dy/dt. 
 
 51. $y = \sin^2 (\pi t - 2)$ 
 
-53. $y = (1 + \cos 2t)^{-4}$ 
-
-55. $y = (t\tan t)^{10}$ 
-
-44. $g(t) = \left(\frac{1 + \sin 3t}{3 - 2t}\right)^{-1}$ 
-
-57. $y = e^{\cos^2 (\pi t - 1)}$ 
-
-59. $y = \left(\frac{t^2}{t^3 - 4t}\right)^3$ 
-
-61. $y = \sin (\cos (2t - 5))$ 
-
-63. $y = \left(1 + \tan^4\left(\frac{t}{12}\right)\right)^3$ 
-
-46. $r = \sec \sqrt{\theta}\tan \left(\frac{1}{\theta}\right)$ 
-
-48. $q = \cot\left(\frac{\sin t}{t}\right)$ 
-
-50. $y = \theta^3 e^{-2\theta}\cos 5\theta$ 
-
 52. $y = \sec^2\pi t$ 
+
+53. $y = (1 + \cos 2t)^{-4}$ 
 
 54. $y = (1 + \cot (t / 2))^{-2}$ 
 
+55. $y = (t\tan t)^{10}$ 
+
 56. $y = (t^{-3 / 4}\sin t)^{4 / 3}$ 
+
+57. $y = e^{\cos^2 (\pi t - 1)}$ 
 
 58. $y = (e^{\sin (t / 2)})^3$ 
 
+59. $y = \left(\frac{t^2}{t^3 - 4t}\right)^3$ 
+
 60. $y = \left(\frac{3t - 4}{5t + 2}\right)^{-5}$ 
 
+61. $y = \sin (\cos (2t - 5))$ 
+
 62. $y = \cos \left(5\sin \left(\frac{t}{3}\right)\right)$ 
+
+63. $y = \left(1 + \tan^4\left(\frac{t}{12}\right)\right)^3$ 
 
 64. $y = \frac{1}{6} (1 + \cos^2 (7t))^3$ 
 
 65. $y = \sqrt{1 + \cos(t^{2})}$ 
 
-$$
-6 6. y = 4 \sin (\sqrt {1 + \sqrt {t}})
-$$
+66. $y = 4 \sin (\sqrt {1 + \sqrt {t}})$
 
 67. $y = \tan^2 (\sin^3 t)$ 
 
@@ -3394,7 +3367,7 @@ $$
 
 70. $y = \sqrt{3t + \sqrt{2 + \sqrt{1 - t}}}$ 
 
-## Second Derivatives
+#### Second Derivatives
 
 Find $y''$ in Exercises 71-78. 
 
@@ -3420,7 +3393,7 @@ For each of the following functions, solve both $f'(x) = 0$ and $f''(x) = 0$ for
 
 80. $f(x) = \sec^2 x - 2\tan x$ for $0 \leq x \leq 2\pi$ 
 
-## Finding Derivative Values
+#### Finding Derivative Values
 
 In Exercises 81–86, find the value of $(f \circ g)'$ at the given value of x. 
 
@@ -3484,7 +3457,7 @@ g. $f(x + g(x)), x = 0$
 
 92. Find dy/dt when x = 1 if $y = x^{2} + 7x - 5$ and dx/dt = 1/3. 
 
-## Theory and Examples
+#### Theory and Examples
 
 What happens if you can write a function as a composition in different ways? Do you get the same derivative each time? The Chain Rule says you should. Try it with the functions in Exercises 93 and 94. 
 
@@ -3508,7 +3481,7 @@ b. $y = \sqrt{u}$ and $u = x^{3}$ .
 
 b. Slopes on a tangent curve What is the smallest value the slope of the curve can ever have on the interval $-2 < x < 2$ ? Give reasons for your answer. 
 
-## 98. Slopes on sine curves
+98. Slopes on sine curves
 
 a. Find equations for the tangent lines to the curves $y = \sin 2x$ and $y = -\sin(x/2)$ at the origin. Is there anything special about how the tangent lines are related? Give reasons for your answer. 
 
@@ -3538,7 +3511,7 @@ a. On what day is the temperature increasing the fastest?
 
 b. About how many degrees per day is the temperature increasing when it is increasing at its fastest? 
 
-![[1700e1724726d2e22148fadaeca49d495b20eda8e7c41633a322c0c05362f20e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1700e1724726d2e22148fadaeca49d495b20eda8e7c41633a322c0c05362f20e.jpg)
 
 
 101. Particle motion The position of a particle moving along a coordinate line is $s = \sqrt{1 + 4t}$ , with s in meters and t in seconds. Find the particle's velocity and acceleration at t = 6 s. 
@@ -3591,11 +3564,7 @@ Using the Chain Rule, show that the Power Rule $(d/dx)x^{n}=nx^{n-1}$ holds for 
 
 $$
 \mathbf {1 0 9 .} x ^ {1 / 4} = \sqrt {\sqrt {x}} \quad \mathbf {1 1 0 .} x ^ {3 / 4} = \sqrt {x \sqrt {x}}
-$$
-
-111. Consider the function 
-
-$$
+111. $Consider the function$
 f (x) = \left\{ \begin{array}{c c} x \sin \Bigl (\frac {1}{x} \Bigr), & x > 0 \\ 0, & x \leq 0 \end{array} \right.
 $$
 
@@ -3625,7 +3594,7 @@ a. If $f$ is even, then $f'$ is odd.
 
 b. If $f$ is odd, then $f'$ is even. 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 Trigonometric Polynomials 
 
@@ -3643,7 +3612,7 @@ b. Find $df / dt$ .
 
 c. Graph df/dt. Where does the approximation of dg/dt by df/dt seem to be best? Least good? Approximations by trigonometric polynomials are important in the theories of heat and oscillation, but we must not expect too much of them, as we see in the next exercise. 
 
-![[a01661078ac44e155712168b746677f80e50c8655adcdf291767f3a3aba4ff5d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a01661078ac44e155712168b746677f80e50c8655adcdf291767f3a3aba4ff5d.jpg)
 
 
 115. (Continuation of Exercise 114.) In Exercise 114, the trigonometric polynomial $f(t)$ that approximated the sawtooth function $g(t)$ on $[-\pi, \pi]$ had a derivative that approximated the derivative of the sawtooth function. It is possible, however, for a trigonometric polynomial to approximate a function in a reasonable way without its derivative approximating the function's derivative at all well. As a case in point, the trigonometric “polynomial” 
@@ -3654,7 +3623,7 @@ $$
 
 graphed in the accompanying figure approximates the step function $s = k(t)$ shown there. Yet the derivative of h is nothing like the derivative of k. 
 
-![[5c6ef48a3038666089f659b828a813e3e9748eaec986d2387200d6099304bb32.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5c6ef48a3038666089f659b828a813e3e9748eaec986d2387200d6099304bb32.jpg)
 
 
 a. Graph dk/dt (where defined) over $[-π, π]$ . 
@@ -3665,7 +3634,7 @@ c. Graph $dh/dt$ to see how badly the graph fits the graph of $dk/dt$ . Comment 
 
 ## 3.7 Implicit Differentiation
 
-![[e91813475fd69ada1cde2695b8946c53084c25bbac2300c24005758af1740c20.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e91813475fd69ada1cde2695b8946c53084c25bbac2300c24005758af1740c20.jpg)
 
 
 Most of the functions we have dealt with so far have been described by an equation of the form $y = f(x)$ that expresses y explicitly in terms of the variable x. We have learned rules for differentiating functions defined in this way. A different situation occurs when we encounter equations like 
@@ -3678,7 +3647,7 @@ $$
 
 $x^{3} + y^{3} - 9xy = 0$ is not the graph of any one function of $x$ . The curve can, however, be divided into separate arcs that are the graphs of functions of $x$ . This particular curve, called a folium, dates to Descartes in 1638. 
 
-## Implicitly Defined Functions
+### Implicitly Defined Functions
 
 We begin with examples involving familiar equations that we can solve for y as a function of x and then calculate dy/dx in the usual way. Then we differentiate the equations implicitly, and find the derivative. We will see that the two methods give the same answer. Following the examples, we summarize the steps involved in the new method. In the examples and exercises, it is always assumed that the given equation determines y implicitly as a differentiable function of x so that dy/dx exists. 
 
@@ -3692,14 +3661,14 @@ $$
 \frac {d y _ {1}}{d x} = \frac {1}{2 \sqrt {x}} \quad \text { and } \quad \frac {d y _ {2}}{d x} = - \frac {1}{2 \sqrt {x}}.
 $$
 
-![[6b2346088f6dccc003bcc416632c7407197a6d0aca38a02c0baf9edcd68183e9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6b2346088f6dccc003bcc416632c7407197a6d0aca38a02c0baf9edcd68183e9.jpg)
 
 
 
 FIGURE 3.30 The equation $y^{2} - x = 0$ , or $y^{2} = x$ as it is usually written, defines two differentiable functions of x on the interval x > 0. Example 1 shows how to find the derivatives of these functions without solving the equation $y^{2} = x$ for y.
 
 
-![[b144e98c66697d9fcaaefc0e5b04866d6ddb58b576dfe056757add0ab3de8377.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b144e98c66697d9fcaaefc0e5b04866d6ddb58b576dfe056757add0ab3de8377.jpg)
 
 
 
@@ -3740,13 +3709,13 @@ Notice that unlike the slope formula for $dy_{2}/dx$ , which applies only to poi
 
 To calculate the derivatives of other implicitly defined functions, we proceed as in Examples 1 and 2: We treat y as a differentiable implicit function of x and apply the usual rules to differentiate both sides of the defining equation. 
 
-## Implicit Differentiation
+### Implicit Differentiation
 
 1. Differentiate both sides of the equation with respect to x, treating y as a differentiable function of x. 
 
 2. Collect the terms with dy/dx on one side of the equation and solve for dy/dx. 
 
-![[9368c12de1bfbbdbbb99adebd1d95c4e82540f50c0813801c691db5a669c8934.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9368c12de1bfbbdbbb99adebd1d95c4e82540f50c0813801c691db5a669c8934.jpg)
 
 
 
@@ -3763,7 +3732,7 @@ $$
 
 Notice that the formula for dy/dx applies everywhere that the implicitly defined curve has a slope. Notice again that the derivative involves both variables x and y, not just the independent variable x. 
 
-## Derivatives of Higher Order
+### Derivatives of Higher Order
 
 Implicit differentiation can also be used to find higher derivatives. 
 
@@ -3777,7 +3746,7 @@ $$
 
 We now apply the Quotient Rule to find $y''$ . 
 
-![[565b84f7f61c8091da90acd93f7c151e397468d7aad882411d17e78117b67f7b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/565b84f7f61c8091da90acd93f7c151e397468d7aad882411d17e78117b67f7b.jpg)
 
 
 
@@ -3794,11 +3763,11 @@ $$
 y ^ {\prime \prime} = \frac {2 x}{y} - \frac {x ^ {2}}{y ^ {2}} \left(\frac {x ^ {2}}{y}\right) = \frac {2 x}{y} - \frac {x ^ {4}}{y ^ {3}}, \quad \text { when } y \neq 0
 $$
 
-## Lenses, Tangent Lines, and Normal Lines
+### Lenses, Tangent Lines, and Normal Lines
 
 In the law that describes how light changes direction as it enters a lens, the important angles are the angles the light makes with the line perpendicular to the surface of the lens at the point of entry (angles A and B in Figure 3.33). This line is called the normal line to the surface at the point of entry. In a profile view of a lens like the one in Figure 3.33, the normal line is the line perpendicular (also said to be orthogonal) to the tangent line of the profile curve at the point of entry. 
 
-![[d7d79c667fdb2c49b32f606ef20e1cadbf6087272d63f7834ed28b5e5909b6c0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d7d79c667fdb2c49b32f606ef20e1cadbf6087272d63f7834ed28b5e5909b6c0.jpg)
 
 
 
@@ -3869,9 +3838,9 @@ $$
 
 Slopes of two nonvertical perpendicular lines are negative reciprocals of each other (see Appendix A.4). 
 
-## EXERCISES
+### EXERCISES
 
-## Differentiating Implicitly
+#### Differentiating Implicitly
 
 Use implicit differentiation to find $dy / dx$ in Exercises 1-16. 
 
@@ -3881,23 +3850,15 @@ Use implicit differentiation to find $dy / dx$ in Exercises 1-16.
 
 3. $2xy + y^{2} = x + y$ 
 
-18. $r - 2\sqrt{\theta} = \frac{3}{2}\theta^{2 / 3} + \frac{4}{3}\theta^{3 / 4}$ 
-
 4. $x^{3} - xy + y^{3} = 1$ 
 
 5. $x^{2}(x - y)^{2} = x^{2} - y^{2}$ 
 
-17. $\theta^{1 / 2} + r^{1 / 2} = 1$ 
-
-Find $dr / d\theta$ in Exercises 17-20. 
-
-20. $\cos r + \cot \theta = e^{r\theta}$ 
-
 6. $(3xy + 7)^{2} = 6y$ 
 
-8. $x^{3} = \frac{2x - y}{x + 3y}$ 
-
 7. $y^{2} = \frac{x - 1}{x + 1}$ 
+
+8. $x^{3} = \frac{2x - y}{x + 3y}$ 
 
 9. $x = \sec y$ 
 
@@ -3905,29 +3866,37 @@ Find $dr / d\theta$ in Exercises 17-20.
 
 11. $x + \tan (xy) = 0$ 
 
-19. $\sin (r\theta) = \frac{1}{2}$ 
+12. $x^4 + \sin y = x^3 y^2$ 
 
 13. $y \sin \left( \frac{1}{y} \right) = 1 - xy$ 
-
-12. $x^4 + \sin y = x^3 y^2$ 
 
 14. $x\cos (2x + 3y) = y\sin x$ 
 
 15. $e^{2x} = \sin(x + 3y)$ 
 
+16. $e^{x^2 y} = 2x + 2y$ 
+
+Find $dr / d\theta$ in Exercises 17-20. 
+
+17. $\theta^{1 / 2} + r^{1 / 2} = 1$ 
+
+18. $r - 2\sqrt{\theta} = \frac{3}{2}\theta^{2 / 3} + \frac{4}{3}\theta^{3 / 4}$ 
+
+19. $\sin (r\theta) = \frac{1}{2}$ 
+
+20. $\cos r + \cot \theta = e^{r\theta}$ 
+
 Second Derivatives 
 
 In Exercises 21–28, use implicit differentiation to find dy/dx and then $d^{2}y/dx^{2}$ . Write the solutions in terms of x and y only. 
 
-22. $x^{2 / 3} + y^{2 / 3} = 1$ 
-
 21. $x^{2} + y^{2} = 1$ 
 
-16. $e^{x^2 y} = 2x + 2y$ 
-
-24. $y^{2} - 2x = 1 - 2y$ 
+22. $x^{2 / 3} + y^{2 / 3} = 1$ 
 
 23. $y^{2} = e^{x^{2}} + 2x$ 
+
+24. $y^{2} - 2x = 1 - 2y$ 
 
 25. $2\sqrt{y} = x - y$ 
 
@@ -3977,17 +3946,17 @@ In Exercises 33–42, verify that the given point is on the curve and find the l
 
 45. The eight curve Find the slopes of the curve $y^{4} = y^{2} - x^{2}$ at the two points shown here. 
 
-![[7c0d024cf21698c152f09d9321bf4ee422f5efc0e76caaa121970e15f09f000e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7c0d024cf21698c152f09d9321bf4ee422f5efc0e76caaa121970e15f09f000e.jpg)
 
 
 46. The cissoid of Diocles (from about 200 B.C.) Find equations for the tangent line and normal line to the cissoid of Diocles $y^{2}(2 - x) = x^{3}$ at (1,1). 
 
-![[bc0ecd403f0923bf1751e12ac5954f686974c57e821a57ea13b893aabeecfcce.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bc0ecd403f0923bf1751e12ac5954f686974c57e821a57ea13b893aabeecfcce.jpg)
 
 
 47. The devil's curve (Gabriel Cramer, 1750) Find the slopes of the devil's curve $y^4 - 4y^2 = x^4 - 9x^2$ at the four indicated points. 
 
-![[af44d7b4c95932e94f9ab6059cee33a79ffbfc7d66c73e290eadc7ac4425d3d6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/af44d7b4c95932e94f9ab6059cee33a79ffbfc7d66c73e290eadc7ac4425d3d6.jpg)
 
 
 48. The folium of Descartes (See Figure 3.29) 
@@ -4012,12 +3981,12 @@ $$
 
 51. Normal lines to a parabola Show that if it is possible to draw three normal lines from the point $(a,0)$ to the parabola $x = y^{2}$ shown in the accompanying diagram, then a must be greater than 1/2. One of the normal lines is the x-axis. For what value of a are the other two normal lines perpendicular? 
 
-![[ba61b1af08e53fdbead262fc22101833545ebb6071e4c931e6cd339876b2027a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ba61b1af08e53fdbead262fc22101833545ebb6071e4c931e6cd339876b2027a.jpg)
 
 
 52. Is there anything special about the tangent lines to the curves $y^{2} = x^{3}$ and $2x^{2} + 3y^{2} = 5$ at the points $(1, \pm 1)$ ? Give reasons for your answer. 
 
-![[a5bc41f066400df2f01b0dc0a8b8c6f49b166689c72721310df99ef009bc6abb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a5bc41f066400df2f01b0dc0a8b8c6f49b166689c72721310df99ef009bc6abb.jpg)
 
 
 53. Verify that the following pairs of curves meet orthogonally. 
@@ -4028,7 +3997,7 @@ b. $x = 1 - y^{2}, x = \frac{1}{3} y^{2}$
 
 54. The graph of $y^2 = x^3$ is called a semicubical parabola and is shown in the accompanying figure. Determine the constant $b$ so that the line $y = -\frac{1}{3} x + b$ meets this graph orthogonally. 
 
-![[99f1d5d8c7058b898fdb79d11ae2c195a05e55a5150914a70188d68ddfddbc5a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/99f1d5d8c7058b898fdb79d11ae2c195a05e55a5150914a70188d68ddfddbc5a.jpg)
 
 
 In Exercises 55 and 56, find both dy/dx (treating y as a differentiable function of x) and dx/dy (treating x as a differentiable function of y). How do dy/dx and dx/dy seem to be related? 
@@ -4045,7 +4014,7 @@ a. $y = (\sin^{-1} x)^{2}$
 
 b. $y = \sin^{-1}\left(\frac{1}{x}\right)$ . 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 Use a CAS to perform the following steps in Exercises 59–66. 
 
@@ -4075,12 +4044,12 @@ c. Use the slope found in part (b) to find an equation for the tangent line to t
 
 In Section 1.5 we saw how the inverse of a function undoes, or inverts, the effect of that function. We defined there the natural logarithm function $f^{-1}(x) = \ln x$ as the inverse of the natural exponential function $f(x) = e^{x}$ . This is one of the most important function-inverse pairs in mathematics and science. We learned how to differentiate the exponential function in Section 3.3. Here we develop a rule for differentiating the inverse of a differentiable function, and we apply the rule to find the derivative of the natural logarithm function. 
 
-![[9c4a2fcebcd9f41b20dddc05487545bac96fa4bb0254d6eaa1ecc336ac87ac25.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9c4a2fcebcd9f41b20dddc05487545bac96fa4bb0254d6eaa1ecc336ac87ac25.jpg)
 
 
 FIGURE 3.35 Graphing a line and its inverse together shows the graphs' symmetry with respect to the line y = x. The slopes are reciprocals of each other. 
 
-## Derivatives of Inverses of Differentiable Functions
+### Derivatives of Inverses of Differentiable Functions
 
 We calculated the inverse of the function $f(x) = (1/2)x + 1$ to be $f^{-1}(x) = 2x - 2$ in Example 3 of Section 1.5. Figure 3.35 shows the graphs of both functions. If we calculate their derivatives, we see that 
 
@@ -4096,7 +4065,7 @@ The derivatives are reciprocals of one another, so the slope of one line is the 
 
 This is not a special case. Reflecting any nonhorizontal or nonvertical line across the line y = x always inverts the line's slope. If the original line has slope $m \neq 0$ , the reflected line has slope 1/m. 
 
-![[dd33883bb44361fec6843e9d297fc2aee372cf88cc66acffeb92a670967a6d79.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dd33883bb44361fec6843e9d297fc2aee372cf88cc66acffeb92a670967a6d79.jpg)
 
 
 
@@ -4115,7 +4084,7 @@ $$
 
 If $y = f(x)$ has a horizontal tangent line at $(a, f(a))$ , then the inverse function $f^{-1}$ has a vertical tangent line at $(f(a), a)$ , so the slope is undefined and $f^{-1}$ is not differentiable at $f(a)$ . Theorem 3 gives the conditions under which $f^{-1}$ is differentiable in its domain (which is the same as the range of f). 
 
-## THEOREM 3—The Derivative Rule for Inverses
+**THEOREM 3—The Derivative Rule for Inverses**
 
 If $f$ has an interval $I$ as domain and $f'(x)$ exists and is never zero on $I$ , then $f^{-1}$ is differentiable at every point in its domain (the range of $f$ ). The value of $(f^{-1})'$ at a point $b$ in the domain of $f^{-1}$ is the reciprocal of the value of $f'$ at the point $a = f^{-1}(b)$ : 
 
@@ -4131,14 +4100,14 @@ $$
 
 Theorem 3 makes two assertions. The first of these has to do with the conditions under which $f^{-1}$ is differentiable; the second assertion is a formula for the derivative of $f^{-1}$ when it exists. While we omit the proof of the first assertion, the second one is proved in the following way: 
 
-![[04da9e3051d16843dc1d59a517e50ef4ea03cc4f715b702b15565af3cf853e77.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/04da9e3051d16843dc1d59a517e50ef4ea03cc4f715b702b15565af3cf853e77.jpg)
 
 
 
 FIGURE 3.37 The derivative of $f^{-1}(x) = \sqrt{x}$ at the point (4, 2) is the reciprocal of the derivative of $f(x) = x^2$ at (2, 4) (Example 1).
 
 
-![[7f2d2e06a1083dc79380a59f37ad246b79f17eef11bbdf94364f4ff24e65273b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7f2d2e06a1083dc79380a59f37ad246b79f17eef11bbdf94364f4ff24e65273b.jpg)
 
 
 
@@ -4177,7 +4146,7 @@ $$
 \begin{array}{r l} \left. \frac {d f}{d x} \right| _ {x = 2} & = 3 x ^ {2} \bigg | _ {x = 2} = 1 2 \\ \left. \frac {d f ^ {- 1}}{d x} \right| _ {x = f (2)} & = \frac {1}{\left. \frac {d f}{d x} \right| _ {x = 2}} = \frac {1}{1 2}. \end{array} \tag {Eq.(1)}
 $$
 
-## Derivative of the Natural Logarithm Function
+### Derivative of the Natural Logarithm Function
 
 Since we know that the exponential function $f(x) = e^{x}$ is differentiable everywhere, we can apply Theorem 3 to find the derivative of its inverse $f^{-1}(x) = \ln x$ : 
 
@@ -4227,7 +4196,7 @@ $$
 \begin{array}{l} \text { Derivative   of } \ln | x | \\ \frac {d}{d x} \ln | x | = \frac {1}{x}, x \neq 0 \end{array}
 $$
 
-![[f82f62c59f17fef618c197529c0a798144bb23cc2dd2faf172be63350d71a6fd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f82f62c59f17fef618c197529c0a798144bb23cc2dd2faf172be63350d71a6fd.jpg)
 
 
 
@@ -4264,7 +4233,7 @@ $$
 \begin{array}{c} \frac {\ln a}{a} = \frac {1}{a} \\ \ln a = 1 \\ e ^ {\ln a} = e ^ {1} \\ a = e \\ m = \frac {1}{e}. \end{array}
 $$
 
-## The Derivatives of $a^x$ and $\log_a x$
+### The Derivatives of $a^x$ and $\log_a x$
 
 We start with the equation $a^{x} = e^{\ln(a^{x})} = e^{x \ln a}, a > 0$ , which was seen in Section 1.5, where it was used to define the function $a^{x}$ : 
 
@@ -4346,7 +4315,7 @@ $$
 \frac {d}{d x} \log_ {a} u = \frac {1}{u \ln a} \frac {d u}{d x} \quad a > 0, a \neq 1.\tag{9}
 $$
 
-## Logarithmic Differentiation
+### Logarithmic Differentiation
 
 The derivatives of positive functions given by formulas that involve products, quotients, and powers can often be found more quickly if we take the natural logarithm of both sides before differentiating. This enables us to use the laws of logarithms to simplify the formulas before differentiating. The process, called logarithmic differentiation, is illustrated in the next example. 
 
@@ -4382,7 +4351,7 @@ $$
 
 The computation in Example 6 would be much longer if we used the product, quotient, and power rules. 
 
-## Irrational Exponents and the Power Rule (General Version)
+### Irrational Exponents and the Power Rule (General Version)
 
 The natural logarithm and the exponential function will be defined precisely in Chapter 7. We can use the exponential function to define the general exponential function, which enables us to raise any positive number to any real power n, rational or irrational. That is, we can define the power function $y = x^{n}$ for any exponent n. 
 
@@ -4405,7 +4374,7 @@ The definition of the power function also enables us to establish the derivative
 General Power Rule for Derivatives
 For x > 0 and any real number n, $\frac{d}{dx}x^{n} = nx^{n-1}.$ If $x \leq 0$ , then the formula holds whenever the derivative, $x^{n}$ , and $x^{n-1}$ all exist. 
 
-## Proof Differentiating $x^{n}$ with respect to x gives
+### Proof Differentiating $x^{n}$ with respect to x gives
 
 $$
 \begin{array}{l l} \frac {d}{d x} x ^ {n} = \frac {d}{d x} e ^ {n \ln x} & \text { Definition   of } x ^ {n}, x > 0 \\ = e ^ {n \ln x} \cdot \frac {d}{d x} (n \ln x) & \text { Chain   Rule   for } e ^ {u} \\ = x ^ {n} \cdot \frac {n}{x} & \text { Definition   and   derivative   of } \ln x \\ = n x ^ {n - 1}. & x ^ {n} \cdot \frac {1}{x} = x ^ {n - 1} \end{array}
@@ -4437,7 +4406,7 @@ $$
 
 It can be shown directly from the definition of the derivative that the derivative equals 0 when x = 0 and n > 1 (see Exercise 107). This completes the proof of the general version of the Power Rule for all values of x. 
 
-## **EXAMPLE 7** Differentiate $f(x) = x^{x}, x > 0$ .
+**EXAMPLE 7** Differentiate $f(x) = x^{x}, x > 0$ .
 
 **Solution** The Power Rule tells us how to differentiate a function of the form $x^{a}$ , where a is a fixed real number. However, the exponent in $x^{x}$ is not a fixed constant, so we cannot use the Power Rule to differentiate $x^{x}$ . Equation (5) tells us how to differentiate $a^{x}$ when the base a is constant. We cannot use that equation either, because the base x in $x^{x}$ is not constant. Instead, to find the derivative of this function, we note that $f(x) = x^{x} = e^{x \ln x}$ , so differentiation gives 
 
@@ -4447,7 +4416,7 @@ $$
 
 We can also find the derivative of $y = x^x$ using logarithmic differentiation, assuming $y'$ exists. 
 
-## The Number e Expressed as a Limit
+### The Number e Expressed as a Limit
 
 In Section 1.4 we defined the number e as the base value for which the exponential function $y = a^{x}$ has slope 1 when it crosses the y-axis at $(0,1)$ . Thus e is the constant that satisfies the equation 
 
@@ -4465,7 +4434,7 @@ $$
 
 Proof If $f(x) = \ln x$ , then $f'(x) = 1/x$ , so $f'(1) = 1$ . But, by the definition of derivative, 
 
-![[e22d90724098f798ba40c2d49640a3b621b3015f52ef00527fb17c1864518fe2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e22d90724098f798ba40c2d49640a3b621b3015f52ef00527fb17c1864518fe2.jpg)
 
 
 
@@ -4492,11 +4461,10 @@ See Figure 3.40.
 
 Approximating the limit in Theorem 4 by taking x very small gives approximations to e. Its value is $e \approx 2.718281828459045$ to 15 decimal places. 
 
-## EXERCISES
+### Exercises 3.8
 
-## 3.8
 
-## Derivatives of Inverse Functions
+#### Derivatives of Inverse Functions
 
 In Exercises 1–4: 
 
@@ -4540,7 +4508,7 @@ d. What lines are tangent to the curves at the origin?
 
 11. The accompanying figure shows the graph of the function f. 
 
-![[a19680ca832c3862a2b0e70daae284bcb5cf3b5622f7bf8b7d280826b3fb31d6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a19680ca832c3862a2b0e70daae284bcb5cf3b5622f7bf8b7d280826b3fb31d6.jpg)
 
 
 Assuming the inverse function $f^{-1}$ is differentiable, find the slope of $f^{-1}(x)$ at 
@@ -4549,7 +4517,7 @@ a. $x = 1$ b. $x = 2$ c. $x = 3$
 
 12. The accompanying figure shows the graph of the function g. 
 
-![[c8e5272edff8b510540276fcbdae7e8bbc8249a8654a11ea5966b9e147123d5e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c8e5272edff8b510540276fcbdae7e8bbc8249a8654a11ea5966b9e147123d5e.jpg)
 
 
 Assuming the inverse function $g^{-1}$ is differentiable, find the slope of $g^{-1}(x)$ at 
@@ -4584,9 +4552,9 @@ $$
 y = \frac {1}{\ln 3 x}
 $$
 
-19. $y = \ln \frac{3}{x}$ 
-
 18. $y = \ln (t^{3 / 2}) + \sqrt{t}$ 
+
+19. $y = \ln \frac{3}{x}$ 
 
 20. $y = \ln (\sin x)$ 
 
@@ -4596,9 +4564,9 @@ $$
 
 23. $y = \ln x^3$ 
 
-25. $y = t(\ln t)^{2}$ 
-
 24. $y = (\ln x)^{3}$ 
+
+25. $y = t(\ln t)^{2}$ 
 
 26. $y = t\ln \sqrt{t}$ 
 
@@ -4638,7 +4606,7 @@ $$
 
 44. $y = \ln \sqrt{\frac{(x + 1)^{5}}{(x + 2)^{20}}}$ 
 
-## Logarithmic Differentiation
+#### Logarithmic Differentiation
 
 In Exercises 45–58, use logarithmic differentiation to find the derivative of y with respect to the given independent variable. 
 
@@ -4670,7 +4638,7 @@ In Exercises 45–58, use logarithmic differentiation to find the derivative of 
 
 58. $y = \sqrt[3]{\frac{x(x + 1)(x - 2)}{(x^{2} + 1)(2x + 3)}}$ 
 
-## Finding Derivatives
+#### Finding Derivatives
 
 In Exercises 59–70, find the derivative of y with respect to x, t, or $\theta$ , as appropriate. 
 
@@ -4694,9 +4662,9 @@ In Exercises 67–70, find dy/dx.
 
 67. $\ln y = e^{y}\sin x$ 
 
-69. $x^{y} = y^{x}$ 
-
 68. $\ln xy = e^{x + y}$ 
+
+69. $x^{y} = y^{x}$ 
 
 70. $\tan y = e^{x} + \ln x$ 
 
@@ -4704,9 +4672,9 @@ In Exercises 71–92, find the derivative of y with respect to the given indepen
 
 71. $y = 2^{x}$ 
 
-73. $y = 5^{\sqrt{s}}$ 
-
 72. $y = 3^{-x}$ 
+
+73. $y = 5^{\sqrt{s}}$ 
 
 74. $y = 2^{(s^2)}$ 
 
@@ -4720,9 +4688,9 @@ In Exercises 71–92, find the derivative of y with respect to the given indepen
 
 79. $y = \log_4x + \log_4x^2$ 
 
-81. $y = \log_2r\cdot \log_4r$ 
-
 80. $y = \log_{25}e^{x} - \log_{5}\sqrt{x}$ 
+
+81. $y = \log_2r\cdot \log_4r$ 
 
 82. $y = \log_3r\cdot \log_9r$ 
 
@@ -4746,7 +4714,7 @@ In Exercises 71–92, find the derivative of y with respect to the given indepen
 
 92. $y = t\log_3(e^{(\sin t)(\ln 3)})$ 
 
-## Powers with Variable Bases and Exponents
+#### Powers with Variable Bases and Exponents
 
 In Exercises 93–104, use logarithmic differentiation or the method in Example 7 to find the derivative of y with respect to the given independent variable. 
 
@@ -4774,7 +4742,7 @@ In Exercises 93–104, use logarithmic differentiation or the method in Example 
 
 104. $e^y = y^{\ln x}$ 
 
-## Theory and Applications
+#### Theory and Applications
 
 105. If we write $g(x)$ for $f^{-1}(x)$ , Equation (1) can be written as 
 
@@ -4802,7 +4770,7 @@ $$
 \frac {d ^ {n}}{d x ^ {n}} \ln x = (- 1) ^ {n - 1} \frac {(n - 1) !}{x ^ {n}}.
 $$
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 109–116, you will explore some functions and their inverses together with their derivatives and tangent line approximations at specified points. Perform the following steps using your CAS: 
 
@@ -4824,27 +4792,17 @@ e. Plot the functions f and g, the identity, the two tangent lines, and the line
 
 112. $y = \frac{x^3}{x^2 + 1}, -1 \leq x \leq 1, x_0 = 1/2$ 
 
-$$
-\mathbf {1 1 3 .} y = x ^ {3} - 3 x ^ {2} - 1, 2 \leq x \leq 5, x _ {0} = \frac {2 7}{1 0}
-$$
+113. $y = x ^ {3} - 3 x ^ {2} - 1, 2 \leq x \leq 5, x _ {0} = \frac {2 7}{1 0}$
 
-$$
-\mathbf {1 1 4 .} y = 2 - x - x ^ {3}, - 2 \leq x \leq 2, x _ {0} = \frac {3}{2}
-$$
+114. $y = 2 - x - x ^ {3}, - 2 \leq x \leq 2, x _ {0} = \frac {3}{2}$
 
-$$
-\mathbf {1 1 5 .} y = e ^ {x}, - 3 \leq x \leq 5, x _ {0} = 1
-$$
+115. $y = e ^ {x}, - 3 \leq x \leq 5, x _ {0} = 1$
 
-$$
-\mathbf {1 1 6 .} y = \sin x, - \frac {\pi}{2} \leq x \leq \frac {\pi}{2}, x _ {0} = 1
-$$
+116. $y = \sin x, - \frac {\pi}{2} \leq x \leq \frac {\pi}{2}, x _ {0} = 1$
 
 In Exercises 117 and 118, repeat the steps above to solve for the functions $y = f(x)$ and $x = f^{-1}(y)$ defined implicitly by the given equations over the interval. 
 
-$$
-\mathbf {1 1 7 .} y ^ {1 / 3} - 1 = (x + 2) ^ {3}, - 5 \leq x \leq 5, x _ {0} = - 3 / 2
-$$
+117. $y ^ {1 / 3} - 1 = (x + 2) ^ {3}, - 5 \leq x \leq 5, x _ {0} = - 3 / 2$
 
 118. $\cos y = x^{1/5}$ , $0 \leq x \leq 1$ , $x_0 = 1/2$ 
 
@@ -4852,7 +4810,7 @@ $$
 
 We introduced the six basic inverse trigonometric functions in Section 1.5 but focused there on the arcsine and arccosine functions. Here we complete the study of how all six basic inverse trigonometric functions are defined, graphed, and evaluated, and how their derivatives are computed. 
 
-## Inverses of $\tan x$ , $\cot x$ , $\sec x$ , and $\csc x$
+### Inverses of $\tan x$ , $\cot x$ , $\sec x$ , and $\csc x$
 
 The graphs of these four basic inverse trigonometric functions are shown in Figure 3.41. We obtain these graphs by reflecting the graphs of the restricted trigonometric functions (as discussed in Section 1.5) through the line $y = x$ . Let's take a closer look at the arctangent, arccotangent, arcsecant, and arccosecant functions. 
 
@@ -4862,7 +4820,7 @@ $$
 
 Domain: $-\infty < x < \infty$ Range: $-\frac{\pi}{2} < y < \frac{\pi}{2}$ 
 
-![[5b150498642fc0414de247bb5030b150af3538a0799b258d0b2390730acbd269.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5b150498642fc0414de247bb5030b150af3538a0799b258d0b2390730acbd269.jpg)
 
 
 
@@ -4873,7 +4831,7 @@ $$
 \begin{array}{l} \text { Domain: } - \infty <   x <   \infty \\ \text { Range: } \quad 0 <   y <   \pi \end{array}
 $$
 
-![[4d411c486c25bd1a7b2f80aa0596bd2753a32741a03fd63b3041928c41da8665.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4d411c486c25bd1a7b2f80aa0596bd2753a32741a03fd63b3041928c41da8665.jpg)
 
 
 
@@ -4884,7 +4842,7 @@ $$
 \begin{array}{l} \text { Domain: } x \leq - 1 \text { or } x \geq 1 \\ \text { Range: } 0 \leq y \leq \pi , y \neq \frac {\pi}{2} \end{array}
 $$
 
-![[9b367df8a55201c7727fb95adb6c7b22506cd669edfa133213630ba81935340c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9b367df8a55201c7727fb95adb6c7b22506cd669edfa133213630ba81935340c.jpg)
 
 
 
@@ -4895,7 +4853,7 @@ $$
 - \frac {\pi}{2} \leq y \leq \frac {\pi}{2}, y \neq 0
 $$
 
-![[eaaf9341a592ab2859945ad1c12f1bd8986b15455f526ca6562e29d2e5a69e3a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/eaaf9341a592ab2859945ad1c12f1bd8986b15455f526ca6562e29d2e5a69e3a.jpg)
 
 
 
@@ -4918,7 +4876,7 @@ The arctangent of x is a radian angle whose tangent is x. The arcotangent of x i
 >
 > $y = \operatorname{arccsc} x$ is the number in $[-\pi/2, 0) \cup (0, \pi/2]$ for which $\csc y = x$ . 
 >
-![[9049277c42bcf743fe3569c981cb3ff443265281180945a0abb9de12369650b0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9049277c42bcf743fe3569c981cb3ff443265281180945a0abb9de12369650b0.jpg)
 
 
 
@@ -4949,19 +4907,19 @@ by applying Equation (5) in Section 1.5.
 
 **EXAMPLE 1** The accompanying figures show two values of arctan x. 
 
-![[6b56681cbc12c10f79afcdc6b3269bc61c122c6f89fc7c034bdd94a36a34188c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6b56681cbc12c10f79afcdc6b3269bc61c122c6f89fc7c034bdd94a36a34188c.jpg)
 
 
 <table><tr><td>x</td><td>arctan x</td></tr><tr><td><eq>\sqrt{3}</eq></td><td><eq>\pi/3</eq></td></tr><tr><td>1</td><td><eq>\pi/4</eq></td></tr><tr><td><eq>\sqrt{3}/3</eq></td><td><eq>\pi/6</eq></td></tr><tr><td>0</td><td>0</td></tr><tr><td><eq>-\sqrt{3}/3</eq></td><td><eq>-\pi/6</eq></td></tr><tr><td>-1</td><td><eq>-\pi/4</eq></td></tr><tr><td><eq>-\sqrt{3}</eq></td><td><eq>-\pi/3</eq></td></tr></table>
 
 The angles come from the first and fourth quadrants because the range of $\arctan x$ is $(- \pi / 2, \pi / 2)$ . 
 
-![[732b5b4894cbd7b0637655116a5cc8e6461065bb608ec3cba9e38cd2421c62c0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/732b5b4894cbd7b0637655116a5cc8e6461065bb608ec3cba9e38cd2421c62c0.jpg)
 
 
 FIGURE 3.43 The graph of $y = \arcsin x$ has vertical tangent lines at x = -1 and x = 1. 
 
-## The Derivative of $y = \arcsin u$
+### The Derivative of $y = \arcsin u$
 
 We know that the function $x = \sin y$ is differentiable in the interval $-\pi / 2 < y < \pi / 2$ and that its derivative, the cosine, is positive there. Theorem 3 in Section 3.8 therefore assures us that the inverse function $y = \arcsin x$ is differentiable throughout the interval $-1 < x < 1$ . We cannot expect it to be differentiable at $x = 1$ or $x = -1$ because the tangent lines to the graph are vertical at these points (see Figure 3.43). 
 
@@ -4989,7 +4947,7 @@ $$
 \frac {d}{d x} \left(\arcsin x ^ {2}\right) = \frac {1}{\sqrt {1 - (x ^ {2}) ^ {2}}} \cdot \frac {d}{d x} \left(x ^ {2}\right) = \frac {2 x}{\sqrt {1 - x ^ {4}}}.
 $$
 
-## The Derivative of $y = \arctan u$
+### The Derivative of $y = \arctan u$
 
 We find the derivative of $y = \arctan x$ by applying Theorem 3 with $f(x) = \tan x$ and $f^{-1}(x) = \arctan x$ . Theorem 3 can be applied because the derivative of $\tan x$ is positive for $-\pi / 2 < x < \pi / 2$ : 
 
@@ -5033,7 +4991,7 @@ $$
 
 to get 
 
-![[0a043f679840e209a4500b0dc002a13a24fb819807a3954d984a2acaae44d824.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0a043f679840e209a4500b0dc002a13a24fb819807a3954d984a2acaae44d824.jpg)
 
 
 FIGURE 3.44 The slope of the curve $y = \operatorname{arcsec} x$ is positive for both $x < -1$ and $x > 1$ . 
@@ -5066,7 +5024,7 @@ $$
 \begin{array}{r l} \frac {d}{d x} \operatorname{arcsec} (5 x ^ {4}) & = \frac {1}{| 5 x ^ {4} | \sqrt {(5 x ^ {4}) ^ {2} - 1}} \frac {d}{d x} (5 x ^ {4}) \\ & = \frac {1}{5 x ^ {4} \sqrt {2 5 x ^ {8} - 1}} (2 0 x ^ {3}) \\ & = \frac {4}{x \sqrt {2 5 x ^ {8} - 1}}. \end{array} \quad 5 x ^ {4} > 1
 $$
 
-## Derivatives of the Other Three Inverse Trigonometric Functions
+### Derivatives of the Other Three Inverse Trigonometric Functions
 
 We could use the same techniques to find the derivatives of the other three inverse trigonometric functions—arccosine, arccotangent, and arccosecant—but there is an easier way, thanks to the following identities. 
 
@@ -5092,7 +5050,7 @@ $$
 
 The derivatives of the inverse trigonometric functions are summarized in Table 3.1. 
 
-## TABLE 3.1 Derivatives of the inverse trigonometric functions
+**TABLE 3.1 Derivatives of the inverse trigonometric functions**
 
 $$
 \mathbf {1}. \frac {d}{d x} (\arcsin x) = \frac {1}{\sqrt {1 - x ^ {2}}} (| x | <   1) \quad \mathbf {4}. \frac {d}{d x} (\arccos x) = - \frac {1}{\sqrt {1 - x ^ {2}}} (| x | <   1)
@@ -5106,25 +5064,49 @@ $$
 \frac {d}{d x} (\operatorname{arcsec} x) = \frac {1}{| x | \sqrt {x ^ {2} - 1}} (| x | > 1) \quad \text {   6.   } \frac {d}{d x} (\operatorname{arccsc} x) = - \frac {1}{| x | \sqrt {x ^ {2} - 1}} (| x | > 1)
 $$
 
-## EXERCISES 3.9
+### EXERCISES 3.9
 
 Remember that arcsin and $\sin^{-1}$ represent the same function, and similarly for the other trigonometric functions. 
 
-## Common Values
+#### Common Values
 
 Use reference triangles in an appropriate quadrant, as in Example 1, to find the angles in Exercises 1–8.
 
-1. a. arctan 1 b. arctan $(-\sqrt{3})$ c. tan $^{-1}\left(\frac{1}{\sqrt{3}}\right)$ 2. a. arctan $(-1)$ b. tan $^{-1}\sqrt{3}$ c. arctan $\left(\frac{-1}{\sqrt{3}}\right)$ 3. a. arcsin $\left(\frac{-1}{2}\right)$ b. arcsin $\left(\frac{1}{\sqrt{2}}\right)$ c. sin $^{-1}\left(\frac{-\sqrt{3}}{2}\right)$ 4. a. sin $^{-1}\left(\frac{1}{2}\right)$ b. arcsin $\left(\frac{-1}{\sqrt{2}}\right)$ c. arcsin $\left(\frac{\sqrt{3}}{2}\right)$ 5. a. arccos $\left(\frac{1}{2}\right)$ b. cos $^{-1}\left(\frac{-1}{\sqrt{2}}\right)$ c. arccos $\left(\frac{\sqrt{3}}{2}\right)$ 6. a. csc $^{-1}\sqrt{2}$ b. arccsc $\left(\frac{-2}{\sqrt{3}}\right)$ c. arccsc 2 
+1. a. arctan 1 b. arctan $(-\sqrt{3})$ c. tan $^{-1}\left(\frac{1}{\sqrt{3}}\right)$
 
-7. a. $\sec^{-1}(-\sqrt{2})$ b. $\operatorname{arcsec}\left(\frac{2}{\sqrt{3}}\right)$ c. $\operatorname{arcsec}(-2)$ 8. a. $\operatorname{arccot}(-1)$ b. $\operatorname{arccot}(\sqrt{3})$ c. $\cot^{-1}\left(\frac{-1}{\sqrt{3}}\right)$ 
+2. a. arctan $(-1)$ b. tan $^{-1}\sqrt{3}$ c. arctan $\left(\frac{-1}{\sqrt{3}}\right)$
+
+3. a. arcsin $\left(\frac{-1}{2}\right)$ b. arcsin $\left(\frac{1}{\sqrt{2}}\right)$ c. sin $^{-1}\left(\frac{-\sqrt{3}}{2}\right)$
+
+4. a. sin $^{-1}\left(\frac{1}{2}\right)$ b. arcsin $\left(\frac{-1}{\sqrt{2}}\right)$ c. arcsin $\left(\frac{\sqrt{3}}{2}\right)$
+
+5. a. arccos $\left(\frac{1}{2}\right)$ b. cos $^{-1}\left(\frac{-1}{\sqrt{2}}\right)$ c. arccos $\left(\frac{\sqrt{3}}{2}\right)$
+
+6. a. csc $^{-1}\sqrt{2}$ b. arccsc $\left(\frac{-2}{\sqrt{3}}\right)$ c. arccsc 2
+
+7. a. $\sec^{-1}(-\sqrt{2})$ b. $\operatorname{arcsec}\left(\frac{2}{\sqrt{3}}\right)$ c. $\operatorname{arcsec}(-2)$
+
+8. a. $\operatorname{arccot}(-1)$ b. $\operatorname{arccot}(\sqrt{3})$ c. $\cot^{-1}\left(\frac{-1}{\sqrt{3}}\right)$
 
 Evaluations
 Find the values in Exercises 9–12.
-9. $\sin\left(\cos^{-1}\left(\frac{\sqrt{2}}{2}\right)\right)$ 10. $\sec\left(\arccos\frac{1}{2}\right)$ 11. $\tan\left(\arcsin\left(-\frac{1}{2}\right)\right)$ 12. $\cot\left(\sin^{-1}\left(-\frac{\sqrt{3}}{2}\right)\right)$ 
+9. $\sin\left(\cos^{-1}\left(\frac{\sqrt{2}}{2}\right)\right)$
+
+10. $\sec\left(\arccos\frac{1}{2}\right)$
+
+11. $\tan\left(\arcsin\left(-\frac{1}{2}\right)\right)$
+
+12. $\cot\left(\sin^{-1}\left(-\frac{\sqrt{3}}{2}\right)\right)$
 
 Limits
 Find the limits in Exercises 13–20. (If in doubt, look at the function's graph.)
-13. $\lim_{x\to1^{-}}\arcsin x$ 14. $\lim_{x\to-1^{+}}\cos^{-1}x$ 15. $\lim_{x\to\infty}\tan^{-1}x$ 16. $\lim_{x\to-\infty}\arctan x$ 
+13. $\lim_{x\to1^{-}}\arcsin x$
+
+14. $\lim_{x\to-1^{+}}\cos^{-1}x$
+
+15. $\lim_{x\to\infty}\tan^{-1}x$
+
+16. $\lim_{x\to-\infty}\arctan x$
 
 17. $\lim_{x\to \infty}\operatorname {arcsec}x$ 
 
@@ -5154,7 +5136,9 @@ In Exercises 21–48, find the derivative of y with respect to the appropriate v
 
 28. $y = \operatorname{arccsc}\frac{x}{2}$ 
 
-29. $y = \sec^{-1}\frac{1}{t},\quad 0 < t < 1$ 30. $y = \arcsin \frac{3}{t^2}$ 
+29. $y = \sec^{-1}\frac{1}{t},\quad 0 < t < 1$
+
+30. $y = \arcsin \frac{3}{t^2}$
 
 31. $y = \operatorname{arccot}\sqrt{t}$ 
 
@@ -5168,11 +5152,15 @@ In Exercises 21–48, find the derivative of y with respect to the appropriate v
 
 36. $y = \arccos (e^{-t})$ 
 
-37. $y = s\sqrt{1 - s^2} + \cos^{-1}s$ 38. $y = \sqrt{s^2 - 1} - \sec^{-1}s$ 
+37. $y = s\sqrt{1 - s^2} + \cos^{-1}s$
+
+38. $y = \sqrt{s^2 - 1} - \sec^{-1}s$
 
 39. $y = \tan^{-1}\sqrt{x^2 - 1} + \csc^{-1}x, \quad x > 1$ 
 
-40. $y = \cot^{-1}\frac{1}{x} - \tan^{-1}x$ 41. $y = x\arcsin x + \sqrt{1 - x^2}$ 
+40. $y = \cot^{-1}\frac{1}{x} - \tan^{-1}x$
+
+41. $y = x\arcsin x + \sqrt{1 - x^2}$
 
 42. $y = \ln (x^{2} + 4) - x\arctan \left(\frac{x}{2}\right)$ 
 
@@ -5208,24 +5196,24 @@ $$
 
 if you are x meters from the front wall. 
 
-![[0e1ab60cc2456a9065654e353679e9df4329ac9599c3047355585b792d88f908.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0e1ab60cc2456a9065654e353679e9df4329ac9599c3047355585b792d88f908.jpg)
 
 
 54. Find the angle $\alpha$ . 
 
-![[9c19dbb16e5462dac3332e350c925d402a654552a4f158d456ca4afc1e693a15.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9c19dbb16e5462dac3332e350c925d402a654552a4f158d456ca4afc1e693a15.jpg)
 
 
 55. Here is an informal proof that $\tan^{-1}1 + \tan^{-1}2 + \tan^{-1}3 = \pi$ . Explain what is going on. 
 
-![[e3b82afb94ef73fa458d9204a2c87ae4a8cb6071f1210bb0cd6fe8315a23c9e3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e3b82afb94ef73fa458d9204a2c87ae4a8cb6071f1210bb0cd6fe8315a23c9e3.jpg)
 
 
 56. Two derivations of the identity $\sec^{-1}(-x) = \pi - \sec^{-1}x$ 
 
 a. (Geometric) Here is a pictorial proof that $\sec^{-1}(-x) = \pi - \sec^{-1}x$ . See if you can tell what is going on. 
 
-![[5b3a50b923062e27958e9c2f7476ddedf540bb508fe1e62d761c804502f4f912.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5b3a50b923062e27958e9c2f7476ddedf540bb508fe1e62d761c804502f4f912.jpg)
 
 
 b. (Algebraic) Derive the identity $\sec^{-1}(-x) = \pi - \sec^{-1}x$ by combining the following two equations from the text: 
@@ -5272,11 +5260,7 @@ for the derivative of $y = \arctan x$ by differentiating both sides of the equiv
 
 $$
 \frac {d}{d x} \operatorname{arcsec} x = \frac {1}{| x | \sqrt {x ^ {2} - 1}}, | x | > 1.
-$$
-
-64. Use the identity 
-
-$$
+64. $Use the identity$
 \operatorname{arccot} x = \frac {\pi}{2} - \arctan x
 $$
 
@@ -5326,11 +5310,11 @@ T Use your graphing utility for Exercises 72–76.
 
 In this section we look at questions that arise when two or more related quantities are changing. The problem of determining how the rate of change of one of them affects the rates of change of the others is called a related rates problem. 
 
-## Related Rates Equations
+### Related Rates Equations
 
 Suppose we are pumping air into a spherical balloon. Both the volume and radius of the balloon are increasing over time. If V is the volume and r is the radius of the balloon at an instant of time, then 
 
-![[6060a2431a619e6accb82ea69f909f862e896f33f0a1c13891a3112ac3092f91.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6060a2431a619e6accb82ea69f909f862e896f33f0a1c13891a3112ac3092f91.jpg)
 
 
 
@@ -5403,7 +5387,7 @@ $$
 
 At the moment in question, the water level is rising at about 0.098 m/min. 
 
-## Related Rates Problem Strategy
+### Related Rates Problem Strategy
 
 1. Let t denote time, and choose names for all of the variables that change over time (we will assume that those variables are differentiable functions of t). Identify any quantities that remain constant (these do not need to be given names). In most problems it will be very helpful to draw a picture that depicts the setup of the problem. 
 
@@ -5415,7 +5399,7 @@ At the moment in question, the water level is rising at about 0.098 m/min.
 
 **EXAMPLE 2** A hot air balloon rising straight up from a level field is tracked by a range finder $150\mathrm{m}$ from the liftoff point. At the moment the range finder's elevation angle is $\pi /4$ , the angle is increasing at the rate of $0.14\mathrm{rad / min}$ . How fast is the balloon rising at that moment? 
 
-![[e1c66731a2bc39ea09fe3902887d8e11d7b1bc2c72d2d99a01ae43a5aaf49851.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e1c66731a2bc39ea09fe3902887d8e11d7b1bc2c72d2d99a01ae43a5aaf49851.jpg)
 
 
 
@@ -5440,7 +5424,7 @@ $$
 \frac {y}{1 5 0} = \tan \theta \quad \text { or } \quad y = 1 5 0 \tan \theta .
 $$
 
-![[42a69c0056d1c9924c26b26b3ef7a0d92ca488ac070e727082df763c0a414d4e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/42a69c0056d1c9924c26b26b3ef7a0d92ca488ac070e727082df763c0a414d4e.jpg)
 
 
 Equation relating the variables 
@@ -5509,7 +5493,7 @@ $$
 
 At the moment in question, the car's speed is $112.5 \mathrm{~km} / \mathrm{h}$ . 
 
-![[2b53a27ad43db388cc720ae19d42309d31eaa47115f46b5b7cbf1d434a984b4c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2b53a27ad43db388cc720ae19d42309d31eaa47115f46b5b7cbf1d434a984b4c.jpg)
 
 
 
@@ -5542,7 +5526,7 @@ $$
 
 Note that $x$ is decreasing because $dx / dt$ is negative. At the moment in question, the point $Q$ is moving toward the origin at the speed of $20\sqrt{3}\pi \approx 109\mathrm{m / min}$ . 
 
-![[7bfbfc2cf5ea7867e17d4932be90c060179ec99a49785a1f50e30474d00a584f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7bfbfc2cf5ea7867e17d4932be90c060179ec99a49785a1f50e30474d00a584f.jpg)
 
 
 **EXAMPLE 5** A jet airliner is flying at a constant altitude of 10,000 m above sea level as it approaches a Pacific island. The aircraft comes within the direct line of sight of a radar station located on the island, and the radar indicates the initial angle between sea level and its line of sight to the aircraft is $30^{\circ}$ . How fast (in kilometers per hour) is the aircraft approaching the island when first detected by the radar instrument if it is turning upward (counterclockwise) at the rate of 1/3 deg/s in order to keep the aircraft within its direct line of sight? 
@@ -5571,14 +5555,14 @@ $$
 \frac {d x}{d t} = - 1 0 \csc^ {2} \theta \frac {d \theta}{d t}.
 $$
 
-![[056d7864531fed74a9f756576e5d24bf153f955b2071bc3f94cf3c4c10976d16.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/056d7864531fed74a9f756576e5d24bf153f955b2071bc3f94cf3c4c10976d16.jpg)
 
 
 
 (a)
 
 
-![[b317e2c21f853dd960db2310d66b7c3abd44a501503dfff160879fb052d41d48.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b317e2c21f853dd960db2310d66b7c3abd44a501503dfff160879fb052d41d48.jpg)
 
 
 
@@ -5649,7 +5633,7 @@ $$
 
 as the rate at which the weight is being raised when $x = 6.3 \, m$ . 
 
-## EXERCISES 3.10
+### EXERCISES 3.10
 
 1. Area Suppose that the radius $r$ and area $A = \pi r^2$ of a circle are differentiable functions of $t$ . Write an equation that relates $dA / dt$ to $dr / dt$ . 
 
@@ -5694,7 +5678,7 @@ c. How is $dV / dt$ related to $dr / dt$ and $dh / dt$ if neither $r$ nor $h$ is
 
 15. Changing voltage The voltage V (volts), current I (amperes), and resistance R (ohms) of an electric circuit like the one shown here are related by the equation V = IR. Suppose that V is increasing at the rate of 1 volt/s while I is decreasing at the rate of 1/3 amp/s. Let t denote time in seconds. 
 
-![[6f6dd3a8f495284f3568ba68bdc61ece85ee1c67b90d5eee5cd1145325b75b99.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6f6dd3a8f495284f3568ba68bdc61ece85ee1c67b90d5eee5cd1145325b75b99.jpg)
 
 
 a. What is the value of $dV / dt$ ? 
@@ -5759,7 +5743,7 @@ b. At what rate is the area of the triangle formed by the ladder, wall, and grou
 
 c. At what rate is the angle $\theta$ between the ladder and the ground changing then? 
 
-![[9e0159a893856dae72449e071a7485483f8a1aceb99344d7bd6a08a36447f4ff.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9e0159a893856dae72449e071a7485483f8a1aceb99344d7bd6a08a36447f4ff.jpg)
 
 
 24. Commercial air traffic Two commercial airplanes are flying at an altitude of 12,000 m along straight-line courses that intersect at right angles. Plane A is approaching the intersection point at a speed of 442 knots (nautical miles per hour; a nautical mile is 1852 m). Plane B is approaching the intersection at 481 knots. At what rate is the distance between the planes changing when A is 5 nautical miles from the intersection point, and B is 12 nautical miles from the intersection point? 
@@ -5778,7 +5762,7 @@ b. How fast is the radius of the water's surface changing then? Answer in centim
 
 29. A draining hemispherical reservoir Water is flowing at the rate of $6 \, m^{3}/min$ from a reservoir shaped like a hemispherical bowl of radius 13 m, shown here in profile. Answer the following questions, given that the volume of water in a hemispherical bowl of radius R is $V = (\pi/3)y^{2}(3R - y)$ when the water is y meters deep. 
 
-![[ab44a25e0f70c5b638a8fc011b63b6862c97ad51d4a33d55f940c77a76b9a4af.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ab44a25e0f70c5b638a8fc011b63b6862c97ad51d4a33d55f940c77a76b9a4af.jpg)
 
 
 a. At what rate is the water level changing when the water is 8 m deep? 
@@ -5797,12 +5781,12 @@ a. How fast is the boat approaching the dock when 3 m of rope are out?
 
 b. At what rate is the angle $\theta$ changing at this instant (see the figure)? 
 
-![[e4390440a0ce04b0f32707da391cd37424cede75fa1eb044f456e7318191713c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e4390440a0ce04b0f32707da391cd37424cede75fa1eb044f456e7318191713c.jpg)
 
 
 33. A balloon and a bicycle A balloon is rising vertically above a level, straight road at a constant rate of 0.3 m/s. Just when the balloon is 20 m above the ground, a bicycle moving at a constant rate of 5 m/s passes under it. How fast is the distance $s(t)$ between the bicycle and balloon increasing 3 s later? 
 
-![[8a3c91568e3fd36c37bef35632492e1e803c935aab0c24786f1fcd0adb46eca5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8a3c91568e3fd36c37bef35632492e1e803c935aab0c24786f1fcd0adb46eca5.jpg)
 
 
 34. Making coffee Coffee is draining from a conical filter into a cylindrical coffeepot at the rate of $160\mathrm{cm}^3/\mathrm{min}$ . 
@@ -5811,7 +5795,7 @@ a. How fast is the level in the pot rising when the coffee in the cone is 12 cm 
 
 b. How fast is the level in the cone falling then? 
 
-![[4688a3138f1e9ab3c0ab3bd519bb049b7aae465c04270b89fe73651da4aaf261.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4688a3138f1e9ab3c0ab3bd519bb049b7aae465c04270b89fe73651da4aaf261.jpg)
 
 
 35. Cardiac output In the late 1860s, Adolf Fick, a professor of physiology in the Faculty of Medicine in Würzberg, Germany, developed one of the methods we use today for measuring how much blood your heart pumps in a minute. Your cardiac output as you read this sentence is probably about 7 L/min. At rest it is likely to be a bit under 6 L/min. If you are a trained marathon runner running a marathon, your cardiac output can be as high as 30 L/min. 
@@ -5838,17 +5822,17 @@ Suppose that when Q = 233 and D = 41, we also know that D is decreasing at the r
 
 38. Videotaping a moving car You are videotaping a race from a stand 40 m from the track, following a car that is moving at 288 km/h (80 m/s), as shown in the accompanying figure. How fast will your camera angle $\theta$ be changing when the car is right in front of you? A half second later? 
 
-![[930c573f0d7a9f358c9a6159d4f9da0352bf63eba9a5e7e67ebd64a0126ea063.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/930c573f0d7a9f358c9a6159d4f9da0352bf63eba9a5e7e67ebd64a0126ea063.jpg)
 
 
 39. A moving shadow A light shines from the top of a pole $15\mathrm{m}$ high. A ball is dropped from the same height from a point $9\mathrm{m}$ away from the light. (See accompanying figure.) How fast is the shadow of the ball moving along the ground $1/2\mathrm{s}$ later? (Assume the ball falls a distance $s = 4.9t^2\mathrm{m}$ in $t$ seconds.) 
 
-![[54a933d0408f50f1002b4c1325efda636987b6f90fd3442c0ea62c486062a957.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/54a933d0408f50f1002b4c1325efda636987b6f90fd3442c0ea62c486062a957.jpg)
 
 
 40. A building's shadow On a morning of a day when the sun will pass directly overhead, the shadow of a 24 m building on level ground is 18 m long. At the moment in question, the angle $\theta$ the sun makes with the ground is increasing at the rate of $0.27^{\circ} / \mathrm{min}$ . At what rate is the shadow decreasing? (Remember to use radians. Express your answer in centimeters per minute, to the nearest tenth.) 
 
-![[7463590c7459211acad9812e2d497811ed48e98bdabc2ae9b210fcd5b0456d32.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7463590c7459211acad9812e2d497811ed48e98bdabc2ae9b210fcd5b0456d32.jpg)
 
 
 41. A melting ice layer A spherical iron ball 8 cm in diameter is coated with a layer of ice of uniform thickness. If the ice melts at the rate of $10 \, cm^{3}/min$ , how fast is the thickness of the ice decreasing when it is 2 cm thick? How fast is the outer surface area of ice decreasing? 
@@ -5863,7 +5847,7 @@ b. At what rates are angles $\theta_{1}$ and $\theta_{2}$ (see the figure) chang
 
 c. The player slides into second base at the rate of 4.5 m/s. At what rates are angles $\theta_{1}$ and $\theta_{2}$ changing as the player touches base? 
 
-![[735dfda7b14579c6cdf87cf383b5d543927a3b085a6f6f2128a7a01a318e9074.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/735dfda7b14579c6cdf87cf383b5d543927a3b085a6f6f2128a7a01a318e9074.jpg)
 
 
 44. Ships Two ships are steaming straight away from a point O along routes that make a $120^{\circ}$ angle. Ship A moves at 14 knots (nautical miles per hour; a nautical mile is 1852 m). Ship B moves at 21 knots. How fast are the ships moving apart when OA = 5 and OB = 3 nautical miles? 
@@ -5874,7 +5858,7 @@ c. The player slides into second base at the rate of 4.5 m/s. At what rates are 
 
 47. A lighthouse beam A lighthouse sits 1 km offshore, and its beam of light rotates counterclockwise at the constant rate of 3 full circles per minute. At what rate is the image of the beam moving down the shoreline when the image is 1 km from the spot on the shoreline nearest the lighthouse? 
 
-![[b97f19f4effc4ffd98a727b8c340d0b2928d905cf6e8841bba1b28bcfaaee699.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b97f19f4effc4ffd98a727b8c340d0b2928d905cf6e8841bba1b28bcfaaee699.jpg)
 
 
 ## 3.11 Linearization and Differentials
@@ -5883,32 +5867,32 @@ It is often useful to approximate complicated functions with simpler ones that g
 
 We introduce new variables $dx$ and $dy$ , called differentials, and define them in a way that makes Leibniz's notation for the derivative $dy / dx$ a true ratio. We use $dy$ to estimate error in measurement, which then provides for a precise proof of the Chain Rule (Section 3.6). 
 
-## Linearization
+### Linearization
 
 As you can see in Figure 3.51, the tangent line to the curve $y = x^{2}$ lies close to the curve near the point of tangency. For a brief interval to either side, the y-values along the tangent line give good approximations to the y-values on the curve. We observe this phenomenon by zooming in on the two graphs at the point of tangency, or by looking at tables of values for the difference between $f(x)$ and its tangent line near the x-coordinate of the point of tangency. The phenomenon is true not just for parabolas; every differentiable curve behaves locally like its tangent line. 
 
-![[12a18dc16758c3a59efd86a373ea3d07da001ec68da780c2fe689534464132b1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/12a18dc16758c3a59efd86a373ea3d07da001ec68da780c2fe689534464132b1.jpg)
 
 
 
 $y = x^{2}$ and its tangent line y = 2x - 1 at (1, 1).
 
 
-![[50fcaca8b84aa5873d2c122a4ca3f4b37bfa55da185b89e58aed3da8f9680fa9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/50fcaca8b84aa5873d2c122a4ca3f4b37bfa55da185b89e58aed3da8f9680fa9.jpg)
 
 
 
 Tangent line and curve very close near $(1, 1)$ .
 
 
-![[a9f7adf76eb2e32336c4feb92d1cd57df498247246b168ac5a1a315520ef49f6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a9f7adf76eb2e32336c4feb92d1cd57df498247246b168ac5a1a315520ef49f6.jpg)
 
 
 
 Tangent line and curve very close throughout entire x-interval shown.
 
 
-![[cf9f9cc40a4a17cf609e4bd604760c328609e9c2dd23c3cef89d8c4370df3cc1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cf9f9cc40a4a17cf609e4bd604760c328609e9c2dd23c3cef89d8c4370df3cc1.jpg)
 
 
 
@@ -5919,7 +5903,7 @@ Tangent line and curve closer still. Computer screen cannot distinguish tangent 
 FIGURE 3.51 The more we magnify the graph of a function near a point where the function is differentiable, the flatter the graph becomes and the more it resembles its tangent line.
 
 
-![[347458df7679d5da1103e694c8e8394ca0bf3e163aa24bdef3f4e277f1c282d8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/347458df7679d5da1103e694c8e8394ca0bf3e163aa24bdef3f4e277f1c282d8.jpg)
 
 
 
@@ -5956,14 +5940,14 @@ of f by L is the standard linear approximation of f at a. The point x = a is the
 
 **EXAMPLE 1** Find the linearization of $f(x) = \sqrt{1 + x}$ at x = 0 (Figure 3.53). 
 
-![[9c6ea95d97e6070396888ddd09bf1f039ca4bf2ebf17341a4bc1ee15cf700274.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9c6ea95d97e6070396888ddd09bf1f039ca4bf2ebf17341a4bc1ee15cf700274.jpg)
 
 
 
 FIGURE 3.53 The graph of $y = \sqrt{1 + x}$ and its linearizations at x = 0 and x = 3. Figure 3.54 shows a magnified view of the small window about 1 on the y-axis.
 
 
-![[2e31984fbea4a29219f71d7cbb88d1cdaa872f929125f53c58cda89ab6b36940.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2e31984fbea4a29219f71d7cbb88d1cdaa872f929125f53c58cda89ab6b36940.jpg)
 
 
 
@@ -5998,9 +5982,9 @@ Do not be misled by the preceding calculations into thinking that whatever we do
 
 A linear approximation normally loses accuracy away from its center. As Figure 3.53 suggests, the approximation $\sqrt{1+x} \approx 1 + (x/2)$ is too crude to be useful near x = 3. There, we need the linearization at x = 3. 
 
-## **EXAMPLE 2** Find the linearization of $f(x) = \sqrt{1 + x}$ at x = 3. (See Figure 3.53.)
+**EXAMPLE 2** Find the linearization of $f(x) = \sqrt{1 + x}$ at x = 3. (See Figure 3.53.)
 
-![[38e0ded3c75858a8c2a60863d50ba6bc080bad9864b48f20f34a3dddc2eac72d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/38e0ded3c75858a8c2a60863d50ba6bc080bad9864b48f20f34a3dddc2eac72d.jpg)
 
 
 FIGURE 3.55 The graph of $f(x) = \cos x$ and its linearization at $x = \pi/2$ . Near $x = \pi/2$ , $\cos x \approx 2x + (\pi/2)$ (Example 3). 
@@ -6045,7 +6029,7 @@ $$
 
 a result that is off by more than 25%. 
 
-## **EXAMPLE 3** Find the linearization of $f(x) = \cos x$ at $x = \pi/2$ (Figure 3.55).
+**EXAMPLE 3** Find the linearization of $f(x) = \cos x$ at $x = \pi/2$ (Figure 3.55).
 
 **Solution** Since $f(\pi / 2) = \cos (\pi / 2) = 0$ , $f'(x) = -\sin x$ , and $f'(\pi / 2) = -\sin (\pi / 2) = -1$ , we find the linearization at $a = \pi / 2$ to be 
 
@@ -6077,7 +6061,7 @@ $$
 \frac {1}{\sqrt {1 - x ^ {2}}} = (1 - x ^ {2}) ^ {- 1 / 2} \approx 1 + \left(- \frac {1}{2}\right) (- x ^ {2}) = 1 + \frac {1}{2} x ^ {2} \quad k = - 1 / 2; \text { replace } x \text { by } - x ^ {2}.
 $$
 
-## Differentials
+### Differentials
 
 We sometimes use the Leibniz notation dy/dx to represent the derivative of y with respect to x. Contrary to its appearance, it is not a ratio. We now introduce two new variables dx and dy with the property that when their ratio exists, it is equal to the derivative. 
 
@@ -6089,7 +6073,7 @@ We sometimes use the Leibniz notation dy/dx to represent the derivative of y wit
 >
 Unlike the independent variable dx, the variable dy is always a dependent variable. It depends on both x and dx. If dx is given a specific value and x is a particular number in the domain of the function f, then these values determine the numerical value of dy. Often the variable dx is chosen to be $\Delta x$ , the change in x. 
 
-## **EXAMPLE 4**
+**EXAMPLE 4**
 
 (a) Find dy if $y = x^{5} + 37x$ . 
 
@@ -6117,7 +6101,7 @@ $$
 \begin{array}{l} \Delta L = L (a + d x) - L (a) \\ = \underbrace {f (a) + f ^ {\prime} (a) [ (a + d x) - a ]} _ {L (a + d x)} - \underbrace {f (a)} _ {L (a)} \\ = f ^ {\prime} (a) d x. \end{array}
 $$
 
-![[265cacd525d9ada6b7109913a186771bd0692e5f3997b77728b91d004ba7ef92.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/265cacd525d9ada6b7109913a186771bd0692e5f3997b77728b91d004ba7ef92.jpg)
 
 
 
@@ -6162,13 +6146,13 @@ $$
 \begin{array}{l} \text {(a)} d (\tan 2 x) = \sec^ {2} (2 x) d (2 x) = 2 \sec^ {2} 2 x d x \\ \text {(b)} d \left(\frac {x}{x + 1}\right) = \frac {(x + 1) d x - x d (x + 1)}{(x + 1) ^ {2}} = \frac {x d x + d x - x d x}{(x + 1) ^ {2}} = \frac {d x}{(x + 1) ^ {2}} \end{array}
 $$
 
-## Estimating with Differentials
+### Estimating with Differentials
 
 Suppose we know the value of a differentiable function $f(x)$ at a point a and want to estimate how much this value will change if we move to a nearby point $a + dx$ . If $dx = \Delta x$ is small, then we can see from Figure 3.56 that $\Delta y$ is approximately equal to the differential dy. Since 
 
 FIGURE 3.57 When dr is small compared with a, the differential dA gives the estimate $A(a + dr) = \pi a^{2} + dA$ (Example 6). 
 
-![[68d14f85d31cc6d057e2652205af2cb75b966dc47e8522da75bffc90ddc53001.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/68d14f85d31cc6d057e2652205af2cb75b966dc47e8522da75bffc90ddc53001.jpg)
 
 
 $$
@@ -6209,7 +6193,7 @@ The error in our estimate is $0.01\pi m^{2}$ , which is the difference $\Delta A
 
 When using differentials to estimate functions, our goal is to choose a nearby point x = a where both $f(a)$ and the derivative $f'(a)$ are easy to evaluate. 
 
-## **EXAMPLE 7** Use differentials to estimate
+**EXAMPLE 7** Use differentials to estimate
 
 $$
 (a) 7. 9 7 ^ {1 / 3}
@@ -6219,7 +6203,7 @@ $$
 (\mathbf {b}) \sin (\pi / 6 + 0. 0 1).
 $$
 
-## **Solution**
+**Solution**
 
 (a) The differential associated with the cube root function $y = x^{1/3}$ is 
 
@@ -6255,7 +6239,7 @@ For comparison, the true value of $\sin(\pi/6 + 0.01)$ to 6 decimal places is 0.
 
 The method in part (b) of Example 7 can be used in computer algorithms to give values of trigonometric functions. The algorithms store a large table of sine and cosine values between 0 and $\pi/4$ . Values between these stored values are computed using differentials as in Example 7b. Values outside of $[0, \pi/4]$ are computed from values in this interval using trigonometric identities. 
 
-## Error in Differential Approximation
+### Error in Differential Approximation
 
 Let $f(x)$ be differentiable at $x = a$ and suppose that $dx = \Delta x$ is an increment of $x$ . We have two ways to describe the change in $f$ as $x$ changes from $a$ to $a + \Delta x$ : 
 
@@ -6304,7 +6288,7 @@ $$
 
 so the approximation error is $\Delta A - dA = \varepsilon\Delta r = 0.01\pi$ and $\varepsilon = 0.01\pi/\Delta r = 0.01\pi/0.1 = 0.1\pi$ m. 
 
-## Proof of the Chain Rule
+### Proof of the Chain Rule
 
 Equation (1) enables us to give a complete proof of the Chain Rule. Our goal is to show that if $f(u)$ is a differentiable function of u and $u = g(x)$ is a differentiable function of x, then the composition $y = f(g(x))$ is a differentiable function of x. Since a function is differentiable if and only if it has a derivative at each point in its domain, we must show that whenever g is differentiable at $x_{0}$ and f is differentiable at $g(x_{0})$ , then the composition is differentiable at $x_{0}$ and the derivative of the composition satisfies the equation 
 
@@ -6342,7 +6326,7 @@ $$
 \left. \frac {d y}{d x} \right| _ {x = x _ {0}} = \lim _ {\Delta x \rightarrow 0} \frac {\Delta y}{\Delta x} = f ^ {\prime} (u _ {0}) g ^ {\prime} (x _ {0}) = f ^ {\prime} (g (x _ {0})) \cdot g ^ {\prime} (x _ {0}).
 $$
 
-## Sensitivity to Change
+### Sensitivity to Change
 
 The equation $df = f'(x) \, dx$ tells how sensitive the output of f is to a change in input at different values of x. The larger the value of $f'$ at x, the greater the effect of a given change dx. As we move from a to a nearby point $a + dx$ , we can describe the change in f in three ways: absolute, relative, and percentage. 
 
@@ -6410,7 +6394,7 @@ $$
 
 Equation (3) expresses the increase in mass that results from the added velocity v. 
 
-## Converting Mass to Energy
+### Converting Mass to Energy
 
 Equation (3) derived in Example 9 has an important interpretation. In Newtonian physics, $(1/2)m_{0}v^{2}$ is the kinetic energy (KE) of the object, and if we rewrite Equation (3) in the form 
 
@@ -6432,13 +6416,14 @@ $$
 
 So the change in kinetic energy $\Delta(\mathrm{KE})$ in going from velocity 0 to velocity v is approximately equal to $(\Delta m)c^{2}$ , the change in mass times the square of the speed of light. Using $c \approx 3 \times 10^{8}$ m/s, we see that a small change in mass can create a large change in energy. 
 
-## EXERCISES
+### Exercises 3.11
 
-## 3.11
 
-## Finding Linearizations
+#### Finding Linearizations
 
 In Exercises 1–5, find the linearization $L(x)$ of $f(x)$ at x = a. 
+
+#### Applications
 
 1. $f(x) = x^{3} - 2x + 3,\quad a = 2$ 
 
@@ -6454,7 +6439,7 @@ In Exercises 1–5, find the linearization $L(x)$ of $f(x)$ at x = a.
 
 a. $\sin x$ b. $\cos x$ c. $\tan x$ d. $e^{x}$ e. $\ln(1 + x)$ 
 
-## Linearization for Approximation
+#### Linearization for Approximation
 
 In Exercises 7–14, find a linearization at a suitably chosen integer near $a$ at which the given function and its derivative are easy to evaluate. 
 
@@ -6510,9 +6495,9 @@ In Exercises 19–38, find dy.
 
 29. $y = 3\csc (1 - 2\sqrt{x})$ 
 
-31. $y = e^{\sqrt{x}}$ 
-
 30. $y = 2\cot \left(\frac{1}{\sqrt{x}}\right)$ 
+
+31. $y = e^{\sqrt{x}}$ 
 
 32. $y = xe^{-x}$ 
 
@@ -6528,7 +6513,7 @@ In Exercises 19–38, find dy.
 
 38. $y = e^{\tan^{-1}\sqrt{x^2 + 1}}$ 
 
-## Approximation Error
+#### Approximation Error
 
 In Exercises 39–44, each function $f(x)$ changes value when x changes from $x_{0}$ to $x_{0} + dx$ . Find 
 
@@ -6538,7 +6523,7 @@ b. the value of the estimate $df = f'(x_{0}) dx$ ; and
 
 c. the approximation error $|\Delta f - df|$ . 
 
-![[531a96521711adc8f192fff3c8fc3d2720b7ab5f9b047ed48238191b90fbfac9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/531a96521711adc8f192fff3c8fc3d2720b7ab5f9b047ed48238191b90fbfac9.jpg)
 
 
 39. $f(x) = x^{2} + 2x, x_{0} = 1, dx = 0.1$ 
@@ -6553,7 +6538,7 @@ c. the approximation error $|\Delta f - df|$ .
 
 44. $f(x) = x^{3} - 2x + 3,\quad x_{0} = 2,\quad dx = 0.1$ 
 
-## Differential Estimates of Change
+#### Differential Estimates of Change
 
 In Exercises 45–50, write a differential formula that estimates the given change in volume or surface area. 
 
@@ -6569,8 +6554,6 @@ In Exercises 45–50, write a differential formula that estimates the given chan
 
 50. The change in the lateral surface area $S = 2\pi rh$ of a right circular cylinder when the height changes from $h_{0}$ to $h_{0} + dh$ and the radius does not change 
 
-## Applications
-
 51. The radius of a circle is increased from 2.00 to 2.02 m. 
 
 a. Estimate the resulting change in area. 
@@ -6581,7 +6564,7 @@ b. Express the estimate as a percentage of the circle's original area.
 
 53. Estimating volume Estimate the volume of material in a cylindrical shell with length 30 cm, radius 6 cm, and shell thickness 0.5 cm. 
 
-![[d235a8a5de3807035a5ea982c6cfb7adb4ce47959ac7084797b8ff53139f991a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d235a8a5de3807035a5ea982c6cfb7adb4ce47959ac7084797b8ff53139f991a.jpg)
 
 
 54. Estimating height of a building A surveyor, standing 9 m from the base of a building, measures the angle of elevation to the top of the building to be $75^{\circ}$ . How accurately must the angle be measured for the percentage error in estimating the height of the building to be less than 4%? 
@@ -6594,7 +6577,7 @@ a. surface area? b. volume?
 
 57. Tolerance The height and radius of a right circular cylinder are equal, so the cylinder's volume is $V = \pi h^{3}$ . The volume is to be calculated with an error of no more than 1% of the true value. Find approximately the greatest error that can be tolerated in the measurement of h, expressed as a percentage of h. 
 
-## 58. Tolerance
+58. Tolerance
 
 a. About how accurately must the interior diameter of a 10-m-high cylindrical storage tank be measured to calculate the tank's volume to within $1\%$ of its true value? 
 
@@ -6638,7 +6621,7 @@ b. If g increases, will T increase or decrease? Will a pendulum clock speed up o
 
 T c. A clock with a 100-cm pendulum is moved from a location where $g = 980 \, \mathrm{cm/s^2}$ to a new location. This increases the period by $dT = 0.001 \, \mathrm{s}$ . Find $dg$ and estimate the value of $g$ at the new location. 
 
-## 65. Quadratic approximations
+65. Quadratic approximations
 
 a. Let $Q(x) = b_0 + b_1(x - a) + b_2(x - a)^2$ be a quadratic approximation to $f(x)$ at $x = a$ with these properties:  
 i. $Q(a) = f(a)$ ii. $Q'(a) = f'(a)$ iii. $Q''(a) = f''(a)$ .  
@@ -6658,16 +6641,16 @@ f. What are the linearizations of $f$ , $g$ , and $h$ at the respective points i
 
 66. The linearization is the best linear approximation Suppose that $y = f(x)$ is differentiable at $x = a$ and that $g(x) = g(x) = m(x - a) + c$ is a linear function in which $m$ and $c$ are constants. If the error $E(x) = f(x) - g(x)$ were small enough near $x = a$ , we might think of using $g$ as a linear approximation of $f$ instead of the linearization $L(x) = f(a) + f'(a)(x - a)$ . Show that if we impose on $g$ the conditions 
 
-1. $E(a) = 0$ 
+- $E(a) = 0$ 
 
-2. $\lim_{x\to a}\frac{E(x)}{x-a}=0$ 
+- $\lim_{x\to a}\frac{E(x)}{x-a}=0$ 
 
 The approximation error is zero at x = a.
 The error is negligible when compared with x - a. 
 
 then $g(x) = f(a) + f'(a)(x - a)$ . Thus, the linearization $L(x)$ gives the only linear approximation whose error is both zero at x = a and negligible in comparison with x - a. 
 
-![[3c22d6445125f02dbd601de2b507fd805bf7f9962b7aec66ec37ad3e164558df.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3c22d6445125f02dbd601de2b507fd805bf7f9962b7aec66ec37ad3e164558df.jpg)
 
 
 67. The linearization of $2^{x}$ 
@@ -6682,7 +6665,7 @@ a. Find the linearization of $f(x) = \log_3 x$ at $x = 3$ . Then round its coeff
 
 T b. Graph the linearization and function together in the window $0 \leq x \leq 8$ and $2 \leq x \leq 4$ . 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 69–74, use a CAS to estimate the magnitude of the error in using the linearization in place of the function over a specified interval I. Perform the following steps: 
 
@@ -6702,23 +6685,13 @@ $$
 
 for $\varepsilon = 0.5, 0.1$ , and $0.01$ . Then check graphically to see whether your $\delta$ -estimate holds true. 
 
-$$
-f (x) = x ^ {3} + x ^ {2} - 2 x, [ - 1, 2 ], a = 1 \tag {69.}
-$$
+69. $f (x) = x ^ {3} + x ^ {2} - 2 x, [ - 1, 2 ], a = 1$
 
-$$
-\mathbf {7 0 .} f (x) = \frac {x - 1}{4 x ^ {2} + 1}, \left[ - \frac {3}{4}, 1 \right], a = \frac {1}{2}
-$$
+70. $f (x) = \frac {x - 1}{4 x ^ {2} + 1}, \left[ - \frac {3}{4}, 1 \right], a = \frac {1}{2}$
 
 $$
 \textbf {7 1 .} f (x) = x ^ {2 / 3} (x - 2), [ - 2, 3 ], a = 2
-$$
-
-$$
-7 2. f (x) = \sqrt {x} - \sin x, [ 0, 2 \pi ], a = 2
-$$
-
-$$
+72. $$f (x) = \sqrt {x} - \sin x, [ 0, 2 \pi ], a = 2$$
 f (x) = x 2 ^ {x}, [ 0, 2 ], a = 1 \tag {73.}
 $$
 
@@ -6806,7 +6779,7 @@ enable us to differentiate any polynomial.
 
 ## CHAPTER 3 Practice Exercises
 
-## Derivatives of Functions
+### Derivatives of Functions
 
 Find the derivatives of the functions in Exercises 1–64. 
 
@@ -6872,17 +6845,17 @@ Find the derivatives of the functions in Exercises 1–64.
 
 31. $y = \left(\frac{\sqrt{x}}{1 + x}\right)^2$ 
 
-33. $y = \sqrt{\frac{x^2 + x}{x^2}}$ 
-
-35. $r = \left(\frac{\sin\theta}{\cos\theta - 1}\right)^2$ 
-
 32. $y = \left(\frac{2\sqrt{x}}{2\sqrt{x} + 1}\right)^2$ 
+
+33. $y = \sqrt{\frac{x^2 + x}{x^2}}$ 
 
 34. $y = 4x\sqrt{x + \sqrt{x}}$ 
 
-37. $y = (2x + 1)\sqrt{2x + 1}$ 
+35. $r = \left(\frac{\sin\theta}{\cos\theta - 1}\right)^2$ 
 
 36. $r = \left(\frac{1 + \sin\theta}{1 - \cos\theta}\right)^2$ 
+
+37. $y = (2x + 1)\sqrt{2x + 1}$ 
 
 38. $y = 20(3x - 4)^{1 / 4}(3x - 4)^{-1 / 5}$ 
 
@@ -6904,9 +6877,9 @@ Find the derivatives of the functions in Exercises 1–64.
 
 47. $y = \log_2(x^2 /2)$ 
 
-49. $y = 8^{-t}$ 
-
 48. $y = \log_5(3x - 7)$ 
+
+49. $y = 8^{-t}$ 
 
 50. $y = 9^{2t}$ 
 
@@ -6916,9 +6889,9 @@ Find the derivatives of the functions in Exercises 1–64.
 
 53. $y = (x + 2)^{x + 2}$ 
 
-55. $y = \arcsin\sqrt{1 - u^{2}}, \quad 0 < u < 1$ 
-
 54. $y = 2(\ln x)^{x/2}$ 
+
+55. $y = \arcsin\sqrt{1 - u^{2}}, \quad 0 < u < 1$ 
 
 56. $y = \arcsin \left(\frac{1}{\sqrt{v}}\right), v > 1$ 
 
@@ -6938,7 +6911,7 @@ Find the derivatives of the functions in Exercises 1–64.
 
 64. $y = (1 + x^2)e^{\arctan x}$ 
 
-## Implicit Differentiation
+### Implicit Differentiation
 
 In Exercises 65–78, find dy/dx by implicit differentiation. 
 
@@ -6972,11 +6945,15 @@ In Exercises 65–78, find dy/dx by implicit differentiation.
 
 In Exercises 79 and 80, find dp/dq. 
 
-79. $p^3 + 4pq - 3q^2 = 2$ 80. $q = (5p^2 + 2p)^{-3/2}$ 
+79. $p^3 + 4pq - 3q^2 = 2$
+
+80. $q = (5p^2 + 2p)^{-3/2}$
 
 In Exercises 81 and 82, find dr/ds. 
 
-81. $r\cos 2s + \sin^2 s = \pi$ 82. $2rs - r - s + s^2 = -3$ 
+81. $r\cos 2s + \sin^2 s = \pi$
+
+82. $2rs - r - s + s^2 = -3$
 
 83. Find $d^2 y / dx^2$ by implicit differentiation: 
 
@@ -7038,7 +7015,7 @@ $$
 
 92. If $x^{1/3} + y^{1/3} = 4$ , find $d^{2}y/dx^{2}$ at the point (8,8). 
 
-## Applying the Derivative Definition
+### Applying the Derivative Definition
 
 In Exercises 93 and 94, find the derivative using the definition. 
 
@@ -7094,7 +7071,7 @@ b. differentiable at x = 0?
 
 Give reasons for your answers. 
 
-## Slopes, Tangent Lines, and Normal Lines
+### Slopes, Tangent Lines, and Normal Lines
 
 99. Tangent lines with specified slope Are there any points on the curve $y = (x / 2) + 1 / (2x - 4)$ where the slope is $-3 / 2$ ? If so, find them. 
 
@@ -7142,14 +7119,14 @@ In Exercises 111–116, find equations for the lines that are tangent, and the l
 
 118. The graph shown suggests that the curve $y = \sin(x - \sin x)$ might have horizontal tangent lines at the x-axis. Does it? Give reasons for your answer. 
 
-![[9ce6181b74272f581a44d842fef77376c68aae08136cd2421e44a1b84e1d64ec.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9ce6181b74272f581a44d842fef77376c68aae08136cd2421e44a1b84e1d64ec.jpg)
 
 
 Analyzing Graphs 
 
 Each of the figures in Exercises 119 and 120 shows two graphs, the graph of a function $y = f(x)$ together with the graph of its derivative $f'(x)$ . Which graph is which? How do you know? 
 
-![[c37c1ff239a1356baebebee0b2c6e62091812e3952dde407efcba8726d6294c0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c37c1ff239a1356baebebee0b2c6e62091812e3952dde407efcba8726d6294c0.jpg)
 
 
 121. Use the following information to graph the function $y = f(x)$ for $-1 \leq x \leq 6$ . 
@@ -7160,12 +7137,12 @@ ii) The graph starts at the point $(-1, 2)$ .
 
 iii) The derivative of $f$ , where defined, agrees with the step function shown here. 
 
-![[dbfb00705bd2f0f9fd523d7edbb4f9aba64d2460d2a360eca089a9bbf97a61b4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dbfb00705bd2f0f9fd523d7edbb4f9aba64d2460d2a360eca089a9bbf97a61b4.jpg)
 
 
 122. Repeat Exercise 121, supposing that the graph starts at $(-1,0)$ instead of $(-1,2)$ . 
 
-## Logarithmic Differentiation
+### Logarithmic Differentiation
 
 In Exercises 123–128, use logarithmic differentiation to find the derivative of y with respect to the appropriate variable. 
 
@@ -7181,7 +7158,7 @@ In Exercises 123–128, use logarithmic differentiation to find the derivative o
 
 128. $y = (\ln x)^{1/(\ln x)}$ 
 
-## Related Rates
+### Related Rates
 
 129. Right circular cylinder The total surface area S of a right circular cylinder is related to the base radius r and height h by the equation $S = 2\pi r^{2} + 2\pi rh$ . 
 
@@ -7211,7 +7188,7 @@ $$
 \frac {1}{R} = \frac {1}{R _ {1}} + \frac {1}{R _ {2}}.
 $$
 
-![[b6164087f7818725888635c51faa1f7c1f28347b4158f32f6457018339100f84.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b6164087f7818725888635c51faa1f7c1f28347b4158f32f6457018339100f84.jpg)
 
 
 If $R_{1}$ is decreasing at the rate of 1 ohm/s and $R_{2}$ is increasing at the rate of 0.5 ohm/s, at what rate is R changing when $R_{1} = 75$ ohms and $R_{2} = 50$ ohms? 
@@ -7228,12 +7205,12 @@ a. What is the relation between the variables h and r in the figure?
 
 b. How fast is the water level dropping when h = 2 m? 
 
-![[20dcca20bd7f3d761631fef57c1bbab4c5cfeab42a6b0939768d9cabd35cc0bc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/20dcca20bd7f3d761631fef57c1bbab4c5cfeab42a6b0939768d9cabd35cc0bc.jpg)
 
 
 138. Rotating spool As television cable is pulled from a large spool to be strung from the telephone poles along a street, it unwinds from the spool in layers of constant radius (see accompanying figure). If the truck pulling the cable moves at a steady 2 m/s (a touch over 7 km/h), use the equation $s = r \theta$ to find how fast (radians per second) the spool is turning when the layer of radius 0.4 m is being unwound. 
 
-![[d237efde0934d2ecaa3fe53f5047dbdba4a459fff4ba59ab80f267292a4aac67.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d237efde0934d2ecaa3fe53f5047dbdba4a459fff4ba59ab80f267292a4aac67.jpg)
 
 
 139. Moving searchlight beam The figure shows a boat 1 km offshore, sweeping the shore with a searchlight. The light turns at a constant rate, $d\theta/dt = -0.6$ rad/s. 
@@ -7242,12 +7219,12 @@ a. How fast is the light moving along the shore when it reaches point A?
 
 b. How many revolutions per minute is 0.6 rad/s? 
 
-![[358f394a2800b386c68ab5fc6b310d45c5522b066bebfb3398d9dddda950e6e7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/358f394a2800b386c68ab5fc6b310d45c5522b066bebfb3398d9dddda950e6e7.jpg)
 
 
 140. Points moving on coordinate axes Points A and B move along the x- and y-axes, respectively, in such a way that the distance r (meters) along the perpendicular from the origin to the line AB remains constant. How fast is OA changing, and is it increasing or decreasing, when OB = 2r and B is moving toward O at the rate of 0.3r m/s? 
 
-## Linearization
+### Linearization
 
 141. Find the linearizations of 
 
@@ -7273,14 +7250,14 @@ Show that this result is the standard linear approximation of $1 / (1 + \tan x)$
 
 144. Find the linearization of $f(x) = 2/(1 - x) + \sqrt{1 + x} - 3.1$ at x = 0. 
 
-## Differential Estimates of Change
+### Differential Estimates of Change
 
 145. Surface area of a cone Write a formula that estimates the change that occurs in the lateral surface area of a right circular cone when the height changes from $h_{0}$ to $h_{0} + dh$ and the radius does not change. 
 
-![[72b2a3069f05ea589c341ca9661a375eb37c6ecb03cfcbd8140181a0695f3cdc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/72b2a3069f05ea589c341ca9661a375eb37c6ecb03cfcbd8140181a0695f3cdc.jpg)
 
 
-## 146. Controlling error
+### 146. Controlling error
 
 a. How accurately should you measure the edge of a cube to be reasonably sure of calculating the cube's surface area with an error of no more than $2\%$ ? 
 
@@ -7292,7 +7269,7 @@ a. the radius. b. the surface area. c. the volume.
 
 148. Finding height To find the height of a lamppost (see accompanying figure), you stand a 1.8 m pole 10 m from the lamp and measure the length a of its shadow, finding it to be 4.5 m, give or take a centimeter. Calculate the height of the lamppost using the value a = 4.5, and estimate the possible error in the result. 
 
-![[d5c0774b817369c7c9b9d965b85230be44727e246883f30962ef15664e3d6c60.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d5c0774b817369c7c9b9d965b85230be44727e246883f30962ef15664e3d6c60.jpg)
 
 
 ## CHAPTER 3 Additional and Advanced Exercises
@@ -7333,7 +7310,7 @@ $$
 
 c. For the determined values of $a$ , $b$ , and $c$ , what happens for the third and fourth derivatives of $f$ and $g$ in each of parts (a) and (b)? 
 
-## 4. Solutions to differential equations
+### 4. Solutions to differential equations
 
 a. Show that $y = \sin x, y = \cos x$ , and $y = a\cos x + b\sin x$ (a and b constants) all satisfy the equation 
 
@@ -7353,7 +7330,7 @@ Generalize this result.
 
 6. Marginal revenue A bus will hold 60 people. The number x of people per trip who use the bus is related to the fare charged (p dollars) by the law $p = [3 - (x/40)]^{2}$ . Write an expression for the total revenue $r(x)$ per trip received by the bus company. What number of people per trip will make the marginal revenue dr/dx equal to zero? What is the corresponding fare? (This fare is the one that maximizes the revenue.) 
 
-## 7. Industrial production
+### 7. Industrial production
 
 a. Economists often use the expression “rate of growth” in relative rather than absolute terms. For example, let $u = f(t)$ be the number of people in the labor force at time t in a given industry. (We treat this function as though it were differentiable even though it is an integer-valued step function.) 
 
@@ -7363,7 +7340,7 @@ b. Suppose that the labor force in part (a) is decreasing at the rate of 2% per 
 
 8. Designing a gondola The designer of a 10 m-diameter spherical hot air balloon wants to suspend the gondola 2.5 m below the bottom of the balloon with cables tangent to the surface of the balloon, as shown. Two of the cables are shown running from the top edges of the gondola to their points of tangency, $(-4, -3)$ and $(4, -3)$ . How wide should the gondola be? 
 
-![[58967c2bfc943491efb7c73253dbe76b368a739dcc4b7d55a20dd50ef5ac2bf9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/58967c2bfc943491efb7c73253dbe76b368a739dcc4b7d55a20dd50ef5ac2bf9.jpg)
 
 
 9. Pisa by parachute On August 5, 1988, Mike McCarthy of London jumped from the top of the Tower of Pisa. He then opened his parachute in what he said was a world record low-level parachute jump of 54.6 m. Make a rough sketch to show the shape of the graph of his speed during the jump. (Data from: Boston Globe, Aug. 6, 1988.) 
@@ -7483,7 +7460,7 @@ Show that $f$ is differentiable at $x = 0$ .
 
 27. Point B moves from point A to point C at 2 cm/s in the accompanying diagram. At what rate is $\theta$ changing when x = 4 cm? 
 
-![[756dd5620fd28cf8c5d61e1beaf61af4c2238d0d1b498063b893cefc1df14957.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/756dd5620fd28cf8c5d61e1beaf61af4c2238d0d1b498063b893cefc1df14957.jpg)
 
 
 28. Suppose that a function $f$ satisfies the following two conditions for all real values of $x$ and $y$ : 
@@ -7536,7 +7513,7 @@ The minus sign indicates that the volume is decreasing. We assume that the propo
 
 ## CHAPTER 3 Technology Application Projects
 
-## Mathematica/Maple Projects
+### Mathematica/Maple Projects
 
 Projects can be found at www.pearsonglobaleditions.com or within MyLab Math. 
 
@@ -7553,12 +7530,3 @@ You will visualize right-hand and left-hand derivatives.
 
 - Motion Along a Straight Line: Position $\rightarrow$ Velocity $\rightarrow$ Acceleration
   Observe dramatic animated visualizations of the derivative relations among the position, velocity, and acceleration functions. Figures in the text can be animated. 
-
-# 4 Applications of Derivatives
-
-![[9f766a3dea929e00d2367a160f537cfc1523fadd60bd9d45c92022bd845f4366.jpg|image]]
-
-
-OVERVIEW One of the most important applications of the derivative is its use as a tool for finding the optimal (best) solutions to problems. For example, what are the height and diameter of the cylinder of largest volume that can be inscribed in a given sphere? What are the dimensions of the strongest rectangular wooden beam that can be cut from a cylindrical log of given diameter? How many items should a manufacturer produce to maximize profit? 
-
-In this chapter we apply derivatives to find extreme values of functions, to determine and analyze the shapes of graphs, and to solve equations numerically. We also investigate how to recover a function from its derivative. The key to many of these applications is the Mean Value Theorem, which connects the derivative and the average change of a function.

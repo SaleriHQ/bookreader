@@ -11,7 +11,7 @@ order: 2
 
 HISTORICAL BIOGRAPHY 
 
-## Average and Instantaneous Speed
+### Average and Instantaneous Speed
 
 Galileo Galilei 
 
@@ -41,7 +41,7 @@ $$
 \left[ t _ {1}, t _ {2} \right] = \frac {\text { distance   traveled }}{\text { elapsed   time }} = \frac {f (t _ {2}) - f (t _ {1})}{t _ {2} - t _ {1}}.
 $$
 
-## **EXAMPLE 1** A rock breaks loose from the top of a tall cliff. What is its average speed
+**EXAMPLE 1** A rock breaks loose from the top of a tall cliff. What is its average speed
 
 (a) during the first 2 seconds of fall? 
 
@@ -65,7 +65,7 @@ $$
 
 We want a way to determine the speed of a falling object at a single instant $t_{0}$ , instead of using its average speed over an interval of time. To do this, we examine what happens when we calculate the average speed over shorter and shorter time intervals starting at $t_{0}$ . The next example illustrates this process. Our discussion is informal here but will be made precise in Chapter 3. 
 
-## **EXAMPLE 2** Find the speed of the falling rock in Example 1 at t = 1 and t = 2 s.
+**EXAMPLE 2** Find the speed of the falling rock in Example 1 at t = 1 and t = 2 s.
 
 **Solution** We can calculate the average speed of the rock over a time interval $[t_{0}, t_{0} + h]$ , having length $\Delta t = h$ , as 
 
@@ -83,14 +83,14 @@ TABLE 2.1 Average speeds over short time intervals $[t_{0}, t_{0} + h]$
 
 The average speed on intervals starting at $t_{0} = 1$ seems to approach a limiting value of 9.8 as the length of the interval decreases. This suggests that the rock is falling at a speed of 9.8 m/s at $t_{0} = 1$ s. Let's confirm this algebraically. 
 
-![[37624a7ed9e2d292c67f1ff73dd079f95f09e82c48cea2892cd70bb89afdeefd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/37624a7ed9e2d292c67f1ff73dd079f95f09e82c48cea2892cd70bb89afdeefd.jpg)
 
 
 
 FIGURE 2.1 A secant to the graph $y = f(x)$ . Its slope is $\Delta y/\Delta x$ , the average rate of change of f over the interval $[x_{1}, x_{2}]$ .
 
 
-![[f8ff834c758843dff8297495396ecef1a80f90661272ee95bda466513645fd00.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f8ff834c758843dff8297495396ecef1a80f90661272ee95bda466513645fd00.jpg)
 
 
 
@@ -115,7 +115,7 @@ As h gets closer and closer to 0, the average speed has the limiting value 19.6 
 
 The average speed of a falling object is an example of a more general idea, an average rate of change. 
 
-## Average Rates of Change and Secant Lines
+### Average Rates of Change and Secant Lines
 
 Given any function $y = f(x)$ , we calculate the average rate of change of y with respect to x over the interval $[x_{1}, x_{2}]$ by dividing the change in the value of y, $\Delta y = f(x_{2}) - f(x_{1})$ , by the length $\Delta x = x_{2} - x_{1} = h$ of the interval over which the change occurs. (We use the symbol h for $\Delta x$ to simplify the notation here and later on.) 
 
@@ -127,7 +127,7 @@ Given any function $y = f(x)$ , we calculate the average rate of change of y wit
 >
 Geometrically, the rate of change of f over $[x_{1}, x_{2}]$ is the slope of the line through the points $P(x_{1}, f(x_{1}))$ and $Q(x_{2}, f(x_{2}))$ (Figure 2.1). In geometry, a line joining two points of a curve is called a secant line. Thus, the average rate of change of f from $x_{1}$ to $x_{2}$ is identical to the slope of secant line PQ. As the point Q approaches the point P along the curve, the length h of the interval over which the change occurs approaches zero. We will see that this procedure leads to the definition of the slope of a curve at a point. 
 
-## Defining the Slope of a Curve
+### Defining the Slope of a Curve
 
 We know what is meant by the slope of a straight line, which tells us the rate at which it rises or falls—its rate of change as a linear function. But what is meant by the slope of a curve at a point P on the curve? If there were a tangent line to the curve at P—a line that grazes the curve like the tangent line to a circle—it would be reasonable to identify the slope of the tangent line as the slope of the curve at P. We will see that, among all the lines that pass through the point P, the tangent line is the one that gives the best approximation to the curve at P. We need a precise way to specify the tangent line at a point on a curve. 
 
@@ -145,7 +145,7 @@ To define tangency for general curves, we use an approach that analyzes the beha
 
 The next example illustrates the geometric idea for finding the tangent line to a curve. 
 
-![[027945b1224e6243f004b67a8a5451acbb53591505afad24631ab9c72c128b07.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/027945b1224e6243f004b67a8a5451acbb53591505afad24631ab9c72c128b07.jpg)
 
 
 
@@ -162,7 +162,7 @@ $$
 
 If $h > 0$ , then $Q$ lies above and to the right of $P$ , as in Figure 2.4. If $h < 0$ , then $Q$ lies to the left of $P$ (not shown). In either case, as $Q$ approaches $P$ along the curve, $h$ approaches zero and the secant line slope $h + 4$ approaches 4. We take 4 to be the parabola's slope at $P$ . 
 
-![[42e03662cec0aac44bdb605a74e0d51694d5acf2568ec434f1587c3a16b6a2fd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/42e03662cec0aac44bdb605a74e0d51694d5acf2568ec434f1587c3a16b6a2fd.jpg)
 
 
 
@@ -175,7 +175,7 @@ $$
 \begin{array}{l l} y = 4 + 4 (x - 2) & \text { Point - slope   equation } \\ y = 4 x - 4. & \text { Simplify. } \end{array}
 $$
 
-## Rates of Change and Tangent Lines
+### Rates of Change and Tangent Lines
 
 The rates at which the rock in Example 2 was falling at the instants t = 1 and t = 2 are called instantaneous rates of change. Instantaneous rates of change and slopes of tangent lines are closely connected, as we see in the following examples. 
 
@@ -187,7 +187,7 @@ $$
 \frac {\Delta p}{\Delta t} = \frac {3 4 0 - 1 5 0}{4 5 - 2 3} = \frac {1 9 0}{2 2} \approx 8. 6 \mathrm{flies/day}.
 $$
 
-![[0a9de4ebc0598952dc761ef49ad60d804a4a58f42ee7a1872470b417ec5b8ef7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0a9de4ebc0598952dc761ef49ad60d804a4a58f42ee7a1872470b417ec5b8ef7.jpg)
 
 
 
@@ -204,7 +204,7 @@ The average rate of change from day 23 to day 45 calculated in Example 4 does no
 
 <table><tr><td>Q</td><td>Slope of PQ = Δp/Δt (flies/day)</td></tr><tr><td>(45,340)</td><td>340 - 150 / 45 - 23 ≈ 8.6</td></tr><tr><td>(40,330)</td><td>330 - 150 / 40 - 23 ≈ 10.6</td></tr><tr><td>(35,310)</td><td>310 - 150 / 35 - 23 ≈ 13.3</td></tr><tr><td>(30,265)</td><td>265 - 150 / 30 - 23 ≈ 16.4</td></tr></table>
 
-![[2f2b01a6e9c318d860b85cc26c2f6c852a1a761bf9dfed256ac3eb3fb8dd6c60.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2f2b01a6e9c318d860b85cc26c2f6c852a1a761bf9dfed256ac3eb3fb8dd6c60.jpg)
 
 
 
@@ -221,9 +221,9 @@ On day 23 the population was increasing at a rate of about 16.7 flies/day.
 
 The instantaneous rate of change is the value the average rate of change approaches as the length h of the interval over which the change occurs approaches zero. The average rate of change corresponds to the slope of a secant line; the instantaneous rate corresponds to the slope of the tangent line at a fixed value. So instantaneous rates and slopes of tangent lines are closely connected. We give a precise definition for these terms in the next chapter, but to do so we first need to develop the concept of a limit. 
 
-## EXERCISES 2.1
+### EXERCISES 2.1
 
-## Average Rates of Change
+#### Average Rates of Change
 
 In Exercises 1–6, find the average rate of change of the function over the given interval or intervals. 
 
@@ -231,25 +231,29 @@ Slope of a Curve at a Point
 
 1. $f(x) = x^{3} + 1$ 
 
+2. $g(x) = x^{2} - 2x$ a.[1,3] 
+
+3. $h(t) = \cot t$ 
+
+4. $g(t) = 2 + \cos t$ 
+
+5. $R(\theta) = \sqrt{4\theta + 1}; [0, 2]$ 
+
+6. $P(\theta) = \theta^{3} - 4\theta^{2} + 5\theta; \quad [1, 2]$ 
+
 In Exercises 7–18, use the method in Example 3 to find (a) the slope of the curve at the given point P, and (b) an equation of the tangent line at P. 
 
 a. [2, 3] 
 
 b. $[-1,1]$ 
 
-$$
-7. y = x ^ {2} - 5, \quad P (2, - 1)
-$$
-
-2. $g(x) = x^{2} - 2x$ a.[1,3] 
+7. $y = x ^ {2} - 5, \quad P (2, - 1)$
 
 8. $y = 7 - x^{2}, P(2,3)$ 
 
 b. $[-2,4]$ 
 
 9. $y = x^{2} - 2x - 3,\quad P(2, -3)$ 
-
-3. $h(t) = \cot t$ 
 
 10. $y = x^{2} - 4x, P(1, -3)$ 
 
@@ -263,8 +267,6 @@ $$
 
 11. $y = x^{3}$ , $P(2,8)$ 
 
-4. $g(t) = 2 + \cos t$ 
-
 12. $y = 2 - x^3, P(1,1)$ 
 
 a. $[0,\pi ]$ 
@@ -273,15 +275,11 @@ b. $[- \pi, \pi]$
 
 13. $y = x^{3} - 12x, P(1, -11)$ 
 
-5. $R(\theta) = \sqrt{4\theta + 1}; [0, 2]$ 
-
 14. $y = x^{3} - 3x^{2} + 4, P(2,0)$ 
-
-6. $P(\theta) = \theta^{3} - 4\theta^{2} + 5\theta; \quad [1, 2]$ 
 
 15. $y = \frac{1}{x}, P(-2, -1 / 2)$ 
 
-![[2fd71bb4115e3fda34be9a6931525376464bedbd82cd198cd7535403692e515a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2fd71bb4115e3fda34be9a6931525376464bedbd82cd198cd7535403692e515a.jpg)
 
 
 16. $y = \frac{x}{2 - x}, P(4, - 2)$ 
@@ -294,7 +292,7 @@ Instantaneous Rates of Change
 
 19. Speed of a car The accompanying figure shows the time-to-distance graph for a sports car accelerating from a standstill. 
 
-![[9fdf2cb8a56b49a70e346602944124675512f614a5303565366a520b3ef419de.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9fdf2cb8a56b49a70e346602944124675512f614a5303565366a520b3ef419de.jpg)
 
 
 a. Estimate the slopes of secant lines $PQ_{1}$ , $PQ_{2}$ , $PQ_{3}$ , and $PQ_{4}$ , arranging them in order in a table like the one in Figure 2.6. What are the appropriate units for these slopes? 
@@ -307,10 +305,10 @@ a. Estimate the slopes of the secant lines $PQ_{1}, PQ_{2}, PQ_{3}$ , and $PQ_{4
 
 b. About how fast was the object going when it hit the surface? 
 
-![[252cced567e8522ba84814e8ec0c2a2fa764241590e67ad0fc846192505d3ce3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/252cced567e8522ba84814e8ec0c2a2fa764241590e67ad0fc846192505d3ce3.jpg)
 
 
-![[b4805c1b480e5c9acde21d7aa693ca4b2cd804bb01dabce479c9ce60effd62c8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b4805c1b480e5c9acde21d7aa693ca4b2cd804bb01dabce479c9ce60effd62c8.jpg)
 
 
 
@@ -349,7 +347,7 @@ c. What does your table indicate is the rate of change of $f$ with respect to $t
 
 25. The accompanying graph shows the total distance s traveled by a bicyclist after t hours. 
 
-![[870df1fc0480ab84d3d6076979770b08a0bfdb6c751cb5fabb1eb455b01f1330.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/870df1fc0480ab84d3d6076979770b08a0bfdb6c751cb5fabb1eb455b01f1330.jpg)
 
 
 a. Estimate the bicyclist's average speed over the time intervals [0, 1], [1, 2.5], and [2.5, 3.5]. 
@@ -360,7 +358,7 @@ c. Estimate the bicyclist's maximum speed and the specific time at which it occu
 
 26. The accompanying graph shows the total amount of gasoline A in the gas tank of a motorcycle after being driven for t days. 
 
-![[f016b5af977c75601b6d9f911864e5151625a8a3c915af57d62921c9bdbccd96.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f016b5af977c75601b6d9f911864e5151625a8a3c915af57d62921c9bdbccd96.jpg)
 
 
 a. Estimate the average rate of gasoline consumption over the time intervals $[0,3]$ , $[0,5]$ , and $[7,10]$ . 
@@ -375,10 +373,10 @@ HISTORICAL ESSAY
 
 To read this essay, visit the companion Website. 
 
-![[2d7752342a05bb8bd3bf1b516b83863e3d041fc3ed2fee26c03a59039be0476f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2d7752342a05bb8bd3bf1b516b83863e3d041fc3ed2fee26c03a59039be0476f.jpg)
 
 
-![[8ea97f53444363aa5d6954a5839e57e74f5f0d0118659097df07d2887b417a56.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8ea97f53444363aa5d6954a5839e57e74f5f0d0118659097df07d2887b417a56.jpg)
 
 
 
@@ -387,7 +385,7 @@ FIGURE 2.7 The graph of f is identical to the line $y = x + 1$ except at x = 1, 
 
 In Section 2.1 we saw how limits arise when finding the instantaneous rate of change of a function or the tangent line to a curve. We begin this section by presenting an informal definition of the limit of a function. We then describe laws that capture the behavior of limits. These laws enable us to quickly compute limits for a variety of functions, including polynomials and rational functions. We will present the precise definition of a limit in Section 2.3. 
 
-## Limits of Function Values
+### Limits of Function Values
 
 Frequently, when studying a function $y = f(x)$ , we find ourselves interested in the function's behavior near a particular point $c$ , but not at $c$ itself. An important example occurs when the process of trying to evaluate a function at $c$ leads to division by zero, which is undefined. We encountered this when seeking the instantaneous rate of change in $y$ by considering the quotient function $\Delta y / h$ for $h$ closer and closer to zero. In the next example we explore numerically how a function behaves near a particular point at which we cannot directly evaluate the function. 
 
@@ -409,7 +407,7 @@ The graph of f is the line $y = x + 1$ with the point $(1, 2)$ removed. This rem
 
 We will illustrate some other types of behavior near a point in Example 3. 
 
-## An Informal Description of the Limit of a Function
+### An Informal Description of the Limit of a Function
 
 We now give an informal definition of the limit of a function f at an interior point of the domain of f. Suppose that $f(x)$ is defined on an open interval about c, except possibly at c 
 
@@ -419,7 +417,7 @@ TABLE 2.2 As x gets closer to 1, $f(x)$ gets closer to 2.
 
 <table><tr><td>x</td><td><eq>f(x) = \frac{x^{2} - 1}{x - 1}</eq></td></tr><tr><td>0.9</td><td>1.9</td></tr><tr><td>1.1</td><td>2.1</td></tr><tr><td>0.99</td><td>1.99</td></tr><tr><td>1.01</td><td>2.01</td></tr><tr><td>0.999</td><td>1.999</td></tr><tr><td>1.001</td><td>2.001</td></tr><tr><td>0.999999</td><td>1.999999</td></tr><tr><td>1.000001</td><td>2.000001</td></tr></table>
 
-![[884153df6d9a35c7026cd5e4d4d11dbe052af32d137d234324fcbc69bebb066a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/884153df6d9a35c7026cd5e4d4d11dbe052af32d137d234324fcbc69bebb066a.jpg)
 
 
 
@@ -428,7 +426,7 @@ TABLE 2.2 As x gets closer to 1, $f(x)$ gets closer to 2.
 
 FIGURE 2.9 The functions in Example 3 have limits at all points c. 
 
-![[e48f1aff5653d879f0f510a1c57a1ed7d7cb6ab15b61abdd43dc12cdf326700e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e48f1aff5653d879f0f510a1c57a1ed7d7cb6ab15b61abdd43dc12cdf326700e.jpg)
 
 
 
@@ -453,17 +451,17 @@ Essentially, the definition says that the values of $f(x)$ are close to the numb
 
 **EXAMPLE 2** The limit of a function does not depend on how the function is defined at the point being approached. It does not even matter whether the function is defined at that point. Consider the three functions in Figure 2.8. The function f has limit 2 as $x \rightarrow 1$ even though f is not defined at x = 1. The function g has limit 2 as $x \rightarrow 1$ even though $2 \neq g(1)$ . The function h is the only one of the three functions in Figure 2.8 whose limit as $x \rightarrow 1$ equals its value at x = 1. For h, we have $\lim_{x \to 1} h(x) = h(1)$ . This equality of limit and function value has an important meaning. As illustrated by the three examples in Figure 2.8, equality of limit and function value captures the notion of “continuity.” We study this in detail in Section 2.6. 
 
-![[582b779c3082cf3c17aa9755a16bd4465fe4edec7f68f431b4bc9db2d65c53eb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/582b779c3082cf3c17aa9755a16bd4465fe4edec7f68f431b4bc9db2d65c53eb.jpg)
 
 
 $$
 f (x) = \frac {x ^ {2} - 1}{x - 1}
 $$
 
-![[bd73db387573e330ae26a091e1a5820562020c89e2a9f933e01e9206f7f65120.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bd73db387573e330ae26a091e1a5820562020c89e2a9f933e01e9206f7f65120.jpg)
 
 
-![[cae3cb4cc4da4be4429b500001e09347d9ddbb30514abeaf6a646246243b9b2d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cae3cb4cc4da4be4429b500001e09347d9ddbb30514abeaf6a646246243b9b2d.jpg)
 
 
 $$
@@ -512,17 +510,17 @@ We prove these rules in Example 3 in Section 2.3.
 
 A function may not have a limit at a particular point. Some ways that limits can fail to exist are illustrated in Figure 2.10 and described in the next example. 
 
-![[5ba49f05744a26f053499d3fdd1be7d74c5b9fe3171844fe2b2d23841aeca388.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5ba49f05744a26f053499d3fdd1be7d74c5b9fe3171844fe2b2d23841aeca388.jpg)
 
 
-![[75b774b85ca5cc89ae5d33478ea645a852854d5fe31ff867b823f6466098659f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/75b774b85ca5cc89ae5d33478ea645a852854d5fe31ff867b823f6466098659f.jpg)
 
 
 
 (b) $g(x)$
 
 
-![[23c00ff597645650eb8d6658a23084dedbb81aa776f30a8d4867b8bb12213a6b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/23c00ff597645650eb8d6658a23084dedbb81aa776f30a8d4867b8bb12213a6b.jpg)
 
 
 
@@ -549,7 +547,7 @@ $$
 f (x) = \left\{ \begin{array}{l l} 0, & x \leq 0 \\ \sin \frac {1}{x}, & x > 0 \end{array} \right.
 $$
 
-## **Solution**
+**Solution**
 
 (a) This function jumps: The unit step function $U(x)$ has no limit as $x \to 0$ because its values jump at $x = 0$ . For negative values of $x$ arbitrarily close to zero, $U(x) = 0$ . For positive values of $x$ arbitrarily close to zero, $U(x) = 1$ . There is no single value $L$ approached by $U(x)$ as $x \to 0$ (Figure 2.10a). 
 
@@ -561,7 +559,7 @@ $$
 
 A function that oscillates may or may not have a limit. In Example 11 we will see a function that oscillates wildly, but nevertheless does have a limit. The problem with the function f discussed in Example 4 is not that it oscillates, but that it oscillates too much for a limit to exist. 
 
-## The Limit Laws
+### The Limit Laws
 
 A few basic rules allow us to break down complicated functions into simple ones when calculating limits. By using these laws, we can greatly simplify many limit computations. 
 
@@ -591,7 +589,7 @@ $$
 \begin{array}{l l}\text {(c)} \lim _ {x \rightarrow - 2} \sqrt {4 x ^ {2} + 3} = \sqrt {\lim _ {x \rightarrow - 2} (4 x ^ {2} + 3)}&\text {Root Rule with n = 2(4x^{2} + 3\geq0)}\\= \sqrt {\lim _ {x \rightarrow - 2} 4 x ^ {2} + \lim _ {x \rightarrow - 2} 3}&\text {Difference Rule}\\= \sqrt {4 (- 2) ^ {2} + 3}&\text {Power and Multiple Rules and limit of a constant function}\\= \sqrt {1 6 + 3}\\= \sqrt {1 9}\end{array}
 $$
 
-## Evaluating Limits of Polynomials and Rational Functions
+### Evaluating Limits of Polynomials and Rational Functions
 
 Theorem 1 simplifies the task of calculating limits of polynomials and rational functions. To evaluate the limit of a polynomial function as x approaches c, just substitute c for x in the formula for the function. To evaluate the limit of a rational function as x approaches a point c at which the denominator is not zero, substitute c for x in the formula for the function. (See Examples 5a and 5b.) We state these results formally as theorems. 
 
@@ -607,7 +605,7 @@ $$
 \lim _ {x \to c} \frac {P (x)}{Q (x)} = \frac {P (c)}{Q (c)}.
 $$
 
-## **EXAMPLE 6** The following calculation illustrates Theorems 2 and 3:
+**EXAMPLE 6** The following calculation illustrates Theorems 2 and 3:
 
 $$
 \lim _ {x \rightarrow - 1} \frac {x ^ {3} + 4 x ^ {2} - 3}{x ^ {2} + 5} = \frac {(- 1) ^ {3} + 4 (- 1) ^ {2} - 3}{(- 1) ^ {2} + 5} = \frac {0}{6} = 0
@@ -615,7 +613,7 @@ $$
 
 Since the denominator of this rational expression does not equal 0 when we substitute -1 for x, we can just compute the value of the expression at x = -1 to evaluate the limit. 
 
-## Eliminating Common Factors from Zero Denominators
+### Eliminating Common Factors from Zero Denominators
 
 Theorem 3 applies only if the denominator of the rational function is not zero at the limit point c. If the denominator is zero, canceling common factors in the numerator and 
 
@@ -623,18 +621,18 @@ Theorem 3 applies only if the denominator of the rational function is not zero a
 (b)
 
 
-## Identifying Common Factors
+### Identifying Common Factors
 
 If $Q(x)$ is a polynomial and $Q(c) = 0$ , then $(x - c)$ is a factor of $Q(x)$ . Thus, if the numerator and denominator of a rational function of x are both zero at x = c, they have $(x - c)$ as a common factor. 
 
-![[65611445920e781eb010c7f14fa841832dd5100985150376a1a7d71a2143e564.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/65611445920e781eb010c7f14fa841832dd5100985150376a1a7d71a2143e564.jpg)
 
 
 
 (a)
 
 
-![[452c16bb22c9e4b60fc58ffb716e395b46b0a70186e3f86c7cd78cd473a17ae5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/452c16bb22c9e4b60fc58ffb716e395b46b0a70186e3f86c7cd78cd473a17ae5.jpg)
 
 
 
@@ -665,7 +663,7 @@ $$
 
 See Figure 2.11. 
 
-## Using Calculators and Computers to Estimate Limits
+### Using Calculators and Computers to Estimate Limits
 
 We can try using a calculator or computer to guess a limit numerically. However, calculators and computers can sometimes give false values and misleading evidence about limits. Usually the problem is associated with rounding errors, as we now illustrate. 
 
@@ -705,7 +703,7 @@ $$
 
 This calculation provides the correct answer, resolving the ambiguous computer results in Example 8. 
 
-![[04e3820271bc31afe1d0f74a0b60571ccb5e9bc623bd144d8dfe6dca7ec42692.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/04e3820271bc31afe1d0f74a0b60571ccb5e9bc623bd144d8dfe6dca7ec42692.jpg)
 
 
 We cannot always manipulate the terms in an expression to find the limit of a quotient where the denominator becomes zero. In some cases the limit might then be found with geometric arguments (see the proof of Theorem 6 in Section 2.4), or through methods of calculus (developed in Section 4.5). The next theorem shows how to evaluate difficult limits by comparing them with functions having known limits. 
@@ -714,7 +712,7 @@ We cannot always manipulate the terms in an expression to find the limit of a qu
 FIGURE 2.12 The graph of f is sandwiched between the graphs of g and h.
 
 
-## The Sandwich Theorem
+### The Sandwich Theorem
 
 The following theorem enables us to calculate a variety of limits. It is called the Sandwich Theorem because it refers to a function f whose values are sandwiched between the values of two other functions g and h that have the same limit L at a point c. Being trapped between the values of two functions that approach L, the values of f must also approach L (Figure 2.12). A proof is given in Appendix A.6. 
 
@@ -728,24 +726,24 @@ $$
 
 Then $\lim_{x\to c}f(x)=L.$ 
 
-![[47c2f404de3966147fac24fe010c9815edcb1f3da6328971e6bcd8cfd2efcee8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/47c2f404de3966147fac24fe010c9815edcb1f3da6328971e6bcd8cfd2efcee8.jpg)
 
 
 
 FIGURE 2.13 Any function $u(x)$ whose graph lies in the region between $y = 1 + (x^2 / 2)$ and $y = 1 - (x^2 / 4)$ has limit 1 as $x \to 0$ (Example 10).
 
 
-![[b500a2c3f9dfbabec94081ca0d109a9b445eb670e0c7f506f75d4d4815cc9a81.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b500a2c3f9dfbabec94081ca0d109a9b445eb670e0c7f506f75d4d4815cc9a81.jpg)
 
 
 
 FIGURE 2.14 The graph of the function g (Example 11). It is not defined at x = 0. Even though the function oscillates, it has a limit as $x \rightarrow 0$ . The value of $g(x)$ always lies between $x^{2}$ and $-x^{2}$ .
 
 
-![[b9942527693c6ac382be9e2cac9849c048781c6b671374971cd07127dbbe6ff2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b9942527693c6ac382be9e2cac9849c048781c6b671374971cd07127dbbe6ff2.jpg)
 
 
-![[7d0796479dd04e968db6e2f6dd891c23fc300ea245d99572f844d08cae2029c9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7d0796479dd04e968db6e2f6dd891c23fc300ea245d99572f844d08cae2029c9.jpg)
 
 
 
@@ -772,7 +770,7 @@ the Sandwich Theorem implies that $\lim_{x\to 0}u(x) = 1$ (Figure 2.13).
 
 We use the Sandwich Theorem to show that it is possible for a function that oscillates to have a limit. 
 
-## **EXAMPLE 11** How does the function $g(x) = x^2 \sin(1/x^2)$ behave near $x = 0$ ?
+**EXAMPLE 11** How does the function $g(x) = x^2 \sin(1/x^2)$ behave near $x = 0$ ?
 
 **Solution** The formula defines $g(x)$ for all real numbers x except x = 0. The graph of g is shown in Figure 2.14. We can see that the graph oscillates, but we can use the Sandwich Theorem to find the limit of $g(x)$ as x approaches 0. If $x \neq 0$ , then $1/x^{2}$ is a positive real number. Since the range of the sine function is the interval $[-1, 1]$ , it follows that $-1 \leq \sin(1/x^{2}) \leq 1$ for all $x \neq 0$ . Even though we may not know the exact value of $g(x) = x^{2} \sin(1/x^{2})$ , we do know that it lies between $-x^{2}$ and $x^{2}$ . Since 
 
@@ -808,24 +806,23 @@ $$
 
 Example 12 shows that the sine and cosine functions are equal to their limits at $\theta = 0$ . We have not yet established that for any $c$ , $\lim_{\theta \to c} \sin \theta = \sin c$ , and $\lim_{\theta \to c} \cos \theta = \cos c$ . These limit formulas do hold, as will be shown in Section 2.6. 
 
-## EXERCISES
+### Exercises 2.2
 
-## 2.2
 
-## Limits from Graphs
+#### Limits from Graphs
 
 1. For the function $g(x)$ graphed here, find the following limits or explain why they do not exist. 
 
 a. $\lim_{x\to 1}g(x)$ b. $\lim_{x\to 2}g(x)$ c. $\lim_{x\to 3}g(x)$ d. $\lim_{x\to 2.5}g(x)$ 
 
-![[22d4497240b56d24f54943cfbc9a690d3d4328f21111d96c43e18dbfaa4e03fb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/22d4497240b56d24f54943cfbc9a690d3d4328f21111d96c43e18dbfaa4e03fb.jpg)
 
 
 2. For the function $f(t)$ graphed here, find the following limits or explain why they do not exist. 
 
 a. $\lim_{t\to-2}f(t)$ b. $\lim_{t\to-1}f(t)$ c. $\lim_{t\to0}f(t)$ d. $\lim_{t\to-0.5}f(t)$ 
 
-![[d0c7edd057700079575ada39eaffeb269d4c59c9622ba87f9d9c5ba282ad97da.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d0c7edd057700079575ada39eaffeb269d4c59c9622ba87f9d9c5ba282ad97da.jpg)
 
 
 3. Which of the following statements about the function $y = f(x)$ graphed here are true, and which are false? 
@@ -852,7 +849,7 @@ j. $f(1) = 0$
 
 k. $f(1) = -1$ 
 
-![[510bd84938d844a7e97c47a5469a2b1705706107d5442ceb8f4945a59dd9a4e9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/510bd84938d844a7e97c47a5469a2b1705706107d5442ceb8f4945a59dd9a4e9.jpg)
 
 
 4. Which of the following statements about the function $y = f(x)$ graphed here are true, and which are false? 
@@ -875,14 +872,16 @@ h. $f(2) = 0$
 
 i. $f(2) = 1$ 
 
-![[7c43b4e5eb499dec65ffcef448a20183313e8d007f3433ce47d2b706ab98f3f8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7c43b4e5eb499dec65ffcef448a20183313e8d007f3433ce47d2b706ab98f3f8.jpg)
 
 
 Existence of Limits 
 
 In Exercises 5 and 6, explain why the limits do not exist. 
 
-5. $\lim_{x\to 0}\frac{x}{|x|}$ 6. $\lim_{x\to 1}\frac{1}{x - 1}$ 
+5. $\lim_{x\to 0}\frac{x}{|x|}$
+
+6. $\lim_{x\to 1}\frac{1}{x - 1}$
 
 7. Suppose that a function $f(x)$ is defined for all real values of $x$ except $x = c$ . Can anything be said about the existence of $\lim_{x\to c}f(x)$ ? Give reasons for your answer. 
 
@@ -892,7 +891,7 @@ In Exercises 5 and 6, explain why the limits do not exist.
 
 10. If $f(1) = 5$ , must $\lim_{x \to 1} f(x)$ exist? If it does, then must $\lim_{x \to 1} f(x) = 5$ ? Can we conclude anything about $\lim_{x \to 1} f(x)$ ? Explain. 
 
-## Calculating Limits
+#### Calculating Limits
 
 Find the limits in Exercises 11–22. 
 
@@ -928,25 +927,25 @@ Limits of quotients Find the limits in Exercises 23–42.
 
 25. $\lim_{x\to-5}\frac{x^{2}+3x-10}{x+5}$ 
 
-27. $\lim_{t\to 1}\frac{t^2 + t - 2}{t^2 - 1}$ 
-
 26. $\lim_{x\to 2}\frac{x^2 - 7x + 10}{x - 2}$ 
 
-29. $\lim_{t\to -2}\frac{-2x - 4}{x^3 + 2x^2}$ 
+27. $\lim_{t\to 1}\frac{t^2 + t - 2}{t^2 - 1}$ 
 
 28. $\lim_{t\to -1}\frac{t^2 + 3t + 2}{t^2 - t - 2}$ 
+
+29. $\lim_{t\to -2}\frac{-2x - 4}{x^3 + 2x^2}$ 
 
 30. $\lim_{y\to 0}\frac{5y^3 + 8y^2}{3y^4 - 16y^2}$ 
 
 31. $\lim_{x\to 1}\frac{x^{-1} - 1}{x - 1}$ 
 
-33. $\lim_{u\to 1}\frac{u^4 - 1}{u^3 - 1}$ 
-
 32. $\lim_{x\to0}\frac{\frac{1}{x-1}+\frac{1}{x+1}}{x}$ 
 
-35. $\lim_{x\to 9}\frac{\sqrt{x} - 3}{x - 9}$ 
+33. $\lim_{u\to 1}\frac{u^4 - 1}{u^3 - 1}$ 
 
 34. $\lim_{v\to 2}\frac{v^3 - 8}{v^4 - 16}$ 
+
+35. $\lim_{x\to 9}\frac{\sqrt{x} - 3}{x - 9}$ 
 
 36. $\lim_{x\to 4}\frac{4x - x^2}{2 - \sqrt{x}}$ 
 
@@ -1014,7 +1013,7 @@ $$
 
 56. Suppose that $\lim_{x\to -2}p(x) = 4,\lim_{x\to -2}r(x) = 0$ and $\lim_{x\to -2}s(x) = -3.$ Find a. $\lim_{x\to -2}\big(p(x) + r(x) + s(x)\big)$ b. $\lim_{x\to -2}\big(p(x)\cdot r(x)\cdot s(x)\big)$ c. $\lim_{x\to -2}\left(-4p(x) + 5r(x)\right) / s(x)$ 
 
-## Limits of Average Rates of Change
+#### Limits of Average Rates of Change
 
 Because of their connection with secant lines, tangents, and instantaneous rates, limits of the form 
 
@@ -1058,7 +1057,7 @@ Give reasons for your answer.
 
 T b. Graph $y = 1 - (x^{2}/6)$ , $y = (x \sin x)/(2 - 2 \cos x)$ , and y = 1 together for $-2 \leq x \leq 2$ . Comment on the behavior of the graphs as $x \rightarrow 0$ . 
 
-## 66. a. Suppose that the inequalities
+66. a. Suppose that the inequalities
 
 $$
 \frac {1}{2} - \frac {x ^ {2}}{2 4} <   \frac {1 - \cos x}{x ^ {2}} <   \frac {1}{2}
@@ -1076,7 +1075,7 @@ Give reasons for your answer.
 
 T b. Graph the equations $y = (1/2) - (x^{2}/24)$ , $y = (1 - \cos x)/x^{2}$ , and $y = 1/2$ together for $-2 \leq x \leq 2$ . Comment on the behavior of the graphs as $x \rightarrow 0$ . 
 
-## Estimating Limits
+#### Estimating Limits
 
 You will find a graphing calculator useful for Exercises 67–76. 
 
@@ -1151,7 +1150,7 @@ a. Make tables of values of $f$ at values of $x$ that approach $c = 0$ from abov
 
 b. Support your conclusions in part (a) by graphing $f$ near $c = 0$ . 
 
-## Theory and Examples
+#### Theory and Examples
 
 77. If $x^4 \leq f(x) \leq x^2$ for $x$ in $[-1, 1]$ and $x^2 \leq f(x) \leq x^4$ for $x < -1$ and $x > 1$ , at what points $c$ do you automatically know $\lim_{x \to c} f(x)$ ? What can you say about the value of the limit at these points? 
 
@@ -1177,27 +1176,13 @@ a. $\lim_{x\to0}f(x)$ ,
 
 b. $\lim_{x\to0}\frac{f(x)}{x}.$ 
 
-85. $\lim_{x\to 2}\frac{x^4 - 16}{x - 2}$ 
-
 T 83. a. Graph $g(x) = x \sin(1/x)$ to estimate $\lim_{x \to 0} g(x)$ , zooming in on the origin as necessary. 
-
-86. $\lim_{x\to -1}\frac{x^3 - x^2 - 5x - 3}{(x + 1)^2}$ 
-
-87. $\lim_{x\to 0}\frac{\sqrt[3]{1 + x} - 1}{x}$ 
 
 b. Confirm your estimate in part (a) with a proof. 
 
 T 84. a. Graph $h(x) = x^2 \cos(1/x^3)$ to estimate $\lim_{x \to 0} h(x)$ , zooming in on the origin as necessary. 
 
-88. $\lim_{x\to 3}\frac{x^2 - 9}{\sqrt{x^2 + 7} - 4}$ 
-
 b. Confirm your estimate in part (a) with a proof. 
-
-89. $\lim_{x\to 0}\frac{1 - \cos{x}}{x\sin{x}}$ 
-
-COMPUTER EXPLORATIONS 
-
-90. $\lim_{x\to 0}\frac{2x^2}{3 - 3\cos{x}}$ 
 
 Graphical Estimates of Limits 
 
@@ -1207,13 +1192,27 @@ a. Plot the function near the point c being approached.
 
 b. From your plot, guess the value of the limit. 
 
+85. $\lim_{x\to 2}\frac{x^4 - 16}{x - 2}$ 
+
+86. $\lim_{x\to -1}\frac{x^3 - x^2 - 5x - 3}{(x + 1)^2}$ 
+
+87. $\lim_{x\to 0}\frac{\sqrt[3]{1 + x} - 1}{x}$ 
+
+88. $\lim_{x\to 3}\frac{x^2 - 9}{\sqrt{x^2 + 7} - 4}$ 
+
+89. $\lim_{x\to 0}\frac{1 - \cos{x}}{x\sin{x}}$ 
+
+COMPUTER EXPLORATIONS 
+
+90. $\lim_{x\to 0}\frac{2x^2}{3 - 3\cos{x}}$ 
+
 ## 2.3 The Precise Definition of a Limit
 
 We now turn our attention to the precise definition of a limit. The early history of calculus saw controversy about the validity of the basic concepts underlying the theory. Apparent contradictions were argued over by both mathematicians and philosophers. These controversies were resolved by the precise definition, which allows us to replace vague phrases like “gets arbitrarily close to” in the informal definition with specific conditions that can be applied to any particular example. With a rigorous definition, we can avoid misunderstandings, prove the limit properties given in the preceding section, and establish many important limits. 
 
 To show that the limit of $f(x)$ as $x \rightarrow c$ equals the number L, we need to show that the gap between $f(x)$ and L can be made “as small as we choose” if x is kept “close enough” to c. Let us see what this requires if we specify the size of the gap between $f(x)$ and L. 
 
-![[c9a8e0fd6eb6b84f6522eb3cea1a549d692642d019fe9c59fb5a36a6ec4690a2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c9a8e0fd6eb6b84f6522eb3cea1a549d692642d019fe9c59fb5a36a6ec4690a2.jpg)
 
 
 **EXAMPLE 1** Consider the function y = 2x - 1 near x = 4. Intuitively it seems clear that y is close to 7 when x is close to 4, so $\lim_{x \to 4} (2x - 1) = 7$ . However, how close to x = 4 does x have to be so that y = 2x - 1 differs from 7 by, say, less than 2 units? 
@@ -1240,14 +1239,14 @@ In the previous example we determined how close x must be to a particular value 
 
 $\delta$ is the Greek letter delta. $\varepsilon$ is the Greek letter epsilon. 
 
-![[8f618f852853686a0e0227b3312be4f136abee8e7ac8d266cd31d502509343bc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8f618f852853686a0e0227b3312be4f136abee8e7ac8d266cd31d502509343bc.jpg)
 
 
 
 FIGURE 2.17 How should we define $\delta > 0$ so that keeping $x$ within the interval $(c - \delta, c + \delta)$ will keep $f(x)$ within the interval $\left(L - \frac{1}{10}, L + \frac{1}{10}\right)$ ?
 
 
-![[84af47bfc25f8f3ec7e4506126c5d8377c1ba43367196ea24e7f058873033f8b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/84af47bfc25f8f3ec7e4506126c5d8377c1ba43367196ea24e7f058873033f8b.jpg)
 
 
 
@@ -1256,7 +1255,7 @@ FIGURE 2.18 The relation of $\delta$ and $\varepsilon$ in the definition of limi
 
 small, by holding x close enough to c. To describe arbitrary prescribed errors, we introduce two constants, $\delta$ (delta) and $\varepsilon$ (epsilon). These Greek letters are traditionally used to represent small changes in a variable or a function. 
 
-## Definition of Limit
+### Definition of Limit
 
 Suppose we are watching the values of a function $f(x)$ as x approaches c (without taking on the value c itself). Certainly we want to be able to say that $f(x)$ stays within one-tenth of a unit from L as soon as x stays within some distance $\delta$ of c (Figure 2.17). But that in itself is not enough, because as x continues on its course toward c, what is to prevent $f(x)$ from jumping around within the interval from $L - (1/10)$ to $L + (1/10)$ without tending toward L? We can be told that the error can be no more than 1/100 or 1/1000 or 1/100,000. Each time, we find a new $\delta$ -interval about c so that keeping x within that interval satisfies the new error tolerance. And each time the possibility exists that $f(x)$ might jump away from L at some later stage. 
 
@@ -1280,35 +1279,35 @@ To visualize the definition, imagine machining a cylindrical shaft to a close to
 
 The definition of limit extends to functions on more general domains. It is only required that each open interval around c contain points in the domain of the function other than c. See Additional and Advanced Exercises 49–53 for examples of limits for functions with complicated domains. In the next section we will see how the definition of limit applies at points lying on the boundary of an interval. 
 
-## Examples: Testing the Definition
+### Examples: Testing the Definition
 
 The formal definition of limit does not tell how to find the limit of a function, but it does enable us to verify that a conjectured limit value is correct. The following examples show how the definition can be used to verify limit statements for specific functions. However, the real purpose of the definition is not to do calculations like this, but rather to prove general theorems so that the calculation of specific limits can be simplified, such as the theorems stated in the previous section. 
 
-![[9bc9256829db180c3cbce0026b3aae3951a96f59cecc23621152db71b58b996b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9bc9256829db180c3cbce0026b3aae3951a96f59cecc23621152db71b58b996b.jpg)
 
 
-![[265f878041e0c8fdcb731251a8eb104d83a21ef35eadc1e7846c7dc1d297d94c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/265f878041e0c8fdcb731251a8eb104d83a21ef35eadc1e7846c7dc1d297d94c.jpg)
 
 
-![[3f148ea63c7ebf9e138c3124296cbdef183f9ed82da961856a6bf5ce5224135b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3f148ea63c7ebf9e138c3124296cbdef183f9ed82da961856a6bf5ce5224135b.jpg)
 
 
-![[94bbf646b88260ecc07cd164471c2c4ca7338ed7af4288a6661ce4a1d7e1518e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/94bbf646b88260ecc07cd164471c2c4ca7338ed7af4288a6661ce4a1d7e1518e.jpg)
 
 
-![[e79b6bff7979fd59756bd20c3023d2474d265f30e0692fa3463d091b6404084d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e79b6bff7979fd59756bd20c3023d2474d265f30e0692fa3463d091b6404084d.jpg)
 
 
-![[b1225517517ccbb62b6c63300b64cfafadb10a6a337eff2f57066ff65e775d6b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b1225517517ccbb62b6c63300b64cfafadb10a6a337eff2f57066ff65e775d6b.jpg)
 
 
-![[f002f855bd1f72805e787fdebb9538cb5e0d806d992dab7b6f09191def6a508f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f002f855bd1f72805e787fdebb9538cb5e0d806d992dab7b6f09191def6a508f.jpg)
 
 
-![[a76b46a16be6fa25f5a76b4c901c6ba1a2b91f309317bd68f80e8db3db8b6412.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a76b46a16be6fa25f5a76b4c901c6ba1a2b91f309317bd68f80e8db3db8b6412.jpg)
 
 
-![[ecf07e806e347ea1f5a559d83c481d889a08becd7d5ae01641d9ddedeca3daac.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ecf07e806e347ea1f5a559d83c481d889a08becd7d5ae01641d9ddedeca3daac.jpg)
 
 
 
@@ -1331,21 +1330,21 @@ $$
 \left| f (x) - 2 \right| <   \varepsilon .
 $$
 
-![[db6f9114717c1c6dc56fb9d9a74303a12e77ac96c9f154b5f6a3f21572941ffc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/db6f9114717c1c6dc56fb9d9a74303a12e77ac96c9f154b5f6a3f21572941ffc.jpg)
 
 
 
 FIGURE 2.19 If $f(x) = 5x - 3$ , then $0 < |x - 1| < \varepsilon / 5$ guarantees that $|f(x) - 2| < \varepsilon$ (Example 2).
 
 
-![[31a1d19b057e3327d4682cc26eb68ff1bc2da6ba1b13d8542de21eb14c3d9abf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/31a1d19b057e3327d4682cc26eb68ff1bc2da6ba1b13d8542de21eb14c3d9abf.jpg)
 
 
 
 FIGURE 2.20 For the function $f(x) = x$ , we find that $0 < |x - c| < \delta$ will guarantee $|f(x) - c| < \varepsilon$ whenever $\delta \leq \varepsilon$ (Example 3a).
 
 
-![[aea9079e46cb65059d505a66238bbdbc77cf9891ad2bcd17147c22133768b7ce.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/aea9079e46cb65059d505a66238bbdbc77cf9891ad2bcd17147c22133768b7ce.jpg)
 
 
 
@@ -1368,7 +1367,7 @@ which proves that $\lim_{x\to 1}(5x - 3) = 2$
 
 The value of $\delta = \varepsilon/5$ is not the only value that will make $0 < |x - 1| < \delta$ imply $|5x - 5| < \varepsilon$ . Any smaller positive $\delta$ will do as well. The definition does not ask for the “best” positive $\delta$ , just one that will work. 
 
-## **EXAMPLE 3** Prove the following results, which were presented graphically in Section 2.2.
+**EXAMPLE 3** Prove the following results, which were presented graphically in Section 2.2.
 
 (a) $\lim_{x\to c}x=c$ 
 
@@ -1392,7 +1391,7 @@ $$
 
 Since k - k = 0, we will always have $|k - k| < \varepsilon$ . Therefore we can use any positive number for $\delta$ , and the implication will hold (Figure 2.21). This proves that $\lim_{k \to \infty} k = k$ . 
 
-## Finding Deltas Algebraically for Given Epsilon
+### Finding Deltas Algebraically for Given Epsilon
 
 In Examples 2 and 3, the interval of values about $c$ for which $|f(x) - L|$ was less than $\varepsilon$ was symmetric about $c$ and we could take $\delta$ to be half the length of that interval. When the interval around $c$ on which we have $|f(x) - L| < \varepsilon$ is not symmetric about $c$ , we can take $\delta$ to be the distance from $c$ to the interval's nearer endpoint. 
 
@@ -1410,21 +1409,21 @@ $$
 \begin{array}{c} \left| \sqrt {x - 1} - 2 \right| <   1 \\ - 1 <   \sqrt {x - 1} - 2 <   1 \\ 1 <   \sqrt {x - 1} <   3 \\ 1 <   x - 1 <   9 \\ 2 <   x <   1 0 \end{array}
 $$
 
-![[6d39987a7873c5f9cf738316d0f5685442f3afaf24d9e28bf72bd5bc64633d6e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6d39987a7873c5f9cf738316d0f5685442f3afaf24d9e28bf72bd5bc64633d6e.jpg)
 
 
 
 FIGURE 2.22 An open interval of radius 3 about x = 5 will lie inside the open interval (2,10).
 
 
-![[8d20240af4ff052baf92e53cf39fafb72a222c365631e50733bde742fd67a493.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8d20240af4ff052baf92e53cf39fafb72a222c365631e50733bde742fd67a493.jpg)
 
 
 
 FIGURE 2.23 The function and intervals in Example 4.
 
 
-![[c9a5413a614ec01c96dec0996f55cdbed961557bffbb3b5df49904bdbbb3bb42.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c9a5413a614ec01c96dec0996f55cdbed961557bffbb3b5df49904bdbbb3bb42.jpg)
 
 
 
@@ -1439,7 +1438,7 @@ $$
 \left| \sqrt {x - 1} - 2 \right| <   1 \quad \text { whenever } \quad 0 <   | x - 5 | <   3.
 $$
 
-## How to Find Algebraically a $\delta$ for a Given $f, L, c$ , and $\varepsilon > 0$
+### How to Find Algebraically a $\delta$ for a Given $f, L, c$ , and $\varepsilon > 0$
 
 The process of finding a $\delta > 0$ such that 
 
@@ -1487,7 +1486,7 @@ This completes the proof for $\varepsilon < 4$ .
 
 If $\varepsilon \geq 4$ , then we take $\delta$ to be the distance from $x = 2$ to the nearer endpoint of the interval $(0, \sqrt{4 + \varepsilon})$ . In other words, take $\delta = \min \{2, \sqrt{4 + \varepsilon - 2}\}$ . (See Figure 2.24.) 
 
-## Using the Definition to Prove Theorems
+### Using the Definition to Prove Theorems
 
 We do not usually rely on the formal definition of limit to verify specific limits such as those in the preceding examples. Rather, we appeal to general theorems about limits, in particular the theorems of Section 2.2. The definition is used to prove these theorems (Appendix A.6). As an example, we prove part 1 of Theorem 1, the Sum Rule. 
 
@@ -1525,40 +1524,28 @@ $$
 
 This shows that $\lim_{x\to c}(f(x)+g(x))=L+M.$ 
 
-## EXERCISES 2.3
+### EXERCISES 2.3
 
-## Centering Intervals About a Point
-
-$$
-3. a = - 7 / 2, b = - 1 / 2, c = - 3
-$$
+#### Centering Intervals About a Point
 
 In Exercises 1–6, sketch the interval $(a,b)$ , on the x-axis with the point c inside. Then find a value of $\delta > 0$ such that a < x < b whenever $0 < |x - c| < \delta$ . 
 
-$$
-4. a = - 7 / 2, b = - 1 / 2, c = - 3 / 2
-$$
+1. $a = 1, b = 7, c = 5$
 
-$$
-\mathbf {1 .} a = 1, b = 7, c = 5
-$$
+2. $a = 1, b = 7, c = 2$
 
-$$
-5. a = 4 / 9, b = 4 / 7, c = 1 / 2
-$$
+3. $a = - 7 / 2, b = - 1 / 2, c = - 3$
 
-$$
-2. a = 1, b = 7, c = 2
-$$
+4. $a = - 7 / 2, b = - 1 / 2, c = - 3 / 2$
 
-$$
-\mathbf {6 .} a = 2. 7 5 9 1, b = 3. 2 3 9 1, c = 3
-$$
+5. $a = 4 / 9, b = 4 / 7, c = 1 / 2$
+
+6. $a = 2. 7 5 9 1, b = 3. 2 3 9 1, c = 3$
 
 Using the Formal Definition
 Each of Exercises 31–36 gives a function $f(x)$ , a point c, and a positive number $\varepsilon$ . Find $L = \lim_{x \to c} f(x)$ . Then find a number $\delta > 0$ such that 
 
-## Finding Deltas Graphically
+#### Finding Deltas Graphically
 
 In Exercises 7–14, use the graphs to find a $\delta > 0$ such that 
 
@@ -1574,24 +1561,24 @@ $$
 8.
 
 
-![[ffabe1c8a2921ffde3d7f431086282b545179252b0d1a399fb8495e97a7b18fb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ffabe1c8a2921ffde3d7f431086282b545179252b0d1a399fb8495e97a7b18fb.jpg)
 
 
-![[89c67595332bfbb0b94a7c67b9e808c53e9bf322c875ec89453eb4a1dcdcef8c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/89c67595332bfbb0b94a7c67b9e808c53e9bf322c875ec89453eb4a1dcdcef8c.jpg)
 
 
 
 9.
 
 
-![[911d8fb918ff2fc73c6678e4e9cd9cb9444f54b61a35d039be6ad49443b70239.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/911d8fb918ff2fc73c6678e4e9cd9cb9444f54b61a35d039be6ad49443b70239.jpg)
 
 
 
 10.
 
 
-![[83ebfdabe86ca698982f3e889240c1306152407fae08364264c52a1fd566d1c5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/83ebfdabe86ca698982f3e889240c1306152407fae08364264c52a1fd566d1c5.jpg)
 
 
 
@@ -1602,17 +1589,17 @@ $$
 12.
 
 
-![[cac22d2e4ca2b94e1336c01cf25d30662f52cbb851458e6e35464916165e91b2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cac22d2e4ca2b94e1336c01cf25d30662f52cbb851458e6e35464916165e91b2.jpg)
 
 
-![[f5c9d74bacd98d8d691b96e7a563446bd91b40d98204fac63199feee39b725ba.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f5c9d74bacd98d8d691b96e7a563446bd91b40d98204fac63199feee39b725ba.jpg)
 
 
 
 13.
 
 
-![[f9fb083131525417b1a678919c3457778bf42a6307c06041a5038ed965e06f41.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f9fb083131525417b1a678919c3457778bf42a6307c06041a5038ed965e06f41.jpg)
 
 
 
@@ -1623,7 +1610,7 @@ Finding Deltas Algebraically
 Each of Exercises 15–30 gives a function $f(x)$ and numbers L, c, and $\varepsilon > 0$ . In each case, find the largest open interval about c on which the inequality $|f(x) - L| < \varepsilon$ holds. Then give a value for $\delta > 0$ such that for all x satisfying $0 < |x - c| < \delta$ , the inequality $|f(x) - L| < \varepsilon$ holds.
 
 
-![[caf4970468694872567d20b5d461e1da3313e09dd6c8c9f0a3559bc572116a61.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/caf4970468694872567d20b5d461e1da3313e09dd6c8c9f0a3559bc572116a61.jpg)
 
 
 $$
@@ -1638,7 +1625,9 @@ $$
 
 Prove the limit statements in Exercises 37–50. 
 
-37. $\lim_{x\to 4}(9 - x) = 5$ 38. $\lim_{x\to 3}(3x - 7) = 2$ 
+37. $\lim_{x\to 4}(9 - x) = 5$
+
+38. $\lim_{x\to 3}(3x - 7) = 2$
 
 39. $\lim_{x\to 9}\sqrt{x - 5} = 2$ 
 
@@ -1646,13 +1635,15 @@ Prove the limit statements in Exercises 37–50.
 
 41. $\lim_{x\to 1}f(x) = 1$ if $f(x) = \left\{ \begin{array}{ll}x^{2}, & x\neq 1\\ 2, & x = 1 \end{array} \right.$ 
 
-$$
-\lim _ {x \to - 2} f (x) = 4 \quad \text { if } \quad f (x) = \left\{ \begin{array}{l l} x ^ {2}, & x \neq - 2 \\ 1, & x = - 2 \end{array} \right.
-$$
+42. $\lim _ {x \to - 2} f (x) = 4 \quad \text { if } \quad f (x) = \left\{ \begin{array}{l l} x ^ {2}, & x \neq - 2 \\ 1, & x = - 2 \end{array} \right.$
 
-43. $\lim_{x\to 1}\frac{1}{x} = 1$ 44. $\lim_{x\to \sqrt{3}}\frac{1}{x^2} = \frac{1}{3}$ 
+43. $\lim_{x\to 1}\frac{1}{x} = 1$
 
-45. $\lim_{x\to -3}\frac{x^2 - 9}{x + 3} = -6$ 46. $\lim_{x\to 1}\frac{x^2 - 1}{x - 1} = 2$ 
+44. $\lim_{x\to \sqrt{3}}\frac{1}{x^2} = \frac{1}{3}$
+
+45. $\lim_{x\to -3}\frac{x^2 - 9}{x + 3} = -6$
+
+46. $\lim_{x\to 1}\frac{x^2 - 1}{x - 1} = 2$
 
 47. $\lim_{x\to 1}f(x) = 2$ if $f(x) = \left\{ \begin{array}{ll}4 - 2x, & x <   1\\ 6x - 4, & x\geq 1 \end{array} \right.$ 
 
@@ -1660,15 +1651,15 @@ $$
 
 49. $\lim_{x\to 0}x\sin \frac{1}{x} = 0$ 
 
-![[d139417a590e5bfdf85eca2050a08b97e7fef74a520fe3a493e0c842bf86ff14.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d139417a590e5bfdf85eca2050a08b97e7fef74a520fe3a493e0c842bf86ff14.jpg)
 
 
 50. $\lim_{x\to 0}x^2\sin \frac{1}{x} = 0$ 
 
-![[13366d6bacb8e9abf65374090b89c635e2b496a8678eb958dd0a44f0aa8e044a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/13366d6bacb8e9abf65374090b89c635e2b496a8678eb958dd0a44f0aa8e044a.jpg)
 
 
-## Theory and Examples
+#### Theory and Examples
 
 51. Define what it means to say that $\lim_{x\to 0}g(x) = k$ 
 
@@ -1688,7 +1679,7 @@ The number L is the limit of $f(x)$ as x approaches c if, given any $\varepsilon
 
 56. Manufacturing electrical resistors Ohm's law for electrical circuits like the one shown in the accompanying figure states that $V = RI$ . In this equation, $V$ is a constant 
 
-![[3369728d7b0fa998cf307cb34b1f0d22eeacb5d036ff78d97679da8f08d35477.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3369728d7b0fa998cf307cb34b1f0d22eeacb5d036ff78d97679da8f08d35477.jpg)
 
 
 voltage, I is the current in amperes, and R is the resistance in ohms. Your firm has been asked to supply the resistors for a circuit in which V will be 120 volts and I is to be $5 \pm 0.1$ amp. In what interval does R have to lie for I to be within 0.1 amp of the value $I_{0} = 5$ ? 
@@ -1707,7 +1698,7 @@ $$
 0 <   | x - c | <   \delta \quad \text { and } \quad | f (x) - L | \geq \varepsilon .
 $$
 
-![[f89aad10ab260fe844e62382986d0136cc844ab7b2b3308ae4a11e9a4d2f9519.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f89aad10ab260fe844e62382986d0136cc844ab7b2b3308ae4a11e9a4d2f9519.jpg)
 
 
 
@@ -1720,7 +1711,7 @@ $$
 
 57. Let $f(x) = \begin{cases} x, & x < 1 \\ x + 1, & x > 1. \end{cases}$ 
 
-![[bcf99adc279932f199f2a7a6a9320488b235f340f900bf7e3b9513e76b8611dc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bcf99adc279932f199f2a7a6a9320488b235f340f900bf7e3b9513e76b8611dc.jpg)
 
 
 a. Let $\varepsilon = 1/2$ . Show that no possible $\delta > 0$ satisfies the following condition: 
@@ -1743,7 +1734,7 @@ c. Show that $\lim_{x\to1}f(x)\neq1.5$ .
 
 58. Let $h(x) = \begin{cases} x^2, & x < 2 \\ 3, & x = 3 \\ 2, & x > 2. \end{cases}$ 
 
-![[c6b501801ca28ca5b7f503aa73090fa2f491a33f7de9a0bfab25fe0d1fbd59b3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c6b501801ca28ca5b7f503aa73090fa2f491a33f7de9a0bfab25fe0d1fbd59b3.jpg)
 
 
 Show that 
@@ -1757,14 +1748,14 @@ c. $\lim_{x\to2}h(x)\neq2$
 59. For the function graphed here, explain why
     a. $\lim_{x\to3}f(x)\neq4$ b. $\lim_{x\to3}f(x)\neq4.8$ c. $\lim_{x\to3}f(x)\neq3$ 
 
-![[4d17f64f9a85af8e3c4d240ea71799321ab0f889fe9b9b3d6b1bae4723dfa5fe.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4d17f64f9a85af8e3c4d240ea71799321ab0f889fe9b9b3d6b1bae4723dfa5fe.jpg)
 
 
 60. a. For the function graphed here, show that $\lim_{x\to1}g(x)\neq2$ . 
 
 b. Does $\lim_{x\to -1}g(x)$ appear to exist? If so, what is the value of the limit? If not, why not? 
 
-![[51be3902048852cc7c388982dcf544c052b63a64e81b20e5107f7770623535f5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/51be3902048852cc7c388982dcf544c052b63a64e81b20e5107f7770623535f5.jpg)
 
 
 COMPUTER EXPLORATIONS 
@@ -1793,17 +1784,13 @@ $$
 
 $$
 f (x) = \frac {\sin 2 x}{3 x}, c = 0 \quad 6 4. f (x) = \frac {x (1 - \cos x)}{x - \sin x}, c = 0
-$$
-
-65. $f(x) = \frac{\sqrt[3]{x} - 1}{x - 1}, c = 1$ 
-
-$$
+65. $$f(x) = \frac{\sqrt[3]{x} - 1}{x - 1}, c = 1$$
 f (x) = \frac {3 x ^ {2} - (7 x + 1) \sqrt {x} + 5}{x - 1}, c = 1
 $$
 
 ## 2.4 One-Sided Limits
 
-![[a877f2943d5f73557bc47ecec06637d6d48cb35541004c5a948d2bd29b4e5533.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a877f2943d5f73557bc47ecec06637d6d48cb35541004c5a948d2bd29b4e5533.jpg)
 
 
 
@@ -1812,7 +1799,7 @@ FIGURE 2.25 Different right-hand and left-hand limits at the origin.
 
 In this section we extend the limit concept to one-sided limits, which are limits as x approaches the number c from the left-hand side (where x < c) or the right-hand side (where x > c) only. These allow us to describe functions that have different limits at a point, depending on whether we approach the point from the left or from the right. One-sided limits also allow us to say what it means for a function to have a limit at an endpoint of an interval. 
 
-## Approaching a Limit from One Side
+### Approaching a Limit from One Side
 
 Suppose a function f is defined on an interval that extends to both sides of a number c. In order for f to have a limit L as x approaches c, the values of $f(x)$ must approach the value L as x approaches c from either side. Because of this, we sometimes say that the limit is two-sided. 
 
@@ -1840,10 +1827,10 @@ $$
 \lim _ {x \to 0 ^ {+}} f (x) = 1 \quad \text { and } \quad \lim _ {x \to 0 ^ {-}} f (x) = - 1.
 $$
 
-![[edbf473750235819070ca0ed4937ed81087ae25d1ef882ad03bcb1a411794023.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/edbf473750235819070ca0ed4937ed81087ae25d1ef882ad03bcb1a411794023.jpg)
 
 
-![[09ddb750adb6115c73e41f2489c6b669c9f6835e9ba81990664ed1ba2493357c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/09ddb750adb6115c73e41f2489c6b669c9f6835e9ba81990664ed1ba2493357c.jpg)
 
 
 
@@ -1860,7 +1847,7 @@ FIGURE 2.26 (a) Right-hand limit as $x$ approaches $c$ . (b) Left-hand limit as 
 
 One-sided limits have all the properties listed in Theorem 1 in Section 2.2. The right-hand limit of the sum of two functions is the sum of their right-hand limits, and so on. The theorems for limits of polynomials and rational functions hold with one-sided limits, as does the Sandwich Theorem. One-sided limits are related to limits at interior points in the following way. 
 
-## THEOREM 5
+**THEOREM 5**
 
 Suppose that a function f is defined on an open interval containing c, except perhaps at c itself. Then $f(x)$ has a limit as x approaches c if and only if it has both a limit from the left at c and a limit from the right at c, and these one-sided limits are equal: 
 
@@ -1870,7 +1857,7 @@ $$
 
 Theorem 5 applies at interior points of a function's domain. At a boundary point of an interval in its domain, a function has a limit when it has an appropriate one-sided limit. 
 
-## Limits at Endpoints of an Interval
+### Limits at Endpoints of an Interval
 
 - If $f$ is defined on an open interval $(b, c)$ to the left of $c$ and not defined on an open interval $(c, d)$ to the right of $c$ , then 
 
@@ -1886,7 +1873,7 @@ $$
 
 (The definition of a limit on an arbitrary domain is discussed in Additional and Advanced Exercises 39–42.) 
 
-![[c6a0a2ff7653a5a3a5fd152b9c680dff4c35f3398b2e632be2dab6cb0139e668.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c6a0a2ff7653a5a3a5fd152b9c680dff4c35f3398b2e632be2dab6cb0139e668.jpg)
 
 
 **EXAMPLE 1** For the function graphed in Figure 2.27, 
@@ -1899,7 +1886,7 @@ $$
 \begin{array}{l l} \text {   At   } x = 2: & \lim _ {x \to 2 ^ {-}} f (x) = 1, \\ & \lim _ {x \to 2 ^ {+}} f (x) = 1, \\ & \lim _ {x \to 2 ^ {-}} f (x) = 1. \end{array} \quad \text { Even   though   } f (2) = 2.
 $$
 
-![[bdb8de328ff86da01ad19f73e125cc32ae10b8f12e01dda2275b8e2aa49219e3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bdb8de328ff86da01ad19f73e125cc32ae10b8f12e01dda2275b8e2aa49219e3.jpg)
 
 
 $$
@@ -1918,21 +1905,21 @@ $$
 \begin{array}{l l} \text {   At   } x = - 1: \lim _ {x \to - 1 ^ {-}} \operatorname{arcsec} x = \pi , & \text {   arcsec   } x \text {   has   a   limit   from   the   left   at   } x = - 1. \\ \lim _ {x \to - 1 ^ {+}} \operatorname{arcsec} x \text {   does   not   exist }, & \text {   arcsec   } x \text {   is   not   defined   on   } (- 1, 1). \\ \lim _ {x \to - 1} \operatorname{arcsec} x = \pi . & \text {   arcsec   } x \text {   has   a   limit   at   } x = - 1. \end{array}
 $$
 
-![[0754a341097c476abc04ac890b1a35193aa63cee4549923c38c71cb62e1726c3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0754a341097c476abc04ac890b1a35193aa63cee4549923c38c71cb62e1726c3.jpg)
 
 
 
 FIGURE 2.29 Intervals associated with the definition of right-hand limit.
 
 
-![[3a0dd4c9cc288ec2e94eac94489c9aa2071a222cab7524674ed308148aa9912e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3a0dd4c9cc288ec2e94eac94489c9aa2071a222cab7524674ed308148aa9912e.jpg)
 
 
 
 FIGURE 2.30 Intervals associated with the definition of left-hand limit.
 
 
-![[c02f0e7321ea97871cf2fa873dc3187fee2ef70b2307b5004116ce70416c6664.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c02f0e7321ea97871cf2fa873dc3187fee2ef70b2307b5004116ce70416c6664.jpg)
 
 
 
@@ -1945,7 +1932,7 @@ $$
 
 At every $c$ in $(-\infty, -1)$ and every $c$ in $(1, \infty)$ , the limit of arcsec $x$ as $x \to c$ is equal to arcsec $c$ . However, for each $c$ in the interval $(-1, 1)$ , lim arcsec $x$ does not exist. 
 
-## Precise Definitions of One-Sided Limits
+### Precise Definitions of One-Sided Limits
 
 The formal definition of the limit in Section 2.3 is readily modified for one-sided limits. 
 
@@ -1975,7 +1962,7 @@ The formal definition of the limit in Section 2.3 is readily modified for one-si
 >
 The definitions are illustrated in Figures 2.29 and 2.30. 
 
-## **EXAMPLE 3** Prove that
+**EXAMPLE 3** Prove that
 
 $$
 \lim _ {x \to 0 ^ {+}} \sqrt {x} = 0.
@@ -2019,7 +2006,7 @@ The functions examined so far have had some kind of limit at each point of inter
 
 **EXAMPLE 4** Show that $y = \sin(1/x)$ has no limit as x approaches zero from either side (Figure 2.32). 
 
-![[306f7698a9318d3e6050b222f1551fcb8a8b7d3008387120814d5a9e98ef2e19.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/306f7698a9318d3e6050b222f1551fcb8a8b7d3008387120814d5a9e98ef2e19.jpg)
 
 
 
@@ -2028,11 +2015,11 @@ FIGURE 2.32 The function $y = \sin(1/x)$ has neither a right-hand nor a left-han
 
 **Solution** As x approaches zero, its reciprocal, 1/x, grows without bound, and the values of sin (1/x) cycle repeatedly from -1 to 1. There is no single number L that the function's values stay increasingly close to as x approaches zero. This is true even if we restrict x to positive values or to negative values. The function has neither a right-hand limit nor a left-hand limit at x = 0. 
 
-## Limits Involving (sin θ)/θ
+### Limits Involving (sin θ)/θ
 
 A central fact about $(\sin\theta)/\theta$ is that in radian measure its limit as $\theta \rightarrow 0$ is 1. We can see this in Figure 2.33 and confirm it algebraically using the Sandwich Theorem. You will see the importance of this limit in Section 3.5, where instantaneous rates of change of the trigonometric functions are studied. 
 
-![[1f894dcc243fb0e68a38cb3c008ced869594892d5816fd16876985124c747fc0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1f894dcc243fb0e68a38cb3c008ced869594892d5816fd16876985124c747fc0.jpg)
 
 
 
@@ -2045,7 +2032,7 @@ $$
 \lim _ {\theta \rightarrow 0} \frac {\sin \theta}{\theta} = 1 (\theta \text {   in   radians })\tag{1}
 $$
 
-![[77a215113d7b733648524ee1c17286943209023ae052a280ed8337eb4d0a58cb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/77a215113d7b733648524ee1c17286943209023ae052a280ed8337eb4d0a58cb.jpg)
 
 
 
@@ -2148,13 +2135,13 @@ $$
 \begin{array}{l l}\lim _ {\theta \rightarrow 0} \frac {\sin A \theta}{\sin B \theta} = \lim _ {\theta \rightarrow 0} \frac {\sin A \theta}{A \theta} A \theta \frac {B \theta}{\sin B \theta} \frac {1}{B \theta}&\text {Multiply and divide by } A \theta \text {and} B \theta\\= \lim _ {\theta \rightarrow 0} \frac {\sin A \theta}{A \theta} \frac {B \theta}{\sin B \theta} \frac {A}{B}&\lim _ {u \rightarrow 0} \frac {\sin u}{u} = 1, \text {with} u = A \theta\\= \lim _ {\theta \rightarrow 0} (1) (1) \frac {A}{B}&\lim _ {v \rightarrow 0} \frac {v}{\sin v} = 1, \text {with} v = B \theta\\= \frac {A}{B}.\end{array}
 $$
 
-## EXERCISES 2.4
+### EXERCISES 2.4
 
 Finding Limits Graphically 
 
 1. Which of the following statements about the function $y = f(x)$ graphed here are true, and which are false? 
 
-![[8422632fd220d819c00a48a89acb65becb751327ea66c4fc7ffe429661b39614.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8422632fd220d819c00a48a89acb65becb751327ea66c4fc7ffe429661b39614.jpg)
 
 
 a. $\lim_{x\to -1^{+}}f(x) = 1$ b. $\lim_{x\to 0^{-}}f(x) = 0$ 
@@ -2177,7 +2164,7 @@ j. $\lim_{x\to 2^{-}}f(x) = 2$
 
 k. $\lim_{x\to-1^{-}}f(x)$ does not exist. l. $\lim_{x\to2^{+}}f(x)=0$ 
 
-![[8499781334a44a07c269b0133ae2b46ea29afdb1f2964326ce074e8a94d8bfcf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8499781334a44a07c269b0133ae2b46ea29afdb1f2964326ce074e8a94d8bfcf.jpg)
 
 
 a. $\lim_{x\to -1^{+}}f(x) = 1$ b. $\lim_{x\to 2}f(x)$ does not exist. 
@@ -2198,7 +2185,7 @@ j. $\lim_{x\to-1^{-}}f(x)=0$ k. $\lim_{x\to3^{+}}f(x)$ does not exist.
 
 3. Let $f(x) = \left\{ \begin{array}{ll} 3 - x, & x < 2 \\ \frac{x}{2} + 1, & x > 2. \end{array} \right.$ 
 
-![[ec24d833e1e570c9fa568ce887e002fec250a6a56fbc1150d931a2cb05be2ccc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ec24d833e1e570c9fa568ce887e002fec250a6a56fbc1150d931a2cb05be2ccc.jpg)
 
 
 a. Find $\lim_{x\to2^{+}}f(x)$ and $\lim_{x\to2^{-}}f(x)$ . 
@@ -2211,7 +2198,7 @@ d. Does $\lim_{x\to4}f(x)$ exist? If so, what is it? If not, why not?
 
 4. Let $f(x) = \begin{cases} 3 - x, & x < 2 \\ 2, & x = 2 \\ \frac{x}{2}, & x > 2. \end{cases}$ 
 
-![[3b4e1630cb91a541cae9e92abe7653fe9ed0671bfe293d9940d5f83caf1d4bb5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3b4e1630cb91a541cae9e92abe7653fe9ed0671bfe293d9940d5f83caf1d4bb5.jpg)
 
 
 a. Find $\lim_{x\to2^{+}}f(x)$ , $\lim_{x\to2^{-}}f(x)$ , and $f(2)$ . 
@@ -2224,7 +2211,7 @@ d. Does $\lim_{x\to-1}f(x)$ exist? If so, what is it? If not, why not?
 
 5. Let $f(x) = \left\{ \begin{array}{ll} 0, & x \leq 0 \\ \sin \frac{1}{x}, & x > 0. \end{array} \right.$ 
 
-![[477d9e797e9f4e0430695f305ac0db9dd439a7f482cfc65837fe87474173762c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/477d9e797e9f4e0430695f305ac0db9dd439a7f482cfc65837fe87474173762c.jpg)
 
 
 a. Does $\lim_{x\to0^{+}}f(x)$ exist? If so, what is it? If not, why not? 
@@ -2235,7 +2222,7 @@ c. Does $\lim_{x\to 0}f(x)$ exist? If so, what is it? If not, why not?
 
 6. Let $g(x) = \sqrt{x}\sin (1 / x)$ . 
 
-![[5c486fa923334d679a1bc29f11246879c99ead94fe81238d8d065b003dee405c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5c486fa923334d679a1bc29f11246879c99ead94fe81238d8d065b003dee405c.jpg)
 
 
 a. Does $\lim_{x\to 0^{+}}g(x)$ exist? If so, what is it? If not, why not? 
@@ -2316,7 +2303,9 @@ Using $\lim_{\theta \to 0}\frac{\sin\theta}{\theta} = 1$
 
 Find the limits in Exercises 23–46. 
 
-23. $\lim_{\theta \to 0}\frac{\sin\sqrt{2}\theta}{\sqrt{2}\theta}$ 24. $\lim_{t\to 0}\frac{\sin kt}{t}$ (k constant) 
+23. $\lim_{\theta \to 0}\frac{\sin\sqrt{2}\theta}{\sqrt{2}\theta}$
+
+24. $\lim_{t\to 0}\frac{\sin kt}{t}$ (k constant)
 
 25. $\lim_{y\to 0}\frac{\sin{3}y}{4y}$ 
 
@@ -2348,9 +2337,9 @@ Find the limits in Exercises 23–46.
 
 39. $\lim_{\theta \to 0}\theta \cos \theta$ 
 
-41. $\lim_{x\to 0}\frac{\tan{3}x}{\sin{8}x}$ 
-
 40. $\lim_{\theta \to 0}\sin \theta \cot 2\theta$ 
+
+41. $\lim_{x\to 0}\frac{\tan{3}x}{\sin{8}x}$ 
 
 42. $\lim_{y\to 0}\frac{\sin{3y}\cot{5y}}{y\cot{4y}}$ 
 
@@ -2362,7 +2351,7 @@ Find the limits in Exercises 23–46.
 
 46. $\lim_{x\to 0}\frac{\cos^2x - \cos x}{x^2}$ 
 
-## Theory and Examples
+#### Theory and Examples
 
 47. Once you know $\lim_{x\to a^{+}}f(x)$ and $\lim_{x\to a^{-}}f(x)$ at an interior point of the domain of f, do you then know $\lim_{x\to a}f(x)$ ? Give reasons for your answer. 
 
@@ -2372,7 +2361,7 @@ Find the limits in Exercises 23–46.
 
 50. Suppose that $f$ is an even function of $x$ . Does knowing that $\lim_{x\to 2^{-}}f(x) = 7$ tell you anything about either $\lim_{x\to -2^{-}}f(x)$ or $\lim_{x\to -2^{+}}f(x)$ ? Give reasons for your answer. 
 
-## Formal Definitions of One-Sided Limits
+#### Formal Definitions of One-Sided Limits
 
 51. Given $\varepsilon > 0$ , find an interval $I = (5, 5 + \delta)$ , $\delta > 0$ , such that if $x$ lies in $I$ , then $\sqrt{x - 5} < \varepsilon$ . What limit is being verified and what is its value? 
 
@@ -2380,7 +2369,9 @@ Find the limits in Exercises 23–46.
 
 Use the definitions of right-hand and left-hand limits to prove the limit statements in Exercises 53 and 54. 
 
-53. $\lim_{x\to 0^{-}}\frac{x}{|x|} = -1$ 54. $\lim_{x\to 2^{+}}\frac{x - 2}{|x - 2|} = 1$ 
+53. $\lim_{x\to 0^{-}}\frac{x}{|x|} = -1$
+
+54. $\lim_{x\to 2^{+}}\frac{x - 2}{|x - 2|} = 1$
 
 55. Greatest integer function Find (a) $\lim_{x\to 400^{+}}\lfloor x\rfloor$ and (b) $\lim_{x\to 400^{-}}\lfloor x\rfloor$ ; then use limit definitions to verify your findings. (c) Based on your conclusions in parts (a) and (b), can you say anything about $\lim_{x\to 400}\lfloor x\rfloor$ ? Give reasons for your answer. 
 
@@ -2390,21 +2381,21 @@ Use the definitions of right-hand and left-hand limits to prove the limit statem
 
 In this section we investigate the behavior of a function when the magnitude of the independent variable x becomes increasingly large, or $x \rightarrow \pm\infty$ . We further extend the concept of limit to infinite limits. Infinite limits provide useful symbols and language for describing the behavior of functions whose values become arbitrarily large in magnitude. We use these ideas to analyze the graphs of functions having horizontal or vertical asymptotes. 
 
-![[16079b906e0751a0afaa62820ffeadf71c268a06538a38ad908d284fa9f7a9f4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/16079b906e0751a0afaa62820ffeadf71c268a06538a38ad908d284fa9f7a9f4.jpg)
 
 
 
 FIGURE 2.35 The graph of $y = 1 / x$ approaches 0 as $x \to \infty$ or $x \to -\infty$ .
 
 
-![[e8ef2cdda20894d20aabe148c06ca9e6aafcefb0f4e7c2298d5f5e7462c008d9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e8ef2cdda20894d20aabe148c06ca9e6aafcefb0f4e7c2298d5f5e7462c008d9.jpg)
 
 
 
 FIGURE 2.36 The geometry behind the argument in Example 1.
 
 
-## Finite Limits as $x \rightarrow \pm\infty$
+### Finite Limits as $x \rightarrow \pm\infty$
 
 The symbol for infinity $(\infty)$ does not represent a real number. We use $\infty$ to describe the behavior of a function when the values in its domain or range outgrow all finite bounds. For example, the function $f(x) = 1/x$ is defined for all $x \neq 0$ (Figure 2.35). When x is positive and becomes increasingly large, 1/x becomes increasingly small. When x is negative and its magnitude becomes increasingly large, 1/x again becomes small. We summarize these observations by saying that $f(x) = 1/x$ has limit 0 as $x \to \infty$ or $x \to -\infty$ , or that 0 is a limit of $f(x) = 1/x$ at infinity and at negative infinity. Here are precise definitions for the limit of a function whose domain contains positive or negative numbers of unbounded magnitude. 
 
@@ -2446,7 +2437,7 @@ $$
 
 We prove the second result in Example 1, and leave the first to Exercises 93 and 94. 
 
-## **EXAMPLE 1** Show that
+**EXAMPLE 1** Show that
 
 $$
 \text {(a)} \lim _ {x \rightarrow \infty} \frac {1}{x} = 0
@@ -2456,7 +2447,7 @@ $$
 \text {(b)} \lim _ {x \rightarrow - \infty} \frac {1}{x} = 0.
 $$
 
-## **Solution**
+**Solution**
 
 (a) Let $\varepsilon > 0$ be given. We must find a number $M$ such that 
 
@@ -2480,7 +2471,7 @@ The implication will hold if $N = -1 / \varepsilon$ or any number less than $-1 
 
 Limits at infinity have properties similar to those of finite limits. 
 
-## THEOREM 7
+**THEOREM 7**
 
 All the Limit Laws in Theorem 1 are true when we replace $\lim_{x\to c}$ by $\lim_{x\to \infty}$ or $\lim_{x\to -\infty}$ . That is, the variable $x$ may approach a finite number $c$ or $\pm \infty$ . 
 
@@ -2498,14 +2489,14 @@ $$
 \begin{array}{l l}\text {(b)} \lim _ {x \rightarrow - \infty} \frac {\pi \sqrt {3}}{x ^ {2}} = \lim _ {x \rightarrow - \infty} \pi \sqrt {3} \cdot \frac {1}{x} \cdot \frac {1}{x}\\&= \lim _ {x \rightarrow - \infty} \pi \sqrt {3} \cdot \lim _ {x \rightarrow - \infty} \frac {1}{x} \cdot \lim _ {x \rightarrow - \infty} \frac {1}{x}\\&= \pi \sqrt {3} \cdot 0 \cdot 0 = 0\end{array}\quad \text { Product   Rule } \quad \text { Known   limits }
 $$
 
-![[b19143ee354a57e74eff8e8b80083bfff867785c4927aaee7c79dd78aa4c9d10.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b19143ee354a57e74eff8e8b80083bfff867785c4927aaee7c79dd78aa4c9d10.jpg)
 
 
 
 FIGURE 2.37 The graph of the function in Example 3a. The graph approaches the line y = 5/3 as |x| increases.
 
 
-## Limits at Infinity of Rational Functions
+### Limits at Infinity of Rational Functions
 
 To determine the limit of a rational function as $x \rightarrow \pm\infty$ , we first divide the numerator and denominator by the highest power of x in the denominator. The result then depends on the degrees of the polynomials involved. 
 
@@ -2521,18 +2512,18 @@ $$
 
 Cases for which the degree of the numerator is greater than the degree of the denominator are illustrated in Examples 10 and 14. 
 
-## Horizontal Asymptotes
+### Horizontal Asymptotes
 
 If the distance between the graph of a function and some fixed line approaches zero as a point on the graph moves increasingly far from the origin, we say that the graph approaches the line asymptotically and that the line is an asymptote of the graph. 
 
-![[ca945829d269c29437cea784948a60e184ed4b4ee1f22889ac5b1a28e07b7fd3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ca945829d269c29437cea784948a60e184ed4b4ee1f22889ac5b1a28e07b7fd3.jpg)
 
 
 
 FIGURE 2.38 The graph of the function in Example 3b. The graph approaches the x-axis as $|x|$ increases.
 
 
-![[cc57be863098d0b022189f840aa9a0208c00ab110fe36bdd764fff0b1055f5aa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cc57be863098d0b022189f840aa9a0208c00ab110fe36bdd764fff0b1055f5aa.jpg)
 
 
 
@@ -2609,21 +2600,21 @@ $$
 e ^ {x} <   \varepsilon .
 $$
 
-![[d93a09ff94afcf3351438543c9b376132c8241d887401ce2a0b9ec36351813b2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d93a09ff94afcf3351438543c9b376132c8241d887401ce2a0b9ec36351813b2.jpg)
 
 
 
 FIGURE 2.40 The graph of $y = e^{x}$ approaches the x-axis as $x \rightarrow -\infty$ (Example 5).
 
 
-![[08f83fa5aab38100dfbc18355274937c1d9624ed10e7ef40657bf6751c37e1bf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/08f83fa5aab38100dfbc18355274937c1d9624ed10e7ef40657bf6751c37e1bf.jpg)
 
 
 
 FIGURE 2.41 The line y = 1 is a horizontal asymptote of the function graphed here (Example 6b).
 
 
-![[7c46554f38658e2f113db512fd1f151f6f1dc01246e10b5ed76c6c9f6bbb2ac7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7c46554f38658e2f113db512fd1f151f6f1dc01246e10b5ed76c6c9f6bbb2ac7.jpg)
 
 
 
@@ -2682,7 +2673,7 @@ $$
 0 \leq \left| \frac {\sin x}{x} \right| \leq \left| \frac {1}{x} \right|
 $$
 
-![[091197586fd7cd0d3b630262d0727c221d8205682c0e49fd14e6751e0b2ae7d4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/091197586fd7cd0d3b630262d0727c221d8205682c0e49fd14e6751e0b2ae7d4.jpg)
 
 
 
@@ -2695,7 +2686,7 @@ FIGURE 2.44 The graph of the function in Example 10 has an oblique asymptote.
 
 and $\lim_{x\to\pm\infty}|1/x|=0$ , we have $\lim_{x\to\pm\infty}(\sin x)/x=0$ by the Sandwich Theorem. Hence, 
 
-![[8cb80eaf261f17729990b349ed7126e03e235e3222895a404ced8ae3133df468.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8cb80eaf261f17729990b349ed7126e03e235e3222895a404ced8ae3133df468.jpg)
 
 
 $$
@@ -2722,7 +2713,7 @@ $$
 \lim _ {x \rightarrow \infty} \frac {- 1 6}{x + \sqrt {x ^ {2} + 1 6}} = \lim _ {x \rightarrow \infty} \frac {- \frac {1 6}{x}}{1 + \sqrt {\frac {x ^ {2}}{x ^ {2}} + \frac {1 6}{x ^ {2}}}} = \frac {0}{1 + \sqrt {1 + 0}} = 0.
 $$
 
-## Oblique Asymptotes
+### Oblique Asymptotes
 
 If the degree of the numerator of a rational function is 1 greater than the degree of the denominator, the graph has an oblique or slant line asymptote. We find an equation for the asymptote by dividing numerator by denominator to express f as a linear function plus a remainder that goes to zero as $x \rightarrow \pm\infty$ . 
 
@@ -2740,7 +2731,7 @@ $$
 \begin{array}{c} \frac {x}{2} + 1 \\ 2 x - 4 \overline {{) x ^ {2} + 0 x - 3}} \\ \underline {{x ^ {2} - 2 x}} \\ 2 x - 3 \\ \underline {{2 x - 4}} \\ 1 \end{array}
 $$
 
-![[d7f8d8f7c9e80fa399bcdc9fb7a9b412e18ab35d6472ba1e59f384a58a90b2f6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d7f8d8f7c9e80fa399bcdc9fb7a9b412e18ab35d6472ba1e59f384a58a90b2f6.jpg)
 
 
 
@@ -2751,7 +2742,7 @@ $$
 \lim _ {x \to 0 ^ {+}} \frac {1}{x} = \infty \quad \text { and } \quad \lim _ {x \to 0 ^ {-}} \frac {1}{x} = - \infty .
 $$
 
-![[b1c34bfb13e885be5a6fe8179875ed6f17cf81a5c73c4c3a2ba7f1bf5c884c18.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b1c34bfb13e885be5a6fe8179875ed6f17cf81a5c73c4c3a2ba7f1bf5c884c18.jpg)
 
 
 
@@ -2774,7 +2765,7 @@ an asymptote of the graph of $f$ (Figure 2.44). The line $y = g(x)$ is an asympt
 
 Notice in Example 10 that if the degree of the numerator in a rational function is greater than the degree of the denominator, then the limit as $|x|$ becomes large is $+\infty$ or $-\infty$ , depending on the signs assumed by the numerator and denominator. 
 
-## Infinite Limits
+### Infinite Limits
 
 Let us look again at the function $f(x) = 1/x$ . As $x \to 0^{+}$ , the values of f grow without bound, eventually reaching and surpassing every positive real number. That is, given any positive real number B, however large, the values of f become larger still (Figure 2.45). 
 
@@ -2806,10 +2797,10 @@ $$
 
 Analytic **Solution** Think about the number x - 1 and its reciprocal. As $x \to 1^{+}$ , we have $(x - 1) \to 0^{+}$ and $1/(x - 1) \to \infty$ . As $x \to 1^{-}$ , we have $(x - 1) \to 0^{-}$ and $1/(x - 1) \to -\infty$ . 
 
-![[6ac121786f14057291520d91365a37e7725b620159155178c6f386f3a9c4ae78.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6ac121786f14057291520d91365a37e7725b620159155178c6f386f3a9c4ae78.jpg)
 
 
-## **EXAMPLE 12** Discuss the behavior of
+**EXAMPLE 12** Discuss the behavior of
 
 $$
 f (x) = \frac {1}{x ^ {2}} \text { as } x \to 0.
@@ -2879,21 +2870,21 @@ $$
 
 because the numerator tends to $-\infty$ while the denominator approaches 3 as $x \rightarrow -\infty$ . 
 
-![[dcdd3fa25b41cec85dc8f4c92d59feacc3ec71a48ddb7f1221159dc7aa127063.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dcdd3fa25b41cec85dc8f4c92d59feacc3ec71a48ddb7f1221159dc7aa127063.jpg)
 
 
 
 FIGURE 2.48 For $c - \delta < x < c + \delta$ , the graph of $f(x)$ lies above the line y = B.
 
 
-![[d21eace6d74a26793e09fa6dcff8a117fe5eb9d39d6924f67252b53489c5cce6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d21eace6d74a26793e09fa6dcff8a117fe5eb9d39d6924f67252b53489c5cce6.jpg)
 
 
 
 FIGURE 2.49 For $c - \delta < x < c + \delta$ , the graph of $f(x)$ lies below the line $y = -B$ .
 
 
-## Precise Definitions of Infinite Limits
+### Precise Definitions of Infinite Limits
 
 Instead of requiring $f(x)$ to lie arbitrarily close to a finite number L for all x sufficiently close to c, the definitions of infinite limits require $f(x)$ to lie arbitrarily far from zero. Except for this change, the language is very similar to what we have seen before. Figures 2.48 and 2.49 accompany these definitions. 
 
@@ -2957,21 +2948,21 @@ $$
 \lim _ {x \to 0} \frac {1}{x ^ {2}} = \infty .
 $$
 
-![[fcf418d1c4a46d90d5e373f94c6dc56d3eccb2b12f4f0644fdeeda510ca28caa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fcf418d1c4a46d90d5e373f94c6dc56d3eccb2b12f4f0644fdeeda510ca28caa.jpg)
 
 
 
 FIGURE 2.50 The coordinate axes are asymptotes of both branches of the hyperbola $y = 1 / x$ .
 
 
-![[eb080d53a319325db65f234208cc7cbe25c9821df7991c7dc2c71367a402b632.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/eb080d53a319325db65f234208cc7cbe25c9821df7991c7dc2c71367a402b632.jpg)
 
 
 
 FIGURE 2.51 The lines y = 1 and x = -2 are asymptotes of the curve in Example 16.
 
 
-## Vertical Asymptotes
+### Vertical Asymptotes
 
 Notice that the distance between a point on the graph of $f(x) = 1/x$ and the y-axis approaches zero as the point moves nearly vertically along the graph and away from the origin (Figure 2.50). The function $f(x) = 1/x$ is unbounded as x approaches 0 because 
 
@@ -3019,14 +3010,14 @@ $$
 
 (a) The behavior as $x \to \pm\infty$ . Since $\lim_{x \to \infty} f(x) = 0$ , the line y = 0 is a horizontal asymptote of the graph to the right. By symmetry it is an asymptote to the left as well (Figure 2.52). Notice that the curve approaches the x-axis from only the negative side (or from below). Also, $f(0) = 2$ . 
 
-![[9a99f6bb449719e716f18d07f7a9024ff20f2faa9319bf451295dc5df9a43771.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9a99f6bb449719e716f18d07f7a9024ff20f2faa9319bf451295dc5df9a43771.jpg)
 
 
 
 FIGURE 2.52 Graph of the function in Example 17. Notice that the curve approaches the x-axis from only one side. Asymptotes do not have to be two-sided.
 
 
-![[411aa9f1c7bf2ab7629b888b6f08f65eeec8ff8c211da1b411467a23bc48038c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/411aa9f1c7bf2ab7629b888b6f08f65eeec8ff8c211da1b411467a23bc48038c.jpg)
 
 
 
@@ -3059,14 +3050,14 @@ $$
 
 both have vertical asymptotes at odd-integer multiples of $\pi/2$ , which are the points where $\cos x = 0$ (Figure 2.54). 
 
-![[b6f6968a31fb2dd64bdd4d74152959ee0ebdc443f848bb0fee8d28d4a196efb4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b6f6968a31fb2dd64bdd4d74152959ee0ebdc443f848bb0fee8d28d4a196efb4.jpg)
 
 
 
 FIGURE 2.54 The graphs of sec x and tan x have infinitely many vertical asymptotes (Example 19).
 
 
-## Dominant Terms
+### Dominant Terms
 
 In Example 10 we saw that by using long division, we can rewrite the function 
 
@@ -3080,14 +3071,14 @@ $$
 f (x) = \left(\frac {x}{2} + 1\right) + \left(\frac {1}{2 x - 4}\right).
 $$
 
-![[72dc98acf3dcdaf97f27576f9375351108fd0fe2cfab9ce84e711e2cc53b3ddc.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/72dc98acf3dcdaf97f27576f9375351108fd0fe2cfab9ce84e711e2cc53b3ddc.jpg)
 
 
 
 (a)
 
 
-![[6fc7d304ed48bac3ebe2e9c7320e980c53d5e0e3941814e20a445c6f8828208c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6fc7d304ed48bac3ebe2e9c7320e980c53d5e0e3941814e20a445c6f8828208c.jpg)
 
 
 
@@ -3124,9 +3115,9 @@ $$
 
 which means that f and g appear nearly identical when $|x|$ is large. 
 
-## EXERCISES 2.5
+### EXERCISES 2.5
 
-## Finding Limits
+#### Finding Limits
 
 1. For the function $f$ whose graph is given, determine the following limits. Write $\infty$ or $-\infty$ where appropriate. 
 
@@ -3150,7 +3141,7 @@ f. $\lim_{x\to0^{-}}f(x)$
 
 h. $\lim_{x\to\infty}f(x)$ 
 
-![[fdcaa286893a4832d8060ed0b522f11cc9fc229e6ce024557c913cc3be1c8c8d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fdcaa286893a4832d8060ed0b522f11cc9fc229e6ce024557c913cc3be1c8c8d.jpg)
 
 
 2. For the function $f$ whose graph is given, determine the following limits. Write $\infty$ or $-\infty$ where appropriate.
@@ -3158,16 +3149,14 @@ a. $\lim_{x \to 4} f(x)$ b. $\lim_{x \to 2^+} f(x)$ c. $\lim_{x \to 2^-} f(x)$ d
 
 j. $\lim_{x\to0}f(x)$ k. $\lim_{x\to\infty}f(x)$ l. $\lim_{x\to-\infty}f(x)$ 
 
-![[a702f503258e4d2da63ac6f534f87916e49c995b29e4e782799e179156597485.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a702f503258e4d2da63ac6f534f87916e49c995b29e4e782799e179156597485.jpg)
 
 
 In Exercises 3–8, find the limit of each function (a) as $x \rightarrow \infty$ and (b) as $x \rightarrow -\infty$ . (You may wish to visualize your answer with a graphing calculator or computer.) 
 
 3. $f(x) = \frac{2}{x} - 3$ 
 
-$$
-f (x) = \pi - \frac {2}{x ^ {2}}
-$$
+4. $f (x) = \pi - \frac {2}{x ^ {2}}$
 
 5. $g(x) = \frac{1}{2 + (1/x)}$ 
 
@@ -3178,13 +3167,37 @@ $$
 8. $h(x) = \frac{3 - (2 / x)}{4 + (\sqrt{2} / x^2)}$ 
 
 Find the limits in Exercises 9–12.
-9. $\lim_{x\to\infty}\frac{\sin 2x}{x}$ 10. $\lim_{\theta\to-\infty}\frac{\cos\theta}{3\theta}$ 11. $\lim_{t\to-\infty}\frac{2-t+\sin t}{t+\cos t}$ 12. $\lim_{r\to\infty}\frac{r+\sin r}{2r+7-5\sin r}$ 
+9. $\lim_{x\to\infty}\frac{\sin 2x}{x}$
 
-## Limits of Rational Functions
+10. $\lim_{\theta\to-\infty}\frac{\cos\theta}{3\theta}$
+
+11. $\lim_{t\to-\infty}\frac{2-t+\sin t}{t+\cos t}$
+
+12. $\lim_{r\to\infty}\frac{r+\sin r}{2r+7-5\sin r}$
+
+#### Limits of Rational Functions
 
 In Exercises 13–22, find the limit of each rational function (a) as $x \to \infty$ and (b) as $x \to -\infty$ . Write $\infty$ or $-\infty$ where appropriate.
 
-13. $f(x) = \frac{2x + 3}{5x + 7}$ 14. $f(x) = \frac{2x^{3} + 7}{x^{3} - x^{2} + x + 7}$ 15. $f(x) = \frac{x + 1}{x^{2} + 3}$ 16. $f(x) = \frac{3x + 7}{x^{2} - 2}$ 17. $h(x) = \frac{7x^{3}}{x^{3} - 3x^{2} + 6x}$ 18. $h(x) = \frac{9x^{4} + x}{2x^{4} + 5x^{2} - x + 6}$ 19. $g(x) = \frac{10x^{5} + x^{4} + 31}{x^{6}}$ 20. $g(x) = \frac{x^{3} + 7x^{2} - 2}{x^{2} - x + 1}$ 21. $f(x) = \frac{3x^{7} + 5x^{2} - 1}{6x^{3} - 7x + 3}$ 22. $h(x) = \frac{5x^{8} - 2x^{3} + 9}{3 + x - 4x^{5}}$ 
+13. $f(x) = \frac{2x + 3}{5x + 7}$
+
+14. $f(x) = \frac{2x^{3} + 7}{x^{3} - x^{2} + x + 7}$
+
+15. $f(x) = \frac{x + 1}{x^{2} + 3}$
+
+16. $f(x) = \frac{3x + 7}{x^{2} - 2}$
+
+17. $h(x) = \frac{7x^{3}}{x^{3} - 3x^{2} + 6x}$
+
+18. $h(x) = \frac{9x^{4} + x}{2x^{4} + 5x^{2} - x + 6}$
+
+19. $g(x) = \frac{10x^{5} + x^{4} + 31}{x^{6}}$
+
+20. $g(x) = \frac{x^{3} + 7x^{2} - 2}{x^{2} - x + 1}$
+
+21. $f(x) = \frac{3x^{7} + 5x^{2} - 1}{6x^{3} - 7x + 3}$
+
+22. $h(x) = \frac{5x^{8} - 2x^{3} + 9}{3 + x - 4x^{5}}$
 
 Limits as $x \rightarrow \infty$ or $x \rightarrow -\infty$ 
 
@@ -3244,17 +3257,19 @@ Find the limits in Exercises 37–48. Write $\infty$ or $-\infty$ where appropri
 
 46. a. $\lim_{x\to 0^{+}}\frac{2}{x^{1 / 5}}$ b. $\lim_{x\to 0^{-}}\frac{2}{x^{1 / 5}}$ 
 
-47. $\lim_{x\to 0}\frac{4}{x^{2 / 5}}$ 48. $\lim_{x\to 0}\frac{1}{x^{2 / 3}}$ 
+47. $\lim_{x\to 0}\frac{4}{x^{2 / 5}}$
+
+48. $\lim_{x\to 0}\frac{1}{x^{2 / 3}}$
 
 Find the limits in Exercises 49–52. Write $\infty$ or $-\infty$ where appropriate. 
 
 49. $\lim_{x\to (\pi /2)^{-}}\tan x$ 
 
-$$
-\lim _ {x \rightarrow (- \pi / 2) ^ {+}} \sec x
-$$
+50. $\lim _ {x \rightarrow (- \pi / 2) ^ {+}} \sec x$
 
-51. $\lim_{\theta \to 0^{-}}(1 + \csc \theta)$ 52. $\lim_{\theta \to 0}(2 - \cot \theta)$ 
+51. $\lim_{\theta \to 0^{-}}(1 + \csc \theta)$
+
+52. $\lim_{\theta \to 0}(2 - \cot \theta)$
 
 Find the limits in Exercises 53–58. Write $\infty$ or $-\infty$ where appropriate. 
 
@@ -3292,7 +3307,7 @@ b. $t \rightarrow 0^{-}$
 
 62. $\lim \left(\frac{1}{x^{1/3}} - \frac{1}{(x - 1)^{4/3}}\right)$ as a. $x \to 0^{+}$ b. $x \to 0^{-}$ c. $x \to 1^{+}$ d. $x \to 1^{-}$ 
 
-## Graphing Simple Rational Functions
+#### Graphing Simple Rational Functions
 
 Graph the rational functions in Exercises 63–68. Include the graphs and equations of the asymptotes and dominant terms. 
 
@@ -3312,17 +3327,19 @@ Domains and Asymptotes
 
 Determine the domain of each function in Exercises 69–74. Then use various limits to find the asymptotes. 
 
-69. $y = 4 + \frac{3x^2}{x^2 + 1}$ 70. $y = \frac{2x}{x^2 - 1}$ 
+69. $y = 4 + \frac{3x^2}{x^2 + 1}$
+
+70. $y = \frac{2x}{x^2 - 1}$
 
 71. $y = \frac{8 - e^x}{2 + e^x}$ 
 
-73. $y = \frac{\sqrt{x^2 + 4}}{x}$ 
-
 72. $y = \frac{4e^x + e^{2x}}{e^x + e^{2x}}$ 
+
+73. $y = \frac{\sqrt{x^2 + 4}}{x}$ 
 
 74. $y = \frac{x^3}{x^3 - 8}$ 
 
-## Inventing Graphs and Functions
+#### Inventing Graphs and Functions
 
 In Exercises 75–78, sketch the graph of a function $y = f(x)$ that satisfies the given conditions. No formulas are required—just label the coordinate axes and sketch an appropriate graph. (The answers are not unique, so your graphs may not be exactly like those in the answer section.) 
 
@@ -3350,7 +3367,7 @@ In Exercises 79–82, find a function that satisfies the given conditions and sk
 
 85. How many horizontal asymptotes can the graph of a given rational function have? Give reasons for your answer. 
 
-## Finding Limits of Differences When $x \rightarrow \pm\infty$
+#### Finding Limits of Differences When $x \rightarrow \pm\infty$
 
 Find the limits in Exercises 86–92. (Hint: Try multiplying and dividing by the conjugate.) 
 
@@ -3410,11 +3427,13 @@ Use the formal definitions from Exercise 99 to prove the limit state-
 
 ments in Exercises 100–104. 
 
-100. $\lim_{x\to 0^{+}}\frac{1}{x} = \infty$ 101. $\lim_{x\to 0^{-}}\frac{1}{x} = -\infty$ 
+100. $\lim_{x\to 0^{+}}\frac{1}{x} = \infty$
+
+101. $\lim_{x\to 0^{-}}\frac{1}{x} = -\infty$
 
 ## 2.6 Continuity
 
-![[a870c9c9221adaf2cdc64a2600d3a003a46397b7e3408bfc6224e6ec900ad2bb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a870c9c9221adaf2cdc64a2600d3a003a46397b7e3408bfc6224e6ec900ad2bb.jpg)
 
 
 
@@ -3423,7 +3442,7 @@ FIGURE 2.56 Connecting plotted points.
 
 102. $\lim_{x\to 2^{-}}\frac{1}{x - 2} = -\infty$ 
 
-## Continuity at a Point
+### Continuity at a Point
 
 103. $\lim_{x\to 2^{+}}\frac{1}{x - 2} = \infty$ 
 
@@ -3475,7 +3494,7 @@ When we plot function values generated in a laboratory or collected in the field
 
 To understand continuity, it helps to consider a function like that in Figure 2.57, whose limits we investigated in Example 1 in the last section. 
 
-![[d565b6f6d2094a1840f4f2a66bb9c8e279c0f206c07cf89f989af793af126554.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d565b6f6d2094a1840f4f2a66bb9c8e279c0f206c07cf89f989af793af126554.jpg)
 
 
 
@@ -3486,7 +3505,7 @@ FIGURE 2.57 The function is not continuous at $x = 1$ , $x = 2$ , and $x = 4$ (E
 
 **Solution** First we observe that the domain of the function is the closed interval $[0, 4]$ , so we will be considering the numbers x within that interval. From the figure, we notice right away that there are breaks in the graph at the numbers x = 1, x = 2, and x = 4. The break at x = 1 appears as a jump, which we identify later as a “jump discontinuity.” The break at x = 2 is called a “removable discontinuity” since by changing the function definition at that one point, we can create a new function that is continuous at x = 2. Similarly, x = 4 is a removable discontinuity. 
 
-## Numbers at which the graph of f has breaks:
+### Numbers at which the graph of f has breaks:
 
 At the interior point x = 1, the function fails to have a limit. It does have both a left-hand limit, $\lim_{x \to 1^{-}} f(x) = 0$ , as well as a right-hand limit, $\lim_{x \to 1^{+}} f(x) = 1$ , but the limit values are different, resulting in a jump in the graph. The function is not continuous at x = 1. However, the function value $f(1) = 1$ is equal to the limit from the right, so the function is continuous from the right at x = 1. 
 
@@ -3494,7 +3513,7 @@ At $x = 2$ , the function does have a limit, $\lim_{x \to 2} f(x) = 1$ , but the
 
 At x = 4, the function does have a left-hand limit at this right endpoint, $\lim_{x \to 4^{-}} f(x) = 1$ , but again the value of the function $f(4) = \frac{1}{2}$ differs from the value of the limit. We see again a break in the graph of the function at this endpoint and the function is not continuous from the left. 
 
-## Numbers at which the graph of $f$ has no breaks:
+### Numbers at which the graph of $f$ has no breaks:
 
 At x = 3, the function has a limit, $\lim_{x \to 3} f(x) = 2$ . Moreover, the limit is the same value as the function there, $f(3) = 2$ . The function is continuous at x = 3. 
 
@@ -3524,28 +3543,28 @@ The following definitions capture the continuity ideas we observed in Example 1.
 > \lim _ {x \to c ^ {-}} f (x) = f (c).
 > $$
 >
-![[b9a4658aec83d1835ddfb542753e2f339ef394d2fa1eccac3c2b3cd73d6dd121.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b9a4658aec83d1835ddfb542753e2f339ef394d2fa1eccac3c2b3cd73d6dd121.jpg)
 
 
 
 FIGURE 2.58 Continuity at points a, b, and c.
 
 
-![[4d2be05d6e4db9b08c279569a230c742493ec06ebc24a153dbdf4ad571c0ed15.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4d2be05d6e4db9b08c279569a230c742493ec06ebc24a153dbdf4ad571c0ed15.jpg)
 
 
 
 FIGURE 2.59 A function that is continuous over its domain (Example 2).
 
 
-![[f2edcb1b694d0c5a03e72c0c5bea7e0acaf73d616acc4ae00ee082171171f5aa.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f2edcb1b694d0c5a03e72c0c5bea7e0acaf73d616acc4ae00ee082171171f5aa.jpg)
 
 
 
 FIGURE 2.60 A function that has a jump discontinuity at the origin (Example 3).
 
 
-![[d217cbbb35e8ffaf34f3099fa5e7293da40bba78f16992a157448957c9876ac4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d217cbbb35e8ffaf34f3099fa5e7293da40bba78f16992a157448957c9876ac4.jpg)
 
 
 
@@ -3598,24 +3617,24 @@ FIGURE 2.63 The function $f(x) = 1/x$ is continuous over its natural domain. It 
 
 The discontinuities in Figure 2.62d through f are more serious: $\lim_{x\to0}f(x)$ does not exist, and there is no way to improve the situation by appropriately defining f at 0. The step function in Figure 2.62d has a jump discontinuity: The one-sided limits exist but have different values. The function $f(x)=1/x^{2}$ in Figure 2.62e has an infinite discontinuity. The function in Figure 2.62f has an oscillating discontinuity: It oscillates so much that its values approach each number in $[-1,1]$ as $x\to0$ . Since it does not approach a single number, it does not have a limit as x approaches 0. 
 
-![[3afb95af22a608fb0cc214d1903fdd5565939943c9ddb89819df7c5c6b058b50.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3afb95af22a608fb0cc214d1903fdd5565939943c9ddb89819df7c5c6b058b50.jpg)
 
 
 
 (a)
 
 
-![[7d70aa24d8fdab3ab932e81ef8e94dcd7abebe93b69620b96bf8585c19fccea4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7d70aa24d8fdab3ab932e81ef8e94dcd7abebe93b69620b96bf8585c19fccea4.jpg)
 
 
-![[86417503d054a96c6347fc35d5be37e07d79e34a7bf79d8ca8c966d908143f83.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/86417503d054a96c6347fc35d5be37e07d79e34a7bf79d8ca8c966d908143f83.jpg)
 
 
 
 (b)
 
 
-![[dfac2f72cdf93f5164b0dec145a0f54d462079eab6811f20bbbfec3b297789a1.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dfac2f72cdf93f5164b0dec145a0f54d462079eab6811f20bbbfec3b297789a1.jpg)
 
 
 
@@ -3626,14 +3645,14 @@ The discontinuities in Figure 2.62d through f are more serious: $\lim_{x\to0}f(x
 (c)
 
 
-![[83a73dfe31e6a2beadfa138c87c29a04b8ff42f42755a223d53dec4c1044a1cd.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/83a73dfe31e6a2beadfa138c87c29a04b8ff42f42755a223d53dec4c1044a1cd.jpg)
 
 
 
 (e)
 
 
-![[386a4304a05a427d10a9cbfbacbb6eeec70b8ee7abfd2de84cfd4db0d2e0ff62.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/386a4304a05a427d10a9cbfbacbb6eeec70b8ee7abfd2de84cfd4db0d2e0ff62.jpg)
 
 
 
@@ -3644,14 +3663,14 @@ The discontinuities in Figure 2.62d through f are more serious: $\lim_{x\to0}f(x
 FIGURE 2.62 The function in (a) is continuous at x = 0; the functions in (b) through (f) are not.
 
 
-![[1cfe22a192de669d05dc1f4d53d374da1825a043a61b1fdb6baadf30794a54f7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1cfe22a192de669d05dc1f4d53d374da1825a043a61b1fdb6baadf30794a54f7.jpg)
 
 
-## Continuous Functions
+### Continuous Functions
 
 We now describe the continuity behavior of a function throughout its entire domain, not only at a single point. We define a continuous function to be one that is continuous at every point in its domain. This is a property of the function. A function always has a specified domain, so if we change the domain, then we change the function, and this may change its continuity property as well. If a function is discontinuous at one or more points of its domain, we say it is a discontinuous function. 
 
-## **EXAMPLE 5**
+**EXAMPLE 5**
 
 (a) The function $f(x) = 1 / x$ (Figure 2.63) is a continuous function because it is continuous at every point of its domain. The point $x = 0$ is not in the domain of the function $f$ , so $f$ is not continuous on any interval containing $x = 0$ . Moreover, there is no way to extend $f$ to a new function that is defined and continuous at $x = 0$ . The function $f$ does not have a removable discontinuity at $x = 0$ . 
 
@@ -3673,7 +3692,7 @@ $$
 
 This shows that $f + g$ is continuous. 
 
-## **EXAMPLE 6**
+**EXAMPLE 6**
 
 (a) Every polynomial $P(x) = a_{n}x^{n} + a_{n-1}x^{n-1} + \cdots + a_{0}$ is continuous because $\lim_{x \to c} P(x) = P(c)$ by Theorem 2, Section 2.2. 
 
@@ -3683,17 +3702,17 @@ This shows that $f + g$ is continuous.
 
 The functions $y = \sin x$ and $y = \cos x$ are continuous at x = 0 by Example 12 of Section 2.2. Both functions are continuous everywhere (see Exercise 76). It follows from Theorem 8 that all six trigonometric functions are continuous wherever they are defined. For example, $y = \tan x$ is continuous on $\cdots \cup (-\pi/2, \pi/2) \cup (\pi/2, 3\pi/2) \cup \cdots$ . 
 
-## Inverse Functions and Continuity
+### Inverse Functions and Continuity
 
 When a continuous function defined on an interval has an inverse, the inverse function is itself a continuous function over its own domain. This result is suggested by the observation that the graph of $f^{-1}$ , being the reflection of the graph of f across the line y = x, cannot have any breaks in it when the graph of f has no breaks. A rigorous proof that $f^{-1}$ is continuous whenever f is continuous on an interval is given in more advanced texts. As an example, the inverse trigonometric functions are all continuous over their domains. 
 
 We defined the exponential function $y = a^{x}$ in Section 1.4 informally. The graph was obtained from the graph of $y = a^{x}$ for x, a rational number, by “filling in the holes” at the irrational points x, so as to make the function $y = a^{x}$ continuous over the entire real line. The inverse function $y = \log_{a} x$ is also continuous. In particular, the natural exponential function $y = e^{x}$ and the natural logarithm function $y = \ln x$ are both continuous over their domains. Proofs of continuity for these functions will be given in Chapter 7. 
 
-## Continuity of Compositions of Functions
+### Continuity of Compositions of Functions
 
 Functions obtained by composing continuous functions are continuous. If $f(x)$ is continuous at x = c and $g(x)$ is continuous at $x = f(c)$ , then $g \circ f$ is also continuous at x = c (Figure 2.64). In this case, the limit of $g \circ f$ as $x \to c$ is $g(f(c))$ . 
 
-![[85d88833edc2ff9466810c91ed9e1c6ad457ad36e7973042cbd1c769773df7ca.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/85d88833edc2ff9466810c91ed9e1c6ad457ad36e7973042cbd1c769773df7ca.jpg)
 
 
 
@@ -3731,7 +3750,7 @@ $$
 
 (c) The quotient $(x - 2)/(x^{2} - 2)$ is continuous for all $x \neq \pm\sqrt{2}$ , and the function is the composition of this quotient with the continuous absolute value function (Example 7). 
 
-![[0e6f786c823537d379cb000f5816667d9e170642da32930e48bb5a5793d5e77f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0e6f786c823537d379cb000f5816667d9e170642da32930e48bb5a5793d5e77f.jpg)
 
 
 
@@ -3785,11 +3804,11 @@ $$
 \begin{array}{l} \text {(c)} \lim _ {x \to 0} \sqrt {x + 1} e ^ {\tan x} = \lim _ {x \to 0} \sqrt {x + 1} \cdot \exp \Bigl (\lim _ {x \to 0} \tan x \Bigr) \\ = 1 \cdot e ^ {0} = 1. \end{array} \qquad \text { exp   is   continuous. }
 $$
 
-## Intermediate Value Theorem for Continuous Functions
+### Intermediate Value Theorem for Continuous Functions
 
 A function is said to have the Intermediate Value Property if whenever it takes on two values, it also takes on all the values in between. 
 
-![[504a04398abce902e6ea5079d1a96708a3c455cf429eb7a1fa6b15f837121191.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/504a04398abce902e6ea5079d1a96708a3c455cf429eb7a1fa6b15f837121191.jpg)
 
 
 
@@ -3804,7 +3823,7 @@ does not take on all values between $f(1) = 0$ and $f(4) = 3$ ; it misses all th
 
 THEOREM 11 - The Intermediate Value Theorem for Continuous Functions If $f$ is a continuous function on a closed interval $[a, b]$ , and if $y_0$ is any value between $f(a)$ and $f(b)$ , then $y_0 = f(c)$ for some $c$ in $[a, b]$ . 
 
-![[d369972142d85a974bd0781d61335daed35c3c6b644f44c703457cf956193712.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d369972142d85a974bd0781d61335daed35c3c6b644f44c703457cf956193712.jpg)
 
 
 Theorem 11 says that continuous functions over finite closed intervals have the Intermediate Value Property. Geometrically, the Intermediate Value Theorem says that any horizontal line $y = y_{0}$ crossing the y-axis between the numbers $f(a)$ and $f(b)$ will cross the curve $y = f(x)$ at least once over the interval $[a, b]$ . 
@@ -3823,23 +3842,23 @@ In practical terms, when we see the graph of a continuous function cross the hor
 
 **Solution** Let $f(x) = x^{3} - x - 1$ . Since $f(1) = 1 - 1 - 1 = -1 < 0$ and $f(2) = 2^{3} - 2 - 1 = 5 > 0$ , we see that $y_{0} = 0$ is a value between $f(1)$ and $f(2)$ . Since f is a polynomial, it is continuous, and the Intermediate Value Theorem says there is a zero of f between 1 and 2. Figure 2.67 shows the result of zooming in to locate a root near x = 1.32. 
 
-![[257fc0aa38590c9f88dc1b933fde8064376127daf0578f2e3fb88dcaa63a2fcf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/257fc0aa38590c9f88dc1b933fde8064376127daf0578f2e3fb88dcaa63a2fcf.jpg)
 
 
 
 FIGURE 2.68 The curves $y = \sqrt{2x + 5}$ and $y = 4 - x^2$ have the same value at the number $x = c$ where $\sqrt{2x + 5} + x^2 - 4 = 0$ (Example 11).
 
 
-![[f1ae6c1cb3435bd1ec490d03300810204a0a4a30a4b1f6b85a36217d91f7bc55.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f1ae6c1cb3435bd1ec490d03300810204a0a4a30a4b1f6b85a36217d91f7bc55.jpg)
 
 
-![[a4e18c5ec5fd473b8f35f6c27614529ae492ddba774c845c387f996abef983a2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a4e18c5ec5fd473b8f35f6c27614529ae492ddba774c845c387f996abef983a2.jpg)
 
 
-![[399e8ca703a1e727a91480f2d146f19280dab6e3e0ac40f035c07191b5d0750e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/399e8ca703a1e727a91480f2d146f19280dab6e3e0ac40f035c07191b5d0750e.jpg)
 
 
-![[b84c4c26920ec2e00264c9f9469cb962813e6ea383c7ac19b9e68cbe34543c79.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b84c4c26920ec2e00264c9f9469cb962813e6ea383c7ac19b9e68cbe34543c79.jpg)
 
 
 
@@ -3862,7 +3881,7 @@ $$
 
 and set $f(x) = \sqrt{2x + 5} + x^{2} - 4$ . Now $g(x) = \sqrt{2x + 5}$ is continuous on the interval $[-5/2, \infty)$ since it is formed as the composition of two continuous functions, the square root function with the nonnegative linear function $y = 2x + 5$ . Then f is the sum of the function g and the quadratic function $y = x^{2} - 4$ , and the quadratic function is continuous for all values of x. It follows that $f(x) = \sqrt{2x + 5} + x^{2} - 4$ is continuous on the interval $[-5/2, \infty)$ . By trial and error, we find the function values $f(0) = \sqrt{5} - 4 \approx -1.76$ and $f(2) = \sqrt{9} = 3$ . Note that f is continuous on the finite closed interval $[0, 2]$ , which is a subset of the domain $[-5/2, \infty)$ . Since the value $y_{0} = 0$ is between the numbers $f(0) = -1.76$ and $f(2) = 3$ , by the Intermediate Value Theorem there is a number $c \in [0, 2]$ such that $f(c) = 0$ . We have found a number c that solves the original equation. 
 
-## Continuous Extension to a Point
+### Continuous Extension to a Point
 
 Sometimes the formula that describes a function $f$ does not make sense at a point $x = c$ . It might nevertheless be possible to extend the domain of $f$ to include $x = c$ , creating a new function that is continuous at $x = c$ . For example, the function $y = f(x) = (\sin x) / x$ is continuous at every point except $x = 0$ , since $x = 0$ is not in its domain. Since $y = (\sin x) / x$ has a finite limit as $x \to 0$ (Theorem 6), we can extend the function's domain to include the point $x = 0$ in such a way that the extended function is continuous at $x = 0$ . We define the new function 
 
@@ -3882,7 +3901,7 @@ The new function $F(x)$ is continuous at x = 0 because
 
 so it meets the requirements for continuity (Figure 2.69). 
 
-![[e9e513ea67665668d17baee901c556e770b83a264cfde69462f7c7e5fa739d7e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e9e513ea67665668d17baee901c556e770b83a264cfde69462f7c7e5fa739d7e.jpg)
 
 
 
@@ -3893,12 +3912,12 @@ FIGURE 2.69 (a) The graph of $f(x) = (\sin x) / x$ for $-\pi / 2 \leq x \leq \pi
 FIGURE 2.70 (a) The graph of $f(x)$ and (b) the graph of its continuous extension $F(x)$ (Example 12).
 
 
-![[9872eb5efaa7d638e396d8bd09d7f71b5a8eeadbf7b11cf45f51642b870b1f23.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9872eb5efaa7d638e396d8bd09d7f71b5a8eeadbf7b11cf45f51642b870b1f23.jpg)
 
 
 More generally, a function (such as a rational function) may have a limit at a point where it is not defined. If $f(c)$ is not defined, but $\lim_{x\to c}f(x)=L$ exists, we can define a new function $F(x)$ by the rule 
 
-![[4a70441cb6d22aad2f6128bd52aa37a6d895467ea56081f0f1e3d22f601ccd00.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4a70441cb6d22aad2f6128bd52aa37a6d895467ea56081f0f1e3d22f601ccd00.jpg)
 
 
 
@@ -3911,7 +3930,7 @@ $$
 
 The function F is continuous at x = c. It is called the continuous extension of f to x = c. For rational functions f, continuous extensions are often found by canceling common factors in the numerator and denominator. 
 
-## **EXAMPLE 12** Show that
+**EXAMPLE 12** Show that
 
 $$
 f (x) = \frac {x ^ {2} + x - 6}{x ^ {2} - 4}, x \neq 2
@@ -3939,9 +3958,9 @@ $$
 
 The graph of f is shown in Figure 2.70. The continuous extension F has the same graph except with no hole at $(2, 5/4)$ . Effectively, F is the function f extended across the missing domain point at x = 2 so as to give a continuous function over the larger domain. 
 
-## EXERCISES
+### EXERCISES
 
-## Continuity from Graphs
+#### Continuity from Graphs
 
 In Exercises 1–4, say whether the function graphed is continuous on $[-1,3]$ . If not, where does it fail to be continuous and why? 
 
@@ -3949,7 +3968,7 @@ In Exercises 1–4, say whether the function graphed is continuous on $[-1,3]$ .
 1.
 
 
-![[d24f8d8a7e4f1d9f5ee9188fa0e588b1d7ed4401c1f86abbd6994fad74bb6f05.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d24f8d8a7e4f1d9f5ee9188fa0e588b1d7ed4401c1f86abbd6994fad74bb6f05.jpg)
 
 
 
@@ -3960,17 +3979,17 @@ In Exercises 1–4, say whether the function graphed is continuous on $[-1,3]$ .
 3.
 
 
-![[089c4baf4bc11140cd217e592b6bd29595aa21220482a9e5451d8dd9e65acab4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/089c4baf4bc11140cd217e592b6bd29595aa21220482a9e5451d8dd9e65acab4.jpg)
 
 
-![[bc7eadc6d17b64b4ea571dc635d905e5a8d46a331dcdab22b8d2fc1bca76bbbf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/bc7eadc6d17b64b4ea571dc635d905e5a8d46a331dcdab22b8d2fc1bca76bbbf.jpg)
 
 
 
 4.
 
 
-![[0b38a0c65285ded033e3cc5ca6f8136ef117406c850df3af1359874be70168ff.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0b38a0c65285ded033e3cc5ca6f8136ef117406c850df3af1359874be70168ff.jpg)
 
 
 Exercises 5–10 refer to the function 
@@ -3999,7 +4018,7 @@ $$
 
 graphed in the accompanying figure. 
 
-![[b86f04fbb8e1097604f240cec14455d4bd4b2d6bdab6f2437d99e7602c14eb6a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b86f04fbb8e1097604f240cec14455d4bd4b2d6bdab6f2437d99e7602c14eb6a.jpg)
 
 
 5. a. Does $f(-1)$ exist? 
@@ -4039,17 +4058,17 @@ At what points are the functions in Exercises 13–32 continuous?
 
 13. $y = \frac{1}{x - 2} - 3x$ 
 
-15. $y = \frac{x + 1}{x^{2} - 4x + 3}$ 
-
-17. $y = |x - 1| + \sin x$ 
-
 14. $y = \frac{1}{(x + 2)^2} + 4$ 
+
+15. $y = \frac{x + 1}{x^{2} - 4x + 3}$ 
 
 16. $y = \frac{x + 3}{x^2 - 3x - 10}$ 
 
-19. $y = \frac{\cos x}{x}$ 
+17. $y = |x - 1| + \sin x$ 
 
 18. $y = \frac{1}{|x| + 1} -\frac{x^2}{2}$ 
+
+19. $y = \frac{\cos x}{x}$ 
 
 20. $y = \frac{x + 2}{\cos x}$ 
 
@@ -4081,23 +4100,31 @@ Limits Involving Trigonometric Functions
 
 Find the limits in Exercises 33–40. Are the functions continuous at the point being approached? 
 
-33. $\lim_{x\to \pi}\sin (x - \sin x)$ 34. $\lim_{t\to 0}\sin \left(\frac{\pi}{2}\cos (\tan t)\right)$ 
+33. $\lim_{x\to \pi}\sin (x - \sin x)$
+
+34. $\lim_{t\to 0}\sin \left(\frac{\pi}{2}\cos (\tan t)\right)$
 
 35. $\lim_{y\to 1}\sec (y\sec^2 y - \tan^2 y - 1)$ 
 
 36. $\lim_{x\to 0}\tan \left(\frac{\pi}{4}\cos (\sin x^{1 / 3})\right)$ 
 
-37. $\lim_{t\to 0}\cos \left(\frac{\pi}{\sqrt{19 - 3\sec 2t}}\right)$ 38. $\lim_{x\to \pi /6}\sqrt{\csc^2x + 5\sqrt{3}\tan x}$ 
+37. $\lim_{t\to 0}\cos \left(\frac{\pi}{\sqrt{19 - 3\sec 2t}}\right)$
 
-39. $\lim_{x\to 0^{+}}\sin \left(\frac{\pi}{2} e^{\sqrt{x}}\right)$ 40. $\lim_{x\to 1}\cos^{-1}(\ln \sqrt{x})$ 
+38. $\lim_{x\to \pi /6}\sqrt{\csc^2x + 5\sqrt{3}\tan x}$
+
+39. $\lim_{x\to 0^{+}}\sin \left(\frac{\pi}{2} e^{\sqrt{x}}\right)$
+
+40. $\lim_{x\to 1}\cos^{-1}(\ln \sqrt{x})$
 
 41. $\lim_{x\to 0}\sec \left[e^x +\pi \tan \left(\frac{\pi}{4\sec x}\right) - 1\right]$ 
 
 42. $\lim_{x\to0}\sin\left(\frac{\pi+\tan x}{\tan x-2\sec x}\right)$ 
 
-43. $\lim_{t\to 0}\tan \left(1 - \frac{\sin t}{t}\right)$ 44. $\lim_{\theta \to 0}\cos \left(\frac{\pi\theta}{\sin\theta}\right)$ 
+43. $\lim_{t\to 0}\tan \left(1 - \frac{\sin t}{t}\right)$
 
-## Continuous Extensions
+44. $\lim_{\theta \to 0}\cos \left(\frac{\pi\theta}{\sin\theta}\right)$
+
+#### Continuous Extensions
 
 45. Define $g(3)$ in a way that extends $g(x) = (x^{2} - 9)/(x - 3)$ to be continuous at x = 3. 
 
@@ -4167,11 +4194,7 @@ In Exercises 55–58, graph the function f to see whether it appears to have a c
 
 $$
 \mathbf {5 6 .} f (x) = \frac {1 0 ^ {| x |} - 1}{x}
-$$
-
-57. $f(x) = \frac{\sin x}{|x|}$ 
-
-$$
+57. $$f(x) = \frac{\sin x}{|x|}$$
 f (x) = (1 + 2 x) ^ {1 / x}
 $$
 
@@ -4233,25 +4256,21 @@ b. Is $f$ right-continuous or left-continuous at any point?
 
 $$
 \lim _ {h \to 0} f (c + h) = f (c).
-$$
-
-76. Use Exercise 75 together with the identities 
-
-$$
+76. $Use Exercise 75 together with the identities$
 \begin{array}{l} \sin (h + c) = \sin h \cos c + \cos h \sin c, \\ \cos (h + c) = \cos h \cos c - \sin h \sin c \end{array}
 $$
 
 to prove that both $f(x) = \sin x$ and $g(x) = \cos x$ are continuous at every point $x = c$ . 
 
-## Solving Equations Graphically
+#### Solving Equations Graphically
 
 Use the Intermediate Value Theorem in Exercises 77–84 to prove that each equation has a solution. Then use a graphing calculator or computer grapher to solve the equations. 
 
-$$
-7 7. x ^ {3} - 3 x - 1 = 0 \quad 7 8. 2 x ^ {3} - 2 x ^ {2} - 2 x + 1 = 0
-$$
+77. $x ^ {3} - 3 x - 1 = 0 \quad 7 8. 2 x ^ {3} - 2 x ^ {2} - 2 x + 1 = 0$
 
-79. $x(x - 1)^2 = 1$ (one root) 80. $x^{x} = 2$ 
+79. $x(x - 1)^2 = 1$ (one root)
+
+80. $x^{x} = 2$
 
 81. $\sqrt{x} +\sqrt{1 + x} = 4$ 
 
@@ -4329,7 +4348,7 @@ $$
 
 ## CHAPTER 2 Practice Exercises
 
-## Limits and Continuity
+### Limits and Continuity
 
 1. Graph the function 
 
@@ -4353,7 +4372,9 @@ a. $-g(x)$ b. $g(x)\cdot f(x)$ c. $f(x) + g(x)$ d. $1 / f(x)$ e. $x + f(x)$ f. $
 
 In Exercises 5 and 6, find the value that $\lim_{x\to 0}g(x)$ must have if the given limit statements hold. 
 
-5. $\lim_{x\to 0}\left(\frac{4 - g(x)}{x}\right) = 1$ 6. $\lim_{x\to -4}\left(x\lim_{x\to 0}g(x)\right) = 2$ 
+5. $\lim_{x\to 0}\left(\frac{4 - g(x)}{x}\right) = 1$
+
+6. $\lim_{x\to -4}\left(x\lim_{x\to 0}g(x)\right) = 2$
 
 7. On what intervals are the following functions continuous?
 a. $f(x) = x^{1/3}$ b. $g(x) = x^{3/4}$ c. $h(x) = x^{-2/3}$ d. $k(x) = x^{-1/6}$ 
@@ -4361,7 +4382,7 @@ a. $f(x) = x^{1/3}$ b. $g(x) = x^{3/4}$ c. $h(x) = x^{-2/3}$ d. $k(x) = x^{-1/6}
 8. On what intervals are the following functions continuous?
 a. $f(x) = \tan x$ b. $g(x) = \csc x$ c. $h(x) = \frac{\cos x}{x - \pi}$ d. $k(x) = \frac{\sin x}{x}$ 
 
-## Finding Limits
+### Finding Limits
 
 In Exercises 9–28, find the limit or explain why it does not exist. 
 
@@ -4421,9 +4442,9 @@ In Exercises 29–32, find the limit of $g(x)$ as x approaches the indicated val
 
 29. $\lim_{x\to 0^{+}}(4g(x))^{1 / 3} = 2$ 
 
-31. $\lim_{x\to 1}\frac{3x^2 + 1}{g(x)} = \infty$ 
-
 30. $\lim_{x\to \sqrt{5}}\frac{1}{x + g(x)} = 2$ 
+
+31. $\lim_{x\to 1}\frac{3x^2 + 1}{g(x)} = \infty$ 
 
 32. $\lim_{x\to -2}\frac{5 - x^2}{\sqrt{g(x)}} = 0$ 
 
@@ -4477,13 +4498,17 @@ Limits at Infinity
 
 Find the limits in Exercises 41–54. 
 
-41. $\lim_{x\to \infty}\frac{2x + 3}{5x + 7}$ 42. $\lim_{x\to -\infty}\frac{2x^2 + 3}{5x^2 + 7}$ 
+41. $\lim_{x\to \infty}\frac{2x + 3}{5x + 7}$
+
+42. $\lim_{x\to -\infty}\frac{2x^2 + 3}{5x^2 + 7}$
 
 43. $\lim_{x\to -\infty}\frac{x^2 - 4x + 8}{3x^3}$ 
 
 44. $\lim_{x\to\infty}\frac{1}{x^{2}-7x+1}$ 
 
-45. $\lim_{x\to -\infty}\frac{x^2 - 7x}{x + 1}$ 46. $\lim_{x\to \infty}\frac{x^4 + x^3}{12x^3 + 128}$ 
+45. $\lim_{x\to -\infty}\frac{x^2 - 7x}{x + 1}$
+
+46. $\lim_{x\to \infty}\frac{x^4 + x^3}{12x^3 + 128}$
 
 47. $\lim_{x\to \infty}\frac{\sin x}{|x|}$ (If you have a grapher, try graphing the function for $-5\leq x\leq 5.$ ) 
 
@@ -4515,7 +4540,7 @@ a. $y = \frac{1 - x^{2}}{x^{2} + 1}$ b. $f(x) = \frac{\sqrt{x} + 4}{\sqrt{x + 4}
 
 ## CHAPTER 2
 
-## Additional and Advanced Exercises
+### Additional and Advanced Exercises
 
 T 1. Assigning a value to $\mathbf{0}^{\mathbf{0}}$ The rules of exponents tell us that $a^0 = 1$ if $a$ is any number different from zero. They also tell us that $0^n = 0$ if $n$ is any positive number. 
 
@@ -4551,7 +4576,7 @@ This equation is the Lorentz contraction formula. Here, c is the speed of light 
 
 4. Controlling the flow from a draining tank Torricelli's law says that if you drain a tank like the one in the figure shown, the rate $y$ at which water runs out is a constant times the square root of the water's depth $x$ . The constant depends on the size and shape of the exit valve. 
 
-![[88e53469427d31658e0fa121ae9c8211aa9511bbe05490125c9b03c6055c07cf.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/88e53469427d31658e0fa121ae9c8211aa9511bbe05490125c9b03c6055c07cf.jpg)
 
 
 Suppose that $y = \sqrt{x}/2$ for a certain tank. You are trying to maintain a fairly constant exit rate by adding water to the tank with a hose from time to time. How deep must you keep the water if you want to maintain the exit rate 
@@ -4576,17 +4601,17 @@ $$
 
 How closely must we measure h to measure out 1 L of water ( $1000 \, cm^{3}$ ) with an error of no more than 1% ( $10 \, cm^{3}$ )? 
 
-![[36596623fa8eea5a1c168173ae1ffe744d84a5d29c06385ad702edf774717080.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/36596623fa8eea5a1c168173ae1ffe744d84a5d29c06385ad702edf774717080.jpg)
 
 
-![[c81e5ebe075daf7b65185dd977493e001fa7ee6d082118c06424853218b5c90b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c81e5ebe075daf7b65185dd977493e001fa7ee6d082118c06424853218b5c90b.jpg)
 
 
 
 A 1-L measuring cup (a), modeled as a right circular cylinder (b) of radius r = 6 cm
 
 
-## Precise Definition of Limit
+### Precise Definition of Limit
 
 In Exercises 7–10, use the formal definition of limit to prove that the function is continuous at c. 
 
@@ -4670,7 +4695,7 @@ b. Suppose that $f$ is bounded from above by $N$ . Show that if $\lim_{x\to c}f(
 
 c. Suppose that $f$ is bounded from below by $M$ . Show that if $\lim_{x\to c}f(x) = L$ , then $L\geq M$ . 
 
-## 24. Max $\{a, b\}$ and min $\{a, b\}$
+### 24. Max $\{a, b\}$ and min $\{a, b\}$
 
 a. Show that the expression 
 
@@ -4738,7 +4763,7 @@ Show how to extend the functions in Exercises 39 and 40 to be continuous at the 
 
 40. $f(x) = \frac{\tan(\tan x)}{\sin(\sin x)}$ 
 
-## Oblique Asymptotes
+### Oblique Asymptotes
 
 Find all possible oblique asymptotes in Exercises 41-44. 
 
@@ -4754,7 +4779,7 @@ Showing an Equation Is Solvable
 
 45. Assume that $1 < a < b$ and $\frac{a}{x} + x = \frac{1}{x - b}$ . Show that this equation is solvable for $x$ . 
 
-## More Limits
+### More Limits
 
 46. Find constants a and b so that each of the following limits is true. 
 
@@ -4766,11 +4791,11 @@ b. $\lim_{x\to 1}\frac{\tan(ax - a) + b - 2}{x - 1} = 3$
 
 48. Evaluate $\lim_{x\to0}\frac{|3x+4|-|x|-4}{x}$ . 
 
-## Limits on Arbitrary Domains
+### Limits on Arbitrary Domains
 
 The definition of the limit of a function at x = c extends to functions whose domains near c are more complicated than intervals. 
 
-## General Definition of Limit
+### General Definition of Limit
 
 Suppose every open interval containing c contains a point other than c in the domain of f. We say that $\lim_{x\to c}f(x)=L$ if, for every number $\varepsilon>0$ , there exists a corresponding number $\delta>0$ such that for all x in the domain of f, $|f(x)-L|<\varepsilon$ whenever $0<|x-c|<\delta$ . 
 
@@ -4802,7 +4827,7 @@ d. Is $g$ continuous at other points of its domain?
 
 ## CHAPTER 2 Technology Application Projects
 
-## Mathematica/Maple Projects
+### Mathematica/Maple Projects
 
 Projects can be found within MyLab Math. 
 
@@ -4832,7 +4857,7 @@ Observe graphs that appear to be continuous, yet the function is not continuous.
 
 Derivatives 
 
-![[313c7abef6b426546fe63aa50f0fd0309a472658d9d50225635cb981929f426d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/313c7abef6b426546fe63aa50f0fd0309a472658d9d50225635cb981929f426d.jpg)
 
 
 OVERVIEW In Chapter 2 we discussed how to determine the slope of a curve at a point and how to measure the rate at which a function changes. Now that we have studied limits, we can make these notions precise and see that both are interpretations of the derivative of a function at a point. We then extend this concept from a single point to the derivative function, and we develop rules for finding this derivative function easily, without having to calculate limits directly. These rules are used to find derivatives of most of the common functions reviewed in Chapter 1, as well as combinations of them.

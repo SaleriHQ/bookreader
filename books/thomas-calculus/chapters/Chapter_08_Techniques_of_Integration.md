@@ -7,6 +7,13 @@ order: 8
 
 <!-- Extracted from Thomas-calculus Markdown source; chapters 1-17 only. -->
 
+![教材插图](/books/thomas-calculus/assets/02be1889efb30b5f0a264cb318e01a7a1357a92283a7b8f890766a2c30bc8a4d.jpg)
+
+
+OVERVIEW The Fundamental Theorem tells us how to evaluate a definite integral once we have an antiderivative for the integrand function. However, finding antiderivatives (or indefinite integrals) is not as straightforward as finding derivatives. In this chapter we study a number of important techniques that apply to finding integrals for specialized classes of functions such as trigonometric functions, products of certain functions, and rational functions. Since we cannot always find an antiderivative, we develop numerical methods for calculating definite integrals. We also study integrals for which the domain or range is infinite, called improper integrals.
+
+
+
 ## 8.1 Using Basic Integration Formulas
 
 Table 8.1 summarizes the indefinite integrals of many of the functions we have studied so far, and the substitution method helps us use the table to evaluate more complicated functions involving these basic ones. In this section we combine the Substitution Rules (studied in Chapter 5) with algebraic methods and trigonometric identities to help us use Table 8.1. A more extensive Table of Integrals is given at the back of the chapter, and we discuss its use in Section 8.6. 
@@ -25,7 +32,7 @@ $$
 \begin{array}{r l} \int_ {3} ^ {5} \frac {2 x - 3}{\sqrt {x ^ {2} - 3 x + 1}} d x & = \int_ {1} ^ {1 1} \frac {d u}{\sqrt {u}} \quad u = x ^ {2} - 3 x + 1, d u = (2 x - 3) d x; \\ & = \int_ {1} ^ {1 1} u ^ {- 1 / 2} d u \\ & = 2 \sqrt {u} \Bigg ] _ {1} ^ {1 1} = 2 (\sqrt {1 1} - 1) \approx 4. 6 3. \end{array} \tag {Table8.1,Formula2}
 $$
 
-## TABLE 8.1 Basic integration formulas
+**TABLE 8.1 Basic integration formulas**
 
 1. $\int k dx = kx + C$ (any number $k$ ) 
 
@@ -213,11 +220,43 @@ $$
 
 $\int_{-\pi /2}^{\pi /2}x^3\cos x dx = 0.$ Theorem 8, Section 5.6 
 
-## EXERCISES 8.1
+### EXERCISES 8.1
 
-## Assorted Integrations
+#### Assorted Integrations
 
 The integrals in Exercises 1–44 are in no particular order. Evaluate each integral using any algebraic method, trigonometric identity, or substitution you think is appropriate. 
+
+1. $\int_0^1\frac{16x}{8x^2 + 2} dx$ 
+
+2. $\int \frac{x^2}{x^2 + 1} dx$ 
+
+3. $\int (\sec x - \tan x)^2 dx$ 
+
+4. $\int_{\pi /4}^{\pi /3}\frac{dx}{\cos^2x\tan x}$ 
+
+5. $\int \frac{1 - x}{\sqrt{1 - x^2}} dx$ 
+
+6. $\int \frac{dx}{x - \sqrt{x}}$ 
+
+7. $\int \frac{e^{-\cot z}}{\sin^2z} dz$ 
+
+8. $\int \frac{2^{\ln z^3}}{16z} dz$ 
+
+9. $\int \frac{dz}{e^z + e^{-z}}$ 
+
+10. $\int_{1}^{2}\frac{8dx}{x^{2} - 2x + 2}$ 
+
+11. $\int_{-1}^{0}\frac{4dx}{1 + (2x + 1)^2}$ 
+
+12. $\int_{-1}^{3}\frac{4x^2 - 7}{2x + 3} dx$ 
+
+13. $\int \frac{dt}{1 - \sec t}$ 
+
+14. $\int \csc t\sin 3tdt$ 
+
+15. $\int_0^{\pi /4}\frac{1 + \sin\theta}{\cos^2\theta} d\theta$ 
+
+16. $\int \frac{d\theta}{\sqrt{2\theta - \theta^2}}$ 
 
 17. $\int \frac{\ln y}{y + 4y\ln^2y} dy$ 
 
@@ -227,61 +266,33 @@ The integrals in Exercises 1–44 are in no particular order. Evaluate each inte
 
 20. $\int \frac{dt}{t\sqrt{3 + t^2}}$ 
 
-1. $\int_0^1\frac{16x}{8x^2 + 2} dx$ 
-
-2. $\int \frac{x^2}{x^2 + 1} dx$ 
-
 21. $\int \frac{4t^3 - t^2 + 16t}{t^2 + 4} dt$ 
 
 22. $\int \frac{x + 2\sqrt{x - 1}}{2x\sqrt{x - 1}} dx$ 
-
-3. $\int (\sec x - \tan x)^2 dx$ 
-
-4. $\int_{\pi /4}^{\pi /3}\frac{dx}{\cos^2x\tan x}$ 
 
 23. $\int_0^{\pi /2}\sqrt{1 - \cos\theta} d\theta$ 
 
 24. $\int (\sec t + \cot t)^2 dt$ 
 
-5. $\int \frac{1 - x}{\sqrt{1 - x^2}} dx$ 
-
-6. $\int \frac{dx}{x - \sqrt{x}}$ 
-
 25. $\int \frac{dy}{\sqrt{e^{2y} - 1}}$ 
 
 26. $\int \frac{6dy}{\sqrt{y} (1 + y)}$ 
-
-7. $\int \frac{e^{-\cot z}}{\sin^2z} dz$ 
-
-8. $\int \frac{2^{\ln z^3}}{16z} dz$ 
 
 27. $\int \frac{2dx}{x\sqrt{1 - 4\ln^2x}}$ 
 
 28. $\int \frac{dx}{(x - 2)\sqrt{x^2 - 4x + 3}}$ 
 
-9. $\int \frac{dz}{e^z + e^{-z}}$ 
-
-10. $\int_{1}^{2}\frac{8dx}{x^{2} - 2x + 2}$ 
-
 29. $\int (\csc x - \sec x)(\sin x + \cos x)dx$ 
-
-11. $\int_{-1}^{0}\frac{4dx}{1 + (2x + 1)^2}$ 
-
-12. $\int_{-1}^{3}\frac{4x^2 - 7}{2x + 3} dx$ 
 
 30. $\int 3\sinh \left(\frac{x}{2} +\ln 5\right)dx$ 
 
-13. $\int \frac{dt}{1 - \sec t}$ 
+31. $\int_{\sqrt{2}}^{3}\frac{2x^3}{x^2 - 1} dx$
 
-14. $\int \csc t\sin 3tdt$ 
+32. $\int_{-1}^{1}\sqrt{1 + x^2}\sin x dx$
 
-31. $\int_{\sqrt{2}}^{3}\frac{2x^3}{x^2 - 1} dx$ 32. $\int_{-1}^{1}\sqrt{1 + x^2}\sin x dx$ 
+33. $\int_{-1}^{0}\sqrt{\frac{1 + y}{1 - y}} dy$
 
-15. $\int_0^{\pi /4}\frac{1 + \sin\theta}{\cos^2\theta} d\theta$ 
-
-16. $\int \frac{d\theta}{\sqrt{2\theta - \theta^2}}$ 
-
-33. $\int_{-1}^{0}\sqrt{\frac{1 + y}{1 - y}} dy$ 34. $\int e^{z + e^z}dz$ 
+34. $\int e^{z + e^z}dz$
 
 35. $\int \frac{7dx}{(x - 1)\sqrt{x^2 - 2x - 48}}$ 
 
@@ -327,23 +338,11 @@ Theory and Examples
 
 $$
 \int (1 + 3 x ^ {3}) e ^ {x ^ {3}} d x.
-$$
-
-52. Use the substitution $u = \tan x$ to evaluate the integral 
-
-$$
+52. $Use the substitution $u = \tan x$ to evaluate the integral$
 \int \frac {d x}{1 + \sin^ {2} x}.
-$$
-
-53. Use the substitution $u = x^4 + 1$ to evaluate the integral 
-
-$$
+53. $Use the substitution $u = x^4 + 1$ to evaluate the integral$
 \int x ^ {7} \sqrt {x ^ {4} + 1} d x.
-$$
-
-54. Using different substitutions Show that the integral 
-
-$$
+54. $Using different substitutions Show that the integral$
 \int \left((x ^ {2} - 1) (x + 1)\right) ^ {- 2 / 3} d x
 $$
 
@@ -387,7 +386,7 @@ $$
 
 In the first case, the integrand $\ln x$ can be rewritten as $(\ln x)(1)$ , and $u(x) = \ln x$ is easy to differentiate while $v'(x) = 1$ easily integrates to x. In the second case, each part of the integrand appears again after repeated differentiation or integration. 
 
-## Product Rule in Integral Form
+### Product Rule in Integral Form
 
 If $u$ and $v$ are differentiable functions of $x$ , the Product Rule says that 
 
@@ -433,7 +432,7 @@ $$
 
 The next examples illustrate the technique. 
 
-## **EXAMPLE 1** Find
+**EXAMPLE 1** Find
 
 $$
 \int x \cos x d x.
@@ -553,7 +552,7 @@ The technique of Example 3 works for any integral $\int x^n e^x dx$ in which $n$
 
 Integrals like the one in the next example occur in electrical engineering. Their evaluation requires two integrations by parts, followed by solving for the unknown integral. 
 
-## **EXAMPLE 4** Evaluate
+**EXAMPLE 4** Evaluate
 
 $$
 \int e ^ {x} \cos x d x.
@@ -639,7 +638,7 @@ $$
 \begin{array}{r l} \int \cos^ {3} x d x & = \frac {\cos^ {2} x \sin x}{3} + \frac {2}{3} \int \cos x d x \\ & = \frac {1}{3} \cos^ {2} x \sin x + \frac {2}{3} \sin x + C. \end{array}
 $$
 
-## Evaluating Definite Integrals by Parts
+### Evaluating Definite Integrals by Parts
 
 The integration by parts formula in Equation (1) can be combined with Part 2 of the Fundamental Theorem in order to evaluate definite integrals by parts. Assuming that both $u'$ and $v'$ are continuous over the interval $[a, b]$ , Part 2 of the Fundamental Theorem gives 
 
@@ -649,7 +648,7 @@ $$
 \left. \int_ {a} ^ {b} u (x) v ^ {\prime} (x) d x = u (x) v (x) \right] _ {a} ^ {b} - \int_ {a} ^ {b} v (x) u ^ {\prime} (x) d x\tag{3}
 $$
 
-![[0eab8ae9cc29ea5b0fec63108aa8d3e6186639c5ae4828fb09a02e9c7218341e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0eab8ae9cc29ea5b0fec63108aa8d3e6186639c5ae4828fb09a02e9c7218341e.jpg)
 
 
 FIGURE 8.1 The region in Example 6. 
@@ -666,29 +665,19 @@ Let $u = x$ , $dv = e^{-x} dx$ , $v = -e^{-x}$ , and $du = dx$ . Then
 
 $\int_{0}^{4} x e^{-x} dx = -x e^{-x}\bigg|_{0}^{4} - \int_{0}^{4} (-e^{-x}) dx$ Integration by parts Formula (3) $= [-4e^{-4} - (-0e^{-0})] + \int_{0}^{4} e^{-x} dx$ $= -4e^{-4} - e^{-x}\bigg|_{0}^{4}$ $= -4e^{-4} - (e^{-4} - e^{-0}) = 1 - 5e^{-4} \approx 0.91.$ 
 
-## EXERCISES 8.2
+### EXERCISES 8.2
 
 Integration by Parts 
 
 Evaluate the integrals in Exercises 1–24 using integration by parts. 
 
-29. $\int \sin (\ln x)dx$ 30. $\int z(\ln z)^2 dz$ 
-
 1. $\int x\sin \frac{x}{2} dx$ 
 
 2. $\int \theta \cos \pi \theta d\theta$ 
 
-Evaluating Integrals 
-
-Evaluate the integrals in Exercises 31–56. Some integrals do not require integration by parts. 
-
 3. $\int t^2\cos tdt$ 
 
 4. $\int x^{2}\sin x dx$ 
-
-31. $\int x\sec x^2 dx$ 
-
-32. $\int \frac{\cos\sqrt{x}}{\sqrt{x}} dx$ 
 
 5. $\int_{1}^{2} x \ln x dx$ 
 
@@ -698,41 +687,21 @@ Evaluate the integrals in Exercises 31–56. Some integrals do not require integ
 
 8. $\int xe^{3x}dx$ 
 
-33. $\int x(\ln x)^2 dx$ 
-
-34. $\int \frac{1}{x(\ln x)^2} dx$ 
-
 9. $\int x^{2}e^{-x}dx$ 
 
 10. $\int (x^{2} - 2x + 1)e^{2x}dx$ 
-
-35. $\int \frac{\ln x}{x^2} dx$ 
-
-36. $\int \frac{(\ln x)^3}{x} dx$ 
 
 11. $\int \tan^{-1}ydy$ 
 
 12. $\int \arcsin ydy$ 
 
-37. $\int x^{3}e^{x^{4}}dx$ 
-
-38. $\int x^{5}e^{x^{3}}dx$ 
-
 13. $\int x\sec^2 x dx$ 
 
 14. $\int 4x\sec^2 2x dx$ 
 
-39. $\int x^{3}\sqrt{x^{2} + 1} dx$ 
-
-40. $\int x^{2}\sin x^{3}dx$ 
-
 15. $\int x^{3}e^{x}dx$ 
 
 16. $\int p^4 e^{-p}dp$ 
-
-41. $\int \sin 3x\cos 2xdx$ 
-
-42. $\int \sin 2x\cos 4xdx$ 
 
 17. $\int (x^{2} - 5x)e^{x}dx$ 
 
@@ -742,37 +711,19 @@ $$
 \int \sqrt {x} \ln x d x
 $$
 
-44. $\int \frac{e^{\sqrt{x}}}{\sqrt{x}} dx$ 
-
 19. $\int x^{5}e^{x}dx$ 
 
 20. $\int t^2 e^{4t}dt$ 
-
-45. $\int \cos \sqrt{x} dx$ 
-
-46. $\int \sqrt{x} e^{\sqrt{x}} dx$ 
 
 21. $\int e^{\theta}\sin \theta d\theta$ 
 
 22. $\int e^{-y}\cos ydy$ 
 
-47. $\int_0^{\pi /2}\theta^2\sin 2\theta d\theta$ 
-
-48. $\int_0^{\pi /2}x^3\cos 2xdx$ 
-
 23. $\int e^{2x}\cos 3x dx$ 
 
 24. $\int e^{-2x}\sin 2x dx$ 
 
-49. $\int_{2 / \sqrt{3}}^{2}t\sec^{-1}tdt$ 
-
-50. $\int_0^{1 / \sqrt{2}}2x\arcsin (x^2)dx$ 
-
 Using Substitution 
-
-51. $\int x\arctan x dx$ 
-
-52. $\int x^{2}\tan^{-1}\frac{x}{2} dx$ 
 
 Evaluate the integrals in Exercises 25–30 by using a substitution prior to integration by parts. 
 
@@ -780,19 +731,69 @@ Evaluate the integrals in Exercises 25–30 by using a substitution prior to int
 
 26. $\int_0^1 x\sqrt{1 - x} dx$ 
 
-53. $\int (1 + 2x^{2})e^{x^{2}}dx$ 
-
-54. $\int \frac{x e^x}{(x + 1)^2} dx$ 
-
 27. $\int_0^{\pi /3}x\tan^2 xdx$ 
 
 28. $\int \ln (x + x^2)dx$ 
+
+29. $\int \sin (\ln x)dx$
+
+30. $\int z(\ln z)^2 dz$
+
+Evaluating Integrals 
+
+Evaluate the integrals in Exercises 31–56. Some integrals do not require integration by parts. 
+
+31. $\int x\sec x^2 dx$ 
+
+32. $\int \frac{\cos\sqrt{x}}{\sqrt{x}} dx$ 
+
+33. $\int x(\ln x)^2 dx$ 
+
+34. $\int \frac{1}{x(\ln x)^2} dx$ 
+
+35. $\int \frac{\ln x}{x^2} dx$ 
+
+36. $\int \frac{(\ln x)^3}{x} dx$ 
+
+37. $\int x^{3}e^{x^{4}}dx$ 
+
+38. $\int x^{5}e^{x^{3}}dx$ 
+
+39. $\int x^{3}\sqrt{x^{2} + 1} dx$ 
+
+40. $\int x^{2}\sin x^{3}dx$ 
+
+41. $\int \sin 3x\cos 2xdx$ 
+
+42. $\int \sin 2x\cos 4xdx$ 
+
+44. $\int \frac{e^{\sqrt{x}}}{\sqrt{x}} dx$ 
+
+45. $\int \cos \sqrt{x} dx$ 
+
+46. $\int \sqrt{x} e^{\sqrt{x}} dx$ 
+
+47. $\int_0^{\pi /2}\theta^2\sin 2\theta d\theta$ 
+
+48. $\int_0^{\pi /2}x^3\cos 2xdx$ 
+
+49. $\int_{2 / \sqrt{3}}^{2}t\sec^{-1}tdt$ 
+
+50. $\int_0^{1 / \sqrt{2}}2x\arcsin (x^2)dx$ 
+
+51. $\int x\arctan x dx$ 
+
+52. $\int x^{2}\tan^{-1}\frac{x}{2} dx$ 
+
+53. $\int (1 + 2x^{2})e^{x^{2}}dx$ 
+
+54. $\int \frac{x e^x}{(x + 1)^2} dx$ 
 
 55. $\int \sqrt{x} (\arcsin \sqrt{x}) dx$ 
 
 56. $\int \frac{(\sin^{-1}x)^2}{\sqrt{1 - x^2}} dx$ 
 
-## Theory and Examples
+#### Theory and Examples
 
 57. Finding area Find the area of the region enclosed by the curve $y = x \sin x$ and the x-axis (see the accompanying figure) for 
 
@@ -804,7 +805,7 @@ c. $2\pi \leq x \leq 3\pi.$
 
 d. What pattern do you see here? What is the area between the curve and the x-axis for $n\pi \leq x \leq (n + 1)\pi$ , n an arbitrary nonnegative integer? Give reasons for your answer. 
 
-![[d2d27bc0d6eda3b212ccf3b0c789bbd2a72c0883ec78a5a6968e09f5fea20877.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d2d27bc0d6eda3b212ccf3b0c789bbd2a72c0883ec78a5a6968e09f5fea20877.jpg)
 
 
 58. Finding area Find the area of the region enclosed by the curve $y = x \cos x$ and the x-axis (see the accompanying figure) for 
@@ -823,7 +824,7 @@ $$
 
 n an arbitrary positive integer? Give reasons for your answer. 
 
-![[3895e915179409a0fca8abcbffd177c7c85b974af657c589162584738e2860b5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3895e915179409a0fca8abcbffd177c7c85b974af657c589162584738e2860b5.jpg)
 
 
 59. Finding volume Find the volume of the solid generated by revolving the region in the first quadrant bounded by the coordinate axes, the curve $y = e^{x}$ , and the line $x = \ln 2$ about the line $x = \ln 2$ . 
@@ -872,7 +873,7 @@ $$
 
 Find the average value of $y$ over the interval $0 \leq t \leq 2\pi$ . 
 
-![[ad48c35e9d5825a331801e5b9109b52126ad5cc585318ccf583778748f606dec.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ad48c35e9d5825a331801e5b9109b52126ad5cc585318ccf583778748f606dec.jpg)
 
 
 66. Average value In a mass-spring-dashpot system like the one in Exercise 65, the mass's position at time $t$ is 
@@ -905,23 +906,11 @@ $$
 
 $$
 \begin{array}{l} \text {73.} \int \frac {x ^ {n}}{\sqrt {x + 1}} d x \\ = \frac {2 x ^ {n}}{2 n + 1} \sqrt {x + 1} - \frac {2 n}{2 n + 1} \int \frac {x ^ {n - 1}}{\sqrt {x + 1}} d x \end{array}
-$$
-
-74. Use Example 5 to show that 
-
-$$
+74. $Use Example 5 to show that$
 \begin{array}{r l} \int_ {0} ^ {\pi / 2} \sin^ {n} x d x & = \int_ {0} ^ {\pi / 2} \cos^ {n} x d x \\ & = \left\{ \begin{array}{l} \left(\frac {\pi}{2}\right) \frac {1 \cdot 3 \cdot 5 \cdots (n - 1)}{2 \cdot 4 \cdot 6 \cdots n}, n \text {even} \\ \frac {2 \cdot 4 \cdot 6 \cdots (n - 1)}{1 \cdot 3 \cdot 5 \cdots n}, n \text {odd} \end{array} \right. \end{array}
-$$
-
-75. Show that 
-
-$$
+75. $Show that$
 \int_ {a} ^ {b} \left(\int_ {x} ^ {b} f (t) d t\right) d x = \int_ {a} ^ {b} (x - a) f (x) d x.
-$$
-
-76. Use integration by parts to obtain the formula 
-
-$$
+76. $Use integration by parts to obtain the formula$
 \int \sqrt {1 - x ^ {2}} d x = \frac {1}{2} x \sqrt {1 - x ^ {2}} + \frac {1}{2} \int \frac {1}{\sqrt {1 - x ^ {2}}} d x.
 $$
 
@@ -953,7 +942,13 @@ $$
 
 to evaluate the integrals in Exercises 77–80. Express your answers in terms of x.
 
-77. $\int \operatorname{arcsec} x \, dx$ 78. $\int \arctan x \, dx$ 79. $\int \sec^{-1} x \, dx$ 80. $\int \log_{2} x \, dx$ 
+77. $\int \operatorname{arcsec} x \, dx$
+
+78. $\int \arctan x \, dx$
+
+79. $\int \sec^{-1} x \, dx$
+
+80. $\int \log_{2} x \, dx$
 
 Another way to integrate $f^{-1}(x)$ (when $f^{-1}$ is integrable) is to use integration by parts with $u = f^{-1}(x)$ and dv = dx to rewrite the integral of $f^{-1}$ as 
 
@@ -1003,7 +998,7 @@ $$
 
 The general idea is to use identities to transform the integrals we must find into integrals that are easier to work with. 
 
-## Products of Powers of Sines and Cosines
+### Products of Powers of Sines and Cosines
 
 We begin with integrals of the form 
 
@@ -1089,11 +1084,11 @@ $$
 \int \sin^ {2} x \cos^ {4} x d x = \frac {1}{1 6} \left(x - \frac {1}{4} \sin 4 x + \frac {1}{3} \sin^ {3} 2 x\right) + C.
 $$
 
-## Eliminating Square Roots
+### Eliminating Square Roots
 
 In the next example, we use the identity $\cos^{2}\theta = (1 + \cos 2\theta)/2$ to eliminate a square root. 
 
-## **EXAMPLE 4** Evaluate
+**EXAMPLE 4** Evaluate
 
 $$
 \int_ {0} ^ {\pi / 4} \sqrt {1 + \cos 4 x} d x.
@@ -1117,7 +1112,7 @@ $$
 \begin{array}{l} \int_ {0} ^ {\pi / 4} \sqrt {1 + \cos 4 x} d x = \int_ {0} ^ {\pi / 4} \sqrt {2 \cos^ {2} 2 x} d x = \int_ {0} ^ {\pi / 4} \sqrt {2} \sqrt {\cos^ {2} 2 x} d x \\ \qquad = \sqrt {2} \int_ {0} ^ {\pi / 4} | \cos 2 x | d x = \sqrt {2} \int_ {0} ^ {\pi / 4} \cos 2 x d x \qquad \text { on } [ 0, \pi / 4 ] \\ \qquad = \sqrt {2} \Big [ \frac {\sin 2 x}{2} \Big ] _ {0} ^ {\pi / 4} = \frac {\sqrt {2}}{2} [ 1 - 0 ] = \frac {\sqrt {2}}{2}. \end{array}
 $$
 
-## Integrals of Powers of tan x and sec x
+### Integrals of Powers of tan x and sec x
 
 We know how to integrate the tangent and secant functions and their squares. To integrate higher powers, we use the identities $\tan^{2}x = \sec^{2}x - 1$ and $\sec^{2}x = \tan^{2}x + 1$ , and integrate by parts when necessary to reduce the higher powers to lower powers. 
 
@@ -1193,7 +1188,7 @@ $$
 \begin{array}{l l} \int (\tan^ {4} x) (\sec^ {4} x) d x = \int (\tan^ {4} x) (1 + \tan^ {2} x) (\sec^ {2} x) d x & \quad \sec^ {2} x = 1 + \tan^ {2} x \\ = \int (\tan^ {4} x + \tan^ {6} x) (\sec^ {2} x) d x & \text {   Distribute.   } \\ = \int (u ^ {4} + u ^ {6}) d u = \frac {u ^ {5}}{5} + \frac {u ^ {7}}{7} + C & \quad u = \tan x, \\ = \frac {\tan^ {5} x}{5} + \frac {\tan^ {7} x}{7} + C & \quad d u = \sec^ {2} x d x \end{array}
 $$
 
-## Products of Sines and Cosines
+### Products of Sines and Cosines
 
 The integrals 
 
@@ -1229,51 +1224,51 @@ $$
 \begin{array}{r l} \int \sin 3 x \cos 5 x d x & = \frac {1}{2} \int [ \sin (- 2 x) + \sin 8 x ] d x \\ & = \frac {1}{2} \int (\sin 8 x - \sin 2 x) d x \\ & = - \frac {\cos 8 x}{1 6} + \frac {\cos 2 x}{4} + C. \end{array}
 $$
 
-## EXERCISES 8.3
+### EXERCISES 8.3
 
 Powers of Sines and Cosines 
 
 Evaluate the integrals in Exercises 1–22. 
 
-11. $\int \sin^3 x\cos^3 xdx$ 
-
-12. $\int \cos^3 2x\sin^5 2xdx$ 
-
 1. $\int \cos 2x dx$ 
 
 2. $\int_0^\pi 3\sin \frac{x}{3} dx$ 
-
-13. $\int \cos^2 x dx$ 
-
-14. $\int_0^{\pi /2}\sin^2 xdx$ 
 
 3. $\int \cos^3 x\sin xdx$ 
 
 4. $\int \sin^4 2x\cos 2xdx$ 
 
-15. $\int_0^{\pi /2}\sin^7 ydy$ 
-
-16. $\int 7\cos^7 tdt$ 
-
 5. $\int \sin^3 x dx$ 
 
 6. $\int \cos^3 4x dx$ 
-
-17. $\int_0^\pi 8\sin^4 x dx$ 
-
-18. $\int 8\cos^4 2\pi x dx$ 
 
 7. $\int \sin^5 x dx$ 
 
 8. $\int_0^\pi \sin^5\frac{x}{2} dx$ 
 
-19. $\int 16\sin^2 x\cos^2 xdx$ 
-
-20. $\int_0^\pi 8\sin^4 y\cos^2 ydy$ 
-
 9. $\int \cos^3 x dx$ 
 
 10. $\int_0^{\pi /6}3\cos^5 3x dx$ 
+
+11. $\int \sin^3 x\cos^3 xdx$ 
+
+12. $\int \cos^3 2x\sin^5 2xdx$ 
+
+13. $\int \cos^2 x dx$ 
+
+14. $\int_0^{\pi /2}\sin^2 xdx$ 
+
+15. $\int_0^{\pi /2}\sin^7 ydy$ 
+
+16. $\int 7\cos^7 tdt$ 
+
+17. $\int_0^\pi 8\sin^4 x dx$ 
+
+18. $\int 8\cos^4 2\pi x dx$ 
+
+19. $\int 16\sin^2 x\cos^2 xdx$ 
+
+20. $\int_0^\pi 8\sin^4 y\cos^2 ydy$ 
 
 21. $\int 8\cos^3 2\theta \sin 2\theta d\theta$ 
 
@@ -1283,17 +1278,9 @@ Integrating Square Roots
 
 Evaluate the integrals in Exercises 23–32. 
 
-55. $\int_{-\pi}^{\pi}\sin 3x\sin 3xdx$ 
-
-56. $\int_0^{\pi /2}\sin x\cos xdx$ 
-
 23. $\int_0^{2\pi}\sqrt{\frac{1 - \cos x}{2}} dx$ 
 
 24. $\int_0^\pi \sqrt{1 - \cos 2x} dx$ 
-
-57. $\int \cos 3x\cos 4xdx$ 
-
-58. $\int_{-\pi /2}^{\pi /2}\cos x\cos 7xdx$ 
 
 25. $\int_0^\pi \sqrt{1 - \sin^2 t} dt$ 
 
@@ -1305,23 +1292,9 @@ Exercises 59–64 require the use of various trigonometric identities before you
 
 28. $\int_0^{\pi /6}\sqrt{1 + \sin x} dx$ 
 
-59. $\int \sin^2\theta \cos 3\theta d\theta$ 
-
-60. $\int \cos^2 2\theta \sin \theta d\theta$ 
-
-Hint: Multiply by $\sqrt{\frac{1 - \sin x}{1 - \sin x}}$ . 
-
-61. $\int \cos^3\theta \sin 2\theta d\theta$ 
-
-62. $\int \sin^3\theta \cos 2\theta d\theta$ 
-
 29. $\int_{5\pi /6}^{\pi}\frac{\cos^4x}{\sqrt{1 - \sin x}} dx$ 
 
 30. $\int_{\pi /2}^{3\pi /4}\sqrt{1 - \sin 2x} dx$ 
-
-63. $\int \sin \theta \cos \theta \cos 3\theta d\theta$ 
-
-64. $\int \sin \theta \sin 2\theta \sin 3\theta d\theta$ 
 
 Assorted Integrations 
 
@@ -1329,27 +1302,13 @@ Assorted Integrations
 
 32. $\int_{-\pi}^{\pi}(1 - \cos^2 t)^{3/2}dt$ 
 
-Use any method to evaluate the integrals in Exercises 65–70. 
-
-65. $\int \frac{\sec^3x}{\tan x} dx$ 
-
-66. $\int \frac{\sin^3x}{\cos^4x} dx$ 
-
 Powers of Tangents and Secants 
 
 Evaluate the integrals in Exercises 33–52. 
 
-67. $\int \frac{\tan^2x}{\csc x} dx$ 
-
-68. $\int \frac{\cot x}{\cos^2x} dx$ 
-
 33. $\int \sec^2 x\tan xdx$ 
 
 34. $\int \sec x\tan^2 xdx$ 
-
-69. $\int x\sin^2 x dx$ 
-
-70. $\int x\cos^3 x dx$ 
 
 35. $\int \sec^3 x\tan xdx$ 
 
@@ -1360,8 +1319,6 @@ Applications
 37. $\int \sec^2 x\tan^2 xdx$ 
 
 38. $\int \sec^4 x\tan^2 xdx$ 
-
-71. Arc length Find the length of the curve 
 
 39. $\int_{-\pi /3}^{0}2\sec^3 xdx$ 
 
@@ -1395,11 +1352,47 @@ Products of Sines and Cosines
 
 Evaluate the integrals in Exercises 53–58. 
 
-53. $\int \sin 3x\cos 2xdx$ 54. $\int \sin 2x\cos 3xdx$ 
+53. $\int \sin 3x\cos 2xdx$
 
-$$
-y = \ln (\sin x), \frac {\pi}{6} \leq x \leq \frac {\pi}{2}
-$$
+54. $\int \sin 2x\cos 3xdx$
+
+55. $\int_{-\pi}^{\pi}\sin 3x\sin 3xdx$ 
+
+56. $\int_0^{\pi /2}\sin x\cos xdx$ 
+
+57. $\int \cos 3x\cos 4xdx$ 
+
+58. $\int_{-\pi /2}^{\pi /2}\cos x\cos 7xdx$ 
+
+59. $\int \sin^2\theta \cos 3\theta d\theta$ 
+
+60. $\int \cos^2 2\theta \sin \theta d\theta$ 
+
+Hint: Multiply by $\sqrt{\frac{1 - \sin x}{1 - \sin x}}$ . 
+
+61. $\int \cos^3\theta \sin 2\theta d\theta$ 
+
+62. $\int \sin^3\theta \cos 2\theta d\theta$ 
+
+63. $\int \sin \theta \cos \theta \cos 3\theta d\theta$ 
+
+64. $\int \sin \theta \sin 2\theta \sin 3\theta d\theta$ 
+
+Use any method to evaluate the integrals in Exercises 65–70. 
+
+65. $\int \frac{\sec^3x}{\tan x} dx$ 
+
+66. $\int \frac{\sin^3x}{\cos^4x} dx$ 
+
+67. $\int \frac{\tan^2x}{\csc x} dx$ 
+
+68. $\int \frac{\cot x}{\cos^2x} dx$ 
+
+69. $\int x\sin^2 x dx$ 
+
+70. $\int x\cos^3 x dx$ 
+
+71. Arc length Find the length of the curve $y = \ln (\sin x)$, $\frac {\pi}{6} \leq x \leq \frac {\pi}{2}$.
 
 72. Center of gravity Find the center of gravity of the region bounded by the $x$ -axis, the curve $y = \sec x$ , and the lines $x = -\pi / 4$ , $x = \pi / 4$ . 
 
@@ -1417,13 +1410,13 @@ $$
 
 ## 8.4 Trigonometric Substitutions
 
-![[a8a3f6f3d9542e283c9ad1940d8266c90a9343f87c20787ca0f771613376711a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a8a3f6f3d9542e283c9ad1940d8266c90a9343f87c20787ca0f771613376711a.jpg)
 
 
-![[19dc4ebafd705c3704bb6e27bb0618a218aa6a807899db1d8d5c6c8f078a463c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/19dc4ebafd705c3704bb6e27bb0618a218aa6a807899db1d8d5c6c8f078a463c.jpg)
 
 
-![[106734ab25f22c793b9f35ef80e17a80cb8419dc128bca9764ecfd4ab979445f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/106734ab25f22c793b9f35ef80e17a80cb8419dc128bca9764ecfd4ab979445f.jpg)
 
 
 
@@ -1432,7 +1425,7 @@ FIGURE 8.3 The arctangent, arcsine, and arcsecant of x/a, graphed as functions o
 
 Trigonometric substitutions occur when we replace the variable of integration by a trigonometric function. The most common substitutions are $x = a \tan \theta$ , $x = a \sin \theta$ , and $x = a \sec \theta$ . These substitutions are effective in transforming integrals involving $\sqrt{a^{2} + x^{2}}$ , $\sqrt{a^{2} - x^{2}}$ , and $\sqrt{x^{2} - a^{2}}$ into integrals with respect to $\theta$ , since they come from the reference right triangles in Figure 8.2. 
 
-![[b0955ead17e10d85ce6bc8e3e9cb445da57ef77c86ea24612132e32f6fd6615b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b0955ead17e10d85ce6bc8e3e9cb445da57ef77c86ea24612132e32f6fd6615b.jpg)
 
 
 
@@ -1477,7 +1470,7 @@ $$
 
 To simplify calculations with the substitution $x = a \sec \theta$ , we will restrict its use to integrals in which $x / a \geq 1$ . This will place $\theta$ in $[0, \pi / 2)$ and make $\tan \theta \geq 0$ . We will then have $\sqrt{x^2 - a^2} = \sqrt{a^2 \tan^2 \theta} = |a \tan \theta| = a \tan \theta$ , free of absolute values, provided $a > 0$ . 
 
-## Procedure for a Trigonometric Substitution
+### Procedure for a Trigonometric Substitution
 
 1. Write down the substitution for x, calculate the differential dx, and specify the selected values of $\theta$ for the substitution. 
 
@@ -1487,13 +1480,13 @@ To simplify calculations with the substitution $x = a \sec \theta$ , we will res
 
 4. Draw an appropriate reference triangle to reverse the substitution in the integration result and convert it back to the original variable x. 
 
-## **EXAMPLE 1** Evaluate
+**EXAMPLE 1** Evaluate
 
 $$
 \int \frac {d x}{\sqrt {4 + x ^ {2}}}.
 $$
 
-![[c0b905498c39298a14ad9db82f0cd44d1372a5de7462f077e4949c067e9d3d84.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c0b905498c39298a14ad9db82f0cd44d1372a5de7462f077e4949c067e9d3d84.jpg)
 
 
 FIGURE 8.4 Reference triangle for $x = 2\tan \theta$ (Example 1): 
@@ -1542,11 +1535,11 @@ $$
 
 (See also Exercise 76 in Section 7.3.) 
 
-## **EXAMPLE 3** Evaluate
+**EXAMPLE 3** Evaluate
 
 FIGURE 8.5 Reference triangle for $x = 3\sin \theta$ (Example 3): 
 
-![[14cee5e23830515be0827c2dd489753d8fab6adb15201823d88e8fad5adf2340.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/14cee5e23830515be0827c2dd489753d8fab6adb15201823d88e8fad5adf2340.jpg)
 
 
 $$
@@ -1603,7 +1596,7 @@ $$
 x ^ {2} - \left(\frac {2}{5}\right) ^ {2} = \frac {4}{2 5} \sec^ {2} \theta - \frac {4}{2 5} = \frac {4}{2 5} (\sec^ {2} \theta - 1) = \frac {4}{2 5} \tan^ {2} \theta
 $$
 
-![[524d2f30f29c29cc0ec36b1a5b08c1b3aab5299d9bbc8b4675bd9373d72f6d43.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/524d2f30f29c29cc0ec36b1a5b08c1b3aab5299d9bbc8b4675bd9373d72f6d43.jpg)
 
 
 and 
@@ -1622,81 +1615,76 @@ and we can read the values of the other trigonometric functions of $\theta$ from
 
 $\int \frac{dx}{\sqrt{25x^2 - 4}} = \int \frac{dx}{5\sqrt{x^2 - (4 / 25)}} = \int \frac{(2 / 5)\sec\theta\tan\theta d\theta}{5\cdot(2 / 5)\tan\theta}$ $= \frac{1}{5}\int \sec \theta d\theta = \frac{1}{5}\ln |\sec \theta +\tan \theta | + C$ $= \frac{1}{5}\ln \left|\frac{5x}{2} +\frac{\sqrt{25x^2 - 4}}{2}\right| + C.$ From Fig.8.6 
 
-## EXERCISES 8.4
+### EXERCISES 8.4
 
-## Using Trigonometric Substitutions
+#### Using Trigonometric Substitutions
 
 Evaluate the integrals in Exercises 1–14. 
 
-17. $\int \frac{x dx}{\sqrt{x^2 - 1}}$ 
-
-18. $\int \frac{dx}{\sqrt{1 - x^2}}$ 
-
-1. $\int \frac{dx}{\sqrt{9 + x^2}}$ 
-
-2. $\int \frac{3dx}{\sqrt{1 + 9x^2}}$ 
-
-19. $\int \frac{x}{\sqrt{9 - x^2}} dx$ 
-
-20. $\int \frac{x^2}{4 + x^2} dx$ 
-
-3. $\int_{-2}^{2}\frac{dx}{4 + x^2}$ 
-
-4. $\int_0^2\frac{dx}{8 + 2x^2}$ 
-
-21. $\int \frac{x^3 dx}{\sqrt{x^2 + 4}}$ 
+1. $\int \frac{dx}{\sqrt{9 + x^2}}$
+2. $\int \frac{3dx}{\sqrt{1 + 9x^2}}$
+3. $\int_{-2}^{2}\frac{dx}{4 + x^2}$
+4. $\int_0^2\frac{dx}{8 + 2x^2}$
 
 5. $\int_0^{3 / 2}\frac{dx}{\sqrt{9 - x^2}}$ 
 
 6. $\int_0^{1 / 2\sqrt{2}}\frac{2dx}{\sqrt{1 - 4x^2}}$ 
 
-22. $\int \frac{dx}{x^2\sqrt{x^2 + 1}}$ 
-
 7. $\int \sqrt{25 - t^2} dt$ 
 
 8. $\int \sqrt{1 - 9t^2} dt$ 
-
-23. $\int \frac{8dw}{w^2\sqrt{4 - w^2}}$ 
-
-24. $\int \frac{\sqrt{9 - w^2}}{w^2} dw$ 
 
 9. $\int \frac{dx}{\sqrt{4x^2 - 49}}, x > \frac{7}{2}$ 
 
 10. $\int \frac{5dx}{\sqrt{25x^2 - 9}}, x > \frac{3}{5}$ 
 
-25. $\int \sqrt{\frac{x + 1}{1 - x}} dx$ 
-
-26. $\int x\sqrt{x^2 - 4} dx$ 
-
 11. $\int \frac{\sqrt{y^2 - 49}}{y} dy, y > 7$ 
 
 12. $\int \frac{\sqrt{y^2 - 25}}{y^3} dy, y > 5$ 
-
-27. $\int_0^{\sqrt{3} /2}\frac{4x^2dx}{(1 - x^2)^{3 / 2}}$ 
-
-28. $\int_0^1\frac{dx}{(4 - x^2)^{3 / 2}}$ 
 
 13. $\int \frac{dx}{x^2\sqrt{x^2 - 1}}, x > 1$ 
 
 14. $\int \frac{2dx}{x^3\sqrt{x^2 - 1}}, x > 1$ 
 
-29. $\int \frac{dx}{(x^2 - 1)^{3/2}}, x > 1$ 
-
-30. $\int \frac{x^2 dx}{(x^2 - 1)^{5/2}}, x > 1$ 
-
 Assorted Integrations 
 
 Use any method to evaluate the integrals in Exercises 15–38. Most will require trigonometric substitutions, but some can be evaluated by other methods. 
 
+15. $\int \frac{dx}{x\sqrt{x^2 - 1}}$ 
+
+16. $\int \frac {d x}{1 + x ^ {2}}$
+
+17. $\int \frac{x dx}{\sqrt{x^2 - 1}}$ 
+
+18. $\int \frac{dx}{\sqrt{1 - x^2}}$ 
+
+19. $\int \frac{x}{\sqrt{9 - x^2}} dx$ 
+
+20. $\int \frac{x^2}{4 + x^2} dx$ 
+
+21. $\int \frac{x^3 dx}{\sqrt{x^2 + 4}}$ 
+
+22. $\int \frac{dx}{x^2\sqrt{x^2 + 1}}$ 
+
+23. $\int \frac{8dw}{w^2\sqrt{4 - w^2}}$ 
+
+24. $\int \frac{\sqrt{9 - w^2}}{w^2} dw$ 
+
+25. $\int \sqrt{\frac{x + 1}{1 - x}} dx$ 
+
+26. $\int x\sqrt{x^2 - 4} dx$ 
+
+27. $\int_0^{\sqrt{3} /2}\frac{4x^2dx}{(1 - x^2)^{3 / 2}}$ 
+
+28. $\int_0^1\frac{dx}{(4 - x^2)^{3 / 2}}$ 
+
+29. $\int \frac{dx}{(x^2 - 1)^{3/2}}, x > 1$ 
+
+30. $\int \frac{x^2 dx}{(x^2 - 1)^{5/2}}, x > 1$ 
+
 31. $\int \frac{(1 - x^2)^{3 / 2}}{x^6} dx$ 
 
 32. $\int \frac{(1 - x^2)^{1 / 2}}{x^4} dx$ 
-
-15. $\int \frac{dx}{x\sqrt{x^2 - 1}}$ 
-
-$$
-\int \frac {d x}{1 + x ^ {2}}
-$$
 
 33. $\int \frac{8dx}{(4x^2 + 1)^2}$ 
 
@@ -1712,23 +1700,51 @@ $$
 
 In Exercises 39–48, use an appropriate substitution and then a trigonometric substitution to evaluate the integrals.
 
-39. $\int_{0}^{\ln4}\frac{e^{t}dt}{\sqrt{e^{2t}}+9}$ 40. $\int_{\ln(3/4)}^{\ln(4/3)}\frac{e^{t}dt}{(1+e^{2t})^{3/2}}$ 41. $\int_{1/12}^{1/4}\frac{2dt}{\sqrt{t}+4t\sqrt{t}}$ 42. $\int_{1}^{e}\frac{dy}{y\sqrt{1+(\ln y)^{2}}}$ 43. $\int\frac{x dx}{\sqrt{1+x^{4}}}$ 44. $\int\frac{\sqrt{1-(\ln x)^{2}}}{x\ln x}dx$ 45. $\int\sqrt{\frac{4-x}{x}}dx$ 46. $\int\sqrt{\frac{x}{1-x^{3}}}dx$ (Hint: Let $x=u^{2}$ .)
+39. $\int_{0}^{\ln4}\frac{e^{t}dt}{\sqrt{e^{2t}}+9}$
+
+40. $\int_{\ln(3/4)}^{\ln(4/3)}\frac{e^{t}dt}{(1+e^{2t})^{3/2}}$
+
+41. $\int_{1/12}^{1/4}\frac{2dt}{\sqrt{t}+4t\sqrt{t}}$
+
+42. $\int_{1}^{e}\frac{dy}{y\sqrt{1+(\ln y)^{2}}}$
+
+43. $\int\frac{x dx}{\sqrt{1+x^{4}}}$
+
+44. $\int\frac{\sqrt{1-(\ln x)^{2}}}{x\ln x}dx$
+
+45. $\int\sqrt{\frac{4-x}{x}}dx$
+
+46. $\int\sqrt{\frac{x}{1-x^{3}}}dx$ (Hint: Let $x=u^{2}$ .)
 
 (Hint: Let $u=x^{3/2}$ .)
 
-47. $\int\sqrt{x}\sqrt{1-x}dx$ 48. $\int\frac{\sqrt{x-2}}{\sqrt{x-1}}dx$ 
+47. $\int\sqrt{x}\sqrt{1-x}dx$
+
+48. $\int\frac{\sqrt{x-2}}{\sqrt{x-1}}dx$
 
 Complete the Square Before Using Trigonometric Substitutions
 For Exercises 49–52, complete the square before using an appropriate trigonometric substitution.
-49. $\int\sqrt{8-2x-x^{2}}dx$ 50. $\int\frac{1}{\sqrt{x^{2}-2x+5}}dx$ 51. $\int\frac{\sqrt{x^{2}+4x+3}}{x+2}dx$ 52. $\int\frac{\sqrt{x^{2}+2x+2}}{x^{2}+2x+1}dx$ 
+49. $\int\sqrt{8-2x-x^{2}}dx$
+
+50. $\int\frac{1}{\sqrt{x^{2}-2x+5}}dx$
+
+51. $\int\frac{\sqrt{x^{2}+4x+3}}{x+2}dx$
+
+52. $\int\frac{\sqrt{x^{2}+2x+2}}{x^{2}+2x+1}dx$
 
 Initial Value Problems 
 
 Initial Value Problems
 Solve the initial value problems in Exercises 53–56 for y as a function of x.
-53. $x \frac{dy}{dx} = \sqrt{x^{2} - 4}, \quad x \geq 2, \quad y(2) = 0$ 54. $\sqrt{x^{2}-9} \frac{dy}{dx} = 1, \quad x > 3, \quad y(5) = \ln 3$ 55. $(x^{2} + 4)\frac{dy}{dx} = 3, \quad y(2) = 0$ 56. $(x^{2} + 1)^{2}\frac{dy}{dx} = \sqrt{x^{2} + 1}, \quad y(0) = 1$ 
+53. $x \frac{dy}{dx} = \sqrt{x^{2} - 4}, \quad x \geq 2, \quad y(2) = 0$
 
-## Applications and Examples
+54. $\sqrt{x^{2}-9} \frac{dy}{dx} = 1, \quad x > 3, \quad y(5) = \ln 3$
+
+55. $(x^{2} + 4)\frac{dy}{dx} = 3, \quad y(2) = 0$
+
+56. $(x^{2} + 1)^{2}\frac{dy}{dx} = \sqrt{x^{2} + 1}, \quad y(0) = 1$
+
+#### Applications and Examples
 
 57. Area Find the area of the region in the first quadrant that is enclosed by the coordinate axes and the curve $y = \sqrt{9 - x^2} / 3$ . 
 
@@ -1740,7 +1756,7 @@ b. Find the centroid of the region.
 
 60. Consider the region bounded by the graphs of $y = \sqrt{x} \arctan x$ and y = 0 for $0 \leq x \leq 1$ . Find the volume of the solid formed by revolving this region about the x-axis (see accompanying figure). 
 
-![[7f32ea36bab2c551fa6067bc633f8f2772c879e969ef287330dfc02e78a1da3a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7f32ea36bab2c551fa6067bc633f8f2772c879e969ef287330dfc02e78a1da3a.jpg)
 
 
 61. Evaluate $\int x^3\sqrt{1 - x^2} dx$ using a. integration by parts. b. a $u$ -substitution. c. a trigonometric substitution. 
@@ -1750,13 +1766,13 @@ a. Show that $f'(x) = \frac{-\sqrt{100 - x^2}}{x}$ .
 (Hint: Assume that the skier is always pointed directly at the boat and the rope is on a line tangent to the path $y = f(x)$ .)  
 b. Solve the equation in part (a) for $f(x)$ , using $f(10) = 0$ . 
 
-![[8eb23cb5a509a7b482e3efcf273cc1cc1f81a2a6307b85f56df186438b618275.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/8eb23cb5a509a7b482e3efcf273cc1cc1f81a2a6307b85f56df186438b618275.jpg)
 
 
 63. Find the average value of $f(x) = \frac{\sqrt{x + 1}}{\sqrt{x}}$ on the interval [1, 3].  
 64. Find the length of the curve $y = 1 - e^{-x}$ , $0 \leq x \leq 1$ . 
 
-## Integration of Rational Functions by Partial Fractions
+## 8.5 Integration of Rational Functions by Partial Fractions
 
 This section shows how to express a rational function (a quotient of polynomials) as a sum of simpler fractions, called partial fractions, which are more easily integrated. For instance, the rational function $(5x - 3)/(x^{2} - 2x - 3)$ can be rewritten as 
 
@@ -1792,7 +1808,7 @@ $$
 
 Solving these equations simultaneously gives A = 2 and B = 3. 
 
-## General Description of the Method
+#### General Description of the Method
 
 Success in writing a rational function $f(x)/g(x)$ as a sum of partial fractions depends on three things: 
 
@@ -1804,7 +1820,8 @@ Success in writing a rational function $f(x)/g(x)$ as a sum of partial fractions
 
 Here is how we find the partial fractions of a proper fraction $f(x)/g(x)$ when the factors of g are known. A quadratic polynomial (or factor) is irreducible if it cannot be written as the product of two linear factors with real coefficients. That is, the polynomial has no real roots. 
 
-## Method of Partial Fractions When $f(x) / g(x)$ Is Proper
+#### Method of Partial Fractions When $f(x) / g(x)$ Is Proper
+
 
 1. Let $x - r$ be a linear factor of $g(x)$ . Suppose that $(x - r)^m$ is the highest power of $x - r$ that divides $g(x)$ . Then, to this factor, assign the sum of the $m$ partial fractions: 
 
@@ -1814,6 +1831,7 @@ $$
 
 Do this for each distinct linear factor of $g(x)$ . 
 
+
 2. Let $x^{2} + px + q$ be an irreducible quadratic factor of $g(x)$ . In this case, $x^{2} + px + q$ has no real roots. Suppose that $(x^{2} + px + q)^{n}$ is the highest power of this factor that divides $g(x)$ . Then, to this factor, assign the sum of the n partial fractions: 
 
 $$
@@ -1822,13 +1840,15 @@ $$
 
 Do this for each distinct quadratic factor of $g(x)$ . 
 
+
 3. Set the original fraction $f(x)/g(x)$ equal to the sum of all these partial fractions. Clear the resulting equation of fractions. 
+
 
 4. Find the values of the undetermined coefficients. 
 
 There are often multiple ways to find the values of the undetermined coefficients in Step 4. To find the values of the coefficients that satisfy Equation (1), we equated coefficients of like powers of x. In the next example, we instead will assign convenient values of x, leading to simple equations that we can solve for the undetermined coefficients. 
 
-## **EXAMPLE 1** Use partial fractions to evaluate
+**EXAMPLE 1** Use partial fractions to evaluate
 
 $$
 \int \frac {x ^ {2} + 4 x + 1}{(x - 1) (x + 1) (x + 3)} d x.
@@ -1888,7 +1908,7 @@ where K is the arbitrary constant of integration (we call it K here to avoid con
 
 You can solve for the undetermined coefficients $(A, B, \text{etc.})$ by equating coefficients of like powers of x or by assigning convenient values to x. You should choose the method that is most convenient for the problem at hand. 
 
-## **EXAMPLE 2** Use partial fractions to evaluate
+**EXAMPLE 2** Use partial fractions to evaluate
 
 $$
 \int \frac {6 x + 7}{(x + 2) ^ {2}} d x.
@@ -1914,7 +1934,7 @@ $$
 
 The next example shows how to handle the case when $f(x)/g(x)$ is an improper fraction. It is a case where the degree of f is larger than the degree of g. 
 
-## **EXAMPLE 3** Use partial fractions to evaluate
+**EXAMPLE 3** Use partial fractions to evaluate
 
 $$
 \int {\frac {2 x ^ {3} - 4 x ^ {2} - x - 3}{x ^ {2} - 2 x - 3}} d x.
@@ -2006,7 +2026,7 @@ $$
 
 We use the letter K instead of C to represent an arbitrary constant here because we have already used C to represent a variable in the partial fraction representation. 
 
-## **EXAMPLE 5** Use partial fractions to evaluate
+**EXAMPLE 5** Use partial fractions to evaluate
 
 $$
 \int \frac {d x}{x (x ^ {2} + 1) ^ {2}}.
@@ -2032,7 +2052,7 @@ $$
 
 Solving this system gives A = 1, B = -1, C = 0, D = -1, and E = 0. Thus, 
 
-## HISTORICAL BIOGRAPHY Oliver Heaviside (1850–1925)
+**HISTORICAL BIOGRAPHY Oliver Heaviside (1850–1925)**
 
 Heaviside studied electricity and languages on his own. He was able to simplify Maxwell's 20 equations into the two we now call Maxwell's equations. Heaviside's contributions in mathematics are in the areas of vector algebra and vector calculus. 
 
@@ -2042,7 +2062,7 @@ $$
 \begin{array}{l} \int \frac {d x}{x (x ^ {2} + 1) ^ {2}} = \int \left[ \frac {1}{x} + \frac {- x}{x ^ {2} + 1} + \frac {- x}{(x ^ {2} + 1) ^ {2}} \right] d x \\ = \int \frac {d x}{x} - \int \frac {x d x}{x ^ {2} + 1} - \int \frac {x d x}{(x ^ {2} + 1) ^ {2}} \\ = \int \frac {d x}{x} - \frac {1}{2} \int \frac {d u}{u} - \frac {1}{2} \int \frac {d u}{u ^ {2}} \quad u = x ^ {2} + 1, \\ = \ln | x | - \frac {1}{2} \ln | u | + \frac {1}{2 u} + K \\ = \ln | x | - \frac {1}{2} \ln (x ^ {2} + 1) + \frac {1}{2 (x ^ {2} + 1)} + K \\ = \ln \frac {| x |}{\sqrt {x ^ {2} + 1}} + \frac {1}{2 (x ^ {2} + 1)} + K. \end{array}
 $$
 
-## Determining Coefficients by Differentiating
+#### Determining Coefficients by Differentiating
 
 Another way to determine the constants that appear in partial fractions is to differentiate, as in the next example. 
 
@@ -2070,18 +2090,46 @@ $$
 \frac {x - 1}{(x + 1) ^ {3}} = \frac {1}{(x + 1) ^ {2}} - \frac {2}{(x + 1) ^ {3}}.
 $$
 
-## EXERCISES 8.5
+### EXERCISES 8.5
 
-## Expanding Quotients into Partial Fractions
+#### Expanding Quotients into Partial Fractions
 
 Expand the quotients in Exercises 1–8 by partial fractions.
-1. $\frac{5x - 13}{(x - 3)(x - 2)}$ 2. $\frac{5x - 7}{x^{2} - 3x + 2}$ 3. $\frac{x + 4}{(x + 1)^{2}}$ 4. $\frac{2x + 2}{x^{2} - 2x + 1}$ 5. $\frac{z + 1}{z^{2}(z - 1)}$ 6. $\frac{z}{z^{3} - z^{2} - 6z}$ 7. $\frac{t^{2} + 8}{t^{2} - 5t + 6}$ 8. $\frac{t^{4} + 9}{t^{4} + 9t^{2}}$ 
+1. $\frac{5x - 13}{(x - 3)(x - 2)}$
+
+2. $\frac{5x - 7}{x^{2} - 3x + 2}$
+
+3. $\frac{x + 4}{(x + 1)^{2}}$
+
+4. $\frac{2x + 2}{x^{2} - 2x + 1}$
+
+5. $\frac{z + 1}{z^{2}(z - 1)}$
+
+6. $\frac{z}{z^{3} - z^{2} - 6z}$
+
+7. $\frac{t^{2} + 8}{t^{2} - 5t + 6}$
+
+8. $\frac{t^{4} + 9}{t^{4} + 9t^{2}}$
 
 Nonrepeated Linear Factors
 In Exercises 9–16, express the integrand as a sum of partial fractions and evaluate the integrals.
-9. $\int\frac{dx}{1-x^{2}}$ 10. $\int\frac{dx}{x^{2}+2x}$ 11. $\int\frac{x+4}{x^{2}+5x-6}dx$ 12. $\int\frac{2x+1}{x^{2}-7x+12}dx$ 13. $\int_{4}^{8}\frac{y dy}{y^{2}-2y-3}$ 14. $\int_{1/2}^{1}\frac{y+4}{y^{2}+y}dy$ 15. $\int\frac{dt}{t^{3}+t^{2}-2t}$ 16. $\int\frac{x+3}{2x^{3}-8x}dx$ 
+9. $\int\frac{dx}{1-x^{2}}$
 
-## Repeated Linear Factors
+10. $\int\frac{dx}{x^{2}+2x}$
+
+11. $\int\frac{x+4}{x^{2}+5x-6}dx$
+
+12. $\int\frac{2x+1}{x^{2}-7x+12}dx$
+
+13. $\int_{4}^{8}\frac{y dy}{y^{2}-2y-3}$
+
+14. $\int_{1/2}^{1}\frac{y+4}{y^{2}+y}dy$
+
+15. $\int\frac{dt}{t^{3}+t^{2}-2t}$
+
+16. $\int\frac{x+3}{2x^{3}-8x}dx$
+
+#### Repeated Linear Factors
 
 In Exercises 17–20, express the integrand as a sum of partial fractions and evaluate the integrals. 
 
@@ -2089,31 +2137,61 @@ $$
 \int_ {0} ^ {1} \frac {x ^ {3} d x}{x ^ {2} + 2 x + 1}
 $$
 
-19. $\int \frac{dx}{(x^2 - 1)^2}$ 
-
 18. $\int_{-1}^{0}\frac{x^3dx}{x^2 - 2x + 1}$ 
+
+19. $\int \frac{dx}{(x^2 - 1)^2}$ 
 
 20. $\int \frac{x^2 dx}{(x - 1)(x^2 + 2x + 1)}$ 
 
 In Exercises 21–32, express the integrand as a sum of partial fractions and evaluate the integrals.
 
-21. $\int_{0}^{1}\frac{dx}{(x+1)(x^{2}+1)}$ 22. $\int_{1}^{\sqrt{3}}\frac{3t^{2}+t+4}{t^{3}+t}dt$ 23. $\int\frac{y^{2}+2y+1}{(y^{2}+1)^{2}}dy$ 24. $\int\frac{8x^{2}+8x+2}{(4x^{2}+1)^{2}}dx$ 25. $\int\frac{2s+2}{(s^{2}+1)(s-1)^{3}}ds$ 26. $\int\frac{s^{4}+81}{s(s^{2}+9)^{2}}ds$ 27. $\int\frac{x^{2}-x+2}{x^{3}-1}dx$ 28. $\int\frac{1}{x^{4}+x}dx$ 29. $\int\frac{x^{2}}{x^{4}-1}dx$ 30. $\int\frac{x^{2}+x}{x^{4}-3x^{2}-4}dx$ 
+21. $\int_{0}^{1}\frac{dx}{(x+1)(x^{2}+1)}$
+
+22. $\int_{1}^{\sqrt{3}}\frac{3t^{2}+t+4}{t^{3}+t}dt$
+
+23. $\int\frac{y^{2}+2y+1}{(y^{2}+1)^{2}}dy$
+
+24. $\int\frac{8x^{2}+8x+2}{(4x^{2}+1)^{2}}dx$
+
+25. $\int\frac{2s+2}{(s^{2}+1)(s-1)^{3}}ds$
+
+26. $\int\frac{s^{4}+81}{s(s^{2}+9)^{2}}ds$
+
+27. $\int\frac{x^{2}-x+2}{x^{3}-1}dx$
+
+28. $\int\frac{1}{x^{4}+x}dx$
+
+29. $\int\frac{x^{2}}{x^{4}-1}dx$
+
+30. $\int\frac{x^{2}+x}{x^{4}-3x^{2}-4}dx$
 
 31. $\int \frac{2\theta^3 + 5\theta^2 + 8\theta + 4}{(\theta^2 + 2\theta + 2)^2} d\theta$ 
 
 32. $\int \frac{\theta^4 - 4\theta^3 + 2\theta^2 - 3\theta + 1}{(\theta^2 + 1)^3} d\theta$ 
 
-## Improper Fractions
+#### Improper Fractions
 
 In Exercises 33–38, perform long division on the integrand, write the proper fraction as a sum of partial fractions, and then evaluate the integral.
 
-33. $\int\frac{2x^{3}-2x^{2}+1}{x^{2}-x}dx$ 34. $\int\frac{x^{4}}{x^{2}-1}dx$ 35. $\int\frac{9x^{3}-3x+1}{x^{3}-x^{2}}dx$ 36. $\int\frac{16x^{3}}{4x^{2}-4x+1}dx$ 37. $\int\frac{y^{4}+y^{2}-1}{y^{3}+y}dy$ 38. $\int\frac{2y^{4}}{y^{3}-y^{2}+y-1}dy$ 
+33. $\int\frac{2x^{3}-2x^{2}+1}{x^{2}-x}dx$
 
-## Evaluating Integrals
+34. $\int\frac{x^{4}}{x^{2}-1}dx$
+
+35. $\int\frac{9x^{3}-3x+1}{x^{3}-x^{2}}dx$
+
+36. $\int\frac{16x^{3}}{4x^{2}-4x+1}dx$
+
+37. $\int\frac{y^{4}+y^{2}-1}{y^{3}+y}dy$
+
+38. $\int\frac{2y^{4}}{y^{3}-y^{2}+y-1}dy$
+
+#### Evaluating Integrals
 
 Evaluate the integrals in Exercises 39–54. 
 
-39. $\int \frac{e^t dt}{e^{2t} + 3e^t + 2}$ 40. $\int \frac{e^{4t} + 2e^{2t} - e^t}{e^{2t} + 1} dt$ 
+39. $\int \frac{e^t dt}{e^{2t} + 3e^t + 2}$
+
+40. $\int \frac{e^{4t} + 2e^{2t} - e^t}{e^{2t} + 1} dt$
 
 41. $\int \frac{\cos ydy}{\sin^2y + \sin y - 6}$ 
 
@@ -2127,7 +2205,9 @@ Evaluate the integrals in Exercises 39–54.
 
 46. $\int \frac{1}{(x^{1/3} - 1)\sqrt{x}} dx$ (Hint: Let $x = u^6$ .) 
 
-47. $\int \frac{\sqrt{x + 1}}{x} dx$ 48. $\int \frac{1}{x\sqrt{x + 9}} dx$ (Hint: Let $x + 1 = u^2$ .) 
+47. $\int \frac{\sqrt{x + 1}}{x} dx$
+
+48. $\int \frac{1}{x\sqrt{x + 9}} dx$ (Hint: Let $x + 1 = u^2$ .)
 
 49. $\int \frac{1}{x(x^4 + 1)} dx$ (Hint: Multiply by $\frac{x^3}{x^3}$ .) 
 
@@ -2142,42 +2222,68 @@ Evaluate the integrals in Exercises 39–54.
 54. $\int \frac{\sqrt{x}}{\sqrt{2 - \sqrt{x}} + \sqrt{x}} dx$ 
 
 Use any method to evaluate the integrals in Exercises 55–66.
-55. $\int\frac{x^{3}-2x^{2}-3x}{x+2}dx$ 56. $\int\frac{x+2}{x^{3}-2x^{2}-3x}dx$ 57. $\int\frac{2^{x}-2^{-x}}{2^{x}+2^{-x}}dx$ 58. $\int\frac{2^{x}}{2^{2x}+2^{x}-2}dx$ 59. $\int\frac{1}{x^{4}-1}dx$ 60. $\int\frac{x^{4}-1}{x^{5}-5x+1}dx$ 61. $\int\frac{\ln x+2}{x(\ln x+1)(\ln x+3)}dx$ 
+55. $\int\frac{x^{3}-2x^{2}-3x}{x+2}dx$
 
-62. $\int \frac{2}{x(\ln x - 2)^3} dx$ 63. $\int \frac{1}{\sqrt{x^2 - 1}} dx$ 64. $\int \frac{x}{x + \sqrt{x^2 + 2}} dx$ 65. $\int x^5\sqrt{x^3 + 1} dx$ 66. $\int x^2\sqrt{1 - x^2} dx$ 
+56. $\int\frac{x+2}{x^{3}-2x^{2}-3x}dx$
 
-## Initial Value Problems
+57. $\int\frac{2^{x}-2^{-x}}{2^{x}+2^{-x}}dx$
+
+58. $\int\frac{2^{x}}{2^{2x}+2^{x}-2}dx$
+
+59. $\int\frac{1}{x^{4}-1}dx$
+
+60. $\int\frac{x^{4}-1}{x^{5}-5x+1}dx$
+
+61. $\int\frac{\ln x+2}{x(\ln x+1)(\ln x+3)}dx$
+
+62. $\int \frac{2}{x(\ln x - 2)^3} dx$
+
+63. $\int \frac{1}{\sqrt{x^2 - 1}} dx$
+
+64. $\int \frac{x}{x + \sqrt{x^2 + 2}} dx$
+
+65. $\int x^5\sqrt{x^3 + 1} dx$
+
+66. $\int x^2\sqrt{1 - x^2} dx$
+
+#### Initial Value Problems
 
 Solve the initial value problems in Exercises 67–70 for x as a function of t.
 
-67. $(t^{2}-3t+2)\frac{dx}{dt}=1$ (t>2), $x(3)=0$ 68. $(3t^{4}+4t^{2}+1)\frac{dx}{dt}=2\sqrt{3}$ , $x(1)=-\pi\sqrt{3}/4$ 69. $(t^{2}+2t)\frac{dx}{dt}=2x+2$ (t,x>0), $x(1)=1$ 70. $(t+1)\frac{dx}{dt}=x^{2}+1$ (t>-1), $x(0)=0$ 
+67. $(t^{2}-3t+2)\frac{dx}{dt}=1$ (t>2), $x(3)=0$
 
-## Applications and Examples
+68. $(3t^{4}+4t^{2}+1)\frac{dx}{dt}=2\sqrt{3}$ , $x(1)=-\pi\sqrt{3}/4$
+
+69. $(t^{2}+2t)\frac{dx}{dt}=2x+2$ (t,x>0), $x(1)=1$
+
+70. $(t+1)\frac{dx}{dt}=x^{2}+1$ (t>-1), $x(0)=0$
+
+#### Applications and Examples
 
 In Exercises 71 and 72, find the volume of the solid generated by revolving the shaded region about the indicated axis. 
 
 71. The $x$ -axis 
 
-![[79ca408e4a9cbb896e108f2e8a0885fb86c69ea733876b8995c60d221de16654.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/79ca408e4a9cbb896e108f2e8a0885fb86c69ea733876b8995c60d221de16654.jpg)
 
 
 72. The $y$ -axis 
 
-![[a733c2680a86a8d425a688bd037c898d60765859f50b7cbfd136347002c8b98b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a733c2680a86a8d425a688bd037c898d60765859f50b7cbfd136347002c8b98b.jpg)
 
 
 73. Find the length of the curve $y = \ln(1 - x^{2})$ , $0 \leq x \leq \frac{1}{2}$ . 
 
 74. Evaluate $\int \sec \theta d\theta$ by a. multiplying by $\frac{\sec \theta + \tan \theta}{\sec \theta + \tan \theta}$ and then using a $u$ -substitution b. writing the integral as $\int \frac{1}{\cos \theta} d\theta$ . Then multiply by $\frac{\cos \theta}{\cos \theta}$ , use a trigonometric identity and a $u$ -substitution, and finally integrate using partial fractions. 
 
-![[ad43258b4e85ebfe3999fef967fb0e7178e3ae5f29e7eb9276d48f506ae6af28.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ad43258b4e85ebfe3999fef967fb0e7178e3ae5f29e7eb9276d48f506ae6af28.jpg)
 
 
 T 75. Find, to two decimal places, the $x$ -coordinate of the centroid of the region in the first quadrant bounded by the $x$ -axis, the curve $y = \arctan x$ , and the line $x = \sqrt{3}$ . 
 
 T 76. Find the $x$ -coordinate of the centroid of this region to two decimal places. 
 
-![[4c9567bc334e00e1430676b862e2082dc1879e3bfe5cc3cea3ed8362ca29301b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/4c9567bc334e00e1430676b862e2082dc1879e3bfe5cc3cea3ed8362ca29301b.jpg)
 
 
 77. Social diffusion Sociologists sometimes use the phrase “social diffusion” to describe the way information spreads through a population. The information might be a rumor, a cultural fad, or news about a technical innovation. In a sufficiently large population, the number of people x who have the information is treated as a differentiable function of time t, and the rate of diffusion, dx/dt, is assumed to be proportional to the number of people who have the information times the number of people who do not. This leads to the equation 
@@ -2212,7 +2318,7 @@ where k is a constant for the reaction. Integrate both sides of this equation to
 
 In this section we discuss how to use tables and computer algebra systems (CAS) to evaluate integrals. 
 
-## Integral Tables
+### Integral Tables
 
 A Brief Table of Integrals is provided at the back of the text, after the index. (More extensive tables appear in compilations such as CRC Mathematical Tables, which contain thousands of integrals.) The integration formulas are stated in terms of constants a, b, c, m, n, and so on. These constants can usually assume any real value and need not be integers. Occasional limitations on their values are stated with the formulas. Formula 21 requires $n \neq -1$ , for example, and Formula 27 requires $n \neq -2$ . 
 
@@ -2290,7 +2396,7 @@ $$
 \begin{array}{r l} \int x \arcsin x d x & = \frac {x ^ {2}}{2} \arcsin x - \frac {1}{2} \left(\frac {1}{2} \arcsin x - \frac {1}{2} x \sqrt {1 - x ^ {2}} + C\right) \\ & = \left(\frac {x ^ {2}}{2} - \frac {1}{4}\right) \arcsin x + \frac {1}{4} x \sqrt {1 - x ^ {2}} + C ^ {\prime}. \end{array}
 $$
 
-## Reduction Formulas
+### Reduction Formulas
 
 The time required for repeated integrations by parts can sometimes be shortened by applying reduction formulas like the following. 
 
@@ -2334,7 +2440,7 @@ $$
 
 As their form suggests, reduction formulas are derived using integration by parts. (See Example 5 in Section 8.3.) 
 
-## Integration with a CAS
+### Integration with a CAS
 
 A powerful capability of computer algebra systems is their ability to integrate symbolically. This is performed with the integrate command specified by the particular system (for example, int in Maple, Integrate in Mathematica). 
 
@@ -2448,7 +2554,7 @@ differing from the Maple answer. Both answers are correct.
 
 Although a CAS is very powerful and can aid us in solving difficult problems, each CAS has its own limitations. There are even situations where a CAS may further complicate a problem (in the sense of producing an answer that is extremely difficult to use or interpret). Note, too, that neither Maple nor Mathematica returns an arbitrary constant +C. On the other hand, a little mathematical thinking on your part may reduce the problem to one that is quite easy to handle. We provide an example in Exercise 67. 
 
-## Nonelementary Integrals
+### Nonelementary Integrals
 
 Many functions have antiderivatives that cannot be expressed using the standard functions that we have encountered, such as polynomials, trigonometric functions, and exponential functions. Integrals of functions that do not have elementary antiderivatives are called nonelementary integrals. These integrals can sometimes be expressed with infinite series (Chapter 9) or approximated using numerical methods (Section 8.7). Examples of nonelementary integrals include the error function (which measures the probability of random errors) 
 
@@ -2470,9 +2576,9 @@ $$
 
 look so easy they tempt us to try them just to see how they turn out. It can be proved, however, that there is no way to express any of these integrals as finite combinations of elementary functions. The same applies to integrals that can be changed into these by substitution. The functions in these integrals all have antiderivatives, as a consequence of the Fundamental Theorem of Calculus, Part 1, because they are continuous. However, none of the antiderivatives are elementary. The integrals you are asked to evaluate in this chapter have elementary antiderivatives. 
 
-## EXERCISES 8.6
+### EXERCISES 8.6
 
-## Using Integral Tables
+#### Using Integral Tables
 
 Use the table of integrals at the back of the text to evaluate the integrals in Exercises 1–26. 
 
@@ -2480,35 +2586,35 @@ Use the table of integrals at the back of the text to evaluate the integrals in 
 
 2. $\int \frac{dx}{x\sqrt{x + 4}}$ 
 
-9. $\int x\sqrt{4x - x^2} dx$ 
-
 3. $\int\frac{xdx}{\sqrt{x-2}}$ 
 
 4. $\int \frac{x dx}{(2x + 3)^{3 / 2}}$ 
 
-11. $\int \frac{dx}{x\sqrt{7 + x^2}}$ 
+5. $\int x\sqrt{2x - 3} dx$ 
 
 6. $\int x(7x + 5)^{3 / 2}dx$ 
 
-13. $\int \frac{\sqrt{4 - x^2}}{x} dx$ 
-
-5. $\int x\sqrt{2x - 3} dx$ 
-
-15. $\int e^{2t}\cos 3tdt$ 
-
-10. $\int \frac{\sqrt{x - x^2}}{x} dx$ 
-
 7. $\int \frac{\sqrt{9 - 4x}}{x^2} dx$ 
-
-17. $\int x\arccos x dx$ 
 
 8. $\int \frac{dx}{x^2\sqrt{4x - 9}}$ 
 
+9. $\int x\sqrt{4x - x^2} dx$ 
+
+10. $\int \frac{\sqrt{x - x^2}}{x} dx$ 
+
+11. $\int \frac{dx}{x\sqrt{7 + x^2}}$ 
+
 12. $\int \frac{dx}{x\sqrt{7 - x^2}}$ 
+
+13. $\int \frac{\sqrt{4 - x^2}}{x} dx$ 
 
 14. $\int \frac{\sqrt{x^2 - 4}}{x} dx$ 
 
+15. $\int e^{2t}\cos 3tdt$ 
+
 16. $\int e^{-3t}\sin 4tdt$ 
+
+17. $\int x\arccos x dx$ 
 
 18. $\int x\arctan x dx$ 
 
@@ -2528,10 +2634,20 @@ Use the table of integrals at the back of the text to evaluate the integrals in 
 
 26. $\int \cos \frac{\theta}{2}\cos 7\theta d\theta$ 
 
-## Substitution and Integral Tables
+#### Substitution and Integral Tables
 
 In Exercises 27–40, use a substitution to change the integral into one you can find in the table. Then evaluate the integral.
-27. $\int\frac{x^{3}+x+1}{(x^{2}+1)^{2}}dx$ 28. $\int\frac{x^{2}+6x}{(x^{2}+3)^{2}}dx$ 29. $\int\arcsin\sqrt{x}dx$ 30. $\int\frac{\cos^{-1}\sqrt{x}}{\sqrt{x}}dx$ 31. $\int\frac{\sqrt{x}}{\sqrt{1-x}}dx$ 32. $\int\frac{\sqrt{2-x}}{\sqrt{x}}dx$ 
+27. $\int\frac{x^{3}+x+1}{(x^{2}+1)^{2}}dx$
+
+28. $\int\frac{x^{2}+6x}{(x^{2}+3)^{2}}dx$
+
+29. $\int\arcsin\sqrt{x}dx$
+
+30. $\int\frac{\cos^{-1}\sqrt{x}}{\sqrt{x}}dx$
+
+31. $\int\frac{\sqrt{x}}{\sqrt{1-x}}dx$
+
+32. $\int\frac{\sqrt{2-x}}{\sqrt{x}}dx$
 
 33. $\int \cot t\sqrt{1 - \sin^2t} dt, 0 < t < \pi / 2$ 
 
@@ -2545,17 +2661,47 @@ In Exercises 27–40, use a substitution to change the integral into one you can
 
 38. $\int \frac{x^2}{\sqrt{x^2 - 4x + 5}} dx$ 
 
-39. $\int \sqrt{5 - 4x - x^2} dx$ 40. $\int x^{2}\sqrt{2x - x^{2}} dx$ 
+39. $\int \sqrt{5 - 4x - x^2} dx$
+
+40. $\int x^{2}\sqrt{2x - x^{2}} dx$
 
 Using Reduction Formulas
 Use reduction formulas to evaluate the integrals in Exercises 41–50.
-41. $\int \sin^{5} 2x dx$ 42. $\int 8 \cos^{4} 2\pi t dt$ 43. $\int \sin^{2} 2\theta \cos^{3} 2\theta d\theta$ 44. $\int 2 \sin^{2} t \sec^{4} t dt$ 45. $\int 4 \tan^{3} 2x dx$ 46. $\int 8 \cot^{4} t dt$ 47. $\int 2 \sec^{3} \pi x dx$ 48. $\int 3 \sec^{4} 3x dx$ 49. $\int \csc^{5} x dx$ 50. $\int 16x^{3} (\ln x)^{2} dx$ 
+41. $\int \sin^{5} 2x dx$
+
+42. $\int 8 \cos^{4} 2\pi t dt$
+
+43. $\int \sin^{2} 2\theta \cos^{3} 2\theta d\theta$
+
+44. $\int 2 \sin^{2} t \sec^{4} t dt$
+
+45. $\int 4 \tan^{3} 2x dx$
+
+46. $\int 8 \cot^{4} t dt$
+
+47. $\int 2 \sec^{3} \pi x dx$
+
+48. $\int 3 \sec^{4} 3x dx$
+
+49. $\int \csc^{5} x dx$
+
+50. $\int 16x^{3} (\ln x)^{2} dx$
 
 Evaluate the integrals in Exercises 51–56 by making a substitution (possibly trigonometric) and then applying a reduction formula.
 
-51. $\int e^{t} \sec^{3}(e^{t}-1)dt$ 52. $\int \frac{\csc^{3}\sqrt{\theta}}{\sqrt{\theta}} d\theta$ 53. $\int_{0}^{1} 2\sqrt{x^{2}+1} dx$ 54. $\int_{0}^{\sqrt{3}/2} \frac{dy}{(1-y^{2})^{5/2}}$ 55. $\int_{1}^{2} \frac{(r^{2}-1)^{3/2}}{r} dr$ 56. $\int_{0}^{1/\sqrt{3}} \frac{dt}{(t^{2}+1)^{7/2}}$ 
+51. $\int e^{t} \sec^{3}(e^{t}-1)dt$
 
-## Applications
+52. $\int \frac{\csc^{3}\sqrt{\theta}}{\sqrt{\theta}} d\theta$
+
+53. $\int_{0}^{1} 2\sqrt{x^{2}+1} dx$
+
+54. $\int_{0}^{\sqrt{3}/2} \frac{dy}{(1-y^{2})^{5/2}}$
+
+55. $\int_{1}^{2} \frac{(r^{2}-1)^{3/2}}{r} dr$
+
+56. $\int_{0}^{1/\sqrt{3}} \frac{dt}{(t^{2}+1)^{7/2}}$
+
+#### Applications
 
 57. Surface area Find the area of the surface generated by revolving the curve $y = \sqrt{x^{2} + 2}$ , $0 \leq x \leq \sqrt{2}$ , about the x-axis. 
 
@@ -2577,7 +2723,7 @@ $$
 
 b. Evaluate the integral. 
 
-![[1562febd23cc4e296f429288b421f04fbe01c6d9a9413581e6980be7e4cbc773.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1562febd23cc4e296f429288b421f04fbe01c6d9a9413581e6980be7e4cbc773.jpg)
 
 
 63. What is the largest value that 
@@ -2656,7 +2802,7 @@ This exercise illustrates how a little mathematical ingenuity can sometimes solv
 
 The antiderivatives of some functions, like $\sin(x^{2})$ , $1/\ln x$ , and $\sqrt{1 + x^{4}}$ , have no elementary formulas. When we cannot find a workable antiderivative for a function f that we have to integrate, we can partition the interval of integration, replace f by a closely fitting polynomial on each subinterval, integrate the polynomials, and add the results to approximate the definite integral of f. This procedure is an example of numerical integration. In this section we start by revisiting the Midpoint Rule, which we studied in Section 5.2. We then study two new methods, the Trapezoidal Rule and Simpson's Rule. A key goal in our analysis is to control the possible error that is introduced when computing an approximation to an integral. 
 
-## Approximating Integrals with the Midpoint Rule
+### Approximating Integrals with the Midpoint Rule
 
 In Section 5.2 we introduced the Midpoint Rule to approximate a definite integral over an interval $[a, b]$ . The rule is based on subdividing $[a, b]$ into n equal subintervals, 
 
@@ -2680,7 +2826,7 @@ $$
 
 with $c_{k} = \frac{x_{k-1} + x_{k}}{2}$ and $x_{k} = a + k\left(\frac{b - a}{n}\right)$ . 
 
-## Trapezoidal Approximations
+### Trapezoidal Approximations
 
 The Trapezoidal Rule for the value of a definite integral is based on approximating the region between a curve and the $x$ -axis with trapezoids instead of rectangles, as in Figure 8.7. It is not necessary for the subdivision points $x_0, x_1, x_2, \ldots, x_n$ in the figure to be evenly spaced, but the resulting formula is simpler if they are. We therefore assume that the length of each subinterval is 
 
@@ -2694,7 +2840,7 @@ $$
 \Delta x \left(\frac {y _ {i - 1} + y _ {i}}{2}\right) = \frac {\Delta x}{2} (y _ {i - 1} + y _ {i}),
 $$
 
-![[f5b5649743b3eab897d52e0c1a34ce11ad2d07a17f870b38deba726fbc8d0e97.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f5b5649743b3eab897d52e0c1a34ce11ad2d07a17f870b38deba726fbc8d0e97.jpg)
 
 
 
@@ -2715,7 +2861,7 @@ $$
 
 The Trapezoidal Rule says: Use T to estimate the integral of f from a to b. 
 
-![[88c2b56995c282b5529dfa71e3c6d6457c4bb96b6acbb4080b63ffbc2c59d3ca.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/88c2b56995c282b5529dfa71e3c6d6457c4bb96b6acbb4080b63ffbc2c59d3ca.jpg)
 
 
 
@@ -2728,7 +2874,7 @@ TABLE 8.2
 
 <table><tr><td>x</td><td><eq>y = x^{2}</eq></td></tr><tr><td>1</td><td>1</td></tr><tr><td><eq>\frac{5}{4}</eq></td><td><eq>\frac{25}{16}</eq></td></tr><tr><td><eq>\frac{6}{4}</eq></td><td><eq>\frac{36}{16}</eq></td></tr><tr><td><eq>\frac{7}{4}</eq></td><td><eq>\frac{49}{16}</eq></td></tr><tr><td>2</td><td>4</td></tr></table>
 
-![[c3fbd0a1d27144539f94181f063ccd2b0f4fd64b0e0f70414f6c2308a1989a75.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c3fbd0a1d27144539f94181f063ccd2b0f4fd64b0e0f70414f6c2308a1989a75.jpg)
 
 
 
@@ -2758,7 +2904,7 @@ $$
 
 The $T$ approximation overestimates the integral by about half a percent of its true value of 7/3. The percentage error is $(2.34375 - 7/3)/(7/3) \approx 0.00446$ , or $0.446\%$ . 
 
-## Simpson's Rule: Approximations Using Parabolas
+### Simpson's Rule: Approximations Using Parabolas
 
 Another rule for approximating the definite integral of a continuous function results from using parabolas instead of the straight-line segments that produced trapezoids. As before, we partition the interval $[a, b]$ into n subintervals of equal length $h = \Delta x = (b - a)/n$ , but this time we require that n be an even number. On each consecutive pair of intervals we approximate the curve $y = f(x) \geq 0$ by a parabola, as shown in Figure 8.9. A typical parabola passes through three consecutive points $(x_{i-1}, y_{i-1})$ , $(x_i, y_i)$ , and $(x_{i+1}, y_{i+1})$ on the curve. 
 
@@ -2768,7 +2914,7 @@ $$
 y = A x ^ {2} + B x + C,
 $$
 
-![[5a89c93f660596fd28ccb71812bc055ab93c32ad7e63fec9d275ca7f155e0b7a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5a89c93f660596fd28ccb71812bc055ab93c32ad7e63fec9d275ca7f155e0b7a.jpg)
 
 
 
@@ -2811,11 +2957,11 @@ $$
 
 Computing the areas under all the parabolas and adding the results give the approximation 
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
 To know more, visit the companion Website. 
 
-## Thomas Simpson (1720–1761)
+### Thomas Simpson (1720–1761)
 
 Simpson was a successful text writer and did most of his research on probability. Simpson's rule to approximate definite integrals was developed before he was born. It is another of history's beautiful quirks that one of the ablest mathematicians of the 18th century is remembered not for his own work but for a rule that was never his, that he never claimed, and that bears his name only because he happened to mention it in one of his books. 
 
@@ -2825,7 +2971,7 @@ $$
 
 The result is known as Simpson's Rule. The function need not be positive, as in our derivation, but the number $n$ of subintervals must be even for us to apply the rule because each parabolic arc uses two subintervals. 
 
-## Simpson's Rule
+### Simpson's Rule
 
 To approximate $\int_{a}^{b}f(x)dx$ , use 
 
@@ -2859,11 +3005,11 @@ $$
 
 This estimate differs from the exact value (32) by only 1/12, a percentage error of less than three-tenths of one percent, and this was with just four subintervals. 
 
-## Error Analysis
+### Error Analysis
 
 Whenever we use an approximation technique, we must consider how accurate the approximation might be. The following theorem gives formulas for estimating the errors when using the Midpoint Rule, the Trapezoidal Rule, and Simpson's Rule. The error is the difference between the approximation obtained by using the rule and the actual value of the definite integral $\int_{a}^{b} f(x) dx$ . 
 
-## THEOREM 1—Error Estimates in the Midpoint, Trapezoidal, and Simpson's Rules
+**THEOREM 1—Error Estimates in the Midpoint, Trapezoidal, and Simpson's Rules**
 
 If $f''$ is continuous and M is any upper bound for the values of $|f''|$ on [a, b], then the error $E_{M}$ in the Midpoint Rule approximation of the integral of f from a to b for n steps satisfies the inequality 
 
@@ -3039,7 +3185,7 @@ The Trapezoidal Rule will therefore give the exact value of any integral of $f$ 
 
 Although decreasing the step size $\Delta x$ reduces the error in the Simpson and Trapezoidal approximations in theory, it may fail to do so in practice. When $\Delta x$ is very small, say $\Delta x = 10^{-8}$ , computer or calculator round-off errors in the arithmetic required to evaluate S and T may accumulate to such an extent that the error formulas no longer describe what is going on. Shrinking $\Delta x$ below a certain size can actually make things worse. You should consult a text on numerical analysis for more sophisticated methods if you are having problems with round-off error using the rules discussed in this section. 
 
-![[1d9133f6e91d0a63002dbcb654c1c035631760cbd055f8820184bd1cf9494d95.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1d9133f6e91d0a63002dbcb654c1c035631760cbd055f8820184bd1cf9494d95.jpg)
 
 
 
@@ -3056,15 +3202,15 @@ $$
 
 The volume is about (732)(1.5) = 1098 m $^{4}$ . 
 
-## EXERCISES 8.7
+### EXERCISES 8.7
 
 For some exercises, a calculator may be helpful for expressing answers in decimal form. 
 
-## Estimating Definite Integrals
+#### Estimating Definite Integrals
 
 The instructions for the integrals in Exercises 1–10 have three parts, one for the Midpoint Rule, one for the Trapezoidal Rule, and one for Simpson's Rule. 
 
-## I. Using the Midpoint Rule
+#### I. Using the Midpoint Rule
 
 a. Estimate the integral with $n = 4$ steps and find an upper bound for $|E_M|$ . 
 
@@ -3072,7 +3218,7 @@ b. Evaluate the integral directly and find $|E_M|$ .
 
 c. Use the formula $(|E_M| / (\text{true value})) \times 100$ to express $|E_M|$ as a percentage of the integral's true value. 
 
-## II. Using the Trapezoidal Rule
+#### II. Using the Trapezoidal Rule
 
 a. Estimate the integral with $n = 4$ steps and find an upper bound for $|E_T|$ . 
 
@@ -3080,7 +3226,7 @@ b. Evaluate the integral directly and find $|E_T|$ .
 
 c. Use the formula $(|E_T| / (\text{true value})) \times 100$ to express $|E_T|$ as a percentage of the integral's true value. 
 
-## III. Using Simpson's Rule
+#### III. Using Simpson's Rule
 
 a. Estimate the integral with $n = 4$ steps and find an upper bound for $|E_S|$ . 
 
@@ -3088,17 +3234,19 @@ b. Evaluate the integral directly and find $|E_S|$ .
 
 c. Use the formula $(|E_S| / (\text{true value})) \times 100$ to express $|E_S|$ as a percentage of the integral's true value. 
 
-1. $\int_{1}^{2} x dx$ 2. $\int_{1}^{3}(2x - 1)dx$ 
+1. $\int_{1}^{2} x dx$
+
+2. $\int_{1}^{3}(2x - 1)dx$
 
 3. $\int_{-1}^{1}(x^2 + 1)dx$ 
-
-5. $\int_0^2 (t^3 +t)dt$ 
 
 4. $\int_{-2}^{0}(x^2 - 1)dx$ 
 
 $$
 \int_ {1} ^ {2} \frac {1}{s ^ {2}} d s
 $$
+
+5. $\int_0^2 (t^3 +t)dt$ 
 
 6. $\int_{-1}^{1}(t^3 + 1)dt$ 
 
@@ -3112,11 +3260,13 @@ $$
 \int_ {0} ^ {1} \sin \pi t d t
 $$
 
-## Estimating the Number of Subintervals
+#### Estimating the Number of Subintervals
 
 In Exercises 11–22, estimate the minimum number of subintervals needed to approximate the integrals with an error of magnitude less than $10^{-4}$ by (a) the Trapezoidal Rule and (b) Simpson's Rule. (The integrals in Exercises 11–18 are the integrals from Exercises 1–8.) 
 
-11. $\int_1^2 x dx$ 12. $\int_1^3 (2x - 1)dx$ 
+11. $\int_1^2 x dx$
+
+12. $\int_1^3 (2x - 1)dx$
 
 13. $\int_{-1}^{1}(x^2 + 1)dx$ 
 
@@ -3126,13 +3276,19 @@ In Exercises 11–22, estimate the minimum number of subintervals needed to appr
 
 16. $\int_{-1}^{1}(t^3 + 1)dt$ 
 
-17. $\int_{1}^{2}\frac{1}{s^{2}} ds$ 18. $\int_{2}^{4}\frac{1}{(s - 1)^{2}} ds$ 
+17. $\int_{1}^{2}\frac{1}{s^{2}} ds$
 
-19. $\int_0^3\sqrt{x + 1} dx$ 20. $\int_0^3\frac{1}{\sqrt{x + 1}} dx$ 
+18. $\int_{2}^{4}\frac{1}{(s - 1)^{2}} ds$
 
-21. $\int_0^2\sin (x + 1)dx$ 22. $\int_{-1}^{1}\cos (x + \pi)dx$ 
+19. $\int_0^3\sqrt{x + 1} dx$
 
-## Estimates with Numerical Data
+20. $\int_0^3\frac{1}{\sqrt{x + 1}} dx$
+
+21. $\int_0^2\sin (x + 1)dx$
+
+22. $\int_{-1}^{1}\cos (x + \pi)dx$
+
+#### Estimates with Numerical Data
 
 23. Volume of water in a swimming pool A rectangular swimming pool is 5 m wide and 10 m long. The accompanying table shows the depth $h(x)$ of the water at 1-m intervals from one end of the pool to the other. Estimate the volume of water in the pool using the Trapezoidal Rule with n = 10 applied to the integral 
 
@@ -3148,7 +3304,7 @@ $$
 
 25. Wing design The design of a new airplane requires a gasoline tank of constant cross-sectional area in each wing. A scale drawing of a cross-section is shown here. The tank must hold 2000 kg of gasoline, which has a density of $673\mathrm{kg} / \mathrm{m}^3$ . Estimate the length of the tank by Simpson's Rule. 
 
-![[7cb0d717dc607dc7745d1c6c3dfd57fc29e8a36991c95e5694a7611f3283002b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7cb0d717dc607dc7745d1c6c3dfd57fc29e8a36991c95e5694a7611f3283002b.jpg)
 
 
 $$
@@ -3167,7 +3323,7 @@ $$
 
 <table><tr><td>Day</td><td>Oil consumption rate (liters/hour)</td></tr><tr><td>Sun</td><td>0.019</td></tr><tr><td>Mon</td><td>0.020</td></tr><tr><td>Tue</td><td>0.021</td></tr><tr><td>Wed</td><td>0.023</td></tr><tr><td>Thu</td><td>0.025</td></tr><tr><td>Fri</td><td>0.028</td></tr><tr><td>Sat</td><td>0.031</td></tr><tr><td>Sun</td><td>0.035</td></tr></table>
 
-## Theory and Examples
+#### Theory and Examples
 
 27. Usable values of the sine-integral function The sine-integral function, 
 
@@ -3185,7 +3341,7 @@ $$
 
 the continuous extension of $(\sin t)/t$ to the interval $[0, x]$ . The function has derivatives of all orders at every point of its domain. Its graph is smooth, and you can expect good results from Simpson's Rule. 
 
-![[00fe0677e3b406f987b12abe62a4b4266892fc543018a0790fb6e8e73e7875f2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/00fe0677e3b406f987b12abe62a4b4266892fc543018a0790fb6e8e73e7875f2.jpg)
 
 
 a. Use the fact that $|f^{(4)}| \leq 1$ on $[0, \pi/2]$ to give an upper bound for the error that will occur if 
@@ -3240,7 +3396,7 @@ a. Use the Trapezoidal Rule with $n = 10$ to estimate the length of the ellipse 
 
 b. Use the fact that the absolute value of the second derivative of $f(t) = \sqrt{1 - e^{2}\cos^{2}t}$ is less than 1 to find an upper bound for the error in the estimate you obtained in part (a). 
 
-## Applications
+#### Applications
 
 32. The length of one arch of the curve $y = \sin x$ is given by 
 
@@ -3260,12 +3416,12 @@ $$
 
 If the roofing is to be stamped from flat sheets by a process that does not stretch the material, how wide should the original material be? To find out, use numerical integration to approximate the length of the sine curve to two decimal places. 
 
-![[c08cb8463073dab98e973da02c17e29b26152f3a7e8fe7a867d211ee0dbf2f30.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c08cb8463073dab98e973da02c17e29b26152f3a7e8fe7a867d211ee0dbf2f30.jpg)
 
 
 34. Your engineering firm is bidding for the contract to construct the tunnel shown here. The tunnel is 90 m long and 15 m wide at the base. The cross-section is shaped like one arch of the curve $y = 7.5 \cos(\pi x / 15)$ . Upon completion, the tunnel's inside surface (excluding the roadway) will be treated with a waterproof sealer that costs $26.11 per square meter to apply. How much will it cost to apply the sealer? (Hint: Use numerical integration to find the length of the cosine curve.) 
 
-![[cf451842c5f31618c92aa45a9a201a2fe245261bdcc42339d32c3e378dac53f0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cf451842c5f31618c92aa45a9a201a2fe245261bdcc42339d32c3e378dac53f0.jpg)
 
 
 Find, to two decimal places, the areas of the surfaces generated by revolving the curves in Exercises 35 and 36 about the x-axis. 
@@ -3286,11 +3442,7 @@ For reference, arcsin 0.6 = 0.64350 to five decimal places.
 
 $$
 \pi = 4 \int_ {0} ^ {1} \frac {1}{1 + x ^ {2}} d x.
-$$
-
-39. Drug assimilation An average adult under age 60 years assimilates a 12-hour cold medicine into his or her system at a rate modeled by 
-
-$$
+39. $Drug assimilation An average adult under age 60 years assimilates a 12-hour cold medicine into his or her system at a rate modeled by$
 \frac {d y}{d t} = 6 - \ln (2 t ^ {2} - 3 t + 3),
 $$
 
@@ -3308,24 +3460,24 @@ where C is measured in grams per liter and t is the time in hours since the medi
 
 Up to now, we have required definite integrals to satisfy two properties. First, the domain of integration $[a, b]$ must be finite. Second, the range of the integrand must be finite on this domain. In practice, we may encounter problems that fail to meet one or both of these conditions. The integral for the area under the curve $y = (\ln x)/x^{2}$ from x = 1 to $x = \infty$ is an example for which the domain is infinite (Figure 8.12a). The integral for the area under the curve of $y = 1/\sqrt{x}$ between x = 0 and x = 1 is an example for which the range of the integrand is infinite (Figure 8.12b). In either case, the integrals are said to be improper and are calculated as limits. We will see in Chapter 9 that improper integrals are useful for investigating the convergence of certain infinite series. 
 
-![[e99bd4f35155456a483d6bf993922d8798ddb70bb4ee360cb3ad5cc5cbdc88c5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e99bd4f35155456a483d6bf993922d8798ddb70bb4ee360cb3ad5cc5cbdc88c5.jpg)
 
 
-![[2fd4344d77d1b6609e660fe9ab1b29e495eb28b6a69ffb7d3a519d163f0a7f12.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2fd4344d77d1b6609e660fe9ab1b29e495eb28b6a69ffb7d3a519d163f0a7f12.jpg)
 
 
 
 (b)
 
 
-![[59d5962b197a5b7041e356d8fe5023afb1f5d6f4dc31f24feb26e0f37f6b4c1f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/59d5962b197a5b7041e356d8fe5023afb1f5d6f4dc31f24feb26e0f37f6b4c1f.jpg)
 
 
 
 (a)
 
 
-![[950230c84ff108cddfdd5729306fcaa30a3158d93a87cc6463b260ee9e716065.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/950230c84ff108cddfdd5729306fcaa30a3158d93a87cc6463b260ee9e716065.jpg)
 
 
 
@@ -3344,7 +3496,7 @@ FIGURE 8.13 (a) The area in the first quadrant under the curve $y = e^{-x / 2}$ 
 FIGURE 8.12 Are the areas under these infinite curves finite? We will see that the answer is yes for both curves.
 
 
-## Infinite Limits of Integration
+### Infinite Limits of Integration
 
 Consider the infinite region (unbounded on the right) that lies under the curve $y = e^{-x/2}$ in the first quadrant (Figure 8.13a). You might think this region has infinite area, but we will see that the value is finite. We assign a value to the area in the following way. First find the area $A(b)$ of the portion of the region that is bounded on the right by x = b (Figure 8.13b). 
 
@@ -3388,14 +3540,14 @@ $$
 >
 In each case, if the limit exists and is finite, we say that the improper integral converges and that the limit is the value of the improper integral. If the limit fails to exist, the improper integral diverges. 
 
-![[a7ac856ed6853f9ed15a0dd30b07d2372e7157d04184c9907d75c3acbc15a903.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a7ac856ed6853f9ed15a0dd30b07d2372e7157d04184c9907d75c3acbc15a903.jpg)
 
 
 
 FIGURE 8.14 The area under this curve is an improper integral (Example 1).
 
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
 Lejeune Dirichlet (1805–1859) 
 
@@ -3423,7 +3575,7 @@ $$
 
 Thus, the improper integral converges and the area has finite value 1. 
 
-## **EXAMPLE 2** Evaluate
+**EXAMPLE 2** Evaluate
 
 $$
 \int_ {- \infty} ^ {\infty} \frac {d x}{1 + x ^ {2}}.
@@ -3441,7 +3593,7 @@ $$
 \begin{array}{r l}\int_ {- \infty} ^ {0} \frac {d x}{1 + x ^ {2}}&= \lim _ {a \rightarrow - \infty} \int_ {a} ^ {0} \frac {d x}{1 + x ^ {2}}\\&= \left. \lim _ {a \rightarrow - \infty} \tan^ {- 1} x \right] _ {a} ^ {0}\\&= \lim _ {a \rightarrow - \infty} (\tan^ {- 1} 0 - \tan^ {- 1} a) = 0 - \left(- \frac {\pi}{2}\right) = \frac {\pi}{2}\end{array}
 $$
 
-![[7121a0f46e2e7d584f820d945017bb37fdd9fa48ff32108c44cb846a073c0a00.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7121a0f46e2e7d584f820d945017bb37fdd9fa48ff32108c44cb846a073c0a00.jpg)
 
 
 
@@ -3490,14 +3642,14 @@ $$
 \begin{array}{r l} \int_ {1} ^ {\infty} \frac {d x}{x ^ {p}} & = \int_ {1} ^ {\infty} \frac {d x}{x} \\ & = \lim _ {b \to \infty} \int_ {1} ^ {b} \frac {d x}{x} \\ & = \lim _ {b \to \infty} \left[ \ln | x | \right] _ {1} ^ {b} \\ & = \lim _ {b \to \infty} (\ln b - \ln 1) = \infty . \end{array}
 $$
 
-![[1fa30d802830814d1d58d5bd53a909c78b91412285a5dd69b0f34f607276d1e8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1fa30d802830814d1d58d5bd53a909c78b91412285a5dd69b0f34f607276d1e8.jpg)
 
 
 
 FIGURE 8.16 The area under this curve is an example of an improper integral of the second kind.
 
 
-## Integrands with Vertical Asymptotes
+### Integrands with Vertical Asymptotes
 
 Another type of improper integral arises when the integrand has a vertical asymptote—an infinite discontinuity—at a limit of integration or at some point between the limits of integration. If the integrand f is positive over the interval of integration, we can again interpret the improper integral as the area under the graph of f and above the x-axis between the limits of integration. 
 
@@ -3543,20 +3695,20 @@ In each case, if the limit exists and is finite, we say that the improper integr
 
 In Part 3 of the definition, the integral on the left side of the equation converges if both integrals on the right side converge; otherwise, it diverges. 
 
-## **EXAMPLE 4** Investigate the convergence of
+**EXAMPLE 4** Investigate the convergence of
 
 $$
 \int_ {0} ^ {1} \frac {1}{1 - x} d x.
 $$
 
-![[0aaec1531e7f577a2bdeaa0eca55dcb0926835766cd3462e0720d49c73fd1676.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0aaec1531e7f577a2bdeaa0eca55dcb0926835766cd3462e0720d49c73fd1676.jpg)
 
 
 
 FIGURE 8.17 The area beneath the curve and above the x-axis for $[0, 1)$ is not a real number (Example 4).
 
 
-![[f3a3c4a49fe76c50708f916b19f55a6c11f2c0fa195586d01b24125e74bb7f9d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f3a3c4a49fe76c50708f916b19f55a6c11f2c0fa195586d01b24125e74bb7f9d.jpg)
 
 
 
@@ -3571,7 +3723,7 @@ $$
 
 The limit is infinite, so the integral diverges. 
 
-## **EXAMPLE 5** Evaluate
+**EXAMPLE 5** Evaluate
 
 $$
 \int_ {0} ^ {3} \frac {d x}{(x - 1) ^ {2 / 3}}.
@@ -3599,7 +3751,7 @@ $$
 \int_ {0} ^ {3} \frac {d x}{(x - 1) ^ {2 / 3}} = 3 + 3 \sqrt [ 3 ]{2}.
 $$
 
-## Improper Integrals with a CAS
+### Improper Integrals with a CAS
 
 Computer algebra systems can evaluate many convergent improper integrals. To evaluate the integral 
 
@@ -3645,14 +3797,14 @@ $$
 O u t [ 1 ] = - \frac {\pi}{2} + \operatorname{ArcTan} [ 2 ] + \operatorname{Log} [ 5 ].
 $$
 
-![[e48889a944fb60499f82237f1351c99563acfafc36f9e3a8ef3848a185f9a981.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e48889a944fb60499f82237f1351c99563acfafc36f9e3a8ef3848a185f9a981.jpg)
 
 
 
 FIGURE 8.19 The graph of $e^{-x^{2}}$ lies below the graph of $e^{-x}$ for x > 1 (Example 6a).
 
 
-## HISTORICAL BIOGRAPHY Karl Weierstrass (1815–1897)
+**HISTORICAL BIOGRAPHY Karl Weierstrass (1815–1897)**
 
 Weierstrass attended the University of Bonn to learn public administration, but he found that his passion was for mathematics. In his Berlin lectures in the 1860s, he also proved several theorems for continuous and complex functions. The standards of rigor that he set greatly affected the future of mathematics. 
 
@@ -3660,7 +3812,7 @@ To obtain a numerical result with six digits, use the command “N[%, 6]”; it 
 
 To know more, visit the companion Website. 
 
-## Tests for Convergence and Divergence
+### Tests for Convergence and Divergence
 
 When we cannot evaluate an improper integral directly, we try to determine whether it converges or diverges. If the integral diverges, that's the end of the story. If it converges, we can use numerical methods to approximate its value. The principal tests for convergence or divergence are the Direct Comparison Test and the Limit Comparison Test. 
 
@@ -3679,7 +3831,7 @@ Thus, the finite number $M = \int_{a}^{\infty} g(x) \, dx$ is an upper bound to 
 
 Although the theorem is stated for Type I improper integrals, a similar result is true for integrals of Type II as well. 
 
-## **EXAMPLE 6** These examples illustrate how we use Theorem 2.
+**EXAMPLE 6** These examples illustrate how we use Theorem 2.
 
 (a) $\int_{1}^{\infty} e^{-x^{2}} dx$ converges because $0 < e^{-x^{2}} < e^{-x}$ for every $x \geq 1$ (Figure 8.19) and 
 
@@ -3723,7 +3875,7 @@ $$
 
 but unless we do further calculations the most we can say is that the integral is some real number between 0 and $\sqrt{2\pi}$ . 
 
-## THEOREM 3—Limit Comparison Test
+**THEOREM 3—Limit Comparison Test**
 
 If the positive functions $f$ and $g$ are continuous on $[a, \infty)$ , and if 
 
@@ -3751,7 +3903,7 @@ $$
 
 converges by comparison with $\int_{1}^{\infty}\left(1 / x^{2}\right)dx$ . Find and compare the values of the two integrals. 
 
-![[3aeb3b610ef4165e04cf77c92382f256f3731f0ce470961a6f628cf201491c95.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3aeb3b610ef4165e04cf77c92382f256f3731f0ce470961a6f628cf201491c95.jpg)
 
 
 **Solution** The functions $f(x) = 1 / x^2$ and $g(x) = 1 / (1 + x^2)$ are positive and continuous on $[1, \infty)$ . Also, 
@@ -3792,61 +3944,59 @@ $$
 
 which is a positive finite limit. Therefore, $\int_{1}^{\infty}\frac{1 - e^{-x}}{x} dx$ diverges because $\int_{1}^{\infty}\frac{dx}{x}$ diverges. Approximations to the improper integral are given in Table 8.5. Note that the values of these approximations do not appear to approach a fixed finite limit as $b\to \infty$ . 
 
-## EXERCISES 8.8
+### EXERCISES 8.8
 
-## Evaluating Improper Integrals
+#### Evaluating Improper Integrals
 
 The integrals in Exercises 1–34 converge. Evaluate the integrals without using tables. 
 
-13. $\int_{-\infty}^{\infty}\frac{2xdx}{(x^2 + 1)^2}$ 
-
-14. $\int_{-\infty}^{\infty}\frac{x dx}{(x^2 + 4)^{3 / 2}}$ 
-
 1. $\int_0^\infty \frac{dx}{x^2 + 1}$ 
 
-$$
-\int_ {1} ^ {\infty} \frac {d x}{x ^ {1 . 0 0 1}}
-$$
-
-15. $\int_0^1\frac{\theta + 1}{\sqrt{\theta^2 + 2\theta}} d\theta$ 
-
-16. $\int_0^2\frac{s + 1}{\sqrt{4 - s^2}} ds$ 
+2. $\int_ {1} ^ {\infty} \frac {d x}{x ^ {1 . 0 0 1}}$
 
 3. $\int_0^1\frac{dx}{\sqrt{x}}$ 
 
 4. $\int_0^4\frac{dx}{\sqrt{4 - x}}$ 
 
-17. $\int_0^\infty \frac{dx}{(1 + x)\sqrt{x}}$ 
-
-18. $\int_{1}^{\infty}\frac{1}{x\sqrt{x^{2} - 1}} dx$ 
-
 5. $\int_{-1}^{1}\frac{dx}{x^{2 / 3}}$ 
 
 6. $\int_{-8}^{1}\frac{dx}{x^{1 / 3}}$ 
-
-19. $\int_0^\infty \frac{dv}{(1 + v^2)(1 + \tan^{-1}v)}$ 
-
-20. $\int_0^\infty \frac{16\tan^{-1}x}{1 + x^2} dx$ 
 
 7. $\int_0^1\frac{dx}{\sqrt{1 - x^2}}$ 
 
 8. $\int_0^1\frac{dr}{r^{0.999}}$ 
 
-21. $\int_{-\infty}^{0}\theta e^{\theta}d\theta$ 
-
-22. $\int_0^\infty 2e^{-\theta}\sin \theta d\theta$ 
-
 9. $\int_{-\infty}^{-2}\frac{2dx}{x^2 - 1}$ 
 
 10. $\int_{-\infty}^{2}\frac{2dx}{x^2 + 4}$ 
 
-23. $\int_{-\infty}^{0}e^{-|x|}dx$ 
-
-24. $\int_{-\infty}^{\infty} 2x e^{-x^2} dx$ 
-
 11. $\int_{2}^{\infty}\frac{2}{v^{2} - v} dv$ 
 
 12. $\int_{2}^{\infty}\frac{2dt}{t^{2} - 1}$ 
+
+13. $\int_{-\infty}^{\infty}\frac{2xdx}{(x^2 + 1)^2}$ 
+
+14. $\int_{-\infty}^{\infty}\frac{x dx}{(x^2 + 4)^{3 / 2}}$ 
+
+15. $\int_0^1\frac{\theta + 1}{\sqrt{\theta^2 + 2\theta}} d\theta$ 
+
+16. $\int_0^2\frac{s + 1}{\sqrt{4 - s^2}} ds$ 
+
+17. $\int_0^\infty \frac{dx}{(1 + x)\sqrt{x}}$ 
+
+18. $\int_{1}^{\infty}\frac{1}{x\sqrt{x^{2} - 1}} dx$ 
+
+19. $\int_0^\infty \frac{dv}{(1 + v^2)(1 + \tan^{-1}v)}$ 
+
+20. $\int_0^\infty \frac{16\tan^{-1}x}{1 + x^2} dx$ 
+
+21. $\int_{-\infty}^{0}\theta e^{\theta}d\theta$ 
+
+22. $\int_0^\infty 2e^{-\theta}\sin \theta d\theta$ 
+
+23. $\int_{-\infty}^{0}e^{-|x|}dx$ 
+
+24. $\int_{-\infty}^{\infty} 2x e^{-x^2} dx$ 
 
 25. $\int_0^1 x\ln x dx$ 
 
@@ -3856,67 +4006,33 @@ $$
 
 28. $\int_0^1\frac{4rdr}{\sqrt{1 - r^4}}$ 
 
-65. $\int_{1}^{\infty}\frac{1}{\sqrt{e^{x} - x}} dx$ 
-
-66. $\int_{1}^{\infty}\frac{1}{e^{x} - 2^{x}} dx$ 
-
 29. $\int_1^2\frac{ds}{s\sqrt{s^2 - 1}}$ 
 
 30. $\int_{2}^{4}\frac{dt}{t\sqrt{t^2 - 4}}$ 
-
-67. $\int_{-\infty}^{\infty}\frac{dx}{\sqrt{x^4 + 1}}$ 
-
-68. $\int_{-\infty}^{\infty}\frac{dx}{e^x + e^{-x}}$ 
 
 31. $\int_{-1}^{4}\frac{dx}{\sqrt{|x|}}$ 
 
 32. $\int_0^2\frac{dx}{\sqrt{|x - 1|}}$ 
 
-In Exercises 69–80, determine whether the improper integral converges or diverges. If it converges, evaluate the integral. 
-
 33. $\int_{-1}^{\infty}\frac{d\theta}{\theta^2 + 5\theta + 6}$ 
 
 34. $\int_0^\infty \frac{dx}{(x + 1)(x^2 + 1)}$ 
 
-69. $\int_0^1\frac{1}{x\sqrt{x}} dx$ 
-
-70. $\int_{2}^{\infty}\frac{1}{x\sqrt{x}} dx$ 
-
 Testing for Convergence 
 
-71. $\int_0^{32}\frac{1}{\sqrt[5]{x}} dx$ 
-
-72. $\int_{1}^{\infty}\frac{1}{\sqrt[5]{x}} dx$ 
-
 In Exercises 35–68, use integration, the Direct Comparison Test, or the Limit Comparison Test to test the integrals for convergence. If more than one method applies, use whatever method you prefer. 
-
-73. $\int_3^\infty \frac{1}{x^4} dx$ 
-
-74. $\int_{-2}^{1}\frac{1}{x^4} dx$ 
 
 35. $\int_{1 / 2}^{2}\frac{dx}{x\ln x}$ 
 
 36. $\int_{-1}^{1}\frac{d\theta}{\theta^2 - 2\theta}$ 
 
-75. $\int_0^\infty x^2 e^{x^3}dx$ 
-
-76. $\int_{-\infty}^{0} x^2 e^{x^3} dx$ 
-
 37. $\int_{1 / 2}^{\infty}\frac{dx}{x(\ln x)^{3}}$ 
 
 38. $\int_0^\infty \frac{d\theta}{\theta^2 - 1}$ 
 
-77. $\int_{-3}^{0}\frac{1}{x^2 + 3x} dx$ 
-
-78. $\int_{1}^{\infty}\frac{1}{x^{2} + 3x} dx$ 
-
 39. $\int_0^{\pi /2}\tan \theta d\theta$ 
 
 40. $\int_0^{\pi /2}\cot \theta d\theta$ 
-
-79. $\int_{-\infty}^{4}\frac{x}{(x^2 + 9)^{5 / 2}} dx$ 
-
-80. $\int_{-\infty}^{4}\frac{x}{(x^2 + 9)^{2 / 5}} dx$ 
 
 41. $\int_0^1\frac{\ln x}{x^2} dx$ 
 
@@ -3926,15 +4042,11 @@ Theory and Examples
 
 43. $\int_0^{\ln 2}x^{-2}e^{-1 / x}dx$ 
 
-81. Find the values of $p$ for which each integral converges. a. $\int_{1}^{2}\frac{dx}{x(\ln x)^p}$ b. $\int_{2}^{\infty}\frac{dx}{x(\ln x)^p}$ 
-
 44. $\int_0^1\frac{e^{-\sqrt{x}}}{\sqrt{x}} dx$ 
 
 45. $\int_0^\pi \frac{dt}{\sqrt{t} + \sin t}$ 
 
 46. $\int_0^1\frac{dt}{t - \sin t}$ (Hint: $t\geq \sin t$ for $t\geq 0$ ) 
-
-82. $\int_{-\infty}^{\infty}f(x)dx$ may not equal $\lim_{b\to \infty}\int_{-b}^{b}f(x)dx.$ Show that $\int_0^\infty \frac{2xdx}{x^2 + 1}$ 
 
 47. $\int_0^2\frac{dx}{1 - x^2}$ 
 
@@ -3980,9 +4092,47 @@ Exercises 83–86 are about the infinite region in the first quadrant between th
 
 62. $\int_{2}^{\infty}\frac{1}{\ln x} dx$ 
 
+63. $\int_1^\infty \frac{e^x}{x} dx$ 
+
 64. $\int_{e^e}^{\infty}\ln (\ln x)dx$ 
 
-63. $\int_1^\infty \frac{e^x}{x} dx$ 
+65. $\int_{1}^{\infty}\frac{1}{\sqrt{e^{x} - x}} dx$ 
+
+66. $\int_{1}^{\infty}\frac{1}{e^{x} - 2^{x}} dx$ 
+
+67. $\int_{-\infty}^{\infty}\frac{dx}{\sqrt{x^4 + 1}}$ 
+
+68. $\int_{-\infty}^{\infty}\frac{dx}{e^x + e^{-x}}$ 
+
+In Exercises 69–80, determine whether the improper integral converges or diverges. If it converges, evaluate the integral. 
+
+69. $\int_0^1\frac{1}{x\sqrt{x}} dx$ 
+
+70. $\int_{2}^{\infty}\frac{1}{x\sqrt{x}} dx$ 
+
+71. $\int_0^{32}\frac{1}{\sqrt[5]{x}} dx$ 
+
+72. $\int_{1}^{\infty}\frac{1}{\sqrt[5]{x}} dx$ 
+
+73. $\int_3^\infty \frac{1}{x^4} dx$ 
+
+74. $\int_{-2}^{1}\frac{1}{x^4} dx$ 
+
+75. $\int_0^\infty x^2 e^{x^3}dx$ 
+
+76. $\int_{-\infty}^{0} x^2 e^{x^3} dx$ 
+
+77. $\int_{-3}^{0}\frac{1}{x^2 + 3x} dx$ 
+
+78. $\int_{1}^{\infty}\frac{1}{x^{2} + 3x} dx$ 
+
+79. $\int_{-\infty}^{4}\frac{x}{(x^2 + 9)^{5 / 2}} dx$ 
+
+80. $\int_{-\infty}^{4}\frac{x}{(x^2 + 9)^{2 / 5}} dx$ 
+
+81. Find the values of $p$ for which each integral converges. a. $\int_{1}^{2}\frac{dx}{x(\ln x)^p}$ b. $\int_{2}^{\infty}\frac{dx}{x(\ln x)^p}$ 
+
+82. $\int_{-\infty}^{\infty}f(x)dx$ may not equal $\lim_{b\to \infty}\int_{-b}^{b}f(x)dx.$ Show that $\int_0^\infty \frac{2xdx}{x^2 + 1}$ 
 
 83. Find the area of the region. 
 
@@ -4046,7 +4196,7 @@ $$
 \int_ {1} ^ {b} 2 \pi \frac {1}{x} \sqrt {1 + \frac {1}{x ^ {4}}} d x > 2 \pi \int_ {1} ^ {b} \frac {1}{x} d x.
 $$
 
-![[eaa57de9de9885665c8fcabfa632ad9d13b1be94214b78a2d2c122363f911217.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/eaa57de9de9885665c8fcabfa632ad9d13b1be94214b78a2d2c122363f911217.jpg)
 
 
 However, the integral 
@@ -4149,7 +4299,7 @@ $$
 
 when the integrals involved converge. 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 99–102, use a CAS to explore the integrals for various values of p (include noninteger values). For what values of p does the 
 
@@ -4163,7 +4313,9 @@ integral converge? What is the value of the integral when it does converge? Plot
 
 Use a CAS to evaluate the integrals. 
 
-103. $\int_0^{2 / \pi}\sin \frac{1}{x} dx$ 104. $\int_0^{2 / \pi}x\sin \frac{1}{x} dx$ 
+103. $\int_0^{2 / \pi}\sin \frac{1}{x} dx$
+
+104. $\int_0^{2 / \pi}x\sin \frac{1}{x} dx$
 
 ## CHAPTER 8 Questions to Guide Your Review
 
@@ -4221,7 +4373,7 @@ What do you do if the degree of $f$ is not less than the degree of $g$ ?
 
 ## CHAPTER 8 Practice Exercises
 
-## Integration by Parts
+### Integration by Parts
 
 Evaluate the integrals in Exercises 1–8 using integration by parts. 
 
@@ -4241,7 +4393,7 @@ Evaluate the integrals in Exercises 1–8 using integration by parts.
 
 8. $\int x\sin x\cos xdx$ 
 
-## Partial Fractions
+### Partial Fractions
 
 Evaluate the integrals in Exercises 9–28. It may be necessary to use a substitution first. 
 
@@ -4300,7 +4452,13 @@ $$
 $$
 
 Evaluate the integrals in Exercises 33–36.
-33. $\int\frac{xdx}{9-x^{2}}$ 34. $\int\frac{dx}{x(9-x^{2})}$ 35. $\int\frac{dx}{9-x^{2}}$ 36. $\int\frac{dx}{\sqrt{9-x^{2}}}$ 
+33. $\int\frac{xdx}{9-x^{2}}$
+
+34. $\int\frac{dx}{x(9-x^{2})}$
+
+35. $\int\frac{dx}{9-x^{2}}$
+
+36. $\int\frac{dx}{\sqrt{9-x^{2}}}$
 
 Trigonometric Integrals 
 
@@ -4376,7 +4534,7 @@ b. If the automobile covered 60 km in the hour, what was its fuel efficiency (in
 
 52. A new parking lot To meet the demand for parking, your town has allocated the area shown here. As the town engineer, you have been asked by the town council to find out if the lot can be built for $11,000. The cost to clear the land will be $1.00 a square meter, and the lot will cost $20.00 a square meter to pave. Use Simpson's Rule to find out if the job can be done for $11,000. 
 
-![[890a410dbfe58f06dca12d2e0d50cff05d59d687e072c8656c8a37595d4747c2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/890a410dbfe58f06dca12d2e0d50cff05d59d687e072c8656c8a37595d4747c2.jpg)
 
 
 Improper Integrals 
@@ -4385,21 +4543,21 @@ Evaluate the improper integrals in Exercises 53–62.
 
 53. $\int_0^3\frac{dx}{\sqrt{9 - x^2}}$ 
 
-55. $\int_0^2\frac{dy}{(y - 1)^{2 / 3}}$ 
-
 54. $\int_0^1\ln x dx$ 
 
-57. $\int_{3}^{\infty}\frac{2du}{u^{2} - 2u}$ 
+55. $\int_0^2\frac{dy}{(y - 1)^{2 / 3}}$ 
 
 56. $\int_{-2}^{0}\frac{d\theta}{(\theta + 1)^{3 / 5}}$ 
+
+57. $\int_{3}^{\infty}\frac{2du}{u^{2} - 2u}$ 
 
 58. $\int_1^\infty \frac{3v - 1}{4v^3 - v^2} dv$ 
 
 59. $\int_0^\infty x^2 e^{-x}dx$ 
 
-61. $\int_{-\infty}^{\infty}\frac{dx}{4x^2 + 9}$ 
-
 60. $\int_{-\infty}^{0}xe^{3x}dx$ 
+
+61. $\int_{-\infty}^{\infty}\frac{dx}{4x^2 + 9}$ 
 
 62. $\int_{-\infty}^{\infty}\frac{4dx}{x^2 + 16}$ 
 
@@ -4407,9 +4565,15 @@ Which of the improper integrals in Exercises 63–68 converge and which diverge?
 
 63. $\int_{6}^{\infty}\frac{d\theta}{\sqrt{\theta^{2} + 1}}$ 
 
+64. $\int_0^\infty e^{-u}\cos udu$ 
+
 65. $\int_{1}^{\infty}\frac{\ln z}{z} dz$ 
 
+66. $\int_1^\infty \frac{e^{-t}}{\sqrt{t}} dt$ 
+
 67. $\int_{-\infty}^{\infty}\frac{2dx}{e^{x} + e^{-x}}$ 
+
+68. $\int_{-\infty}^{\infty}\frac{dx}{x^2(1 + e^x)}$ 
 
 Assorted Integrations 
 
@@ -4417,75 +4581,69 @@ Evaluate the integrals in Exercises 69–134. The integrals are listed in random
 
 69. $\int xe^{2x}dx$ 
 
-71. $\int (\tan^2 x + \sec^2 x)dx$ 
-
-73. $\int x\sec^2 x dx$ 
-
-75. $\int \sin x\cos^2 x dx$ 
-
-77. $\int_{-1}^{0}\frac{e^x}{e^x + e^{-x}} dx$ 
-
-79. $\int \frac{x + 1}{x^4 - x^3} dx$ 
-
-81. $\int \frac{e^x + e^{3x}}{e^{2x}} dx$ 
-
-83. $\int_0^{\pi /3}\tan^3 x\sec^2 xdx$ 
-
-85. $\int_0^3 (x + 2)\sqrt{x + 1} dx$ 
-
-87. $\int \cot x\csc^3 x dx$ 
-
-89. $\int \frac{x dx}{1 + \sqrt{x}}$ 
-
-91. $\int \sqrt{2x - x^2} dx$ 
-
-93. $\int \frac{2 - \cos x + \sin x}{\sin^2x} dx$ 
-
-95. $\int \frac{9dv}{81 - v^4}$ 
-
-97. $\int \theta \cos (2\theta +1)d\theta$ 
-
-99. $\int \frac{\sin 2\theta d\theta}{(1 + \cos 2\theta)^2}$ 
-
-101. $\int \frac{x dx}{\sqrt{2 - x}}$ 
-
-64. $\int_0^\infty e^{-u}\cos udu$ 
-
-66. $\int_1^\infty \frac{e^{-t}}{\sqrt{t}} dt$ 
-
-68. $\int_{-\infty}^{\infty}\frac{dx}{x^2(1 + e^x)}$ 
-
 70. $\int_0^1 x^2 e^{x^3}dx$ 
+
+71. $\int (\tan^2 x + \sec^2 x)dx$ 
 
 72. $\int_0^{\pi /4}\cos^2 2x dx$ 
 
+73. $\int x\sec^2 x dx$ 
+
 74. $\int x\sec^2 (x^2)dx$ 
+
+75. $\int \sin x\cos^2 x dx$ 
 
 76. $\int \sin 2x\sin (\cos 2x)dx$ 
 
+77. $\int_{-1}^{0}\frac{e^x}{e^x + e^{-x}} dx$ 
+
 78. $\int (e^{2x} + e^{-x})^2 dx$ 
+
+79. $\int \frac{x + 1}{x^4 - x^3} dx$ 
 
 80. $\int \frac{e^x + 1}{e^x(e^{2x} - 4)} dx$ 
 
+81. $\int \frac{e^x + e^{3x}}{e^{2x}} dx$ 
+
 82. $\int (e^x - e^{-x})(e^x + e^{-x})^3 dx$ 
+
+83. $\int_0^{\pi /3}\tan^3 x\sec^2 xdx$ 
 
 84. $\int \tan^4 x\sec^4 xdx$ 
 
+85. $\int_0^3 (x + 2)\sqrt{x + 1} dx$ 
+
 86. $\int (x + 1)\sqrt{x^2 + 2x} dx$ 
+
+87. $\int \cot x\csc^3 x dx$ 
 
 88. $\int \sin x(\tan x - \cot x)^2 dx$ 
 
+89. $\int \frac{x dx}{1 + \sqrt{x}}$ 
+
 90. $\int \frac{x^3 + 2}{4 - x^2} dx$ 
+
+91. $\int \sqrt{2x - x^2} dx$ 
 
 92. $\int \frac{dx}{\sqrt{-2x - x^2}}$ 
 
+93. $\int \frac{2 - \cos x + \sin x}{\sin^2x} dx$ 
+
 94. $\int \sin^2\theta \cos^5\theta d\theta$ 
+
+95. $\int \frac{9dv}{81 - v^4}$ 
 
 96. $\int_{2}^{\infty}\frac{dx}{(x - 1)^{2}}$ 
 
+97. $\int \theta \cos (2\theta +1)d\theta$ 
+
 98. $\int \frac{x^3 dx}{x^2 - 2x + 1}$ 
 
+99. $\int \frac{\sin 2\theta d\theta}{(1 + \cos 2\theta)^2}$ 
+
 100. $\int_{\pi /4}^{\pi /2}\sqrt{1 + \cos 4x} dx$ 
+
+101. $\int \frac{x dx}{\sqrt{2 - x}}$ 
 
 102. $\int \frac{\sqrt{1 - v^2}}{v^2} dv$ 
 
@@ -4497,55 +4655,55 @@ Evaluate the integrals in Exercises 69–134. The integrals are listed in random
 
 106. $\int x^{2}(x - 1)^{1 / 3}dx$ 
 
-108. $\int \frac{\arctan x}{x^2} dx$ 
-
 107. $\int \frac{tdt}{\sqrt{9 - 4t^2}}$ 
 
-110. $\int \tan^3 t dt$ 
+108. $\int \frac{\arctan x}{x^2} dx$ 
 
 109. $\int \frac{e^t dt}{e^{2t} + 3e^t + 2}$ 
 
-112. $\int y^{3 / 2}(\ln y)^{2}dy$ 
-
-114. $\int e^{\theta}\sqrt{3 + 4e^{\theta}} d\theta$ 
-
-116. $\int \frac{dv}{\sqrt{e^{2v} - 1}}$ 
+110. $\int \tan^3 t dt$ 
 
 111. $\int_1^\infty \frac{\ln y}{y^3} dy$ 
 
-123. $\int \sqrt{x} \cdot \sqrt{1 + \sqrt{x}} dx$ 
-
-118. $\int \frac{4x^3 - 20x}{x^4 - 10x^2 + 9} dx$ 
-
-125. $\int \frac{1}{\sqrt{x} \cdot \sqrt{1 + x}} dx$ 
+112. $\int y^{3 / 2}(\ln y)^{2}dy$ 
 
 113. $\int e^{\ln \sqrt{x}}dx$ 
 
-120. $\int \frac{x^2}{1 + x^3} dx$ 
+114. $\int e^{\theta}\sqrt{3 + 4e^{\theta}} d\theta$ 
 
 115. $\int \frac{\sin 5tdt}{1 + (\cos 5t)^2}$ 
 
-119. $\int \frac{x^3}{1 + x^2} dx$ 
-
-121. $\int \frac{1 + x^2}{1 + x^3} dx$ 
-
-127. $\int \frac{\ln x}{x + x\ln x} dx$ 
-
-122. $\int \frac{1 + x^2}{(1 + x)^3} dx$ 
+116. $\int \frac{dv}{\sqrt{e^{2v} - 1}}$ 
 
 117. $\int \frac{dr}{1 + \sqrt{r}}$ 
 
-129. $\int \frac{x^{\ln x}\ln x}{x} dx$ 
+118. $\int \frac{4x^3 - 20x}{x^4 - 10x^2 + 9} dx$ 
+
+119. $\int \frac{x^3}{1 + x^2} dx$ 
+
+120. $\int \frac{x^2}{1 + x^3} dx$ 
+
+121. $\int \frac{1 + x^2}{1 + x^3} dx$ 
+
+122. $\int \frac{1 + x^2}{(1 + x)^3} dx$ 
+
+123. $\int \sqrt{x} \cdot \sqrt{1 + \sqrt{x}} dx$ 
 
 124. $\int \sqrt{1 + \sqrt{1 + x}} dx$ 
 
+125. $\int \frac{1}{\sqrt{x} \cdot \sqrt{1 + x}} dx$ 
+
 126. $\int_0^{1 / 2}\sqrt{1 + \sqrt{1 - x^2}} dx$ 
+
+127. $\int \frac{\ln x}{x + x\ln x} dx$ 
 
 128. $\int \frac{1}{x\cdot\ln x\cdot\ln(\ln x)} dx$ 
 
-131. $\int \frac{1}{x\sqrt{1 - x^4}} dx$ 
+129. $\int \frac{x^{\ln x}\ln x}{x} dx$ 
 
 130. $\int (\ln x)^{\ln x}\left[\frac{1}{x} +\frac{\ln(\ln x)}{x}\right]dx$ 
+
+131. $\int \frac{1}{x\sqrt{1 - x^4}} dx$ 
 
 132. $\int \frac{\sqrt{1 - x}}{x} dx$ 
 
@@ -4561,7 +4719,7 @@ b. By showing that $\int_0^a f(x)dx = \int_0^a f(a - x)dx$ , then using this res
 
 ## CHAPTER 8 Additional and Advanced Exercises
 
-## Evaluating Integrals
+### Evaluating Integrals
 
 Evaluate the integrals in Exercises 1–6. 
 
@@ -4569,18 +4727,26 @@ Evaluate the integrals in Exercises 1–6.
 
 2. $\int\frac{dx}{x(x+1)(x+2)\cdots(x+m)}$ 
 
-3. $\int x\arcsin x dx$ 4. $\int \sin^{-1}\sqrt{y} dy$ 
+3. $\int x\arcsin x dx$
 
-5. $\int \frac{dt}{t - \sqrt{1 - t^2}}$ 6. $\int \frac{dx}{x^4 + 4}$ 
+4. $\int \sin^{-1}\sqrt{y} dy$
+
+5. $\int \frac{dt}{t - \sqrt{1 - t^2}}$
+
+6. $\int \frac{dx}{x^4 + 4}$
 
 Evaluate the limits in Exercise 7 and 8.  
-7. $\lim_{x\to \infty}\int_{-x}^{x}\sin tdt$ 8. $\lim_{x\to 0^{+}}x\int_{x}^{1}\frac{\cos t}{t^2} dt$ 
+7. $\lim_{x\to \infty}\int_{-x}^{x}\sin tdt$
+
+8. $\lim_{x\to 0^{+}}x\int_{x}^{1}\frac{\cos t}{t^2} dt$
 
 Evaluate the limits in Exercise 9 and 10 by identifying them with definite integrals and evaluating the integrals. 
 
-9. $\lim_{n\to \infty}\sum_{k = 1}^{n}\ln \sqrt[n]{1 + \frac{k}{n}}$ 10. $\lim_{n\to \infty}\sum_{k = 0}^{n - 1}\frac{1}{\sqrt{n^2 - k^2}}$ 
+9. $\lim_{n\to \infty}\sum_{k = 1}^{n}\ln \sqrt[n]{1 + \frac{k}{n}}$
 
-## Applications
+10. $\lim_{n\to \infty}\sum_{k = 0}^{n - 1}\frac{1}{\sqrt{n^2 - k^2}}$
+
+### Applications
 
 11. Finding arc length Find the length of the curve 
 
@@ -4618,7 +4784,7 @@ a. Show that $f$ is continuous at $x = 0$ .
 
 b. Find the volume of the solid. 
 
-![[7b62500d047346d2c994a2699eaef78ff6181b9c7bb88aaa65903c2dce27ec89.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7b62500d047346d2c994a2699eaef78ff6181b9c7bb88aaa65903c2dce27ec89.jpg)
 
 
 20. Finding volume The infinite region bounded by the coordinate axes and the curve $y = -\ln x$ in the first quadrant is revolved about the x-axis to generate a solid. Find the volume of the solid. 
@@ -4633,7 +4799,7 @@ b. Find the volume of the solid.
 
 25. The surface generated by an astroid The graph of the equation $x^{2/3} + y^{2/3} = 1$ is an astroid (see accompanying figure). Find the area of the surface generated by revolving the curve about the $x$ -axis. 
 
-![[3eba35761c271e32968cee4679ac141d0159753dcdcd8350c01cb9dcfe960be8.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3eba35761c271e32968cee4679ac141d0159753dcdcd8350c01cb9dcfe960be8.jpg)
 
 
 26. Length of a curve Find the length of the curve 
@@ -4684,7 +4850,7 @@ reduces the problem of integrating a rational expression in $\sin x$ and $\cos x
 
 From the accompanying figure 
 
-![[275be84e50a4a75622fef3e371ab31d53dd7b6e4bb60dd2bfbf0563cdd8466c9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/275be84e50a4a75622fef3e371ab31d53dd7b6e4bb60dd2bfbf0563cdd8466c9.jpg)
 
 
 we can read the relation 
@@ -4742,7 +4908,9 @@ Use the substitutions in Equations (1)-(4) to evaluate the integrals in Exercise
 40. $\int \frac{\cos t dt}{1 - \cos t}$ 
 
 Use the substitution $z = \tan (\theta / 2)$ to evaluate the integrals in Exercises 41 and 42.  
-41. $\int \sec \theta d\theta$ 42. $\int \csc \theta d\theta$ 
+41. $\int \sec \theta d\theta$
+
+42. $\int \csc \theta d\theta$
 
 The Gamma Function and Stirling's Formula 
 
@@ -4754,7 +4922,7 @@ $$
 
 For each positive x, the number $\Gamma(x)$ is the integral of $t^{x-1}e^{-t}$ with respect to t from 0 to $\infty$ . Figure 8.21 shows the graph of $\Gamma$ near the origin. You will see how to calculate $\Gamma(1/2)$ if you do Additional Exercise 23 in Chapter 14. 
 
-![[05bcd5d26f3481a05c8b0af935aad6ff2dd25a923da09153ab83d12b1de149a4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/05bcd5d26f3481a05c8b0af935aad6ff2dd25a923da09153ab83d12b1de149a4.jpg)
 
 
 
@@ -4823,7 +4991,7 @@ Compare the values given for 10! by your calculator, Stirling's approximation, a
 
 ## CHAPTER 8 Technology Application Projects
 
-## Mathematica/Maple Projects
+### Mathematica/Maple Projects
 
 Projects can be found within MyLab Math. 
 
@@ -4844,12 +5012,12 @@ Part VI: Simpson's Rule approximations.
 - Computing Probabilities with Improper Integrals
 More explorations of the Monte Carlo method for approximating definite integrals. 
 
-![[40767cd4cb95a83de662e38e9542e96f6a2f051ba0c639a6b96cf3e8655fc64c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/40767cd4cb95a83de662e38e9542e96f6a2f051ba0c639a6b96cf3e8655fc64c.jpg)
 
 
 Infinite Sequences and Series 
 
-![[6a747227a0cafa8b90e315d71cea77cf99e286903667465d76b57f4e0f6e55b9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/6a747227a0cafa8b90e315d71cea77cf99e286903667465d76b57f4e0f6e55b9.jpg)
 
 
 OVERVIEW In this chapter we introduce the topic of infinite series. Such series give us precise ways to express many numbers and functions, both familiar and new, as arithmetic sums with infinitely many terms. For example, we will learn that 

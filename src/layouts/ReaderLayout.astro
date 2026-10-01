@@ -39,6 +39,10 @@ const outline = headings.filter(({ depth }) => depth === 2 || depth === 3);
 
         <meta name="description" content={`${bookTitle} · ${title}`} />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
         <title>{title} · {bookTitle}</title>
     </head>
 
@@ -48,20 +52,28 @@ const outline = headings.filter(({ depth }) => depth === 2 || depth === 3);
     >
         <div class="reading-progress" aria-hidden="true"><span></span></div>
 
+        <header class="site-nav">
+            <div class="nav-inner">
+                <a class="site-brand" href="/" title="返回书架">{bookTitle}</a>
+                <nav class="top-links" aria-label="主导航">
+                    <button class="chapter-toggle" type="button" aria-label="收起章节目录" aria-expanded="true" aria-controls="chapter-sidebar" data-chapter-toggle>章节目录</button>
+                    <button class="outline-toggle" type="button" aria-label="打开本章大纲" aria-expanded="false" aria-controls="chapter-outline" data-outline-toggle>本章大纲</button>
+                </nav>
+            </div>
+        </header>
+
         <div class="reader-backdrop" data-reader-backdrop></div>
 
-        <div class="reader">
-            <aside class="reader-sidebar" aria-label="章节目录">
-                <header class="sidebar-header">
-                    <a class="shelf-link" href="/">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
-                        <span>返回书架</span>
-                    </a>
-                    <p>{bookTitle}</p>
-                </header>
+        <button class="sidebar-edge-toggle" type="button" aria-label="收起章节目录" aria-expanded="true" aria-controls="chapter-sidebar" data-sidebar-edge-toggle>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12 4-6 6 6 6" /></svg>
+        </button>
+        <button class="outline-edge-toggle" type="button" aria-label="收起本章大纲" aria-expanded="true" aria-controls="chapter-outline" data-outline-edge-toggle>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 4 6 6-6 6" /></svg>
+        </button>
 
+        <div class="reader">
+            <aside class="reader-sidebar" id="chapter-sidebar" aria-label="章节目录" data-chapter-sidebar>
                 <nav class="chapter-nav">
-                    <p class="nav-label">目录</p>
                     <ol>
                         {
                             chapters.map((chapter, index) => (
@@ -81,20 +93,17 @@ const outline = headings.filter(({ depth }) => depth === 2 || depth === 3);
                 </nav>
             </aside>
 
-            <button class="chapter-toggle" type="button" aria-label="收起章节目录" aria-expanded="true" data-chapter-toggle>
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
-            </button>
-
             <main class="reader-main">
+                <div class="book-context"><a href="/">书架</a><span>/</span><span>{bookTitle}</span></div>
                 <article class="reader-content">
                     <slot />
                 </article>
             </main>
 
-            <aside class="reader-outline" aria-label="本章大纲">
+            <aside class="reader-outline" id="chapter-outline" aria-label="本章大纲" data-chapter-outline>
                 <div class="outline-inner">
                     <div class="outline-heading">
-                        <span>本章大纲</span>
+                        <span>本章目录</span>
                         <strong data-progress-label>0%</strong>
                     </div>
                     <nav>
@@ -111,56 +120,100 @@ const outline = headings.filter(({ depth }) => depth === 2 || depth === 3);
                 </div>
             </aside>
 
-            <button class="outline-toggle" type="button" aria-label="打开本章大纲" aria-expanded="false" data-outline-toggle>
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01" /></svg>
-                <span data-progress-label>0%</span>
-            </button>
         </div>
 
         <script is:inline>
             (() => {
+                document.querySelectorAll(".reader-content p").forEach((paragraph) => {
+                    if (/^FIGURE\b/.test(paragraph.textContent?.trimStart() ?? "")) {
+                        paragraph.classList.add("book-figure-caption");
+                    }
+                });
+
                 const body = document.body;
                 const chapterToggle = document.querySelector("[data-chapter-toggle]");
+                const edgeToggle = document.querySelector("[data-sidebar-edge-toggle]");
                 const outlineToggle = document.querySelector("[data-outline-toggle]");
+                const outlineEdgeToggle = document.querySelector("[data-outline-edge-toggle]");
+                const chapterSidebar = document.querySelector("[data-chapter-sidebar]");
+                const chapterOutline = document.querySelector("[data-chapter-outline]");
                 const backdrop = document.querySelector("[data-reader-backdrop]");
-                const desktop = window.matchMedia("(min-width: 901px)");
+                const desktopNav = window.matchMedia("(min-width: 761px)");
+                const outlineDrawer = window.matchMedia("(max-width: 1100px)");
+                const storageKey = "reader-chapter-sidebar-collapsed";
+                const savedCollapsed = localStorage.getItem(storageKey) === "true";
 
                 const setChapterState = (open) => {
-                    if (desktop.matches) {
+                    if (desktopNav.matches) {
                         body.dataset.navCollapsed = String(!open);
-                        localStorage.setItem("reader-nav-collapsed", String(!open));
+                        localStorage.setItem(storageKey, String(!open));
                     } else {
                         body.dataset.mobileNavOpen = String(open);
                     }
-                    chapterToggle?.setAttribute("aria-expanded", String(open));
-                    chapterToggle?.setAttribute("aria-label", open ? "收起章节目录" : "展开章节目录");
+                    for (const toggle of [chapterToggle, edgeToggle]) {
+                        toggle?.setAttribute("aria-expanded", String(open));
+                        toggle?.setAttribute("aria-label", open ? "收起章节目录" : "展开章节目录");
+                    }
+                    if (chapterSidebar) chapterSidebar.inert = !open;
                 };
 
-                const initialCollapsed = localStorage.getItem("reader-nav-collapsed") === "true";
-                setChapterState(desktop.matches ? !initialCollapsed : false);
-
-                chapterToggle?.addEventListener("click", () => {
-                    const open = desktop.matches
-                        ? body.dataset.navCollapsed === "true"
-                        : body.dataset.mobileNavOpen !== "true";
-                    setChapterState(open);
-                });
+                const setOutlineState = (open) => {
+                    const visible = outlineDrawer.matches ? open : true;
+                    body.dataset.outlineOpen = String(outlineDrawer.matches && visible);
+                    for (const toggle of [outlineToggle, outlineEdgeToggle]) {
+                        toggle?.setAttribute("aria-expanded", String(visible));
+                        toggle?.setAttribute("aria-label", visible ? "收起本章大纲" : "展开本章大纲");
+                    }
+                    if (chapterOutline) chapterOutline.inert = !visible;
+                };
 
                 const closeDrawers = () => {
                     body.dataset.mobileNavOpen = "false";
                     body.dataset.outlineOpen = "false";
-                    outlineToggle?.setAttribute("aria-expanded", "false");
+                    const chapterOpen = desktopNav.matches && body.dataset.navCollapsed !== "true";
+                    for (const toggle of [chapterToggle, edgeToggle]) {
+                        toggle?.setAttribute("aria-expanded", String(chapterOpen));
+                        toggle?.setAttribute("aria-label", chapterOpen ? "收起章节目录" : "展开章节目录");
+                    }
+                    const outlineOpen = !outlineDrawer.matches;
+                    for (const toggle of [outlineToggle, outlineEdgeToggle]) {
+                        toggle?.setAttribute("aria-expanded", String(outlineOpen));
+                        toggle?.setAttribute("aria-label", outlineOpen ? "收起本章大纲" : "展开本章大纲");
+                    }
+                    if (chapterSidebar) chapterSidebar.inert = !desktopNav.matches || body.dataset.navCollapsed === "true";
+                    if (chapterOutline) chapterOutline.inert = !outlineOpen;
                 };
 
-                outlineToggle?.addEventListener("click", () => {
+                setChapterState(desktopNav.matches ? !savedCollapsed : false);
+                setOutlineState(false);
+                closeDrawers();
+
+                const toggleChapters = () => {
+                    const open = desktopNav.matches
+                        ? body.dataset.navCollapsed === "true"
+                        : body.dataset.mobileNavOpen !== "true";
+                    closeDrawers();
+                    setChapterState(open);
+                };
+                chapterToggle?.addEventListener("click", toggleChapters);
+                edgeToggle?.addEventListener("click", toggleChapters);
+
+                const toggleOutline = () => {
                     const open = body.dataset.outlineOpen !== "true";
-                    body.dataset.outlineOpen = String(open);
-                    outlineToggle.setAttribute("aria-expanded", String(open));
-                });
+                    closeDrawers();
+                    setOutlineState(open);
+                };
+                outlineToggle?.addEventListener("click", toggleOutline);
+                outlineEdgeToggle?.addEventListener("click", toggleOutline);
                 backdrop?.addEventListener("click", closeDrawers);
                 document.addEventListener("keydown", (event) => event.key === "Escape" && closeDrawers());
+                desktopNav.addEventListener("change", () => {
+                    closeDrawers();
+                    setChapterState(desktopNav.matches ? localStorage.getItem(storageKey) !== "true" : false);
+                });
+                outlineDrawer.addEventListener("change", closeDrawers);
                 document.querySelectorAll("[data-outline-link]").forEach((link) => {
-                    link.addEventListener("click", () => { body.dataset.outlineOpen = "false"; });
+                    link.addEventListener("click", closeDrawers);
                 });
 
                 const outlineLinks = [...document.querySelectorAll("[data-outline-link]")];

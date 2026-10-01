@@ -7,11 +7,24 @@ order: 16
 
 <!-- Extracted from Thomas-calculus Markdown source; chapters 1-17 only. -->
 
+Chapter 17 is available online. 
+
+To access this chapter, visit the companion Website. 
+
+![教材插图](/books/thomas-calculus/assets/36d2bdcb1b1a05338f7c8917c637782676cddcad24cf6a35a01d91cf067dd7c9.jpg)
+
+
+OVERVIEW Many real-world problems, when formulated mathematically, lead to differential equations. We encountered a number of these equations in previous chapters when studying phenomena such as the motion of an object along a straight line, the decay of a radioactive material, the growth of a population, and the cooling of a heated object placed within a medium of lower temperature. 
+
+Section 4.8 introduced diferential equations of the form $d y / d x = f ( x )$ , where f is given and $y$ is an unknown function of x. We learned that when f is continuous over some interval, the general solution $y ( x )$ is found directly by integration, $y = \int f ( x )$ dx  . In Section 7.2 we investigated diferential equations of the form $d y / d x \ : = \ : f ( x , y )$ , where $f$ is a function of both the independent variable x and the dependent variable y. There we learned how to find the general solution for the special case when the diferential equation is separable. In this chapter we further extend our study to include other commonly occurring first-order diferential equations. These diferential equations involve only first derivatives of the unknown function y x( ), and they model phenomena varying from simple electrical circuits to the concentration of a chemical in a container. Diferential equations involving second derivatives are examined in Chapter 17.
+
+
+
 ## 16.1 Solutions, Slope Fields, and Euler’s Method
 
 We begin this section by defining general differential equations involving first derivatives. We then look at slope fields, which give a geometric picture of the solutions to such equations. Many differential equations cannot be solved by obtaining an explicit formula for the solution. However, we can often find numerical approximations to solutions. We present one such method here, called Euler’s method, which is the basis for many other numerical methods as well. 
 
-## General First-Order Differential Equations and Solutions
+### General First-Order Differential Equations and Solutions
 
 A first-order differential equation is an equation 
 
@@ -35,7 +48,7 @@ $$
 
 on that interval. That is, when y x( ) and its derivative $y ^ { \prime } ( x )$ are substituted into Equation (1), the resulting equation is true for all x over the interval I. 
 
-## **EXAMPLE 1** Show that every member of the family of functions
+**EXAMPLE 1** Show that every member of the family of functions
 
 $$
 y = \frac {C}{x} + 2
@@ -73,7 +86,7 @@ The differential equation in Example 1 has a whole family of solutions, one for 
 
 As with antiderivatives, we often need a particular rather than the general solution to a first-order differential equation $y ^ { \prime } = f ( x , y )$ . A common way to pick out one of the collection of possible solutions is to specify the value of y at a point $x \ = \ x _ { 0 } .$ The particular solution satisfying the initial condition $y ( x _ { 0 } ) = y _ { 0 }$ is the solution $y = y ( x )$ whose value is $y _ { 0 }$ when $x \ = \ x _ { 0 } .$ Thus the graph of the particular solution passes through the point $\left( x _ { 0 } , y _ { 0 } \right)$ in the xy-plane. A first-order initial value problem is a differential equation $y ^ { \prime } = f ( x , y )$ whose solution must satisfy an initial condition $y ( x _ { 0 } ) = y _ { 0 }$ 
 
-## **EXAMPLE 2** Show that the function
+**EXAMPLE 2** Show that the function
 
 $$
 y = (x + 1) - \frac {1}{3} e ^ {x}
@@ -95,7 +108,7 @@ $$
 FIGURE 16.1 Graph of the solution to the initial value problem in Example 2.
 
 
-![[d0262cd297dd89be2da7f317798cf5103ecac93f57c8c310f1bce638ab0dd2e2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d0262cd297dd89be2da7f317798cf5103ecac93f57c8c310f1bce638ab0dd2e2.jpg)
 
 
 is a first-order differential equation with $f ( x , y ) = y - x .$ 
@@ -120,18 +133,18 @@ $$
 
 The graph of the function is shown in Figure 16.1. 
 
-## Slope Fields: Viewing **Solution** Curves
+### Slope Fields: Viewing **Solution** Curves
 
 Each time we specify an initial condition $y ( x _ { 0 } ) = y _ { 0 }$ for the solution of a differential equation $y ^ { \prime } = f ( x , y )$ , the solution curve (graph of the solution) is required to pass through the point $\left( x _ { 0 } , y _ { 0 } \right)$ and to have slope $f \left( x _ { 0 } , y _ { 0 } \right)$ there. We can picture these slopes graphically by drawing short line segments of slope $f ( x , y )$ at selected points $( x , y )$ in the region of the xy-plane that constitutes the domain of f. Each segment has the same slope as the solution curve through $( x , y )$ and so is tangent to the curve there. The resulting picture is called a slope field (or direction field) and gives a visualization of the general shape of the solution curves. Figure 16.2a shows a slope field, with a particular solution sketched into it in Figure 16.2b. We see how these line segments indicate the direction the solution curve takes at each point it passes through. 
 
-![[1db88dd54e0fa4d43d28d825525b4475cb5c116808a86251124bb74ed999c293.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1db88dd54e0fa4d43d28d825525b4475cb5c116808a86251124bb74ed999c293.jpg)
 
 
 
 (a)
 
 
-![[cce594f622538bb0863216384779d4a4fad864550f12caed97954b14a7bd56d7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/cce594f622538bb0863216384779d4a4fad864550f12caed97954b14a7bd56d7.jpg)
 
 
 
@@ -146,24 +159,24 @@ FIGURE 16.2 (a) Slope field for ${ \frac { d y } { d x } } = y - x .$ (b) The pa
 (a)
 
 
-![[1dd01317587f42ed11d02f6a6466f73f3f3651e3ad6b0e41a1c849c3a9532757.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/1dd01317587f42ed11d02f6a6466f73f3f3651e3ad6b0e41a1c849c3a9532757.jpg)
 
 
-![[49de3482b07d84b0de66e9a86c37e3834e63c633571f7c50c102569977dfe069.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/49de3482b07d84b0de66e9a86c37e3834e63c633571f7c50c102569977dfe069.jpg)
 
 
 
 FIGURE 16.3 (a) The slope field for $y ^ { \prime } = 2 y - x$ is shown at four points. (b) The slope field at several hundred additional points in the plane.
 
 
-![[88a5e22e18af0d2095c3b3aebbdf5b495343ce1e8bb53df233e0688af8db25ec.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/88a5e22e18af0d2095c3b3aebbdf5b495343ce1e8bb53df233e0688af8db25ec.jpg)
 
 
 
 FIGURE 16.5 The linearization L x( ) of $y = y ( x ) \operatorname { a t } x = x _ { 0 }$
 
 
-## **EXAMPLE 3** For the differential equation
+**EXAMPLE 3** For the differential equation
 
 $$
 y ^ {\prime} = 2 y - x,
@@ -177,14 +190,14 @@ Figure 16.4 shows three slope fields, and we see how the solution curves behave 
 
 Constructing a slope field with pencil and paper can be quite tedious. Our examples were generated by computer software. 
 
-![[0cfddcb24ca42593bd641e98e9109da01411303802496bf9738b4ac1f7fc9683.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0cfddcb24ca42593bd641e98e9109da01411303802496bf9738b4ac1f7fc9683.jpg)
 
 
 
 FIGURE 16.4 Slope fields (top row) and selected solution curves (bottom row). In computer renditions, slope segments are sometimes portrayed with arrows, as they are here, but they should be considered as just tangent line segments.
 
 
-## Euler’s Method
+### Euler’s Method
 
 If we do not require or cannot find an exact solution that gives an explicit formula for an initial value problem $y ^ { \prime } = f ( x , y ) , y ( x _ { 0 } ) = y _ { 0 } $ ,  we can often use a computer to generate a table of approximate numerical values of y for values of x in an appropriate interval. Such a table is called a numerical solution of the problem, and the process by which we generate the table is called a numerical method. 
 
@@ -202,14 +215,14 @@ $$
 y _ {1} = L (x _ {1}) = y _ {0} + f \left(x _ {0}, y _ {0}\right) d x
 $$
 
-![[2616b1d2a5f55b947d4b7079eb54afc8175581059b8de5ce1cd81f5128a08b28.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2616b1d2a5f55b947d4b7079eb54afc8175581059b8de5ce1cd81f5128a08b28.jpg)
 
 
 
 FIGURE 16.6 The first Euler step approximates $y ( x _ { 1 } )$ with $y _ { 1 } = L ( x _ { 1 } )$
 
 
-![[dadaa5a52bbce421395e015c24d828b59833ebd1cc1cc34b347a76da5612dc3f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/dadaa5a52bbce421395e015c24d828b59833ebd1cc1cc34b347a76da5612dc3f.jpg)
 
 
 
@@ -270,9 +283,9 @@ $$
 \begin{array}{c} y _ {1} = y _ {0} + f (x _ {0}, y _ {0}) d x \\ y _ {2} = y _ {1} + f (x _ {1}, y _ {1}) d x \\ \vdots \\ y _ {n} = y _ {n - 1} + f (x _ {n - 1}, y _ {n - 1}) d x. \end{array}
 $$
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
-## Leonhard Euler
+### Leonhard Euler
 
 (1707–1783) 
 
@@ -280,7 +293,7 @@ Born in Basel, Switzerland, Leonhard Euler was the dominant mathematical figure 
 
 To know more, visit the companion Website. 
 
-![[a375ba5a301bf90376c2d39054461f43e5114a19efe0f86c6deffd25de847741.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a375ba5a301bf90376c2d39054461f43e5114a19efe0f86c6deffd25de847741.jpg)
 
 
 
@@ -297,7 +310,7 @@ Euler’s method is easy to implement on a computer or calculator. A typical sof
 
 Solving the separable equation in Example 4, we find that the exact solution to the initial value problem is $y = 2 e ^ { x } - 1$ . We use this information in Example 5. 
 
-## **EXAMPLE 5** Use Euler’s method to solve
+**EXAMPLE 5** Use Euler’s method to solve
 
 $$
 y ^ {\prime} = 1 + y, \quad y (0) = 1,
@@ -305,7 +318,7 @@ $$
 
 on the interval $0 \leq x \leq 1$ , starting at $x _ { 0 } = 0$ and taking (a) $d x = 0 . 1$ and $( \mathbf { b } ) d x \ = \ 0 . 0 5$ Compare the approximations with the values of the exact solution $y = 2 e ^ { x } - 1$ 
 
-## **Solution**
+**Solution**
 
 (a) We used a computer to generate the approximate values in Table 16.1. The “error” column is obtained by subtracting the unrounded Euler values from the unrounded values found using the exact solution. All entries are then rounded to four decimal places. 
 
@@ -333,27 +346,27 @@ TABLE 16.2 Euler solution of $\begin{array} { r } { \mathbf { \boldsymbol { y } 
 
 <table><tr><td>x</td><td>y (Euler)</td><td>y (exact)</td><td>Error</td></tr><tr><td>0</td><td>1</td><td>1</td><td>0</td></tr><tr><td>0.05</td><td>1.1</td><td>1.1025</td><td>0.0025</td></tr><tr><td>0.10</td><td>1.205</td><td>1.2103</td><td>0.0053</td></tr><tr><td>0.15</td><td>1.3153</td><td>1.3237</td><td>0.0084</td></tr><tr><td>0.20</td><td>1.4310</td><td>1.4428</td><td>0.0118</td></tr><tr><td>0.25</td><td>1.5526</td><td>1.5681</td><td>0.0155</td></tr><tr><td>0.30</td><td>1.6802</td><td>1.6997</td><td>0.0195</td></tr><tr><td>0.35</td><td>1.8142</td><td>1.8381</td><td>0.0239</td></tr><tr><td>0.40</td><td>1.9549</td><td>1.9836</td><td>0.0287</td></tr><tr><td>0.45</td><td>2.1027</td><td>2.1366</td><td>0.0340</td></tr><tr><td>0.50</td><td>2.2578</td><td>2.2974</td><td>0.0397</td></tr><tr><td>0.55</td><td>2.4207</td><td>2.4665</td><td>0.0458</td></tr><tr><td>0.60</td><td>2.5917</td><td>2.6442</td><td>0.0525</td></tr><tr><td>0.65</td><td>2.7713</td><td>2.8311</td><td>0.0598</td></tr><tr><td>0.70</td><td>2.9599</td><td>3.0275</td><td>0.0676</td></tr><tr><td>0.75</td><td>3.1579</td><td>3.2340</td><td>0.0761</td></tr><tr><td>0.80</td><td>3.3657</td><td>3.4511</td><td>0.0853</td></tr><tr><td>0.85</td><td>3.5840</td><td>3.6793</td><td>0.0953</td></tr><tr><td>0.90</td><td>3.8132</td><td>3.9192</td><td>0.1060</td></tr><tr><td>0.95</td><td>4.0539</td><td>4.1714</td><td>0.1175</td></tr><tr><td>1.00</td><td>4.3066</td><td>4.4366</td><td>0.1300</td></tr></table>
 
-## EXERCISES 16.1
+### EXERCISES 16.1
 
-## Slope Fields
+#### Slope Fields
 
 In Exercises 1–4, match the differential equations with their slope fields, graphed here. 
 
-![[c99c2f176bd3003f5e6a08f024648176683e233bed06ad37292fc8e09de76bea.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c99c2f176bd3003f5e6a08f024648176683e233bed06ad37292fc8e09de76bea.jpg)
 
 
 
 (a)
 
 
-![[0feddad8aa13af95ca2de94de7e6a1be0bd202a6d2595a221fb28eb6882e98e7.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/0feddad8aa13af95ca2de94de7e6a1be0bd202a6d2595a221fb28eb6882e98e7.jpg)
 
 
 
 (b)
 
 
-![[206750f2f7fcb0fee74ab1fad1a1e0dbd915273faaf6740f0a8e84fddadfacad.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/206750f2f7fcb0fee74ab1fad1a1e0dbd915273faaf6740f0a8e84fddadfacad.jpg)
 
 
 
@@ -364,7 +377,7 @@ $$
 y ^ {\prime} = - \frac {x}{y}
 $$
 
-![[59dfab01ee4de66851c568e12f5de8c2bfd51fdf6526dc7c43a4c33c45561fb0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/59dfab01ee4de66851c568e12f5de8c2bfd51fdf6526dc7c43a4c33c45561fb0.jpg)
 
 
 
@@ -375,9 +388,7 @@ $$
 2. y y ′ = + 1
 
 
-$$
-4. y ^ {\prime} = y ^ {2} - x ^ {2}
-$$
+4. $y ^ {\prime} = y ^ {2} - x ^ {2}$
 
 In Exercises 5 and 6, copy the slope fields, and sketch in some of the solution curves. 
 
@@ -385,25 +396,25 @@ $$
 y ^ {\prime} = (y + 2) (y - 2)
 $$
 
-![[89c2e82261673a9f5b6acb2c3de31a0bbff3206c2476c23b2fef323c645add6e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/89c2e82261673a9f5b6acb2c3de31a0bbff3206c2476c23b2fef323c645add6e.jpg)
 
 
 6. $y ^ { \prime } = y ( y + 1 ) ( y - 1 )$ 
 
-![[5d80815eee00a4dbd94fe3e7ee0394a97e1e2fa3fcbcea575b4701c660a7a994.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5d80815eee00a4dbd94fe3e7ee0394a97e1e2fa3fcbcea575b4701c660a7a994.jpg)
 
 
-## Integral Equations
+#### Integral Equations
 
 In Exercises 7–12, write an equivalent first-order differential equation and initial condition for y. 
 
-$$
-7. y = - 1 + \int_ {1} ^ {x} (t - y (t)) d t \quad 8. y = \int_ {1} ^ {x} \frac {1}{t} d t
-$$
+7. $y = - 1 + \int_ {1} ^ {x} (t - y (t)) d t \quad 8. y = \int_ {1} ^ {x} \frac {1}{t} d t$
 
 9. $y = 2 - \int _ { 0 } ^ { x } ( 1 + y ( t ) ) \ d t$ t dtsin 
 
-10. $y = 1 + \int _ { 0 } ^ { x } y ( t ) d t$ 11. $y = x + 4 + \textstyle \int _ { - 2 } ^ { x } t e ^ { y ( t ) } d t $ 
+10. $y = 1 + \int _ { 0 } ^ { x } y ( t ) d t$
+
+11. $y = x + 4 + \textstyle \int _ { - 2 } ^ { x } t e ^ { y ( t ) } d t $
 
 12. $y = \ln x + \int _ { x } ^ { e } { \sqrt { t ^ { 2 } + { ( y ( t ) ) } ^ { 2 } } } d t$ 
 
@@ -415,10 +426,10 @@ In Exercises 13 and 14, consider the differential equation $y ^ { \prime } = f (
 14.
 
 
-![[d80f4bbdeab82a274c880621dfc9b0b288d7e142cc23275c7f2e201bb9d4d2a3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d80f4bbdeab82a274c880621dfc9b0b288d7e142cc23275c7f2e201bb9d4d2a3.jpg)
 
 
-## Using Euler’s Method
+#### Using Euler’s Method
 
 In Exercises 15–20, use Euler’s method to calculate the first three approximations to the given initial value problem for the specified increment size. Calculate the exact solution and investigate the accuracy of your approximations. Round your results to four decimal places. 
 
@@ -456,7 +467,7 @@ $$
 
 26. What integral equation is equivalent to the initial value problem $y ^ { \prime } = f ( x ) , y ( x _ { 0 } ) = y _ { 0 } ?$ 
 
-## COMPUTER EXPLORATIONS
+#### COMPUTER EXPLORATIONS
 
 In Exercises 27–32, obtain a slope field and add to it graphs of the solution curves passing through the given points. 
 
@@ -508,13 +519,9 @@ d. Find and graph the solution that satisfies the initial condition y(0) 1. = �
 
 In Exercises 39–42, use Euler’s method with the specified step size to estimate the value of the solution at the given point $x ^ { * }$ . Find the value of the exact solution at $x ^ { * }$ 
 
-$$
-\mathbf {3 9 .} y ^ {\prime} = 2 x e ^ {x ^ {2}}, \quad y (0) = 2, \quad d x = 0. 1, \quad x ^ {*} = 1
-$$
+39. $y ^ {\prime} = 2 x e ^ {x ^ {2}}, \quad y (0) = 2, \quad d x = 0. 1, \quad x ^ {*} = 1$
 
-$$
-4 0. y ^ {\prime} = 2 y ^ {2} (x - 1), \quad y (2) = - 1 / 2, \quad d x = 0. 1, \quad x ^ {*} = 3
-$$
+40. $y ^ {\prime} = 2 y ^ {2} (x - 1), \quad y (2) = - 1 / 2, \quad d x = 0. 1, \quad x ^ {*} = 3$
 
 41. $y ^ { \prime } = \sqrt { x } \big / y , y > 0 , y ( 0 ) = 1 , d x = 0 . 1 , x ^ { * } = 1$ 
 
@@ -538,13 +545,7 @@ g. Find the error ( y y( ) exact Euler− ( )) at the specified point x = b for 
 
 $$
 \begin{array}{l} \text {43.} y ^ {\prime} = x + y, \quad y (0) = - 7 / 1 0; \quad - 4 \leq x \leq 4, \quad - 4 \leq y \leq 4; \\ b = 1 \end{array}
-$$
-
-$$
-4 4. y ^ {\prime} = - x / y, y (0) = 2; - 3 \leq x \leq 3, - 3 \leq y \leq 3; b = 2
-$$
-
-$$
+44. $$y ^ {\prime} = - x / y, y (0) = 2; - 3 \leq x \leq 3, - 3 \leq y \leq 3; b = 2$$
 \begin{array}{l} \text {45.} y ^ {\prime} = y (2 - y), \quad y (0) = 1 / 2; \quad 0 \leq x \leq 4, \quad 0 \leq y \leq 3; \\ b = 3 \end{array}
 $$
 
@@ -582,7 +583,7 @@ $$
 
 Notice that $P ( x )$ is $- 3 / x$ , not $+ 3 / x$ . The standard form is $y ^ { \prime } + P ( x ) y = Q ( x )$ , so the minus sign is part of the formula for $P ( x )$ ■ 
 
-## Solving Linear Equations
+### Solving Linear Equations
 
 We solve the equation 
 
@@ -618,19 +619,19 @@ $$
 
 Thus a formula for the general solution to Equation (1) is given by Equation (2), where υ( )x is given by Equation (3). However, rather than memorizing the formula, just remember how to find the integrating factor once you have the standard form so $P ( x )$ is correctly identified. Any antiderivative of P works for Equation (3). 
 
-## Integrating Factors
+### Integrating Factors
 
 To solve the linear equation $y ^ { \prime } + P ( x ) y = Q ( x )$ , multiply both sides by the integrating factor $v ( x ) \stackrel { \textstyle - } { = } e ^ { \int P ( x ) d x }$ and integrate both sides. 
 
 When you integrate the product on the left-hand side in this procedure, you always obtain the product $\upsilon ( x ) y$ of the integrating factor and solution function y because of the way υ is defined. 
 
-## **EXAMPLE 2** Solve the equation
+**EXAMPLE 2** Solve the equation
 
 $$
 x \frac {d y}{d x} = x ^ {2} + 3 y, \quad x > 0.
 $$
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
 Adrien-Marie Legendre 
 
@@ -744,21 +745,21 @@ $$
 \begin{array}{l l} \frac {d y}{d x} + P (x) y = Q (x) \\ \frac {d y}{d x} + P (x) y = 0 & Q (x) = 0 \\ \frac {d y}{y} = - P (x) d x. & \text { Separating   the   variables } \end{array}
 $$
 
-![[5c03321047e19dd053b395fa1740ac3d7a4faeba30de5c5e11771b0ce228140b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/5c03321047e19dd053b395fa1740ac3d7a4faeba30de5c5e11771b0ce228140b.jpg)
 
 
 
 FIGURE 16.9 The RL circuit in Example 4.
 
 
-![[d10a0eb5720d9ad9070f7aa45163dc780bb2a77f81ebd981345b4ba72faeb9da.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d10a0eb5720d9ad9070f7aa45163dc780bb2a77f81ebd981345b4ba72faeb9da.jpg)
 
 
 
 FIGURE 16.10 The growth of the current in the RL circuit in Example 4. I is the current’s steady-state value. The number $t = L / R$ is the time constant of the circuit. The current gets to within 5% of its steady-state value in 3 time constants (Exercise 27).
 
 
-## RL Circuits
+### RL Circuits
 
 The diagram in Figure 16.9 represents an electrical circuit whose total resistance is a constant R ohms and whose self-inductance, shown as a coil, is L henries, also a constant. There is a switch whose terminals at a and b can be closed to connect a constant electrical source of V volts. 
 
@@ -800,7 +801,7 @@ $I = V / R$ is the current that will flow in the circuit if either $L = 0$ (no i
 
 Equation (7) expresses the solution of Equation (6) as the sum of two terms: a steady-state solution $V / R$ and a transient solution $- ( V / \bar { R } ) e ^ { - ( R / L ) t }$ that tends to zero as $t \ \longrightarrow \ \infty .$ 
 
-## EXERCISES 16.2
+### EXERCISES 16.2
 
 First-Order Linear Equations 
 
@@ -808,11 +809,11 @@ Solve the differential equations in Exercises 1–14.
 
 1. $x \frac { d y } { d x } + y = e ^ { x } , x > 0$ 
 
-4. y x y x x tan cos , 2 2 2 ′ + = − < < ( ) π π 
-
 2. $e ^ { x } { \frac { d y } { d x } } + 2 e ^ { x } y = 1$ 
 
 3. $x y ^ { \prime } + 3 y = { \frac { \sin x } { x ^ { 2 } } } , x > 0$ 
+
+4. y x y x x tan cos , 2 2 2 ′ + = − < < ( ) π π 
 
 5. $x \frac { d y } { d x } + 2 y = 1 - \frac { 1 } { x } , x > 0$ 
 
@@ -834,7 +835,7 @@ ds 1 12. t 1( )+ dt s t 2 3 1  ( )  + = + + t 1 <sup>2</sup> ( )+ t 1 > −
 
 14. $\tan \theta \frac { d r } { d \theta } + r = \sin ^ { 2 } \theta , 0 < \theta < \pi / 2$ 
 
-## Solving Initial Value Problems
+#### Solving Initial Value Problems
 
 Solve the initial value problems in Exercises 15–20. 
 
@@ -892,7 +893,7 @@ b. How long after the switch is thrown will it take the current to fall to half 
 
 c. Show that the value of the current when $t = L / R$ is $I / e .$ . (The significance of this time is explained in the next exercise.) 
 
-![[a4a21b9c04676ffc711249a871e91f1a1d1141329ef33f1b47c21889477627d0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a4a21b9c04676ffc711249a871e91f1a1d1141329ef33f1b47c21889477627d0.jpg)
 
 
 27. Time constants Engineers call the number $L / R$ the time constant of the RL circuit in Figure 16.10. The significance of the time constant is that the current will reach 95% of its final value within 3 time constants of the time the switch is closed (Figure 16.10). Thus, the time constant gives a built-in measure of how rapidly an individual circuit will reach equilibrium. 
@@ -901,7 +902,7 @@ a. Find the value of i in Equation (7) that corresponds to $t = 3 L / R$ , and s
 
 b. Approximately what percentage of the steady-state current will be flowing in the circuit 2 time constants after the switch is closed (i.e., when $t = 2 L / R ) ?$ 
 
-## 28. Derivation of Equation (7) in Example 4
+28. Derivation of Equation (7) in Example 4
 
 a. Show that the solution of the equation 
 
@@ -935,11 +936,11 @@ $$
 \frac {d u}{d x} + (1 - n) P (x) u = (1 - n) Q (x).
 $$
 
-## HISTORICAL BIOGRAPHY
+**HISTORICAL BIOGRAPHY**
 
-## Jakob Bernoulli
+#### Jakob Bernoulli
 
-## (1654–1705)
+#### (1654–1705)
 
 Jakob Bernoulli was born in Switzerland and received his degree in 1671 after studying philosophy and theology at the request of his father and mathematics and astronomy against the will of his father. Working on problems in optics and mechanics, Bernoulli contributed to important developments in infinitesimal geometry and calculus. 
 
@@ -983,7 +984,7 @@ $$
 
 We now look at four applications of first-order differential equations. The first application analyzes an object moving along a straight line while subject to a force opposing its motion. The second is a model of population growth. The third application considers a curve or curves intersecting each curve in a second family of curves orthogonally (that is, at right angles). The final application analyzes chemical concentrations entering and leaving a container. The various models involve separable or linear first-order equations. 
 
-## Motion with Resistance Proportional to Velocity
+### Motion with Resistance Proportional to Velocity
 
 In some cases it is reasonable to assume that the resistance encountered by a moving object, such as a car coasting to a stop, is proportional to the object’s velocity. The faster the object moves, the more its forward progress is resisted by the air through which it passes. Picture the object as a mass m moving along a coordinate line with position function s and velocity υ at time t. From Newton’s second law of motion, the resisting force opposing the motion is 
 
@@ -1057,7 +1058,7 @@ $$
 \text { Distance   coasted } = \frac {v _ {0} m}{k} = \frac {3 . 3 \cdot 9 0}{5} = 5 9. 4 \mathrm{m}.
 $$
 
-## Inaccuracy of the Exponential Population Growth Model
+### Inaccuracy of the Exponential Population Growth Model
 
 In Section 7.2 we modeled population growth with the Law of Exponential Change: 
 
@@ -1075,21 +1076,21 @@ $$
 
 is constant. This rate is called the relative growth rate. We can use this to predict total future world population based on historical data. Table 16.3 gives the world population at midyear for the years 1980 to 19816. Taking $d t = 1$ and $d P \approx \Delta P$ , we see from the table that the relative growth rate in Equation (4) is approximately equal to 0.017. Thus, based on the tabled data with $t = 0$ representing $1 9 8 0 , t = 1$ representing 1981, and so forth, the world population could be modeled by the initial value problem 
 
-![[14892ebba910bf8c3da48349f37909ca86054a14eaaf01972f1d44451d1282e0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/14892ebba910bf8c3da48349f37909ca86054a14eaaf01972f1d44451d1282e0.jpg)
 
 
 
 FIGURE 16.11 The value of the solution $P = 4 4 5 4 e ^ { 0 . 0 1 7 t }$ is 8792 when $t = 4 0 ,$ which is nearly 13% more than the actual population in 2020.
 
 
-![[59cc16996c75603eb7527a0d683d0dd3776a2cb6c6bcca6f31bedc070166b89c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/59cc16996c75603eb7527a0d683d0dd3776a2cb6c6bcca6f31bedc070166b89c.jpg)
 
 
 
 FIGURE 16.12 An orthogonal trajectory intersects the family of curves at right angles, or orthogonally.
 
 
-![[78235c33a4f7b19b7e957b36288793091ac7b35162ff833e3f11a53ebd9c26d6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/78235c33a4f7b19b7e957b36288793091ac7b35162ff833e3f11a53ebd9c26d6.jpg)
 
 
 
@@ -1108,7 +1109,7 @@ $$
 
 The solution to this initial value problem gives the population function $P = 4 4 5 4 e ^ { 0 . 0 1 7 t }$ In year 2008 (so $t = 2 8 )$ , the solution predicts the world population in midyear to be about 7169 million, or 7.2 billion (Figure 16.11), which is more than the actual population of 6707 million, an error of about 7%. The error grows as the number of years increases. For $2 0 2 0 ( t = 4 0 )$ the model predicts a population of 8792 million. The reported population for 2020 is 7795 million, an overprediction error of about 13%. A more realistic model would consider environmental, economic, and other factors affecting the growth rate, which has been steadily declining. We consider one such model in Section 16.4. 
 
-## Orthogonal Trajectories
+### Orthogonal Trajectories
 
 An orthogonal trajectory of a family of curves is a curve that intersects each curve of the family at right angles, or orthogonally (Figure 16.12). For instance, each straight line through the origin is an orthogonal trajectory of the family of circles $x ^ { 2 } + y ^ { 2 } = a ^ { 2 }$ , centered at the origin (Figure 16.13). Such mutually orthogonal systems of curves are of particular importance in physical problems related to electrical potential, where the curves in one family correspond to strength of an electric field, and those in the other family correspond to constant electric potential. They also occur in hydrodynamics and heat-flow problems. 
 
@@ -1120,7 +1121,7 @@ $$
 x \frac {d y}{d x} + y = 0 \quad \text { or } \quad \frac {d y}{d x} = - \frac {y}{x}.
 $$
 
-![[7a91f4227835f85fb6ce79af07d99b46ed3bc02cb803a14fd6b139578151462c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/7a91f4227835f85fb6ce79af07d99b46ed3bc02cb803a14fd6b139578151462c.jpg)
 
 
 
@@ -1141,7 +1142,7 @@ $$
 
 where $b = 2 C$ is an arbitrary constant. The orthogonal trajectories are the family of hyperbolas given by Equation (5) and sketched in Figure 16.14. ■ 
 
-## Mixture Problems
+### Mixture Problems
 
 Suppose a chemical in a liquid solution (or dispersed in a gas) runs into a container holding the liquid (or the gas) with, possibly, a specified amount of the chemical dissolved as well. The mixture is kept uniform by stirring and flows out of the container at a known rate. In this process, it is often important to know the concentration of the chemical in the container at any given time. The differential equation describing the process is based on the formula 
 
@@ -1171,7 +1172,7 @@ $$
 
 The well-mixed solution is pumped out at a rate of 220 L/min. How much of the additive is in the tank 20 min after the pumping process begins (Figure 16.15)? 
 
-![[d8b084d54b808819c47a36701d6392e67b6b301f8d7df6084fb2c5ef69960af9.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d8b084d54b808819c47a36701d6392e67b6b301f8d7df6084fb2c5ef69960af9.jpg)
 
 
 
@@ -1270,9 +1271,9 @@ $$
 y (2 0) = 0. 2 [ 1 0, 0 0 0 - 2 0 (2 0) ] - \frac {1 9 5 0}{(1 0 , 0 0 0) ^ {1 1}} [ 1 0, 0 0 0 - 2 0 (2 0) ] ^ {1 1} \approx 6 7 5 \mathrm{kg}.
 $$
 
-## EXERCISES 16.3
+### EXERCISES 16.3
 
-## Motion Along a Line
+#### Motion Along a Line
 
 1. Coasting bicycle A 66-kg cyclist on a 7-kg bicycle starts coasting on level ground at 9 m s. The k in Equation (1) is about $3 . 9 \mathrm { k g / s }$ 
 
@@ -1304,7 +1305,7 @@ TABLE 16.5 Kelly Schmitzer skating data
 
 <table><tr><td>t (s)</td><td>s (m)</td><td>t (s)</td><td>s (m)</td><td>t (s)</td><td>s (m)</td></tr><tr><td>0</td><td>0</td><td>1.5</td><td>0.89</td><td>3.1</td><td>1.30</td></tr><tr><td>0.1</td><td>0.07</td><td>1.7</td><td>0.97</td><td>3.3</td><td>1.31</td></tr><tr><td>0.3</td><td>0.22</td><td>1.9</td><td>1.05</td><td>3.5</td><td>1.32</td></tr><tr><td>0.5</td><td>0.36</td><td>2.1</td><td>1.11</td><td>3.7</td><td>1.32</td></tr><tr><td>0.7</td><td>0.49</td><td>2.3</td><td>1.17</td><td>3.9</td><td>1.32</td></tr><tr><td>0.9</td><td>0.60</td><td>2.5</td><td>1.22</td><td>4.1</td><td>1.32</td></tr><tr><td>1.1</td><td>0.71</td><td>2.7</td><td>1.25</td><td>4.3</td><td>1.32</td></tr><tr><td>1.3</td><td>0.81</td><td>2.9</td><td>1.28</td><td>4.5</td><td>1.32</td></tr></table>
 
-## Orthogonal Trajectories
+#### Orthogonal Trajectories
 
 In Exercises 5–10, find the orthogonal trajectories of the family of curves. Sketch several members of each family. 
 
@@ -1326,7 +1327,7 @@ a. $x d x + y d y = 0$
 
 b. $x d y - 2 y d x = 0$ 
 
-## Mixture Problems
+#### Mixture Problems
 
 13. Salt mixture A tank initially contains 400 L of brine in which 20 kg/L of salt are dissolved. A brine containing 0.2 kg/L of salt runs into the tank at the rate of 20 L/min. The mixture is kept uniform by stirring and flows out of the tank at the rate of $1 6 \mathrm { L } / \mathrm { m i n } .$ 
 
@@ -1354,7 +1355,7 @@ b. At the time the tank is full, how many kilograms of concentrate will it conta
 
 In Chapter 4 we learned that the sign of the first derivative tells where the graph of a function is increasing and where it is decreasing. The sign of the second derivative tells the concavity of the graph. We can build on our knowledge of how derivatives determine the shape of a graph to solve differential equations graphically. We will see that the ability to discern physical behavior from graphs is a powerful tool in understanding real-world systems. The starting ideas for a graphical solution are the notions of phase line and equilibrium value. We arrive at these notions by investigating, from a point of view quite different from that studied in Chapter 4, what happens when the derivative of a differentiable function is zero. 
 
-## Equilibrium Values and Phase Lines
+### Equilibrium Values and Phase Lines
 
 When we differentiate implicitly the equation 
 
@@ -1384,7 +1385,7 @@ are $y = - 1$ and $y = 2$
 
 To construct a graphical solution to an autonomous differential equation, we first make a phase line for the equation, a plot on the y-axis that shows the equation’s equilibrium values along with the intervals where $d y / d x$ and $d ^ { 2 } y / d x ^ { 2 }$ are positive and negative. Then we know where the solutions are increasing and decreasing, and the concavity of the solution curves. These are the essential features we found in Section 4.4, so we can determine the shapes of the solution curves without having to find formulas for them. 
 
-## **EXAMPLE 1** Draw a phase line for the equation
+**EXAMPLE 1** Draw a phase line for the equation
 
 $$
 \frac {d y}{d x} = (y + 1) (y - 2),
@@ -1392,28 +1393,28 @@ $$
 
 and use it to sketch solutions to the equation. 
 
-## **Solution**
+**Solution**
 
 1. Draw a number line for y and mark the equilibrium values $y = - 1 a n d y = 2 .$ where $d y / d x = 0$ 
 
-![[f2e02f83daf522c2b1aaf2868a8785dfd0d943ed7e4f562ca1ad84694b58a1a0.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f2e02f83daf522c2b1aaf2868a8785dfd0d943ed7e4f562ca1ad84694b58a1a0.jpg)
 
 
 2. Identify and label the intervals where $y ^ { \prime } > 0$ and $y ^ { \prime } < 0$ . This step resembles what we did in Section 4.3, only now we are marking the y-axis instead of the x-axis. 
 
-![[b167c35b24e5a7f965645d0e5239f7b1a07a39e6c91bd45f742b7324f1f22738.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b167c35b24e5a7f965645d0e5239f7b1a07a39e6c91bd45f742b7324f1f22738.jpg)
 
 
 We can encapsulate the information about the sign of $y ^ { \prime }$ on the phase line itself. Since $y ^ { \prime } > 0$ on the interval to the left of $y = - 1$ , a solution of the differential equation with a y-value less than −1 will increase from there toward $y = - 1$ . We display this information by drawing an arrow on the interval pointing to −1. 
 
-![[b193b8496aaabd0f966bce7a293a704471c266604a54da395cf1af0d8f6a9581.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/b193b8496aaabd0f966bce7a293a704471c266604a54da395cf1af0d8f6a9581.jpg)
 
 
 
 FIGURE 16.16 Graphical solutions from Example 1 include the horizontal lines $y = - 1$ and $y = 2$ through the equilibrium values. No two solution curves can ever cross or touch each other.
 
 
-![[fde13fab163a6b518e51a7d2863328aa0c8a45d79e10d58abfd7be1bd6046e0b.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/fde13fab163a6b518e51a7d2863328aa0c8a45d79e10d58abfd7be1bd6046e0b.jpg)
 
 
 Similarly, $y ^ { \prime } < 0$ between $y = - 1$ and $y = 2 .$ , so any solution with a value in this interval will decrease toward $y = - 1$ 
@@ -1424,12 +1425,12 @@ In short, solution curves below the horizontal line $y = - 1$ in the xy-plane ri
 
 3. Calculate $y ^ { \prime \prime }$ and mark the intervals where $y ^ { \prime \prime } > 0$ and $y ^ { \prime \prime } < 0$ . To find $y ^ { \prime \prime } ,$ we differentiate $y ^ { \prime }$ with respect to x, using implicit differentiation. 
 
-![[f9b5f61d07141bc92c11faa223df380097fc0c31206830c980c54b6c88a89b6e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f9b5f61d07141bc92c11faa223df380097fc0c31206830c980c54b6c88a89b6e.jpg)
 
 
 From this formula, we see that $y ^ { \prime \prime }$ changes sign at $y = - 1 , y = 1 / 2$ , and $y = 2$ . We add the sign information to the phase line. 
 
-![[9570cb3f63b2001b8b70cc0bc05a8f702769ba455f5cc6c4aaadd73615b940b6.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/9570cb3f63b2001b8b70cc0bc05a8f702769ba455f5cc6c4aaadd73615b940b6.jpg)
 
 
 4. Sketch an assortment of solution curves in the xy-plane. The horizontal lines $y = - 1 , y = 1 / 2$ , and $y = 2$ partition the plane into horizontal bands in which we know the signs of $y ^ { \prime }$ and $y ^ { \prime \prime } .$ . In each band, this information tells us whether the solution curves rise or fall and how they bend as x increases (Figure 16.16). 
@@ -1438,27 +1439,27 @@ The “equilibrium lines” $y = - 1$ and $y = 2$ are also solution curves. (The
 
 As predicted in Step 2, solutions in the middle and lower bands approach the equilibrium value $y = - 1$ as x increases. Solutions in the upper band rise steadily away from the value $y = 2$ 
 
-## Stable and Unstable Equilibria
+### Stable and Unstable Equilibria
 
 Look at Figure 16.16 once more, in particular at the behavior of the solution curves near the equilibrium values. Once a solution curve has a value near $y = - 1 ,$ it tends steadily toward that value; $y = - 1$ is a stable equilibrium. The behavior near $y = 2$ is just the opposite: All solutions except the equilibrium solution $y = 2$ itself move away from it as x increases. We call $y = 2$ an unstable equilibrium. If the solution is at that value, it stays, but if it is off by any amount, no matter how small, it moves away. (Sometimes an equilibrium value is unstable because a solution moves away from it only on one side of the point.) 
 
 Now that we know what to look for, we can already see this behavior on the initial phase line (the second diagram in Step 2 of Example 1). The arrows lead away from $y = 2$ and, once to the left of $y = 2 ,$ , toward $y = - 1$ 
 
-![[86484a655e3eed5fadb72ee99d3edb39131c76a79e6ebe478a542973efcd60b4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/86484a655e3eed5fadb72ee99d3edb39131c76a79e6ebe478a542973efcd60b4.jpg)
 
 
 
 FIGURE 16.17 First step in constructing the phase line for Newton’s Law of Cooling. The temperature tends toward the equilibrium (surrounding-medium) value in the long run.
 
 
-![[53f44b54de7e5e9af380cd1c6f0dab377c525d5a1cd04a58b22bf4f96cdaab0e.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/53f44b54de7e5e9af380cd1c6f0dab377c525d5a1cd04a58b22bf4f96cdaab0e.jpg)
 
 
 
 FIGURE 16.18 The complete phase line for Newton’s Law of Cooling.
 
 
-![[16b09a4f3fd68901f09f72d460f3487369adf3822668f36dfeb2d4d58801a681.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/16b09a4f3fd68901f09f72d460f3487369adf3822668f36dfeb2d4d58801a681.jpg)
 
 
 
@@ -1467,7 +1468,7 @@ FIGURE 16.19 Temperature versus time. Regardless of initial temperature, the obj
 
 We now present several applied examples for which we can sketch a family of solution curves to the differential equation models using the method in Example 1. 
 
-## Newton’s Law of Cooling
+### Newton’s Law of Cooling
 
 In Section 7.2 we solved analytically the differential equation 
 
@@ -1499,7 +1500,7 @@ The completed phase line shows that if the temperature of the object is above th
 
 From the upper solution curve in Figure 16.19, we see that as the object cools down, the rate at which it cools slows down because $d H / d t$ approaches zero. This observation is implicit in Newton’s Law of Cooling and contained in the differential equation, but the flattening of the graph as time advances gives an immediate visual representation of the phenomenon. 
 
-## A Falling Body Encountering Resistance
+### A Falling Body Encountering Resistance
 
 Newton observed that the rate of change of the momentum of a moving object is equal to the net force applied to it. In mathematical terms, 
 
@@ -1507,26 +1508,26 @@ $$
 F = \frac {d}{d t} (m v),\tag{2}
 $$
 
-![[ad88e261319a8460cc92a6d14c2ef32a17b53b6546a05b459eccb680b9f00f4c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ad88e261319a8460cc92a6d14c2ef32a17b53b6546a05b459eccb680b9f00f4c.jpg)
 
 
 FIGURE 16.20 An object falling under the propulsion due to gravity, with a resistive force assumed to be proportional to the velocity. 
 
-![[a351f0d9fdfa86ccf4f61d1db7f4a825ca81fa1b82198d201aac8963462fa60d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a351f0d9fdfa86ccf4f61d1db7f4a825ca81fa1b82198d201aac8963462fa60d.jpg)
 
 
 
 FIGURE 16.21 Initial phase line for the falling body encountering resistance.
 
 
-![[f2112673ac411bfe325db60e866aa1f4927bf355fe155e32b3d0f8bfb2fcf5ff.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f2112673ac411bfe325db60e866aa1f4927bf355fe155e32b3d0f8bfb2fcf5ff.jpg)
 
 
 
 FIGURE 16.22 The completed phase line for the falling body.
 
 
-![[3b564275c191cf9e26ad925a0aa93fa1703bcc32e95b7fdcf8e6bd2f55cc8890.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/3b564275c191cf9e26ad925a0aa93fa1703bcc32e95b7fdcf8e6bd2f55cc8890.jpg)
 
 
 
@@ -1585,14 +1586,14 @@ $$
 
 We see that $d ^ { 2 } v / d t ^ { 2 } < 0$ when $\upsilon < m g / k$ and that $d ^ { 2 } v / d t ^ { 2 } > 0$ when $\begin{array} { r } { \upsilon > m g / k . } \end{array}$ Figure 16.22 adds this information to the phase line. Notice the similarity to the phase line for Newton’s Law of Cooling (Figure 16.18). The solution curves are similar as well (Figure 16.23). 
 
-![[c0e9cfc141bfe55f712e50b6f0e7937d9c116b308c9802eee6f4abeda95bdc5c.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c0e9cfc141bfe55f712e50b6f0e7937d9c116b308c9802eee6f4abeda95bdc5c.jpg)
 
 
 
 FIGURE 16.24 The initial phase line for logistic growth (Equation 6).
 
 
-![[f53b02706eafd100c7a88a0d14e7c5bc640108b2b338cf758997de546b9af104.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f53b02706eafd100c7a88a0d14e7c5bc640108b2b338cf758997de546b9af104.jpg)
 
 
 
@@ -1601,7 +1602,7 @@ FIGURE 16.25 The completed phase line for logistic growth (Equation 6).
 
 Figure 16.23 shows two typical solution curves. Regardless of the initial velocity, we see the body’s velocity tending toward the limiting value $\upsilon = m g / k$ . This value, a stable equilibrium point, is called the body’s terminal velocity. Skydivers can vary their terminal velocity from 153 km/h to 290 km/h by changing the amount of body area opposing the fall, which affects the value of k. 
 
-## The Logistic Model for Population Growth
+### The Logistic Model for Population Growth
 
 In Section 16.3 we examined population growth using the model of exponential change. That is, if P represents the number of individuals and we neglect departures and arrivals, then 
 
@@ -1639,14 +1640,14 @@ The lines $P = M / 2$ and $P = M$ divide the first quadrant of the tP-plane into
 
 $P = M / 2$ have an inflection point there, giving them a sigmoid shape (curved in two directions like a letter S). Figure 16.26 displays typical population curves. Notice that each population curve approaches the limiting population M as $t  \infty$ 
 
-![[28392fe3528f8329f772b779fd863ae73cbbf178dc06837927375a522aed9dd5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/28392fe3528f8329f772b779fd863ae73cbbf178dc06837927375a522aed9dd5.jpg)
 
 
 
 FIGURE 16.26 Population curves for logistic growth.
 
 
-## The Logistic Equation in Neural Networks and Machine Learning
+### The Logistic Equation in Neural Networks and Machine Learning
 
 While Figure 16.26 gives a general idea of the behavior of solutions to the Logistic Equation (6), we have not yet found explicit solutions. Exact formulas for solutions of first order differential equations cannot always be found, but they can be derived for the case of the Logistic Equation, where the solutions are called logistic functions. In Example 2 we find the solutions lying between $y = 0$ and $y = 1$ for the Logistic Equation in the case where $M = 1$ and r is an arbitrary positive constant. 
 
@@ -1722,7 +1723,7 @@ $$
 
 Figure 16.27 shows the graph of a logistic function with $r = 3$ and $C = - 6$ 
 
-![[eb17ea68021b18af63efabeeca63ee037e7cbf7c803914012625a28d16f687b2.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/eb17ea68021b18af63efabeeca63ee037e7cbf7c803914012625a28d16f687b2.jpg)
 
 
 
@@ -1733,11 +1734,10 @@ Logistic functions have applications in many areas beyond the study of populatio
 
 One highly successful approach to Machine Learning is the method of Neural Networks, which creates predictor functions based on a model of interacting neurons. Neural network models are built by taking repeated compositions of linear and logistic functions. Linear functions, such as $L ( x ) = a x + b$ can give accurate approximations of a function f nearby to a point where f is differentiable, as seen in Chapter 3. The optimal choices for the constants a and b in $L ( x )$ are found by minimizing an error function that is calculated using the training set in a process called linear regression. Logistic functions have several features that make them a useful complement to linear functions in constructing predictor functions. They have values lying between 0 and 1 and are well suited to modeling probabilities. They are differentiable and specified by a small number of constants, such as the constants r and C in Example 2. These constants can be adjusted, or tuned, to minimize the error of a prediction. Logistic functions are nonlinear, and taking compositions of linear and logistic functions allows for the approximation of much more complicated functions than linear functions alone. A more complete discussion of the utility of logistic functions involves multivariable functions and their derivatives, which are introduced in Chapter 13. 
 
-## EXERCISES
+### Exercises 16.4
 
-## 16.4
 
-## Phase Lines and **Solution** Curves
+#### Phase Lines and **Solution** Curves
 
 In Exercises 1–8, 
 
@@ -1747,49 +1747,25 @@ b. Construct a phase line. Identify the signs of y′ and $y ^ { \prime \prime }
 
 c. Sketch several solution curves. 
 
-$$
-\mathbf {1 .} \frac {d y}{d x} = (y + 2) (y - 3) \quad \mathbf {2 .} \frac {d y}{d x} = y ^ {2} - 4
-$$
+1. $\frac {d y}{d x} = (y + 2) (y - 3) \quad \mathbf {2 .} \frac {d y}{d x} = y ^ {2} - 4$
 
-$$
-3. \frac {d y}{d x} = y ^ {3} - y
-$$
+3. $\frac {d y}{d x} = y ^ {3} - y$
 
-$$
-4. \frac {d y}{d x} = y ^ {2} - 2 y
-$$
+4. $\frac {d y}{d x} = y ^ {2} - 2 y$
 
-$$
-\mathbf {5 .} y ^ {\prime} = \sqrt {y}, \quad y > 0
-$$
+5. $y ^ {\prime} = \sqrt {y}, \quad y > 0$
 
-$$
-6. y ^ {\prime} = y - \sqrt {y}, \quad y > 0
-$$
+6. $y ^ {\prime} = y - \sqrt {y}, \quad y > 0$
 
-$$
-7. y ^ {\prime} = (y - 1) (y - 2) (y - 3) \quad 8. y ^ {\prime} = y ^ {3} - y ^ {2}
-$$
+7. $y ^ {\prime} = (y - 1) (y - 2) (y - 3) \quad 8. y ^ {\prime} = y ^ {3} - y ^ {2}$
 
-## Models of Population Growth
+9. $\frac {d P}{d t} = 1 - 2 P$
 
-The autonomous differential equations in Exercises 16–12 represent models for population growth. For each exercise, use a phase line analysis to sketch solution curves for $P ( t ) ,$ selecting different starting values P(0). Which equilibria are stable, and which are unstable? 
+10. $\frac {d P}{d t} = P (1 - 2 P)$
 
-$$
-9. \frac {d P}{d t} = 1 - 2 P
-$$
+11. $\frac {d P}{d t} = 2 P (P - 3)$
 
-$$
-\mathbf {1 0 .} \frac {d P}{d t} = P (1 - 2 P)
-$$
-
-$$
-\mathbf {1 1 .} \frac {d P}{d t} = 2 P (P - 3)
-$$
-
-$$
-\mathbf {1 2 .} \frac {d P}{d t} = 3 P (1 - P) \left(P - \frac {1}{2}\right)
-$$
+12. $\frac {d P}{d t} = 3 P (1 - P) \left(P - \frac {1}{2}\right)$
 
 13. Catastrophic change in logistic growth Suppose that a healthy population of some species is growing in a limited environment and that the current population $P _ { 0 }$ is fairly close to the carrying capacity $M _ { 0 } .$ You might imagine a population of fish living in a freshwater lake in a wilderness area. Suddenly a catastrophe such as the Mount St. Helens volcanic eruption contaminates the lake and destroys a significant part of the food and oxygen on which the fish depend. The result is a new environment with a carrying capacity $M _ { 1 }$ considerably less than $M _ { 0 }$ and, in fact, less than the current population $P _ { 0 } .$ Starting at some time before the catastrophe, sketch a “before-and-after” curve that shows how the fish population responds to the change in environment. 
 
@@ -1811,7 +1787,7 @@ d. What happens if $P \ <$ m for all t?
 
 e. Discuss the solutions to the differential equation. What are the equilibrium points of the model? Explain the dependence of the steady-state value of P on the initial values of P. About how many permits should be issued? 
 
-## Applications and Examples
+#### Applications and Examples
 
 15. Skydiving If a body of mass m falling from rest under the action of gravity encounters an air resistance proportional to the square of velocity, then the body’s velocity t seconds into the fall satisfies the equation 
 
@@ -1826,6 +1802,10 @@ a. Draw a phase line for the equation.
 b. Sketch a typical velocity curve. 
 
 c. For a 45-kg skydiver $( m g = 4 4 1 )$ ) and with time in seconds and distance in meter, a typical value of k is 0.15. What is the diver’s terminal velocity? Repeat for an 80-kg skydiver. 
+
+#### Models of Population Growth
+
+The autonomous differential equations in Exercises 16–12 represent models for population growth. For each exercise, use a phase line analysis to sketch solution curves for $P ( t ) ,$ selecting different starting values P(0). Which equilibria are stable, and which are unstable? 
 
 16. Resistance proportional to $\sqrt { v }$ A body of mass m is projected vertically downward with initial velocity $v _ { 0 } .$ Assume that the resisting force is proportional to the square root of the velocity, and find the terminal velocity from a graphical analysis. 
 
@@ -1855,7 +1835,7 @@ $$
 
 where i is the current in amperes and t is the time in seconds. 
 
-![[349abd01da517b15f2484545f960d03def1f0869c5397f62f5af8844b8331b99.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/349abd01da517b15f2484545f960d03def1f0869c5397f62f5af8844b8331b99.jpg)
 
 
 Use a phase line analysis to sketch the solution curve assuming that the switch in the RL circuit is closed at time $t = 0$ . What happens to the current as $t  \infty ?$ This value is called the steadystate solution. 
@@ -1872,17 +1852,17 @@ d. Sketch typical solution curves.
 
 e. What is the terminal velocity of the pearl? 
 
-## Logistic Functions
+#### Logistic Functions
 
 21. Write the formula for a logistic function that has values between $y = 0$ and $y = 1 ,$ , crosses the line $y = 1 / 2$ at $x = 0 .$ , and has slope 5 at this point. 
 
 22. Write the formula for a logistic function that has values between $y = 0$ and $y = 1 ,$ , crosses the line $y = 1 / 2$ at $x = 0$ , and has slope $1 / 5$ at this point. 
 
-## Systems of Equations and Phase Planes
+#### Systems of Equations and Phase Planes
 
 In some situations we are led to consider not one, but several, first-order differential equations. Such a collection is called a system of differential equations. In this section we present an approach to understanding systems through a graphical procedure known as a phase-plane analysis. We present this analysis in the context of modeling the populations of trout and bass living in a common pond. 
 
-## Phase Planes
+#### Phase Planes
 
 A general system of two first-order differential equations may take the form 
 
@@ -1898,7 +1878,7 @@ In this system we often think of t as representing time and take $x ( t )$ and y
 
 We cannot look at just one of these equations in isolation to find solutions $x ( t )$ or y t( ) since each derivative depends on both x and y. To gain insight into the solutions, we look at both dependent variables together by plotting the points $\left( x ( t ) , y ( t ) \right)$ in the xy-plane starting at some specified point. Therefore the solution functions define a solution curve through the specified point, called a trajectory of the system. The xy-plane itself, in which these trajectories reside, is referred to as the phase plane. Thus we consider both solutions together and study the behavior of all the solution trajectories in the phase plane. It can be proved that two trajectories can never cross or touch each other. (**Solution** trajectories are examples of parametric curves, which will be examined in detail in Chapter 9.) 
 
-## A Competitive-Hunter Model
+#### A Competitive-Hunter Model
 
 Imagine two species of fish, say trout and bass, competing for the same limited resources (such as food and oxygen) in a certain pond. We let x( ) represent the number of trout andt y t( ) the number of bass living in the pond at time t. In reality, x( ) and t y t( ) are always integer valued, but we will approximate them with real-valued differentiable functions. This allows us to apply the methods of differential equations. 
 
@@ -1924,21 +1904,21 @@ This pair of simultaneous equations has two solutions: $( x , y ) = ( 0 , 0 )$ a
 
 Next, we note that if $y = a / b$ , then Equation (1a) implies $d x / d t = 0$ , so the trout population x( ) is constant. Similarly, ift $x = m / n$ , then Equation (1b) implies $d y / d t = 0$ and the bass population y t( ) is constant. This information is recorded in Figure 16.28. 
 
-![[566ff14aeaddec5e768d64c312ac49878bdfc0c66f47e2f1ad76110f27711818.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/566ff14aeaddec5e768d64c312ac49878bdfc0c66f47e2f1ad76110f27711818.jpg)
 
 
 
 (a)
 
 
-![[327ae6ad70adae7bd1be3826e560233bdd665acf8badb69a29da7b37e785b385.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/327ae6ad70adae7bd1be3826e560233bdd665acf8badb69a29da7b37e785b385.jpg)
 
 
 
 (b)
 
 
-![[99291bb3625bf21dc7509c85db586655f01a15ad6cd6d22bd7a150bb7707844f.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/99291bb3625bf21dc7509c85db586655f01a15ad6cd6d22bd7a150bb7707844f.jpg)
 
 
 
@@ -1949,21 +1929,21 @@ Next, we note that if $y = a / b$ , then Equation (1a) implies $d x / d t = 0$ ,
 FIGURE 16.28 Rest points in the competitive-hunter model given by Equations (1a) and (1b).
 
 
-![[f441654eeded363d4f949ec1ed23e32c7f855ab0670caedc045067483cee8320.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/f441654eeded363d4f949ec1ed23e32c7f855ab0670caedc045067483cee8320.jpg)
 
 
 
 FIGURE 16.29 To the left of the line $x = m / n$ the trajectories move upward, and to the right they move downward.
 
 
-![[295fd03429cc3d5841b5aa70f8fde3254e5eb1826d0992f288cf77630ff5e91d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/295fd03429cc3d5841b5aa70f8fde3254e5eb1826d0992f288cf77630ff5e91d.jpg)
 
 
 
 FIGURE 16.30 Above the line $y = a / b$ the trajectories move to the left, and below it they move to the right.
 
 
-![[d9e3242bee74a58ab0f01f24a64b0cb3c5fe1ada2f64b3fb4baab4e7e9ff4dd5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d9e3242bee74a58ab0f01f24a64b0cb3c5fe1ada2f64b3fb4baab4e7e9ff4dd5.jpg)
 
 
 
@@ -1978,10 +1958,10 @@ Next, we examine what happens near the two equilibrium points. The trajectories 
 
 It turns out that in each of the half-planes above and below the line $y = a / b$ , there is exactly one trajectory approaching the equilibrium point $( m / n , a / b )$ (see Exercise $^ { 7 ) }$ Above these two trajectories the bass population increases, and below them it decreases. The two trajectories approaching the equilibrium point are suggested in Figure 16.33. 
 
-![[883e27cbe596ee9d78cdad1c92b639c7ce4c925518ba1b5170c6cba79bbedb0a.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/883e27cbe596ee9d78cdad1c92b639c7ce4c925518ba1b5170c6cba79bbedb0a.jpg)
 
 
-![[2362ea5f564971ec77b93929cae2e9880bf6620cd9cf1ef7c1a7ca986f9a9fff.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/2362ea5f564971ec77b93929cae2e9880bf6620cd9cf1ef7c1a7ca986f9a9fff.jpg)
 
 
 
@@ -1994,10 +1974,10 @@ FIGURE 16.33 Qualitative results of analyzing the competitive-hunter model. Ther
 
 Our graphical analysis leads us to conclude that, under the assumptions of the competitivehunter model, it is unlikely that both species will reach equilibrium levels. This is because it would be almost impossible for the fish populations to move exactly along one of the two approaching trajectories for all time. Furthermore, the initial populations point $\left( x _ { 0 } , y _ { 0 } \right)$ determines which of the two species is likely to survive over time, and mutual coexistence of the species is highly improbable. 
 
-![[e018215feb95626c18dbb92e691276dec731e5b6beb294db50b3b2609926cda3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e018215feb95626c18dbb92e691276dec731e5b6beb294db50b3b2609926cda3.jpg)
 
 
-## Limitations of the Phase-Plane Analysis Method
+#### Limitations of the Phase-Plane Analysis Method
 
 
 FIGURE 16.34 Trajectory direction near the rest point ( 0, 0 .)
@@ -2007,22 +1987,22 @@ FIGURE 16.34 Trajectory direction near the rest point ( 0, 0 .)
 Unlike the situation for the competitive-hunter model, it is not always possible to determine the behavior of trajectories near a rest point. For example, suppose we know that the trajectories near a rest point, chosen here to be the origin (0, 0 , behave as in Figure 16.34.) The information provided by Figure 16.34 is not sufficient to distinguish among the three possible trajectories shown in Figure 16.35. Even if we could determine that a trajectory near an equilibrium point resembles that of Figure 16.35c, we would still not know how the other trajectories behave. It could happen that a trajectory closer to the origin behaves like the motions displayed in Figure 16.35a or 16.35b. The spiraling trajectory in Figure 16.35c can never actually reach the rest point in a finite time period.
 
 
-![[d10269fc3f7ef1106b2df936423b4abc5002a166cca6962b69852ae37d3b2373.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/d10269fc3f7ef1106b2df936423b4abc5002a166cca6962b69852ae37d3b2373.jpg)
 
 
-![[c6680f03dd317a8ff32d2358ee3b46427cf5281a17b0ed7556dabc8e53d79f7d.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/c6680f03dd317a8ff32d2358ee3b46427cf5281a17b0ed7556dabc8e53d79f7d.jpg)
 
 
-![[a7fddbe91ae1e464c64617922b6586189dcd0590067f208e7209950bff748b04.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a7fddbe91ae1e464c64617922b6586189dcd0590067f208e7209950bff748b04.jpg)
 
 
 
 FIGURE 16.35 Three possible trajectory motions: (a) periodic motion, (b) motion toward an asymptotically stable rest point, and (c) motion near an unstable rest point.
 
 
-## Another Type of Behavior
+#### Another Type of Behavior
 
-![[122bb723eebac62445489950e0e9d623f7f9aec83aae2e8bd44c16f2740c5eb3.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/122bb723eebac62445489950e0e9d623f7f9aec83aae2e8bd44c16f2740c5eb3.jpg)
 
 
 The system 
@@ -2043,9 +2023,8 @@ $$
 
 can be shown to have only one equilibrium point at (0, 0 . Yet any trajectory starting on the) unit circle traverses it clockwise because, when $x ^ { 2 } + y ^ { 2 } = 1 ;$ , we have $d y / d x = - x / y$ (see Exercise 2). If a trajectory starts inside the unit circle, it spirals outward, asymptotically approaching the circle as $t  \infty$ . If a trajectory starts outside the unit circle, it spirals inward, again asymptotically approaching the circle as $t  \infty$ . The circle $x ^ { 2 } + y ^ { 2 } = 1$ is called a limit cycle of the system (Figure 16.36). In this system, the values of x and y eventually become periodic. 
 
-## EXERCISES
+### Exercises 16.5
 
-## 16.5
 
 1. List three of the important considerations that are ignored in the competitive-hunter model as presented in the text. 
 
@@ -2115,10 +2094,10 @@ where K is a constant of integration.
 
 c. Let $f ( y ) = y ^ { a } / e ^ { b y }$ and $g ( x ) = x ^ { m } / e ^ { n x }$ . Show that $f ( y )$ has a unique maximum of $M _ { \mathrm { v } } = ( a / e b ) ^ { a }$ when $y = a / b$ as shown in Figure 16.37. Similarly, show that g x( ) has a unique maximum $M _ { x } = \left( m / e n \right) ^ { m }$ when $x = m / n$ , also shown in Figure 16.37. 
 
-![[ad7b6a0e9162c5f410f3d5f906bc8d66b7757ad51fd11afc4d35cff02dab62f4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/ad7b6a0e9162c5f410f3d5f906bc8d66b7757ad51fd11afc4d35cff02dab62f4.jpg)
 
 
-![[e189fb443169776576d4628bd44f92b08789ae8b620fea521e89a672f974b3ed.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/e189fb443169776576d4628bd44f92b08789ae8b620fea521e89a672f974b3ed.jpg)
 
 
 
@@ -2153,7 +2132,7 @@ Figure 16.37 tells you that for $g ( x )$ there is a unique value $x _ { 0 } < m
 
 f. Use a similar argument to show that the solution trajectory leading to $( m / n , a / b )$ is unique if $y _ { 0 } > a / b$ 
 
-![[32937f9b0b78f27a91e448ff2ddf5319d4892c73f85c4fa974ab898b8c2774b4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/32937f9b0b78f27a91e448ff2ddf5319d4892c73f85c4fa974ab898b8c2774b4.jpg)
 
 
 
@@ -2168,7 +2147,7 @@ $$
 
 Can something similar be done to the nth-order differential equation $y ^ { ( n ) } = F { \bigl ( } x , y , y ^ { \prime } , y ^ { \prime \prime } , \ldots , y ^ { ( n - 1 ) } { \bigr ) } ^ { c }$ 6 
 
-## Lotka-Volterra Equations for a Predator-Prey Model
+#### Lotka-Volterra Equations for a Predator-Prey Model
 
 In 1925 Lotka and Volterra introduced the predator-prey equations, a system of equations that models the populations of two species, one of which preys on the other. Let x( ) represent the number of rabbitst living in a region at time t, and y t( ) the number of foxes in the same region. As time passes, the number of rabbits increases at a rate proportional to their population, and decreases at a rate proportional to the number of encounters between rabbits and foxes. The foxes, which compete for food, increase in number at a rate proportional to the number of encounters with rabbits but decrease at a rate proportional to the number of foxes. The number of encounters between rabbits and foxes is assumed to be proportional to the product of the two populations. These assumptions lead to the autonomous system 
 
@@ -2194,7 +2173,7 @@ is constant when x( ) and t y t( ) are positive and satisfy the predatorprey equ
 
 While x and y may change over time, C t( ) does not. Thus, C is a conserved quantity and its existence gives a conservation law. A trajectory that begins at a point ( , ) at timex y $t = 0$ gives a value of C that remains unchanged at future times. Each value of the constant C gives a trajectory for the autonomous system, and these trajectories close up, rather than spiraling inward or outward. The rabbit and fox populations oscillate through repeated cycles along a fixed trajectory. Figure 16.39 shows several trajectories for the predator-prey system. 
 
-![[96a727788a8d99fcf8c993eabfc2425af403595a64a996744f7055f44a4980cb.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/96a727788a8d99fcf8c993eabfc2425af403595a64a996744f7055f44a4980cb.jpg)
 
 
 
@@ -2205,7 +2184,7 @@ FIGURE 16.39 Some trajectories along which C is conserved.
 
 Along each trajectory, both the rabbit and fox populations fluctuate between their maximum and minimum levels. The maximum and minimum levels for the rabbit population occur where the trajectory intersects the horizontal line $y = a / b$ . For the fox population, they occur where the trajectory intersects the vertical line $x = c / d $ When the rabbit population is at its maximum, the fox population is below its maximum value. As the rabbit population declines from this point in time, we move counterclockwise around the trajectory, and the fox population grows until it reaches its maximum value. At this point the rabbit population has declined to $x = c / d$ and is no longer at its peak value. We see that the fox population reaches its maximum value at a later time than the rabbits. The predator population lags behind that of the prey in achieving its maximum values. This lag effect is shown in Figure 16.40, which graphs both x( ) and t y t( ). 
 
-![[20aaec5c0c2160842c8d99713902dbc97a6a1c8256e554cdc1a1f089cad2cff4.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/20aaec5c0c2160842c8d99713902dbc97a6a1c8256e554cdc1a1f089cad2cff4.jpg)
 
 
 
@@ -2242,9 +2221,9 @@ In Exercises 1–22, solve the differential equation.
 
 1. $y ^ { \prime } = x e ^ { y } { \sqrt { x - 2 } }$ 
 
-3. $\sec x d y + x \cos ^ { 2 } y d x = 0$ 
-
 2. $y ^ { \prime } = x y e ^ { x ^ { 2 } }$ 
+
+3. $\sec x d y + x \cos ^ { 2 } y d x = 0$ 
 
 4. $2 x ^ { 2 } d x - 3 { \sqrt { y } } \csc x d y = 0$ 
 
@@ -2328,7 +2307,7 @@ $$
 
 34.T ${ \frac { d y } { d x } } = - { \frac { x ^ { 2 } + y } { e ^ { y } + x } } , \ y ( 0 ) = 0$ 
 
-## Slope Fields
+### Slope Fields
 
 In Exercises 35–38, sketch part of the equation’s slope field. Then add to your sketch the solution curve that passes through the point $P ( 1 , - 1 )$ . Use Euler’s method with $x _ { 0 } = 1$ and $d x = 0 . 2$ to estimate y(2). Round your answers to four decimal places. Find the exact value of y(2) for comparison. 
 
@@ -2356,11 +2335,11 @@ $$
 4 0. \frac {d y}{d x} = y - y ^ {2}
 $$
 
-## Applications
+### Applications
 
 41. Escape velocity The gravitational attraction F exerted by an airless moon on a body of mass m at a distance s from the moon’s center is given by the equation $F = - m g R ^ { 2 } s ^ { - 2 }$ , where $g$ is the acceleration of gravity at the moon’s surface and R is the moon’s radius (see accompanying figure). The force F is negative because it acts in the direction of decreasing s. 
 
-![[a7ee17d6b23eee7bddd0c99c0f9d65b0ae5295f9aa5b883f1428165e67b8bfb5.jpg|image]]
+![教材插图](/books/thomas-calculus/assets/a7ee17d6b23eee7bddd0c99c0f9d65b0ae5295f9aa5b883f1428165e67b8bfb5.jpg)
 
 
 a. If the body is projected vertically upward from the moon’s surface with an initial velocity $v _ { 0 }$ at time $t = 0$ , use Newton’s second law, $F = m a ,$ to show that the body’s velocity at position s is given by the equation 
@@ -2385,7 +2364,7 @@ TABLE 16.6 Johnathon Krueger skating data
 
 <table><tr><td>t(s)</td><td>s(m)</td><td>t(s)</td><td>s(m)</td><td>t(s)</td><td>s(m)</td></tr><tr><td>0</td><td>0</td><td>0.93</td><td>0.61</td><td>1.86</td><td>0.93</td></tr><tr><td>0.13</td><td>0.08</td><td>1.06</td><td>0.68</td><td>2.00</td><td>0.94</td></tr><tr><td>0.27</td><td>0.19</td><td>1.20</td><td>0.74</td><td>2.13</td><td>0.95</td></tr><tr><td>0.40</td><td>0.28</td><td>1.33</td><td>0.79</td><td>2.26</td><td>0.96</td></tr><tr><td>0.53</td><td>0.36</td><td>1.46</td><td>0.83</td><td>2.39</td><td>0.96</td></tr><tr><td>0.67</td><td>0.45</td><td>1.60</td><td>0.87</td><td>2.53</td><td>0.97</td></tr><tr><td>0.80</td><td>0.53</td><td>1.73</td><td>0.90</td><td>2.66</td><td>0.97</td></tr></table>
 
-## Mixture Problems
+### Mixture Problems
 
 In Exercises 43 and 44, let S represent the kilograms of salt in a tank at time t minutes. Set up a differential equation representing the given information and the rate at which S changes. Then solve for S and answer the particular questions. 
 
@@ -2405,7 +2384,7 @@ c. When will the tank have exactly 5 kilograms of salt, and how many liters of s
 
 ## CHAPTER 16 Additional and Advanced Exercises
 
-## Theory and Applications
+### Theory and Applications
 
 1. Transport through a cell membrane Under some conditions, the result of the movement of a dissolved substance across a cell’s membrane is described by the equation 
 
@@ -2487,9 +2466,7 @@ After solving this separable equation, we obtain the solution of the original eq
 
 Solve the homogeneous equations in Exercises 5–10. First put the equation in the form of a homogeneous equation. 
 
-$$
-\mathbf {5 .} (x ^ {2} + y ^ {2}) d x + x y d y = 0
-$$
+5. $(x ^ {2} + y ^ {2}) d x + x y d y = 0$
 
 $$
 x ^ {2} d y + (y ^ {2} - x y) d x = 0
@@ -2507,9 +2484,7 @@ $$
 y ^ {\prime} = \frac {y}{x} + \cos \frac {y - x}{x}
 $$
 
-$$
-\mathbf {1 0 .} \left(x \sin \frac {y}{x} - y \cos \frac {y}{x}\right) d x + x \cos \frac {y}{x} d y = 0
-$$
+10. $\left(x \sin \frac {y}{x} - y \cos \frac {y}{x}\right) d x + x \cos \frac {y}{x} d y = 0$
 
 ## CHAPTER 16 Technology Application Projects
 
@@ -2522,14 +2497,3 @@ Projects can be found within MyLab Math.
 • First-Order Differential Equations and Slope Fields Plot slope fields and solution curves for various initial conditions to selected first-order differential equations. 
 
 This page is intentionally left blank 
-
-# Second-Order Differential Equations
-
-![[91715d91ed57bddee912b2a4797e3c74f19a842d51f555395559d84fa464bbae.jpg|image]]
-
-
-
-Denis Kalinichenko/Shutterstock
-
-
-OVERVIEW In this chapter we extend our study of differential equations to those of second order, equations that involve second derivatives of a function. Second-order differential equations arise in many applications in the sciences and engineering. For instance, they can be applied to the study of vibrating springs and electric circuits. You will learn how to solve such differential equations by several methods in this chapter.

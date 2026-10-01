@@ -14,6 +14,35 @@ export default function remarkBookSyntax() {
             }
         });
 
+        visit(tree, "strong", (node: any, _index: number | undefined, parent: any) => {
+            if (parent?.type !== "paragraph") return;
+            const first = parent.children?.find((child: any) =>
+                child.type !== "text" || String(child.value ?? "").trim(),
+            );
+            if (first !== node) return;
+
+            const label = node.children?.map((child: any) => String(child.value ?? "")).join("").trim();
+            const kind = /^EXAMPLE\s+\d+[A-Za-z]?$/i.test(label)
+                ? "example"
+                : /^Solution$/i.test(label)
+                    ? "solution"
+                    : null;
+            if (!kind) return;
+
+            const nodeData = node.data ?? (node.data = {});
+            nodeData.hProperties = { ...nodeData.hProperties, className: [`book-${kind}-label`] };
+            const parentData = parent.data ?? (parent.data = {});
+            parentData.hProperties = { ...parentData.hProperties, className: [`book-${kind}`] };
+        });
+
+        visit(tree, "paragraph", (node: any) => {
+            const first = node.children?.[0];
+            if (first?.type !== "text" || !/^FIGURE\b/.test(first.value.trimStart())) return;
+
+            const data = node.data ?? (node.data = {});
+            data.hProperties = { ...data.hProperties, className: ["book-figure-caption"] };
+        });
+
         visit(tree, "text", (node: any, index: number | undefined, parent: any) => {
             if (index === undefined || !parent?.children) return;
 
