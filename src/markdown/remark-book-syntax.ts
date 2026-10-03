@@ -14,6 +14,17 @@ export default function remarkBookSyntax() {
             }
         });
 
+        visit(tree, "image", (node: any) => {
+            const url = String(node.url ?? "").replace(/\\/g, "/");
+            if (!bookId || !url || url.startsWith("/") || /^[a-z][a-z\d+.-]*:/i.test(url)) return;
+
+            const assetPath = url.replace(/^\.\//, "").replace(/^assets\//, "");
+            node.url = `/books/${encodeURIComponent(bookId)}/assets/${assetPath
+                .split("/")
+                .map(encodeURIComponent)
+                .join("/")}`;
+        });
+
         visit(tree, "strong", (node: any, _index: number | undefined, parent: any) => {
             if (parent?.type !== "paragraph") return;
             const first = parent.children?.find((child: any) =>
